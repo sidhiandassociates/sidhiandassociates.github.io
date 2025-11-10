@@ -18,7 +18,6 @@
     <meta property="og:url" content="https://sidhiandassociates.github.io/">
     <meta property="og:title" content="Sidhi & Associates - Expert Chartered Accountants in India | CA Services">
     <meta property="og:description" content="Leading CA firm offering Income Tax Filing, GST Compliance, Company Incorporation, Audit Services. 10+ years experience. 2-hour response time. Call +91 78892 57045">
-    <!-- <meta property="og:image" content="https://sidhiandassociates.github.io/og-image.jpg"> -->
     <meta property="og:site_name" content="Sidhi & Associates">
     <meta property="og:locale" content="en_IN">
     
@@ -27,7 +26,6 @@
     <meta property="twitter:url" content="https://sidhiandassociates.github.io/">
     <meta property="twitter:title" content="Sidhi & Associates - Expert Chartered Accountants in India">
     <meta property="twitter:description" content="Leading CA firm offering Tax Filing, GST Compliance, Audit Services. 10+ years experience. Fast 2-hour response.">
-    <!-- <meta property="twitter:image" content="https://sidhiandassociates.github.io/twitter-image.jpg"> -->
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://sidhiandassociates.github.io/">
@@ -36,13 +34,12 @@
     <meta name="geo.region" content="IN">
     <meta name="geo.placename" content="India">
     
-    <!-- Schema.org JSON-LD for Professional Service -->
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "Sidhi & Associates",
-      "image": "https://sidhiandassociates.github.io/logo.jpg",
       "@id": "https://sidhiandassociates.github.io/",
       "url": "https://sidhiandassociates.github.io/",
       "telephone": "+917889257045",
@@ -54,14 +51,7 @@
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
         "opens": "09:00",
         "closes": "18:00"
       },
@@ -72,40 +62,6 @@
       }
     }
     </script>
-    
-    <!-- FAQ Schema -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How much do CA services cost in India?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "CA service costs vary based on the complexity and type of service. Individual tax returns typically range from ₹2,500 to ₹5,000, while business tax filings can cost ₹8,000 to ₹25,000. GST compliance packages start at ₹5,000 per month."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long does company incorporation take?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Company incorporation typically takes 7-15 working days for a Private Limited Company or LLP, assuming all documents are in order."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you offer online consultations?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we offer comprehensive online consultations via video calls, phone, email, and WhatsApp."
-          }
-        }
-      ]
-    }
-    </script>
 
     <style>
         * {
@@ -114,11 +70,21 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --primary-blue: #0A2647;
+            --primary-gold: #D4A43C;
+            --light-gold: #F5E6C8;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --white: #ffffff;
+            --light-bg: #F9F7F4;
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: #f8f9fa;
+            color: var(--text-dark);
+            background: var(--white);
         }
 
         .container {
@@ -127,34 +93,79 @@
             padding: 0 20px;
         }
 
+        /* Header with Logo */
         header {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            padding: 80px 0 60px;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 15px;
-            font-weight: 700;
-        }
-
-        header p {
-            font-size: 1.3em;
-            opacity: 0.95;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        nav {
-            background: white;
-            padding: 15px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 100;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .logo-text h1 {
+            font-size: 1.8em;
+            color: var(--primary-blue);
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .logo-text p {
+            font-size: 0.9em;
+            color: var(--primary-gold);
+            margin: 0;
+        }
+
+        .header-cta {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .cta-phone {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .cta-btn {
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .cta-btn:hover {
+            background: var(--primary-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--primary-blue);
+            padding: 12px 0;
         }
 
         nav .container {
@@ -165,31 +176,127 @@
         }
 
         nav a {
-            color: #1e3c72;
+            color: var(--white);
             text-decoration: none;
             font-weight: 600;
             transition: color 0.3s;
+            font-size: 0.95em;
         }
 
         nav a:hover {
-            color: #2a5298;
+            color: var(--primary-gold);
         }
 
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #144272 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: var(--white);
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn-primary {
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: #C4932C;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(212, 164, 60, 0.4);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--white);
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            border: 2px solid var(--white);
+            transition: all 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--primary-blue);
+        }
+
+        /* Trust Badges */
+        .trust-badges {
+            background: var(--light-gold);
+            padding: 40px 20px;
+        }
+
+        .badges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .badge-item {
+            padding: 20px;
+        }
+
+        .badge-number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--primary-blue);
+            display: block;
+        }
+
+        .badge-text {
+            color: var(--text-light);
+            font-size: 1.1em;
+            margin-top: 5px;
+        }
+
+        /* Sections */
         section {
-            background: white;
-            margin: 40px auto;
-            padding: 60px 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            padding: 80px 20px;
+        }
+
+        .section-alt {
+            background: var(--light-bg);
         }
 
         h2 {
-            color: #1e3c72;
+            color: var(--primary-blue);
             font-size: 2.5em;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             text-align: center;
             position: relative;
-            padding-bottom: 15px;
+            padding-bottom: 20px;
         }
 
         h2::after {
@@ -200,203 +307,197 @@
             transform: translateX(-50%);
             width: 80px;
             height: 4px;
-            background: #2a5298;
+            background: var(--primary-gold);
             border-radius: 2px;
         }
 
-        h3 {
-            color: #2a5298;
-            font-size: 1.6em;
-            margin-top: 30px;
-            margin-bottom: 15px;
+        .section-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px;
+            font-size: 1.1em;
+            color: var(--text-light);
         }
 
+        /* Services Grid */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 30px;
-            margin-top: 40px;
+            margin-top: 50px;
         }
 
         .service-card {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 8px;
-            border-left: 4px solid #2a5298;
-            transition: transform 0.3s, box-shadow 0.3s;
+            background: var(--white);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border-top: 4px solid var(--primary-gold);
         }
 
         .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(10, 38, 71, 0.15);
+        }
+
+        .service-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
         }
 
         .service-card h3 {
-            margin-top: 0;
-            color: #1e3c72;
-        }
-
-        .industries-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
-        }
-
-        .industry-item {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 25px;
-            border-radius: 8px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .industry-item:hover {
-            transform: scale(1.05);
-        }
-
-        .features-list {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
-        }
-
-        .feature-box {
-            background: #fff;
-            padding: 25px;
-            border-radius: 8px;
-            border: 2px solid #e9ecef;
-            text-align: center;
-        }
-
-        .feature-icon {
-            font-size: 3em;
-            margin-bottom: 15px;
-        }
-
-        .pricing-table {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .pricing-card {
-            background: white;
-            border: 2px solid #e9ecef;
-            border-radius: 10px;
-            padding: 30px;
-            text-align: center;
-            transition: all 0.3s;
-        }
-
-        .pricing-card:hover {
-            border-color: #2a5298;
-            box-shadow: 0 5px 20px rgba(42, 82, 152, 0.2);
-        }
-
-        .pricing-card h4 {
-            color: #1e3c72;
+            color: var(--primary-blue);
             font-size: 1.5em;
             margin-bottom: 15px;
         }
 
-        .price {
-            font-size: 2em;
-            color: #2a5298;
-            font-weight: bold;
-            margin: 20px 0;
-        }
-
-        .testimonials {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .testimonial-card {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 8px;
-            border-left: 4px solid #667eea;
-            font-style: italic;
-        }
-
-        .testimonial-author {
-            margin-top: 15px;
-            font-weight: bold;
-            color: #1e3c72;
-            font-style: normal;
-        }
-
-        .faq-item {
-            background: #f8f9fa;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            border-left: 4px solid #2a5298;
-        }
-
-        .faq-question {
-            font-weight: 700;
-            color: #1e3c72;
-            font-size: 1.1em;
-            margin-bottom: 10px;
-        }
-
-        .cta-section {
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
-            text-align: center;
-            padding: 60px 40px;
-        }
-
-        .cta-section h2 {
-            color: white;
-        }
-
-        .cta-section h2::after {
-            background: white;
-        }
-
-        .contact-info {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
-
-        .contact-item {
-            font-size: 1.2em;
-        }
-
-        .contact-item strong {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .btn {
-            display: inline-block;
-            background: white;
-            color: #1e3c72;
-            padding: 15px 40px;
-            border-radius: 50px;
+        .service-link {
+            color: var(--primary-gold);
             text-decoration: none;
-            font-weight: 700;
-            margin-top: 30px;
+            font-weight: 600;
+            display: inline-block;
+            margin-top: 15px;
             transition: all 0.3s;
         }
 
-        .btn:hover {
-            background: #f8f9fa;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        .service-link:hover {
+            color: var(--primary-blue);
+            transform: translateX(5px);
         }
 
+        /* CTA Banner */
+        .cta-banner {
+            background: linear-gradient(135deg, var(--primary-gold) 0%, #C4932C 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 60px 20px;
+            margin: 60px 0;
+            border-radius: 12px;
+        }
+
+        .cta-banner h2 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+
+        .cta-banner h2::after {
+            background: var(--white);
+        }
+
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 30px;
+            background: var(--white);
+            border-radius: 12px;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .feature-icon {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        /* Testimonials */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonial-card {
+            background: var(--white);
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--primary-gold);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--primary-blue);
+        }
+
+        .rating {
+            color: var(--primary-gold);
+            margin-bottom: 10px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 80px 20px;
+        }
+
+        .contact-section h2 {
+            color: var(--white);
+        }
+
+        .contact-section h2::after {
+            background: var(--primary-gold);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .contact-card {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .contact-card h3 {
+            color: var(--primary-gold);
+            margin-bottom: 15px;
+        }
+
+        .contact-card p {
+            font-size: 1.1em;
+        }
+
+        .contact-card a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-card a:hover {
+            color: var(--primary-gold);
+        }
+
+        /* Floating Buttons */
         .floating-buttons {
             position: fixed;
             right: 20px;
@@ -404,7 +505,7 @@
             display: flex;
             flex-direction: column;
             gap: 15px;
-            z-index: 1000;
+            z-index: 999;
         }
 
         .float-btn {
@@ -415,24 +516,21 @@
             align-items: center;
             justify-content: center;
             text-decoration: none;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            transition: all 0.3s ease;
-            animation: pulse 2s infinite;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s;
         }
 
         .float-btn:hover {
             transform: scale(1.1);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.4);
         }
 
         .whatsapp-btn {
             background: #25D366;
-            color: white;
         }
 
         .call-btn {
-            background: #007bff;
-            color: white;
+            background: var(--primary-gold);
         }
 
         .float-btn svg {
@@ -441,342 +539,402 @@
             fill: white;
         }
 
-        @keyframes pulse {
-            0%, 100% {
-                box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-            }
-            50% {
-                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.6);
-            }
-        }
-
+        /* Footer */
         footer {
-            background: #1e3c72;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 50px 20px 30px;
         }
 
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
 
-            header p {
-                font-size: 1.1em;
+        .footer-section h3 {
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.2);
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2em;
             }
 
             h2 {
                 font-size: 2em;
             }
 
-            section {
-                padding: 40px 20px;
-                margin: 20px auto;
+            .header-cta {
+                display: none;
+            }
+
+            .logo-text h1 {
+                font-size: 1.4em;
             }
 
             nav .container {
                 gap: 15px;
             }
 
-            .contact-info {
-                flex-direction: column;
-                gap: 20px;
-            }
-
-            .floating-buttons {
-                right: 15px;
-                bottom: 15px;
-            }
-
-            .float-btn {
-                width: 55px;
-                height: 55px;
-            }
-
-            .float-btn svg {
-                width: 26px;
-                height: 26px;
+            .services-grid,
+            .features-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
-            <h1>Sidhi & Associates</h1>
-            <p>Your Trusted Partner in Financial Excellence & Compliance</p>
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="sidhi_logo.jpeg" alt="Sidhi and Asssociates Logo" class="logo">
+                </a>
+                <div class="header-cta">
+                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                    <a href="#contact" class="cta-btn">Get Started</a>
+                </div>
+            </div>
         </div>
     </header>
 
+    <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="#introduction">Home</a>
             <a href="#services">Services</a>
-            <a href="#industries">Industries</a>
-            <a href="#why-choose">Why Us</a>
-            <a href="#pricing">Pricing</a>
+            <a href="#why-us">Why Us</a>
             <a href="#testimonials">Testimonials</a>
-            <a href="#faq">FAQ</a>
+            <a href="#locations">Locations</a>
             <a href="#contact">Contact</a>
         </div>
     </nav>
 
-    <div class="container">
-        <section id="introduction">
-            <h2>Who is Sidhi & Associates?</h2>
-            <p>Sidhi & Associates is a leading chartered accountancy firm dedicated to providing comprehensive financial, taxation, and business advisory services to individuals, startups, and enterprises across India. With over a decade of experience in the industry, we have built a reputation for delivering accurate, timely, and personalized solutions that help our clients achieve their financial goals while maintaining full regulatory compliance.</p>
-            
-            <p>Our team of qualified chartered accountants and financial experts brings deep industry knowledge and technical expertise to every engagement. We understand that navigating the complex landscape of Indian taxation, GST regulations, and corporate compliance can be overwhelming. That's why we pride ourselves on being more than just number crunchers—we're strategic partners who take the time to understand your unique business needs and provide tailored solutions that drive growth and minimize risks.</p>
-            
-            <p>Choosing a qualified CA firm like Sidhi & Associates means you're entrusting your financial matters to professionals who are bound by the highest ethical standards and committed to maintaining complete confidentiality. Our proactive approach ensures you stay ahead of regulatory changes, avoid penalties, and optimize your tax position legally. Whether you're a first-time entrepreneur setting up your business or an established company seeking to streamline operations, we have the expertise and dedication to support your journey every step of the way.</p>
-        </section>
-
-        <section id="services">
-            <h2>Our Core Services</h2>
-            
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Tax Planning & Filing</h3>
-                    <p>Strategic tax planning is essential for maximizing your wealth while staying compliant with Indian tax laws. Our comprehensive tax services include income tax return filing for individuals, businesses, and corporations. We analyze your financial situation to identify legitimate deductions, exemptions, and tax-saving opportunities. Our experts stay updated with the latest amendments to the Income Tax Act, ensuring you benefit from all available provisions. We handle everything from advance tax calculations to TDS compliance, assessment proceedings, and tax litigation support. With our proactive tax planning strategies, you can minimize your tax liability legally while building long-term wealth.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>GST Registration & Compliance</h3>
-                    <p>GST compliance is critical for businesses operating in India, and we make it seamless. Our GST services cover registration for new businesses, GST return filing (GSTR-1, GSTR-3B, GSTR-9), input tax credit reconciliation, and GST audit support. We help you understand the complex GST framework, classify your goods and services correctly, and maintain proper documentation. Our team handles GST notices, refund applications, and ensures your business remains compliant with changing GST regulations. Whether you're dealing with interstate transactions, e-commerce taxation, or composition scheme eligibility, we provide clear guidance and efficient processing to keep your business running smoothly.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Audit Services</h3>
-                    <p>Our comprehensive audit services provide assurance, transparency, and credibility to your financial statements. We conduct statutory audits as required under the Companies Act, tax audits under Section 44AB of the Income Tax Act, internal audits to strengthen your control systems, and stock audits for inventory verification. Our meticulous approach involves examining your books of accounts, verifying transactions, assessing internal controls, and providing detailed audit reports with actionable recommendations. We help identify financial irregularities, improve operational efficiency, and ensure compliance with accounting standards (Ind AS/AS). Our audit services give stakeholders confidence in your financial reporting while helping you meet regulatory requirements.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Company Incorporation</h3>
-                    <p>Starting a business in India involves navigating multiple legal and regulatory requirements. We simplify the company incorporation process by handling everything from name reservation to obtaining your Certificate of Incorporation. Our services include private limited company registration, LLP formation, one-person company setup, partnership firm registration, and sole proprietorship documentation. We guide you through selecting the right business structure based on your needs, assist with drafting MOA and AOA, obtain Director Identification Numbers (DIN) and Digital Signature Certificates (DSC), and ensure compliance with the Ministry of Corporate Affairs (MCA). We also provide post-incorporation services including PAN, TAN, and GST registration, so you can start operations without delay.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Bookkeeping & Accounting</h3>
-                    <p>Accurate bookkeeping forms the foundation of sound financial management. Our bookkeeping and accounting services ensure your financial records are organized, up-to-date, and compliant with accounting principles. We handle daily transaction recording, accounts payable and receivable management, bank reconciliation, payroll processing, financial statement preparation, and maintenance of statutory registers. Using modern cloud-based accounting software like Tally, QuickBooks, and Zoho Books, we provide real-time access to your financial data. Our services free you from the burden of accounting tasks, allowing you to focus on growing your business while we ensure your books are always audit-ready and compliant with regulatory requirements.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Business Advisory</h3>
-                    <p>Beyond compliance, we serve as strategic advisors helping you make informed business decisions. Our business advisory services include financial planning and analysis, budgeting and forecasting, cash flow management, business valuation, mergers and acquisitions support, and startup consulting. We help you interpret financial data, identify growth opportunities, manage working capital efficiently, and develop strategies for expansion. Whether you need guidance on raising capital, restructuring operations, or entering new markets, our experienced advisors provide insights backed by financial expertise. We also offer project feasibility studies, financial modeling, and due diligence services to support your strategic initiatives and help you achieve sustainable growth.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="industries">
-            <h2>Industries We Serve</h2>
-            <p>Our diverse clientele spans multiple industries, and we bring specialized knowledge to each sector we serve. Understanding industry-specific challenges, regulatory requirements, and best practices allows us to provide targeted solutions that address your unique needs. From emerging startups to established enterprises, we have the expertise to support businesses across various domains.</p>
-
-            <div class="industries-grid">
-                <div class="industry-item">
-                    <h3>Startups & MSMEs</h3>
-                    <p>We help startups navigate incorporation, fundraising compliance, and growth-stage financial management with tailored solutions.</p>
-                </div>
-                <div class="industry-item">
-                    <h3>Real Estate</h3>
-                    <p>Specialized services for property developers, including project accounting, TDS compliance, and GST for real estate transactions.</p>
-                </div>
-                <div class="industry-item">
-                    <h3>E-commerce</h3>
-                    <p>Expert guidance on marketplace compliance, TCS provisions, digital taxation, and inventory management for online businesses.</p>
-                </div>
-                <div class="industry-item">
-                    <h3>Manufacturing</h3>
-                    <p>Comprehensive support including excise matters, inventory valuation, cost accounting, and input tax credit optimization.</p>
-                </div>
-                <div class="industry-item">
-                    <h3>Service Sector</h3>
-                    <p>Tailored solutions for consultants, IT firms, healthcare, education, and professional services with focus on service tax and compliance.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="why-choose">
-            <h2>Why Choose Sidhi & Associates</h2>
-            <p>Selecting the right chartered accountancy firm can make a significant difference in your business success. At Sidhi & Associates, we combine experience, efficiency, and ethics to deliver exceptional value to our clients. Our commitment to excellence and client satisfaction sets us apart in the industry.</p>
-
-            <div class="features-list">
-                <div class="feature-box">
-                    <div class="feature-icon">🎓</div>
-                    <h3>10+ Years Experience</h3>
-                    <p>Over a decade of proven expertise serving clients across diverse industries with consistent quality and reliability.</p>
-                </div>
-                <div class="feature-box">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Quick Turnaround</h3>
-                    <p>We respond to all queries within 2 hours and maintain fast processing times without compromising accuracy or quality.</p>
-                </div>
-                <div class="feature-box">
-                    <div class="feature-icon">🔒</div>
-                    <h3>Confidentiality & Security</h3>
-                    <p>Your financial data is protected with the highest security standards and professional confidentiality guaranteed by CA ethics.</p>
-                </div>
-                <div class="feature-box">
-                    <div class="feature-icon">💰</div>
-                    <h3>Affordable Pricing</h3>
-                    <p>Transparent pricing with customized packages to suit businesses of all sizes—quality service at competitive rates.</p>
-                </div>
-                <div class="feature-box">
-                    <div class="feature-icon">☁️</div>
-                    <h3>Cloud-Based Solutions</h3>
-                    <p>Access your financial data anytime, anywhere with our modern cloud-based accounting systems and secure portals.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="pricing">
-            <h2>Service Costs & Packages</h2>
-            <p>We believe in transparent pricing and offer competitive rates tailored to your specific needs. Our packages are designed to provide comprehensive coverage while remaining affordable for businesses of all sizes. All prices are indicative and may vary based on complexity and specific requirements. Contact us for a customized quote.</p>
-
-            <div class="pricing-table">
-                <div class="pricing-card">
-                    <h4>Tax Filing Packages</h4>
-                    <div class="price">₹2,500+</div>
-                    <p><strong>Individual ITR:</strong> ₹2,500 - ₹5,000</p>
-                    <p><strong>Business ITR:</strong> ₹8,000 - ₹25,000</p>
-                    <p><strong>Corporate Returns:</strong> ₹15,000+</p>
-                    <p>Includes computation, filing, and basic advisory</p>
-                </div>
-
-                <div class="pricing-card">
-                    <h4>GST Compliance Plans</h4>
-                    <div class="price">₹5,000/mo</div>
-                    <p><strong>Basic:</strong> ₹5,000/month</p>
-                    <p><strong>Standard:</strong> ₹10,000/month</p>
-                    <p><strong>Premium:</strong> ₹20,000/month</p>
-                    <p>Includes monthly returns, reconciliation, and support</p>
-                </div>
-
-                <div class="pricing-card">
-                    <h4>Audit Service Rates</h4>
-                    <div class="price">₹25,000+</div>
-                    <p><strong>Tax Audit:</strong> ₹25,000 - ₹75,000</p>
-                    <p><strong>Statutory Audit:</strong> ₹40,000+</p>
-                    <p><strong>Internal Audit:</strong> Custom pricing</p>
-                    <p>Based on turnover and complexity</p>
-                </div>
-
-                <div class="pricing-card">
-                    <h4>Company Incorporation</h4>
-                    <div class="price">₹12,000+</div>
-                    <p><strong>Private Limited:</strong> ₹12,000 - ₹18,000</p>
-                    <p><strong>LLP Formation:</strong> ₹10,000 - ₹15,000</p>
-                    <p><strong>OPC Registration:</strong> ₹8,000 - ₹12,000</p>
-                    <p>Complete incorporation with government fees</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonials">
-            <h2>Client Success Stories</h2>
-            <p>Our clients' success is our greatest achievement. Here's what some of them have to say about working with Sidhi & Associates:</p>
-
-            <div class="testimonials">
-                <div class="testimonial-card">
-                    <p>"Sidhi & Associates helped us set up our startup from scratch. Their guidance on company incorporation, GST registration, and tax planning was invaluable. The 2-hour response time is genuinely impressive—they're always available when we need them."</p>
-                    <div class="testimonial-author">— Rajesh Kumar, Tech Startup Founder</div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p>"As a real estate developer, GST compliance was overwhelming until we partnered with Sidhi & Associates. They streamlined our entire tax process, handled complex ITC reconciliations, and saved us from potential penalties. Highly professional team!"</p>
-                    <div class="testimonial-author">— Priya Sharma, Real Estate Developer</div>
-                </div>
-
-                <div class="testimonial-card">
-                    <p>"We've been working with Sidhi & Associates for our statutory audits for three years. Their attention to detail, proactive recommendations, and deep understanding of accounting standards have significantly improved our financial management."</p>
-                    <div class="testimonial-author">— Amit Patel, Manufacturing Company CFO</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="faq">
-            <h2>Frequently Asked Questions</h2>
-
-            <div class="faq-item">
-                <div class="faq-question">How much do CA services cost in India?</div>
-                <div class="faq-answer">CA service costs vary based on the complexity and type of service. Individual tax returns typically range from ₹2,500 to ₹5,000, while business tax filings can cost ₹8,000 to ₹25,000. GST compliance packages start at ₹5,000 per month, and audit services begin at ₹25,000 depending on your turnover and business complexity. Company incorporation fees range from ₹8,000 to ₹18,000. We offer customized packages to suit different budgets and requirements.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">What documents are needed for tax filing?</div>
-                <div class="faq-answer">For individual tax filing, you'll need Form 16 (if salaried), bank statements, investment proofs (80C, 80D), capital gains statements, rental income documents, and previous year's ITR. For businesses, requirements include books of accounts, profit & loss statement, balance sheet, TDS certificates, GST returns, bank statements, and purchase/sales invoices. We provide a comprehensive checklist based on your specific situation to ensure smooth filing.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">How long does company incorporation take?</div>
-                <div class="faq-answer">Company incorporation typically takes 7-15 working days for a Private Limited Company or LLP, assuming all documents are in order and there are no name objections. The process includes name approval (1-2 days), DSC and DIN procurement (2-3 days), and incorporation filing (3-7 days). We expedite the process by ensuring all documentation is accurate from the start and maintaining regular follow-ups with the Registrar of Companies.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Do you offer online consultations?</div>
-                <div class="faq-answer">Yes, we offer comprehensive online consultations via video calls, phone, email, and WhatsApp. Our cloud-based systems allow us to serve clients across India without geographical limitations. You can share documents securely through our online portal, and we provide the same quality of service remotely as we do in person. Most of our services can be completed entirely online for your convenience.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">What is your response time?</div>
-                <div class="faq-answer">We pride ourselves on our 2-hour response time commitment. All queries received during business hours (9 AM to 6 PM, Monday to Saturday) are acknowledged and addressed within 2 hours. For urgent matters, we're available via phone and WhatsApp. Complex queries requiring research may take longer to resolve completely, but we always provide an initial response within our committed timeframe.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Are your services confidential?</div>
-                <div class="faq-answer">Absolutely. As chartered accountants, we are bound by the Code of Ethics of the Institute of Chartered Accountants of India (ICAI), which mandates strict confidentiality of all client information. We use secure, encrypted systems for data storage and transfer. Our team signs non-disclosure agreements, and we never share your financial information with any third party without your explicit consent, except where legally required.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Do you handle GST notices?</div>
-                <div class="faq-answer">Yes, we provide comprehensive GST notice handling services. Our team analyzes the notice, prepares appropriate responses, gathers necessary documentation, and represents you before GST authorities. We handle various notices including discrepancy notices, show cause notices, demand notices, and assessment orders. Our proactive GST compliance services minimize the likelihood of receiving notices in the first place.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Can you help with tax audits?</div>
-                <div class="faq-answer">Yes, we specialize in tax audits under Section 44AB of the Income Tax Act. We conduct thorough audits for businesses whose turnover exceeds prescribed limits, prepare detailed audit reports in Form 3CA/3CB and 3CD, identify potential issues before they become problems, and ensure compliance with all tax audit provisions. We also represent clients during income tax assessments and appeals if required.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">Do you provide services for startups?</div>
-                <div class="faq-answer">Yes, we have extensive experience working with startups and understand their unique needs. We offer startup-friendly packages covering incorporation, startup India registration, DPIIT recognition, compliance calendars, fundraising support, financial projections, and investor-ready financial statements. We also provide ongoing advisory services to help startups navigate early-stage challenges and scale efficiently.</div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">What makes you different from other CA firms?</div>
-                <div class="faq-answer">Our combination of experience, technology, and personalized service sets us apart. We offer a 2-hour response guarantee, use modern cloud-based systems for real-time access, provide transparent pricing with no hidden charges, and assign dedicated relationship managers to each client. Our proactive approach means we anticipate issues before they arise and keep you informed of regulatory changes affecting your business.</div>
-            </div>
-        </section>
-    </div>
-
-    <section class="cta-section" id="contact">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
-            <h2>Ready to Get Started?</h2>
-            <p>Let's discuss how we can help your business thrive. Contact us today for a free consultation!</p>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <strong>📞 Phone</strong>
-                    +91 78892 57045
-                </div>
-                <div class="contact-item">
-                    <strong>✉️ Email</strong>
-                    siddhiandassociatess@gmail.com
-                </div>
-                <div class="contact-item">
-                    <strong>📍 Addresses</strong>
-                    MAA SHAKTI COOP SOCIETY, 605, Block A GHS 111, Sector 20, Panchkula, Haryana 134117 <br>
-                    Sco 12, Ananta Square, Zirakpur, Punjab 140603<br>
-                    H. No. 1 opposite Sambhav Hospital, Gokul dairy road, Munshi Nagar phase-2,, Bareilly, Uttar Pradesh 243001<br>
-                    Krishvi Gavakshi, D513, near geetanjali school, Kaverappa Layout, Kadubeesanahalli, Bengaluru, Karnataka 560103<br>
-                    A-1105, Bulland Heights, Crossing Republik, Ghaziabad, Uttar Pradesh 201016<br>
-                </div>
+            <h2>Your Trusted Partner in Financial Excellence</h2>
+            <p>Expert Chartered Accountants providing Tax Planning, GST Compliance, Audit Services & Business Advisory across India</p>
+            <div class="hero-buttons">
+                <a href="tel:+917889257045" class="btn-primary">📞 Call Now</a>
+                <a href="#services" class="btn-secondary">Our Services</a>
             </div>
-            
-            <a href="mailto:siddhiandassociatess@gmail.com" class="btn">Schedule a Consultation</a>
         </div>
     </section>
 
+    <!-- Trust Badges -->
+    <div class="trust-badges">
+        <div class="container">
+            <div class="badges-grid">
+                <div class="badge-item">
+                    <span class="badge-number">10+</span>
+                    <span class="badge-text">Years Experience</span>
+                </div>
+                <div class="badge-item">
+                    <span class="badge-number">5000+</span>
+                    <span class="badge-text">Happy Clients</span>
+                </div>
+                <div class="badge-item">
+                    <span class="badge-number">2 Hours</span>
+                    <span class="badge-text">Response Time</span>
+                </div>
+                <div class="badge-item">
+                    <span class="badge-number">₹50Cr+</span>
+                    <span class="badge-text">Tax Saved</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2>Our Core Services</h2>
+            <p class="section-intro">Comprehensive CA services tailored to your business needs</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">📊</div>
+                    <h3>Tax Planning & Filing</h3>
+                    <p>Expert ITR filing and strategic tax planning to minimize your tax liability legally. From ₹2,500.</p>
+                    <a href="/services/tax-planning-filling/" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🧾</div>
+                    <h3>GST Compliance</h3>
+                    <p>Complete GST registration, return filing, and compliance management. Starting ₹5,000/month.</p>
+                    <a href="/services/gst-compliance/" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Company Incorporation</h3>
+                    <p>Fast company registration - Pvt Ltd, LLP, OPC. Get your business started in 7-15 days.</p>
+                    <a href="/services/company-incorporation/" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">✅</div>
+                    <h3>Audit Services</h3>
+                    <p>Statutory, tax, and internal audits with detailed reports and recommendations.</p>
+                    <a href="/services/audit" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Bookkeeping & Accounting</h3>
+                    <p>Professional bookkeeping using Tally, QuickBooks. Real-time financial insights.</p>
+                    <a href="/services/bookkeeping" class="service-link">Learn More →</a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Business Advisory</h3>
+                    <p>Strategic financial planning, business consulting, and growth advisory services.</p>
+                    <a href="/services/advisory" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <div class="cta-banner">
+        <div class="container">
+            <h2>Need Expert CA Services?</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Get a free consultation and customized quote today!</p>
+            <div class="hero-buttons">
+                <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045" class="btn-secondary">💬 WhatsApp Us</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="section-alt">
+        <div class="container">
+            <h2>Why Choose Sidhi & Associates</h2>
+            <p class="section-intro">Experience excellence in every engagement</p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Expert Team</h3>
+                    <p>ICAI registered CAs with 10+ years experience across industries</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Fast Response</h3>
+                    <p>2-hour response guarantee during business hours</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Transparent pricing with packages for all business sizes</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>100% Confidential</h3>
+                    <p>Your data protected with highest security standards</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☁️</div>
+                    <h3>Cloud-Based</h3>
+                    <p>Access your financial data anytime, anywhere</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Proven Results</h3>
+                    <p>₹50Cr+ tax saved for 5000+ satisfied clients</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <p class="section-intro">Trusted by businesses across India</p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Best CA in Panchkula! They handled our company incorporation and GST registration seamlessly. The 2-hour response time is genuinely impressive."</p>
+                    <p class="testimonial-author">— Rajesh Kumar, Tech Startup</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Professional service for our real estate business. They handle all GST compliance and saved us from penalties. Highly recommend!"</p>
+                    <p class="testimonial-author">— Priya Sharma, Real Estate Developer</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Three years of excellent audit services. Their attention to detail and proactive recommendations have significantly improved our financial management."</p>
+                    <p class="testimonial-author">— Amit Patel, Manufacturing CFO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Locations -->
+    <section id="locations" class="section-alt">
+        <div class="container">
+            <h2>Our Locations</h2>
+            <p class="section-intro">Serving clients across India with offices in key cities</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>📍 Panchkula, Haryana</h3>
+                    <p>MAA SHAKTI COOP SOCIETY, 605, Block A GHS 111, Sector 20<br>Panchkula, Haryana 134117</p>
+                    <a href="/locations/panchkula" class="service-link">Visit Page →</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>📍 Zirakpur, Punjab</h3>
+                    <p>Sco 12, Ananta Square, Zirakpur<br>Punjab 140603</p>
+                    <a href="/locations/zirakpur" class="service-link">Visit Page →</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>📍 Bareilly, UP</h3>
+                    <p>H. No. 1 opposite Sambhav Hospital, Gokul dairy road, Munshi Nagar phase-2<br>Bareilly, UP 243001</p>
+                    <a href="/locations/bareilly" class="service-link">Visit Page →</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>📍 Bangalore, Karnataka</h3>
+                    <p>Krishvi Gavakshi, D513, near geetanjali school, Kaverappa Layout, Kadubeesanahalli<br>Bengaluru, KA 560103</p>
+                    <a href="/locations/bangalore" class="service-link">Visit Page →</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>📍 Ghaziabad, UP</h3>
+                    <p>A-1105, Bulland Heights, Crossing Republik<br>Ghaziabad, UP 201016</p>
+                    <a href="/locations/ghaziabad" class="service-link">Visit Page →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="section-intro" style="color: white;">Ready to experience professional CA services? Contact us today!</p>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>📞 Call Us</h3>
+                    <p><a href="tel:+917889257045">+91 78892 57045</a></p>
+                    <p style="font-size: 0.9em; margin-top: 10px;">Mon-Sat: 9 AM - 6 PM</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>✉️ Email Us</h3>
+                    <p><a href="mailto:siddhiandassociatess@gmail.com">siddhiandassociatess@gmail.com</a></p>
+                    <p style="font-size: 0.9em; margin-top: 10px;">Response within 2 hours</p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>💬 WhatsApp</h3>
+                    <p><a href="https://wa.me/917889257045">Chat with Us</a></p>
+                    <p style="font-size: 0.9em; margin-top: 10px;">Quick & convenient support</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <a href="tel:+917889257045" class="btn-primary">Schedule Free Consultation</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why-us">Why Choose Us</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#locations">Our Locations</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="/services/tax-planning">Tax Planning & Filing</a></li>
+                        <li><a href="/services/gst-compliance">GST Compliance</a></li>
+                        <li><a href="/services/company-incorporation">Company Incorporation</a></li>
+                        <li><a href="/services/audit">Audit Services</a></li>
+                        <li><a href="/services/bookkeeping">Bookkeeping</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Our Locations</h3>
+                    <ul>
+                        <li><a href="/panchkula">Panchkula</a></li>
+                        <li><a href="/zirakpur">Zirakpur</a></li>
+                        <li><a href="/bareilly">Bareilly</a></li>
+                        <li><a href="/bangalore">Bangalore</a></li>
+                        <li><a href="/ghaziabad">Ghaziabad</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 +91 78892 57045</p>
+                    <p>✉️ siddhiandassociatess@gmail.com</p>
+                    <p style="margin-top: 15px;">🕒 Mon-Sat: 9 AM - 6 PM</p>
+                    <p>Response Time: 2 Hours</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Professional Excellence with Integrity</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
     <div class="floating-buttons">
         <a href="https://wa.me/917889257045?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20CA%20services" 
            target="_blank" 
@@ -795,15 +953,9 @@
         </a>
     </div>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Sidhi & Associates. All Rights Reserved. | Chartered Accountants</p>
-            <p>Professional excellence with integrity and confidentiality</p>
-        </div>
-    </footer>
-
     <script>
-        document.querySelectorAll('nav a').forEach(anchor => {
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
@@ -816,30 +968,10 @@
             });
         });
 
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (pageYOffset >= sectionTop - 200) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            document.querySelectorAll('nav a').forEach(link => {
-                link.style.color = '#1e3c72';
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.style.color = '#2a5298';
-                    link.style.fontWeight = '700';
-                }
-            });
-        });
-
+        // Animate on scroll
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
+            rootMargin: '0px 0px -50px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -851,11 +983,49 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.service-card, .industry-item, .feature-box, .pricing-card, .testimonial-card, .faq-item').forEach(el => {
+        document.querySelectorAll('.service-card, .feature-card, .testimonial-card, .contact-card').forEach(el => {
             el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
+            el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
+        });
+
+        // Active nav highlight on scroll
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section[id]');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            document.querySelectorAll('nav a').forEach(link => {
+                link.style.color = '#ffffff';
+                const href = link.getAttribute('href').substring(1);
+                if (href === current) {
+                    link.style.color = '#D4A43C';
+                }
+            });
+        });
+
+        // Add animation to trust badges on load
+        window.addEventListener('load', () => {
+            const badges = document.querySelectorAll('.badge-number');
+            badges.forEach((badge, index) => {
+                setTimeout(() => {
+                    badge.style.opacity = '0';
+                    badge.style.transform = 'scale(0.5)';
+                    badge.style.transition = 'all 0.5s ease';
+                    
+                    setTimeout(() => {
+                        badge.style.opacity = '1';
+                        badge.style.transform = 'scale(1)';
+                    }, 100);
+                }, index * 100);
+            });
         });
     </script>
 </body>
