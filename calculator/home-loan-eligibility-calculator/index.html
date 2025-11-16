@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="/sidhi.png" type="image/png" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Home Loan Eligibility Calculator 2024 - Check Maximum Loan Amount | Free Tool</title>
+    <meta name="title" content="Home Loan Eligibility Calculator 2024 - Check Maximum Loan Amount">
+    <meta name="description" content="Free Home Loan Eligibility Calculator. Calculate maximum loan amount based on income, EMI, interest rate. Check home loan eligibility instantly. By Sidhi & Associates CAs.">
+    <meta name="keywords" content="home loan calculator, loan eligibility calculator, housing loan calculator, maximum loan amount, EMI calculator, home loan eligibility, mortgage calculator">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sidhiandassociates.github.io/calculator/home-loan-eligibility-calculator/">
+    <meta property="og:title" content="Home Loan Eligibility Calculator - Check Maximum Loan Amount">
+    <meta property="og:description" content="Calculate your home loan eligibility instantly. Free tool by expert CAs.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://sidhiandassociates.github.io/calculator/home-loan-eligibility-calculator/">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Home Loan Eligibility Calculator",
+      "description": "Calculate maximum home loan eligibility based on income, EMI capacity, and interest rates",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "Sidhi & Associates"
+      }
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #0A2647;
+            --primary-gold: #D4A43C;
+            --light-gold: #F5E6C8;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --white: #ffffff;
+            --light-bg: #F9F7F4;
+            --success-green: #28a745;
+            --info-blue: #17a2b8;
+            --warning-orange: #ff9800;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--light-bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .logo-text h1 {
+            font-size: 1.8em;
+            color: var(--primary-blue);
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .logo-text p {
+            font-size: 0.9em;
+            color: var(--primary-gold);
+            margin: 0;
+        }
+
+        .breadcrumb {
+            background: var(--light-gold);
+            padding: 15px 0;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, #144272 100%);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .calculator-container {
+            max-width: 1400px;
+            margin: -40px auto 60px;
+            padding: 0 20px;
+        }
+
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .calculator-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+
+        .calculator-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.8em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--primary-gold);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 1.05em;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-gold);
+        }
+
+        .input-with-suffix {
+            position: relative;
+        }
+
+        .input-suffix {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+            font-weight: 600;
+            pointer-events: none;
+        }
+
+        .slider-container {
+            margin-top: 15px;
+        }
+
+        .slider {
+            width: 100%;
+            height: 8px;
+            border-radius: 5px;
+            background: linear-gradient(to right, var(--primary-gold), var(--primary-blue));
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary-gold);
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .slider::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: var(--primary-gold);
+            cursor: pointer;
+            border: none;
+        }
+
+        .value-display {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            font-size: 0.9em;
+            color: var(--text-light);
+        }
+
+        .btn-calculate {
+            width: 100%;
+            padding: 15px;
+            background: var(--primary-gold);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-calculate:hover {
+            background: var(--primary-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(10, 38, 71, 0.3);
+        }
+
+        .btn-reset {
+            width: 100%;
+            padding: 12px;
+            background: transparent;
+            color: var(--text-light);
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-reset:hover {
+            border-color: var(--primary-gold);
+            color: var(--primary-gold);
+        }
+
+        .result-section {
+            position: sticky;
+            top: 100px;
+        }
+
+        .result-main {
+            background: linear-gradient(135deg, var(--success-green), #1e7e34);
+            color: var(--white);
+            padding: 35px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .result-label {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            opacity: 0.95;
+        }
+
+        .result-value {
+            font-size: 3.5em;
+            font-weight: 700;
+            margin: 15px 0;
+        }
+
+        .result-subtitle {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+
+        .breakdown-card {
+            background: var(--light-bg);
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .breakdown-card h4 {
+            color: var(--primary-blue);
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .breakdown-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .breakdown-row:last-child {
+            border-bottom: none;
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1.1em;
+        }
+
+        .emi-chart {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            border: 2px solid var(--light-gold);
+        }
+
+        .emi-chart h4 {
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .chart-bar {
+            height: 40px;
+            border-radius: 5px;
+            margin: 15px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .chart-label {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--white);
+            font-weight: 600;
+            z-index: 1;
+        }
+
+        .chart-value {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--white);
+            font-weight: 600;
+        }
+
+        .info-box {
+            background: #d1ecf1;
+            border-left: 4px solid var(--info-blue);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        .alert-box {
+            background: #fff3cd;
+            border-left: 4px solid var(--warning-orange);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            color: #856404;
+        }
+
+        .info-section {
+            padding: 60px 20px;
+            background: var(--white);
+        }
+
+        .info-section h2 {
+            color: var(--primary-blue);
+            font-size: 2.2em;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .info-card {
+            background: var(--light-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border-top: 4px solid var(--primary-gold);
+        }
+
+        .info-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .info-card ul {
+            margin-left: 20px;
+        }
+
+        .info-card li {
+            margin-bottom: 10px;
+            color: var(--text-light);
+        }
+
+        .faq-section {
+            padding: 60px 20px;
+            background: var(--light-bg);
+        }
+
+        .faq-item {
+            background: var(--white);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--primary-gold);
+            cursor: pointer;
+        }
+
+        .faq-question {
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1.15em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            margin-top: 15px;
+            line-height: 1.8;
+            display: none;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-gold), #C4932C);
+            color: var(--white);
+            text-align: center;
+            padding: 60px 20px;
+            margin: 40px 0;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn-primary {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 15px 35px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1em;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: var(--white);
+            color: var(--primary-blue);
+            transform: translateY(-3px);
+        }
+
+        footer {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 40px 20px 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--primary-gold);
+            text-decoration: none;
+        }
+
+        .floating-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+
+        .float-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-btn {
+            background: #25D366;
+        }
+
+        .call-btn {
+            background: var(--primary-gold);
+        }
+
+        .float-btn svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+
+        @media (max-width: 968px) {
+            .calculator-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .result-section {
+                position: static;
+            }
+
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .calculator-card {
+                padding: 25px;
+            }
+
+            .result-value {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="/" class="logo">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="60" height="60">
+                    <div class="logo-text">
+                        <h1>Sidhi & Associates</h1>
+                        <p>Chartered Accountants</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="/">Home</a> / <a href="/calculator/">Calculators</a> / <span>Home Loan Eligibility</span>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h2>🏠 Home Loan Eligibility Calculator</h2>
+            <p>Calculate Maximum Loan Amount & EMI Based on Your Income</p>
+            <p style="font-size: 1em; opacity: 0.9; margin-top: 10px;">Free Tool • Instant Results • Expert Guidance Available</p>
+        </div>
+    </section>
+
+    <div class="calculator-container">
+        <div class="calculator-grid">
+            <!-- Input Section -->
+            <div class="calculator-card">
+                <h3>Enter Your Details</h3>
+                
+                <form id="loanForm">
+                    <div class="form-group">
+                        <label>
+                            <span>Monthly Income</span>
+                            <span style="color: var(--primary-gold); font-weight: 700;" id="incomeDisplay">₹50,000</span>
+                        </label>
+                        <input type="range" id="income" class="slider" min="10000" max="500000" step="5000" value="50000">
+                        <div class="value-display">
+                            <span>₹10K</span>
+                            <span>₹5L</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <span>Other Monthly Income (Optional)</span>
+                            <span style="color: var(--primary-gold); font-weight: 700;" id="otherIncomeDisplay">₹0</span>
+                        </label>
+                        <input type="range" id="otherIncome" class="slider" min="0" max="200000" step="5000" value="0">
+                        <div class="value-display">
+                            <span>₹0</span>
+                            <span>₹2L</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <span>Existing EMIs (if any)</span>
+                            <span style="color: var(--primary-gold); font-weight: 700;" id="existingEmiDisplay">₹0</span>
+                        </label>
+                        <input type="range" id="existingEmi" class="slider" min="0" max="100000" step="1000" value="0">
+                        <div class="value-display">
+                            <span>₹0</span>
+                            <span>₹1L</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <span>Interest Rate (% per annum)</span>
+                            <span style="color: var(--primary-gold); font-weight: 700;" id="rateDisplay">8.5%</span>
+                        </label>
+                        <input type="range" id="rate" class="slider" min="6" max="15" step="0.1" value="8.5">
+                        <div class="value-display">
+                            <span>6%</span>
+                            <span>15%</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>
+                            <span>Loan Tenure (Years)</span>
+                            <span style="color: var(--primary-gold); font-weight: 700;" id="tenureDisplay">20 years</span>
+                        </label>
+                        <input type="range" id="tenure" class="slider" min="5" max="30" step="1" value="20">
+                        <div class="value-display">
+                            <span>5 years</span>
+                            <span>30 years</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="employmentType">Employment Type</label>
+                        <select id="employmentType">
+                            <option value="salaried">Salaried</option>
+                            <option value="self-employed">Self-Employed</option>
+                        </select>
+                    </div>
+
+                    <button type="button" class="btn-calculate" onclick="calculateLoan()">🧮 Calculate Eligibility</button>
+                    <button type="button" class="btn-reset" onclick="resetForm()">🔄 Reset</button>
+                </form>
+
+                <div class="info-box" style="margin-top: 30px;">
+                    <h4>💡 How It Works</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Banks typically allow 50-60% of income as EMI</li>
+                        <li>Lower interest rates = higher eligibility</li>
+                        <li>Longer tenure = higher loan amount</li>
+                        <li>Existing EMIs reduce your eligibility</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <div class="result-section">
+                <div class="calculator-card">
+                    <h3>Your Eligibility</h3>
+                    
+                    <div id="resultsContainer">
+                        <div class="result-main">
+                            <div class="result-label">Maximum Loan Amount</div>
+                            <div class="result-value" id="maxLoanAmount">₹0</div>
+                            <div class="result-subtitle">Based on 50% EMI to income ratio</div>
+                        </div>
+
+                        <div class="breakdown-card">
+                            <h4>EMI Breakdown</h4>
+                            <div class="breakdown-row">
+                                <span>Total Monthly Income</span>
+                                <span id="totalIncome">₹0</span>
+                            </div>
+                            <div class="breakdown-row">
+                                <span>(-) Existing EMIs</span>
+                                <span id="displayExistingEmi">₹0</span>
+                            </div>
+                            <div class="breakdown-row">
+                                <span>Available for Home Loan EMI</span>
+                                <span id="availableEmi">₹0</span>
+                            </div>
+                            <div class="breakdown-row">
+                                <span>Monthly EMI</span>
+                                <span id="monthlyEmi">₹0</span>
+                            </div>
+                        </div>
+
+                        <div class="breakdown-card">
+                            <h4>Loan Details</h4>
+                            <div class="breakdown-row">
+                                <span>Loan Amount</span>
+                                <span id="loanAmountDetail">₹0</span>
+                            </div>
+                            <div class="breakdown-row">
+                                <span>Total Interest Payable</span>
+                                <span id="totalInterest">₹0</span>
+                            </div>
+                            <div class="breakdown-row">
+                                <span>Total Amount Payable</span>
+                                <span id="totalPayable">₹0</span>
+                            </div>
+                        </div>
+
+                        <div class="emi-chart">
+                            <h4>Payment Composition</h4>
+                            <div class="chart-bar" style="background: linear-gradient(to right, var(--primary-gold) 0%, var(--primary-gold) var(--principal-percent), var(--info-blue) var(--principal-percent), var(--info-blue) 100%);" id="principalBar">
+                                <span class="chart-label">Principal</span>
+                                <span class="chart-value" id="principalPercent">0%</span>
+                            </div>
+                            <div class="chart-bar" style="background: var(--info-blue);" id="interestBar">
+                                <span class="chart-label">Interest</span>
+                                <span class="chart-value" id="interestPercent">0%</span>
+                            </div>
+                        </div>
+
+                        <div class="alert-box">
+                            <strong>📌 Note:</strong> This is an indicative calculation. Actual loan eligibility depends on credit score, bank policies, property value, and other factors. <strong>Free consultation available!</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Information Section -->
+    <section class="info-section">
+        <div class="container">
+            <h2>Understanding Home Loan Eligibility</h2>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>📊 Factors Affecting Eligibility</h3>
+                    <ul>
+                        <li>Monthly income (higher = better)</li>
+                        <li>Age (25-60 years ideal)</li>
+                        <li>Credit score (750+ preferred)</li>
+                        <li>Employment stability</li>
+                        <li>Existing loan obligations</li>
+                        <li>Property value</li>
+                        <li>Down payment capacity</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>💰 Income Calculation</h3>
+                    <ul>
+                        <li><strong>Salaried:</strong> Basic + DA + HRA + Allowances</li>
+                        <li><strong>Self-Employed:</strong> ITR average of 2-3 years</li>
+                        <li><strong>Co-applicant:</strong> Spouse income can be added</li>
+                        <li><strong>Rental Income:</strong> 50-70% considered</li>
+                        <li><strong>Other Income:</strong> Proof required</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>📄 Documents Required</h3>
+                    <ul>
+                        <li>Identity proof (Aadhaar/PAN/Passport)</li>
+                        <li>Address proof</li>
+                        <li>Income proof (salary slips/ITR)</li>
+                        <li>Bank statements (6 months)</li>
+                        <li>Employment proof</li>
+                        <li>Property documents</li>
+                        <li>Existing loan statements</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🎯 Eligibility Criteria</h3>
+                    <ul>
+                        <li><strong>Age:</strong> 21-65 years</li>
+                        <li><strong>Credit Score:</strong> 750+ (ideal)</li>
+                        <li><strong>Work Experience:</strong> 2+ years</li>
+                        <li><strong>EMI/Income:</strong> Max 50-60%</li>
+                        <li><strong>Property:</strong> Approved by bank</li>
+                        <li><strong>LTV:</strong> Up to 90% of property value</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>💡 Tips to Increase Eligibility</h3>
+                    <ul>
+                        <li>Add co-applicant (spouse/parents)</li>
+                        <li>Close existing loans</li>
+                        <li>Improve credit score</li>
+                        <li>Opt for longer tenure</li>
+                        <li>Show additional income sources</li>
+                        <li>Maintain stable employment</li>
+                        <li>Increase down payment</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🏦 Current Interest Rates</h3>
+                    <ul>
+                        <li><strong>SBI:</strong> 8.50% - 9.65% p.a.</li>
+                        <li><strong>HDFC:</strong> 8.50% - 9.50% p.a.</li>
+                        <li><strong>ICICI:</strong> 8.75% - 9.50% p.a.</li>
+                        <li><strong>Axis Bank:</strong> 8.75% - 9.65% p.a.</li>
+                        <li><strong>PNB:</strong> 8.50% - 9.40% p.a.</li>
+                        <li style="margin-top: 10px; color: var(--text-dark);"><em>*Rates vary based on credit profile</em></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 style="color: var(--primary-blue); text-align: center; margin-bottom: 40px;">Frequently Asked Questions</h2>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    How is home loan eligibility calculated?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Home loan eligibility is calculated based on your monthly income, existing EMIs, interest rate, and loan tenure. Banks typically use the Fixed Obligation to Income Ratio (FOIR) of 50-60%. Formula: Maximum EMI = (Net Monthly Income × 0.50) - Existing EMIs. The loan amount is then calculated using: Loan Amount = [EMI × (1 - (1 + r)^-n)] / r, where r = monthly interest rate and n = tenure in months. Our calculator uses these standard formulas to give you an accurate estimate.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What is the minimum and maximum home loan amount?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Minimum home loan amount varies by bank, typically starting from ₹1-3 lakhs. Maximum amount depends on your income, credit score, and property value. Most banks offer up to 90% LTV (Loan-to-Value) for properties below ₹30 lakhs, 80% for ₹30-75 lakhs, and 75% for higher values. Top earners with excellent credit can get loans up to ₹5-10 crores. Co-applicants can significantly increase your eligibility. The actual sanctioned amount will be the lower of: calculated eligibility based on income or property value × LTV percentage.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    How much salary is needed for a home loan?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Minimum salary requirements vary by bank and loan amount. Generally, banks require ₹25,000-30,000 monthly income for salaried and ₹4-5 lakhs annual ITR for self-employed. For specific loan amounts: ₹20L loan needs ~₹40K salary, ₹50L needs ~₹1L salary, ₹1Cr needs ~₹2L salary (at 8.5% for 20 years). These are approximate figures assuming no existing EMIs. Higher income, better credit score, or adding a co-applicant can help you qualify for larger loans. Use our calculator with your exact income to get precise eligibility.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Can I get a home loan with a low credit score?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    While possible, getting a home loan with a low credit score (below 750) is challenging. Score 650-750: May get loan but at higher interest rates (0.5-2% more) with stricter terms. Score below 650: Most banks reject or require substantial down payment (30-40%) and guarantor. To improve chances: 1) Add co-applicant with good score, 2) Offer higher down payment (30-40%), 3) Show stable income and employment, 4) Provide collateral, 5) Consider smaller loan amount. Better approach: Improve credit score first by paying dues, maintaining low credit utilization, and correcting errors in credit report.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Should I opt for a longer or shorter loan tenure?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Choice depends on your financial goals. LONGER TENURE (25-30 years): Lower EMI, higher eligibility, more tax benefits, but significantly higher total interest. Example: ₹50L at 8.5% for 30 years = EMI ₹38,400, total interest ₹88L. SHORTER TENURE (10-15 years): Higher EMI, lower eligibility, much less interest paid. Same loan for 15 years = EMI ₹49,200, interest ₹38L (saves ₹50L!). Best strategy: Take longer tenure for eligibility but prepay aggressively. This gives flexibility during financial stress while reducing interest through prepayments.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What is LTV ratio and how does it affect my loan?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Loan-to-Value (LTV) ratio is the loan amount as percentage of property value. RBI guidelines: Properties up to ₹30L = 90% LTV (10% down payment), ₹30-75L = 80% LTV (20% down payment), Above ₹75L = 75% LTV (25% down payment). Higher down payment (lower LTV) means: Better interest rates (0.25-0.5% discount), faster approval, lower EMI burden, more negotiating power. If your eligibility is higher than 75-80% LTV, you'll get loan limited to LTV percentage of property value, not your full eligibility.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Can both husband and wife take a joint home loan?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes! Joint home loans offer multiple benefits: 1) HIGHER ELIGIBILITY: Both incomes combined increases loan amount, 2) TAX BENEFITS: Both can claim ₹2L interest + ₹1.5L principal deduction each = total ₹7L deduction, 3) LOWER INTEREST: Some banks offer 0.05% discount for women co-applicants, 4) EASIER APPROVAL: Two income sources reduce risk. Requirements: Both must be co-owners of property, both sign loan agreement, both are equally liable for repayment. Ideal when both are working professionals wanting to maximize loan amount and tax benefits.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What are the tax benefits on home loans?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Section 24(b): Deduct up to ₹2 lakhs interest per year on home loan (both self-occupied and rented property). Section 80C: Deduct up to ₹1.5 lakhs principal repayment per year. Section 80EE: Additional ₹50,000 deduction for first-time buyers (loan up to ₹35L, property up to ₹50L). Section 80EEA: Extra ₹1.5L deduction for affordable housing (stamp duty value up to ₹45L). Joint loan: Each co-borrower can claim these deductions separately, effectively doubling benefits. Pre-construction interest: Allowed in 5 equal installments after possession. Note: These are available only in old tax regime.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Should I prepay my home loan or invest the money?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Depends on multiple factors: PREPAY IF: 1) Loan interest rate > expected investment returns (8.5% loan vs 7% FD), 2) You're risk-averse, 3) Peace of mind is priority, 4) You've maximized tax-saving investments, 5) Nearing retirement. INVEST IF: 1) Can earn >10-12% returns consistently, 2) Young with long investment horizon, 3) Haven't maxed out EPF/PPF/ELSS, 4) Have emergency fund, 5) Comfortable with debt. BALANCED APPROACH: Do both - invest in equity/mutual funds while making small prepayments annually. Use loan tenure of 20+ years for lower EMI, but target finishing in 12-15 years through prepayments.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What happens if I can't pay EMI due to job loss?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Immediate steps: 1) INFORM BANK: Contact immediately, don't avoid calls, 2) REQUEST MORATORIUM: Some banks offer 3-6 months payment pause (interest still accrues), 3) RESTRUCTURE LOAN: Extend tenure to reduce EMI, switch to interest-only payments temporarily, 4) USE EMI PROTECTION: If you have loan insurance, file claim. Prevention: Maintain 6-12 months EMI as emergency fund, consider EMI protection insurance (costs 0.5-1% of loan), avoid stretching to maximum eligibility. Missing EMIs damages credit score, incurs penalty (2-3% + interest), and risks property attachment after 90+ days default. Always communicate with bank proactively.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <div class="cta-section">
+        <div class="container">
+            <h2>Need Expert Home Loan Assistance?</h2>
+            <p style="font-size: 1.2em; margin-bottom: 15px;">Get professional help with documentation, best rates, and faster approval</p>
+            <p style="font-size: 1em; margin-bottom: 30px;">Our CAs help with ITR preparation, income proof, and tax planning for home loans</p>
+            <div class="cta-buttons">
+                <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20home%20loan%20documentation" class="btn-primary" style="background: #25D366;">💬 WhatsApp Us</a>
+            </div>
+            <p style="margin-top: 20px; font-size: 1em;">ITR Filing | Income Proof | Tax Planning | Documentation Support</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <h3 style="color: var(--primary-gold); margin-bottom: 15px;">Sidhi & Associates</h3>
+            <p>Professional Chartered Accountants | ICAI Registered</p>
+            <p style="margin-top: 15px;">
+                <a href="/">Home</a> | 
+                <a href="/services/">Services</a> | 
+                <a href="/calculator/">Calculators</a> | 
+                <a href="/calculator/HRA/">HRA Calculator</a> | 
+                <a href="/services/income-tax-return-ITR/">ITR Filing</a>
+            </p>
+            <p style="margin-top: 20px;">📞 +91 78892 57045 | ✉️ siddhiandassociatess@gmail.com</p>
+            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20used%20your%20home%20loan%20calculator" 
+           target="_blank" 
+           class="float-btn whatsapp-btn" 
+           aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+        </a>
+        <a href="tel:+917889257045" class="float-btn call-btn" aria-label="Call">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // Update display values for sliders
+        document.getElementById('income').addEventListener('input', function() {
+            document.getElementById('incomeDisplay').textContent = '₹' + formatNumber(this.value);
+        });
+
+        document.getElementById('otherIncome').addEventListener('input', function() {
+            document.getElementById('otherIncomeDisplay').textContent = '₹' + formatNumber(this.value);
+        });
+
+        document.getElementById('existingEmi').addEventListener('input', function() {
+            document.getElementById('existingEmiDisplay').textContent = '₹' + formatNumber(this.value);
+        });
+
+        document.getElementById('rate').addEventListener('input', function() {
+            document.getElementById('rateDisplay').textContent = this.value + '%';
+        });
+
+        document.getElementById('tenure').addEventListener('input', function() {
+            document.getElementById('tenureDisplay').textContent = this.value + ' years';
+        });
+
+        function calculateLoan() {
+            // Get input values
+            const monthlyIncome = parseFloat(document.getElementById('income').value);
+            const otherIncome = parseFloat(document.getElementById('otherIncome').value);
+            const existingEmi = parseFloat(document.getElementById('existingEmi').value);
+            const annualRate = parseFloat(document.getElementById('rate').value);
+            const tenureYears = parseFloat(document.getElementById('tenure').value);
+            const employmentType = document.getElementById('employmentType').value;
+
+            // Calculate total income
+            const totalIncome = monthlyIncome + otherIncome;
+
+            // Calculate maximum EMI (50% of income for salaried, 40% for self-employed)
+            const emiRatio = employmentType === 'salaried' ? 0.50 : 0.40;
+            const maxEmi = (totalIncome * emiRatio) - existingEmi;
+
+            // Validate
+            if (maxEmi <= 0) {
+                alert('Your existing EMIs are too high. Please reduce existing obligations or increase income.');
+                return;
+            }
+
+            // Calculate loan amount using EMI formula
+            // P = [EMI × (1 - (1 + r)^-n)] / r
+            const monthlyRate = annualRate / 12 / 100;
+            const tenureMonths = tenureYears * 12;
+            
+            const loanAmount = (maxEmi * (1 - Math.pow(1 + monthlyRate, -tenureMonths))) / monthlyRate;
+
+            // Calculate total payment and interest
+            const totalPayment = maxEmi * tenureMonths;
+            const totalInterest = totalPayment - loanAmount;
+
+            // Update displays
+            document.getElementById('maxLoanAmount').textContent = '₹' + formatNumberLarge(Math.round(loanAmount));
+            document.getElementById('totalIncome').textContent = '₹' + formatNumber(totalIncome);
+            document.getElementById('displayExistingEmi').textContent = '₹' + formatNumber(existingEmi);
+            document.getElementById('availableEmi').textContent = '₹' + formatNumber(maxEmi);
+            document.getElementById('monthlyEmi').textContent = '₹' + formatNumber(Math.round(maxEmi));
+            
+            document.getElementById('loanAmountDetail').textContent = '₹' + formatNumberLarge(Math.round(loanAmount));
+            document.getElementById('totalInterest').textContent = '₹' + formatNumberLarge(Math.round(totalInterest));
+            document.getElementById('totalPayable').textContent = '₹' + formatNumberLarge(Math.round(totalPayment));
+
+            // Update chart
+            const principalPercent = (loanAmount / totalPayment * 100).toFixed(1);
+            const interestPercent = (totalInterest / totalPayment * 100).toFixed(1);
+            
+            document.getElementById('principalPercent').textContent = principalPercent + '%';
+            document.getElementById('interestPercent').textContent = interestPercent + '%';
+            
+            // Update chart bar widths
+            const principalBar = document.getElementById('principalBar');
+            principalBar.style.background = `linear-gradient(to right, var(--primary-gold) 0%, var(--primary-gold) ${principalPercent}%, var(--info-blue) ${principalPercent}%, var(--info-blue) 100%)`;
+
+            // Scroll to results on mobile
+            if (window.innerWidth <= 968) {
+                document.getElementById('resultsContainer').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+
+        function resetForm() {
+            document.getElementById('income').value = 50000;
+            document.getElementById('otherIncome').value = 0;
+            document.getElementById('existingEmi').value = 0;
+            document.getElementById('rate').value = 8.5;
+            document.getElementById('tenure').value = 20;
+            document.getElementById('employmentType').value = 'salaried';
+            
+            document.getElementById('incomeDisplay').textContent = '₹50,000';
+            document.getElementById('otherIncomeDisplay').textContent = '₹0';
+            document.getElementById('existingEmiDisplay').textContent = '₹0';
+            document.getElementById('rateDisplay').textContent = '8.5%';
+            document.getElementById('tenureDisplay').textContent = '20 years';
+            
+            calculateLoan();
+        }
+
+        function formatNumber(num) {
+            return new Intl.NumberFormat('en-IN', {
+                maximumFractionDigits: 0
+            }).format(num);
+        }
+
+        function formatNumberLarge(num) {
+            if (num >= 10000000) {
+                return (num / 10000000).toFixed(2) + ' Cr';
+            } else if (num >= 100000) {
+                return (num / 100000).toFixed(2) + ' L';
+            } else {
+                return formatNumber(num);
+            }
+        }
+
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const answer = element.querySelector('.faq-answer');
+            const arrow = element.querySelector('.faq-question span');
+            const isOpen = answer.style.display === 'block';
+            
+            // Close all FAQs
+            document.querySelectorAll('.faq-answer').forEach(a => {
+                a.style.display = 'none';
+            });
+            document.querySelectorAll('.faq-question span').forEach(s => {
+                s.textContent = '▼';
+            });
+            
+            // Toggle current
+            if (!isOpen) {
+                answer.style.display = 'block';
+                arrow.textContent = '▲';
+            }
+        }
+
+        // Calculate on page load
+        window.addEventListener('load', calculateLoan);
+    </script>
+</body>
+</html>
