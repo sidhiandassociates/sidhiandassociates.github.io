@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="/sidhi.png" type="image/png" />
+    
+    <!-- Primary Meta Tags -->
+    <title>FIRE Calculator - Financial Independence Retire Early Calculator India | Free Tool 2024</title>
+    <meta name="title" content="FIRE Calculator India - Calculate When You Can Retire Early">
+    <meta name="description" content="Free FIRE Calculator to plan early retirement in India. Calculate your Financial Independence number, retirement corpus, monthly savings needed. Plan FIRE journey with expert CAs. Start now!">
+    <meta name="keywords" content="FIRE calculator India, financial independence calculator, early retirement calculator, FIRE number calculator, retirement corpus calculator, financial freedom calculator, retire early India, FIRE planning">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sidhiandassociates.github.io/calculator/fire-calculator/">
+    <meta property="og:title" content="FIRE Calculator - Plan Your Early Retirement in India">
+    <meta property="og:description" content="Calculate when you can achieve Financial Independence and Retire Early. Free tool by expert CAs. Plan your FIRE journey now!">
+    <meta property="og:image" content="https://sidhiandassociates.github.io/sidhi.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sidhiandassociates.github.io/calculator/fire-calculator/">
+    <meta property="twitter:title" content="FIRE Calculator - Financial Independence Retire Early">
+    <meta property="twitter:description" content="Calculate your path to early retirement. Free FIRE calculator for India.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://sidhiandassociates.github.io/calculator/fire-calculator/">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "FIRE Calculator India",
+      "description": "Free Financial Independence Retire Early (FIRE) calculator to plan early retirement in India. Calculate retirement corpus, years to FIRE, and monthly savings needed.",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "Sidhi & Associates",
+        "telephone": "+917889257045",
+        "url": "https://sidhiandassociates.github.io"
+      }
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sidhiandassociates.github.io"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Calculators",
+        "item": "https://sidhiandassociates.github.io/calculator/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "FIRE Calculator",
+        "item": "https://sidhiandassociates.github.io/calculator/fire-calculator/"
+      }]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is FIRE and how does it work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "FIRE (Financial Independence Retire Early) means accumulating enough wealth to cover living expenses without working. The 4% rule suggests you need 25x your annual expenses. If you spend ₹10 lakhs/year, you need ₹2.5 crore corpus. At 4% withdrawal rate, your corpus lasts 30+ years even adjusted for inflation."
+        }
+      },{
+        "@type": "Question",
+        "name": "How much money do I need to retire early in India?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For early retirement in India, you need 25-30x your annual expenses. If your monthly expenses are ₹50,000 (₹6 lakhs/year), you need ₹1.5-1.8 crore. This assumes 4% safe withdrawal rate and accounts for inflation. Use our FIRE calculator to get your personalized number based on current age, retirement age, expenses, and expected returns."
+        }
+      },{
+        "@type": "Question",
+        "name": "What is the 4% rule in FIRE?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The 4% rule states you can withdraw 4% of your retirement corpus annually without running out of money for 30+ years. It's based on historical market returns and inflation data. In India, considering higher inflation, many experts suggest 3-3.5% for safety. Our calculator uses conservative assumptions to ensure your corpus lasts throughout retirement."
+        }
+      }]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #0A2647;
+            --primary-gold: #D4A43C;
+            --light-gold: #F5E6C8;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --white: #ffffff;
+            --light-bg: #F9F7F4;
+            --success-green: #28a745;
+            --info-blue: #17a2b8;
+            --fire-orange: #FF6B35;
+            --fire-red: #D32F2F;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--light-bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .logo-text h1 {
+            font-size: 1.8em;
+            color: var(--primary-blue);
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .logo-text p {
+            font-size: 0.9em;
+            color: var(--primary-gold);
+            margin: 0;
+        }
+
+        .header-cta {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .cta-phone {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .breadcrumb {
+            background: var(--light-gold);
+            padding: 15px 0;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary-gold);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--fire-red) 0%, var(--fire-orange) 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '🔥';
+            position: absolute;
+            font-size: 300px;
+            opacity: 0.1;
+            top: -50px;
+            right: -50px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(15deg); }
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: var(--white);
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+
+        .hero-badges {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .badge {
+            background: rgba(255,255,255,0.2);
+            backdrop-filter: blur(10px);
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 60px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .calculator-section, .results-section {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+
+        .calculator-section h3, .results-section h3 {
+            color: var(--primary-blue);
+            font-size: 1.9em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--fire-orange);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 1.05em;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: var(--fire-orange);
+        }
+
+        .input-with-icon {
+            position: relative;
+        }
+
+        .input-with-icon::before {
+            content: '₹';
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        .input-with-icon input {
+            padding-left: 35px;
+        }
+
+        .input-suffix {
+            position: relative;
+        }
+
+        .input-suffix::after {
+            content: attr(data-suffix);
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        .btn-calculate {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, var(--fire-orange), var(--fire-red));
+            color: var(--white);
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-calculate:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(255,107,53,0.4);
+        }
+
+        .btn-reset {
+            width: 100%;
+            padding: 12px;
+            background: transparent;
+            color: var(--text-light);
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-reset:hover {
+            border-color: var(--fire-orange);
+            color: var(--fire-orange);
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, var(--fire-orange), var(--fire-red));
+            color: var(--white);
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .result-label {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            opacity: 0.95;
+        }
+
+        .result-value {
+            font-size: 3.5em;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .result-subtitle {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--light-bg);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border-left: 4px solid var(--fire-orange);
+        }
+
+        .stat-card h4 {
+            color: var(--text-light);
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .stat-card .value {
+            color: var(--primary-blue);
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .breakdown-section {
+            background: var(--light-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .breakdown-section h4 {
+            color: var(--primary-blue);
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .breakdown-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .breakdown-item:last-child {
+            border-bottom: none;
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1.1em;
+        }
+
+        .breakdown-label {
+            color: var(--text-light);
+        }
+
+        .breakdown-value {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .progress-bar {
+            background: #e0e0e0;
+            height: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, var(--success-green), var(--fire-orange));
+            height: 100%;
+            border-radius: 15px;
+            transition: width 1s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 0.9em;
+        }
+
+        .info-box {
+            background: #d1ecf1;
+            border-left: 4px solid var(--info-blue);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        .info-box h4 {
+            color: var(--info-blue);
+            margin-bottom: 10px;
+        }
+
+        .info-box ul {
+            margin-left: 20px;
+        }
+
+        .info-box li {
+            margin-bottom: 8px;
+        }
+
+        .alert-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            color: #856404;
+        }
+
+        .success-box {
+            background: #d4edda;
+            border-left: 4px solid var(--success-green);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            color: #155724;
+        }
+
+        .info-section {
+            padding: 60px 20px;
+        }
+
+        .info-section h2 {
+            color: var(--primary-blue);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .info-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--fire-orange);
+            border-radius: 2px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .info-card {
+            background: var(--white);
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 5px solid var(--fire-orange);
+            transition: all 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(255,107,53,0.2);
+        }
+
+        .info-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .info-card p, .info-card ul {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .info-card ul {
+            margin-left: 20px;
+        }
+
+        .info-card li {
+            margin-bottom: 10px;
+        }
+
+        .fire-types {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            margin: 40px 0;
+        }
+
+        .fire-types h3 {
+            color: var(--primary-blue);
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .fire-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .fire-type-card {
+            background: linear-gradient(135deg, var(--light-gold), #f0e0c0);
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid var(--primary-gold);
+        }
+
+        .fire-type-card h4 {
+            color: var(--primary-blue);
+            font-size: 1.4em;
+            margin-bottom: 15px;
+        }
+
+        .fire-type-card p {
+            color: var(--text-dark);
+            font-size: 1.05em;
+            line-height: 1.6;
+        }
+
+        .faq-section {
+            padding: 60px 20px;
+            background: var(--white);
+        }
+
+        .faq-item {
+            background: var(--light-bg);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--fire-orange);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .faq-question {
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1.15em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            margin-top: 15px;
+            line-height: 1.8;
+            display: none;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-gold), #C4932C);
+            color: var(--white);
+            text-align: center;
+            padding: 70px 20px;
+            margin: 40px 0;
+            border-radius: 20px;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.3em;
+            margin-bottom: 35px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 18px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: var(--white);
+            color: var(--primary-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .calculator-links {
+            background: var(--light-bg);
+            padding: 40px 20px;
+        }
+
+        .calculator-links h3 {
+            text-align: center;
+            color: var(--primary-blue);
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .calc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .calc-link {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .calc-link:hover {
+            background: var(--fire-orange);
+            color: white;
+            transform: translateX(10px);
+            border-color: var(--fire-orange);
+        }
+
+        .calc-link span {
+            font-size: 2em;
+        }
+
+        footer {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 50px 20px 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-gold);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .floating-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+
+        .float-btn {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .float-btn:hover {
+            transform: scale(1.15);
+            animation: none;
+        }
+
+        .whatsapp-btn { background: #25D366; }
+        .call-btn { background: var(--primary-gold); }
+        .float-btn svg { width: 32px; height: 32px; fill: white; }
+
+        @media (max-width: 968px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .calculator-section, .results-section {
+                padding: 25px;
+            }
+
+            .result-value {
+                font-size: 2.5em;
+            }
+
+            .header-cta {
+                display: none;
+            }
+
+            .logo-text h1 {
+                font-size: 1.4em;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-badges {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="https://sidhiandassociates.github.io/" class="logo">
+                    <img src="/sidhi.png" alt="Sidhi & Associates CA" class="logo-img" width="60" height="60">
+                    <div class="logo-text">
+                        <h1>Sidhi & Associates</h1>
+                        <p>Chartered Accountants</p>
+                    </div>
+                </a>
+                <div class="header-cta">
+                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="https://sidhiandassociates.github.io/">Home</a> / 
+            <a href="https://sidhiandassociates.github.io/calculator/">Calculators</a> / 
+            <span>FIRE Calculator</span>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h2>🔥 FIRE Calculator India</h2>
+            <p><strong>Financial Independence, Retire Early</strong></p>
+            <p>Calculate When You Can Achieve Financial Freedom & Retire on Your Terms</p>
+            <div class="hero-badges">
+                <div class="badge">✓ Free Tool</div>
+                <div class="badge">✓ Indian Context</div>
+                <div class="badge">✓ By Expert CAs</div>
+                <div class="badge">✓ Instant Results</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-content">
+        <!-- Calculator Section -->
+        <div class="calculator-section">
+            <h3>Plan Your FIRE Journey</h3>
+            
+            <form id="fireForm">
+                <div class="form-group">
+                    <label for="currentAge">Current Age *</label>
+                    <div class="input-suffix" data-suffix="years">
+                        <input type="number" id="currentAge" placeholder="30" required min="18" max="65" step="1">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="retirementAge">Target Retirement Age *</label>
+                    <div class="input-suffix" data-suffix="years">
+                        <input type="number" id="retirementAge" placeholder="45" required min="30" max="70" step="1">
+                    </div>
+                    <small style="color: var(--text-light); font-size: 0.9em;">When do you want to achieve FIRE?</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="monthlyExpenses">Current Monthly Expenses *</label>
+                    <div class="input-with-icon">
+                        <input type="number" id="monthlyExpenses" placeholder="50000" required min="10000" step="1000">
+                    </div>
+                    <small style="color: var(--text-light); font-size: 0.9em;">All monthly living expenses (rent, food, utilities, etc.)</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="currentSavings">Current Savings/Investments *</label>
+                    <div class="input-with-icon">
+                        <input type="number" id="currentSavings" placeholder="500000" required min="0" step="10000">
+                    </div>
+                    <small style="color: var(--text-light); font-size: 0.9em;">Total savings, investments, FD, MF, stocks, etc.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="monthlySavings">Monthly Savings/Investment *</label>
+                    <div class="input-with-icon">
+                        <input type="number" id="monthlySavings" placeholder="30000" required min="0" step="1000">
+                    </div>
+                    <small style="color: var(--text-light); font-size: 0.9em;">Amount you can save/invest each month</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="expectedReturn">Expected Annual Return *</label>
+                    <div class="input-suffix" data-suffix="%">
+                        <input type="number" id="expectedReturn" placeholder="12" required min="1" max="30" step="0.5" value="12">
+                    </div>
+                    <small style="color: var(--text-light); font-size: 0.9em;">Conservative: 8-10%, Moderate: 10-12%, Aggressive: 12-15%</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="inflationRate">Expected Inflation Rate *</label>
+                    <div class="input-suffix" data-suffix="%">
+                        <input type="number" id="inflationRate" placeholder="6" required min="1" max="15" step="0.5" value="6">
+                    </div>
+                    <small style="color: var(--text-light); font-size: 0.9em;">India historical average: 5-7%</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="withdrawalRate">Safe Withdrawal Rate *</label>
+                    <div class="input-suffix" data-suffix="%">
+                        <input type="number" id="withdrawalRate" placeholder="4" required min="2" max="6" step="0.5" value="4">
+                    </div>
+                    <small style="color: var(--text-light); font-size: 0.9em;">Standard: 4%, Conservative: 3-3.5%</small>
+                </div>
+
+                <button type="submit" class="btn-calculate">🔥 Calculate My FIRE Number</button>
+                <button type="button" class="btn-reset" onclick="resetForm()">🔄 Reset Calculator</button>
+            </form>
+
+            <div class="info-box" style="margin-top: 30px;">
+                <h4>💡 Quick Tips</h4>
+                <ul>
+                    <li>Be realistic with expenses - include all costs</li>
+                    <li>Consider healthcare inflation (8-10%)</li>
+                    <li>Factor in one-time expenses (wedding, car, etc.)</li>
+                    <li>Keep emergency fund separate from FIRE corpus</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section">
+            <h3>Your FIRE Plan Results</h3>
+            
+            <div id="resultsContainer" style="display: none;">
+                <div class="result-card">
+                    <div class="result-label">Your FIRE Number</div>
+                    <div class="result-value" id="fireNumber">₹0</div>
+                    <div class="result-subtitle">Total corpus needed for financial independence</div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h4>Years to FIRE</h4>
+                        <div class="value" id="yearsToFire">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Target Year</h4>
+                        <div class="value" id="targetYear">2024</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Monthly Passive Income</h4>
+                        <div class="value" id="passiveIncome">₹0</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Corpus at Retirement</h4>
+                        <div class="value" id="corpusAtRetirement">₹0</div>
+                    </div>
+                </div>
+
+                <div class="breakdown-section">
+                    <h4>Journey Breakdown</h4>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Current Savings</span>
+                        <span class="breakdown-value" id="currentSavingsDisplay">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Future Value of Savings</span>
+                        <span class="breakdown-value" id="futureValueSavings">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">SIP Contributions</span>
+                        <span class="breakdown-value" id="totalSipContributions">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">SIP Returns</span>
+                        <span class="breakdown-value" id="sipReturns">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Total Wealth Accumulated</span>
+                        <span class="breakdown-value" id="totalWealth">₹0</span>
+                    </div>
+                </div>
+
+                <div id="progressSection">
+                    <h4 style="color: var(--primary-blue); margin-bottom: 15px;">Progress to FIRE</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressBar" style="width: 0%">0%</div>
+                    </div>
+                </div>
+
+                <div id="statusMessage"></div>
+
+                <div class="breakdown-section">
+                    <h4>Adjusted for Inflation</h4>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Monthly Expenses at Retirement</span>
+                        <span class="breakdown-value" id="futureExpenses">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Annual Expenses at Retirement</span>
+                        <span class="breakdown-value" id="annualExpenses">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Corpus Required (25x Rule)</span>
+                        <span class="breakdown-value" id="corpusRequired">₹0</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="noResultsMessage">
+                <div class="info-box">
+                    <h4>👈 Start Your FIRE Journey</h4>
+                    <p>Fill in your details to calculate when you can achieve financial independence and retire early.</p>
+                </div>
+
+                <div class="success-box">
+                    <h4>📊 Example FIRE Calculation</h4>
+                    <p><strong>Profile:</strong></p>
+                    <ul style="margin: 15px 0 15px 20px;">
+                        <li>Age: 30 years, Target: 45 years</li>
+                        <li>Monthly Expenses: ₹50,000</li>
+                        <li>Current Savings: ₹5 lakhs</li>
+                        <li>Monthly SIP: ₹30,000</li>
+                        <li>Expected Return: 12% p.a.</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Result:</strong></p>
+                    <p>FIRE Number: ₹2.85 Cr | Achievable in 15 years</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FIRE Types Section -->
+    <section class="info-section" style="background: var(--light-bg);">
+        <div class="container">
+            <div class="fire-types">
+                <h3>🎯 Types of FIRE - Choose Your Path</h3>
+                <div class="fire-grid">
+                    <div class="fire-type-card">
+                        <h4>Lean FIRE</h4>
+                        <p><strong>Minimalist lifestyle</strong><br>
+                        Monthly: ₹25-40K<br>
+                        Corpus: ₹75L-₹1.2Cr<br>
+                        Best for: Frugal living enthusiasts</p>
+                    </div>
+                    
+                    <div class="fire-type-card">
+                        <h4>Regular FIRE</h4>
+                        <p><strong>Comfortable middle-class</strong><br>
+                        Monthly: ₹50-80K<br>
+                        Corpus: ₹1.5-₹2.4Cr<br>
+                        Best for: Most people's goal</p>
+                    </div>
+                    
+                    <div class="fire-type-card">
+                        <h4>Fat FIRE</h4>
+                        <p><strong>Luxurious retirement</strong><br>
+                        Monthly: ₹1.5L+<br>
+                        Corpus: ₹4.5Cr+<br>
+                        Best for: Premium lifestyle</p>
+                    </div>
+                    
+                    <div class="fire-type-card">
+                        <h4>Barista FIRE</h4>
+                        <p><strong>Semi-retirement</strong><br>
+                        Part-time work<br>
+                        Lower corpus needed<br>
+                        Best for: Work-life balance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Information Section -->
+    <section class="info-section">
+        <div class="container">
+            <h2>Understanding FIRE Movement in India</h2>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🔥 What is FIRE?</h3>
+                    <p><strong>Financial Independence, Retire Early</strong> means accumulating enough wealth to cover all living expenses without needing to work.</p>
+                    <ul style="margin-top: 15px;">
+                        <li>Build investment corpus</li>
+                        <li>Generate passive income</li>
+                        <li>Live on investment returns</li>
+                        <li>Retire decades early</li>
+                        <li>Pursue passion projects</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>📊 The 4% Rule</h3>
+                    <p><strong>Key principle:</strong> You need 25x your annual expenses as corpus. Withdraw 4% annually to sustain for 30+ years.</p>
+                    <p style="margin-top: 15px;"><strong>Example:</strong></p>
+                    <ul>
+                        <li>Annual expenses: ₹6 lakhs</li>
+                        <li>FIRE number: ₹1.5 Cr (25x)</li>
+                        <li>Annual withdrawal: ₹6L (4%)</li>
+                        <li>Corpus lasts: 30+ years</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>💰 Building Your Corpus</h3>
+                    <p><strong>Investment Strategy:</strong></p>
+                    <ul>
+                        <li>Equity MF: 60-70% (growth)</li>
+                        <li>Debt MF/FD: 20-30% (stability)</li>
+                        <li>Gold: 5-10% (hedge)</li>
+                        <li>Emergency fund: 12 months</li>
+                        <li>Regular rebalancing</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>⚡ Steps to Achieve FIRE</h3>
+                    <ul>
+                        <li><strong>1. Calculate</strong> your FIRE number</li>
+                        <li><strong>2. Increase</strong> savings rate (50%+)</li>
+                        <li><strong>3. Reduce</strong> unnecessary expenses</li>
+                        <li><strong>4. Invest</strong> aggressively early on</li>
+                        <li><strong>5. Track</strong> progress monthly</li>
+                        <li><strong>6. Optimize</strong> tax efficiency</li>
+                        <li><strong>7. Build</strong> multiple income streams</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🎯 FIRE in Indian Context</h3>
+                    <p><strong>Challenges:</strong></p>
+                    <ul>
+                        <li>Higher inflation (6-7%)</li>
+                        <li>Healthcare costs rising fast</li>
+                        <li>Family obligations</li>
+                        <li>Limited passive income options</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Advantages:</strong></p>
+                    <ul>
+                        <li>Lower cost of living</li>
+                        <li>Strong equity market returns</li>
+                        <li>Tax-saving instruments</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>📈 Investment Returns</h3>
+                    <p><strong>Historical averages (India):</strong></p>
+                    <ul>
+                        <li>Equity MF (Nifty 50): 12-15%</li>
+                        <li>Balanced Funds: 10-12%</li>
+                        <li>Debt Funds: 7-9%</li>
+                        <li>PPF: 7.1%</li>
+                        <li>FD: 6-7%</li>
+                        <li>Real Estate: 8-10%</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-size: 0.95em;"><strong>Note:</strong> Past returns don't guarantee future performance</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>⚠️ Common Mistakes</h3>
+                    <ul>
+                        <li>Underestimating expenses</li>
+                        <li>Ignoring healthcare inflation</li>
+                        <li>Not having emergency fund</li>
+                        <li>Over-optimistic return expectations</li>
+                        <li>Forgetting taxes in retirement</li>
+                        <li>No health insurance</li>
+                        <li>Single income source</li>
+                        <li>Lifestyle inflation</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>💡 Tax Optimization</h3>
+                    <p><strong>Maximize savings:</strong></p>
+                    <ul>
+                        <li>Section 80C: ₹1.5L (ELSS, PPF)</li>
+                        <li>Section 80D: ₹75K (health insurance)</li>
+                        <li>NPS 80CCD(1B): ₹50K extra</li>
+                        <li>Home loan: ₹2L interest deduction</li>
+                        <li>Long-term capital gains tax planning</li>
+                        <li>Tax-free withdrawals strategy</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🏥 Healthcare Planning</h3>
+                    <p><strong>Critical for FIRE:</strong></p>
+                    <ul>
+                        <li>Health insurance: ₹10-20L cover</li>
+                        <li>Super top-up: Additional ₹50L</li>
+                        <li>Critical illness: ₹25-50L</li>
+                        <li>Parents' coverage</li>
+                        <li>Budget ₹50K/year for health</li>
+                        <li>Inflation: 10-12% for healthcare</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🎓 Income Streams Post-FIRE</h3>
+                    <p><strong>Don't rely on corpus alone:</strong></p>
+                    <ul>
+                        <li>Dividend income from stocks</li>
+                        <li>Rental income from property</li>
+                        <li>Freelancing/consulting</li>
+                        <li>Online courses/content</li>
+                        <li>Part-time passion work</li>
+                        <li>Side business</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>📅 Age-wise Strategy</h3>
+                    <p><strong>20s-30s:</strong> Aggressive equity (80-90%)</p>
+                    <p><strong>40s:</strong> Balanced approach (70-75% equity)</p>
+                    <p><strong>50s+:</strong> Conservative (50-60% equity)</p>
+                    <p style="margin-top: 15px;"><strong>At FIRE:</strong></p>
+                    <ul>
+                        <li>Shift to 60% debt, 40% equity</li>
+                        <li>Focus on capital preservation</li>
+                        <li>Regular income generation</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🎯 Success Factors</h3>
+                    <ul>
+                        <li><strong>High savings rate:</strong> 50-70%</li>
+                        <li><strong>Frugal lifestyle:</strong> Control expenses</li>
+                        <li><strong>Disciplined investing:</strong> Regular SIPs</li>
+                        <li><strong>Long-term vision:</strong> Stay invested</li>
+                        <li><strong>Continuous learning:</strong> Financial literacy</li>
+                        <li><strong>Support system:</strong> Like-minded people</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 style="color: var(--primary-blue); text-align: center; margin-bottom: 50px; font-size: 2.5em;">Frequently Asked Questions</h2>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What is FIRE and how does it work?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    FIRE (Financial Independence Retire Early) is a movement focused on aggressive saving and investing to retire much earlier than traditional retirement age. It works by building an investment corpus large enough to generate passive income that covers all your living expenses. The core principle is the 4% rule: you need 25 times your annual expenses as corpus. For example, if you spend ₹10 lakhs per year, you need ₹2.5 crore. At a 4% withdrawal rate, your corpus can sustain you for 30+ years even after adjusting for inflation.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    How much money do I need to retire early in India?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    The amount needed depends on your lifestyle and monthly expenses. For early retirement in India, you typically need 25-30 times your annual expenses. If your monthly expenses are ₹50,000 (₹6 lakhs/year), you need ₹1.5-1.8 crore. For ₹1 lakh/month expenses (₹12 lakhs/year), you need ₹3-3.6 crore. This calculation uses the 4% safe withdrawal rate and accounts for inflation. Use our FIRE calculator above to get your personalized number based on your current age, target retirement age, expenses, savings, and expected investment returns.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What is the 4% rule and is it applicable in India?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    The 4% rule states that you can withdraw 4% of your retirement corpus annually (adjusted for inflation) without running out of money for at least 30 years. It's based on historical US market returns. In India, due to higher inflation (6-7% vs 2-3% in US) and market volatility, many financial experts suggest using a more conservative 3-3.5% withdrawal rate. This means you'd need 28-33 times your annual expenses instead of 25 times. Our calculator uses conservative assumptions to ensure your corpus lasts throughout retirement while maintaining purchasing power.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Can I achieve FIRE with a ₹50,000 monthly salary?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, FIRE is possible even with ₹50,000 monthly salary, but it requires extreme discipline and longer timeline. Key strategies: 1) Keep expenses minimal (₹20-25K/month), achieving 50%+ savings rate, 2) Live with family to reduce rent, 3) Invest ₹25-30K monthly in equity mutual funds, 4) Target Lean FIRE with ₹30-35K monthly expenses, 5) Increase income through side hustles or upskilling, 6) Consider moving to tier-2 cities with lower costs. With 12% returns, saving ₹25K/month for 15-20 years can build ₹1-1.5 crore corpus, sufficient for Lean FIRE lifestyle.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What are the best investments for FIRE in India?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Best FIRE investment strategy in India: 1) <strong>Equity Mutual Funds (60-70%):</strong> Diversified equity funds, index funds (Nifty 50, Nifty Next 50), mid & small cap funds for growth. 2) <strong>Debt Instruments (20-30%):</strong> Debt mutual funds, corporate bonds, PPF for stability. 3) <strong>Gold (5-10%):</strong> Gold ETFs or Sovereign Gold Bonds as hedge. 4) <strong>Real Estate (optional):</strong> REITs for rental income without property hassles. Invest through SIP for rupee cost averaging. Rebalance annually. As you near FIRE, gradually shift to 60% debt and 40% equity for capital preservation while maintaining growth.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    How do I reduce expenses to achieve FIRE faster?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Strategies to cut expenses and accelerate FIRE: 1) <strong>Housing:</strong> Consider roommates, live with family, or move to cheaper area (can save ₹15-20K/month), 2) <strong>Transportation:</strong> Use public transport, bike, or carpool (save ₹8-10K/month), 3) <strong>Food:</strong> Cook at home, pack lunch, limit dining out (save ₹5-8K/month), 4) <strong>Subscriptions:</strong> Cancel unused OTT, gym (save ₹2-3K/month), 5) <strong>Shopping:</strong> Buy only necessities, avoid EMIs and credit cards, 6) <strong>Entertainment:</strong> Free hobbies like reading, hiking. Total potential savings: ₹30-40K/month can reduce FIRE timeline by 5-10 years.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What about healthcare costs in early retirement?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Healthcare is critical for FIRE planning as medical inflation in India is 10-12% annually. Essential coverage: 1) <strong>Health Insurance:</strong> ₹10-20 lakh family floater policy (premium ₹15-25K/year), 2) <strong>Super Top-up:</strong> Additional ₹50 lakh cover (premium ₹8-12K/year), 3) <strong>Critical Illness:</strong> ₹25-50 lakh cover (premium ₹10-15K/year), 4) <strong>Parents' Insurance:</strong> Separate policy if dependent. Budget ₹50-75K annually for insurance premiums. Keep separate healthcare emergency fund of ₹5-10 lakhs. Buy comprehensive coverage before retiring as premiums increase significantly with age. Don't compromise on health insurance to achieve FIRE faster.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Should I pay off home loan before pursuing FIRE?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    It depends on interest rate vs investment returns: If home loan interest is 8-9% and you can earn 12-14% from equity investments, continue loan and invest surplus. You also get tax deduction up to ₹2 lakhs on interest (Section 24). However, for peace of mind and eliminating monthly EMI burden in retirement, many FIRE aspirants prefer debt-free life. <strong>Recommended approach:</strong> If interest rate > 10%, prioritize loan repayment. If < 8%, invest aggressively. For 8-10%, split 50-50 between loan prepayment and investments. Once FIRE is achieved, it's psychologically comforting to be completely debt-free with owned home reducing monthly expenses significantly.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What if I need to support parents or children after FIRE?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Factor these obligations into your FIRE calculation: 1) <strong>Parents' Support:</strong> Add ₹10-15K monthly to expenses if supporting parents, include their healthcare in insurance planning, 2) <strong>Children's Education:</strong> For college in 10-15 years, separately invest ₹10-15K monthly in dedicated education fund (target ₹30-50 lakhs), 3) <strong>Children's Wedding:</strong> Plan ₹20-30 lakhs separately (don't touch FIRE corpus), 4) <strong>Adjusted FIRE Number:</strong> Instead of 25x, use 30-35x annual expenses for family obligations. Example: If personal expenses are ₹50K/month but with family support total is ₹75K/month, your FIRE number should be based on ₹75K, not ₹50K.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    How do I stay motivated during long FIRE journey?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Staying motivated for 10-20 year FIRE journey: 1) <strong>Track Progress:</strong> Use spreadsheets or apps to see wealth growing monthly, celebrate milestones (₹10L, ₹25L, ₹50L, ₹1Cr), 2) <strong>Community:</strong> Join FIRE India groups on Reddit, Telegram, Facebook for support and learning, 3) <strong>Visualize Freedom:</strong> Remind yourself why you want FIRE - travel, hobbies, family time, no boss, 4) <strong>Small Rewards:</strong> Allow modest treats to avoid burnout from extreme frugality, 5) <strong>Side Projects:</strong> Build skills and income streams you'll pursue post-FIRE, 6) <strong>Read Success Stories:</strong> Follow FIRE achievers' journeys for inspiration. Remember, journey matters as much as destination!
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What happens if market crashes after I achieve FIRE?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Protect against market crashes with these strategies: 1) <strong>Sequence of Returns Risk:</strong> Most dangerous in first 5 years post-FIRE. Have 3-5 years expenses in debt/cash, 2) <strong>Flexible Withdrawal:</strong> In bear markets, reduce withdrawal by 10-20% temporarily, skip optional expenses, 3) <strong>Bucket Strategy:</strong> Bucket 1 (2 years cash), Bucket 2 (3-5 years debt), Bucket 3 (5+ years equity), 4) <strong>Part-time Income:</strong> Barista FIRE approach - work part-time during downturns, 5) <strong>Conservative Withdrawal:</strong> Use 3% instead of 4% for more cushion, 6) <strong>Diversification:</strong> Not all assets crash together - bonds, gold, international funds provide balance. Historical data shows markets recover within 2-3 years.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Is FIRE realistic for average Indian with family responsibilities?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, but requires modifications: Traditional FIRE (retire at 40) is challenging with Indian family dynamics, but <strong>Modified FIRE approaches work better:</strong> 1) <strong>Regular FIRE at 50:</strong> More realistic, gives 15-20 years of freedom, 2) <strong>Barista FIRE:</strong> Semi-retirement at 45, part-time consulting maintaining skills and social life, 3) <strong>Coast FIRE:</strong> Save aggressively till 40, then work stress-free jobs letting corpus grow. Key: Start early (25-30), save 40-50%, invest in equity mutual funds, increase income through career growth/side hustles. Success stories: Many Indians achieved FIRE with ₹2-3 crore corpus, expenses ₹40-60K/month, living fulfilling retired life in tier-2 cities.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <div class="container">
+        <div class="cta-section">
+            <h2>🎯 Need Expert Help Planning Your FIRE Journey?</h2>
+            <p>Our Chartered Accountants can help you with personalized financial planning, tax optimization, and investment strategies to achieve FIRE faster.</p>
+            <p style="font-size: 1.1em; margin-top: 20px;"><strong>Services:</strong> Retirement Planning | Investment Advisory | Tax Planning | Wealth Management</p>
+            <div class="cta-buttons">
+                <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hi%2C%20I%20want%20help%20with%20FIRE%20planning" class="btn-primary" style="background: #25D366;">💬 WhatsApp</a>
+                <a href="https://sidhiandassociates.github.io/services/tax-planning-filing/" class="btn-primary">📊 Tax Planning Services</a>
+            </div>
+            <p style="margin-top: 25px; font-size: 1em;">✓ Free Consultation | ✓ Expert CAs | ✓ Personalized Strategy | ✓ 5000+ Satisfied Clients</p>
+        </div>
+    </div>
+
+    <!-- Related Calculators -->
+    <div class="calculator-links">
+        <div class="container">
+            <h3>🧮 Other Useful Calculators</h3>
+            <div class="calc-grid">
+                <a href="https://sidhiandassociates.github.io/calculator/retirement-planning-calculator/" class="calc-link">
+                    <span>👴</span>
+                    <div>Retirement Planning Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/HRA/" class="calc-link">
+                    <span>🏠</span>
+                    <div>HRA Tax Exemption Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/home-loan-eligibility-calculator/" class="calc-link">
+                    <span>🏡</span>
+                    <div>Home Loan Eligibility Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/" class="calc-link">
+                    <span>📊</span>
+                    <div>View All Calculators</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="https://sidhiandassociates.github.io/">Home</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/about/">About Us</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/">All Services</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/why-us/">Why Choose Us</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/faq/">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Popular Services</h3>
+                    <ul>
+                        <li><a href="https://sidhiandassociates.github.io/services/income-tax-return-ITR/">ITR Filing - ₹499</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/tax-planning-filing/">Tax Planning</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/gst-registration/">GST Registration - ₹3,000</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/private-limited-company/">Company Formation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Calculators</h3>
+                    <ul>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/">All Calculators</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/fire-calculator/">FIRE Calculator</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/retirement-planning-calculator/">Retirement Calculator</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/HRA/">HRA Calculator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 <a href="tel:+917889257045" style="color: white; font-weight: bold;">+91 78892 57045</a></p>
+                    <p>✉️ <a href="mailto:siddhiandassociatess@gmail.com" style="color: white;">siddhiandassociatess@gmail.com</a></p>
+                    <p style="margin-top: 15px;">🕒 Mon-Sat: 9 AM - 6 PM</p>
+                    <p>⚡ Response: Under 2 Hours</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | 5000+ Satisfied Clients</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/917889257045?text=Hi%2C%20I%20used%20your%20FIRE%20calculator%20and%20need%20guidance" 
+           target="_blank" 
+           class="float-btn whatsapp-btn" 
+           aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+        </a>
+        <a href="tel:+917889257045" 
+           class="float-btn call-btn" 
+           aria-label="Call us">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // FIRE Calculator Logic
+        document.getElementById('fireForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            calculateFIRE();
+        });
+
+        function calculateFIRE() {
+            // Get input values
+            const currentAge = parseInt(document.getElementById('currentAge').value) || 0;
+            const retirementAge = parseInt(document.getElementById('retirementAge').value) || 0;
+            const monthlyExpenses = parseFloat(document.getElementById('monthlyExpenses').value) || 0;
+            const currentSavings = parseFloat(document.getElementById('currentSavings').value) || 0;
+            const monthlySavings = parseFloat(document.getElementById('monthlySavings').value) || 0;
+            const expectedReturn = parseFloat(document.getElementById('expectedReturn').value) || 12;
+            const inflationRate = parseFloat(document.getElementById('inflationRate').value) || 6;
+            const withdrawalRate = parseFloat(document.getElementById('withdrawalRate').value) || 4;
+
+            // Validation
+            if (retirementAge <= currentAge) {
+                alert('Retirement age must be greater than current age');
+                return;
+            }
+
+            if (!monthlyExpenses || !monthlySavings) {
+                alert('Please fill all required fields');
+                return;
+            }
+
+            // Calculate years to FIRE
+            const yearsToFire = retirementAge - currentAge;
+            const targetYear = new Date().getFullYear() + yearsToFire;
+
+            // Calculate future monthly expenses (adjusted for inflation)
+            const annualExpenses = monthlyExpenses * 12;
+            const futureMonthlyExpenses = monthlyExpenses * Math.pow(1 + inflationRate/100, yearsToFire);
+            const futureAnnualExpenses = futureMonthlyExpenses * 12;
+
+            // Calculate FIRE number (25x rule adjusted)
+            const multiplier = 100 / withdrawalRate;
+            const fireNumber = futureAnnualExpenses * multiplier;
+
+            // Calculate future value of current savings
+            const fvCurrentSavings = currentSavings * Math.pow(1 + expectedReturn/100, yearsToFire);
+
+            // Calculate future value of monthly SIP
+            const monthlyRate = expectedReturn / 12 / 100;
+            const months = yearsToFire * 12;
+            const fvSIP = monthlySavings * ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate) * (1 + monthlyRate);
+
+            // Total corpus at retirement
+            const totalCorpus = fvCurrentSavings + fvSIP;
+
+            // Calculate SIP contributions and returns
+            const totalSipContributions = monthlySavings * months;
+            const sipReturns = fvSIP - totalSipContributions;
+
+            // Calculate passive monthly income
+            const passiveMonthlyIncome = (totalCorpus * withdrawalRate / 100) / 12;
+
+            // Calculate progress percentage
+            const progressPercent = Math.min((totalCorpus / fireNumber) * 100, 100);
+
+            // Display results
+            document.getElementById('resultsContainer').style.display = 'block';
+            document.getElementById('noResultsMessage').style.display = 'none';
+
+            // Update main result
+            document.getElementById('fireNumber').textContent = formatCurrency(fireNumber);
+
+            // Update stats
+            document.getElementById('yearsToFire').textContent = yearsToFire;
+            document.getElementById('targetYear').textContent = targetYear;
+            document.getElementById('passiveIncome').textContent = formatCurrency(passiveMonthlyIncome);
+            document.getElementById('corpusAtRetirement').textContent = formatCurrency(totalCorpus);
+
+            // Update breakdown
+            document.getElementById('currentSavingsDisplay').textContent = formatCurrency(currentSavings);
+            document.getElementById('futureValueSavings').textContent = formatCurrency(fvCurrentSavings);
+            document.getElementById('totalSipContributions').textContent = formatCurrency(totalSipContributions);
+            document.getElementById('sipReturns').textContent = formatCurrency(sipReturns);
+            document.getElementById('totalWealth').textContent = formatCurrency(totalCorpus);
+
+            // Update inflation adjusted section
+            document.getElementById('futureExpenses').textContent = formatCurrency(futureMonthlyExpenses);
+            document.getElementById('annualExpenses').textContent = formatCurrency(futureAnnualExpenses);
+            document.getElementById('corpusRequired').textContent = formatCurrency(fireNumber);
+
+            // Update progress bar
+            const progressBar = document.getElementById('progressBar');
+            progressBar.style.width = progressPercent.toFixed(1) + '%';
+            progressBar.textContent = progressPercent.toFixed(1) + '%';
+
+            // Status message
+            const statusDiv = document.getElementById('statusMessage');
+            if (totalCorpus >= fireNumber) {
+                statusDiv.innerHTML = `
+                    <div class="success-box">
+                        <h4>🎉 Congratulations! You're on track to achieve FIRE!</h4>
+                        <p>With your current savings and investment plan, you will have <strong>${formatCurrency(totalCorpus)}</strong> by age ${retirementAge}, which exceeds your FIRE number of <strong>${formatCurrency(fireNumber)}</strong>.</p>
+                        <p style="margin-top: 10px;">Surplus: <strong>${formatCurrency(totalCorpus - fireNumber)}</strong></p>
+                    </div>
+                `;
+            } else {
+                const shortfall = fireNumber - totalCorpus;
+                const additionalSavingsNeeded = (shortfall / months) / (((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate) * (1 + monthlyRate));
+                
+                statusDiv.innerHTML = `
+                    <div class="alert-box">
+                        <h4>⚠️ Shortfall Alert</h4>
+                        <p>You're projected to have <strong>${formatCurrency(totalCorpus)}</strong> by age ${retirementAge}, but need <strong>${formatCurrency(fireNumber)}</strong>.</p>
+                        <p style="margin-top: 10px;"><strong>Shortfall: ${formatCurrency(shortfall)}</strong></p>
+                        <p style="margin-top: 10px;"><strong>Solutions:</strong></p>
+                        <ul style="margin-left: 20px; margin-top: 5px;">
+                            <li>Increase monthly SIP by ₹${formatNumber(additionalSavingsNeeded)}</li>
+                            <li>Retire ${Math.ceil((fireNumber - fvCurrentSavings) / fvSIP * yearsToFire)} years later</li>
+                            <li>Reduce monthly expenses by ₹${formatNumber((futureMonthlyExpenses - (totalCorpus * withdrawalRate / 100 / 12)))}</li>
+                        </ul>
+                    </div>
+                `;
+            }
+
+            // Scroll to results
+            document.getElementById('resultsContainer').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function resetForm() {
+            document.getElementById('fireForm').reset();
+            document.getElementById('resultsContainer').style.display = 'none';
+            document.getElementById('noResultsMessage').style.display = 'block';
+        }
+
+        function formatCurrency(num) {
+            const crore = 10000000;
+            const lakh = 100000;
+            
+            if (num >= crore) {
+                return '₹' + (num / crore).toFixed(2) + ' Cr';
+            } else if (num >= lakh) {
+                return '₹' + (num / lakh).toFixed(2) + ' L';
+            } else {
+                return '₹' + formatNumber(num);
+            }
+        }
+
+        function formatNumber(num) {
+            return new Intl.NumberFormat('en-IN', {
+                maximumFractionDigits: 0
+            }).format(num);
+        }
+
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const answer = element.querySelector('.faq-answer');
+            const arrow = element.querySelector('.faq-question span');
+            const isOpen = answer.style.display === 'block';
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(a => {
+                a.style.display = 'none';
+            });
+            document.querySelectorAll('.faq-question span').forEach(s => {
+                s.textContent = '▼';
+            });
+            
+            // Toggle current FAQ
+            if (!isOpen) {
+                answer.style.display = 'block';
+                arrow.textContent = '▲';
+            }
+        }
+
+        // Auto-calculate on input change (optional)
+        const inputs = document.querySelectorAll('#fireForm input');
+        let debounceTimer;
+        inputs.forEach(input => {
+            input.addEventListener('input', function() {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(() => {
+                    const form = document.getElementById('fireForm');
+                    if (form.checkValidity()) {
+                        calculateFIRE();
+                    }
+                }, 1000);
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.info-card, .fire-type-card, .stat-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s, transform 0.6s';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
