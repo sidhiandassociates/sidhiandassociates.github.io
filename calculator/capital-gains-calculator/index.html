@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="/sidhi.png" type="image/png" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Capital Gains Tax Calculator 2024-25 - LTCG & STCG Calculator India | Free Tool</title>
+    <meta name="title" content="Capital Gains Tax Calculator - Calculate LTCG & STCG Tax on Property, Stocks, Mutual Funds">
+    <meta name="description" content="Free Capital Gains Tax Calculator for FY 2024-25. Calculate LTCG & STCG tax on property, stocks, mutual funds. Indexation benefit, exemptions u/s 54, 54EC, 54F included. By expert CAs.">
+    <meta name="keywords" content="capital gains calculator, LTCG calculator, STCG calculator, property capital gains, stock capital gains, mutual fund capital gains, section 54, section 54EC, indexation calculator, capital gains tax India">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sidhiandassociates.github.io/calculator/capital-gains-calculator/">
+    <meta property="og:title" content="Capital Gains Tax Calculator - LTCG & STCG Calculator India">
+    <meta property="og:description" content="Calculate capital gains tax on property, stocks, mutual funds. Indexation benefit, exemptions included. Free calculator by expert CAs.">
+    <meta property="og:image" content="https://sidhiandassociates.github.io/sidhi.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sidhiandassociates.github.io/calculator/capital-gains-calculator/">
+    <meta property="twitter:title" content="Capital Gains Tax Calculator - LTCG & STCG">
+    <meta property="twitter:description" content="Calculate capital gains tax instantly. Property, stocks, MF covered. Free tool by CAs.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://sidhiandassociates.github.io/calculator/capital-gains-calculator/">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Capital Gains Tax Calculator India",
+      "description": "Free calculator for Long Term and Short Term Capital Gains tax on property, stocks, and mutual funds with indexation benefit and exemptions",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "Sidhi & Associates",
+        "telephone": "+917889257045",
+        "url": "https://sidhiandassociates.github.io"
+      }
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sidhiandassociates.github.io"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Calculators",
+        "item": "https://sidhiandassociates.github.io/calculator/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Capital Gains Calculator",
+        "item": "https://sidhiandassociates.github.io/calculator/capital-gains-calculator/"
+      }]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is the difference between LTCG and STCG?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Long Term Capital Gains (LTCG) apply to assets held for more than specified periods (24 months for property/unlisted shares, 12 months for listed equity/mutual funds). STCG applies to assets held for shorter periods. LTCG rates: 20% with indexation for property, 12.5% for equity (above ₹1.25L exempt). STCG rates: As per tax slab for property, 20% for equity."
+        }
+      },{
+        "@type": "Question",
+        "name": "How to calculate capital gains on property sale?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Capital Gains = Sale Price - (Indexed Purchase Price + Indexed Improvement Cost + Sale Expenses). For property held >24 months, it's LTCG taxed at 20% with indexation benefit. Use Cost Inflation Index (CII) for indexation. Indexed Cost = (Original Cost × CII of Sale Year) / CII of Purchase Year. Exemptions available under Section 54, 54EC, 54F."
+        }
+      },{
+        "@type": "Question",
+        "name": "What are exemptions available on capital gains?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Section 54: Exemption on LTCG from residential property if reinvested in another residential property (within 2 years). Section 54EC: Invest LTCG in specified bonds (₹50L limit) within 6 months. Section 54F: Exemption if entire sale proceeds invested in residential property. Section 112A: ₹1.25 lakh exemption on equity LTCG. Section 111A: STT paid equity STCG at 20%."
+        }
+      }]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #0A2647;
+            --primary-gold: #D4A43C;
+            --light-gold: #F5E6C8;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --white: #ffffff;
+            --light-bg: #F9F7F4;
+            --success-green: #28a745;
+            --info-blue: #17a2b8;
+            --cg-purple: #6f42c1;
+            --cg-light: #e9ecef;
+            --warning-orange: #ff9800;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--light-bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .logo-text h1 {
+            font-size: 1.8em;
+            color: var(--primary-blue);
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .logo-text p {
+            font-size: 0.9em;
+            color: var(--primary-gold);
+            margin: 0;
+        }
+
+        .header-cta {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .cta-phone {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .breadcrumb {
+            background: var(--light-gold);
+            padding: 15px 0;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary-gold);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--cg-purple) 0%, #563d7c 100%);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '📈';
+            position: absolute;
+            font-size: 300px;
+            opacity: 0.1;
+            top: -50px;
+            right: -50px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(15deg); }
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: var(--white);
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            border-radius: 15px;
+        }
+
+        .hero-stat strong {
+            display: block;
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 60px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .calculator-section, .results-section {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+
+        .calculator-section h3, .results-section h3 {
+            color: var(--primary-blue);
+            font-size: 1.9em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--cg-purple);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 1.05em;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: var(--cg-purple);
+        }
+
+        .input-with-icon {
+            position: relative;
+        }
+
+        .input-with-icon::before {
+            content: '₹';
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        .input-with-icon input {
+            padding-left: 35px;
+        }
+
+        .btn-calculate {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, var(--cg-purple), #563d7c);
+            color: var(--white);
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-calculate:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(111,66,193,0.4);
+        }
+
+        .btn-reset {
+            width: 100%;
+            padding: 12px;
+            background: transparent;
+            color: var(--text-light);
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-reset:hover {
+            border-color: var(--cg-purple);
+            color: var(--cg-purple);
+        }
+
+        .result-card {
+            background: linear-gradient(135deg, var(--cg-purple), #563d7c);
+            color: var(--white);
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .result-label {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            opacity: 0.95;
+        }
+
+        .result-value {
+            font-size: 3.5em;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .result-subtitle {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--cg-light);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border-left: 4px solid var(--cg-purple);
+        }
+
+        .stat-card h4 {
+            color: var(--text-light);
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .stat-card .value {
+            color: var(--cg-purple);
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .breakdown-section {
+            background: var(--light-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .breakdown-section h4 {
+            color: var(--primary-blue);
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .breakdown-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .breakdown-item:last-child {
+            border-bottom: none;
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1.1em;
+        }
+
+        .breakdown-label {
+            color: var(--text-light);
+        }
+
+        .breakdown-value {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .info-box {
+            background: #d1ecf1;
+            border-left: 4px solid var(--info-blue);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        .info-box h4 {
+            color: var(--info-blue);
+            margin-bottom: 10px;
+        }
+
+        .info-box ul {
+            margin-left: 20px;
+        }
+
+        .info-box li {
+            margin-bottom: 8px;
+        }
+
+        .alert-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            color: #856404;
+        }
+
+        .success-box {
+            background: #d4edda;
+            border-left: 4px solid var(--success-green);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            color: #155724;
+        }
+
+        .asset-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .asset-tab {
+            padding: 12px 25px;
+            background: var(--cg-light);
+            border: 2px solid transparent;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .asset-tab.active {
+            background: var(--cg-purple);
+            color: white;
+            border-color: var(--cg-purple);
+        }
+
+        .asset-tab:hover {
+            border-color: var(--cg-purple);
+        }
+
+        .exemption-section {
+            background: #e8f5e9;
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 20px;
+            border-left: 4px solid var(--success-green);
+        }
+
+        .info-section {
+            padding: 60px 20px;
+        }
+
+        .info-section h2 {
+            color: var(--primary-blue);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .info-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--cg-purple);
+            border-radius: 2px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .info-card {
+            background: var(--white);
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 5px solid var(--cg-purple);
+            transition: all 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(111,66,193,0.2);
+        }
+
+        .info-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .info-card p, .info-card ul {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .info-card ul {
+            margin-left: 20px;
+        }
+
+        .info-card li {
+            margin-bottom: 10px;
+        }
+
+        .faq-section {
+            padding: 60px 20px;
+            background: var(--white);
+        }
+
+        .faq-item {
+            background: var(--light-bg);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--cg-purple);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .faq-question {
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1.15em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            margin-top: 15px;
+            line-height: 1.8;
+            display: none;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-gold), #C4932C);
+            color: var(--white);
+            text-align: center;
+            padding: 70px 20px;
+            margin: 40px 0;
+            border-radius: 20px;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.3em;
+            margin-bottom: 35px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 18px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: var(--white);
+            color: var(--primary-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .calculator-links {
+            background: var(--light-bg);
+            padding: 40px 20px;
+        }
+
+        .calculator-links h3 {
+            text-align: center;
+            color: var(--primary-blue);
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .calc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .calc-link {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .calc-link:hover {
+            background: var(--cg-purple);
+            color: white;
+            transform: translateX(10px);
+            border-color: var(--cg-purple);
+        }
+
+        .calc-link span {
+            font-size: 2em;
+        }
+
+        footer {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 50px 20px 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-gold);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .floating-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+
+        .float-btn {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .float-btn:hover {
+            transform: scale(1.15);
+            animation: none;
+        }
+
+        .whatsapp-btn { background: #25D366; }
+        .call-btn { background: var(--primary-gold); }
+        .float-btn svg { width: 32px; height: 32px; fill: white; }
+
+        @media (max-width: 968px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .calculator-section, .results-section {
+                padding: 25px;
+            }
+
+            .result-value {
+                font-size: 2.5em;
+            }
+
+            .header-cta {
+                display: none;
+            }
+
+            .logo-text h1 {
+                font-size: 1.4em;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .asset-tabs {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="https://sidhiandassociates.github.io/" class="logo">
+                    <img src="/sidhi.png" alt="Sidhi & Associates CA" class="logo-img" width="60" height="60">
+                    <div class="logo-text">
+                        <h1>Sidhi & Associates</h1>
+                        <p>Chartered Accountants</p>
+                    </div>
+                </a>
+                <div class="header-cta">
+                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="https://sidhiandassociates.github.io/">Home</a> / 
+            <a href="https://sidhiandassociates.github.io/calculator/">Calculators</a> / 
+            <span>Capital Gains Calculator</span>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h2>📈 Capital Gains Tax Calculator 2024-25</h2>
+            <p><strong>Calculate LTCG & STCG Tax on Property, Stocks, Mutual Funds</strong></p>
+            <p>Indexation Benefit | Exemptions u/s 54, 54EC, 54F | FY 2024-25</p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <strong>Property</strong>
+                    <span>20% LTCG</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>Equity</strong>
+                    <span>12.5% LTCG</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>Indexation</strong>
+                    <span>Available</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-content">
+        <!-- Calculator Section -->
+        <div class="calculator-section">
+            <h3>Calculate Capital Gains Tax</h3>
+            
+            <div class="asset-tabs">
+                <div class="asset-tab active" onclick="selectAsset('property')">🏠 Property</div>
+                <div class="asset-tab" onclick="selectAsset('equity')">📊 Equity/MF</div>
+                <div class="asset-tab" onclick="selectAsset('other')">💎 Other Assets</div>
+            </div>
+
+            <form id="capitalGainsForm">
+                <div class="form-group">
+                    <label for="salePrice">Sale Price (Full Value of Consideration) *</label>
+                    <div class="input-with-icon">
+                        <input type="number" id="salePrice" placeholder="5000000" required min="0" step="1000" value="">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="purchasePrice">Purchase Price (Cost of Acquisition) *</label>
+                    <div class="input-with-icon">
+                        <input type="number" id="purchasePrice" placeholder="2000000" required min="0" step="1000" value="">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="purchaseDate">Date of Purchase *</label>
+                    <input type="date" id="purchaseDate" required value="2010-04-01">
+                </div>
+
+                <div class="form-group">
+                    <label for="saleDate">Date of Sale *</label>
+                    <input type="date" id="saleDate" required>
+                </div>
+
+                <div class="form-group" id="improvementCostGroup">
+                    <label for="improvementCost">Improvement Cost (Renovation/Addition)</label>
+                    <div class="input-with-icon">
+                        <input type="number" id="improvementCost" placeholder="0" min="0" step="1000" value="0">
+                    </div>
+                    <small style="color: var(--text-light); font-size: 0.9em;">Cost of improvements made to the asset</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="saleExpenses">Sale Expenses (Brokerage, Legal, etc.)</label>
+                    <div class="input-with-icon">
+                        <input type="number" id="saleExpenses" placeholder="0" min="0" step="1000" value="0">
+                    </div>
+                </div>
+
+                <div class="form-group" id="exemptionGroup" style="display: none;">
+                    <label for="exemptionAmount">Exemption Amount (u/s 54/54EC/54F)</label>
+                    <div class="input-with-icon">
+                        <input type="number" id="exemptionAmount" placeholder="0" min="0" step="1000" value="0">
+                    </div>
+                    <small style="color: var(--text-light); font-size: 0.9em;">Amount invested for exemption benefits</small>
+                </div>
+
+                <button type="submit" class="btn-calculate">📊 Calculate Capital Gains Tax</button>
+                <button type="button" class="btn-reset" onclick="resetForm()">🔄 Reset</button>
+            </form>
+
+            <div class="info-box" style="margin-top: 30px;">
+                <h4>💡 Key Points</h4>
+                <ul id="assetKeyPoints">
+                    <li>Property held >24 months = LTCG (20% with indexation)</li>
+                    <li>Property held ≤24 months = STCG (as per tax slab)</li>
+                    <li>Indexation benefit reduces taxable gains</li>
+                    <li>Section 54/54EC/54F exemptions available</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section">
+            <h3>Tax Calculation Results</h3>
+            
+            <div id="resultsContainer" style="display: none;">
+                <div class="result-card">
+                    <div class="result-label">Capital Gains Tax Payable</div>
+                    <div class="result-value" id="taxPayable">₹0</div>
+                    <div class="result-subtitle" id="gainType">Long Term Capital Gains</div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h4>Total Capital Gains</h4>
+                        <div class="value" id="totalGains">₹0</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Taxable Gains</h4>
+                        <div class="value" id="taxableGains">₹0</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Net Proceeds</h4>
+                        <div class="value" id="netProceeds">₹0</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Tax Rate Applied</h4>
+                        <div class="value" id="taxRate">20%</div>
+                    </div>
+                </div>
+
+                <div class="breakdown-section">
+                    <h4>Detailed Calculation</h4>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Sale Price</span>
+                        <span class="breakdown-value" id="salePriceDisplay">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Less: Sale Expenses</span>
+                        <span class="breakdown-value" id="saleExpDisplay">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Net Sale Consideration</span>
+                        <span class="breakdown-value" id="netSale">₹0</span>
+                    </div>
+                    <div class="breakdown-item" id="indexedCostRow" style="display: none;">
+                        <span class="breakdown-label">Indexed Cost of Acquisition</span>
+                        <span class="breakdown-value" id="indexedCost">₹0</span>
+                    </div>
+                    <div class="breakdown-item" id="purchaseCostRow">
+                        <span class="breakdown-label">Purchase Cost</span>
+                        <span class="breakdown-value" id="purchaseCostDisplay">₹0</span>
+                    </div>
+                    <div class="breakdown-item" id="improvementCostRow" style="display: none;">
+                        <span class="breakdown-label">Improvement Cost (Indexed)</span>
+                        <span class="breakdown-value" id="improvementDisplay">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Capital Gains</span>
+                        <span class="breakdown-value" id="gainsDisplay">₹0</span>
+                    </div>
+                    <div class="breakdown-item" id="exemptionRow" style="display: none;">
+                        <span class="breakdown-label">Less: Exemptions</span>
+                        <span class="breakdown-value" id="exemptionDisplay">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Taxable Capital Gains</span>
+                        <span class="breakdown-value" id="taxableGainsDisplay">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Tax Payable</span>
+                        <span class="breakdown-value" id="taxPayableDisplay">₹0</span>
+                    </div>
+                </div>
+
+                <div class="exemption-section" id="exemptionInfo" style="display: none;">
+                    <h4>🎯 Save Tax with Exemptions</h4>
+                    <p><strong>Section 54:</strong> Invest in residential property within 2 years</p>
+                    <p><strong>Section 54EC:</strong> Invest in specified bonds (₹50L limit) within 6 months</p>
+                    <p><strong>Section 54F:</strong> Invest entire sale proceeds in residential property</p>
+                    <p style="margin-top: 15px;"><strong>Potential Savings:</strong> Up to ₹<span id="potentialSavings">0</span></p>
+                </div>
+            </div>
+
+            <div id="noResultsMessage">
+                <div class="info-box">
+                    <h4>👈 Calculate Your Capital Gains Tax</h4>
+                    <p>Enter your asset sale details to calculate LTCG/STCG tax with indexation benefit and exemptions.</p>
+                </div>
+
+                <div class="success-box">
+                    <h4>📊 Example Calculation</h4>
+                    <p><strong>Property Sale:</strong></p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Sale Price: ₹50,00,000</li>
+                        <li>Purchase Price: ₹20,00,000 (2010)</li>
+                        <li>Holding: 14 years (LTCG)</li>
+                        <li>Indexed Cost: ₹48,00,000</li>
+                        <li>Capital Gains: ₹2,00,000</li>
+                        <li>Tax @ 20%: ₹40,000</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Information Section -->
+    <section class="info-section">
+        <div class="container">
+            <h2>Complete Guide to Capital Gains Tax in India</h2>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>📊 What is Capital Gains Tax?</h3>
+                    <p>Capital Gains Tax is levied on profits from sale of capital assets like property, stocks, mutual funds, gold, bonds, etc.</p>
+                    <p style="margin-top: 15px;"><strong>Two Types:</strong></p>
+                    <ul>
+                        <li><strong>LTCG:</strong> Assets held for long periods</li>
+                        <li><strong>STCG:</strong> Assets held for short periods</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Formula:</strong> Capital Gains = Sale Price - (Indexed Purchase Cost + Indexed Improvement Cost + Sale Expenses)</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>⏰ Holding Period Classification</h3>
+                    <p><strong>Long Term (LTCG):</strong></p>
+                    <ul>
+                        <li>Property/Land: More than 24 months</li>
+                        <li>Unlisted Shares: More than 24 months</li>
+                        <li>Listed Equity/MF: More than 12 months</li>
+                        <li>Bonds/Debentures: More than 36 months</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Short Term (STCG):</strong> Assets held for periods less than above</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>💰 LTCG Tax Rates FY 2024-25</h3>
+                    <ul>
+                        <li><strong>Property/Real Estate:</strong> 20% with indexation benefit</li>
+                        <li><strong>Listed Equity (STT paid):</strong> 12.5% (above ₹1.25L exempt)</li>
+                        <li><strong>Equity Mutual Funds:</strong> 12.5% (above ₹1.25L exempt)</li>
+                        <li><strong>Debt Mutual Funds:</strong> As per tax slab (no indexation)</li>
+                        <li><strong>Gold/Unlisted Shares:</strong> 20% with indexation</li>
+                        <li><strong>Other Assets:</strong> 20% with indexation</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>📈 STCG Tax Rates FY 2024-25</h3>
+                    <ul>
+                        <li><strong>Listed Equity (STT paid):</strong> 20% flat</li>
+                        <li><strong>Equity Mutual Funds:</strong> 20% flat</li>
+                        <li><strong>Property/Real Estate:</strong> As per income tax slab</li>
+                        <li><strong>Other Assets:</strong> As per income tax slab</li>
+                        <li><strong>Foreign Exchange Assets:</strong> As per tax slab</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Note:</strong> STCG added to income and taxed at applicable slab rates for most assets</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>📐 Indexation Benefit</h3>
+                    <p>Indexation adjusts purchase price for inflation, reducing taxable gains.</p>
+                    <p style="margin-top: 15px;"><strong>Formula:</strong></p>
+                    <p>Indexed Cost = (Original Cost × CII of Sale Year) / CII of Purchase Year</p>
+                    <p style="margin-top: 15px;"><strong>Available For:</strong></p>
+                    <ul>
+                        <li>Property/Real Estate (LTCG)</li>
+                        <li>Gold/Jewelry (LTCG)</li>
+                        <li>Unlisted Shares (LTCG)</li>
+                        <li>Bonds (held >36 months)</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Not Available:</strong> Listed equity, equity MF, debt MF (from Apr 2023)</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>📅 Cost Inflation Index (CII)</h3>
+                    <p><strong>Recent CII Values:</strong></p>
+                    <ul>
+                        <li>FY 2024-25: 363</li>
+                        <li>FY 2023-24: 348</li>
+                        <li>FY 2022-23: 331</li>
+                        <li>FY 2021-22: 317</li>
+                        <li>FY 2020-21: 301</li>
+                        <li>FY 2019-20: 289</li>
+                        <li>FY 2018-19: 280</li>
+                        <li>FY 2017-18: 272</li>
+                        <li>FY 2016-17: 264</li>
+                        <li>FY 2015-16: 254</li>
+                        <li>FY 2010-11: 167</li>
+                        <li>FY 2005-06: 117</li>
+                        <li>FY 2001-02: 100 (base)</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🏠 Section 54 - Property Exemption</h3>
+                    <p><strong>For:</strong> LTCG on sale of residential property</p>
+                    <p style="margin-top: 15px;"><strong>Conditions:</strong></p>
+                    <ul>
+                        <li>Purchase/construct one residential house in India</li>
+                        <li>Purchase: Within 1 year before or 2 years after sale</li>
+                        <li>Construction: Within 3 years after sale</li>
+                        <li>Don't sell new property within 3 years</li>
+                        <li>Only one house exemption (2 houses if gains <₹2 Cr)</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Exemption:</strong> Proportionate to amount invested</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>💎 Section 54EC - Bond Investment</h3>
+                    <p><strong>For:</strong> LTCG on any immovable property or land</p>
+                    <p style="margin-top: 15px;"><strong>Conditions:</strong></p>
+                    <ul>
+                        <li>Invest in specified bonds (REC/NHAI/PFC)</li>
+                        <li>Within 6 months of sale</li>
+                        <li>Maximum investment: ₹50 lakhs per year</li>
+                        <li>Lock-in period: 5 years</li>
+                        <li>Cannot take loan against bonds</li>
+                        <li>Interest earned is taxable</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Exemption:</strong> Amount invested (max ₹50L)</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>🏘️ Section 54F - Any Asset to Property</h3>
+                    <p><strong>For:</strong> LTCG on assets other than residential property</p>
+                    <p style="margin-top: 15px;"><strong>Conditions:</strong></p>
+                    <ul>
+                        <li>Don't own more than one house property</li>
+                        <li>Invest entire net sale proceeds</li>
+                        <li>Purchase/construct one residential house</li>
+                        <li>Same timeline as Section 54</li>
+                        <li>Don't sell within 3 years</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Exemption:</strong> (Investment/Net Sale) × Capital Gains</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>📊 Section 112A - Equity LTCG</h3>
+                    <p><strong>For:</strong> Listed equity shares & equity mutual funds</p>
+                    <p style="margin-top: 15px;"><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Holding period: >12 months</li>
+                        <li>STT paid on buy and sell</li>
+                        <li>Exemption: First ₹1.25 lakh per year</li>
+                        <li>Tax rate: 12.5% (above ₹1.25L)</li>
+                        <li>No indexation benefit</li>
+                        <li>Grandfathering for gains till Jan 31, 2018</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>💼 Section 111A - Equity STCG</h3>
+                    <p><strong>For:</strong> Listed equity shares & equity MF (≤12 months)</p>
+                    <p style="margin-top: 15px;"><strong>Key Features:</strong></p>
+                    <ul>
+                        <li>Holding period: ≤12 months</li>
+                        <li>STT paid on buy and sell</li>
+                        <li>Tax rate: 20% flat</li>
+                        <li>No exemption limit</li>
+                        <li>No indexation benefit</li>
+                        <li>Surcharge and cess applicable</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>📋 Documents Required</h3>
+                    <p><strong>For Property:</strong></p>
+                    <ul>
+                        <li>Purchase deed/agreement</li>
+                        <li>Sale deed</li>
+                        <li>Property valuation report</li>
+                        <li>Payment receipts</li>
+                        <li>Improvement cost bills</li>
+                        <li>Form 26QB (TDS certificate)</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>For Stocks/MF:</strong></p>
+                    <ul>
+                        <li>Contract notes</li>
+                        <li>Demat account statements</li>
+                        <li>Bank statements</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>💡 Tax Saving Strategies</h3>
+                    <ul>
+                        <li><strong>Hold for Long Term:</strong> Lower tax rates</li>
+                        <li><strong>Use Indexation:</strong> Reduces taxable gains</li>
+                        <li><strong>Claim Exemptions:</strong> Sections 54/54EC/54F</li>
+                        <li><strong>Stagger Sales:</strong> Spread over multiple years</li>
+                        <li><strong>Offset Losses:</strong> LTCL vs LTCG, STCL vs STCG</li>
+                        <li><strong>₹1.25L Exemption:</strong> Use annually for equity</li>
+                        <li><strong>Gift Before Sale:</strong> To lower tax bracket family member</li>
+                        <li><strong>Joint Ownership:</strong> Split gains between spouses</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>⚠️ Common Mistakes</h3>
+                    <ul>
+                        <li>Not considering indexation benefit</li>
+                        <li>Wrong holding period calculation</li>
+                        <li>Missing exemption opportunities</li>
+                        <li>Not maintaining proper documentation</li>
+                        <li>Ignoring improvement costs</li>
+                        <li>Not offsetting capital losses</li>
+                        <li>Filing wrong ITR form</li>
+                        <li>Not paying advance tax on time</li>
+                        <li>Claiming exemption without meeting conditions</li>
+                        <li>Using incorrect CII values</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>📝 ITR Filing for Capital Gains</h3>
+                    <p><strong>Which ITR Form:</strong></p>
+                    <ul>
+                        <li><strong>ITR-2:</strong> For individuals with capital gains (no business)</li>
+                        <li><strong>ITR-3:</strong> For business/professionals with capital gains</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Schedules to Fill:</strong></p>
+                    <ul>
+                        <li>Schedule CG: Capital gains details</li>
+                        <li>Schedule 112A: Equity LTCG</li>
+                        <li>Schedule 111A: Equity STCG</li>
+                        <li>Schedule AL: Asset and liability</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>⏰ Advance Tax on Capital Gains</h3>
+                    <p><strong>When to Pay:</strong></p>
+                    <ul>
+                        <li>If tax liability >₹10,000 per year</li>
+                        <li>15% by June 15</li>
+                        <li>45% by September 15</li>
+                        <li>75% by December 15</li>
+                        <li>100% by March 15</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Interest:</strong> 1% per month (Sec 234B/234C) for late payment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 style="color: var(--primary-blue); text-align: center; margin-bottom: 50px; font-size: 2.5em;">Frequently Asked Questions</h2>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What is the difference between LTCG and STCG?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Long Term Capital Gains (LTCG) apply when you sell assets held for longer periods, while Short Term Capital Gains (STCG) apply to assets held for shorter periods. For immovable property and unlisted shares, the holding period is 24 months - assets held longer qualify for LTCG, shorter periods are STCG. For listed equity shares and equity mutual funds, the threshold is 12 months. LTCG on property is taxed at 20% with indexation benefit, significantly reducing tax liability. LTCG on equity (above ₹1.25L) is taxed at 12.5% without indexation. STCG on property is added to income and taxed at your applicable slab rate, while STCG on equity is taxed at 20% flat rate.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    How to calculate capital gains on property sale?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Capital Gains = Net Sale Price - (Indexed Cost of Acquisition + Indexed Cost of Improvement + Sale Expenses). First, calculate net sale price by deducting sale expenses like brokerage, legal fees, transfer costs. Then index the original purchase price using Cost Inflation Index (CII): Indexed Cost = (Purchase Price × CII of Sale Year) / CII of Purchase Year. Similarly index any improvement costs. For property purchased in 2010 for ₹20L and sold in 2024 for ₹50L: Indexed Cost = (20,00,000 × 363) / 167 = ₹43,47,305. Capital Gains = ₹50,00,000 - ₹43,47,305 = ₹6,52,695. Tax @ 20% = ₹1,30,539. You can claim exemptions under Section 54/54EC/54F to reduce this tax.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What is indexation benefit and how does it work?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Indexation adjusts your purchase price for inflation, reducing taxable capital gains. The Government announces Cost Inflation Index (CII) values annually. Formula: Indexed Cost = (Original Cost × CII of Sale Year) / CII of Purchase Year. Example: Property bought in FY 2010-11 for ₹30L, sold in FY 2024-25 for ₹80L. Without indexation: Gains = ₹50L, Tax @ 20% = ₹10L. With indexation: Indexed Cost = (30,00,000 × 363) / 167 = ₹65,21,000. Gains = ₹80L - ₹65.21L = ₹14.79L. Tax @ 20% = ₹2.96L. Tax saved = ₹7.04 lakhs! Indexation is available for property, gold, unlisted shares, bonds held long-term. NOT available for listed equity, equity mutual funds, or debt MF (from April 2023).
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What are exemptions available on capital gains tax?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <strong>Section 54:</strong> Exemption on LTCG from residential property if you buy/construct another residential house. Buy within 1 year before or 2 years after sale, or construct within 3 years. Can buy 2 houses if gains under ₹2 crores. <strong>Section 54EC:</strong> Invest LTCG from any immovable property in specified bonds (REC/NHAI/PFC) within 6 months. Maximum ₹50 lakhs, 5-year lock-in. <strong>Section 54F:</strong> If you sell any asset other than residential property, invest entire net proceeds in residential house. Must not own more than one house. <strong>Section 112A:</strong> First ₹1.25 lakh of LTCG from equity is exempt every year. <strong>Key requirement:</strong> Don't sell the new property within 3 years, otherwise exemption will be reversed and added to income in the year of sale.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    How to calculate capital gains on stocks and mutual funds?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <strong>For Equity (Listed Shares/MF):</strong> Holding >12 months = LTCG. Capital Gains = Sale Price - Purchase Price - Expenses. No indexation benefit. LTCG: First ₹1.25L exempt per year, rest taxed @ 12.5%. STCG (≤12 months): 20% flat. Example: Bought shares for ₹5L, sold for ₹8L after 18 months. LTCG = ₹3L. Tax = (₹3L - ₹1.25L) × 12.5% = ₹21,875. <strong>For Debt MF:</strong> Treated as STCG regardless of holding period (from Apr 2023). Added to income, taxed at slab rate. No indexation. <strong>Important:</strong> STT must be paid on both buy and sell for equity to get concessional rates. Calculate separately for each stock - can't offset LTCL against STCG. Maintain contract notes and statements as proof.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Can I offset capital losses against capital gains?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, capital losses can offset capital gains with specific rules: <strong>STCL (Short Term Capital Loss):</strong> Can be offset against both STCG and LTCG in the same year. <strong>LTCL (Long Term Capital Loss):</strong> Can only be offset against LTCG, not against STCG. <strong>Carry forward:</strong> Unabsorbed capital losses can be carried forward for 8 years. Must file ITR on time (before due date) to carry forward. Example: STCL of ₹2L, LTCG of ₹5L from property = Tax on ₹3L only. LTCL of ₹1L from stocks, STCG of ₹3L from property = Cannot offset, pay tax on full ₹3L STCG, carry forward ₹1L LTCL. <strong>Note:</strong> Intra-head adjustment only - can't offset speculative loss or house property loss against capital gains. Plan your sales strategically to optimize tax.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    When should I pay tax on capital gains?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <strong>Property Sale TDS:</strong> Buyer deducts TDS under Section 194-IA @ 1% (if sale value >₹50L) at the time of payment. For capital gains from stocks, you must pay advance tax. <strong>Advance Tax Schedule:</strong> 15% by June 15, 45% by September 15, 75% by December 15, 100% by March 15. If expected tax liability is >₹10,000, advance tax is mandatory. Interest @ 1% per month charged for delay (Section 234B/234C). <strong>Best Practice:</strong> Sell property/stocks early in financial year to have time for tax planning. If selling late in year, pay advance tax immediately. File ITR and report capital gains even if no tax due (for exemption claims). Use Form 26QB for property TDS payments. Keep all documents ready - purchase deed, sale deed, payment proofs, investment proofs for exemptions.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Do I need to pay tax if I reinvest property sale proceeds?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Not automatically - you need to claim exemption under specific sections. <strong>Section 54:</strong> If you sell a residential property and buy/construct another residential property within specified time (1 year before to 2 years after for purchase, 3 years for construction), LTCG is exempt. Can buy 2 houses if gains under ₹2 crores (only once). <strong>Section 54F:</strong> If you sell any other asset (stocks, gold, commercial property) and invest entire net proceeds in residential property, proportionate gains are exempt. Must not own more than one house at time of purchase. <strong>Section 54EC:</strong> Invest LTCG in specified bonds (REC/NHAI) within 6 months, get full exemption up to ₹50L. <strong>Important:</strong> Must deposit unutilized amount in Capital Gains Account Scheme before ITR due date. Don't sell new property within 3 years or exemption reverses. File ITR claiming exemption with all documents.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What is Capital Gains Account Scheme?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Capital Gains Account Scheme (CGAS) is a government scheme to park capital gains when you can't invest immediately for exemption. <strong>When to use:</strong> If you can't purchase/construct property before ITR due date but want to claim Section 54/54F exemption. Deposit amount you plan to invest for exemption in CGAS account. <strong>Where to open:</strong> Any authorized bank or post office. Form: "Deposit in an Account under Capital Gains Accounts Scheme, 1988". <strong>Types:</strong> Account A (savings), Account B (short-term deposits), Account C (long-term deposits). <strong>Timeline:</strong> Deposit before ITR due date. Withdraw when making actual investment. Must complete investment within allowed period (2-3 years). <strong>Interest:</strong> Earns interest similar to savings account. <strong>Penalty:</strong> If investment not made within time, amount withdrawn becomes taxable as capital gains in that year.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    How is inherited property taxed when sold?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <strong>No tax on inheritance:</strong> Receiving inherited property is tax-free. <strong>Tax on sale:</strong> When you sell inherited property, you pay capital gains tax. <strong>Purchase cost:</strong> Use the cost at which previous owner (from whom you inherited) acquired it, not current market value. <strong>Purchase date:</strong> Use previous owner's purchase date for calculating holding period. <strong>Example:</strong> Father bought property in 2000 for ₹10L. You inherited in 2020 (no tax). You sell in 2024 for ₹50L. Holding period = 24 years (from 2000), qualifies for LTCG. Indexed Cost = (10,00,000 × 363) / 406 (CII of 2000-01) = ₹8,94,000 approximately. Capital Gains = ₹50L - ₹8.94L = ₹41.06L. Tax @ 20% = ₹8.21L. Can claim exemptions u/s 54/54EC/54F to reduce tax. <strong>Documents needed:</strong> Original purchase deed, death certificate, succession documents.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What documents are needed for capital gains tax calculation?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <strong>For Property:</strong> (1) Original purchase deed/agreement showing date and price, (2) Sale deed with sale price and date, (3) Property tax receipts, (4) Improvement cost bills (renovation, construction), (5) Payment receipts/bank statements, (6) Valuation report from registered valuer, (7) Form 26QB (TDS certificate from buyer), (8) Electricity/water bills showing possession dates. <strong>For Stocks/Mutual Funds:</strong> (1) Contract notes for buy and sell transactions, (2) Demat account statements, (3) Bank statements showing payments, (4) STT payment certificates, (5) Dividend statements, (6) Broker statements showing all transactions. <strong>For Exemption Claims:</strong> (1) New property purchase deed/agreement, (2) Construction bills and receipts, (3) Capital Gains Account Scheme passbook, (4) Bond investment certificates (54EC). <strong>Keep all documents for 7 years</strong> as Income Tax can scrutinize returns up to 6 years.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Can capital gains tax be avoided legally?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, through legitimate exemptions and tax planning: <strong>Hold Long Term:</strong> LTCG rates are lower (20% vs slab for property, 12.5% for equity). <strong>Use Exemptions:</strong> Section 54/54EC/54F can eliminate entire tax if properly planned. <strong>Stagger Sales:</strong> Sell in different financial years to use ₹1.25L equity exemption annually. <strong>Offset Losses:</strong> Book capital losses to offset against gains. <strong>Gift Strategy:</strong> Gift property to spouse/family in lower tax bracket before sale (careful with clubbing provisions). <strong>Joint Ownership:</strong> Split property between spouses to distribute gains. <strong>Indexation:</strong> Use for property to reduce taxable gains significantly. <strong>Retirement Year Sales:</strong> Sell after retirement when in lower tax slab (for STCG). <strong>Agricultural Land:</strong> Agricultural land beyond municipal limits is exempt. <strong>Important:</strong> All strategies must comply with law. Avoid shell companies, fake transactions, or circular trading which are illegal.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <div class="container">
+        <div class="cta-section">
+            <h2>💼 Expert Capital Gains Tax Planning & Filing</h2>
+            <p>Save thousands in taxes with expert CA guidance. We help you optimize exemptions, plan investments, and file accurate returns.</p>
+            <p style="font-size: 1.1em; margin-top: 20px;"><strong>Services:</strong> Capital Gains Tax Planning | Section 54/54EC/54F Planning | Property Transaction Advisory | ITR Filing</p>
+            <div class="cta-buttons">
+                <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hi%2C%20I%20need%20help%20with%20capital%20gains%20tax" class="btn-primary" style="background: #25D366;">💬 WhatsApp</a>
+                <a href="https://sidhiandassociates.github.io/services/capital-gains-tax/" class="btn-primary">📊 Capital Gains Service</a>
+            </div>
+            <p style="margin-top: 25px; font-size: 1em;">✓ Free Consultation | ✓ Expert CAs | ✓ Maximum Tax Savings | ✓ Property Sale Specialist</p>
+        </div>
+    </div>
+
+    <!-- Related Calculators -->
+    <div class="calculator-links">
+        <div class="container">
+            <h3>🧮 Related Financial Calculators</h3>
+            <div class="calc-grid">
+                <a href="https://sidhiandassociates.github.io/calculator/income-tax-calculator/" class="calc-link">
+                    <span>💰</span>
+                    <div>Income Tax Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/HRA/" class="calc-link">
+                    <span>🏠</span>
+                    <div>HRA Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/home-loan-eligibility-calculator/" class="calc-link">
+                    <span>🏡</span>
+                    <div>Home Loan Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/retirement-planning-calculator/" class="calc-link">
+                    <span>👴</span>
+                    <div>Retirement Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/ppf-calculator/" class="calc-link">
+                    <span>🏦</span>
+                    <div>PPF Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/" class="calc-link">
+                    <span>📊</span>
+                    <div>View All Calculators</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="https://sidhiandassociates.github.io/">Home</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/about/">About Us</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/">All Services</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/why-us/">Why Choose Us</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/faq/">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Popular Services</h3>
+                    <ul>
+                        <li><a href="https://sidhiandassociates.github.io/services/income-tax-return-ITR/">ITR Filing - ₹499</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/capital-gains-tax/">Capital Gains Tax</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/tax-planning-filing/">Tax Planning</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/business-advisory/">Business Advisory</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Tax Calculators</h3>
+                    <ul>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/">All Calculators</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/capital-gains-calculator/">Capital Gains Calculator</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/income-tax-calculator/">Income Tax Calculator</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/HRA/">HRA Calculator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 <a href="tel:+917889257045" style="color: white; font-weight: bold;">+91 78892 57045</a></p>
+                    <p>✉️ <a href="mailto:siddhiandassociatess@gmail.com" style="color: white;">siddhiandassociatess@gmail.com</a></p>
+                    <p style="margin-top: 15px;">🕒 Mon-Sat: 9 AM - 6 PM</p>
+                    <p>⚡ Response: Under 2 Hours</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Capital Gains Tax Specialists</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/917889257045?text=Hi%2C%20I%20used%20your%20capital%20gains%20calculator%20and%20need%20help" 
+           target="_blank" 
+           class="float-btn whatsapp-btn" 
+           aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+        </a>
+        <a href="tel:+917889257045" 
+           class="float-btn call-btn" 
+           aria-label="Call us">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // Asset type selection
+        let currentAsset = 'property';
+
+        // Cost Inflation Index data
+        const CII = {
+            '2001': 100, '2002': 105, '2003': 109, '2004': 113, '2005': 117,
+            '2006': 122, '2007': 129, '2008': 137, '2009': 148, '2010': 167,
+            '2011': 184, '2012': 200, '2013': 220, '2014': 240, '2015': 254,
+            '2016': 264, '2017': 272, '2018': 280, '2019': 289, '2020': 301,
+            '2021': 317, '2022': 331, '2023': 348, '2024': 363, '2025': 363
+        };
+
+        function selectAsset(type) {
+            currentAsset = type;
+            
+            // Update active tab
+            document.querySelectorAll('.asset-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            // Update key points based on asset type
+            const keyPoints = document.getElementById('assetKeyPoints');
+            
+            if (type === 'property') {
+                keyPoints.innerHTML = `
+                    <li>Property held >24 months = LTCG (20% with indexation)</li>
+                    <li>Property held ≤24 months = STCG (as per tax slab)</li>
+                    <li>Indexation benefit reduces taxable gains</li>
+                    <li>Section 54/54EC/54F exemptions available</li>
+                `;
+                document.getElementById('improvementCostGroup').style.display = 'block';
+                document.getElementById('exemptionGroup').style.display = 'block';
+            } else if (type === 'equity') {
+                keyPoints.innerHTML = `
+                    <li>Listed equity held >12 months = LTCG (12.5%)</li>
+                    <li>Listed equity held ≤12 months = STCG (20%)</li>
+                    <li>First ₹1.25 lakh LTCG exempt per year</li>
+                    <li>No indexation benefit on equity</li>
+                    <li>STT must be paid for concessional rates</li>
+                `;
+                document.getElementById('improvementCostGroup').style.display = 'none';
+                document.getElementById('exemptionGroup').style.display = 'none';
+            } else {
+                keyPoints.innerHTML = `
+                    <li>Most assets: >24/36 months = LTCG (20% with indexation)</li>
+                    <li>Short term holdings = STCG (as per tax slab)</li>
+                    <li>Gold, unlisted shares get indexation benefit</li>
+                    <li>Debt MF now taxed as STCG (no indexation)</li>
+                `;
+                document.getElementById('improvementCostGroup').style.display = 'block';
+                document.getElementById('exemptionGroup').style.display = 'none';
+            }
+        }
+
+        // Set today's date as default for sale date
+        document.getElementById('saleDate').valueAsDate = new Date();
+
+        // Capital Gains Calculator Logic
+        document.getElementById('capitalGainsForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            calculateCapitalGains();
+        });
+
+        function calculateCapitalGains() {
+            // Get input values
+            const salePrice = parseFloat(document.getElementById('salePrice').value) || 0;
+            const purchasePrice = parseFloat(document.getElementById('purchasePrice').value) || 0;
+            const improvementCost = parseFloat(document.getElementById('improvementCost').value) || 0;
+            const saleExpenses = parseFloat(document.getElementById('saleExpenses').value) || 0;
+            const exemptionAmount = parseFloat(document.getElementById('exemptionAmount').value) || 0;
+            
+            const purchaseDate = new Date(document.getElementById('purchaseDate').value);
+            const saleDate = new Date(document.getElementById('saleDate').value);
+
+            // Validation
+            if (!salePrice || !purchasePrice || !purchaseDate || !saleDate) {
+                alert('Please fill all required fields');
+                return;
+            }
+
+            if (purchaseDate >= saleDate) {
+                alert('Sale date must be after purchase date');
+                return;
+            }
+
+            // Calculate holding period
+            const holdingMonths = (saleDate - purchaseDate) / (1000 * 60 * 60 * 24 * 30.44);
+            
+            let isLongTerm = false;
+            let taxRate = 0;
+            let useIndexation = false;
+            let equityExemption = 0;
+
+            // Determine LTCG/STCG based on asset type
+            if (currentAsset === 'property') {
+                isLongTerm = holdingMonths > 24;
+                if (isLongTerm) {
+                    taxRate = 20;
+                    useIndexation = true;
+                } else {
+                    taxRate = 30; // Assuming 30% slab
+                }
+            } else if (currentAsset === 'equity') {
+                isLongTerm = holdingMonths > 12;
+                if (isLongTerm) {
+                    taxRate = 12.5;
+                    equityExemption = 125000; // ₹1.25 lakh exemption
+                } else {
+                    taxRate = 20;
+                }
+            } else {
+                isLongTerm = holdingMonths > 24;
+                if (isLongTerm) {
+                    taxRate = 20;
+                    useIndexation = true;
+                } else {
+                    taxRate = 30;
+                }
+            }
+
+            // Calculate indexed costs
+            let indexedPurchasePrice = purchasePrice;
+            let indexedImprovementCost = improvementCost;
+
+            if (useIndexation) {
+                const purchaseYear = purchaseDate.getFullYear();
+                const saleYear = saleDate.getFullYear();
+                
+                const purchaseCII = CII[purchaseYear] || CII['2001'];
+                const saleCII = CII[saleYear] || CII['2024'];
+
+                indexedPurchasePrice = (purchasePrice * saleCII) / purchaseCII;
+                if (improvementCost > 0) {
+                    indexedImprovementCost = (improvementCost * saleCII) / purchaseCII;
+                }
+            }
+
+            // Calculate capital gains
+            const netSalePrice = salePrice - saleExpenses;
+            const totalCost = indexedPurchasePrice + indexedImprovementCost;
+            let capitalGains = netSalePrice - totalCost;
+
+            // Apply exemptions
+            let taxableGains = capitalGains;
+            
+            if (currentAsset === 'equity' && isLongTerm && capitalGains > equityExemption) {
+                taxableGains = capitalGains - equityExemption;
+            }
+            
+            if (exemptionAmount > 0 && currentAsset === 'property') {
+                taxableGains = Math.max(0, capitalGains - exemptionAmount);
+            }
+
+            // Calculate tax
+            const taxPayable = (taxableGains > 0) ? (taxableGains * taxRate) / 100 : 0;
+            const netProceeds = netSalePrice - taxPayable;
+
+            // Display results
+            document.getElementById('resultsContainer').style.display = 'block';
+            document.getElementById('noResultsMessage').style.display = 'none';
+
+            // Update main result
+            document.getElementById('taxPayable').textContent = formatCurrency(taxPayable);
+            document.getElementById('gainType').textContent = isLongTerm ? 'Long Term Capital Gains (LTCG)' : 'Short Term Capital Gains (STCG)';
+
+            // Update stats
+            document.getElementById('totalGains').textContent = formatCurrency(capitalGains);
+            document.getElementById('taxableGains').textContent = formatCurrency(taxableGains);
+            document.getElementById('netProceeds').textContent = formatCurrency(netProceeds);
+            document.getElementById('taxRate').textContent = taxRate + '%';
+
+            // Update breakdown
+            document.getElementById('salePriceDisplay').textContent = formatCurrency(salePrice);
+            document.getElementById('saleExpDisplay').textContent = formatCurrency(saleExpenses);
+            document.getElementById('netSale').textContent = formatCurrency(netSalePrice);
+            document.getElementById('purchaseCostDisplay').textContent = formatCurrency(useIndexation ? indexedPurchasePrice : purchasePrice);
+            document.getElementById('gainsDisplay').textContent = formatCurrency(capitalGains);
+            document.getElementById('taxableGainsDisplay').textContent = formatCurrency(taxableGains);
+            document.getElementById('taxPayableDisplay').textContent = formatCurrency(taxPayable);
+
+            // Show/hide indexation row
+            if (useIndexation) {
+                document.getElementById('indexedCostRow').style.display = 'flex';
+                document.getElementById('indexedCost').textContent = formatCurrency(indexedPurchasePrice);
+                document.getElementById('purchaseCostRow').style.display = 'none';
+            } else {
+                document.getElementById('indexedCostRow').style.display = 'none';
+                document.getElementById('purchaseCostRow').style.display = 'flex';
+            }
+
+            // Show/hide improvement cost
+            if (improvementCost > 0) {
+                document.getElementById('improvementCostRow').style.display = 'flex';
+                document.getElementById('improvementDisplay').textContent = formatCurrency(indexedImprovementCost);
+            } else {
+                document.getElementById('improvementCostRow').style.display = 'none';
+            }
+
+            // Show/hide exemption
+            const totalExemption = exemptionAmount + (currentAsset === 'equity' && isLongTerm ? equityExemption : 0);
+            if (totalExemption > 0) {
+                document.getElementById('exemptionRow').style.display = 'flex';
+                document.getElementById('exemptionDisplay').textContent = formatCurrency(totalExemption);
+            } else {
+                document.getElementById('exemptionRow').style.display = 'none';
+            }
+
+            // Show exemption info for property LTCG
+            if (currentAsset === 'property' && isLongTerm && capitalGains > 0) {
+                document.getElementById('exemptionInfo').style.display = 'block';
+                document.getElementById('potentialSavings').textContent = formatNumber(capitalGains * 0.2);
+            } else {
+                document.getElementById('exemptionInfo').style.display = 'none';
+            }
+
+            // Scroll to results
+            document.getElementById('resultsContainer').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function resetForm() {
+            document.getElementById('capitalGainsForm').reset();
+            document.getElementById('saleDate').valueAsDate = new Date();
+            document.getElementById('purchaseDate').value = '2010-04-01';
+            document.getElementById('resultsContainer').style.display = 'none';
+            document.getElementById('noResultsMessage').style.display = 'block';
+        }
+
+        function formatCurrency(num) {
+            if (num < 0) num = 0;
+            const crore = 10000000;
+            const lakh = 100000;
+            
+            if (num >= crore) {
+                return '₹' + (num / crore).toFixed(2) + ' Cr';
+            } else if (num >= lakh) {
+                return '₹' + (num / lakh).toFixed(2) + ' L';
+            } else {
+                return '₹' + formatNumber(num);
+            }
+        }
+
+        function formatNumber(num) {
+            return new Intl.NumberFormat('en-IN', {
+                maximumFractionDigits: 0
+            }).format(num);
+        }
+
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const answer = element.querySelector('.faq-answer');
+            const arrow = element.querySelector('.faq-question span');
+            const isOpen = answer.style.display === 'block';
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(a => {
+                a.style.display = 'none';
+            });
+            document.querySelectorAll('.faq-question span').forEach(s => {
+                s.textContent = '▼';
+            });
+            
+            // Toggle current FAQ
+            if (!isOpen) {
+                answer.style.display = 'block';
+                arrow.textContent = '▲';
+            }
+        }
+
+        // Auto-calculate on input change
+        const inputs = document.querySelectorAll('#capitalGainsForm input');
+        let debounceTimer;
+        inputs.forEach(input => {
+            input.addEventListener('input', function() {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(() => {
+                    const form = document.getElementById('capitalGainsForm');
+                    if (form.checkValidity()) {
+                        calculateCapitalGains();
+                    }
+                }, 1000);
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.info-card, .stat-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s, transform 0.6s';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
