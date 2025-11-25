@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <link rel="icon" href="https://sidhiandassociates.github.io/sidhi.png" type="image/png" />
+    
     <!-- Primary Meta Tags -->
     <title>EMI Calculator 2024 - Home Loan, Personal Loan, Car Loan EMI Calculator India | Free Tool</title>
     <meta name="title" content="EMI Calculator - Calculate Monthly EMI for Home, Personal, Car Loan">
@@ -176,15 +178,36 @@
             padding: 15px 0;
         }
 
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
         .logo-text h1 {
             font-size: 1.8em;
             color: var(--primary-blue);
             font-weight: 700;
+            margin: 0;
         }
 
         .logo-text p {
             font-size: 0.9em;
             color: var(--primary-gold);
+            margin: 0;
+        }
+
+        .header-cta {
+            display: flex;
+            gap: 15px;
+            align-items: center;
         }
 
         .cta-phone {
@@ -192,6 +215,22 @@
             text-decoration: none;
             font-weight: 600;
             font-size: 1.1em;
+        }
+
+        .breadcrumb {
+            background: #F5E6C8;
+            padding: 15px 0;
+            font-size: 0.95em;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary-gold);
         }
 
         .hero {
@@ -512,6 +551,97 @@
             border-top: 1px solid rgba(255,255,255,0.2);
         }
 
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-gold), #C4932C);
+            color: var(--white);
+            text-align: center;
+            padding: 70px 20px;
+            margin: 40px 0;
+            border-radius: 20px;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .btn-primary {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 18px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background: var(--white);
+            color: var(--primary-blue);
+            transform: translateY(-3px);
+        }
+
+        .calc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .calc-link {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .calc-link:hover {
+            background: var(--emi-teal);
+            color: white;
+            transform: translateX(10px);
+        }
+
+        .float-btn {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            animation: bounce 2s infinite;
+            z-index: 999;
+        }
+
+        .float-btn:hover {
+            transform: scale(1.15);
+            animation: none;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .whatsapp-btn { background: #25D366; }
+        .call-btn { background: var(--primary-gold); }
+
         @media (max-width: 968px) {
             .main-content {
                 grid-template-columns: 1fr;
@@ -535,14 +665,27 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="logo-text">
-                    <h1>EMI Calculator</h1>
-                    <p>Loan EMI Calculator Tool</p>
+                <a href="https://sidhiandassociates.github.io/" class="logo">
+                    <img src="https://sidhiandassociates.github.io/sidhi.png" alt="Sidhi & Associates CA" class="logo-img" width="60" height="60">
+                    <div class="logo-text">
+                        <h1>Sidhi & Associates</h1>
+                        <p>Chartered Accountants</p>
+                    </div>
+                </a>
+                <div class="header-cta">
+                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
                 </div>
-                <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
             </div>
         </div>
     </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="https://sidhiandassociates.github.io/">Home</a> / 
+            <a href="https://sidhiandassociates.github.io/calculator/">Calculators</a> / 
+            <span>EMI Calculator</span>
+        </div>
+    </div>
 
     <section class="hero">
         <div class="container">
@@ -581,7 +724,7 @@
                 <div class="form-group">
                     <label for="loanAmount">Loan Amount (₹) *</label>
                     <input type="number" id="loanAmount" placeholder="1000000" required min="10000" step="10000" value="3000000">
-                    <div class="slider-container">
+                    <div style="margin-top: 15px;">
                         <input type="range" id="loanSlider" class="slider" min="10000" max="50000000" step="10000" value="3000000">
                         <div class="slider-labels">
                             <span>₹10K</span>
@@ -593,7 +736,7 @@
                 <div class="form-group">
                     <label for="interestRate">Interest Rate (% p.a.) *</label>
                     <input type="number" id="interestRate" placeholder="8.5" required min="1" max="36" step="0.1" value="8.5">
-                    <div class="slider-container">
+                    <div style="margin-top: 15px;">
                         <input type="range" id="rateSlider" class="slider" min="1" max="36" step="0.1" value="8.5">
                         <div class="slider-labels">
                             <span>1%</span>
@@ -609,7 +752,7 @@
                         <option value="months">Months</option>
                     </select>
                     <input type="number" id="loanTenure" placeholder="20" required min="1" step="1" value="20" style="margin-top: 10px;">
-                    <div class="slider-container">
+                    <div style="margin-top: 15px;">
                         <input type="range" id="tenureSlider" class="slider" min="1" max="30" step="1" value="20">
                         <div class="slider-labels">
                             <span>1</span>
@@ -761,6 +904,54 @@
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <div class="container">
+        <div class="cta-section">
+            <h2>💼 Need Expert Loan Advisory & Planning?</h2>
+            <p>Get the best loan deals, compare rates, optimize EMI, and plan your finances with expert guidance from our CAs.</p>
+            <p style="font-size: 1.1em; margin-top: 20px;"><strong>Services:</strong> Loan Advisory | Rate Negotiation | EMI Optimization | Tax Planning | Financial Planning</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+                <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hi%2C%20I%20used%20your%20EMI%20calculator%20and%20need%20loan%20advice" class="btn-primary" style="background: #25D366;">💬 WhatsApp</a>
+                <a href="https://sidhiandassociates.github.io/services/business-advisory/" class="btn-primary">📊 Financial Advisory</a>
+            </div>
+            <p style="margin-top: 25px; font-size: 1em;">✓ Free Consultation | ✓ Expert CAs | ✓ Best Loan Rates | ✓ Save Thousands in Interest</p>
+        </div>
+    </div>
+
+    <!-- Related Calculators -->
+    <div style="background: var(--light-bg); padding: 40px 20px;">
+        <div class="container">
+            <h3 style="text-align: center; color: var(--primary-blue); font-size: 2em; margin-bottom: 30px;">🧮 Related Financial Calculators</h3>
+            <div class="calc-grid">
+                <a href="https://sidhiandassociates.github.io/calculator/home-loan-eligibility-calculator/" class="calc-link">
+                    <span>🏠</span>
+                    <div>Home Loan Eligibility</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/income-tax-calculator/" class="calc-link">
+                    <span>💰</span>
+                    <div>Income Tax Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/ppf-calculator/" class="calc-link">
+                    <span>🏦</span>
+                    <div>PPF Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/fd-calculator/" class="calc-link">
+                    <span>💵</span>
+                    <div>FD Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/retirement-planning-calculator/" class="calc-link">
+                    <span>👴</span>
+                    <div>Retirement Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/" class="calc-link">
+                    <span>📊</span>
+                    <div>View All Calculators</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -770,31 +961,29 @@
                     <ul>
                         <li><a href="https://sidhiandassociates.github.io/">Home</a></li>
                         <li><a href="https://sidhiandassociates.github.io/about/">About Us</a></li>
-                        <li><a href="https://sidhiandassociates.github.io/services/">Our Services</a></li>
-                        <!-- <li><a href="https://sidhiandassociates.github.io/contact/">Contact Us</a></li>
-                        <li><a href="https://sidhiandassociates.github.io/privacy/">Privacy Policy</a></li> -->
+                        <li><a href="https://sidhiandassociates.github.io/services/">All Services</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/why-us/">Why Choose Us</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/faq/">FAQ</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Popular Calculators</h3>
+                    <h3>Popular Services</h3>
                     <ul>
-                        <li><a href="https://sidhiandassociates.github.io/calculator/emi-calculator/">EMI Calculator</a></li>
-                        <li><a href="https://sidhiandassociates.github.io/calculator/home-loan-eligibility-calculator/">Home Loan Eligibility</a></li>
-                        <li><a href="https://sidhiandassociates.github.io/calculator/income-tax-calculator/">Income Tax Calculator</a></li>
-                        <li><a href="https://sidhiandassociates.github.io/calculator/ppf-calculator/">PPF Calculator</a></li>
-                        <li><a href="https://sidhiandassociates.github.io/calculator/">View All Calculators</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Our Services</h3>
-                    <ul>
-                        <li><a href="https://sidhiandassociates.github.io/services/income-tax-return-ITR/">ITR Filing</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/income-tax-return-ITR/">ITR Filing - ₹499</a></li>
                         <li><a href="https://sidhiandassociates.github.io/services/tax-planning-filing/">Tax Planning</a></li>
                         <li><a href="https://sidhiandassociates.github.io/services/business-advisory/">Business Advisory</a></li>
                         <li><a href="https://sidhiandassociates.github.io/services/gst-registration/">GST Registration</a></li>
-                        <li><a href="https://sidhiandassociates.github.io/services/">All Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Loan Calculators</h3>
+                    <ul>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/">All Calculators</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/emi-calculator/">EMI Calculator</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/home-loan-eligibility-calculator/">Home Loan Eligibility</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/ppf-calculator/">PPF Calculator</a></li>
                     </ul>
                 </div>
                 
@@ -802,17 +991,31 @@
                     <h3>Contact Info</h3>
                     <p>📞 <a href="tel:+917889257045" style="color: white; font-weight: bold;">+91 78892 57045</a></p>
                     <p>✉️ <a href="mailto:siddhiandassociatess@gmail.com" style="color: white;">siddhiandassociatess@gmail.com</a></p>
-                    <p style="margin-top: 15px;">🕒 <strong>Mon-Sat:</strong> 9 AM - 6 PM IST</p>
-                    <p>⚡ <strong>Response:</strong> Within 2 Hours</p>
+                    <p style="margin-top: 15px;">🕒 Mon-Sat: 9 AM - 6 PM</p>
+                    <p>⚡ Response: Under 2 Hours</p>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
-                <p style="margin-top: 10px; font-size: 0.95em;">ICAI Registered Chartered Accountants | EMI Calculator Tool | Loan & Tax Planning Experts</p>
-                <p style="margin-top: 10px; font-size: 0.9em;">Disclaimer: This calculator is for informational purposes only. For personalized advice, please consult with our experts.</p>
+                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Loan & Tax Planning Experts</p>
             </div>
         </div>
     </footer>
+
+    <!-- Floating Buttons -->
+    <a href="https://wa.me/917889257045?text=Hi%2C%20I%20used%20your%20EMI%20calculator" 
+       target="_blank" 
+       class="float-btn whatsapp-btn" 
+       aria-label="Chat on WhatsApp"
+       title="Chat on WhatsApp">
+        💬
+    </a>
+    <a href="tel:+917889257045" 
+       class="float-btn call-btn" 
+       aria-label="Call us"
+       title="Call us">
+        📞
+    </a>
 
     <script>
         let currentLoanType = 'home';
