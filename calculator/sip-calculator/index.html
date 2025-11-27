@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="icon" href="/sidhi.png" type="image/png" />
+    
+    <!-- Primary Meta Tags -->
+    <title>SIP Calculator 2024 - Mutual Fund SIP Return Calculator India | Free Tool</title>
+    <meta name="title" content="SIP Calculator - Calculate Mutual Fund SIP Returns & Wealth Growth">
+    <meta name="description" content="Free SIP Calculator to calculate mutual fund SIP returns, maturity amount & wealth growth. Plan your SIP investment with monthly, quarterly, annual options. Calculate 10%, 12%, 15% CAGR returns. By expert CAs.">
+    <meta name="keywords" content="SIP calculator, mutual fund SIP calculator, SIP return calculator, SIP investment calculator, monthly SIP calculator, wealth calculator, ELSS calculator, systematic investment plan, CAGR calculator">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sidhiandassociates.github.io/calculator/sip-calculator/">
+    <meta property="og:title" content="SIP Calculator - Calculate Mutual Fund SIP Returns">
+    <meta property="og:description" content="Calculate SIP returns & wealth growth. Monthly, quarterly, annual SIP options. Free calculator with year-wise breakdown. Start your wealth journey now!">
+    <meta property="og:image" content="https://sidhiandassociates.github.io/sidhi.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sidhiandassociates.github.io/calculator/sip-calculator/">
+    <meta property="twitter:title" content="SIP Calculator - Mutual Fund SIP Calculator">
+    <meta property="twitter:description" content="Calculate your SIP returns. Plan wealth creation with mutual funds. Free online calculator with detailed analysis.">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://sidhiandassociates.github.io/calculator/sip-calculator/">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "SIP Calculator India",
+      "description": "Free Systematic Investment Plan (SIP) calculator to calculate mutual fund returns, maturity amount, and wealth growth with year-wise breakdown",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "Sidhi & Associates",
+        "telephone": "+917889257045",
+        "url": "https://sidhiandassociates.github.io"
+      }
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sidhiandassociates.github.io"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Calculators",
+        "item": "https://sidhiandassociates.github.io/calculator/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "SIP Calculator",
+        "item": "https://sidhiandassociates.github.io/calculator/sip-calculator/"
+      }]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How much will I get if I invest ₹5000 per month in SIP for 10 years?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If you invest ₹5,000 per month in SIP for 10 years (120 months) with an expected return of 12% CAGR, your maturity amount will be approximately ₹11,61,695. This includes your total investment of ₹6,00,000 and wealth gain of ₹5,61,695. At 15% CAGR, the maturity amount increases to ₹13,75,573 (wealth gain: ₹7,75,573). The actual returns depend on fund performance and market conditions."
+        }
+      },{
+        "@type": "Question",
+        "name": "What is the expected return rate for SIP investments?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Expected SIP returns vary by fund type: Large Cap Equity Funds: 10-12% CAGR, Mid Cap Equity Funds: 12-15% CAGR, Small Cap Equity Funds: 15-18% CAGR (higher risk), Hybrid/Balanced Funds: 9-11% CAGR, ELSS Tax Saver Funds: 11-14% CAGR, Debt Funds: 6-8% CAGR. Historical data shows Indian equity funds have given 12-15% average returns over 10+ years. However, past performance doesn't guarantee future returns. Your actual returns depend on market conditions, fund management, and investment duration."
+        }
+      },{
+        "@type": "Question",
+        "name": "Is SIP better than lump sum investment?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SIP and lump sum both have advantages: SIP Advantages: Rupee cost averaging reduces market timing risk, disciplined monthly investing builds habit, lower entry barrier (start with ₹500), ideal for salaried individuals, reduces volatility impact, suitable for long-term goals. Lump Sum Advantages: Full capital deployed immediately, better in rising markets, higher potential returns if market timing is right, no recurring transaction hassle. Best Strategy: Use SIP for regular income (salary), use lump sum for windfalls (bonus, inheritance). Studies show SIP typically outperforms lump sum over 10+ years due to rupee cost averaging. For beginners, SIP is recommended."
+        }
+      }]
+    }
+    </script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #0A2647;
+            --primary-gold: #D4A43C;
+            --light-gold: #F5E6C8;
+            --text-dark: #1a1a1a;
+            --text-light: #666;
+            --white: #ffffff;
+            --light-bg: #F9F7F4;
+            --success-green: #28a745;
+            --info-blue: #17a2b8;
+            --sip-purple: #6366f1;
+            --sip-light: #e0e7ff;
+            --sip-gradient: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background: var(--light-bg);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 60px;
+            height: 60px;
+            object-fit: contain;
+        }
+
+        .logo-text h1 {
+            font-size: 1.8em;
+            color: var(--primary-blue);
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .logo-text p {
+            font-size: 0.9em;
+            color: var(--primary-gold);
+            margin: 0;
+        }
+
+        .header-cta {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .cta-phone {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+        }
+
+        .breadcrumb {
+            background: var(--light-gold);
+            padding: 15px 0;
+        }
+
+        .breadcrumb a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--primary-gold);
+        }
+
+        .hero {
+            background: var(--sip-gradient);
+            color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '📈';
+            position: absolute;
+            font-size: 300px;
+            opacity: 0.1;
+            top: -50px;
+            right: -50px;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(15deg); }
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: var(--white);
+            font-weight: 800;
+        }
+
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            opacity: 0.95;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .hero-stat {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            border-radius: 15px;
+        }
+
+        .hero-stat strong {
+            display: block;
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 60px 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .calculator-section, .results-section {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
+        }
+
+        .calculator-section h3, .results-section h3 {
+            color: var(--primary-blue);
+            font-size: 1.9em;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid var(--sip-purple);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+            font-size: 1.05em;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: var(--sip-purple);
+        }
+
+        .input-with-icon {
+            position: relative;
+        }
+
+        .input-with-icon::before {
+            content: '₹';
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        .input-with-icon input {
+            padding-left: 35px;
+        }
+
+        .input-suffix {
+            position: relative;
+        }
+
+        .input-suffix::after {
+            content: attr(data-suffix);
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-light);
+            font-weight: 600;
+        }
+
+        .btn-calculate {
+            width: 100%;
+            padding: 18px;
+            background: var(--sip-gradient);
+            color: var(--white);
+            border: none;
+            border-radius: 10px;
+            font-size: 1.2em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-calculate:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(99,102,241,0.4);
+        }
+
+        .btn-reset {
+            width: 100%;
+            padding: 12px;
+            background: transparent;
+            color: var(--text-light);
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+        }
+
+        .btn-reset:hover {
+            border-color: var(--sip-purple);
+            color: var(--sip-purple);
+        }
+
+        .result-card {
+            background: var(--sip-gradient);
+            color: var(--white);
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .result-label {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            opacity: 0.95;
+        }
+
+        .result-value {
+            font-size: 3.5em;
+            font-weight: 800;
+            margin-bottom: 5px;
+        }
+
+        .result-subtitle {
+            font-size: 1em;
+            opacity: 0.9;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--sip-light);
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border-left: 4px solid var(--sip-purple);
+        }
+
+        .stat-card h4 {
+            color: var(--text-light);
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .stat-card .value {
+            color: var(--sip-purple);
+            font-size: 2em;
+            font-weight: 700;
+        }
+
+        .breakdown-section {
+            background: var(--light-bg);
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .breakdown-section h4 {
+            color: var(--primary-blue);
+            font-size: 1.3em;
+            margin-bottom: 15px;
+        }
+
+        .breakdown-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .breakdown-item:last-child {
+            border-bottom: none;
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1.1em;
+        }
+
+        .breakdown-label {
+            color: var(--text-light);
+        }
+
+        .breakdown-value {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .info-box {
+            background: #d1ecf1;
+            border-left: 4px solid var(--info-blue);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+        }
+
+        .info-box h4 {
+            color: var(--info-blue);
+            margin-bottom: 10px;
+        }
+
+        .info-box ul {
+            margin-left: 20px;
+        }
+
+        .info-box li {
+            margin-bottom: 8px;
+        }
+
+        .alert-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            color: #856404;
+        }
+
+        .success-box {
+            background: #d4edda;
+            border-left: 4px solid var(--success-green);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            color: #155724;
+        }
+
+        .year-breakdown {
+            max-height: 400px;
+            overflow-y: auto;
+            margin-top: 20px;
+        }
+
+        .year-row {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr 2fr;
+            gap: 10px;
+            padding: 12px;
+            background: var(--white);
+            margin-bottom: 5px;
+            border-radius: 6px;
+            font-size: 0.95em;
+        }
+
+        .year-row:first-child {
+            background: var(--sip-light);
+            font-weight: 700;
+            color: var(--sip-purple);
+        }
+
+        .info-section {
+            padding: 60px 20px;
+        }
+
+        .info-section h2 {
+            color: var(--primary-blue);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .info-section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--sip-purple);
+            border-radius: 2px;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .info-card {
+            background: var(--white);
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 5px solid var(--sip-purple);
+            transition: all 0.3s;
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(99,102,241,0.2);
+        }
+
+        .info-card h3 {
+            color: var(--primary-blue);
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .info-card p, .info-card ul {
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .info-card ul {
+            margin-left: 20px;
+        }
+
+        .info-card li {
+            margin-bottom: 10px;
+        }
+
+        .faq-section {
+            padding: 60px 20px;
+            background: var(--white);
+        }
+
+        .faq-item {
+            background: var(--light-bg);
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            border-left: 4px solid var(--sip-purple);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .faq-question {
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 1.15em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            color: var(--text-light);
+            margin-top: 15px;
+            line-height: 1.8;
+            display: none;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary-gold), #C4932C);
+            color: var(--white);
+            text-align: center;
+            padding: 70px 20px;
+            margin: 40px 0;
+            border-radius: 20px;
+        }
+
+        .cta-section h2 {
+            color: var(--white);
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            font-size: 1.3em;
+            margin-bottom: 35px;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 18px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.15em;
+            transition: all 0.3s;
+        }
+
+        .btn-primary:hover {
+            background: var(--white);
+            color: var(--primary-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .calculator-links {
+            background: var(--light-bg);
+            padding: 40px 20px;
+        }
+
+        .calculator-links h3 {
+            text-align: center;
+            color: var(--primary-blue);
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .calc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .calc-link {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: 600;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .calc-link:hover {
+            background: var(--sip-purple);
+            color: white;
+            transform: translateX(10px);
+            border-color: var(--sip-purple);
+        }
+
+        .calc-link span {
+            font-size: 2em;
+        }
+
+        footer {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 50px 20px 30px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-gold);
+            margin-bottom: 20px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-gold);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .floating-buttons {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 999;
+        }
+
+        .float-btn {
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .float-btn:hover {
+            transform: scale(1.15);
+            animation: none;
+        }
+
+        .whatsapp-btn { background: #25D366; }
+        .call-btn { background: var(--primary-gold); }
+        .float-btn svg { width: 32px; height: 32px; fill: white; }
+
+        @media (max-width: 968px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .calculator-section, .results-section {
+                padding: 25px;
+            }
+
+            .result-value {
+                font-size: 2.5em;
+            }
+
+            .header-cta {
+                display: none;
+            }
+
+            .logo-text h1 {
+                font-size: 1.4em;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-stats {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .year-row {
+                grid-template-columns: 1fr;
+                gap: 5px;
+            }
+
+            .year-row span {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .year-row span::before {
+                content: attr(data-label);
+                font-weight: 600;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="https://sidhiandassociates.github.io/" class="logo">
+                    <img src="/sidhi.png" alt="Sidhi & Associates CA" class="logo-img" width="60" height="60">
+                    <div class="logo-text">
+                        <h1>Sidhi & Associates</h1>
+                        <p>Chartered Accountants</p>
+                    </div>
+                </a>
+                <div class="header-cta">
+                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="https://sidhiandassociates.github.io/">Home</a> / 
+            <a href="https://sidhiandassociates.github.io/calculator/">Calculators</a> / 
+            <span>SIP Calculator</span>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <h2>📈 SIP Calculator 2024</h2>
+            <p><strong>Systematic Investment Plan Calculator</strong></p>
+            <p>Calculate Mutual Fund SIP Returns & Build Wealth Systematically</p>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <strong>12-15%</strong>
+                    <span>Expected Returns</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>₹500</strong>
+                    <span>Min Investment</span>
+                </div>
+                <div class="hero-stat">
+                    <strong>ELSS 80C</strong>
+                    <span>Tax Benefits</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-content">
+        <!-- Calculator Section -->
+        <div class="calculator-section">
+            <h3>Calculate Your SIP Returns</h3>
+            
+            <form id="sipForm">
+                <div class="form-group">
+                    <label for="sipAmount">Monthly SIP Amount *</label>
+                    <div class="input-with-icon">
+                        <input type="number" id="sipAmount" placeholder="5000" required min="500" step="500" value="5000">
+                    </div>
+                    <small style="color: var(--text-light); font-size: 0.9em;">Minimum: ₹500 per month</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="expectedReturn">Expected Annual Return (%) *</label>
+                    <div class="input-suffix" data-suffix="%">
+                        <input type="number" id="expectedReturn" placeholder="12" required min="1" max="30" step="0.5" value="12">
+                    </div>
+                    <small style="color: var(--text-light); font-size: 0.9em;">Equity: 12-15%, Hybrid: 9-11%, Debt: 6-8%</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="investmentPeriod">Investment Period *</label>
+                    <div class="input-suffix" data-suffix="years">
+                        <input type="number" id="investmentPeriod" placeholder="10" required min="1" max="40" step="1" value="10">
+                    </div>
+                    <small style="color: var(--text-light); font-size: 0.9em;">Long-term: 10+ years recommended for wealth creation</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="frequency">SIP Frequency *</label>
+                    <select id="frequency" required>
+                        <option value="monthly" selected>Monthly</option>
+                        <option value="quarterly">Quarterly</option>
+                        <option value="yearly">Yearly</option>
+                    </select>
+                    <small style="color: var(--text-light); font-size: 0.9em;">Monthly SIP recommended for better rupee cost averaging</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="stepUp">Annual Step-up (%)</label>
+                    <div class="input-suffix" data-suffix="%">
+                        <input type="number" id="stepUp" placeholder="0" min="0" max="50" step="5" value="0">
+                    </div>
+                    <small style="color: var(--text-light); font-size: 0.9em;">Optional: Increase SIP by 5-10% annually (recommended)</small>
+                </div>
+
+                <button type="submit" class="btn-calculate">📊 Calculate SIP Returns</button>
+                <button type="button" class="btn-reset" onclick="resetForm()">🔄 Reset</button>
+            </form>
+
+            <div class="info-box" style="margin-top: 30px;">
+                <h4>💡 SIP Key Benefits</h4>
+                <ul>
+                    <li>Rupee cost averaging reduces market risk</li>
+                    <li>Power of compounding multiplies wealth</li>
+                    <li>Disciplined investing habit</li>
+                    <li>Start with just ₹500/month</li>
+                    <li>ELSS SIPs offer 80C tax benefits</li>
+                    <li>Flexibility to pause/stop anytime</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results-section">
+            <h3>Your SIP Projection</h3>
+            
+            <div id="resultsContainer" style="display: none;">
+                <div class="result-card">
+                    <div class="result-label">Expected Maturity Value</div>
+                    <div class="result-value" id="maturityAmount">₹0</div>
+                    <div class="result-subtitle">After <span id="periodDisplay">10</span> years</div>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h4>Total Investment</h4>
+                        <div class="value" id="totalInvestment">₹0</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Wealth Gained</h4>
+                        <div class="value" id="wealthGained">₹0</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>XIRR / CAGR</h4>
+                        <div class="value" id="cagr">0%</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Total Returns</h4>
+                        <div class="value" id="totalReturns">0%</div>
+                    </div>
+                </div>
+
+                <div class="breakdown-section">
+                    <h4>Investment Summary</h4>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">SIP Amount</span>
+                        <span class="breakdown-value" id="sipAmountDisplay">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Frequency</span>
+                        <span class="breakdown-value" id="frequencyDisplay">Monthly</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Time Period</span>
+                        <span class="breakdown-value" id="periodBreakdown">10 years</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Expected Return</span>
+                        <span class="breakdown-value" id="returnDisplay">12%</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Total Invested</span>
+                        <span class="breakdown-value" id="totalInvestedDisplay">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Expected Returns</span>
+                        <span class="breakdown-value" id="returnsEarnedDisplay">₹0</span>
+                    </div>
+                    <div class="breakdown-item">
+                        <span class="breakdown-label">Maturity Value</span>
+                        <span class="breakdown-value" id="maturityBreakdown">₹0</span>
+                    </div>
+                </div>
+
+                <div class="success-box">
+                    <strong>🎯 Wealth Creation:</strong> Your disciplined SIP of <span id="sipInline">₹5,000</span>/month can grow to <span id="maturityInline">₹11.62 lakhs</span> in <span id="yearsInline">10</span> years, helping you achieve your financial goals!
+                </div>
+
+                <div class="breakdown-section">
+                    <h4>Year-wise Growth Projection</h4>
+                    <div class="year-breakdown" id="yearBreakdown">
+                        <!-- Year-wise data will be inserted here -->
+                    </div>
+                </div>
+
+                <div class="alert-box">
+                    <strong>⚠️ Important Note:</strong> These calculations are based on assumed rate of return. Actual mutual fund returns may vary based on market conditions. Past performance doesn't guarantee future returns. Consult a financial advisor before investing.
+                </div>
+            </div>
+
+            <div id="noResultsMessage">
+                <div class="info-box">
+                    <h4>👈 Calculate Your SIP Returns</h4>
+                    <p>Enter your SIP details to see projected returns with year-wise breakdown and wealth growth analysis.</p>
+                </div>
+
+                <div class="success-box">
+                    <h4>📊 Example Calculation</h4>
+                    <p><strong>Monthly SIP:</strong> ₹5,000</p>
+                    <p><strong>Expected Return:</strong> 12% p.a.</p>
+                    <p><strong>Period:</strong> 10 years</p>
+                    <p style="margin-top: 15px;"><strong>Results:</strong></p>
+                    <ul style="margin-left: 20px;">
+                        <li>Total Invested: ₹6,00,000</li>
+                        <li>Wealth Gained: ₹5,61,695</li>
+                        <li>Maturity Value: ₹11,61,695</li>
+                        <li>Returns: 93.6%</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h4>🔥 Power of Compounding</h4>
+                    <p>₹10,000/month SIP at 15% for 20 years:</p>
+                    <ul style="margin-left: 20px;">
+                        <li>You invest: ₹24 lakhs</li>
+                        <li>Wealth grows to: ₹1.51 Crores</li>
+                        <li>Gain: ₹1.27 Crores (529%)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Information Section -->
+    <section class="info-section">
+        <div class="container">
+            <h2>Complete Guide to Systematic Investment Plan (SIP)</h2>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>📈 What is SIP?</h3>
+                    <p>Systematic Investment Plan (SIP) is a disciplined way to invest in mutual funds by putting a fixed amount regularly (monthly, quarterly, or yearly).</p>
+                    <p style="margin-top: 15px;"><strong>How it works:</strong></p>
+                    <ul>
+                        <li>Choose amount & frequency (₹500/month minimum)</li>
+                        <li>Money auto-debited from bank account</li>
+                        <li>Units purchased at current NAV</li>
+                        <li>Rupee cost averaging benefits</li>
+                        <li>Power of compounding multiplies wealth</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>💰 Expected SIP Returns</h3>
+                    <p><strong>By Fund Category:</strong></p>
+                    <ul>
+                        <li><strong>Large Cap Equity:</strong> 10-12% CAGR</li>
+                        <li><strong>Mid Cap Equity:</strong> 12-15% CAGR</li>
+                        <li><strong>Small Cap Equity:</strong> 15-18% CAGR (higher risk)</li>
+                        <li><strong>Hybrid/Balanced:</strong> 9-11% CAGR</li>
+                        <li><strong>ELSS Tax Saver:</strong> 11-14% CAGR</li>
+                        <li><strong>Debt Funds:</strong> 6-8% CAGR</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Historical:</strong> Indian equity funds averaged 12-15% over 10+ years. However, past performance doesn't guarantee future returns.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>🎯 SIP Investment Limits</h3>
+                    <ul>
+                        <li><strong>Minimum SIP:</strong> ₹500 per month (most funds)</li>
+                        <li><strong>Premium funds:</strong> Some require ₹1,000-₹5,000</li>
+                        <li><strong>Maximum:</strong> No upper limit</li>
+                        <li><strong>Frequency options:</strong> Daily, Weekly, Monthly, Quarterly, Yearly</li>
+                        <li><strong>Lock-in:</strong> None (except ELSS - 3 years)</li>
+                        <li><strong>Who can invest:</strong> Resident Indians, NRIs, minors (through guardian)</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Recommended:</strong> Start with ₹1,000-₹5,000 monthly and increase annually by 10%</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>💸 Tax Benefits on SIP</h3>
+                    <p><strong>ELSS SIP (Tax Saver Funds):</strong></p>
+                    <ul>
+                        <li>Section 80C deduction up to ₹1.5L/year</li>
+                        <li>3-year lock-in (shortest in 80C)</li>
+                        <li>11-14% historical returns</li>
+                        <li>Tax saving: ₹46,800 at 30% bracket</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Capital Gains Tax:</strong></p>
+                    <ul>
+                        <li><strong>Equity funds:</strong> LTCG >₹1.25L taxed at 12.5%, STCG at 20%</li>
+                        <li><strong>Debt funds:</strong> As per income slab</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>⚡ Rupee Cost Averaging</h3>
+                    <p>SIP's biggest advantage - you buy more units when prices are low, fewer when high, averaging your cost.</p>
+                    <p style="margin-top: 15px;"><strong>Example:</strong></p>
+                    <ul>
+                        <li>Month 1: ₹5,000 at NAV ₹50 = 100 units</li>
+                        <li>Month 2: ₹5,000 at NAV ₹40 = 125 units</li>
+                        <li>Month 3: ₹5,000 at NAV ₹60 = 83 units</li>
+                        <li><strong>Total:</strong> ₹15,000 for 308 units</li>
+                        <li><strong>Avg cost:</strong> ₹48.7 per unit (vs ₹50)</li>
+                    </ul>
+                    <p style="margin-top: 15px;">Market volatility works in your favor!</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>🚀 Power of Compounding</h3>
+                    <p>Albert Einstein called it "the 8th wonder of the world". Your returns generate returns.</p>
+                    <p style="margin-top: 15px;"><strong>₹5,000 monthly SIP at 12%:</strong></p>
+                    <ul>
+                        <li><strong>5 years:</strong> Invested ₹3L → Grows to ₹4.12L</li>
+                        <li><strong>10 years:</strong> Invested ₹6L → Grows to ₹11.61L</li>
+                        <li><strong>15 years:</strong> Invested ₹9L → Grows to ₹25L</li>
+                        <li><strong>20 years:</strong> Invested ₹12L → Grows to ₹49.95L</li>
+                        <li><strong>25 years:</strong> Invested ₹15L → Grows to ₹94.79L</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Key:</strong> Start early, stay invested long-term!</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>📊 SIP Step-up Strategy</h3>
+                    <p>Increase SIP amount annually to accelerate wealth creation.</p>
+                    <p style="margin-top: 15px;"><strong>₹5,000 monthly with 10% annual step-up at 12% for 15 years:</strong></p>
+                    <ul>
+                        <li><strong>Without step-up:</strong> Invest ₹9L → Get ₹25L</li>
+                        <li><strong>With step-up:</strong> Invest ₹15.96L → Get ₹43.96L</li>
+                        <li><strong>Extra wealth:</strong> ₹18.96 lakhs!</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Strategy:</strong> Increase SIP by 5-10% every year or invest bonuses/increments</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>✅ SIP Advantages</h3>
+                    <ul>
+                        <li>Disciplined investing habit</li>
+                        <li>Low entry barrier (₹500/month)</li>
+                        <li>Rupee cost averaging reduces risk</li>
+                        <li>Power of compounding</li>
+                        <li>Flexibility to pause/stop/increase</li>
+                        <li>Professional fund management</li>
+                        <li>Tax benefits (ELSS SIP)</li>
+                        <li>Diversification across stocks</li>
+                        <li>No timing the market needed</li>
+                        <li>Auto-debit convenience</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>⚠️ SIP Limitations</h3>
+                    <ul>
+                        <li>No guaranteed returns (market-linked)</li>
+                        <li>Short-term volatility</li>
+                        <li>Fund selection crucial</li>
+                        <li>Exit load (usually 1% if sold <1 year)</li>
+                        <li>Tax on capital gains</li>
+                        <li>Requires discipline (avoid stopping during falls)</li>
+                        <li>May underperform in strong bull runs vs lump sum</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Key:</strong> Stay invested for 10+ years for best results</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>🎯 Best SIP Strategy</h3>
+                    <ul>
+                        <li><strong>Start early:</strong> 20s vs 30s makes huge difference</li>
+                        <li><strong>Long-term:</strong> Minimum 10 years, ideally 15-20</li>
+                        <li><strong>Diversify:</strong> 3-5 funds across categories</li>
+                        <li><strong>Step-up:</strong> Increase 10% annually</li>
+                        <li><strong>Don't stop:</strong> Continue during market falls</li>
+                        <li><strong>Review:</strong> Check performance annually</li>
+                        <li><strong>Goal-based:</strong> Separate SIPs for different goals</li>
+                        <li><strong>Automate:</strong> Set auto-debit to avoid missing</li>
+                    </ul>
+                </div>
+
+                <div class="info-card">
+                    <h3>🔄 SIP vs Lump Sum</h3>
+                    <p><strong>When to use SIP:</strong></p>
+                    <ul>
+                        <li>Regular monthly income (salary)</li>
+                        <li>Risk-averse investor</li>
+                        <li>Volatile/uncertain markets</li>
+                        <li>Building discipline</li>
+                        <li>Long-term goals (10+ years)</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>When to use Lump Sum:</strong></p>
+                    <ul>
+                        <li>Large windfall (bonus, inheritance)</li>
+                        <li>Market correction/crash</li>
+                        <li>Strong bull market expected</li>
+                        <li>Experienced investor</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Best:</strong> Combine both strategies</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>📱 How to Start SIP</h3>
+                    <p><strong>Steps:</strong></p>
+                    <ul>
+                        <li><strong>1. Complete KYC:</strong> Aadhaar + PAN verification</li>
+                        <li><strong>2. Choose platform:</strong> Direct MF platforms (zero commission) or through distributor</li>
+                        <li><strong>3. Select funds:</strong> Based on goals, risk, tenure</li>
+                        <li><strong>4. Set SIP amount:</strong> As per budget</li>
+                        <li><strong>5. Choose date:</strong> Post salary credit (5th-10th ideal)</li>
+                        <li><strong>6. Set mandate:</strong> Auto-debit from bank</li>
+                        <li><strong>7. Start investing:</strong> First SIP processed</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><strong>Popular platforms:</strong> Groww, Zerodha Coin, Paytm Money, ET Money (direct, zero commission)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 style="color: var(--primary-blue); text-align: center; margin-bottom: 50px; font-size: 2.5em;">Frequently Asked Questions</h2>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    How much will I get if I invest ₹5000 per month in SIP for 10 years?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    If you invest ₹5,000 per month in SIP for 10 years (120 months) with an expected return of 12% CAGR, your maturity amount will be approximately <strong>₹11,61,695</strong>. This includes your total investment of ₹6,00,000 (₹5,000 × 120 months) and wealth gain of ₹5,61,695 (93.6% returns). At different return rates: <strong>10% CAGR:</strong> Maturity ₹10,32,760 (Gain: ₹4,32,760) | <strong>15% CAGR:</strong> Maturity ₹13,75,573 (Gain: ₹7,75,573) | <strong>18% CAGR:</strong> Maturity ₹16,22,163 (Gain: ₹10,22,163). The actual returns depend on the fund you choose and market conditions. Large-cap funds typically give 10-12%, mid-cap 12-15%, and small-cap 15-18% over long periods. Starting early and staying invested for the full duration is crucial for maximum benefit.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What is the expected return rate for SIP investments?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Expected SIP returns vary significantly by fund category and market conditions: <strong>Equity Funds:</strong> Large Cap (10-12% CAGR) - Lower risk, steady growth | Mid Cap (12-15% CAGR) - Moderate risk, higher growth potential | Small Cap (15-18% CAGR) - Higher risk, highest growth potential. <strong>Hybrid Funds:</strong> Aggressive Hybrid (9-11% CAGR) - 65-80% equity | Balanced Hybrid (8-10% CAGR) - 40-60% equity. <strong>Debt & Others:</strong> Debt Funds (6-8% CAGR) - Low risk | ELSS Tax Saver (11-14% CAGR) - Equity with 3-year lock-in. <strong>Historical Performance:</strong> Top Indian equity funds have delivered 12-15% average returns over 10+ year periods. However, <strong>important note:</strong> These are historical averages and not guaranteed. Past performance doesn't indicate future results. Market-linked investments can be volatile in short term. SIP works best for 10+ year horizons where volatility smoothens out and compounding creates wealth.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Is SIP better than lump sum investment?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    SIP and lump sum both have their advantages depending on your situation: <strong>SIP Advantages:</strong> (1) <strong>Rupee cost averaging</strong> - Buy more units when prices low, fewer when high, reducing timing risk. (2) <strong>Disciplined investing</strong> - Builds systematic saving habit, ideal for salaried individuals. (3) <strong>Lower entry barrier</strong> - Start with just ₹500/month vs needing large capital. (4) <strong>Reduces volatility impact</strong> - Spreads investment across market cycles. (5) <strong>Psychological comfort</strong> - Easier to stay invested during market falls. <strong>Lump Sum Advantages:</strong> (1) Full capital deployed immediately earning returns. (2) Better in strong bull markets where prices keep rising. (3) Higher potential returns if market timing is right. (4) No recurring transaction hassle. <strong>Research shows:</strong> SIP typically outperforms lump sum over 10+ year periods due to rupee cost averaging benefits. <strong>Best Strategy:</strong> Use SIP for regular salary income + Lump sum for windfalls (bonus, inheritance). Combine both for optimal results. For beginners or those uncertain about market timing, SIP is strongly recommended.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Can I stop my SIP anytime?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Yes, you have complete flexibility to stop SIP anytime without penalty (except ELSS funds). Here's what you need to know: <strong>Stopping SIP:</strong> You can pause or stop SIP through your mutual fund platform/AMC portal anytime. No penalty charged for stopping SIP. Your existing invested units remain in the fund and continue earning returns. You can resume SIP later when convenient. <strong>Exit Load:</strong> While stopping SIP has no charge, redeeming (selling) units may attract exit load: Most equity funds charge 1% exit load if redeemed within 1 year. No exit load after 1 year. <strong>ELSS Exception:</strong> ELSS (tax saver) funds have mandatory 3-year lock-in. SIP can be stopped but units cannot be redeemed before 3 years from investment date. Each SIP installment has separate 3-year lock-in. <strong>Best Practice:</strong> Avoid stopping SIP during market downturns - this is when rupee cost averaging works best. If cash flow issues, reduce SIP amount instead of stopping completely. Temporary pause is okay but long breaks hurt compounding benefit. <strong>Important:</strong> While flexibility exists, SIP works best with disciplined, long-term approach. Studies show investors who stay invested 10+ years regardless of market volatility achieve best returns.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What is SIP step-up and should I use it?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    SIP step-up (also called top-up) is a feature that automatically increases your SIP amount by a fixed percentage or amount annually. It's one of the most powerful wealth creation strategies. <strong>How it works:</strong> Start SIP at ₹5,000/month with 10% annual step-up. Year 1: ₹5,000/month | Year 2: ₹5,500/month | Year 3: ₹6,050/month... and so on. <strong>Impact Example (₹5,000 monthly for 15 years at 12% return):</strong> Without step-up: Invested ₹9 lakhs → Maturity ₹25 lakhs. With 10% step-up: Invested ₹15.96 lakhs → Maturity ₹43.96 lakhs. <strong>Extra wealth: ₹18.96 lakhs!</strong> <strong>Why step-up works:</strong> (1) Aligns with income growth (salary increments), (2) Beats inflation - maintains purchasing power, (3) Accelerates compounding exponentially, (4) Reaches financial goals faster. <strong>Recommended step-up:</strong> Salaried employees: 10% annually (matches average salary hikes). Conservative: 5% annually. Aggressive: 15% annually. <strong>Alternative:</strong> Instead of automatic step-up, manually increase SIP when you get bonus/increment. <strong>Verdict:</strong> <strong>Highly recommended!</strong> Step-up SIP is the secret weapon of wealth creators. Even 5% annual increase makes massive difference over 15-20 years. Most platforms (Groww, Zerodha, ET Money) offer this feature.                     Enable it!
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    How is SIP taxed in India?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    SIP taxation depends on fund type and holding period: <strong>Equity Funds / Equity-oriented Hybrid:</strong> Long Term Capital Gains (LTCG) - Holding >12 months: Gains up to ₹1.25 lakh/year exempt. Gains above ₹1.25 lakh taxed at 12.5% (no indexation). Short Term Capital Gains (STCG) - Holding ≤12 months: Taxed at 20% flat. <strong>Debt Funds / Non-equity funds:</strong> All gains taxed as per your income tax slab (no LTCG/STCG differentiation since April 2023). <strong>ELSS Tax Saver SIP:</strong> Investment: Deduction under Section 80C up to ₹1.5 lakh/year (save up to ₹46,800 tax at 30% bracket). Lock-in: 3 years. Capital Gains: Same as equity funds (12.5% LTCG above ₹1.25L). <strong>Important Notes:</strong> (1) Each SIP installment is treated as separate investment for holding period calculation. (2) FIFO (First In First Out) method used for redemption. (3) Dividend Distribution Tax (DDT) removed - dividends now taxed in investor's hands as per slab. <strong>Tax-saving example:</strong> ₹12,500/month ELSS SIP (₹1.5L/year) → Save ₹46,800 tax + Wealth creation at 12-14% returns + Only 3-year lock-in (vs 5 for NSC, 15 for PPF). <strong>Best strategy:</strong> Use ELSS SIP for Section 80C + Regular equity SIPs for wealth creation. Keep investments >1 year to qualify for LTCG benefits.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Which mutual funds are best for SIP investment?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Best funds depend on your goals, risk appetite, and time horizon. Here's a framework: <strong>For Long-term Wealth (10+ years, High Risk):</strong> Large Cap: HDFC Top 100, ICICI Pru Bluechip, Mirae Asset Large Cap. Mid Cap: Parag Parikh Flexi Cap, Axis Midcap, Kotak Emerging Equity. Flexi/Multi Cap: Parag Parikh Flexi Cap, Quant Flexi Cap, JM Flexi Cap. <strong>For Tax Saving (ELSS, 3-year lock-in):</strong> Quant ELSS Tax Saver, Mirae Asset ELSS Tax Saver, Canara Robeco ELSS. <strong>For Moderate Risk (7-10 years):</strong> Balanced Hybrid: HDFC Balanced Advantage, ICICI Pru Equity & Debt. Large & Mid Cap: Mirae Asset Emerging Bluechip, Canara Robeco Emerging Equities. <strong>For Conservative (5-7 years, Low Risk):</strong> Debt funds, Arbitrage funds, Conservative Hybrid funds. <strong>Selection Criteria:</strong> (1) <strong>Track record</strong> - Consistent performance over 5-10 years, not just recent. (2) <strong>Fund size</strong> - ₹1,000+ crores AUM for stability. (3) <strong>Expense ratio</strong> - Lower is better (choose direct plans). (4) <strong>Fund manager</strong> - Stable, experienced manager. (5) <strong>Investment philosophy</strong> - Understand what fund invests in. <strong>Recommended Portfolio for Beginners:</strong> 40% Large Cap + 30% Flexi Cap + 20% Mid Cap + 10% ELSS. Diversify across 3-5 funds, don't put all eggs in one basket. Review annually, not daily/monthly. <strong>Important:</strong> Past performance doesn't guarantee future returns. Consult financial advisor for personalized advice.
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    What is the minimum SIP amount and best SIP date?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <strong>Minimum SIP Amount:</strong> Most mutual funds: ₹500 per month minimum. Some premium funds: ₹1,000-₹5,000 minimum. ELSS funds: Usually ₹500 minimum. No maximum limit - invest as much as you want. <strong>Recommended amounts by income:</strong> Income ₹25K-40K: Start with ₹2,000-₹5,000/month. Income ₹40K-75K: ₹5,000-₹15,000/month. Income ₹75K-1.5L: ₹15,000-₹40,000/month. Income >₹1.5L: ₹50,000+/month. <strong>Best SIP Date:</strong> <strong>Ideal: 5th-10th of month</strong> - Reason: Most salaries credited by 5th, ensuring sufficient balance. Auto-debit won't fail. Can catch end-of-month market opportunities. <strong>Does date matter for returns?</strong> Not significantly! Studies show SIP date has minimal impact on long-term returns (10+ years). Rupee cost averaging smoothens out variations. Missing SIPs due to wrong date hurts more than picking "perfect" date. <strong>Best Practice:</strong> (1) Choose date 2-3 days after salary credit. (2) Stick to same date for all SIPs (easier tracking). (3) Enable auto-debit to never miss SIP. (4) Start today - don't wait for "market correction". (5) Increase amount annually by 10% (step-up). <strong>Important:</strong> Consistency matters more than timing. Investors who stayed disciplined regardless of market conditions outperformed those trying to time entries.                     Start now, start small, but start!
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    Should I continue SIP during market crash or stop?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <strong>NEVER STOP SIP during market crash!</strong> This is when SIP works its magic. Here's why: <strong>During Crash, You Get:</strong> (1) <strong>More units at lower prices</strong> - Your ₹5,000 buys more units when NAV is down. (2) <strong>Lower average cost</strong> - Rupee cost averaging at its best. (3) <strong>Maximum future gains</strong> - When market recovers, these "cheap" units multiply wealth. <strong>Real Example (2020 COVID Crash):</strong> Investor A: Continued ₹10K SIP → Bought units at ₹30-40 NAV during crash → These units now at ₹80-100 → Massive gains. Investor B: Stopped SIP during crash, restarted at recovery → Missed buying at low prices → Lower overall returns. <strong>Mathematical Proof:</strong> ₹5,000 monthly SIP for 10 years at 12% CAGR: Continuous SIP (including crash periods): ₹11.61 lakhs. SIP stopped during crashes (2 years gap): ₹9.8 lakhs. <strong>Difference: ₹1.81 lakhs less!</strong> <strong>What to Do During Crash:</strong> (1) <strong>Continue existing SIPs</strong> - Don't stop! (2) <strong>Increase SIP amount</strong> if possible - Best buying opportunity. (3) <strong>Add lump sum</strong> - If you have extra cash, invest more. (4) <strong>Stay calm</strong> - Market always recovers historically. (5) <strong>Review portfolio</strong> - But don't panic sell. <strong>Historical Facts:</strong> Every market crash (2008, 2020, etc.) was followed by strong recovery. Investors who stayed invested made highest returns. Stopping SIP during crash is the #1 mistake that destroys wealth. <strong>Remember Warren Buffett:</strong> "Be fearful when others are greedy, greedy when others are fearful."                     Market crash = Shopping sale for investors!
+                </div>
+            </div>
+
+            <div class="faq-item" onclick="toggleFAQ(this)">
+                <div class="faq-question">
+                    How to choose between multiple SIP options?
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    Choose SIP based on your specific financial goals, risk appetite, and time horizon: <strong>By Goal & Timeline:</strong> (1) <strong>Retirement (20-30 years):</strong> 70-80% Equity (Large+Mid+Small cap mix), 20-30% Debt/Hybrid. High risk OK, maximum wealth creation. (2) <strong>Child Education/Marriage (10-15 years):</strong> 60-70% Equity (Large+Mid cap focus), 30-40% Balanced Hybrid. Moderate risk, balance growth & stability. (3) <strong>Home Down Payment (5-7 years):</strong> 40-50% Equity (Large cap only), 50-60% Debt/Conservative Hybrid. Lower risk, capital protection important. (4) <strong>Emergency Fund (2-3 years):</strong> 100% Liquid/Ultra Short Duration Debt. Zero risk, liquidity essential. <strong>By Age:</strong> 20s-30s: Aggressive (80% equity, 20% debt). 30s-40s: Moderate-Aggressive (70% equity, 30% debt). 40s-50s: Balanced (50% equity, 50% debt). 50s+: Conservative (30% equity, 70% debt). <strong>By Risk Appetite:</strong> High risk taker: Small & Mid cap focus, 15-18% expected returns, higher volatility. Moderate risk: Large & Mid cap mix, 12-15% expected returns, moderate volatility. Low risk: Large cap + Hybrid, 10-12% expected returns, lower volatility. Very conservative: Debt + Arbitrage, 6-8% returns, minimal volatility. <strong>Selection Framework:</strong> Start with goal → Determine timeline → Match risk appetite → Select fund category → Choose 3-5 specific funds → Allocate amounts → Review annually. <strong>Golden Rule:</strong> Never invest all in one fund/category.                     Diversification is key to managing risk while maximizing returns.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <div class="container">
+        <div class="cta-section">
+            <h2>💼 Need Expert Investment & Tax Planning?</h2>
+            <p>Our Chartered Accountants can help you optimize SIP investments, choose right mutual funds, maximize tax savings, and build wealth strategically.</p>
+            <p style="font-size: 1.1em; margin-top: 20px;"><strong>Services:</strong> SIP Planning | Portfolio Review | Tax-Saving ELSS | Section 80C Optimization | ITR Filing</p>
+            <div class="cta-buttons">
+                <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hi%2C%20I%20need%20help%20with%20SIP%20investment%20planning" class="btn-primary" style="background: #25D366;">💬 WhatsApp</a>
+                <a href="https://sidhiandassociates.github.io/services/tax-planning-filing/" class="btn-primary">📊 Investment Advisory</a>
+            </div>
+            <p style="margin-top: 25px; font-size: 1em;">✓ Free Consultation | ✓ Expert CAs | ✓ 5000+ Happy Clients | ✓ Pan-India Service</p>
+        </div>
+    </div>
+
+    <!-- Related Calculators -->
+    <div class="calculator-links">
+        <div class="container">
+            <h3>🧮 Other Useful Financial Calculators</h3>
+            <div class="calc-grid">
+                <a href="https://sidhiandassociates.github.io/calculator/ppf-calculator/" class="calc-link">
+                    <span>🏦</span>
+                    <div>PPF Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/fd-calculator/" class="calc-link">
+                    <span>💰</span>
+                    <div>FD Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/retirement-planning-calculator/" class="calc-link">
+                    <span>👴</span>
+                    <div>Retirement Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/fire-calculator/" class="calc-link">
+                    <span>🔥</span>
+                    <div>FIRE Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/emi-calculator/" class="calc-link">
+                    <span>🏠</span>
+                    <div>EMI Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/income-tax-calculator/" class="calc-link">
+                    <span>💸</span>
+                    <div>Income Tax Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/HRA/" class="calc-link">
+                    <span>🏘️</span>
+                    <div>HRA Calculator</div>
+                </a>
+                <a href="https://sidhiandassociates.github.io/calculator/" class="calc-link">
+                    <span>📊</span>
+                    <div>View All Calculators</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="https://sidhiandassociates.github.io/">Home</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/about/">About Us</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/">All Services</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/why-us/">Why Choose Us</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/faq/">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Popular Services</h3>
+                    <ul>
+                        <li><a href="https://sidhiandassociates.github.io/services/income-tax-return-ITR/">ITR Filing - ₹499</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/tax-planning-filing/">Tax Planning</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/gst-registration/">GST Registration - ₹3,000</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/business-advisory/">Business Advisory</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/services/dmat-account-opening-and-sip-investment-consultant/">SIP Investment Consultant</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Financial Calculators</h3>
+                    <ul>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/">All Calculators</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/sip-calculator/">SIP Calculator</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/ppf-calculator/">PPF Calculator</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/fd-calculator/">FD Calculator</a></li>
+                        <li><a href="https://sidhiandassociates.github.io/calculator/retirement-planning-calculator/">Retirement Calculator</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📞 <a href="tel:+917889257045" style="color: white; font-weight: bold;">+91 78892 57045</a></p>
+                    <p>✉️ <a href="mailto:siddhiandassociatess@gmail.com" style="color: white;">siddhiandassociatess@gmail.com</a></p>
+                    <p style="margin-top: 15px;">🕒 Mon-Sat: 9 AM - 6 PM</p>
+                    <p>⚡ Response: Under 2 Hours</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | 5000+ Satisfied Clients | Expert SIP Investment Advisors</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Buttons -->
+    <div class="floating-buttons">
+        <a href="https://wa.me/917889257045?text=Hi%2C%20I%20used%20your%20SIP%20calculator" 
+           target="_blank" 
+           class="float-btn whatsapp-btn" 
+           aria-label="Chat on WhatsApp">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+            </svg>
+        </a>
+        <a href="tel:+917889257045" 
+           class="float-btn call-btn" 
+           aria-label="Call us">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        // SIP Calculator Logic
+        document.getElementById('sipForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            calculateSIP();
+        });
+
+        function calculateSIP() {
+            // Get input values
+            const sipAmount = parseFloat(document.getElementById('sipAmount').value) || 0;
+            const expectedReturn = parseFloat(document.getElementById('expectedReturn').value) || 0;
+            const investmentPeriod = parseInt(document.getElementById('investmentPeriod').value) || 0;
+            const frequency = document.getElementById('frequency').value;
+            const stepUp = parseFloat(document.getElementById('stepUp').value) || 0;
+
+            // Validation
+            if (!sipAmount || !expectedReturn || !investmentPeriod) {
+                alert('Please fill all required fields');
+                return;
+            }
+
+            if (sipAmount < 500) {
+                alert('Minimum SIP amount is ₹500');
+                return;
+            }
+
+            // Calculate frequency multiplier
+            let periodsPerYear;
+            let frequencyText;
+            switch(frequency) {
+                case 'monthly':
+                    periodsPerYear = 12;
+                    frequencyText = 'Monthly';
+                    break;
+                case 'quarterly':
+                    periodsPerYear = 4;
+                    frequencyText = 'Quarterly';
+                    break;
+                case 'yearly':
+                    periodsPerYear = 1;
+                    frequencyText = 'Yearly';
+                    break;
+            }
+
+            const totalPeriods = investmentPeriod * periodsPerYear;
+            const ratePerPeriod = expectedReturn / 100 / periodsPerYear;
+            const stepUpDecimal = stepUp / 100;
+
+            // Calculate SIP with step-up
+            let totalInvested = 0;
+            let maturityAmount = 0;
+            let currentSIP = sipAmount;
+            const yearlyData = [];
+
+            for (let year = 1; year <= investmentPeriod; year++) {
+                let yearInvestment = 0;
+                let yearOpeningBalance = maturityAmount;
+
+                for (let period = 0; period < periodsPerYear; period++) {
+                    yearInvestment += currentSIP;
+                    totalInvested += currentSIP;
+                    
+                    // Future value of this SIP installment
+                    const remainingPeriods = totalPeriods - ((year - 1) * periodsPerYear + period);
+                    const installmentFV = currentSIP * Math.pow(1 + ratePerPeriod, remainingPeriods);
+                    maturityAmount += installmentFV;
+                }
+
+                // Calculate year-end balance properly
+                const yearEndBalance = yearOpeningBalance * Math.pow(1 + ratePerPeriod, periodsPerYear) + 
+                                      (currentSIP * (Math.pow(1 + ratePerPeriod, periodsPerYear) - 1) / ratePerPeriod);
+
+                yearlyData.push({
+                    year: year,
+                    investment: yearInvestment,
+                    balance: yearEndBalance
+                });
+
+                // Apply step-up for next year
+                if (stepUp > 0 && year < investmentPeriod) {
+                    currentSIP = currentSIP * (1 + stepUpDecimal);
+                }
+            }
+
+            // Recalculate maturity amount using formula
+            maturityAmount = 0;
+            currentSIP = sipAmount;
+            
+            for (let year = 1; year <= investmentPeriod; year++) {
+                for (let period = 0; period < periodsPerYear; period++) {
+                    const remainingPeriods = totalPeriods - ((year - 1) * periodsPerYear + period);
+                    maturityAmount += currentSIP * Math.pow(1 + ratePerPeriod, remainingPeriods);
+                }
+                if (stepUp > 0 && year < investmentPeriod) {
+                    currentSIP = currentSIP * (1 + stepUpDecimal);
+                }
+            }
+
+            const wealthGained = maturityAmount - totalInvested;
+            const totalReturnsPercent = (wealthGained / totalInvested) * 100;
+
+            // Display results
+            document.getElementById('resultsContainer').style.display = 'block';
+            document.getElementById('noResultsMessage').style.display = 'none';
+
+            // Update main result
+            document.getElementById('maturityAmount').textContent = formatCurrency(maturityAmount);
+            document.getElementById('periodDisplay').textContent = investmentPeriod;
+
+            // Update stats
+            document.getElementById('totalInvestment').textContent = formatCurrency(totalInvested);
+            document.getElementById('wealthGained').textContent = formatCurrency(wealthGained);
+            document.getElementById('cagr').textContent = expectedReturn.toFixed(1) + '%';
+            document.getElementById('totalReturns').textContent = totalReturnsPercent.toFixed(1) + '%';
+
+            // Update breakdown
+            document.getElementById('sipAmountDisplay').textContent = formatCurrency(sipAmount) + (stepUp > 0 ? ` (+${stepUp}% annually)` : '');
+            document.getElementById('frequencyDisplay').textContent = frequencyText;
+            document.getElementById('periodBreakdown').textContent = investmentPeriod + ' years';
+            document.getElementById('returnDisplay').textContent = expectedReturn + '% p.a.';
+            document.getElementById('totalInvestedDisplay').textContent = formatCurrency(totalInvested);
+            document.getElementById('returnsEarnedDisplay').textContent = formatCurrency(wealthGained);
+            document.getElementById('maturityBreakdown').textContent = formatCurrency(maturityAmount);
+
+            // Update inline text
+            document.getElementById('sipInline').textContent = formatCurrency(sipAmount);
+            document.getElementById('maturityInline').textContent = formatCurrency(maturityAmount);
+            document.getElementById('yearsInline').textContent = investmentPeriod;
+
+            // Create year-wise breakdown
+            const yearBreakdownDiv = document.getElementById('yearBreakdown');
+            yearBreakdownDiv.innerHTML = `
+                <div class="year-row">
+                    <span>Year</span>
+                    <span>Investment</span>
+                    <span>Interest Earned</span>
+                    <span>Balance</span>
+                </div>
+            `;
+
+            let cumulativeInvestment = 0;
+            yearlyData.forEach(data => {
+                cumulativeInvestment += data.investment;
+                const interestEarned = data.balance - cumulativeInvestment;
+                
+                const row = document.createElement('div');
+                row.className = 'year-row';
+                row.innerHTML = `
+                    <span data-label="Year">${data.year}</span>
+                    <span data-label="Investment">${formatCurrency(data.investment)}</span>
+                    <span data-label="Interest">${formatCurrency(interestEarned)}</span>
+                    <span data-label="Balance">${formatCurrency(data.balance)}</span>
+                `;
+                yearBreakdownDiv.appendChild(row);
+            });
+
+            // Scroll to results
+            document.getElementById('resultsContainer').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        function resetForm() {
+            document.getElementById('sipForm').reset();
+            document.getElementById('resultsContainer').style.display = 'none';
+            document.getElementById('noResultsMessage').style.display = 'block';
+        }
+
+        function formatCurrency(num) {
+            const crore = 10000000;
+            const lakh = 100000;
+            
+            if (num >= crore) {
+                return '₹' + (num / crore).toFixed(2) + ' Cr';
+            } else if (num >= lakh) {
+                return '₹' + (num / lakh).toFixed(2) + ' L';
+            } else {
+                return '₹' + formatNumber(num);
+            }
+        }
+
+        function formatNumber(num) {
+            return new Intl.NumberFormat('en-IN', {
+                maximumFractionDigits: 0
+            }).format(num);
+        }
+
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const answer = element.querySelector('.faq-answer');
+            const arrow = element.querySelector('.faq-question span');
+            const isOpen = answer.style.display === 'block';
+            
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(a => {
+                a.style.display = 'none';
+            });
+            document.querySelectorAll('.faq-question span').forEach(s => {
+                s.textContent = '▼';
+            });
+            
+            // Toggle current FAQ
+            if (!isOpen) {
+                answer.style.display = 'block';
+                arrow.textContent = '▲';
+            }
+        }
+
+        // Auto-calculate on input change
+        const inputs = document.querySelectorAll('#sipForm input, #sipForm select');
+        let debounceTimer;
+        inputs.forEach(input => {
+            input.addEventListener('input', function() {
+                clearTimeout(debounceTimer);
+                debounceTimer = setTimeout(() => {
+                    const form = document.getElementById('sipForm');
+                    if (form.checkValidity()) {
+                        calculateSIP();
+                    }
+                }, 800);
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.info-card, .stat-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s, transform 0.6s';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
