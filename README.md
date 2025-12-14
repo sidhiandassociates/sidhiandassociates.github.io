@@ -204,6 +204,7 @@ Connect with us on:
 - 🌐 Website: [sidhiandassociates.github.io](https://sidhiandassociates.github.io/)
 - 📧 Email: [siddhiandassociatess@gmail.com](mailto:siddhiandassociatess@gmail.com)
 - 💬 WhatsApp Business: [+91 78892 57045](https://wa.me/917889257045)
+- About Me: https://about.me/sidhiandassociates
 
 ---
 
