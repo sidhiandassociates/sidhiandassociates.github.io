@@ -3,574 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="icon" href="/sidhi.png" type="image/png" />
-    
-    <!-- Primary Meta Tags -->
     <title>Income Tax Calculator - Old vs New Regime Comparison | Free Tool</title>
-    <meta name="title" content="Income Tax Calculator - Old vs New Regime Comparison">
     <meta name="description" content="Free Income Tax Calculator. Compare old vs new tax regime. Calculate tax liability, deductions, take-home salary. By Sidhi & Associates CAs.">
-    <meta name="keywords" content="income tax calculator, tax calculator, old vs new tax regime, income tax calculation, tax saver calculator, take home salary calculator">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    
-    <!-- Canonical -->
     <link rel="canonical" href="https://sidhiandassociates.github.io/calculator/income-tax-calculator/">
     
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "Income Tax Calculator 2024-25",
-      "description": "Calculate income tax for FY 2024-25 with old vs new regime comparison",
-      "applicationCategory": "FinanceApplication",
-      "operatingSystem": "All",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "INR"
-      },
-      "provider": {
-        "@type": "Organization",
-        "name": "Sidhi & Associates"
-      }
-    }
-    </script>
-
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
-            --primary-blue: #0A2647;
-            --primary-gold: #D4A43C;
-            --light-gold: #F5E6C8;
-            --text-dark: #1a1a1a;
-            --text-light: #666;
-            --white: #ffffff;
-            --light-bg: #F9F7F4;
-            --success-green: #28a745;
-            --info-blue: #17a2b8;
-            --warning-orange: #ff9800;
-            --danger-red: #dc3545;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background: var(--light-bg);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            background: var(--white);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 0;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            text-decoration: none;
-        }
-
-        .logo-img {
-            width: 60px;
-            height: 60px;
-        }
-
-        .logo-text h1 {
-            font-size: 1.8em;
-            color: var(--primary-blue);
-            font-weight: 700;
-            margin: 0;
-        }
-
-        .logo-text p {
-            font-size: 0.9em;
-            color: var(--primary-gold);
-            margin: 0;
-        }
-
-        .header-cta {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .cta-phone {
-            color: var(--primary-blue);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.1em;
-        }
-
-        .breadcrumb {
-            background: var(--light-gold);
-            padding: 15px 0;
-        }
-
-        .breadcrumb a {
-            color: var(--primary-blue);
-            text-decoration: none;
-            margin: 0 5px;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, var(--info-blue) 0%, #138496 100%);
-            color: var(--white);
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 2.5em;
-            margin-bottom: 15px;
-        }
-
-        .calculator-container {
-            max-width: 1400px;
-            margin: -40px auto 60px;
-            padding: 0 20px;
-        }
-
-        .calculator-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-        }
-
-        .calculator-card {
-            background: var(--white);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.1);
-        }
-
-        .calculator-card h3 {
-            color: var(--primary-blue);
-            font-size: 1.8em;
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 3px solid var(--primary-gold);
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: var(--text-dark);
-            font-size: 1.05em;
-        }
-
-        .form-group input,
-        .form-group select {
-            width: 100%;
-            padding: 12px 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-size: 1em;
-            transition: border 0.3s;
-        }
-
-        .form-group input:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: var(--primary-gold);
-        }
-
-        .regime-selector {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-bottom: 25px;
-        }
-
-        .regime-option {
-            padding: 15px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            cursor: pointer;
-            text-align: center;
-            transition: all 0.3s;
-        }
-
-        .regime-option:hover {
-            border-color: var(--primary-gold);
-        }
-
-        .regime-option.active {
-            border-color: var(--primary-gold);
-            background: var(--light-gold);
-        }
-
-        .regime-option input[type="radio"] {
-            display: none;
-        }
-
-        .regime-label {
-            font-weight: 700;
-            color: var(--primary-blue);
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .regime-desc {
-            font-size: 0.9em;
-            color: var(--text-light);
-        }
-
-        .collapsible-section {
-            margin-bottom: 20px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .collapsible-header {
-            padding: 15px 20px;
-            background: var(--light-bg);
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-weight: 600;
-            color: var(--primary-blue);
-        }
-
-        .collapsible-header:hover {
-            background: var(--light-gold);
-        }
-
-        .collapsible-content {
-            padding: 20px;
-            display: none;
-        }
-
-        .collapsible-content.active {
-            display: block;
-        }
-
-        .btn-calculate {
-            width: 100%;
-            padding: 15px;
-            background: var(--info-blue);
-            color: var(--white);
-            border: none;
-            border-radius: 8px;
-            font-size: 1.1em;
-            font-weight: 700;
-            cursor: pointer;
-            transition: all 0.3s;
-            margin-top: 10px;
-        }
-
-        .btn-calculate:hover {
-            background: #138496;
-            transform: translateY(-2px);
-        }
-
-        .btn-reset {
-            width: 100%;
-            padding: 12px;
-            background: transparent;
-            color: var(--text-light);
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
-            font-size: 1em;
-            font-weight: 600;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        .result-section {
-            position: sticky;
-            top: 100px;
-        }
-
-        .comparison-tabs {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin-bottom: 25px;
-        }
-
-        .tab-button {
-            padding: 12px;
-            border: 2px solid #e0e0e0;
-            background: var(--white);
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s;
-        }
-
-        .tab-button.active {
-            border-color: var(--primary-gold);
-            background: var(--light-gold);
-            color: var(--primary-blue);
-        }
-
-        .result-main {
-            background: linear-gradient(135deg, var(--success-green), #1e7e34);
-            color: var(--white);
-            padding: 35px;
-            border-radius: 12px;
-            text-align: center;
-            margin-bottom: 25px;
-        }
-
-        .result-label {
-            font-size: 1.1em;
-            margin-bottom: 10px;
-            opacity: 0.95;
-        }
-
-        .result-value {
-            font-size: 3.5em;
-            font-weight: 700;
-            margin: 15px 0;
-        }
-
-        .result-subtitle {
-            font-size: 1em;
-            opacity: 0.9;
-        }
-
-        .breakdown-card {
-            background: var(--light-bg);
-            padding: 25px;
-            border-radius: 8px;
-            margin-bottom: 20px;
-        }
-
-        .breakdown-card h4 {
-            color: var(--primary-blue);
-            font-size: 1.3em;
-            margin-bottom: 15px;
-        }
-
-        .breakdown-row {
-            display: flex;
-            justify-content: space-between;
-            padding: 12px 0;
-            border-bottom: 1px solid #e0e0e0;
-        }
-
-        .breakdown-row:last-child {
-            border-bottom: none;
-        }
-
-        .breakdown-row.highlight {
-            font-weight: 700;
-            color: var(--primary-blue);
-            font-size: 1.1em;
-            background: var(--white);
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 10px;
-        }
-
-        .comparison-card {
-            background: var(--white);
-            padding: 25px;
-            border-radius: 8px;
-            border: 2px solid var(--light-gold);
-        }
-
-        .comparison-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-            margin-top: 15px;
-        }
-
-        .regime-result {
-            text-align: center;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .regime-result.better {
-            background: #d4edda;
-            border: 2px solid var(--success-green);
-        }
-
-        .regime-result.worse {
-            background: #f8d7da;
-            border: 2px solid #dc3545;
-        }
-
-        .regime-name {
-            font-weight: 700;
-            color: var(--primary-blue);
-            margin-bottom: 10px;
-        }
-
-        .regime-tax {
-            font-size: 2em;
-            font-weight: 700;
-            margin: 10px 0;
-        }
-
-        .savings-badge {
-            display: inline-block;
-            padding: 8px 15px;
-            background: var(--success-green);
-            color: var(--white);
-            border-radius: 20px;
-            font-weight: 600;
-            margin-top: 10px;
-        }
-
-        .info-box {
-            background: #d1ecf1;
-            border-left: 4px solid var(--info-blue);
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-        }
-
-        .alert-box {
-            background: #fff3cd;
-            border-left: 4px solid var(--warning-orange);
-            padding: 20px;
-            border-radius: 8px;
-            margin: 25px 0;
-            color: #856404;
-        }
-
-        .cta-box {
-            background: linear-gradient(135deg, var(--primary-gold), #C4932C);
-            color: var(--white);
-            padding: 30px;
-            border-radius: 12px;
-            text-align: center;
-            margin-top: 25px;
-        }
-
-        .cta-box h4 {
-            color: var(--white);
-            margin-bottom: 15px;
-            font-size: 1.5em;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 15px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .btn-primary {
-            background: var(--primary-blue);
-            color: var(--white);
-            padding: 12px 25px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: all 0.3s;
-            display: inline-block;
-        }
-
-        .btn-primary:hover {
-            background: var(--white);
-            color: var(--primary-blue);
-            transform: translateY(-2px);
-        }
-
-        .floating-buttons {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            z-index: 999;
-        }
-
-        .float-btn {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            transition: all 0.3s;
-        }
-
-        .float-btn:hover {
-            transform: scale(1.1);
-        }
-
-        .whatsapp-btn {
-            background: #25D366;
-        }
-
-        .call-btn {
-            background: var(--primary-gold);
-        }
-
-        .float-btn svg {
-            width: 30px;
-            height: 30px;
-            fill: white;
-        }
-
+            --primary-blue: #0A2647; --primary-gold: #D4A43C; --light-gold: #F5E6C8;
+            --text-dark: #1a1a1a; --text-light: #666; --white: #ffffff; --light-bg: #F9F7F4;
+            --success-green: #28a745; --info-blue: #17a2b8; --warning-orange: #ff9800;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-dark); background: var(--light-bg); }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
+        .logo { display: flex; align-items: center; gap: 15px; text-decoration: none; }
+        .logo-img { width: 60px; height: 60px; object-fit: contain; }
+        .logo-text h1 { font-size: 1.8em; color: var(--primary-blue); font-weight: 700; margin: 0; }
+        .logo-text p { font-size: 0.9em; color: var(--primary-gold); margin: 0; }
+        .header-cta { display: flex; gap: 15px; align-items: center; }
+        .cta-phone { color: var(--primary-blue); text-decoration: none; font-weight: 600; font-size: 1.1em; }
+        .cta-btn { background: var(--primary-gold); color: var(--white); padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+        .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 5px; }
+        .menu-toggle span { display: block; width: 25px; height: 3px; background: var(--primary-blue); margin: 5px 0; transition: 0.3s; }
+        nav { background: var(--primary-blue); padding: 12px 0; }
+        nav .container { display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; }
+        nav a { color: var(--white); text-decoration: none; font-weight: 600; transition: color 0.3s; font-size: 0.95em; }
+        nav a:hover { color: var(--primary-gold); }
+        .breadcrumb { background: var(--light-gold); padding: 15px 0; }
+        .breadcrumb a { color: var(--primary-blue); text-decoration: none; margin: 0 5px; }
+        .hero { background: linear-gradient(135deg, var(--info-blue) 0%, #138496 100%); color: var(--white); padding: 60px 20px; text-align: center; }
+        .hero h2 { font-size: 2.5em; margin-bottom: 15px; }
+        .calculator-container { max-width: 1400px; margin: -40px auto 60px; padding: 0 20px; }
+        .calculator-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .calculator-card { background: var(--white); padding: 40px; border-radius: 12px; box-shadow: 0 5px 25px rgba(0,0,0,0.1); }
+        .calculator-card h3 { color: var(--primary-blue); font-size: 1.8em; margin-bottom: 25px; padding-bottom: 15px; border-bottom: 3px solid var(--primary-gold); }
+        .form-group { margin-bottom: 25px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: var(--text-dark); font-size: 1.05em; }
+        .form-group input { width: 100%; padding: 12px 15px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1em; transition: border 0.3s; }
+        .form-group input:focus { outline: none; border-color: var(--primary-gold); }
+        .regime-selector { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px; }
+        .regime-option { padding: 15px; border: 2px solid #e0e0e0; border-radius: 8px; cursor: pointer; text-align: center; transition: all 0.3s; }
+        .regime-option:hover { border-color: var(--primary-gold); }
+        .regime-option.active { border-color: var(--primary-gold); background: var(--light-gold); }
+        .regime-option input[type="radio"] { display: none; }
+        .regime-label { font-weight: 700; color: var(--primary-blue); display: block; margin-bottom: 5px; }
+        .regime-desc { font-size: 0.9em; color: var(--text-light); }
+        .collapsible-section { margin-bottom: 20px; border: 2px solid #e0e0e0; border-radius: 8px; overflow: hidden; }
+        .collapsible-header { padding: 15px 20px; background: var(--light-bg); cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-weight: 600; color: var(--primary-blue); }
+        .collapsible-header:hover { background: var(--light-gold); }
+        .collapsible-content { padding: 20px; display: none; }
+        .collapsible-content.active { display: block; }
+        .btn-calculate { width: 100%; padding: 15px; background: var(--info-blue); color: var(--white); border: none; border-radius: 8px; font-size: 1.1em; font-weight: 700; cursor: pointer; transition: all 0.3s; margin-top: 10px; }
+        .btn-calculate:hover { background: #138496; transform: translateY(-2px); }
+        .btn-reset { width: 100%; padding: 12px; background: transparent; color: var(--text-light); border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1em; font-weight: 600; cursor: pointer; margin-top: 10px; }
+        .result-section { position: sticky; top: 100px; }
+        .comparison-tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 25px; }
+        .tab-button { padding: 12px; border: 2px solid #e0e0e0; background: var(--white); border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.3s; }
+        .tab-button.active { border-color: var(--primary-gold); background: var(--light-gold); color: var(--primary-blue); }
+        .result-main { background: linear-gradient(135deg, var(--success-green), #1e7e34); color: var(--white); padding: 35px; border-radius: 12px; text-align: center; margin-bottom: 25px; }
+        .result-label { font-size: 1.1em; margin-bottom: 10px; opacity: 0.95; }
+        .result-value { font-size: 3.5em; font-weight: 700; margin: 15px 0; }
+        .result-subtitle { font-size: 1em; opacity: 0.9; }
+        .breakdown-card { background: var(--light-bg); padding: 25px; border-radius: 8px; margin-bottom: 20px; }
+        .breakdown-card h4 { color: var(--primary-blue); font-size: 1.3em; margin-bottom: 15px; }
+        .breakdown-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #e0e0e0; }
+        .breakdown-row:last-child { border-bottom: none; }
+        .breakdown-row.highlight { font-weight: 700; color: var(--primary-blue); font-size: 1.1em; background: var(--white); padding: 15px; border-radius: 8px; margin-top: 10px; }
+        .comparison-card { background: var(--white); padding: 25px; border-radius: 8px; border: 2px solid var(--light-gold); }
+        .comparison-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 15px; }
+        .regime-result { text-align: center; padding: 20px; border-radius: 8px; }
+        .regime-result.better { background: #d4edda; border: 2px solid var(--success-green); }
+        .regime-result.worse { background: #f8d7da; border: 2px solid #dc3545; }
+        .regime-name { font-weight: 700; color: var(--primary-blue); margin-bottom: 10px; }
+        .regime-tax { font-size: 2em; font-weight: 700; margin: 10px 0; }
+        .savings-badge { display: inline-block; padding: 8px 15px; background: var(--success-green); color: var(--white); border-radius: 20px; font-weight: 600; margin-top: 10px; }
+        .info-box { background: #d1ecf1; border-left: 4px solid var(--info-blue); padding: 20px; border-radius: 8px; margin: 25px 0; }
+        .alert-box { background: #fff3cd; border-left: 4px solid var(--warning-orange); padding: 20px; border-radius: 8px; margin: 25px 0; color: #856404; }
+        .cta-box { background: linear-gradient(135deg, var(--primary-gold), #C4932C); color: var(--white); padding: 30px; border-radius: 12px; text-align: center; margin-top: 25px; }
+        .cta-box h4 { color: var(--white); margin-bottom: 15px; font-size: 1.5em; }
+        .cta-buttons { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; margin-top: 20px; }
+        .btn-primary { background: var(--primary-blue); color: var(--white); padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: 700; transition: all 0.3s; display: inline-block; }
+        .btn-primary:hover { background: var(--white); color: var(--primary-blue); transform: translateY(-2px); }
+        .floating-buttons { position: fixed; right: 20px; bottom: 20px; display: flex; flex-direction: column; gap: 15px; z-index: 999; }
+        .float-btn { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 4px 15px rgba(0,0,0,0.3); transition: all 0.3s; }
+        .float-btn:hover { transform: scale(1.1); }
+        .whatsapp-btn { background: #25D366; }
+        .call-btn { background: var(--primary-gold); }
+        .float-btn svg { width: 30px; height: 30px; fill: white; }
+        footer { background: var(--primary-blue); color: var(--white); padding: 50px 20px 30px; margin-top: 60px; }
+        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-bottom: 30px; }
+        .footer-section h3 { color: var(--primary-gold); margin-bottom: 20px; font-size: 1.3em; }
+        .footer-section ul { list-style: none; padding: 0; }
+        .footer-section ul li { margin-bottom: 10px; }
+        .footer-section a { color: var(--white); text-decoration: none; transition: color 0.3s; font-size: 0.95em; }
+        .footer-section a:hover { color: var(--primary-gold); }
+        .footer-section p { margin-bottom: 8px; font-size: 0.95em; line-height: 1.6; }
+        .office-address { margin-bottom: 25px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .office-address:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+        .office-address h4 { color: var(--primary-gold); margin-bottom: 10px; font-size: 1.1em; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px; text-align: center; }
         @media (max-width: 968px) {
-            .calculator-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .result-section {
-                position: static;
-            }
-
-            .comparison-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero h2 {
-                font-size: 2em;
-            }
-
-            .calculator-card {
-                padding: 25px;
-            }
-
-            .result-value {
-                font-size: 2.5em;
-            }
-
-            .header-cta {
-                display: none;
-            }
+            .calculator-grid { grid-template-columns: 1fr; }
+            .result-section { position: static; }
+            .comparison-grid { grid-template-columns: 1fr; }
+            .hero h2 { font-size: 2em; }
+            .calculator-card { padding: 25px; }
+            .result-value { font-size: 2.5em; }
+            .logo-text h1 { font-size: 1.4em; }
+            .logo-text p { font-size: 0.8em; }
+            .header-cta { display: none; }
+            .menu-toggle { display: block; }
+            nav { display: none; }
+            nav.active { display: block; }
+            nav .container { flex-direction: column; gap: 0; }
+            nav a { display: block; padding: 12px 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+            .floating-buttons { right: 15px; bottom: 15px; }
+            .float-btn { width: 50px; height: 50px; }
+            .float-btn svg { width: 24px; height: 24px; }
+            .footer-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 480px) {
+            .hero h2 { font-size: 1.5em; }
+            .calculator-card { padding: 20px; }
+            .calculator-card h3 { font-size: 1.4em; }
+            .regime-selector { grid-template-columns: 1fr; }
+            .result-value { font-size: 2em; }
+            .logo-img { width: 50px; height: 50px; }
         }
     </style>
 </head>
@@ -579,7 +141,7 @@
         <div class="container">
             <div class="header-content">
                 <a href="/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="60" height="60">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
                         <p>Chartered Accountants</p>
@@ -587,10 +149,25 @@
                 </a>
                 <div class="header-cta">
                     <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                    <a href="#contact" class="cta-btn">Get Started</a>
                 </div>
+                <button class="menu-toggle" onclick="toggleMenu()">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
         </div>
     </header>
+
+    <nav id="mainNav">
+        <div class="container">
+            <a href="/services/">Services</a>
+            <a href="/why-us/">Why Us</a>
+            <a href="/faq/">FAQs</a>
+            <a href="/blog/">Blogs</a>
+            <a href="/calculator/">Calculators</a>
+            <a href="/about/">About</a>
+        </div>
+    </nav>
 
     <div class="breadcrumb">
         <div class="container">
@@ -602,16 +179,13 @@
         <div class="container">
             <h2>💰 Income Tax Calculator</h2>
             <p>Calculate Tax Liability & Compare Old vs New Regime</p>
-            <p style="font-size: 1em; opacity: 0.9; margin-top: 10px;">Latest Tax Rates • Expert CA Tool</p>
         </div>
     </section>
 
     <div class="calculator-container">
         <div class="calculator-grid">
-            <!-- Input Section -->
             <div class="calculator-card">
                 <h3>Enter Your Income Details</h3>
-                
                 <form id="taxForm">
                     <div class="form-group">
                         <label>Select Tax Regime</label>
@@ -619,7 +193,7 @@
                             <label class="regime-option active">
                                 <input type="radio" name="regime" value="new" checked>
                                 <span class="regime-label">New Regime</span>
-                                <span class="regime-desc">Default, No deductions</span>
+                                <span class="regime-desc">Default</span>
                             </label>
                             <label class="regime-option">
                                 <input type="radio" name="regime" value="old">
@@ -628,98 +202,76 @@
                             </label>
                         </div>
                     </div>
-
                     <div class="form-group">
                         <label for="basicSalary">Basic Salary (Annual)</label>
-                        <input type="number" id="basicSalary" placeholder="600000" min="0" step="1000" value="600000">
+                        <input type="number" id="basicSalary" value="600000" min="0" step="1000">
                     </div>
-
                     <div class="form-group">
                         <label for="hra">HRA Received (Annual)</label>
-                        <input type="number" id="hra" placeholder="120000" min="0" step="1000" value="120000">
+                        <input type="number" id="hra" value="120000" min="0" step="1000">
                     </div>
-
                     <div class="form-group">
                         <label for="otherAllowances">Other Allowances (Annual)</label>
-                        <input type="number" id="otherAllowances" placeholder="50000" min="0" step="1000" value="50000">
+                        <input type="number" id="otherAllowances" value="50000" min="0" step="1000">
                     </div>
-
                     <div class="form-group">
-                        <label for="otherIncome">Other Income (Interest, Rental, etc.)</label>
-                        <input type="number" id="otherIncome" placeholder="0" min="0" step="1000" value="0">
+                        <label for="otherIncome">Other Income</label>
+                        <input type="number" id="otherIncome" value="0" min="0" step="1000">
                     </div>
-
-                    <!-- Deductions Section -->
-                    <div class="collapsible-section" id="deductionsSection">
+                    <div class="collapsible-section">
                         <div class="collapsible-header" onclick="toggleSection('deductions')">
-                            <span>💰 Deductions (Old Regime Only)</span>
+                            <span>💰 Deductions (Old Regime)</span>
                             <span id="deductionsArrow">▼</span>
                         </div>
                         <div class="collapsible-content" id="deductionsContent">
                             <div class="form-group">
-                                <label for="section80C">Section 80C (EPF, PPF, LIC, ELSS)</label>
-                                <input type="number" id="section80C" placeholder="Max 150000" min="0" max="150000" step="1000" value="150000">
-                                <small style="color: var(--text-light);">Maximum: ₹1,50,000</small>
+                                <label for="section80C">Section 80C</label>
+                                <input type="number" id="section80C" value="150000" min="0" max="150000" step="1000">
+                                <small style="color: var(--text-light);">Max: ₹1,50,000</small>
                             </div>
-
                             <div class="form-group">
-                                <label for="section80D">Section 80D (Health Insurance)</label>
-                                <input type="number" id="section80D" placeholder="Max 25000" min="0" max="100000" step="1000" value="25000">
-                                <small style="color: var(--text-light);">Max: ₹25K (self), ₹50K (parents senior citizen)</small>
+                                <label for="section80D">Section 80D</label>
+                                <input type="number" id="section80D" value="25000" min="0" step="1000">
                             </div>
-
                             <div class="form-group">
                                 <label for="hraExempt">HRA Exemption</label>
-                                <input type="number" id="hraExempt" placeholder="0" min="0" step="1000" value="0">
-                                <small style="color: var(--text-light);">Use HRA calculator for exact amount</small>
+                                <input type="number" id="hraExempt" value="0" min="0" step="1000">
                             </div>
-
                             <div class="form-group">
-                                <label for="section80CCD">Section 80CCD(1B) - NPS</label>
-                                <input type="number" id="section80CCD" placeholder="Max 50000" min="0" max="50000" step="1000" value="50000">
-                                <small style="color: var(--text-light);">Maximum: ₹50,000 (additional to 80C)</small>
+                                <label for="section80CCD">Section 80CCD(1B)</label>
+                                <input type="number" id="section80CCD" value="50000" min="0" max="50000" step="1000">
                             </div>
-
                             <div class="form-group">
                                 <label for="homeLoanInterest">Home Loan Interest</label>
-                                <input type="number" id="homeLoanInterest" placeholder="Max 200000" min="0" max="200000" step="1000" value="0">
-                                <small style="color: var(--text-light);">Section 24(b): Maximum ₹2,00,000</small>
+                                <input type="number" id="homeLoanInterest" value="0" min="0" step="1000">
                             </div>
-
                             <div class="form-group">
-                                <label for="section80G">Section 80G (Donations)</label>
-                                <input type="number" id="section80G" placeholder="0" min="0" step="1000" value="0">
+                                <label for="section80G">Section 80G</label>
+                                <input type="number" id="section80G" value="0" min="0" step="1000">
                             </div>
                         </div>
                     </div>
-
                     <button type="button" class="btn-calculate" onclick="calculateTax()">🧮 Calculate Tax</button>
                     <button type="button" class="btn-reset" onclick="resetForm()">🔄 Reset</button>
                 </form>
-
                 <div class="info-box" style="margin-top: 30px;">
                     <h4>💡 Quick Tips</h4>
                     <ul style="margin-left: 20px; margin-top: 10px;">
                         <li>New regime is default from FY 2023-24</li>
-                        <li>Old regime allows deductions but higher rates</li>
                         <li>Standard deduction: ₹50K (salaried)</li>
-                        <li>Rebate u/s 87A if income < ₹7L (new regime)</li>
+                        <li>Rebate u/s 87A if income < ₹7L</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Results Section -->
             <div class="result-section">
                 <div class="calculator-card">
                     <h3>Your Tax Calculation</h3>
-                    
                     <div class="comparison-tabs">
                         <button class="tab-button active" onclick="showTab('both')">Both Regimes</button>
                         <button class="tab-button" onclick="showTab('selected')">Selected Only</button>
                     </div>
-
                     <div id="resultsContainer">
-                        <!-- Comparison View -->
                         <div id="comparisonView">
                             <div class="comparison-card">
                                 <h4 style="text-align: center; color: var(--primary-blue); margin-bottom: 20px;">Regime Comparison</h4>
@@ -738,126 +290,341 @@
                                 <div id="savingsMessage" style="text-align: center; margin-top: 20px;"></div>
                             </div>
                         </div>
-
-                        <!-- Selected View -->
                         <div id="selectedView" style="display: none;">
                             <div class="result-main">
                                 <div class="result-label">Total Tax Payable</div>
                                 <div class="result-value" id="selectedTax">₹0</div>
                                 <div class="result-subtitle" id="selectedRegime">New Regime</div>
                             </div>
-
                             <div class="breakdown-card">
                                 <h4>Income Breakdown</h4>
-                                <div class="breakdown-row">
-                                    <span>Gross Total Income</span>
-                                    <span id="grossIncome">₹0</span>
-                                </div>
-                                <div class="breakdown-row">
-                                    <span>(-) Deductions</span>
-                                    <span id="totalDeductions">₹0</span>
-                                </div>
-                                <div class="breakdown-row highlight">
-                                    <span>Taxable Income</span>
-                                    <span id="taxableIncome">₹0</span>
-                                </div>
+                                <div class="breakdown-row"><span>Gross Income</span><span id="grossIncome">₹0</span></div>
+                                <div class="breakdown-row"><span>(-) Deductions</span><span id="totalDeductions">₹0</span></div>
+                                <div class="breakdown-row highlight"><span>Taxable Income</span><span id="taxableIncome">₹0</span></div>
                             </div>
-
                             <div class="breakdown-card">
                                 <h4>Tax Calculation</h4>
-                                <div class="breakdown-row">
-                                    <span>Income Tax</span>
-                                    <span id="incomeTax">₹0</span>
-                                </div>
-                                <div class="breakdown-row">
-                                    <span>(+) Health & Education Cess (4%)</span>
-                                    <span id="cess">₹0</span>
-                                </div>
-                                <div class="breakdown-row">
-                                    <span>(-) Rebate u/s 87A</span>
-                                    <span id="rebate">₹0</span>
-                                </div>
-                                <div class="breakdown-row highlight">
-                                    <span>Total Tax Payable</span>
-                                    <span id="totalTax">₹0</span>
-                                </div>
+                                <div class="breakdown-row"><span>Income Tax</span><span id="incomeTax">₹0</span></div>
+                                <div class="breakdown-row"><span>(+) Cess (4%)</span><span id="cess">₹0</span></div>
+                                <div class="breakdown-row"><span>(-) Rebate 87A</span><span id="rebate">₹0</span></div>
+                                <div class="breakdown-row highlight"><span>Total Tax</span><span id="totalTax">₹0</span></div>
                             </div>
-
                             <div class="breakdown-card">
-                                <h4>Take Home Salary</h4>
-                                <div class="breakdown-row">
-                                    <span>Annual Gross Salary</span>
-                                    <span id="annualGross">₹0</span>
-                                </div>
-                                <div class="breakdown-row">
-                                    <span>(-) Total Tax</span>
-                                    <span id="taxDeduction">₹0</span>
-                                </div>
-                                <div class="breakdown-row highlight" style="background: var(--success-green); color: white;">
-                                    <span>Annual Take Home</span>
-                                    <span id="takeHome">₹0</span>
-                                </div>
+                                <h4>Take Home</h4>
+                                <div class="breakdown-row"><span>Annual Gross</span><span id="annualGross">₹0</span></div>
+                                <div class="breakdown-row"><span>(-) Tax</span><span id="taxDeduction">₹0</span></div>
+                                <div class="breakdown-row highlight" style="background: var(--success-green); color: white;"><span>Take Home</span><span id="takeHome">₹0</span></div>
                                 <div style="text-align: center; margin-top: 15px; padding: 15px; background: var(--white); border-radius: 8px;">
-                                    <div style="color: var(--text-light); margin-bottom: 5px;">Monthly Take Home</div>
+                                    <div style="color: var(--text-light);">Monthly</div>
                                     <div style="font-size: 2em; font-weight: 700; color: var(--success-green);" id="monthlyTakeHome">₹0</div>
                                 </div>
                             </div>
                         </div>
-
                         <div id="recommendationBox"></div>
                     </div>
-
-                    <!-- CTA Box for Lead Generation -->
                     <div class="cta-box">
                         <h4>💡 Need Expert Tax Planning?</h4>
-                        <p style="margin-bottom: 0;">Save more tax with professional guidance</p>
+                        <p>Save more tax with professional guidance</p>
                         <div class="cta-buttons">
                             <a href="tel:+917889257045" class="btn-primary">📞 Call Now</a>
-                            <a href="https://wa.me/917889257045?text=Hi%2C%20I%20used%20your%20tax%20calculator" class="btn-primary" style="background: #25D366;">💬 WhatsApp</a>
+                            <a href="https://wa.me/917889257045" class="btn-primary" style="background: #25D366;">💬 WhatsApp</a>
                         </div>
-                        <p style="font-size: 0.9em; margin-top: 15px; opacity: 0.9;">ITR Filing from ₹2,500 | Free Consultation</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Floating Buttons -->
     <div class="floating-buttons">
-        <a href="https://wa.me/917889257045?text=Hi%2C%20I%20used%20your%20tax%20calculator" 
-           target="_blank" 
-           class="float-btn whatsapp-btn" 
-           aria-label="Chat on WhatsApp">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-            </svg>
+        <a href="https://wa.me/917889257045" class="float-btn whatsapp-btn">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
         </a>
-        <a href="tel:+917889257045" 
-           class="float-btn call-btn" 
-           aria-label="Call us">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
-            </svg>
+        <a href="tel:+917889257045" class="float-btn call-btn">
+            <!-- Add this after the opening <a href="tel:+917889257045" class="float-btn call-btn"> tag -->
+            <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
         </a>
     </div>
 
+<!-- Natasha -->
+<!-- Add this section BEFORE the footer in your calculator page -->
+
+<!-- Related Calculators Section -->
+<section style="background: var(--white); padding: 60px 20px;">
+    <div class="container">
+        <h2 style="color: var(--primary-blue); font-size: 2.5em; margin-bottom: 20px; text-align: center; position: relative; padding-bottom: 20px;">
+            Related Financial Calculators
+        </h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 50px; font-size: 1.1em; color: var(--text-light);">
+            Explore more financial tools to plan your investments and taxes better
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px;">
+            <!-- HRA Calculator -->
+            <div style="background: var(--light-bg); padding: 30px; border-radius: 12px; border-left: 4px solid var(--primary-gold); transition: all 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                <div style="font-size: 2.5em; margin-bottom: 15px;">🏠</div>
+                <h3 style="color: var(--primary-blue); font-size: 1.4em; margin-bottom: 10px;">HRA Calculator</h3>
+                <p style="color: var(--text-light); margin-bottom: 15px; line-height: 1.6;">Calculate your House Rent Allowance exemption and maximize tax savings</p>
+                <a href="/calculator/HRA/" style="color: var(--primary-gold); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
+                    Calculate HRA →
+                </a>
+            </div>
+
+            <!-- TDS Calculator -->
+            <div style="background: var(--light-bg); padding: 30px; border-radius: 12px; border-left: 4px solid var(--info-blue); transition: all 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                <div style="font-size: 2.5em; margin-bottom: 15px;">📋</div>
+                <h3 style="color: var(--primary-blue); font-size: 1.4em; margin-bottom: 10px;">TDS Calculator</h3>
+                <p style="color: var(--text-light); margin-bottom: 15px; line-height: 1.6;">Calculate Tax Deducted at Source on salary, interest, rent and more</p>
+                <a href="/calculator/tds-calculator/" style="color: var(--info-blue); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
+                    Calculate TDS →
+                </a>
+            </div>
+
+            <!-- Advance Tax Calculator -->
+            <div style="background: var(--light-bg); padding: 30px; border-radius: 12px; border-left: 4px solid var(--success-green); transition: all 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                <div style="font-size: 2.5em; margin-bottom: 15px;">⏰</div>
+                <h3 style="color: var(--primary-blue); font-size: 1.4em; margin-bottom: 10px;">Advance Tax Calculator</h3>
+                <p style="color: var(--text-light); margin-bottom: 15px; line-height: 1.6;">Calculate quarterly advance tax payments to avoid penalties</p>
+                <a href="/calculator/advance-tax-calculator/" style="color: var(--success-green); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
+                    Calculate Advance Tax →
+                </a>
+            </div>
+
+            <!-- Capital Gains Calculator -->
+            <div style="background: var(--light-bg); padding: 30px; border-radius: 12px; border-left: 4px solid var(--warning-orange); transition: all 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                <div style="font-size: 2.5em; margin-bottom: 15px;">📈</div>
+                <h3 style="color: var(--primary-blue); font-size: 1.4em; margin-bottom: 10px;">Capital Gains Calculator</h3>
+                <p style="color: var(--text-light); margin-bottom: 15px; line-height: 1.6;">Calculate tax on profits from sale of property, stocks, and mutual funds</p>
+                <a href="/calculator/capital-gains-calculator/" style="color: var(--warning-orange); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
+                    Calculate Capital Gains →
+                </a>
+            </div>
+
+            <!-- SIP Calculator -->
+            <div style="background: var(--light-bg); padding: 30px; border-radius: 12px; border-left: 4px solid #9C27B0; transition: all 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                <div style="font-size: 2.5em; margin-bottom: 15px;">💰</div>
+                <h3 style="color: var(--primary-blue); font-size: 1.4em; margin-bottom: 10px;">SIP Calculator</h3>
+                <p style="color: var(--text-light); margin-bottom: 15px; line-height: 1.6;">Plan your Systematic Investment Plan and estimate mutual fund returns</p>
+                <a href="/calculator/sip-calculator/" style="color: #9C27B0; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
+                    Calculate SIP Returns →
+                </a>
+            </div>
+
+            <!-- PPF Calculator -->
+            <div style="background: var(--light-bg); padding: 30px; border-radius: 12px; border-left: 4px solid #00BCD4; transition: all 0.3s; cursor: pointer;" onmouseover="this.style.transform='translateY(-5px)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.1)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                <div style="font-size: 2.5em; margin-bottom: 15px;">🏦</div>
+                <h3 style="color: var(--primary-blue); font-size: 1.4em; margin-bottom: 10px;">PPF Calculator</h3>
+                <p style="color: var(--text-light); margin-bottom: 15px; line-height: 1.6;">Calculate Public Provident Fund returns and maturity amount</p>
+                <a href="/calculator/ppf-calculator/" style="color: #00BCD4; text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 5px;">
+                    Calculate PPF →
+                </a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="/calculator/" style="background: var(--primary-gold); color: var(--white); padding: 15px 35px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 1.1em; display: inline-block; transition: all 0.3s;" onmouseover="this.style.background='var(--primary-blue)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='var(--primary-gold)'; this.style.transform='translateY(0)'">
+                View All Calculators
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Related Services Section -->
+<section style="background: var(--light-bg); padding: 60px 20px;">
+    <div class="container">
+        <h2 style="color: var(--primary-blue); font-size: 2.5em; margin-bottom: 20px; text-align: center; position: relative; padding-bottom: 20px;">
+            Professional Tax Services
+        </h2>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto 50px; font-size: 1.1em; color: var(--text-light);">
+            Need expert help with tax planning and compliance? Our CA services can help you save more
+        </p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+            <!-- Tax Planning Service -->
+            <div style="background: var(--white); padding: 35px; border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); transition: all 0.3s; border-top: 4px solid var(--primary-gold);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 30px rgba(10, 38, 71, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 3px 15px rgba(0,0,0,0.08)'">
+                <div style="font-size: 3em; margin-bottom: 20px;">📊</div>
+                <h3 style="color: var(--primary-blue); font-size: 1.5em; margin-bottom: 15px;">Tax Planning & Filing</h3>
+                <p style="color: var(--text-light); margin-bottom: 20px; line-height: 1.8;">Expert ITR filing and strategic tax planning to minimize your tax liability legally. From ₹2,500.</p>
+                <ul style="list-style: none; padding: 0; margin-bottom: 20px; color: var(--text-light);">
+                    <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ Income Tax Return Filing</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ Tax Optimization Strategies</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ Deduction Planning</li>
+                    <li style="padding: 8px 0;">✓ Notice Resolution</li>
+                </ul>
+                <a href="/services/tax-planning-filing/" style="color: var(--primary-gold); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 5px; transition: all 0.3s;" onmouseover="this.style.color='var(--primary-blue)'; this.style.transform='translateX(5px)'" onmouseout="this.style.color='var(--primary-gold)'; this.style.transform='translateX(0)'">
+                    Learn More →
+                </a>
+            </div>
+
+            <!-- ITR Filing Service -->
+            <div style="background: var(--white); padding: 35px; border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); transition: all 0.3s; border-top: 4px solid var(--info-blue);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 30px rgba(10, 38, 71, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 3px 15px rgba(0,0,0,0.08)'">
+                <div style="font-size: 3em; margin-bottom: 20px;">📝</div>
+                <h3 style="color: var(--primary-blue); font-size: 1.5em; margin-bottom: 15px;">Income Tax Return Filing</h3>
+                <p style="color: var(--text-light); margin-bottom: 20px; line-height: 1.8;">Professional ITR filing for salaried, business, and freelancers. Quick turnaround with maximum refunds.</p>
+                <ul style="list-style: none; padding: 0; margin-bottom: 20px; color: var(--text-light);">
+                    <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ All ITR Forms (1-7)</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ Capital Gains Reporting</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ Business Income Filing</li>
+                    <li style="padding: 8px 0;">✓ Maximum Refund Guarantee</li>
+                </ul>
+                <a href="/services/income-tax-return-ITR/" style="color: var(--info-blue); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 5px; transition: all 0.3s;" onmouseover="this.style.color='var(--primary-blue)'; this.style.transform='translateX(5px)'" onmouseout="this.style.color='var(--info-blue)'; this.style.transform='translateX(0)'">
+                    Learn More →
+                </a>
+            </div>
+
+            <!-- Business Tax Service -->
+            <div style="background: var(--white); padding: 35px; border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); transition: all 0.3s; border-top: 4px solid var(--success-green);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 30px rgba(10, 38, 71, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 3px 15px rgba(0,0,0,0.08)'">
+                <div style="font-size: 3em; margin-bottom: 20px;">💼</div>
+                <h3 style="color: var(--primary-blue); font-size: 1.5em; margin-bottom: 15px;">Business Tax Services</h3>
+                <p style="color: var(--text-light); margin-bottom: 20px; line-height: 1.8;">Comprehensive tax solutions for businesses including tax audit, compliance, and advisory.</p>
+                <ul style="list-style: none; padding: 0; margin-bottom: 20px; color: var(--text-light);">
+                    <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ Tax Audit (44AB)</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ Transfer Pricing</li>
+                    <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ TDS Compliance</li>
+                    <li style="padding: 8px 0;">✓ Assessment Support</li>
+                </ul>
+                <a href="/services/business-tax-services/" style="color: var(--success-green); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 5px; transition: all 0.3s;" onmouseover="this.style.color='var(--primary-blue)'; this.style.transform='translateX(5px)'" onmouseout="this.style.color='var(--success-green)'; this.style.transform='translateX(0)'">
+                    Learn More →
+                </a>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="/services/" style="background: var(--primary-blue); color: var(--white); padding: 15px 35px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 1.1em; display: inline-block; transition: all 0.3s;" onmouseover="this.style.background='var(--primary-gold)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='var(--primary-blue)'; this.style.transform='translateY(0)'">
+                View All Services
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section style="background: var(--white); padding: 60px 20px;">
+    <div class="container">
+        <h2 style="color: var(--primary-blue); font-size: 2.5em; margin-bottom: 20px; text-align: center; position: relative; padding-bottom: 20px;">
+            Frequently Asked Questions
+        </h2>
+        
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div style="margin-bottom: 20px; border: 2px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+                <div style="padding: 20px; background: var(--light-bg); cursor: pointer; font-weight: 600; color: var(--primary-blue);" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+                    ❓ Which tax regime is better for me - Old or New?
+                </div>
+                <div style="padding: 20px; display: none; background: var(--white);">
+                    <p style="color: var(--text-light); line-height: 1.8;">It depends on your deductions. If you have significant deductions (80C, HRA, home loan), the old regime might be better. If you have minimal deductions, the new regime usually saves more tax. Use our calculator above to compare both regimes for your specific situation.</p>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px; border: 2px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+                <div style="padding: 20px; background: var(--light-bg); cursor: pointer; font-weight: 600; color: var(--primary-blue);" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+                    ❓ What is the standard deduction for FY 2024-25?
+                </div>
+                <div style="padding: 20px; display: none; background: var(--white);">
+                    <p style="color: var(--text-light); line-height: 1.8;">The standard deduction for salaried individuals is ₹50,000 for FY 2024-25 under both old and new tax regimes. This is automatically deducted from your gross salary before calculating taxable income.</p>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px; border: 2px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+                <div style="padding: 20px; background: var(--light-bg); cursor: pointer; font-weight: 600; color: var(--primary-blue);" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+                    ❓ How can I reduce my tax liability legally?
+                </div>
+                <div style="padding: 20px; display: none; background: var(--white);">
+                    <p style="color: var(--text-light); line-height: 1.8; margin-bottom: 10px;">Here are legal ways to reduce tax:</p>
+                    <ul style="margin-left: 20px; color: var(--text-light); line-height: 1.8;">
+                        <li>Maximize Section 80C deductions (EPF, PPF, ELSS, LIC)</li>
+                        <li>Claim HRA exemption if paying rent</li>
+                        <li>Invest in NPS for additional 80CCD(1B) deduction</li>
+                        <li>Claim home loan interest deduction</li>
+                        <li>Health insurance premiums under 80D</li>
+                    </ul>
+                    <p style="margin-top: 15px;"><a href="tel:+917889257045" style="color: var(--primary-gold); font-weight: 600;">Contact our CA experts for personalized tax planning</a></p>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 20px; border: 2px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
+                <div style="padding: 20px; background: var(--light-bg); cursor: pointer; font-weight: 600; color: var(--primary-blue);" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
+                    ❓ What is Section 87A rebate?
+                </div>
+                <div style="padding: 20px; display: none; background: var(--white);">
+                    <p style="color: var(--text-light); line-height: 1.8;">Section 87A provides a tax rebate for individuals with taxable income up to ₹7,00,000 under the new regime and ₹5,00,000 under the old regime. If you qualify, your entire tax liability can be reduced to zero through this rebate.</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="/faq/" style="color: var(--primary-gold); text-decoration: none; font-weight: 600; font-size: 1.1em; display: inline-flex; align-items: center; gap: 8px;" onmouseover="this.style.color='var(--primary-blue)'" onmouseout="this.style.color='var(--primary-gold)'">
+                View All FAQs →
+            </a>
+        </div>
+    </div>
+</section>
+    <!-- Natasha -->
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/services/">Services</a></li>
+                        <li><a href="/calculator/">Calculators</a></li>
+                        <li><a href="/about/">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="/services/tax-planning-filing/">Tax Planning</a></li>
+                        <li><a href="/services/gst-compliance/">GST Compliance</a></li>
+                        <li><a href="/services/company-incorporation/">Company Registration</a></li>
+                        <li><a href="/services/audit-services/">Audit Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><strong>📞 Phone:</strong><br><a href="tel:+917889257045">+91 78892 57045</a></p>
+                    <p style="margin-top: 15px;"><strong>✉️ Email:</strong><br><a href="mailto:siddhiandassociatess@gmail.com">siddhiandassociatess@gmail.com</a></p>
+                    <p style="margin-top: 15px;"><strong>🕒 Hours:</strong><br>Mon-Sat: 9 AM - 6 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Our Locations</h3>
+                    <div class="office-address">
+                        <h4>📍 Panchkula</h4>
+                        <p>Sector 20, Panchkula, HR 134117</p>
+                    </div>
+                    <div class="office-address">
+                        <h4>📍 Bangalore</h4>
+                        <p>Kadubeesanahalli, Bengaluru, KA 560103</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants</p>
+            </div>
+        </div>
+    </footer>
+
     <script>
-        // Initialize
+        // Toggle mobile menu
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+
+        // Regime selector
         document.querySelectorAll('.regime-option').forEach(option => {
             option.addEventListener('click', function() {
                 document.querySelectorAll('.regime-option').forEach(o => o.classList.remove('active'));
                 this.classList.add('active');
                 this.querySelector('input[type="radio"]').checked = true;
-                
-                const isOldRegime = this.querySelector('input').value === 'old';
-                document.getElementById('deductionsSection').style.opacity = isOldRegime ? '1' : '0.5';
             });
         });
 
+        // Toggle collapsible section
         function toggleSection(section) {
             const content = document.getElementById(section + 'Content');
             const arrow = document.getElementById(section + 'Arrow');
-            
             if (content.classList.contains('active')) {
                 content.classList.remove('active');
                 arrow.textContent = '▼';
@@ -867,10 +634,10 @@
             }
         }
 
+        // Show tab
         function showTab(view) {
             document.querySelectorAll('.tab-button').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
-            
             if (view === 'both') {
                 document.getElementById('comparisonView').style.display = 'block';
                 document.getElementById('selectedView').style.display = 'none';
@@ -880,15 +647,14 @@
             }
         }
 
+        // Calculate tax
         function calculateTax() {
             const basic = parseFloat(document.getElementById('basicSalary').value) || 0;
             const hra = parseFloat(document.getElementById('hra').value) || 0;
             const allowances = parseFloat(document.getElementById('otherAllowances').value) || 0;
             const otherIncome = parseFloat(document.getElementById('otherIncome').value) || 0;
-            
             const grossIncome = basic + hra + allowances + otherIncome;
             
-            // Deductions
             const section80C = parseFloat(document.getElementById('section80C').value) || 0;
             const section80D = parseFloat(document.getElementById('section80D').value) || 0;
             const hraExempt = parseFloat(document.getElementById('hraExempt').value) || 0;
@@ -896,21 +662,16 @@
             const homeLoanInt = parseFloat(document.getElementById('homeLoanInterest').value) || 0;
             const section80G = parseFloat(document.getElementById('section80G').value) || 0;
             
-            // Standard deduction
             const standardDeduction = 50000;
-            
-            // Calculate New Regime Tax
             const newTaxableIncome = Math.max(0, grossIncome - standardDeduction);
             const newRegimeTax = calculateNewRegimeTax(newTaxableIncome);
             
-            // Calculate Old Regime Tax
             const totalOldDeductions = standardDeduction + Math.min(section80C, 150000) + section80D + 
                                       hraExempt + Math.min(section80CCD, 50000) + 
                                       Math.min(homeLoanInt, 200000) + section80G;
             const oldTaxableIncome = Math.max(0, grossIncome - totalOldDeductions);
             const oldRegimeTax = calculateOldRegimeTax(oldTaxableIncome);
             
-            // Display results
             displayResults(grossIncome, newTaxableIncome, oldTaxableIncome, newRegimeTax, oldRegimeTax, totalOldDeductions, standardDeduction);
         }
 
@@ -922,13 +683,8 @@
             else if (income <= 1200000) tax = 50000 + (income - 1000000) * 0.15;
             else if (income <= 1500000) tax = 80000 + (income - 1200000) * 0.20;
             else tax = 140000 + (income - 1500000) * 0.30;
-            
-            // Add cess
             tax = tax * 1.04;
-            
-            // Rebate u/s 87A
             if (income <= 700000) tax = 0;
-            
             return Math.round(tax);
         }
 
@@ -938,22 +694,14 @@
             else if (income <= 500000) tax = (income - 250000) * 0.05;
             else if (income <= 1000000) tax = 12500 + (income - 500000) * 0.20;
             else tax = 112500 + (income - 1000000) * 0.30;
-            
-            // Add cess
             tax = tax * 1.04;
-            
-            // Rebate u/s 87A for old regime
-            if (income <= 500000) {
-                tax = Math.max(0, tax - 12500);
-            }
-            
+            if (income <= 500000) tax = Math.max(0, tax - 12500);
             return Math.round(tax);
         }
 
         function displayResults(grossIncome, newTaxableIncome, oldTaxableIncome, newRegimeTax, oldRegimeTax, totalOldDeductions, standardDeduction) {
             const selectedRegime = document.querySelector('input[name="regime"]:checked').value;
             
-            // Comparison View
             document.getElementById('newRegimeTax').textContent = '₹' + formatNumber(newRegimeTax);
             document.getElementById('oldRegimeTax').textContent = '₹' + formatNumber(oldRegimeTax);
             
@@ -963,7 +711,6 @@
             document.getElementById('newRegimeRate').textContent = 'Effective: ' + newEffective + '%';
             document.getElementById('oldRegimeRate').textContent = 'Effective: ' + oldEffective + '%';
             
-            // Highlight better regime
             const newCard = document.getElementById('newRegimeCard');
             const oldCard = document.getElementById('oldRegimeCard');
             
@@ -972,7 +719,6 @@
                 newCard.classList.remove('worse');
                 oldCard.classList.add('worse');
                 oldCard.classList.remove('better');
-                
                 const savings = oldRegimeTax - newRegimeTax;
                 document.getElementById('savingsMessage').innerHTML = 
                     '<div class="savings-badge">✅ New Regime saves ₹' + formatNumber(savings) + '</div>' +
@@ -982,7 +728,6 @@
                 oldCard.classList.remove('worse');
                 newCard.classList.add('worse');
                 newCard.classList.remove('better');
-                
                 const savings = newRegimeTax - oldRegimeTax;
                 document.getElementById('savingsMessage').innerHTML = 
                     '<div class="savings-badge">✅ Old Regime saves ₹' + formatNumber(savings) + '</div>' +
@@ -994,7 +739,6 @@
                     '<p style="color: var(--text-light);">Both regimes result in same tax</p>';
             }
             
-            // Selected View
             const selectedTax = selectedRegime === 'new' ? newRegimeTax : oldRegimeTax;
             const selectedTaxableIncome = selectedRegime === 'new' ? newTaxableIncome : oldTaxableIncome;
             const selectedDeductions = selectedRegime === 'new' ? standardDeduction : totalOldDeductions;
@@ -1002,12 +746,10 @@
             document.getElementById('selectedTax').textContent = '₹' + formatNumber(selectedTax);
             document.getElementById('selectedRegime').textContent = selectedRegime === 'new' ? 'New Regime' : 'Old Regime';
             
-            // Income breakdown
             document.getElementById('grossIncome').textContent = '₹' + formatNumber(grossIncome);
             document.getElementById('totalDeductions').textContent = '₹' + formatNumber(selectedDeductions);
             document.getElementById('taxableIncome').textContent = '₹' + formatNumber(selectedTaxableIncome);
             
-            // Tax calculation
             const taxBeforeCess = Math.round(selectedTax / 1.04);
             const cess = selectedTax - taxBeforeCess;
             
@@ -1016,7 +758,6 @@
             document.getElementById('rebate').textContent = '₹0';
             document.getElementById('totalTax').textContent = '₹' + formatNumber(selectedTax);
             
-            // Take home
             const takeHome = grossIncome - selectedTax;
             const monthlyTakeHome = takeHome / 12;
             
@@ -1025,26 +766,16 @@
             document.getElementById('takeHome').textContent = '₹' + formatNumber(takeHome);
             document.getElementById('monthlyTakeHome').textContent = '₹' + formatNumber(Math.round(monthlyTakeHome));
             
-            // Recommendation box
             let recommendation = '';
             if (newRegimeTax < oldRegimeTax) {
                 const savings = oldRegimeTax - newRegimeTax;
-                recommendation = `
-                    <div class="alert-box" style="background: #d4edda; border-left-color: var(--success-green); color: #155724;">
-                        <strong>💡 Recommendation:</strong> New Regime saves you ₹${formatNumber(savings)} annually! 
-                        Consider switching if you don't have many deductions.
-                    </div>
-                `;
+                recommendation = `<div class="alert-box" style="background: #d4edda; border-left-color: var(--success-green); color: #155724;">
+                    <strong>💡 Recommendation:</strong> New Regime saves you ₹${formatNumber(savings)} annually!</div>`;
             } else if (oldRegimeTax < newRegimeTax) {
                 const savings = newRegimeTax - oldRegimeTax;
-                recommendation = `
-                    <div class="alert-box" style="background: #d4edda; border-left-color: var(--success-green); color: #155724;">
-                        <strong>💡 Recommendation:</strong> Old Regime saves you ₹${formatNumber(savings)} annually! 
-                        Your deductions make old regime beneficial.
-                    </div>
-                `;
+                recommendation = `<div class="alert-box" style="background: #d4edda; border-left-color: var(--success-green); color: #155724;">
+                    <strong>💡 Recommendation:</strong> Old Regime saves you ₹${formatNumber(savings)} annually!</div>`;
             }
-            
             document.getElementById('recommendationBox').innerHTML = recommendation;
         }
 
@@ -1060,28 +791,21 @@
             document.getElementById('section80CCD').value = '50000';
             document.getElementById('homeLoanInterest').value = '0';
             document.getElementById('section80G').value = '0';
-            
             calculateTax();
         }
 
         function formatNumber(num) {
-            return new Intl.NumberFormat('en-IN', {
-                maximumFractionDigits: 0
-            }).format(num);
+            return new Intl.NumberFormat('en-IN', { maximumFractionDigits: 0 }).format(num);
         }
 
-        // Calculate on page load with default values
-        window.addEventListener('load', function() {
-            calculateTax();
-        });
-
-        // Auto-calculate on input change
+        // Auto-calculate on input
         const inputs = document.querySelectorAll('#taxForm input');
         inputs.forEach(input => {
-            input.addEventListener('input', function() {
-                calculateTax();
-            });
+            input.addEventListener('input', calculateTax);
         });
+
+        // Calculate on page load
+        window.addEventListener('load', calculateTax);
     </script>
 </body>
 </html>
