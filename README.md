@@ -10,7 +10,7 @@
 **Sidhi & Associates** is a trusted firm of Chartered Accountants providing comprehensive financial, taxation, audit, and business advisory services to individuals, startups, SMEs, and corporates across India.
 
 ### 📍 Our Presence
-- **Panchkula** | **Zirakpur** | **Bareilly** | **Bangalore** | **Ghaziabad** | **Lucknow** | **Delhi** | **Chandigarh** | **Haridwar** | **Pantnagar** | **Dehradun** | **Shimla** | **Goa**
+- **Panchkula** | **Zirakpur** | **Bareilly** | **Bangalore** | **Ghaziabad** | **Lucknow** | **Delhi** | **Chandigarh** | **Haridwar** | **Pantnagar** | **Dehradun** | **Shimla** | **Goa** | **Hyderabad** | **Pune** | **Gurgaon** | **Mumbai**
 - Pan-India Remote Services Available
 
 ---
