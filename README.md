@@ -240,11 +240,11 @@ Connect with us on:
 
 ## 📄 License
 
-© 2024 Sidhi & Associates. All Rights Reserved.  
+© 2026 Sidhi & Associates. All Rights Reserved.  
 ICAI Registered | Professional Excellence with Integrity
 
 ---
 
-**Last Updated:** November 12, 2025  
-**Version:** 2.0  
+**Last Updated:** April 22, 2026  
+**Version:** 3.0  
 **Sitemap:** Available at [sitemap.xml](https://sidhiandassociates.github.io/sitemap.xml)
