@@ -25,6 +25,9 @@
     <meta name="geo.region" content="IN-HR">
     <meta name="geo.placename" content="Gurugram, Haryana">
     <meta name="geo.position" content="28.3900;77.0200">
+    <meta name="ICBM" content="28.3900, 77.0200">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="revisit-after" content="7 days">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -43,40 +46,52 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://sidhiandassociates.com/gurugram/">
 
-    <!-- Local Business Schema -->
+    <!-- 1. LocalBusiness + AccountingService -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "AccountingService",
-      "name": "Sidhi & Associates - Gurugram Office",
-      "@id": "https://sidhiandassociates.com/gurugram/",
+      "@type": ["AccountingService","LocalBusiness"],
+      "@id": "https://sidhiandassociates.com/gurugram/#business",
+      "name": "Sidhi & Associates — Gurugram Office",
+      "legalName": "Sidhi & Associates",
       "url": "https://sidhiandassociates.com/gurugram/",
+      "logo": "https://sidhiandassociates.com/sidhi.png",
+      "description": "ICAI-registered Chartered Accountants in Gurugram (Gurgaon), Haryana. Expert income tax filing, GST compliance, startup advisory, company incorporation, transfer pricing, audit, and virtual CFO services for startups, MNCs, and individuals across Gurugram and Delhi NCR.",
       "telephone": "+917889257045",
       "email": "siddhiandassociatess@gmail.com",
       "priceRange": "₹₹",
+      "currenciesAccepted": "INR",
+      "paymentAccepted": "Cash, UPI, Bank Transfer, Cheque",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "C1406, 13th Floor, Tower C, Signature Global Orchard Avenue, Sector 93",
+        "streetAddress": "Flat C1406, 13th Floor, Tower C, Signature Global Orchard Avenue, Sector 93",
         "addressLocality": "Gurugram",
         "addressRegion": "Haryana",
         "postalCode": "122505",
         "addressCountry": "IN"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "28.3900",
-        "longitude": "77.0200"
-      },
+      "geo": {"@type": "GeoCoordinates", "latitude": "28.3900", "longitude": "77.0200"},
+      "hasMap": "https://maps.google.com/?q=Signature+Global+Orchard+Avenue+Sector+93+Gurugram+122505",
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "09:00",
-        "closes": "18:00"
+        "opens": "09:00", "closes": "18:00"
       },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "140"
+      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "140", "bestRating": "5"},
+      "review": [
+        {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "author": {"@type": "Person", "name": "Arjun Mehta"}, "reviewBody": "Best CA in Gurugram for startup founders. Handled our DPIIT registration and GST compliance perfectly. Highly recommend!"},
+        {"@type": "Review", "reviewRating": {"@type": "Rating", "ratingValue": "5"}, "author": {"@type": "Person", "name": "Sandeep Yadav"}, "reviewBody": "Excellent transfer pricing documentation and GST reconciliation for our Manesar manufacturing unit. Very professional."}
+      ],
+      "knowsAbout": ["Income Tax Filing","GST Registration","Startup Advisory","DPIIT Recognition","ESOP Structuring","Transfer Pricing","FEMA Compliance","Company Incorporation","Statutory Audit","Virtual CFO"],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "CA Services in Gurugram",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Income Tax Return Filing", "description": "ITR filing for salaried, HNIs, NRIs and businesses in Gurugram"}, "price": "2500", "priceCurrency": "INR"},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GST Registration & Returns", "description": "GST registration and monthly return filing for Gurugram businesses"}, "price": "5000", "priceCurrency": "INR"},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Startup Incorporation & Advisory", "description": "Company registration with DPIIT, ESOP, angel tax advisory in Gurugram"}, "price": "8000", "priceCurrency": "INR"},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Statutory Audit", "description": "Audit services for companies and SMEs in Gurugram"}, "price": "25000", "priceCurrency": "INR"}
+        ]
       },
       "areaServed": [
         {"@type": "City", "name": "Gurugram"},
@@ -85,8 +100,53 @@
         {"@type": "City", "name": "Faridabad"},
         {"@type": "City", "name": "Noida"},
         {"@type": "City", "name": "Ghaziabad"}
-      ]
+      ],
+      "contactPoint": {"@type": "ContactPoint", "telephone": "+917889257045", "contactType": "customer service", "areaServed": "IN", "availableLanguage": ["English","Hindi"]},
+      "sameAs": ["https://sidhiandassociates.com/"]
     }
+    </script>
+
+    <!-- 2. BreadcrumbList -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://sidhiandassociates.com/"},
+      {"@type":"ListItem","position":2,"name":"CA Services by Location","item":"https://sidhiandassociates.com/#locations"},
+      {"@type":"ListItem","position":3,"name":"CA Services in Gurugram","item":"https://sidhiandassociates.com/gurugram/"}
+    ]}
+    </script>
+
+    <!-- 3. FAQPage (AEO) -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"What is the fee for CA services in Gurugram?","acceptedAnswer":{"@type":"Answer","text":"At Sidhi & Associates Gurugram, fees start at ₹2,500 for ITR filing, ₹5,000/month for GST returns, ₹8,000 for company incorporation, and ₹25,000 for statutory audit. Transparent pricing with no hidden charges. Call +91 78892 57045 for a free consultation."}},
+      {"@type":"Question","name":"Which is the best CA firm in Gurgaon for startups?","acceptedAnswer":{"@type":"Answer","text":"Sidhi & Associates is one of the top CA firms in Gurugram for startups. We offer end-to-end startup services — company incorporation, DPIIT Startup India recognition, angel tax advisory, ESOP structuring, and GST compliance. Located at Sector 93, Gurugram. Rated 4.9/5 by 140+ clients."}},
+      {"@type":"Question","name":"Do you handle ESOP and transfer pricing in Gurugram?","acceptedAnswer":{"@type":"Answer","text":"Yes. Sidhi & Associates Gurugram specialises in ESOP structuring, transfer pricing documentation (Form 3CEB), FEMA compliance, and Form 15CA/CB for MNCs and expats based in Gurugram's corporate belt."}},
+      {"@type":"Question","name":"How to register a company in Gurugram?","acceptedAnswer":{"@type":"Answer","text":"To register a company in Gurugram: (1) Choose structure — Private Limited, LLP or OPC. (2) Obtain DSC for directors. (3) Apply for DIN. (4) Reserve company name via MCA RUN portal. (5) File SPICe+ form with MCA. (6) Receive Certificate of Incorporation. Sidhi & Associates completes Gurugram company registration in 7-10 working days. Call +91 78892 57045."}},
+      {"@type":"Question","name":"What documents are needed for GST registration in Gurugram?","acceptedAnswer":{"@type":"Answer","text":"For GST registration in Gurugram you need: PAN card, Aadhaar card, Gurugram business address proof (electricity bill or rent agreement), cancelled cheque, passport photograph, and business registration documents. Sidhi & Associates completes GST registration in Gurugram within 3-5 working days."}},
+      {"@type":"Question","name":"Can I file ITR online with a CA in Gurugram?","acceptedAnswer":{"@type":"Answer","text":"Yes. Sidhi & Associates Gurugram offers fully virtual ITR filing. Share your Form 16, bank statements, PAN, and investment proofs via WhatsApp or email. Our CA team files your return within 24-48 hours and sends the acknowledgement. No office visit needed."}},
+      {"@type":"Question","name":"What is the GST due date for Gurugram businesses?","acceptedAnswer":{"@type":"Answer","text":"For businesses in Gurugram, Haryana: GSTR-1 is due on the 11th of the next month. GSTR-3B is due on the 20th. GSTR-9 annual return is due 31st December. Late fees are ₹50/day. Sidhi & Associates ensures timely compliance for all Gurugram businesses."}},
+      {"@type":"Question","name":"Does Sidhi & Associates serve Manesar and Faridabad?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our Gurugram office at Sector 93 serves Manesar (IMT), Faridabad, Noida, Ghaziabad, South Delhi, and all of Delhi NCR. Virtual CA services available Pan-India. Call +91 78892 57045."}}
+    ]}
+    </script>
+
+    <!-- 4. HowTo (AEO) -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"HowTo","name":"How to Get CA Services in Gurugram — Step by Step","description":"Simple 4-step process to get started with Sidhi & Associates in Gurugram","totalTime":"P2D","estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"2500"},"step":[
+      {"@type":"HowToStep","position":1,"name":"Call or WhatsApp","text":"Call +91 78892 57045 or WhatsApp us. Tell us your requirement — ITR, GST, company setup, or audit in Gurugram."},
+      {"@type":"HowToStep","position":2,"name":"Share documents digitally","text":"Send PAN, Form 16, bank statements and any other required documents via WhatsApp or email. No physical visit needed."},
+      {"@type":"HowToStep","position":3,"name":"CA prepares and reviews","text":"Our Gurugram CA team prepares your filing, computes tax liability, and shares the draft with you for approval."},
+      {"@type":"HowToStep","position":4,"name":"Filed and delivered","text":"Your ITR, GST return, or company registration is submitted. You receive acknowledgement and compliance confirmation instantly."}
+    ]}
+    </script>
+
+    <!-- 5. WebPage + Speakable (GEO + AIO) -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebPage","@id":"https://sidhiandassociates.com/gurugram/#webpage","url":"https://sidhiandassociates.com/gurugram/","name":"CA Services in Gurugram (Gurgaon) | Sidhi & Associates","description":"Trusted CA firm in Gurugram. ITR filing, GST compliance, startup advisory, transfer pricing, audit. Located at Sector 93, Signature Global Orchard Avenue, Gurugram 122505.","inLanguage":"en-IN","isPartOf":{"@type":"WebSite","@id":"https://sidhiandassociates.com/#website","url":"https://sidhiandassociates.com/","name":"Sidhi & Associates"},"about":{"@type":"AccountingService","@id":"https://sidhiandassociates.com/gurugram/#business"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".speakable-hero",".speakable-about",".speakable-services-summary"]},"dateModified":"2026-04-29","datePublished":"2024-01-01"}
+    </script>
+
+    <!-- 6. Organization (AIO) -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","@id":"https://sidhiandassociates.com/#organization","name":"Sidhi & Associates","url":"https://sidhiandassociates.com/","logo":{"@type":"ImageObject","url":"https://sidhiandassociates.com/sidhi.png"},"description":"ICAI registered Chartered Accountants with offices across India — Delhi, Gurugram, Pune, Haridwar, Vadodara, Bareilly and more.","foundingDate":"2014","contactPoint":{"@type":"ContactPoint","telephone":"+917889257045","contactType":"customer service","areaServed":"IN","availableLanguage":["English","Hindi"]},"sameAs":["https://sidhiandassociates.com/"]}
     </script>
 
     <style>
@@ -613,15 +673,22 @@
         .whatsapp-btn { background: #25D366; }
         .call-btn { background: var(--primary-gold); }
 
-        /* ── Responsive ── */
-        @media (max-width: 768px) {
-            .location-info { grid-template-columns: 1fr; }
-            .hero h2 { font-size: 2em; }
-            .hero p { font-size: 1.1em; }
-            h2 { font-size: 1.8em; }
-            .header-cta .cta-phone { display: none; }
-            .ncr-pills { gap: 8px; }
-        }
+        /* ── FAQ section ── */
+        .faq-grid { margin-top: 44px; }
+        .faq-item { background: var(--white); border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); margin-bottom: 14px; overflow: hidden; }
+        .faq-q { padding: 20px 24px; font-weight: 700; color: var(--primary-blue); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 1.02em; border-left: 4px solid var(--primary-gold); transition: background 0.2s; }
+        .faq-q:hover { background: #FDF6E7; }
+        .faq-icon { width: 26px; height: 26px; border-radius: 50%; background: var(--light-gold); color: var(--primary-blue); display: flex; align-items: center; justify-content: center; font-size: 1.1em; font-weight: 700; flex-shrink: 0; transition: all 0.3s; }
+        .faq-item.open .faq-icon { background: var(--primary-gold); color: var(--white); transform: rotate(45deg); }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; padding: 0 24px; color: var(--text-light); line-height: 1.75; font-size: 0.97em; }
+        .faq-item.open .faq-a { max-height: 400px; padding: 0 24px 20px; }
+        /* ── Process steps ── */
+        .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 24px; margin-top: 44px; }
+        .process-step { background: var(--white); padding: 28px 24px; border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); text-align: center; transition: all 0.3s; }
+        .process-step:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(10,38,71,0.15); }
+        .step-num { width: 48px; height: 48px; border-radius: 50%; background: var(--primary-blue); color: var(--primary-gold); font-size: 1.3em; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; }
+        .process-step h3 { color: var(--primary-blue); font-size: 1.05em; margin-bottom: 8px; }
+        .process-step p { color: var(--text-light); font-size: 0.92em; line-height: 1.6; }
     </style>
 </head>
 <body>
@@ -669,8 +736,10 @@
     <div class="hero">
         <div class="container">
             <div class="location-badge">📍 Sector 93, Gurugram (Gurgaon) — Signature Global Orchard Avenue</div>
-            <h2>Premier CA Services in Gurugram & Delhi NCR</h2>
-            <p>Trusted Chartered Accountants for Startups, Corporates & Individuals — Tax Filing, GST, Company Incorporation, Transfer Pricing, Audit & CFO Advisory across Gurugram, Manesar & the entire NCR</p>
+            <div class="speakable-hero">
+                <h2>Premier CA Services in Gurugram & Delhi NCR</h2>
+                <p>Trusted Chartered Accountants for Startups, Corporates & Individuals — Tax Filing, GST, Company Incorporation, Transfer Pricing, Audit & CFO Advisory across Gurugram, Manesar & the entire NCR</p>
+            </div>
             <div class="hero-buttons">
                 <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services%20in%20Gurugram" class="btn-secondary">💬 WhatsApp Us</a>
@@ -715,20 +784,23 @@
     </div>
 
     <!-- About Section -->
-    <section>
+    <section aria-labelledby="about-gurugram">
         <div class="container">
-            <h2>Leading CA Firm in Gurugram, Haryana</h2>
-            <p class="section-intro">Sidhi & Associates brings comprehensive chartered accountancy services to the heart of India's corporate capital. Located at C1406, Tower C, Signature Global Orchard Avenue, Sector 93 — we are strategically placed to serve Gurugram's booming startup ecosystem, MNCs, SMEs, and individual professionals.</p>
-
+            <h2 id="about-gurugram">Leading CA Firm in Gurugram, Haryana</h2>
+            <div class="speakable-about">
+                <p class="section-intro">Sidhi & Associates brings comprehensive chartered accountancy services to the heart of India's corporate capital. Located at Flat C1406, Tower C, Signature Global Orchard Avenue, Sector 93 — we are strategically placed to serve Gurugram's booming startup ecosystem, MNCs, SMEs, and individual professionals.</p>
+            </div>
             <p style="text-align:center; max-width:900px; margin:20px auto; color:var(--text-light); line-height:1.8;">Gurugram is home to over 250 Fortune 500 companies, thousands of high-growth startups, and a rapidly expanding MSME base. The city's financial complexity — involving transfer pricing, international taxation, ESOP structuring, startup funding compliance, and Haryana-specific state regulations — demands CAs with a sharp corporate edge. Our Sector 93 office delivers exactly that: big-firm expertise at transparent, client-friendly pricing.</p>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section-alt">
+    <section id="services" class="section-alt" aria-labelledby="services-gurugram">
         <div class="container">
-            <h2>Our CA Services in Gurugram</h2>
-            <p class="section-intro">Full-spectrum chartered accountancy services for Gurugram's corporate, startup & individual clients</p>
+            <h2 id="services-gurugram">Our CA Services in Gurugram</h2>
+            <div class="speakable-services-summary">
+                <p class="section-intro">Full-spectrum chartered accountancy services for Gurugram's corporate, startup & individual clients</p>
+            </div>
 
             <div class="services-grid">
                 <div class="service-card">
@@ -904,7 +976,7 @@
     <section id="contact" class="section-alt">
         <div class="container">
             <h2>Visit Our Gurugram Office</h2>
-            <p class="section-intro">Located at C1406, Tower C, Signature Global Orchard Avenue, Sector 93, Gurugram 122505</p>
+            <p class="section-intro">Located at Flat C1406, Tower C, Signature Global Orchard Avenue, Sector 93, Gurugram 122505</p>
 
             <div class="location-info">
                 <div class="map-container">
@@ -921,7 +993,7 @@
                 <div class="contact-details">
                     <div class="contact-item">
                         <strong>📍 Office Address</strong>
-                        C1406, 13th Floor, Tower C<br>
+                        Flat C1406, 13th Floor, Tower C<br>
                         Signature Global Orchard Avenue<br>
                         Sector 93, Gurugram, Haryana 122505
                     </div>
@@ -948,6 +1020,38 @@
                         ICAI Registered | Pan-India Virtual Services Available
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section aria-labelledby="process-gurugram">
+        <div class="container">
+            <h2 id="process-gurugram">How to Get CA Services in Gurugram — 4 Simple Steps</h2>
+            <p class="section-intro">Start your free consultation with Sidhi & Associates Gurugram in under 2 minutes</p>
+            <div class="process-steps">
+                <div class="process-step"><div class="step-num">1</div><h3>Call or WhatsApp</h3><p>Call +91 78892 57045 or WhatsApp us. Tell us your requirement — ITR, GST, startup incorporation, or audit in Gurugram.</p></div>
+                <div class="process-step"><div class="step-num">2</div><h3>Share Documents</h3><p>Send PAN, Form 16, bank statements, and required documents via WhatsApp or email. No physical visit required.</p></div>
+                <div class="process-step"><div class="step-num">3</div><h3>CA Reviews & Acts</h3><p>Our Gurugram CA team prepares your filing and shares the draft for approval before any submission.</p></div>
+                <div class="process-step"><div class="step-num">4</div><h3>Done & Delivered</h3><p>Your ITR, GST return, or company registration is filed. You receive acknowledgement and confirmation instantly.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (AEO) -->
+    <section id="faq" class="section-alt" aria-labelledby="faq-gurugram">
+        <div class="container">
+            <h2 id="faq-gurugram">Frequently Asked Questions — CA Services Gurugram</h2>
+            <p class="section-intro">Answers to the most common questions about CA services in Gurugram & Delhi NCR</p>
+            <div class="faq-grid">
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>What is the fee for CA services in Gurugram?</span><span class="faq-icon">+</span></div><div class="faq-a">At Sidhi & Associates Gurugram, fees start at ₹2,500 for ITR filing, ₹5,000/month for GST return filing, ₹8,000 for company incorporation, and ₹25,000 for statutory audit. Fully transparent — no hidden charges. Call +91 78892 57045 for a free consultation.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Which is the best CA firm in Gurgaon for startups?</span><span class="faq-icon">+</span></div><div class="faq-a">Sidhi & Associates is one of the top CA firms in Gurugram for startups. We offer company incorporation, DPIIT Startup India recognition, angel tax advisory, ESOP structuring, and ongoing GST compliance. Located at Sector 93, Gurugram. Rated 4.9/5 by 140+ clients.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Do you handle ESOP and transfer pricing in Gurugram?</span><span class="faq-icon">+</span></div><div class="faq-a">Yes. Sidhi & Associates Gurugram specialises in ESOP structuring, transfer pricing documentation (Form 3CEB), FEMA compliance, and Form 15CA/CB for MNCs and expats in Gurugram's corporate belt. Call +91 78892 57045.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>How to register a company in Gurugram?</span><span class="faq-icon">+</span></div><div class="faq-a">To register a company in Gurugram: (1) Choose structure — Private Limited, LLP or OPC. (2) Obtain DSC for directors. (3) Apply for DIN. (4) Reserve company name via MCA RUN. (5) File SPICe+ form. (6) Receive Certificate of Incorporation. We complete it in 7-10 working days. Call +91 78892 57045.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>What documents are needed for GST registration in Gurugram?</span><span class="faq-icon">+</span></div><div class="faq-a">For GST registration in Gurugram you need: PAN card, Aadhaar card, Gurugram business address proof (electricity bill or rent agreement), cancelled cheque, passport photograph, and business registration documents if applicable. We complete it in 3-5 working days.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>What is the GST due date for Gurugram businesses?</span><span class="faq-icon">+</span></div><div class="faq-a">For Gurugram businesses: GSTR-1 is due on the 11th of the next month. GSTR-3B is due on the 20th. GSTR-9 annual return is due 31st December. Late fees are ₹50/day. Sidhi & Associates ensures timely GST compliance for all Gurugram businesses.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Does Sidhi & Associates serve Manesar and Faridabad?</span><span class="faq-icon">+</span></div><div class="faq-a">Yes. Our Gurugram office at Sector 93 serves Manesar IMT, Faridabad, Noida, Ghaziabad, South Delhi, and all of Delhi NCR. Virtual CA services also available Pan-India. Call +91 78892 57045.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Can I file ITR online with a CA in Gurugram?</span><span class="faq-icon">+</span></div><div class="faq-a">Yes. Sidhi & Associates offers fully virtual ITR filing in Gurugram. Share your documents via WhatsApp or email. Our CA team files your return within 24-48 hours and sends your acknowledgement. No office visit needed. Call +91 78892 57045.</div></div>
             </div>
         </div>
     </section>
@@ -1015,7 +1119,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Sidhi & Associates – Gurugram Office. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates – Gurugram Office. All Rights Reserved.</p>
                 <p style="margin-top:10px;">Professional CA Services in Gurugram, Haryana | Serving Delhi NCR · Manesar · Faridabad · Noida</p>
             </div>
         </div>
@@ -1041,6 +1145,16 @@
     </div>
 
     <script>
+        document.querySelectorAll('.auto-year').forEach(el => el.textContent = new Date().getFullYear());
+
+        function toggleFaq(el) {
+            const item = el.parentElement;
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+            if (!isOpen) { item.classList.add('open'); el.setAttribute('aria-expanded','true'); }
+            else { el.setAttribute('aria-expanded','false'); }
+        }
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1058,7 +1172,7 @@
             });
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-        document.querySelectorAll('.service-card, .feature-card, .testimonial-card, .area-item, .sector-tag').forEach(el => {
+        document.querySelectorAll('.service-card, .feature-card, .testimonial-card, .area-item, .sector-tag, .process-step, .faq-item').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -1068,13 +1182,9 @@
         window.addEventListener('load', () => {
             document.querySelectorAll('.badge-number').forEach((badge, i) => {
                 setTimeout(() => {
-                    badge.style.opacity = '0';
-                    badge.style.transform = 'scale(0.5)';
+                    badge.style.opacity = '0'; badge.style.transform = 'scale(0.5)';
                     badge.style.transition = 'all 0.5s ease';
-                    setTimeout(() => {
-                        badge.style.opacity = '1';
-                        badge.style.transform = 'scale(1)';
-                    }, 100);
+                    setTimeout(() => { badge.style.opacity = '1'; badge.style.transform = 'scale(1)'; }, 100);
                 }, i * 100);
             });
         });
@@ -1087,6 +1197,17 @@
             document.querySelectorAll('nav a').forEach(link => {
                 link.style.color = '';
                 if (link.getAttribute('href') === '#' + current) link.style.color = 'var(--primary-gold)';
+            });
+        });
+
+        document.querySelectorAll('a[href^="tel:"]').forEach(a => {
+            a.addEventListener('click', () => {
+                if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-18022959954', event_category: 'Call', event_label: 'Gurugram' });
+            });
+        });
+        document.querySelectorAll('a[href*="wa.me"]').forEach(a => {
+            a.addEventListener('click', () => {
+                if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-18022959954', event_category: 'WhatsApp', event_label: 'Gurugram' });
             });
         });
     </script>
