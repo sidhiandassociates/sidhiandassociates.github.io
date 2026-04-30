@@ -25,6 +25,9 @@
     <meta name="geo.region" content="IN-MH">
     <meta name="geo.placename" content="Pune, Maharashtra">
     <meta name="geo.position" content="18.5504;73.9399">
+    <meta name="ICBM" content="18.5504, 73.9399">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="revisit-after" content="7 days">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -44,51 +47,43 @@
     <link rel="canonical" href="https://sidhiandassociates.com/pune/">
 
     <!-- Local Business Schema -->
+    <!-- 1. LocalBusiness + AccountingService -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AccountingService",
-      "name": "Sidhi & Associates - Pune Office",
-      "@id": "https://sidhiandassociates.com/pune/",
-      "url": "https://sidhiandassociates.com/pune/",
-      "telephone": "+917889257045",
-      "email": "siddhiandassociatess@gmail.com",
-      "priceRange": "₹₹",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "A-2, 306, Unique Youtopia, Kharadi",
-        "addressLocality": "Pune",
-        "addressRegion": "Maharashtra",
-        "postalCode": "411014",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "18.5504",
-        "longitude": "73.9399"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "135"
-      },
-      "areaServed": [
-        {"@type": "City", "name": "Pune"},
-        {"@type": "City", "name": "Mumbai"},
-        {"@type": "City", "name": "Goa"},
-        {"@type": "City", "name": "Ahmedabad"},
-        {"@type": "City", "name": "Nashik"},
-        {"@type": "City", "name": "Nagpur"},
-        {"@type": "City", "name": "Thane"},
-        {"@type": "City", "name": "Pimpri-Chinchwad"}
-      ]
-    }
+    {"@context":"https://schema.org","@type":["AccountingService","LocalBusiness"],"@id":"https://sidhiandassociates.com/pune/#business","name":"Sidhi & Associates — Pune Office","legalName":"Sidhi & Associates","url":"https://sidhiandassociates.com/pune/","logo":"https://sidhiandassociates.com/sidhi.png","description":"ICAI-registered Chartered Accountants in Pune, Maharashtra. Expert income tax filing, GST compliance, startup advisory, company incorporation, FEMA, audit, and virtual CFO services for IT professionals, startups, manufacturers, and individuals across Pune, Mumbai, Goa and West India.","telephone":"+917889257045","email":"siddhiandassociatess@gmail.com","priceRange":"₹₹","currenciesAccepted":"INR","paymentAccepted":"Cash, UPI, Bank Transfer, Cheque","address":{"@type":"PostalAddress","streetAddress":"A-2, 306, Unique Youtopia, Kharadi","addressLocality":"Pune","addressRegion":"Maharashtra","postalCode":"411014","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":"18.5504","longitude":"73.9399"},"hasMap":"https://maps.google.com/?q=Unique+Youtopia+Kharadi+Pune+Maharashtra+411014","openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"135","bestRating":"5"},"review":[{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Priya Joshi"},"reviewBody":"Best CA in Pune for startups. Handled our incorporation, DPIIT registration and ESOP structuring perfectly from day one."},{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Rohan Kulkarni"},"reviewBody":"Handled my complex ITR with RSU income and foreign bank accounts with complete precision. Highly professional team in Kharadi."}],"knowsAbout":["Income Tax Filing","GST Registration","Startup Advisory","DPIIT Recognition","ESOP Taxation","FEMA Compliance","Company Incorporation","Statutory Audit","Virtual CFO","Maharashtra Professional Tax"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"CA Services in Pune","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Income Tax Return Filing","description":"ITR filing for IT professionals, HNIs, NRIs in Pune"},"price":"2500","priceCurrency":"INR"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"GST Registration & Returns","description":"GST compliance for Pune businesses"},"price":"5000","priceCurrency":"INR"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Startup Incorporation & Advisory","description":"Company registration with DPIIT, ESOP advisory in Pune"},"price":"8000","priceCurrency":"INR"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Statutory Audit","description":"Audit services for Pune companies"},"price":"25000","priceCurrency":"INR"}]},"areaServed":[{"@type":"City","name":"Pune"},{"@type":"City","name":"Mumbai"},{"@type":"City","name":"Goa"},{"@type":"City","name":"Ahmedabad"},{"@type":"City","name":"Nashik"},{"@type":"City","name":"Nagpur"},{"@type":"City","name":"Thane"},{"@type":"City","name":"Pimpri-Chinchwad"}],"contactPoint":{"@type":"ContactPoint","telephone":"+917889257045","contactType":"customer service","areaServed":"IN","availableLanguage":["English","Hindi"]},"sameAs":["https://sidhiandassociates.com/"]}
+    </script>
+
+    <!-- 2. BreadcrumbList -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sidhiandassociates.com/"},{"@type":"ListItem","position":2,"name":"CA Services by Location","item":"https://sidhiandassociates.com/#locations"},{"@type":"ListItem","position":3,"name":"CA Services in Pune","item":"https://sidhiandassociates.com/pune/"}]}
+    </script>
+
+    <!-- 3. FAQPage (AEO) -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"What is the fee for CA services in Pune?","acceptedAnswer":{"@type":"Answer","text":"At Sidhi & Associates Pune, fees start at ₹2,500 for ITR filing, ₹5,000/month for GST return filing, ₹8,000 for company incorporation, and ₹25,000 for statutory audit. Transparent pricing with no hidden charges. Call +91 78892 57045."}},
+      {"@type":"Question","name":"Which is the best CA firm in Pune for IT professionals?","acceptedAnswer":{"@type":"Answer","text":"Sidhi & Associates is one of the top CA firms in Pune for IT professionals. We specialise in ESOP taxation, RSU income, foreign bank account disclosure, capital gains, and advance tax planning for Pune's tech workforce at Hinjewadi, Kharadi, and Magarpatta. Call +91 78892 57045."}},
+      {"@type":"Question","name":"Do you handle ESOP and FEMA compliance in Pune?","acceptedAnswer":{"@type":"Answer","text":"Yes. Sidhi & Associates Pune specialises in ESOP structuring and taxation, RSU reporting, FEMA compliance, ODI/FDI filings, Form 15CA/CB, and foreign remittance advisory for Pune's IT and startup community."}},
+      {"@type":"Question","name":"Can I file ITR online with a CA in Pune?","acceptedAnswer":{"@type":"Answer","text":"Yes. Sidhi & Associates offers fully virtual ITR filing in Pune. Share your Form 16, bank statements, RSU/ESOP details, and investment proofs via WhatsApp or email. We file within 24-48 hours. No office visit needed. Call +91 78892 57045."}},
+      {"@type":"Question","name":"How to register a startup company in Pune?","acceptedAnswer":{"@type":"Answer","text":"To register a startup in Pune: (1) Incorporate as Private Limited company via SPICe+ on MCA. (2) Apply for DPIIT Startup India recognition. (3) Register for GST. (4) Open current account. (5) Set up ESOP plan if needed. Sidhi & Associates Pune handles the entire process in 7-10 working days. Call +91 78892 57045."}},
+      {"@type":"Question","name":"What documents are needed for GST registration in Pune?","acceptedAnswer":{"@type":"Answer","text":"For GST registration in Pune you need: PAN card, Aadhaar card, Pune business address proof (electricity bill or rent agreement), cancelled cheque, passport photograph, and business registration documents. Sidhi & Associates completes Pune GST registration in 3-5 working days."}},
+      {"@type":"Question","name":"Does Sidhi & Associates serve clients in Mumbai and Goa?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our Pune Kharadi office provides virtual CA services to clients across Maharashtra — Mumbai, Thane, Navi Mumbai, Nashik, Nagpur — and also Goa and Ahmedabad. All services available remotely. Call +91 78892 57045."}},
+      {"@type":"Question","name":"What is the GST due date for Maharashtra businesses?","acceptedAnswer":{"@type":"Answer","text":"For Maharashtra businesses including Pune: GSTR-1 is due on the 11th of the next month. GSTR-3B is due on the 20th. GSTR-9 annual return is due 31st December. Late fees are ₹50/day. Sidhi & Associates ensures timely GST compliance for all Pune businesses."}}
+    ]}
+    </script>
+
+    <!-- 4. HowTo (AEO) -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"HowTo","name":"How to File ITR in Pune with a CA","description":"4-step process to get ITR filed with Sidhi & Associates in Pune","totalTime":"P2D","estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"2500"},"step":[{"@type":"HowToStep","position":1,"name":"Call or WhatsApp","text":"Call +91 78892 57045 or WhatsApp. Tell us you need ITR filing in Pune — mention RSU, ESOP or foreign income if applicable."},{"@type":"HowToStep","position":2,"name":"Share documents","text":"Send Form 16, bank statements, PAN, RSU/ESOP details, and investment proofs via WhatsApp or email."},{"@type":"HowToStep","position":3,"name":"CA prepares return","text":"Our Pune CA team preputes your ITR with all income heads and deductions, and shares for your review."},{"@type":"HowToStep","position":4,"name":"Filed and acknowledged","text":"We file your ITR and send you the ITR-V acknowledgement immediately. You e-verify via Aadhaar OTP."}]}
+    </script>
+
+    <!-- 5. WebPage + Speakable (GEO + AIO) -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebPage","@id":"https://sidhiandassociates.com/pune/#webpage","url":"https://sidhiandassociates.com/pune/","name":"CA Services in Pune, Maharashtra | Sidhi & Associates","description":"Trusted CA firm in Pune. ITR filing, GST compliance, startup advisory, FEMA, audit, virtual CFO. Located at Unique Youtopia, Kharadi, Pune 411014. Serving Mumbai, Goa & West India.","inLanguage":"en-IN","isPartOf":{"@type":"WebSite","@id":"https://sidhiandassociates.com/#website","url":"https://sidhiandassociates.com/","name":"Sidhi & Associates"},"about":{"@type":"AccountingService","@id":"https://sidhiandassociates.com/pune/#business"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".speakable-hero",".speakable-about",".speakable-services-summary"]},"dateModified":"2026-04-29","datePublished":"2024-01-01"}
+    </script>
+
+    <!-- 6. Organization (AIO) -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","@id":"https://sidhiandassociates.com/#organization","name":"Sidhi & Associates","url":"https://sidhiandassociates.com/","logo":{"@type":"ImageObject","url":"https://sidhiandassociates.com/sidhi.png"},"description":"ICAI registered Chartered Accountants with offices across India.","foundingDate":"2014","contactPoint":{"@type":"ContactPoint","telephone":"+917889257045","contactType":"customer service","areaServed":"IN","availableLanguage":["English","Hindi"]},"sameAs":["https://sidhiandassociates.com/"]}
     </script>
 
     <style>
@@ -624,15 +619,22 @@
         .whatsapp-btn { background: #25D366; }
         .call-btn { background: var(--primary-gold); }
 
-        /* ── Responsive ── */
-        @media (max-width: 768px) {
-            .location-info { grid-template-columns: 1fr; }
-            .hero h2 { font-size: 2em; }
-            .hero > .container > p { font-size: 1.1em; }
-            h2 { font-size: 1.8em; }
-            .header-cta .cta-phone { display: none; }
-            .coverage-pills { gap: 8px; }
-        }
+        /* ── FAQ section ── */
+        .faq-grid { margin-top: 44px; }
+        .faq-item { background: var(--white); border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); margin-bottom: 14px; overflow: hidden; }
+        .faq-q { padding: 20px 24px; font-weight: 700; color: var(--primary-blue); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 1.02em; border-left: 4px solid var(--primary-gold); transition: background 0.2s; }
+        .faq-q:hover { background: #FDF6E7; }
+        .faq-icon { width: 26px; height: 26px; border-radius: 50%; background: var(--light-gold); color: var(--primary-blue); display: flex; align-items: center; justify-content: center; font-size: 1.1em; font-weight: 700; flex-shrink: 0; transition: all 0.3s; }
+        .faq-item.open .faq-icon { background: var(--primary-gold); color: var(--white); transform: rotate(45deg); }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; padding: 0 24px; color: var(--text-light); line-height: 1.75; font-size: 0.97em; }
+        .faq-item.open .faq-a { max-height: 400px; padding: 0 24px 20px; }
+        /* ── Process steps ── */
+        .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 24px; margin-top: 44px; }
+        .process-step { background: var(--white); padding: 28px 24px; border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); text-align: center; transition: all 0.3s; }
+        .process-step:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(10,38,71,0.15); }
+        .step-num { width: 48px; height: 48px; border-radius: 50%; background: var(--primary-blue); color: var(--primary-gold); font-size: 1.3em; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; }
+        .process-step h3 { color: var(--primary-blue); font-size: 1.05em; margin-bottom: 8px; }
+        .process-step p { color: var(--text-light); font-size: 0.92em; line-height: 1.6; }
     </style>
 </head>
 <body>
@@ -680,8 +682,10 @@
     <div class="hero">
         <div class="container">
             <div class="location-badge">📍 Kharadi, Pune — Unique Youtopia, Maharashtra</div>
-            <h2>Top CA Services in Pune & West India</h2>
-            <p>Expert Chartered Accountants for IT Companies, Startups, Manufacturers & Individuals — Tax Filing, GST, Company Incorporation, FEMA, Audit & Virtual CFO Services across Pune, Mumbai, Goa & Ahmedabad</p>
+            <div class="speakable-hero">
+                <h2>Top CA Services in Pune & West India</h2>
+                <p>Expert Chartered Accountants for IT Companies, Startups, Manufacturers & Individuals — Tax Filing, GST, Company Incorporation, FEMA, Audit & Virtual CFO Services across Pune, Mumbai, Goa & Ahmedabad</p>
+            </div>
             <div class="hero-buttons">
                 <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services%20in%20Pune" class="btn-secondary">💬 WhatsApp Us</a>
@@ -727,20 +731,23 @@
     </div>
 
     <!-- About Section -->
-    <section>
+    <section aria-labelledby="about-pune">
         <div class="container">
-            <h2>Leading CA Firm in Pune, Maharashtra</h2>
-            <p class="section-intro">Sidhi & Associates is proud to bring world-class chartered accountancy services to the Oxford of the East. Located at A-2, 306, Unique Youtopia, Kharadi — the epicentre of Pune's IT and startup corridor — we are your trusted financial partner for growth, compliance and long-term success.</p>
-
+            <h2 id="about-pune">Leading CA Firm in Pune, Maharashtra</h2>
+            <div class="speakable-about">
+                <p class="section-intro">Sidhi & Associates is proud to bring world-class chartered accountancy services to the Oxford of the East. Located at A-2, 306, Unique Youtopia, Kharadi — the epicentre of Pune's IT and startup corridor — we are your trusted financial partner for growth, compliance and long-term success.</p>
+            </div>
             <p style="text-align:center; max-width:920px; margin:20px auto; color:var(--text-light); line-height:1.8;">Pune is Maharashtra's fastest-growing metropolitan city — home to India's largest IT parks (EON, Magarpatta, Hinjewadi), thriving startups, a booming automobile & manufacturing belt (PCMC, Chakan, Talegaon), and a massive base of professionals and HNIs. Our Kharadi office is perfectly positioned to serve this diverse, fast-paced ecosystem, while also extending expert services to Mumbai, Goa, Ahmedabad and the entire West India region through both in-person and virtual CA engagements.</p>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section-alt">
+    <section id="services" class="section-alt" aria-labelledby="services-pune">
         <div class="container">
-            <h2>Our CA Services in Pune</h2>
-            <p class="section-intro">Comprehensive chartered accountancy services tailored for Pune, Mumbai, Goa & Ahmedabad clients</p>
+            <h2 id="services-pune">Our CA Services in Pune</h2>
+            <div class="speakable-services-summary">
+                <p class="section-intro">Comprehensive chartered accountancy services tailored for Pune, Mumbai, Goa & Ahmedabad clients</p>
+            </div>
 
             <div class="services-grid">
                 <div class="service-card">
@@ -968,6 +975,38 @@
         </div>
     </section>
 
+    <!-- How It Works -->
+    <section aria-labelledby="process-pune">
+        <div class="container">
+            <h2 id="process-pune">How to Get CA Services in Pune — 4 Simple Steps</h2>
+            <p class="section-intro">Start your free consultation with Sidhi & Associates Pune in under 2 minutes</p>
+            <div class="process-steps">
+                <div class="process-step"><div class="step-num">1</div><h3>Call or WhatsApp</h3><p>Call +91 78892 57045 or WhatsApp. Tell us your requirement — ITR, GST, startup setup, FEMA, or audit in Pune.</p></div>
+                <div class="process-step"><div class="step-num">2</div><h3>Share Documents</h3><p>Send Form 16, bank statements, RSU/ESOP details, and required documents via WhatsApp or email. No visit required.</p></div>
+                <div class="process-step"><div class="step-num">3</div><h3>CA Reviews & Acts</h3><p>Our Pune CA team prepares your filing — ITR, GST return, or company registration — and shares the draft for approval.</p></div>
+                <div class="process-step"><div class="step-num">4</div><h3>Done & Delivered</h3><p>Your filing is submitted and you receive the acknowledgement instantly. Full compliance handled end-to-end.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (AEO) -->
+    <section id="faq" class="section-alt" aria-labelledby="faq-pune">
+        <div class="container">
+            <h2 id="faq-pune">Frequently Asked Questions — CA Services Pune</h2>
+            <p class="section-intro">Answers to the most common questions about CA services in Pune, Mumbai & West India</p>
+            <div class="faq-grid">
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>What is the fee for CA services in Pune?</span><span class="faq-icon">+</span></div><div class="faq-a">At Sidhi & Associates Pune, fees start at ₹2,500 for ITR filing, ₹5,000/month for GST return filing, ₹8,000 for company incorporation, and ₹25,000 for statutory audit. Transparent pricing — no hidden charges. Call +91 78892 57045 for a free consultation.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Which is the best CA in Pune for IT professionals?</span><span class="faq-icon">+</span></div><div class="faq-a">Sidhi & Associates Pune specialises in ITR filing for IT professionals — ESOP taxation, RSU income reporting, foreign bank account disclosure (FBAR/Schedule FA), capital gains on shares, and advance tax planning for employees at Hinjewadi, Kharadi, and Magarpatta.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Do you handle ESOP and FEMA compliance in Pune?</span><span class="faq-icon">+</span></div><div class="faq-a">Yes. Sidhi & Associates Pune specialises in ESOP structuring and taxation, RSU reporting, FEMA compliance, ODI/FDI filings, Form 15CA/CB, and foreign remittance advisory for Pune's IT and startup community. Call +91 78892 57045.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>How to register a startup company in Pune?</span><span class="faq-icon">+</span></div><div class="faq-a">To register a startup in Pune: (1) Incorporate as Private Limited via SPICe+. (2) Apply for DPIIT Startup India recognition. (3) Register for GST. (4) Open current account. (5) Set up ESOP plan if needed. Sidhi & Associates handles the entire process in 7-10 working days. Call +91 78892 57045.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>What documents are needed for GST registration in Pune?</span><span class="faq-icon">+</span></div><div class="faq-a">For GST registration in Pune you need: PAN card, Aadhaar card, Pune business address proof (electricity bill or rent agreement), cancelled cheque, passport photograph, and business registration documents. We complete Pune GST registration in 3-5 working days.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Can I file my ITR online with a CA in Pune?</span><span class="faq-icon">+</span></div><div class="faq-a">Yes. Sidhi & Associates offers fully virtual ITR filing in Pune. Share your documents via WhatsApp or email — we file your return within 24-48 hours and send your acknowledgement. No office visit needed. Call +91 78892 57045.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Does Sidhi & Associates serve clients in Mumbai and Goa?</span><span class="faq-icon">+</span></div><div class="faq-a">Yes. Our Pune Kharadi office provides virtual CA services to Mumbai, Thane, Navi Mumbai, Nashik, Nagpur, Goa, and Ahmedabad. All services fully available remotely. Call +91 78892 57045.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>What is the GST due date for Maharashtra businesses?</span><span class="faq-icon">+</span></div><div class="faq-a">For Maharashtra businesses: GSTR-1 is due on the 11th of the next month. GSTR-3B is due on the 20th. GSTR-9 annual return is due 31st December. Late fees are ₹50/day. Sidhi & Associates ensures timely GST compliance for all Pune businesses.</div></div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Banner -->
     <div class="cta-banner">
         <div class="container">
@@ -1031,7 +1070,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates – Pune Office. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates – Pune Office. All Rights Reserved.</p>
                 <p style="margin-top:10px;">Professional CA Services in Pune, Maharashtra | Serving Mumbai · Goa · Ahmedabad · West India</p>
             </div>
         </div>
@@ -1057,7 +1096,16 @@
     </div>
 
     <script>
-        // Smooth scrolling
+        document.querySelectorAll('.auto-year').forEach(el => el.textContent = new Date().getFullYear());
+
+        function toggleFaq(el) {
+            const item = el.parentElement;
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+            if (!isOpen) { item.classList.add('open'); el.setAttribute('aria-expanded','true'); }
+            else { el.setAttribute('aria-expanded','false'); }
+        }
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1066,48 +1114,42 @@
             });
         });
 
-        // Animate on scroll
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
+                if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; }
             });
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-        document.querySelectorAll('.service-card, .feature-card, .testimonial-card, .area-item, .industry-tag').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
+        document.querySelectorAll('.service-card, .feature-card, .testimonial-card, .area-item, .industry-tag, .process-step, .faq-item').forEach(el => {
+            el.style.opacity = '0'; el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
         });
 
-        // Animate trust badges on load
         window.addEventListener('load', () => {
             document.querySelectorAll('.badge-number').forEach((badge, i) => {
                 setTimeout(() => {
-                    badge.style.opacity = '0';
-                    badge.style.transform = 'scale(0.5)';
+                    badge.style.opacity = '0'; badge.style.transform = 'scale(0.5)';
                     badge.style.transition = 'all 0.5s ease';
-                    setTimeout(() => {
-                        badge.style.opacity = '1';
-                        badge.style.transform = 'scale(1)';
-                    }, 100);
+                    setTimeout(() => { badge.style.opacity = '1'; badge.style.transform = 'scale(1)'; }, 100);
                 }, i * 100);
             });
         });
 
-        // Active nav highlight on scroll
         window.addEventListener('scroll', () => {
             let current = '';
-            document.querySelectorAll('section[id]').forEach(section => {
-                if (pageYOffset >= section.offsetTop - 100) current = section.getAttribute('id');
-            });
+            document.querySelectorAll('section[id]').forEach(s => { if (pageYOffset >= s.offsetTop - 100) current = s.id; });
             document.querySelectorAll('nav a').forEach(link => {
                 link.style.color = '';
                 if (link.getAttribute('href') === '#' + current) link.style.color = 'var(--primary-gold)';
             });
+        });
+
+        document.querySelectorAll('a[href^="tel:"]').forEach(a => {
+            a.addEventListener('click', () => { if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-18022959954', event_category: 'Call', event_label: 'Pune' }); });
+        });
+        document.querySelectorAll('a[href*="wa.me"]').forEach(a => {
+            a.addEventListener('click', () => { if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-18022959954', event_category: 'WhatsApp', event_label: 'Pune' }); });
         });
     </script>
 </body>
