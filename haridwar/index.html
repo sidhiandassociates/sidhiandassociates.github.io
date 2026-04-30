@@ -25,6 +25,9 @@
     <meta name="geo.region" content="IN-UT">
     <meta name="geo.placename" content="Haridwar, Uttarakhand">
     <meta name="geo.position" content="29.9457;78.1642">
+    <meta name="ICBM" content="29.9457, 78.1642">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="revisit-after" content="7 days">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -44,48 +47,43 @@
     <link rel="canonical" href="https://sidhiandassociates.com/haridwar/">
 
     <!-- Local Business Schema -->
+    <!-- 1. LocalBusiness + AccountingService -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AccountingService",
-      "name": "Sidhi & Associates - Haridwar Office",
-      "@id": "https://sidhiandassociates.com/haridwar/",
-      "url": "https://sidhiandassociates.com/haridwar/",
-      "telephone": "+917889257045",
-      "email": "siddhiandassociatess@gmail.com",
-      "priceRange": "₹₹",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "54, Ramnagar Majra Salempur Mahdud, P.O. Bahadrabad",
-        "addressLocality": "Haridwar",
-        "addressRegion": "Uttarakhand",
-        "postalCode": "249402",
-        "addressCountry": "IN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "29.9457",
-        "longitude": "78.1642"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "95"
-      },
-      "areaServed": [
-        {"@type": "City", "name": "Haridwar"},
-        {"@type": "City", "name": "Rishikesh"},
-        {"@type": "City", "name": "Roorkee"},
-        {"@type": "City", "name": "Dehradun"},
-        {"@type": "City", "name": "Bahadrabad"}
-      ]
-    }
+    {"@context":"https://schema.org","@type":["AccountingService","LocalBusiness"],"@id":"https://sidhiandassociates.com/haridwar/#business","name":"Sidhi & Associates — Haridwar Office","legalName":"Sidhi & Associates","url":"https://sidhiandassociates.com/haridwar/","logo":"https://sidhiandassociates.com/sidhi.png","description":"ICAI-registered Chartered Accountants in Haridwar, Uttarakhand. Expert income tax filing, GST compliance, company incorporation, SIDCUL industrial compliance, audit, and bookkeeping services for businesses and individuals across Haridwar, Rishikesh, Roorkee and all of Uttarakhand.","telephone":"+917889257045","email":"siddhiandassociatess@gmail.com","priceRange":"₹₹","currenciesAccepted":"INR","paymentAccepted":"Cash, UPI, Bank Transfer, Cheque","address":{"@type":"PostalAddress","streetAddress":"54, Ramnagar Majra Salempur Mahdud, P.O. Bahadrabad","addressLocality":"Haridwar","addressRegion":"Uttarakhand","postalCode":"249402","addressCountry":"IN"},"geo":{"@type":"GeoCoordinates","latitude":"29.9457","longitude":"78.1642"},"hasMap":"https://maps.google.com/?q=54+Ramnagar+Majra+Salempur+Bahadrabad+Haridwar+Uttarakhand+249402","openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"09:00","closes":"18:00"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"95","bestRating":"5"},"review":[{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Suresh Agarwal"},"reviewBody":"Best CA in Haridwar for SIDCUL manufacturers. Handles our complete GST and ITR compliance perfectly."},{"@type":"Review","reviewRating":{"@type":"Rating","ratingValue":"5"},"author":{"@type":"Person","name":"Kavita Rawat"},"reviewBody":"Excellent GST and ITR support for our hotel near Har Ki Pauri. Very accessible from Haridwar city."}],"knowsAbout":["Income Tax Filing","GST Registration","GST Return Filing","Company Incorporation","Statutory Audit","SIDCUL Industrial Compliance","Bookkeeping","Payroll","TDS Compliance","Uttarakhand Tax Incentives"],"hasOfferCatalog":{"@type":"OfferCatalog","name":"CA Services in Haridwar","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Income Tax Return Filing","description":"ITR filing for individuals and businesses in Haridwar"},"price":"2500","priceCurrency":"INR"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"GST Registration & Returns","description":"GST compliance for Haridwar businesses"},"price":"5000","priceCurrency":"INR"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Company Incorporation","description":"Company registration in Haridwar, Uttarakhand"},"price":"8000","priceCurrency":"INR"},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Statutory Audit","description":"Audit services for Haridwar businesses"},"price":"25000","priceCurrency":"INR"}]},"areaServed":[{"@type":"City","name":"Haridwar"},{"@type":"City","name":"Rishikesh"},{"@type":"City","name":"Roorkee"},{"@type":"City","name":"Dehradun"},{"@type":"City","name":"Bahadrabad"}],"contactPoint":{"@type":"ContactPoint","telephone":"+917889257045","contactType":"customer service","areaServed":"IN","availableLanguage":["English","Hindi"]},"sameAs":["https://sidhiandassociates.com/"]}
+    </script>
+
+    <!-- 2. BreadcrumbList -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sidhiandassociates.com/"},{"@type":"ListItem","position":2,"name":"CA Services by Location","item":"https://sidhiandassociates.com/#locations"},{"@type":"ListItem","position":3,"name":"CA Services in Haridwar","item":"https://sidhiandassociates.com/haridwar/"}]}
+    </script>
+
+    <!-- 3. FAQPage (AEO) -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+      {"@type":"Question","name":"What is the fee for CA services in Haridwar?","acceptedAnswer":{"@type":"Answer","text":"At Sidhi & Associates Haridwar, fees start at ₹2,500 for ITR filing, ₹5,000/month for GST return filing, ₹8,000 for company incorporation, and ₹25,000 for statutory audit. Transparent pricing with no hidden charges. Call +91 78892 57045 for a free consultation."}},
+      {"@type":"Question","name":"How to find a good CA near me in Haridwar?","acceptedAnswer":{"@type":"Answer","text":"Sidhi & Associates is a trusted ICAI-registered CA firm in Haridwar located at 54, Ramnagar Majra Salempur Mahdud, P.O. Bahadrabad, Haridwar 249402. We serve Haridwar, Rishikesh, Roorkee, and all of Uttarakhand. Call +91 78892 57045 for a free consultation."}},
+      {"@type":"Question","name":"Do you provide CA services for SIDCUL industries in Haridwar?","acceptedAnswer":{"@type":"Answer","text":"Yes. Sidhi & Associates specialises in compliance for SIDCUL-based industries in Haridwar including factory GST, industrial licensing, MSME registration, e-way bill compliance, and Uttarakhand state-specific industrial incentives. Call +91 78892 57045."}},
+      {"@type":"Question","name":"Can I file my ITR online with a CA in Haridwar?","acceptedAnswer":{"@type":"Answer","text":"Yes. Sidhi & Associates offers fully virtual ITR filing in Haridwar. Share your documents via WhatsApp or email and we will file your income tax return within 24-48 hours. No physical visit required. Call +91 78892 57045."}},
+      {"@type":"Question","name":"What documents are needed for GST registration in Haridwar?","acceptedAnswer":{"@type":"Answer","text":"For GST registration in Haridwar, Uttarakhand you need: PAN card, Aadhaar card, Haridwar business address proof (electricity bill or rent agreement), cancelled cheque, passport photograph, and business registration documents. Sidhi & Associates completes Haridwar GST registration in 3-5 working days."}},
+      {"@type":"Question","name":"Does Sidhi & Associates serve Rishikesh and Roorkee?","acceptedAnswer":{"@type":"Answer","text":"Yes. Our Haridwar office at Bahadrabad serves Haridwar, Rishikesh, Roorkee, Dehradun, Laksar, Manglaur, and all of Uttarakhand. Virtual CA services also available Pan-India. Call +91 78892 57045."}},
+      {"@type":"Question","name":"What is the GST due date for businesses in Uttarakhand?","acceptedAnswer":{"@type":"Answer","text":"For businesses in Uttarakhand including Haridwar: GSTR-1 is due on the 11th of the next month. GSTR-3B is due on the 20th. GSTR-9 annual return is due 31st December. Late fees are ₹50/day. Sidhi & Associates Haridwar ensures all filings are submitted on time."}},
+      {"@type":"Question","name":"How to register a company in Haridwar?","acceptedAnswer":{"@type":"Answer","text":"To register a company in Haridwar: (1) Choose structure — Private Limited, LLP or OPC. (2) Get DSC for directors. (3) Apply for DIN. (4) Reserve company name via MCA RUN. (5) File SPICe+ form. (6) Receive Certificate of Incorporation. Sidhi & Associates completes company registration in Haridwar in 7-10 working days. Call +91 78892 57045."}}
+    ]}
+    </script>
+
+    <!-- 4. HowTo (AEO) -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"HowTo","name":"How to File ITR in Haridwar with a CA","description":"4-step process to get ITR filed with Sidhi & Associates in Haridwar","totalTime":"P2D","estimatedCost":{"@type":"MonetaryAmount","currency":"INR","value":"2500"},"step":[{"@type":"HowToStep","position":1,"name":"Call or WhatsApp","text":"Call +91 78892 57045 or WhatsApp. Tell us you need ITR filing in Haridwar."},{"@type":"HowToStep","position":2,"name":"Share documents","text":"Share Form 16, PAN, bank statements and investment proofs via WhatsApp or email."},{"@type":"HowToStep","position":3,"name":"CA prepares return","text":"Our Haridwar CA team prepares your ITR and shares for your review."},{"@type":"HowToStep","position":4,"name":"Filed and acknowledged","text":"We file your ITR and send you the acknowledgement immediately."}]}
+    </script>
+
+    <!-- 5. WebPage + Speakable (GEO + AIO) -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebPage","@id":"https://sidhiandassociates.com/haridwar/#webpage","url":"https://sidhiandassociates.com/haridwar/","name":"CA Services in Haridwar, Uttarakhand | Sidhi & Associates","description":"Trusted CA firm in Haridwar. ITR filing, GST compliance, company incorporation, SIDCUL industrial compliance, audit. Located at Ramnagar Majra Salempur, Bahadrabad, Haridwar 249402.","inLanguage":"en-IN","isPartOf":{"@type":"WebSite","@id":"https://sidhiandassociates.com/#website","url":"https://sidhiandassociates.com/","name":"Sidhi & Associates"},"about":{"@type":"AccountingService","@id":"https://sidhiandassociates.com/haridwar/#business"},"speakable":{"@type":"SpeakableSpecification","cssSelector":[".speakable-hero",".speakable-about",".speakable-services-summary"]},"dateModified":"2026-04-29","datePublished":"2024-01-01"}
+    </script>
+
+    <!-- 6. Organization (AIO) -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"Organization","@id":"https://sidhiandassociates.com/#organization","name":"Sidhi & Associates","url":"https://sidhiandassociates.com/","logo":{"@type":"ImageObject","url":"https://sidhiandassociates.com/sidhi.png"},"description":"ICAI registered Chartered Accountants with offices across India.","foundingDate":"2014","contactPoint":{"@type":"ContactPoint","telephone":"+917889257045","contactType":"customer service","areaServed":"IN","availableLanguage":["English","Hindi"]},"sameAs":["https://sidhiandassociates.com/"]}
     </script>
 
     <style>
@@ -677,6 +675,22 @@
             color: var(--primary-gold);
             font-weight: 700;
         }
+        /* ── FAQ section ── */
+        .faq-grid { margin-top: 44px; }
+        .faq-item { background: var(--white); border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); margin-bottom: 14px; overflow: hidden; }
+        .faq-q { padding: 20px 24px; font-weight: 700; color: var(--primary-blue); cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; font-size: 1.02em; border-left: 4px solid var(--primary-gold); transition: background 0.2s; }
+        .faq-q:hover { background: #FDF6E7; }
+        .faq-icon { width: 26px; height: 26px; border-radius: 50%; background: var(--light-gold); color: var(--primary-blue); display: flex; align-items: center; justify-content: center; font-size: 1.1em; font-weight: 700; flex-shrink: 0; transition: all 0.3s; }
+        .faq-item.open .faq-icon { background: var(--primary-gold); color: var(--white); transform: rotate(45deg); }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s; padding: 0 24px; color: var(--text-light); line-height: 1.75; font-size: 0.97em; }
+        .faq-item.open .faq-a { max-height: 400px; padding: 0 24px 20px; }
+        /* ── Process steps ── */
+        .process-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); gap: 24px; margin-top: 44px; }
+        .process-step { background: var(--white); padding: 28px 24px; border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); text-align: center; transition: all 0.3s; }
+        .process-step:hover { transform: translateY(-5px); box-shadow: 0 8px 30px rgba(10,38,71,0.15); }
+        .step-num { width: 48px; height: 48px; border-radius: 50%; background: var(--primary-blue); color: var(--primary-gold); font-size: 1.3em; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; }
+        .process-step h3 { color: var(--primary-blue); font-size: 1.05em; margin-bottom: 8px; }
+        .process-step p { color: var(--text-light); font-size: 0.92em; line-height: 1.6; }
     </style>
 </head>
 <body>
@@ -723,8 +737,10 @@
     <div class="hero">
         <div class="container">
             <div class="location-badge">📍 Haridwar, Uttarakhand — Bahadrabad Office</div>
-            <h2>Trusted CA Services in Haridwar, Uttarakhand</h2>
-            <p>Expert Chartered Accountants for Tax Filing, GST Compliance, Company Registration & Audit Services — Serving Haridwar, Rishikesh, Roorkee & All of Uttarakhand</p>
+            <div class="speakable-hero">
+                <h2>Trusted CA Services in Haridwar, Uttarakhand</h2>
+                <p>Expert Chartered Accountants for Tax Filing, GST Compliance, Company Registration & Audit Services — Serving Haridwar, Rishikesh, Roorkee & All of Uttarakhand</p>
+            </div>
             <div class="hero-buttons">
                 <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services%20in%20Haridwar" class="btn-secondary">💬 WhatsApp Us</a>
@@ -757,20 +773,23 @@
     </div>
 
     <!-- About Section -->
-    <section>
+    <section aria-labelledby="about-haridwar">
         <div class="container">
-            <h2>Leading CA Firm in Haridwar, Uttarakhand</h2>
-            <p class="section-intro">Sidhi & Associates proudly serves businesses and individuals in Haridwar with comprehensive chartered accountancy services. Located at Ramnagar Majra Salempur Mahdud, Bahadrabad, we are your trusted local financial partners — committed to excellence in taxation, compliance, and business advisory.</p>
-
+            <h2 id="about-haridwar">Leading CA Firm in Haridwar, Uttarakhand</h2>
+            <div class="speakable-about">
+                <p class="section-intro">Sidhi & Associates proudly serves businesses and individuals in Haridwar with comprehensive chartered accountancy services. Located at Ramnagar Majra Salempur Mahdud, Bahadrabad, we are your trusted local financial partners — committed to excellence in taxation, compliance, and business advisory.</p>
+            </div>
             <p style="text-align: center; max-width: 900px; margin: 20px auto; color: var(--text-light); line-height: 1.8;">Haridwar is one of Uttarakhand's most dynamic cities — a thriving hub for manufacturing, pilgrimage tourism, pharmaceuticals, FMCG, and small-to-medium businesses. The SIDCUL industrial corridor and BHEL township bring a large community of businesses requiring expert financial guidance. Our Haridwar office provides personalized, professional services tailored to the unique regulatory environment of Uttarakhand state.</p>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section-alt">
+    <section id="services" class="section-alt" aria-labelledby="services-haridwar">
         <div class="container">
-            <h2>Our CA Services in Haridwar</h2>
-            <p class="section-intro">Comprehensive chartered accountancy services tailored for Haridwar & Uttarakhand businesses</p>
+            <h2 id="services-haridwar">Our CA Services in Haridwar</h2>
+            <div class="speakable-services-summary">
+                <p class="section-intro">Comprehensive chartered accountancy services tailored for Haridwar & Uttarakhand businesses</p>
+            </div>
 
             <div class="services-grid">
                 <div class="service-card">
@@ -975,6 +994,38 @@
         </div>
     </section>
 
+    <!-- How It Works -->
+    <section aria-labelledby="process-haridwar">
+        <div class="container">
+            <h2 id="process-haridwar">How to Get CA Services in Haridwar — 4 Simple Steps</h2>
+            <p class="section-intro">Start your free consultation with Sidhi & Associates Haridwar in under 2 minutes</p>
+            <div class="process-steps">
+                <div class="process-step"><div class="step-num">1</div><h3>Call or WhatsApp</h3><p>Call +91 78892 57045 or WhatsApp us. Tell us your requirement — ITR, GST, SIDCUL compliance, or audit in Haridwar.</p></div>
+                <div class="process-step"><div class="step-num">2</div><h3>Share Documents</h3><p>Send your PAN, Form 16, bank statements, and relevant documents via WhatsApp or email. No physical visit required.</p></div>
+                <div class="process-step"><div class="step-num">3</div><h3>CA Reviews & Acts</h3><p>Our Haridwar CA team prepares your filing and shares the draft for your approval before submission.</p></div>
+                <div class="process-step"><div class="step-num">4</div><h3>Done & Delivered</h3><p>Your filing is submitted and you receive the acknowledgement instantly. Full compliance handled end-to-end.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (AEO) -->
+    <section id="faq" class="section-alt" aria-labelledby="faq-haridwar">
+        <div class="container">
+            <h2 id="faq-haridwar">Frequently Asked Questions — CA Services Haridwar</h2>
+            <p class="section-intro">Answers to the most common questions about CA services in Haridwar & Uttarakhand</p>
+            <div class="faq-grid">
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>What is the fee for CA services in Haridwar?</span><span class="faq-icon">+</span></div><div class="faq-a">At Sidhi & Associates Haridwar, fees start at ₹2,500 for ITR filing, ₹5,000/month for GST return filing, ₹8,000 for company incorporation, and ₹25,000 for statutory audit. Fully transparent — no hidden charges. Call +91 78892 57045.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>How to find a good CA near me in Haridwar?</span><span class="faq-icon">+</span></div><div class="faq-a">Sidhi & Associates is a trusted ICAI-registered CA firm at 54, Ramnagar Majra Salempur Mahdud, P.O. Bahadrabad, Haridwar 249402. We serve Haridwar, Rishikesh, Roorkee, Dehradun, and all of Uttarakhand. Call +91 78892 57045.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Do you provide CA services for SIDCUL industries in Haridwar?</span><span class="faq-icon">+</span></div><div class="faq-a">Yes. Sidhi & Associates specialises in SIDCUL industrial compliance in Haridwar — factory GST, industrial licensing, MSME registration, e-way bill compliance, and Uttarakhand state industrial incentives. Call +91 78892 57045.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Can I file my ITR online with a CA in Haridwar?</span><span class="faq-icon">+</span></div><div class="faq-a">Yes. Sidhi & Associates offers fully virtual ITR filing in Haridwar. Share your documents via WhatsApp or email and we file your return within 24-48 hours. No physical visit required. Call +91 78892 57045.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>What documents are needed for GST registration in Haridwar?</span><span class="faq-icon">+</span></div><div class="faq-a">For GST registration in Haridwar you need: PAN card, Aadhaar card, Haridwar business address proof, cancelled cheque, passport photograph, and business registration documents. Sidhi & Associates completes Haridwar GST registration in 3-5 working days.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Does Sidhi & Associates serve Rishikesh and Roorkee?</span><span class="faq-icon">+</span></div><div class="faq-a">Yes. Our Haridwar office serves Haridwar, Rishikesh, Roorkee, Dehradun, Laksar, Manglaur, and all of Uttarakhand. Virtual CA services also available Pan-India. Call +91 78892 57045.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>What is the GST due date for Uttarakhand businesses?</span><span class="faq-icon">+</span></div><div class="faq-a">For Uttarakhand businesses: GSTR-1 is due on the 11th, GSTR-3B on the 20th of the next month. GSTR-9 annual return is due 31st December. Late fees are ₹50/day. Sidhi & Associates ensures timely GST compliance for all Haridwar businesses.</div></div>
+                <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>How to register a company in Haridwar?</span><span class="faq-icon">+</span></div><div class="faq-a">To register a company in Haridwar: (1) Choose structure. (2) Get DSC. (3) Apply for DIN. (4) Reserve company name via MCA RUN. (5) File SPICe+. (6) Receive Certificate of Incorporation. Sidhi & Associates completes it in 7-10 working days. Call +91 78892 57045.</div></div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA Banner -->
     <div class="cta-banner">
         <div class="container">
@@ -1036,7 +1087,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates - Haridwar Office. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates - Haridwar Office. All Rights Reserved.</p>
                 <p style="margin-top: 10px;">Professional CA Services in Haridwar, Uttarakhand | Serving All of Uttarakhand</p>
             </div>
         </div>
@@ -1062,66 +1113,60 @@
     </div>
 
     <script>
-        // Smooth scrolling
+        document.querySelectorAll('.auto-year').forEach(el => el.textContent = new Date().getFullYear());
+
+        function toggleFaq(el) {
+            const item = el.parentElement;
+            const isOpen = item.classList.contains('open');
+            document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+            if (!isOpen) { item.classList.add('open'); el.setAttribute('aria-expanded','true'); }
+            else { el.setAttribute('aria-expanded','false'); }
+        }
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
                 const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
             });
         });
 
-        // Animate on scroll
-        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
-
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
+                if (entry.isIntersecting) { entry.target.style.opacity = '1'; entry.target.style.transform = 'translateY(0)'; }
             });
-        }, observerOptions);
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-        document.querySelectorAll('.service-card, .feature-card, .testimonial-card, .area-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
+        document.querySelectorAll('.service-card, .feature-card, .testimonial-card, .area-item, .process-step, .faq-item').forEach(el => {
+            el.style.opacity = '0'; el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
         });
 
-        // Animate trust badges on load
         window.addEventListener('load', () => {
-            const badges = document.querySelectorAll('.badge-number');
-            badges.forEach((badge, index) => {
+            document.querySelectorAll('.badge-number').forEach((badge, i) => {
                 setTimeout(() => {
-                    badge.style.opacity = '0';
-                    badge.style.transform = 'scale(0.5)';
+                    badge.style.opacity = '0'; badge.style.transform = 'scale(0.5)';
                     badge.style.transition = 'all 0.5s ease';
-                    setTimeout(() => {
-                        badge.style.opacity = '1';
-                        badge.style.transform = 'scale(1)';
-                    }, 100);
-                }, index * 100);
+                    setTimeout(() => { badge.style.opacity = '1'; badge.style.transform = 'scale(1)'; }, 100);
+                }, i * 100);
             });
         });
 
-        // Active nav highlight on scroll
         window.addEventListener('scroll', () => {
             let current = '';
-            const sections = document.querySelectorAll('section[id]');
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (pageYOffset >= sectionTop) { current = section.getAttribute('id'); }
-            });
+            document.querySelectorAll('section[id]').forEach(s => { if (pageYOffset >= s.offsetTop - 100) current = s.id; });
             document.querySelectorAll('nav a').forEach(link => {
                 link.style.color = '';
-                if (link.getAttribute('href') === '#' + current) {
-                    link.style.color = 'var(--primary-gold)';
-                }
+                if (link.getAttribute('href') === '#' + current) link.style.color = 'var(--primary-gold)';
             });
+        });
+
+        document.querySelectorAll('a[href^="tel:"]').forEach(a => {
+            a.addEventListener('click', () => { if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-18022959954', event_category: 'Call', event_label: 'Haridwar' }); });
+        });
+        document.querySelectorAll('a[href*="wa.me"]').forEach(a => {
+            a.addEventListener('click', () => { if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-18022959954', event_category: 'WhatsApp', event_label: 'Haridwar' }); });
         });
     </script>
 </body>
