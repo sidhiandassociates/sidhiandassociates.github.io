@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
-<!-- ═══════════════════════════════════════════════════════
-     SIDHI & ASSOCIATES — HOMEPAGE
-     SEO · AEO · AIO · GEO — Full Stack Optimisation
-     Corrected: Vadodara URL fix, © year, OG image,
-     LocalBusiness schema, FAQ schema, GEO meta, llms hint,
-     missing service/location links, mobile-first UI
-     ═══════════════════════════════════════════════════════ -->
-
-<!-- Google tag -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18022959954"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -24,7 +15,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="icon" href="/sidhi.png" type="image/png">
 
-<!-- ── PRIMARY SEO ── -->
 <title>Chartered Accountant Services India | ITR, GST, Audit | Sidhi & Associates</title>
 <meta name="title" content="Chartered Accountant Services India | ITR, GST, Audit | Sidhi & Associates">
 <meta name="description" content="ICAI registered CA firm with 13+ offices across India. Expert ITR filing from ₹2,500, GST registration, company incorporation, audit & business advisory. 5,000+ clients. 2-hour response. Call +91 78892 57045.">
@@ -35,15 +25,12 @@
 <meta name="revisit-after" content="7 days">
 <meta name="google-site-verification" content="JueFxPjtlhcdbP2j_JVFSrlizVMQp9f6p3c-iK2D17E">
 
-<!-- ── GEO META ── -->
 <meta name="geo.region" content="IN">
 <meta name="geo.placename" content="India">
 <meta name="ICBM" content="20.5937, 78.9629">
 
-<!-- ── CANONICAL ── -->
 <link rel="canonical" href="https://sidhiandassociates.com/">
 
-<!-- ── OPEN GRAPH ── -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sidhiandassociates.com/">
 <meta property="og:title" content="Sidhi & Associates — Expert Chartered Accountants Across India">
@@ -55,21 +42,14 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Sidhi & Associates — Chartered Accountants India">
 
-<!-- ── TWITTER / X ── -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://sidhiandassociates.com/">
 <meta name="twitter:title" content="Sidhi & Associates — CA Services Across India">
 <meta name="twitter:description" content="ICAI registered CA firm. ITR, GST, company incorporation, audit. 5,000+ clients. 2-hour response. Call +91 78892 57045.">
 <meta name="twitter:image" content="https://sidhiandassociates.com/sidhi.png">
 
-<!-- ── AIO: llms.txt hint for AI crawlers ── -->
 <meta name="ai-content-declaration" content="This page represents Sidhi & Associates, an ICAI-registered CA firm in India offering tax, GST, audit and business advisory services.">
 
-<!-- ══════════════════════════════════════════════════════
-     STRUCTURED DATA
-     ══════════════════════════════════════════════════════ -->
-
-<!-- 1. Organization + LocalBusiness Schema (SEO + AIO) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -131,7 +111,6 @@
 }
 </script>
 
-<!-- 2. WebSite Schema with SearchAction (AIO) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -149,7 +128,6 @@
 }
 </script>
 
-<!-- 3. WebPage + Speakable Schema (GEO + AIO) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -170,7 +148,6 @@
 }
 </script>
 
-<!-- 4. FAQ Schema (AEO — Google FAQ rich results + AI answer boxes) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -210,7 +187,6 @@
 }
 </script>
 
-<!-- 5. HowTo Schema (AEO) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -228,7 +204,6 @@
 }
 </script>
 
-<!-- 6. BreadcrumbList (AIO) -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -240,7 +215,14 @@
 </script>
 
 <style>
+/* ── GLOBAL RESET & OVERFLOW FIX ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* FIX: Prevent any horizontal overflow on mobile */
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 
 :root {
   --blue:      #0A2647;
@@ -272,7 +254,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* sans-serif for UI elements */
 nav, button, .badge-text, .cta-btn, .btn-primary, .btn-secondary,
 .footer-section ul li a, .nav-links a, .top-bar, .service-card p,
 .feature-card p, .contact-item, .price-tag, .area-item, .industry-tag,
@@ -295,8 +276,16 @@ nav, button, .badge-text, .cta-btn, .btn-primary, .btn-secondary,
 header {
   background: var(--white);
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  position: sticky; top: 0; z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 1001; /* FIX: high z-index so drawer layers correctly */
 }
+
+/* FIX: position:relative on the container so the drawer is constrained to viewport width */
+header .container {
+  position: relative;
+}
+
 .header-content {
   display: flex; justify-content: space-between;
   align-items: center; padding: 12px 0; gap: 16px;
@@ -318,10 +307,14 @@ header {
 }
 .cta-btn:hover { background: var(--blue); transform: translateY(-2px); }
 
-/* ── Hamburger ── */
+/* ── Hamburger — hidden by default, shown via media query ── */
 .hamburger {
-  display: none; background: none; border: none;
+  display: none;
+  background: none; border: none;
   cursor: pointer; padding: 8px; border-radius: 6px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .hamburger span {
   display: block; width: 24px; height: 2px;
@@ -332,8 +325,53 @@ header {
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-/* ── Nav ── */
-nav { background: var(--blue); }
+/* ── Mobile Drawer — hidden by default ── */
+.mobile-drawer {
+  display: none;
+  flex-direction: column;
+  background: var(--blue-mid);
+  /* FIX: stretch edge-to-edge using negative margin to escape .container padding */
+  position: absolute;
+  top: 100%;
+  left: -20px;  /* cancel .container's 20px padding */
+  right: -20px; /* cancel .container's 20px padding */
+  z-index: 999;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  border-top: 2px solid var(--gold);
+  overflow: hidden; /* FIX: clip any child overflow */
+}
+.mobile-drawer.open { display: flex; }
+
+.mobile-drawer a {
+  color: rgba(255,255,255,0.9);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  padding: 14px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Segoe UI', sans-serif;
+  box-sizing: border-box;
+  width: 100%; /* FIX: prevents long links from pushing width */
+}
+.mobile-drawer a:hover { background: rgba(255,255,255,0.08); color: var(--gold); }
+.mobile-drawer .drawer-cta {
+  background: var(--gold);
+  color: var(--white) !important;
+  margin: 12px 20px;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 1.05em;
+  border-bottom: none !important;
+  width: calc(100% - 40px); /* FIX: account for margin so it doesn't overflow */
+}
+.mobile-drawer .drawer-cta:hover { background: var(--gold-dark) !important; }
+
+/* ── Desktop Nav bar ── */
+nav.desktop-nav { background: var(--blue); }
 .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 0; }
 .nav-links {
   display: flex; gap: 4px; padding: 8px 0; flex-wrap: wrap;
@@ -478,7 +516,6 @@ h2.section-title::after {
 }
 .btn-outline:hover { background: var(--blue); color: var(--white); }
 
-/* ── All services expanded ── */
 .services-full-grid {
   display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 13px; margin-top: 28px;
@@ -491,7 +528,7 @@ h2.section-title::after {
 }
 .service-pill:hover { background: var(--blue); color: var(--white); transform: translateX(4px); }
 
-/* ── Features / Why Us ── */
+/* ── Features ── */
 .features-grid {
   display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 22px; margin-top: 40px;
@@ -518,10 +555,7 @@ h2.section-title::after {
 .location-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
 .loc-city { font-size: 1.1em; font-weight: 700; color: var(--blue); margin-bottom: 6px; font-family: Georgia, serif; }
 .loc-addr { color: var(--muted); font-size: 0.86em; line-height: 1.55; margin-bottom: 12px; }
-.loc-link {
-  color: var(--gold); font-weight: 600; font-size: 0.88em;
-  display: inline-flex; align-items: center; gap: 4px;
-}
+.loc-link { color: var(--gold); font-weight: 600; font-size: 0.88em; display: inline-flex; align-items: center; gap: 4px; }
 
 /* ── Process ── */
 .process-grid {
@@ -676,39 +710,15 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
 }
 .industry-tag:hover { background: var(--gold); color: var(--white); }
 
-/* ── Mobile nav drawer ── */
+/* ══════════════════════════════════════════
+   MOBILE STYLES — all navbar fixes here
+   ══════════════════════════════════════════ */
 @media (max-width: 860px) {
-  /* Hamburger lives in header, always visible */
-  .hamburger { display: flex; flex-direction: column; }
-  /* Nav bar itself hidden on mobile; drawer drops from header */
-  nav { display: none; }
-  /* Drawer panel — full width, slides under header */
-  .mobile-drawer {
-    display: none; flex-direction: column;
-    background: var(--blue-mid); width: 100%;
-    position: absolute; top: 100%; left: 0; right: 0;
-    z-index: 999; box-shadow: 0 8px 24px rgba(0,0,0,0.25);
-    border-top: 2px solid var(--gold);
-  }
-  .mobile-drawer.open { display: flex; }
-  .mobile-drawer a {
-    color: rgba(255,255,255,0.9); text-decoration: none;
-    font-weight: 600; font-size: 1em;
-    padding: 14px 24px; border-bottom: 1px solid rgba(255,255,255,0.07);
-    transition: background 0.2s, color 0.2s;
-    display: flex; align-items: center; gap: 8px;
-    font-family: 'Segoe UI', sans-serif;
-  }
-  .mobile-drawer a:hover { background: rgba(255,255,255,0.08); color: var(--gold); }
-  .mobile-drawer .drawer-cta {
-    background: var(--gold); color: var(--white) !important;
-    margin: 12px 20px; border-radius: 10px; justify-content: center;
-    font-size: 1.05em; border-bottom: none !important;
-  }
-  .mobile-drawer .drawer-cta:hover { background: var(--gold-dark) !important; }
-  /* Make header position:relative so drawer can absolute-position under it */
-  header { position: sticky; top: 0; z-index: 1001; }
-  .header-content { position: relative; }
+  /* FIX: Show hamburger in header */
+  .hamburger { display: flex; }
+
+  /* FIX: Hide the desktop nav bar entirely on mobile */
+  nav.desktop-nav { display: none; }
 }
 
 @media (max-width: 640px) {
@@ -728,23 +738,13 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
 </style>
 </head>
 <body>
-<script>
-  /* Show hamburger immediately on mobile without waiting for CSS media query */
-  function syncHamburger() {
-    var h = document.getElementById('hamburger');
-    if (!h) return;
-    h.style.display = window.innerWidth <= 860 ? 'flex' : 'none';
-  }
-  document.addEventListener('DOMContentLoaded', syncHamburger);
-  window.addEventListener('resize', syncHamburger);
-</script>
 
 <!-- ── TOP BAR ── -->
 <div class="top-bar" role="banner">
   🎉 Free Consultation Available — <a href="tel:+917889257045">Call +91 78892 57045</a> | Mon–Sat 9AM–6PM
 </div>
 
-<!-- ── HEADER ── -->
+<!-- ── HEADER (contains the ONE hamburger + mobile drawer) ── -->
 <header>
   <div class="container">
     <div class="header-content">
@@ -758,12 +758,14 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
       <div class="header-actions">
         <a href="tel:+917889257045" class="cta-phone" aria-label="Call us">📞 +91 78892 57045</a>
         <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="cta-btn" target="_blank" rel="noopener">Get Started</a>
-        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer" style="display:none;">
+        <!-- FIX: Only ONE hamburger, only in header, no inline style needed -->
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
-    <!-- ── MOBILE DRAWER (renders under header on mobile) ── -->
+
+    <!-- FIX: Drawer lives inside header .container so position:absolute is constrained correctly -->
     <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
       <a href="/services/">🛠️ Services</a>
       <a href="#locations">📍 Locations</a>
@@ -778,8 +780,8 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
   </div>
 </header>
 
-<!-- ── NAV ── -->
-<nav aria-label="Main navigation">
+<!-- ── DESKTOP NAV BAR (hidden on mobile via CSS) ── -->
+<nav class="desktop-nav" aria-label="Main navigation">
   <div class="container">
     <div class="nav-inner">
       <div class="nav-links" id="navLinks" role="menubar">
@@ -792,9 +794,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
         <a href="/about/" role="menuitem">About</a>
         <a href="tel:+917889257045" class="nav-cta-small" role="menuitem">📞 Call Now</a>
       </div>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span><span></span>
-      </button>
+      <!-- FIX: NO hamburger in desktop nav — removed entirely -->
     </div>
   </div>
 </nav>
@@ -808,13 +808,10 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
       <div class="hero-badge" aria-label="Trust badge">
         🏆 ICAI Registered · 13+ Offices · 5,000+ Clients Pan-India
       </div>
-
-      <!-- SPEAKABLE: AI surfaces this for "best CA in India" -->
       <div class="speakable-hero">
         <h2 id="hero-heading">Your Trusted Partner in<br><em>Financial Excellence</em></h2>
         <p class="hero-desc">Expert Chartered Accountants providing Tax Planning, GST Compliance, Company Incorporation, Audit Services & Business Advisory across India — with offices in 13+ cities and virtual services nationwide.</p>
       </div>
-
       <div class="hero-buttons">
         <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
         <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="btn-secondary" target="_blank" rel="noopener">💬 WhatsApp Us</a>
@@ -863,7 +860,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
       <div class="speakable-services-summary">
         <p class="section-intro">Comprehensive financial services tailored for individuals, startups, SMEs, and corporates across India.</p>
       </div>
-
       <div class="services-grid">
         <a href="/services/tax-planning-filing/" class="service-card">
           <span class="service-icon">📊</span>
@@ -909,7 +905,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
         </a>
       </div>
 
-      <!-- ALL SERVICES ── -->
       <div style="margin-top:48px;">
         <h3 style="text-align:center;color:var(--blue);font-size:1.2em;margin-bottom:20px;font-family:Georgia,serif;">All Services</h3>
         <div class="services-full-grid">
@@ -959,7 +954,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     <div class="container">
       <h2 class="section-title" id="why-heading">Why Choose Sidhi & Associates</h2>
       <p class="section-intro">Experience excellence in every engagement — built on trust, speed, and expertise.</p>
-
       <div class="features-grid">
         <div class="feature-card">
           <span class="feature-icon">🎓</span>
@@ -1000,7 +994,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     <div class="container">
       <h2 class="section-title" id="process-heading">Get Started in 4 Simple Steps</h2>
       <p class="section-intro">From first contact to filed returns — our streamlined process saves your time.</p>
-
       <div class="process-grid">
         <div class="process-step">
           <div class="step-num">1</div>
@@ -1031,7 +1024,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     <div class="container">
       <h2 class="section-title" id="locations-heading">Our Office Locations</h2>
       <p class="section-intro">13+ offices across India — physical presence near you or virtual services anywhere.</p>
-
       <div class="locations-grid">
         <a href="/panchkula/" class="location-card">
           <div class="loc-city">📍 Panchkula, Haryana</div>
@@ -1088,7 +1080,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
           <div class="loc-addr">B-1318, New Ashok Nagar, Delhi 110096, Near Metro Pillar No. 166</div>
           <span class="loc-link">Contact Us →</span>
         </a>
-        <!-- ✅ FIXED: Corrected from /vadodra/ to /vadodara/ -->
         <a href="/vadodara/" class="location-card">
           <div class="loc-city">📍 Vadodara, Gujarat</div>
           <div class="loc-addr">D403, Darshnam Club Life, Near Pratham Srusthi Bungalows, Gorwa, Vadodara 391330</div>
@@ -1108,7 +1099,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     <div class="container">
       <h2 class="section-title" id="testimonials-heading">What Our Clients Say</h2>
       <p class="section-intro">Trusted by businesses and individuals across India</p>
-
       <div class="testimonials-grid">
         <div class="testimonial-card">
           <div class="rating">⭐⭐⭐⭐⭐</div>
@@ -1134,7 +1124,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     <div class="container">
       <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
       <p class="section-intro">Quick answers to common questions about our CA services</p>
-
       <div class="faq-list" role="list">
         <div class="faq-item" role="listitem">
           <div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
@@ -1179,7 +1168,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
           <div class="faq-a">We have 13+ offices across India: Panchkula, Zirakpur, Bangalore, Vadodara, Delhi, Gurugram, Pune, Hyderabad, Lucknow, Bareilly, Ghaziabad, Haridwar, and Jaipur. Virtual services available Pan-India.</div>
         </div>
       </div>
-
       <div style="text-align:center;margin-top:28px;">
         <a href="/faq/" class="btn-outline">View All FAQs →</a>
       </div>
@@ -1201,7 +1189,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     <div class="container">
       <h2 class="section-title" id="contact-heading">Get In Touch</h2>
       <p class="section-intro">Reach us via call, WhatsApp, or email — we respond within 2 business hours.</p>
-
       <div class="contact-grid">
         <div class="contact-card">
           <span class="contact-icon">📞</span>
@@ -1243,7 +1230,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
         <p style="margin-top:14px;">📞 <a href="tel:+917889257045" style="color:var(--gold);text-decoration:none;font-weight:600;">+91 78892 57045</a></p>
         <p>✉️ <a href="mailto:siddhiandassociatess@gmail.com" style="color:var(--gold);text-decoration:none;">siddhiandassociatess@gmail.com</a></p>
       </div>
-
       <div class="footer-col">
         <h3>Tax & GST Services</h3>
         <ul>
@@ -1255,7 +1241,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
           <li><a href="/services/gst-annual-returns/">GST Annual Returns</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h3>Incorporation & Audit</h3>
         <ul>
@@ -1269,7 +1254,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
           <li><a href="/services/HUF-deed-and-PAN/">HUF Deed & PAN</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h3>Office Locations</h3>
         <ul>
@@ -1288,7 +1272,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
           <li><a href="/rajasthan/">CA in Jaipur</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h3>Quick Links</h3>
         <ul>
@@ -1304,7 +1287,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
         </ul>
       </div>
     </div>
-
     <div class="footer-bottom">
       <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved. | ICAI Registered Chartered Accountants | Professional Excellence with Integrity</p>
       <p style="margin-top:6px;">CA Services across Panchkula · Zirakpur · Bangalore · Vadodara · Pune · Hyderabad · Delhi · Gurugram · Lucknow · Bareilly · Ghaziabad · Haridwar · Jaipur · Pan-India</p>
@@ -1323,28 +1305,33 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
 </div>
 
 <script>
-  /* ── Auto copyright year ── */
+  /* Auto copyright year */
   document.querySelectorAll('.auto-year').forEach(el => el.textContent = new Date().getFullYear());
 
-  /* ── Mobile hamburger / drawer ── */
+  /* ── Mobile hamburger / drawer ──
+     FIX: Single getElementById, no duplicate IDs */
   const hamburger = document.getElementById('hamburger');
   const mobileDrawer = document.getElementById('mobileDrawer');
+
   if (hamburger && mobileDrawer) {
-    hamburger.addEventListener('click', () => {
+    hamburger.addEventListener('click', function(e) {
+      e.stopPropagation();
       const isOpen = mobileDrawer.classList.toggle('open');
       hamburger.classList.toggle('open', isOpen);
       hamburger.setAttribute('aria-expanded', String(isOpen));
     });
-    /* Close drawer when any link is tapped */
-    mobileDrawer.querySelectorAll('a').forEach(a => {
-      a.addEventListener('click', () => {
+
+    /* Close drawer when any link inside it is tapped */
+    mobileDrawer.querySelectorAll('a').forEach(function(a) {
+      a.addEventListener('click', function() {
         mobileDrawer.classList.remove('open');
         hamburger.classList.remove('open');
         hamburger.setAttribute('aria-expanded', 'false');
       });
     });
+
     /* Close on outside tap */
-    document.addEventListener('click', (e) => {
+    document.addEventListener('click', function(e) {
       if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
         mobileDrawer.classList.remove('open');
         hamburger.classList.remove('open');
@@ -1353,26 +1340,30 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     });
   }
 
-  /* ── FAQ accordion ── */
+  /* FAQ accordion */
   function toggleFaq(el) {
-    const item = el.parentElement;
-    const isOpen = item.classList.contains('open');
-    document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
-    if (!isOpen) { item.classList.add('open'); el.setAttribute('aria-expanded', 'true'); }
-    else { el.setAttribute('aria-expanded', 'false'); }
+    var item = el.parentElement;
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item.open').forEach(function(i) { i.classList.remove('open'); });
+    if (!isOpen) {
+      item.classList.add('open');
+      el.setAttribute('aria-expanded', 'true');
+    } else {
+      el.setAttribute('aria-expanded', 'false');
+    }
   }
 
-  /* ── Smooth scroll ── */
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
+  /* Smooth scroll for anchor links */
+  document.querySelectorAll('a[href^="#"]').forEach(function(a) {
     a.addEventListener('click', function(e) {
-      const t = document.querySelector(this.getAttribute('href'));
+      var t = document.querySelector(this.getAttribute('href'));
       if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
     });
   });
 
-  /* ── Scroll animations ── */
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+  /* Scroll animations */
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
       if (entry.isIntersecting) {
         entry.target.style.opacity = '1';
         entry.target.style.transform = 'translateY(0)';
@@ -1380,36 +1371,36 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     });
   }, { threshold: 0.07, rootMargin: '0px 0px -36px 0px' });
 
-  document.querySelectorAll('.service-card,.feature-card,.testimonial-card,.location-card,.process-step,.contact-card,.faq-item,.service-pill').forEach(el => {
+  document.querySelectorAll('.service-card,.feature-card,.testimonial-card,.location-card,.process-step,.contact-card,.faq-item,.service-pill').forEach(function(el) {
     el.style.opacity = '0';
     el.style.transform = 'translateY(22px)';
     el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
     observer.observe(el);
   });
 
-  /* ── Active nav on scroll ── */
-  window.addEventListener('scroll', () => {
-    let current = '';
-    document.querySelectorAll('section[id]').forEach(s => {
+  /* Active nav highlight on scroll */
+  window.addEventListener('scroll', function() {
+    var current = '';
+    document.querySelectorAll('section[id]').forEach(function(s) {
       if (pageYOffset >= s.offsetTop - 120) current = s.id;
     });
-    document.querySelectorAll('nav a').forEach(link => {
+    document.querySelectorAll('nav.desktop-nav a').forEach(function(link) {
       link.style.color = '';
-      const href = link.getAttribute('href');
+      var href = link.getAttribute('href');
       if (href === '#' + current || (current && href && href.includes(current))) {
         link.style.color = 'var(--gold)';
       }
     });
   });
 
-  /* ── Google Ads conversion tracking ── */
-  document.querySelectorAll('a[href^="tel:"]').forEach(a => {
-    a.addEventListener('click', () => {
+  /* Google Ads conversion tracking */
+  document.querySelectorAll('a[href^="tel:"]').forEach(function(a) {
+    a.addEventListener('click', function() {
       if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-18022959954', event_category: 'Call', event_label: 'Homepage' });
     });
   });
-  document.querySelectorAll('a[href*="wa.me"]').forEach(a => {
-    a.addEventListener('click', () => {
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function(a) {
+    a.addEventListener('click', function() {
       if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-18022959954', event_category: 'WhatsApp', event_label: 'Homepage' });
     });
   });
