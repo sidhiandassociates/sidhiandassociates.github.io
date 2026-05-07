@@ -218,9 +218,12 @@
 /* ── GLOBAL RESET & OVERFLOW FIX ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-/* FIX: Prevent any horizontal overflow on mobile */
-html, body {
-  overflow-x: hidden;
+/* STICKY HEADER FIX: overflow-x:hidden on body breaks position:sticky (browser bug).
+   Use overflow-x:clip on html instead — clips without creating a scroll container. */
+html {
+  overflow-x: clip;
+}
+body {
   max-width: 100%;
 }
 
