@@ -15,27 +15,18 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="icon" href="/sidhi.png" type="image/png">
 
-<!-- FIX #1: Title trimmed to 56 chars — was 72, Google was truncating -->
 <title>Website Design & SEO Services India | Sidhi & Associates</title>
 <meta name="title" content="Website Design & SEO Services India | Sidhi & Associates">
-
-<!-- FIX #2: Meta description trimmed to 152 chars -->
 <meta name="description" content="Professional website design, SEO, Google Business Profile & digital marketing for businesses across India. CA + Digital under one roof. Call +91 78892 57045.">
-
 <meta name="keywords" content="website design India, website developer India, web developer Panchkula, website design Zirakpur, SEO services India, Google My Business setup, digital marketing small business, business website development, landing page design, CA digital services, website developer Bangalore, web designer Pune">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <meta name="author" content="Sidhi & Associates">
 <meta name="language" content="English">
 <meta name="revisit-after" content="7 days">
-
-<!-- FIX (GEO): geo meta tags — were missing, present on homepage -->
 <meta name="geo.region" content="IN">
 <meta name="geo.placename" content="India">
 <meta name="ICBM" content="20.5937, 78.9629">
-
 <link rel="canonical" href="https://sidhiandassociates.com/services/digital-services/">
-
-<!-- Open Graph — FIX #4: og:image dimensions added -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://sidhiandassociates.com/services/digital-services/">
 <meta property="og:title" content="Website Design & SEO Services India | Sidhi & Associates">
@@ -46,22 +37,13 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Sidhi & Associates — Website Design & Digital Services India">
-
-<!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://sidhiandassociates.com/services/digital-services/">
 <meta name="twitter:title" content="Website Design & SEO Services India | Sidhi & Associates">
 <meta name="twitter:description" content="Professional website design, SEO & digital marketing. CA firm + digital agency under one roof. Call +91 78892 57045.">
 <meta name="twitter:image" content="https://sidhiandassociates.com/sidhi.png">
-
-<!-- AIO signals: explicit entity declaration -->
 <meta name="ai-content-declaration" content="Sidhi & Associates is an ICAI-registered CA firm that also provides digital services: website design, website development, SEO, Google Business Profile management, social media management, and digital marketing for businesses, startups, CA firms, and SMEs across India.">
 
-<!-- ═══════════════════════════════════════
-     SCHEMA MARKUP — all fixes applied
-     ═══════════════════════════════════════ -->
-
-<!-- Service Schema — FIX: datePublished, dateModified, serviceArea with 13 cities added -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -135,7 +117,6 @@
 }
 </script>
 
-<!-- BreadcrumbList -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -148,7 +129,6 @@
 }
 </script>
 
-<!-- FIX (AEO): FAQ updated — Q3 uses correct "Google Business Profile" name -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -193,7 +173,6 @@
 }
 </script>
 
-<!-- FIX (AEO): HowTo totalTime corrected to P7D -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -211,7 +190,6 @@
 }
 </script>
 
-<!-- WebPage Schema — speakable selectors updated to include visible FAQ -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -232,7 +210,6 @@
 }
 </script>
 
-<!-- LocalBusiness NAP schema — FIX (GEO): adds physical address signal -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -311,15 +288,45 @@ nav, button, .cta-btn, .btn-primary, .btn-secondary,
 /* Header */
 header { background: var(--white); box-shadow: 0 2px 12px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1001; }
 header .container { position: relative; }
-.header-content { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; gap: 16px; }
+
+/* ── FIX 1: header-content now stacks phone above actions row ── */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0 8px;
+  gap: 6px;
+}
+.header-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+.header-phone-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.cta-phone {
+  color: var(--blue);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.98em;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--gold-lt);
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--gold);
+}
+.cta-phone:hover { background: var(--gold); color: var(--white); }
+
 .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
 .logo-img { width: 50px; height: 50px; object-fit: contain; }
-/* FIX: logo h1 is now in header — this is the page's visual H1 for branding,
-   the SEO H1 is the first heading inside <main> below */
 .logo-text h1 { font-size: 1.55em; color: var(--blue); font-weight: 700; margin: 0; line-height: 1.1; font-family: Georgia,serif; }
 .logo-text p { font-size: 0.78em; color: var(--gold); margin: 0; letter-spacing: 0.06em; text-transform: uppercase; }
 .header-actions { display: flex; gap: 10px; align-items: center; }
-.cta-phone { color: var(--blue); text-decoration: none; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 5px; }
 .cta-btn { background: var(--gold); color: var(--white); padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9em; transition: var(--transition); white-space: nowrap; }
 .cta-btn:hover { background: var(--blue); transform: translateY(-2px); }
 
@@ -353,10 +360,9 @@ nav.desktop-nav { background: var(--blue); }
 .breadcrumb .sep { color: var(--border); }
 .breadcrumb .current { color: var(--muted); }
 
-/* FIX (AIO): machine-readable intro block — hidden visually but crawlable */
 .machine-intro { position: absolute; left: -9999px; top: -9999px; width: 1px; height: 1px; overflow: hidden; }
 
-/* Hero — FIX #2: h2 → h1 for SEO primary heading signal */
+/* Hero */
 .hero { background: linear-gradient(135deg,var(--blue) 0%,#0d3460 40%,#093a5c 100%); color: var(--white); padding: 72px 20px 64px; text-align: center; position: relative; overflow: hidden; }
 .hero::before { content: ''; position: absolute; inset: 0; background-image: repeating-linear-gradient(0deg,transparent,transparent 59px,rgba(212,164,60,0.04) 60px), repeating-linear-gradient(90deg,transparent,transparent 59px,rgba(212,164,60,0.04) 60px); pointer-events: none; }
 .hero::after { content: ''; position: absolute; top: -100px; right: -100px; width: 450px; height: 450px; background: radial-gradient(circle,rgba(8,145,178,0.12) 0%,transparent 70%); pointer-events: none; }
@@ -365,8 +371,6 @@ nav.desktop-nav { background: var(--blue); }
 .hero h1 em { color: var(--gold); font-style: normal; }
 .hero-desc { font-size: clamp(1em,2.5vw,1.15em); margin-bottom: 30px; max-width: 700px; margin-left: auto; margin-right: auto; position: relative; z-index: 1; color: rgba(255,255,255,0.85); line-height: 1.75; }
 .hero-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin-top: 28px; position: relative; z-index: 1; }
-
-/* City coverage pills in hero — FIX (GEO) */
 .coverage-pills { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; margin-top: 24px; position: relative; z-index: 1; }
 .coverage-pill { background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.9); padding: 5px 13px; border-radius: 16px; font-size: 0.81em; font-weight: 500; }
 .coverage-pill a { color: rgba(255,255,255,0.9); text-decoration: none; }
@@ -393,11 +397,10 @@ h2.section-title { color: var(--blue); font-size: clamp(1.6em,4vw,2.3em); margin
 h2.section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 64px; height: 4px; background: var(--gold); border-radius: 2px; }
 .section-intro { text-align: center; max-width: 740px; margin: 0 auto 40px; font-size: 1.05em; color: var(--muted); }
 
-/* Digital service cards — FIX: hover keeps --digital border, only shadow deepens */
+/* Digital service cards */
 .dservice-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(300px,1fr)); gap: 26px; margin-top: 40px; }
 .dservice-card { background: var(--white); padding: 30px; border-radius: var(--radius); box-shadow: var(--shadow); transition: var(--transition); border-top: 4px solid var(--digital); display: block; position: relative; overflow: hidden; }
 .dservice-card::before { content: ''; position: absolute; top: -30px; right: -30px; width: 100px; height: 100px; background: radial-gradient(circle,rgba(8,145,178,0.07) 0%,transparent 70%); border-radius: 50%; pointer-events: none; }
-/* FIX: removed border-top color change — was jarring gold jump on hover */
 .dservice-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
 .dservice-icon { font-size: 2.4em; margin-bottom: 14px; display: block; }
 .dservice-card h3 { color: var(--blue); font-size: 1.18em; margin-bottom: 10px; font-family: Georgia,serif; }
@@ -409,7 +412,7 @@ h2.section-title::after { content: ''; position: absolute; bottom: 0; left: 50%;
 .service-link { display: inline-flex; align-items: center; gap: 5px; color: var(--digital); font-weight: 600; font-size: 0.88em; text-decoration: none; transition: var(--transition); }
 .service-link:hover { color: var(--gold); gap: 8px; }
 
-/* Combo (CA+Digital USP) */
+/* Combo */
 .combo-section { background: linear-gradient(135deg,var(--blue) 0%,var(--blue-mid) 100%); color: var(--white); padding: 64px 20px; text-align: center; }
 .combo-section h2 { color: var(--white); font-size: clamp(1.5em,4vw,2.1em); margin-bottom: 16px; font-family: Georgia,serif; }
 .combo-section h2::after { display: none; }
@@ -419,7 +422,6 @@ h2.section-title::after { content: ''; position: absolute; bottom: 0; left: 50%;
 .combo-box ul { list-style: none; text-align: left; }
 .combo-box ul li { font-size: 0.88em; color: rgba(255,255,255,0.82); padding: 3px 0; }
 .combo-box ul li::before { content: '→ '; color: var(--gold); }
-/* FIX: combo-plus mobile centering fixed */
 .combo-plus { font-size: 2.4em; color: var(--gold); font-weight: 700; background: rgba(212,164,60,0.12); width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto; }
 .combo-result { background: var(--gold); color: var(--white); padding: 22px; border-radius: var(--radius); margin-top: 28px; max-width: 500px; margin-left: auto; margin-right: auto; }
 .combo-result p { font-size: 1.05em; font-weight: 600; }
@@ -434,7 +436,6 @@ h2.section-title::after { content: ''; position: absolute; bottom: 0; left: 50%;
 .pricing-head h3 { font-size: 1.05em; font-family: Georgia,serif; margin-bottom: 6px; }
 .pricing-amount { font-size: 1.9em; font-weight: 800; color: var(--gold); font-family: Georgia,serif; }
 .pricing-card.featured .pricing-amount { color: #fff; }
-/* FIX: pricing-period contrast improved to pass WCAG AA */
 .pricing-period { font-size: 0.82em; color: rgba(255,255,255,0.88); }
 .pricing-body { padding: 22px; }
 .pricing-body ul { list-style: none; }
@@ -453,14 +454,14 @@ h2.section-title::after { content: ''; position: absolute; bottom: 0; left: 50%;
 .step-num { width: 46px; height: 46px; border-radius: 50%; background: var(--digital); color: var(--white); font-size: 1.2em; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 13px; font-family: Georgia,serif; }
 .process-step h3 { color: var(--blue); font-size: 1.02em; margin-bottom: 7px; font-family: Georgia,serif; }
 
-/* Tech strip — FIX: cursor:default added for consistency */
+/* Tech strip */
 .tech-strip { background: var(--white); padding: 36px 20px; border-top: 2px solid var(--border); border-bottom: 2px solid var(--border); }
 .tech-strip h3 { text-align: center; color: var(--blue); font-size: 1.15em; margin-bottom: 20px; font-family: Georgia,serif; }
 .tech-tags { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
 .tech-tag { background: var(--digital-lt); color: var(--digital-dark); padding: 7px 16px; border-radius: 18px; font-size: 0.87em; font-weight: 600; border: 1px solid rgba(8,145,178,0.2); cursor: default; transition: background 0.2s; }
 .tech-tag:hover { background: rgba(8,145,178,0.15); }
 
-/* FIX (AEO): visible speakable FAQ block for voice crawlers */
+/* Visible speakable FAQ */
 .speakable-faq-visible { background: var(--white); border-radius: var(--radius); padding: 28px; margin-bottom: 28px; box-shadow: var(--shadow); border-left: 4px solid var(--digital); }
 .speakable-faq-visible h3 { color: var(--blue); font-size: 1.05em; margin-bottom: 18px; font-family: Georgia,serif; }
 .sfaq-item { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
@@ -518,7 +519,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
   nav.desktop-nav { display: none; }
   header .container { padding: 0 16px; }
   .mobile-drawer { left: -16px; right: -16px; }
-  .header-content { padding: 10px 0; }
+  .header-content { padding: 8px 0 6px; }
   .combo-grid { grid-template-columns: 1fr; text-align: center; }
   .combo-plus { margin: 8px auto; text-align: center; }
   .combo-box ul { text-align: center; }
@@ -527,8 +528,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
   .hero { padding: 52px 16px 48px; }
   .hero h1 { font-size: 1.7em; }
   .logo-text p { display: none; }
-  .cta-phone { display: none; }
-  .cta-btn { display: none; }
+  .header-phone-row { display: none; } /* phone hidden on very small, already in top-bar */
   section { padding: 52px 16px; }
   h2.section-title { font-size: 1.5em; }
   .cta-banner { padding: 44px 16px; }
@@ -539,7 +539,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
 </head>
 <body>
 
-<!-- FIX (AIO): machine-readable intro for LLM/AI crawlers — plain text, above the fold -->
 <p class="machine-intro">Sidhi & Associates is an ICAI-registered Chartered Accountant firm and website developer based in Panchkula, India, with 13+ offices across the country. The firm provides professional digital services including business website design, website development, SEO, Google Business Profile management, social media management, landing page design, and e-commerce development — combined with CA expertise in GST compliance, tax filing, and company incorporation. All digital work is done remotely, serving clients Pan-India.</p>
 
 <div class="top-bar" role="banner">
@@ -548,23 +547,27 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
 
 <header>
   <div class="container">
+    <!-- ── FIX 1: phone number now sits on its own row above the action buttons ── -->
     <div class="header-content">
-      <a href="/" class="logo" aria-label="Sidhi & Associates Home">
-        <img src="/sidhi.png" alt="Sidhi & Associates Logo" class="logo-img" width="50" height="50">
-        <div class="logo-text">
-          <h1>Sidhi & Associates</h1>
-          <p>Chartered Accountants</p>
+      <div class="header-top-row">
+        <a href="/" class="logo" aria-label="Sidhi & Associates Home">
+          <img src="/sidhi.png" alt="Sidhi & Associates Logo" class="logo-img" width="50" height="50">
+          <div class="logo-text">
+            <h1>Sidhi & Associates</h1>
+            <p>Chartered Accountants</p>
+          </div>
+        </a>
+        <div class="header-actions">
+          <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20digital%20services" class="cta-btn" target="_blank" rel="noopener">Get a Quote</a>
+          <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+            <span></span><span></span><span></span>
+          </button>
         </div>
-      </a>
-      <div class="header-actions">
-        <a href="tel:+917889257045" class="cta-phone" aria-label="Call us">📞 +91 78892 57045</a>
-        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20digital%20services" class="cta-btn" target="_blank" rel="noopener">Get a Quote</a>
-        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
-          <span></span><span></span><span></span>
-        </button>
+      </div>
+      <div class="header-phone-row">
+        <a href="tel:+917889257045" class="cta-phone" aria-label="Call us">📞 +91 78892 57045 &nbsp;|&nbsp; Mon–Sat 9AM–6PM</a>
       </div>
     </div>
-    <!-- FIX: #locations → /#locations so it routes to homepage section, not 404 -->
     <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
       <a href="/services/">🛠️ CA Services</a>
       <a href="/services/digital-services/" class="active">💻 Digital Services</a>
@@ -612,7 +615,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
 
 <main id="main-content">
 
-  <!-- HERO — FIX: h2 → h1 for SEO primary heading signal; "website developer" keyword added -->
   <section class="hero" aria-labelledby="hero-heading">
     <div class="container">
       <div class="hero-badge">💻 CA Firm + Website Developer + Digital Agency — One Roof</div>
@@ -624,7 +626,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
         <a href="tel:+917889257045" class="btn-primary">📞 Free Consultation</a>
         <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20digital%20services%20for%20my%20business" class="btn-secondary" target="_blank" rel="noopener">💬 WhatsApp Us</a>
       </div>
-      <!-- FIX (GEO): City coverage pills with links to location pages -->
       <div class="coverage-pills" aria-label="Cities served for digital services">
         <span class="coverage-pill"><a href="/panchkula/">Panchkula</a></span>
         <span class="coverage-pill"><a href="/zirakpur/">Zirakpur</a></span>
@@ -640,7 +641,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     </div>
   </section>
 
-  <!-- USP STRIP -->
   <div class="usp-strip speakable-usp">
     <div class="container">
       <div class="usp-grid">
@@ -654,7 +654,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     </div>
   </div>
 
-  <!-- SERVICES -->
   <section id="services" aria-labelledby="services-heading">
     <div class="container">
       <h2 class="section-title" id="services-heading">Our Digital Services</h2>
@@ -761,7 +760,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     </div>
   </section>
 
-  <!-- CA + DIGITAL COMBO USP -->
   <div class="combo-section" aria-labelledby="combo-heading">
     <div class="container">
       <h2 id="combo-heading">Why Choose a CA Firm as Your Website Developer?</h2>
@@ -795,7 +793,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     </div>
   </div>
 
-  <!-- PRICING -->
   <section id="pricing" class="section-alt" aria-labelledby="pricing-heading">
     <div class="container">
       <h2 class="section-title" id="pricing-heading">Transparent Pricing</h2>
@@ -866,7 +863,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     </div>
   </section>
 
-  <!-- PROCESS -->
   <section id="process" aria-labelledby="process-heading">
     <div class="container">
       <h2 class="section-title" id="process-heading">Get Your Website in 4 Simple Steps</h2>
@@ -880,7 +876,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     </div>
   </section>
 
-  <!-- TECH STACK -->
   <div class="tech-strip">
     <h3>🛠️ Technologies & Platforms We Work With</h3>
     <div class="tech-tags">
@@ -903,13 +898,11 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     </div>
   </div>
 
-  <!-- FAQ — FIX (AEO): visible speakable block added ABOVE accordion -->
   <section id="faq" class="section-alt" aria-labelledby="faq-heading">
     <div class="container">
       <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
       <p class="section-intro">Common questions about our website design and digital services</p>
 
-      <!-- Visible Q&A block for voice/AI crawlers — speakable-faq-visible -->
       <div class="speakable-faq-visible" aria-label="Quick answers to common questions">
         <h3>Quick Answers</h3>
         <div class="sfaq-item">
@@ -926,7 +919,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
         </div>
       </div>
 
-      <!-- Full accordion FAQ -->
       <div class="faq-list" role="list">
 
         <div class="faq-item anim" role="listitem">
@@ -987,14 +979,12 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
 
       </div>
 
-      <!-- Internal link to CA services — builds internal link graph -->
       <p style="text-align:center;margin-top:28px;color:var(--muted);font-size:0.93em;">
         Need CA services too? See our <a href="/services/tax-planning-filing/" style="color:var(--digital-dark);font-weight:600;">ITR Filing</a>, <a href="/services/gst-compliance/" style="color:var(--digital-dark);font-weight:600;">GST Registration</a>, and <a href="/services/company-incorporation/" style="color:var(--digital-dark);font-weight:600;">Company Incorporation</a> services.
       </p>
     </div>
   </section>
 
-  <!-- CTA BANNER -->
   <div class="cta-banner">
     <h2>Ready to Build Your Online Presence?</h2>
     <p>Free consultation — website, SEO & digital presence sorted by India's trusted CA + digital firm</p>
@@ -1066,16 +1056,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
         </ul>
       </div>
     </div>
-    <!-- FIX (GEO): NAP block with schema-friendly markup -->
-    <div style="margin-bottom:20px;padding:16px;background:rgba(255,255,255,0.04);border-radius:8px;text-align:center;font-size:0.82em;color:rgba(255,255,255,0.5);" itemscope itemtype="https://schema.org/PostalAddress">
-      <strong style="color:rgba(255,255,255,0.7);">Head Office:</strong>
-      <span itemprop="streetAddress">MAA SHAKTI COOP SOCIETY, 605, Block A GHS 111, Sector 20</span>,
-      <span itemprop="addressLocality">Panchkula</span>,
-      <span itemprop="addressRegion">Haryana</span>
-      <span itemprop="postalCode">134117</span>,
-      <span itemprop="addressCountry">India</span>
-      &nbsp;|&nbsp; 📞 <a href="tel:+917889257045" style="color:rgba(255,255,255,0.6);">+91 78892 57045</a>
-    </div>
+    <!-- ── FIX 2: Head Office / Panchkula address block removed ── -->
     <div class="footer-bottom">
       <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved. | ICAI Registered Chartered Accountants & Website Developers | Professional Excellence with Integrity</p>
       <p style="margin-top:6px;">CA + Digital Services: Panchkula · Zirakpur · Bangalore · Vadodara · Pune · Hyderabad · Delhi · Gurugram · Lucknow · Bareilly · Ghaziabad · Haridwar · Jaipur · Pan-India</p>
