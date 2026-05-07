@@ -678,24 +678,49 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
 
 /* ── Mobile nav drawer ── */
 @media (max-width: 860px) {
+  /* Hamburger lives in header, always visible */
   .hamburger { display: flex; flex-direction: column; }
-  .nav-links {
-    display: none; flex-direction: column; width: 100%;
-    background: var(--blue-mid); gap: 0; padding: 8px 0; border-top: 1px solid rgba(255,255,255,0.1);
+  /* Nav bar itself hidden on mobile; drawer drops from header */
+  nav { display: none; }
+  /* Drawer panel — full width, slides under header */
+  .mobile-drawer {
+    display: none; flex-direction: column;
+    background: var(--blue-mid); width: 100%;
+    position: absolute; top: 100%; left: 0; right: 0;
+    z-index: 999; box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    border-top: 2px solid var(--gold);
   }
-  .nav-links.open { display: flex; }
-  .nav-links a { padding: 12px 20px; border-radius: 0; border-bottom: 1px solid rgba(255,255,255,0.06); font-size: 0.95em; }
-  .nav-inner { flex-wrap: wrap; }
+  .mobile-drawer.open { display: flex; }
+  .mobile-drawer a {
+    color: rgba(255,255,255,0.9); text-decoration: none;
+    font-weight: 600; font-size: 1em;
+    padding: 14px 24px; border-bottom: 1px solid rgba(255,255,255,0.07);
+    transition: background 0.2s, color 0.2s;
+    display: flex; align-items: center; gap: 8px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  .mobile-drawer a:hover { background: rgba(255,255,255,0.08); color: var(--gold); }
+  .mobile-drawer .drawer-cta {
+    background: var(--gold); color: var(--white) !important;
+    margin: 12px 20px; border-radius: 10px; justify-content: center;
+    font-size: 1.05em; border-bottom: none !important;
+  }
+  .mobile-drawer .drawer-cta:hover { background: var(--gold-dark) !important; }
+  /* Make header position:relative so drawer can absolute-position under it */
+  header { position: sticky; top: 0; z-index: 1001; }
+  .header-content { position: relative; }
 }
 
 @media (max-width: 640px) {
   .hero { padding: 56px 16px 52px; }
   .hero h2 { font-size: 1.75em; }
   .hero-desc { font-size: 0.97em; }
-  .logo-text h1 { font-size: 1.3em; }
+  .logo-text h1 { font-size: 1.25em; }
+  .logo-text p { display: none; }
   .cta-phone { display: none; }
+  .cta-btn { padding: 9px 14px; font-size: 0.83em; }
   section { padding: 52px 16px; }
-  h2.section-title { font-size: 1.55em; }
+  h2.section-title { font-size: 1.5em; }
   .cta-banner { padding: 44px 16px; }
   .floating-buttons { bottom: 18px; right: 14px; }
   .float-btn { width: 46px; height: 46px; }
@@ -703,6 +728,16 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
 </style>
 </head>
 <body>
+<script>
+  /* Show hamburger immediately on mobile without waiting for CSS media query */
+  function syncHamburger() {
+    var h = document.getElementById('hamburger');
+    if (!h) return;
+    h.style.display = window.innerWidth <= 860 ? 'flex' : 'none';
+  }
+  document.addEventListener('DOMContentLoaded', syncHamburger);
+  window.addEventListener('resize', syncHamburger);
+</script>
 
 <!-- ── TOP BAR ── -->
 <div class="top-bar" role="banner">
@@ -723,8 +758,23 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
       <div class="header-actions">
         <a href="tel:+917889257045" class="cta-phone" aria-label="Call us">📞 +91 78892 57045</a>
         <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="cta-btn" target="_blank" rel="noopener">Get Started</a>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer" style="display:none;">
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
+    <!-- ── MOBILE DRAWER (renders under header on mobile) ── -->
+    <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+      <a href="/services/">🛠️ Services</a>
+      <a href="#locations">📍 Locations</a>
+      <a href="/why-us/">⭐ Why Us</a>
+      <a href="/faq/">❓ FAQs</a>
+      <a href="/blog/">📝 Blogs</a>
+      <a href="/calculator/">🧮 Calculators</a>
+      <a href="/about/">ℹ️ About</a>
+      <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+      <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="drawer-cta" target="_blank" rel="noopener">💬 WhatsApp Us</a>
+    </nav>
   </div>
 </header>
 
@@ -1276,23 +1326,32 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
   /* ── Auto copyright year ── */
   document.querySelectorAll('.auto-year').forEach(el => el.textContent = new Date().getFullYear());
 
-  /* ── Mobile hamburger ── */
+  /* ── Mobile hamburger / drawer ── */
   const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('navLinks');
-  hamburger.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    hamburger.classList.toggle('open', isOpen);
-    hamburger.setAttribute('aria-expanded', isOpen);
-  });
-
-  /* ── Close nav on link click (mobile) ── */
-  navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      navLinks.classList.remove('open');
-      hamburger.classList.remove('open');
-      hamburger.setAttribute('aria-expanded', 'false');
+  const mobileDrawer = document.getElementById('mobileDrawer');
+  if (hamburger && mobileDrawer) {
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileDrawer.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', String(isOpen));
     });
-  });
+    /* Close drawer when any link is tapped */
+    mobileDrawer.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        mobileDrawer.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+    /* Close on outside tap */
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+        mobileDrawer.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
 
   /* ── FAQ accordion ── */
   function toggleFaq(el) {
