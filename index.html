@@ -311,14 +311,23 @@ header .container {
 .hamburger {
   display: none;
   background: none; border: none;
-  cursor: pointer; padding: 8px; border-radius: 6px;
+  cursor: pointer;
+  /* 44x44px minimum tap target for accessibility */
+  width: 44px; height: 44px;
+  padding: 0;
+  border-radius: 8px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  /* Pull it right to align with screen edge, compensating container padding */
+  margin-right: -4px;
+  -webkit-tap-highlight-color: transparent;
 }
+.hamburger:active { background: rgba(10,38,71,0.06); }
 .hamburger span {
-  display: block; width: 24px; height: 2px;
-  background: var(--blue); margin: 5px 0;
+  display: block; width: 22px; height: 2px;
+  background: var(--blue); margin: 4px 0;
   transition: var(--transition); border-radius: 2px;
 }
 .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
@@ -330,15 +339,14 @@ header .container {
   display: none;
   flex-direction: column;
   background: var(--blue-mid);
-  /* FIX: stretch edge-to-edge using negative margin to escape .container padding */
   position: absolute;
   top: 100%;
-  left: -20px;  /* cancel .container's 20px padding */
-  right: -20px; /* cancel .container's 20px padding */
+  left: -20px;
+  right: -20px;
   z-index: 999;
   box-shadow: 0 8px 24px rgba(0,0,0,0.25);
   border-top: 2px solid var(--gold);
-  overflow: hidden; /* FIX: clip any child overflow */
+  overflow: hidden;
 }
 .mobile-drawer.open { display: flex; }
 
@@ -714,11 +722,13 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
    MOBILE STYLES — all navbar fixes here
    ══════════════════════════════════════════ */
 @media (max-width: 860px) {
-  /* FIX: Show hamburger in header */
   .hamburger { display: flex; }
-
-  /* FIX: Hide the desktop nav bar entirely on mobile */
   nav.desktop-nav { display: none; }
+  /* Tighten container padding so hamburger sits right up to the edge */
+  header .container { padding: 0 16px; }
+  /* Drawer must match the tighter 16px padding */
+  .mobile-drawer { left: -16px; right: -16px; }
+  .header-content { padding: 10px 0; }
 }
 
 @media (max-width: 640px) {
@@ -728,7 +738,9 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
   .logo-text h1 { font-size: 1.25em; }
   .logo-text p { display: none; }
   .cta-phone { display: none; }
-  .cta-btn { padding: 9px 14px; font-size: 0.83em; }
+  /* Hide Get Started on tiny screens — hamburger needs full right edge */
+  .cta-btn { display: none; }
+  .header-actions { gap: 6px; }
   section { padding: 52px 16px; }
   h2.section-title { font-size: 1.5em; }
   .cta-banner { padding: 44px 16px; }
