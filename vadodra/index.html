@@ -44,6 +44,10 @@
     <meta property="og:type" content="business.business">
     <meta property="og:url" content="https://sidhiandassociates.com/vadodara/">
     <meta property="og:title" content="CA Services in Vadodara (Baroda) | Sidhi & Associates">
+    <meta property="og:image" content="https://sidhiandassociates.com/sidhi.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Sidhi & Associates — CA in Vadodara, Gujarat">
     <meta property="og:description" content="Expert Chartered Accountant services in Vadodara, Gujarat. ITR filing, GST compliance, company registration, audit & startup advisory. Located at Gorwa, Vadodara 391330.">
     <meta property="og:site_name" content="Sidhi & Associates">
     <meta property="og:locale" content="en_IN">
@@ -305,7 +309,7 @@
         "@type": "WebPageElement",
         "cssSelector": "main"
       },
-      "dateModified": "2026-04-24",
+      "dateModified": "2026-05-07",
       "datePublished": "2024-01-01"
     }
     </script>
@@ -689,11 +693,28 @@
         }
 
         /* ── Responsive ── */
+        /* ── Hamburger mobile ── */
+        .hamburger {
+            display: none; background: none; border: none;
+            cursor: pointer; padding: 8px; flex-direction: column; gap: 5px;
+        }
+        .hamburger span {
+            display: block; width: 24px; height: 2px;
+            background: white; border-radius: 2px; transition: all 0.3s;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
         @media (max-width: 768px) {
             .hero h2 { font-size: 2em; }
             h2 { font-size: 1.9em; }
             .location-info { grid-template-columns: 1fr; }
             .header-cta .cta-phone { display: none; }
+            .hamburger { display: flex; }
+            .nav-links { display: none; flex-direction: column; width: 100%; }
+            .nav-links.open { display: flex; }
+            nav .container { flex-wrap: wrap; }
             .hero-desc { font-size: 1.05em; }
         }
 
@@ -1237,6 +1258,24 @@
     <script>
         /* ── Auto copyright year ── */
         document.querySelectorAll('.auto-year').forEach(el => el.textContent = new Date().getFullYear());
+
+        /* ── Mobile hamburger ── */
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.querySelector('.nav-links');
+        if (hamburger && navLinks) {
+            hamburger.addEventListener('click', () => {
+                const isOpen = navLinks.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', isOpen);
+            });
+            navLinks.querySelectorAll('a').forEach(a => {
+                a.addEventListener('click', () => {
+                    navLinks.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+        }
 
         /* ── FAQ accordion ── */
         function toggleFaq(el) {
