@@ -135,7 +135,6 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(-
 .spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(255,255,255,0.4);border-top-color:#fff;border-radius:50%;animation:spin 0.7s linear infinite;}
 @keyframes spin{to{transform:rotate(360deg)}}
 .error-alert{background:#FEF2F2;border:1px solid #FECACA;border-radius:8px;padding:12px 16px;font-size:13px;color:#991B1B;margin-bottom:16px;display:none;}
-/* Upload size warning */
 .size-warning{background:#FEF3C7;border:1px solid #FDE68A;border-radius:8px;padding:10px 14px;font-size:12px;color:#92400E;margin-top:8px;display:none;}
 </style>
 </head>
@@ -522,12 +521,11 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(-
 /* ══════════════════════════════════════════════════════════
    BACKEND — Google Apps Script Web App URL
    ══════════════════════════════════════════════════════════
-   GAS requires mode:'no-cors' from browsers.
-   With no-cors, fetch returns an "opaque" response — we
-   cannot read the body, but the POST is ALWAYS received
-   by GAS and processed. So we fire-and-forget and show
-   success immediately. The GAS script handles logging,
-   folder creation, and email notification on its end.
+   FIX: Browsers block Content-Type: application/json in
+   no-cors mode (non-simple header → preflight → blocked).
+   Solution: send as Content-Type: text/plain which IS a
+   simple header and passes through with no-cors. The GAS
+   doPost then parses e.postData.contents as JSON manually.
    ══════════════════════════════════════════════════════════ */
 const UPLOAD_URL = 'https://script.google.com/macros/s/AKfycbzcqehwT2FnVU6iBUlVtycfAHnlbg47CmlPXuLy22X29o6q_1D-pwTAVw5TDQlgnLVE/exec';
 const MAX_FILE_BYTES = 15 * 1024 * 1024; // 15MB
@@ -587,7 +585,6 @@ function selectService(el, svc) {
 }
 
 function buildReview() {
-  // Count total files queued
   const fileInputIds = ['pan_files','aad_files','f16_files','bank_files','inv_files','other_files'];
   let totalFiles = 0;
   fileInputIds.forEach(id => {
@@ -618,12 +615,13 @@ function fileToBase64(file) {
 }
 
 /* ── MAIN SUBMIT FUNCTION ──
-   Uses mode:'no-cors' to avoid CORS error from GAS.
-   The request IS sent and processed by GAS — we just
-   cannot read the response body (opaque response).
-   We generate a reference locally and show success.
-   GAS also generates its own ref but uses same format.
-   ─────────────────────────────────────────────────── */
+   KEY FIX: Content-Type must be 'text/plain' for no-cors mode.
+   'application/json' triggers a CORS preflight which GAS blocks,
+   causing the browser to silently drop the request body.
+   'text/plain' is a simple header — no preflight, body arrives.
+   GAS doPost receives the raw JSON string in e.postData.contents
+   and parses it manually with JSON.parse().
+   ─────────────────────────────────────────────────────────────── */
 async function submitRegistration() {
   const btn     = document.getElementById('submitBtn');
   const errorEl = document.getElementById('submit-error');
@@ -682,19 +680,20 @@ async function submitRegistration() {
   btn.innerHTML = '<span class="spinner"></span> Submitting to CA team…';
 
   try {
-    // KEY FIX: mode:'no-cors' prevents the "Failed to fetch" CORS error.
-    // GAS receives and processes the POST normally.
-    // We cannot read the response (opaque), so we assume success.
+    // FIX: Use 'text/plain' NOT 'application/json'.
+    // 'application/json' is a non-simple CORS header that triggers a
+    // preflight OPTIONS request. GAS does not handle preflight, so the
+    // browser blocks the POST entirely — the body never arrives.
+    // 'text/plain' is a simple header: no preflight, the POST goes through
+    // in no-cors mode and e.postData.contents contains our JSON string.
     await fetch(UPLOAD_URL, {
-      method: 'POST',
-      mode:   'no-cors',   // ← This is the fix
-      headers: { 'Content-Type': 'application/json' },
-      body:   JSON.stringify(payload),
+      method:  'POST',
+      mode:    'no-cors',
+      headers: { 'Content-Type': 'text/plain' },
+      body:    JSON.stringify(payload),
     });
-    // If fetch resolves (even with opaque response), GAS got the data
     showSuccess(ref, hasOversizedFile, files.length);
   } catch (err) {
-    // Network is truly down — show WhatsApp fallback
     console.error('Submit error:', err);
     showFallback(ref, hasOversizedFile);
   }
@@ -708,13 +707,11 @@ function showSuccess(ref, hasOversized, fileCount) {
   document.getElementById('reg-success').style.display = 'block';
   document.getElementById('success-ref').textContent = ref;
 
-  // Build WhatsApp follow-up link with client info pre-filled
   const waText = encodeURIComponent(
     `Hi! I just submitted my documents on the Sidhi & Associates portal.\nRef: ${ref}\nName: ${regData.name}\nPAN: ${regData.pan}\nService: ${regData.service||'ITR Filing'}`
   );
   document.getElementById('wa-followup-btn').href = `https://wa.me/917889257045?text=${waText}`;
 
-  // Show WhatsApp nudge if files were skipped or none uploaded
   if (hasOversized || fileCount === 0) {
     document.getElementById('wa-followup-msg').style.display = 'block';
   }
@@ -728,7 +725,6 @@ function showSuccess(ref, hasOversized, fileCount) {
 }
 
 function showFallback(ref, hasOversized) {
-  // True network failure — guide to WhatsApp
   const btn = document.getElementById('submitBtn');
   const errorEl = document.getElementById('submit-error');
   const waText = encodeURIComponent(
@@ -736,10 +732,10 @@ function showFallback(ref, hasOversized) {
   );
   errorEl.innerHTML = `
     ⚠️ Network error — your submission could not be sent right now.<br>
-    <strong>Don't worry!</strong> Please 
+    <strong>Don't worry!</strong> Please
     <a href="https://wa.me/917889257045?text=${waText}" target="_blank" style="color:#991B1B;font-weight:700;">
       WhatsApp us directly
-    </a> 
+    </a>
     with your details and we'll register you immediately.`;
   errorEl.style.display = 'block';
   btn.innerHTML = '🚀 Submit to CA Team';
@@ -788,7 +784,6 @@ function handleFiles(zoneId, inputId) {
   });
   const zone = document.getElementById(zoneId);
   if (zone) zone.style.borderColor = hasOversize ? 'var(--error)' : 'var(--success)';
-  // Show global size warning
   const warn = document.getElementById('size-warning-global');
   if (warn) warn.style.display = hasOversize ? 'block' : 'none';
 }
