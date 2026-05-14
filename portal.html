@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Portal — Sidhi & Associates | Submit Documents Online</title>
+<meta name="description" content="Sidhi & Associates secure client portal. Register, submit ITR documents, GST papers, audit documents online. Fast, paperless CA services across India.">
+<meta name="robots" content="noindex, nofollow">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --blue:#0A2647;--blue-mid:#144272;--gold:#D4A43C;--gold-dk:#B8861E;
+  --gold-lt:#F5E6C8;--gold-bg:#FDF6E7;--white:#ffffff;--bg:#F9F7F4;
+  --text:#1a1a1a;--muted:#6B7280;--border:#E5E7EB;
+  --success:#16A34A;--success-bg:#F0FDF4;--error:#DC2626;
+  --shadow:0 4px 24px rgba(10,38,71,0.10);--radius:12px;
+}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh}
+.portal-header{background:var(--blue);padding:14px 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 12px rgba(0,0,0,0.2);}
+.header-inner{max-width:1100px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;}
+.portal-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.portal-logo img{width:38px;height:38px;object-fit:contain;}
+.portal-logo-text h1{font-size:1.15em;color:var(--white);font-weight:700;margin:0;}
+.portal-logo-text p{font-size:0.7em;color:var(--gold);margin:0;}
+.portal-badge{background:rgba(212,164,60,0.15);border:1px solid rgba(212,164,60,0.3);color:var(--gold);padding:5px 14px;border-radius:20px;font-size:0.78em;font-weight:600;display:flex;align-items:center;gap:6px;}
+.portal-badge::before{content:'';width:7px;height:7px;background:var(--gold);border-radius:50%;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.5;transform:scale(0.7)}}
+.portal-wrap{max-width:1100px;margin:0 auto;padding:32px 20px 60px;}
+.section-sub{font-size:0.95em;color:var(--muted);margin-bottom:28px;}
+.portal-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:32px;background:var(--white);padding:6px;border-radius:var(--radius);box-shadow:var(--shadow);}
+.tab-btn{padding:10px 20px;border-radius:8px;border:none;background:transparent;color:var(--muted);font-family:inherit;font-size:0.88em;font-weight:600;cursor:pointer;transition:all 0.25s;white-space:nowrap;}
+.tab-btn.active{background:var(--blue);color:var(--white);}
+.tab-btn:hover:not(.active){background:var(--bg);color:var(--blue);}
+.tab-panel{display:none;}
+.tab-panel.active{display:block;animation:fadeIn 0.3s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.card{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;margin-bottom:24px;}
+.card-header{background:var(--blue);padding:20px 28px;display:flex;align-items:center;gap:14px;}
+.card-header-icon{width:44px;height:44px;border-radius:10px;background:rgba(212,164,60,0.2);display:flex;align-items:center;justify-content:center;font-size:1.4em;flex-shrink:0;}
+.card-header-text h3{color:var(--white);font-size:1.1em;font-weight:700;margin:0 0 2px;}
+.card-header-text p{color:rgba(255,255,255,0.65);font-size:0.82em;margin:0;}
+.card-body{padding:28px;}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr;}}
+.field{display:flex;flex-direction:column;gap:5px;}
+.field label{font-size:12px;font-weight:600;color:var(--blue);letter-spacing:0.02em;}
+.field label .req{color:var(--gold);margin-left:2px;}
+.field input,.field select,.field textarea{padding:10px 14px;border:1.5px solid var(--border);border-radius:8px;font-size:14px;font-family:inherit;color:var(--text);background:var(--white);transition:border-color 0.2s,box-shadow 0.2s;outline:none;appearance:none;}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px rgba(10,38,71,0.08);}
+.field textarea{resize:vertical;min-height:90px;}
+.field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%236B7280' d='M8 10.94L2.53 5.47l1.06-1.06L8 8.82l4.41-4.41 1.06 1.06z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:16px;padding-right:36px;cursor:pointer;}
+.field-hint{font-size:11px;color:var(--muted);margin-top:2px;}
+.upload-zone{border:2px dashed var(--border);border-radius:8px;padding:20px 16px;text-align:center;cursor:pointer;transition:all 0.25s;position:relative;}
+.upload-zone:hover,.upload-zone.dragover{border-color:var(--gold);background:var(--gold-bg);}
+.upload-zone input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;}
+.upload-icon{font-size:2em;margin-bottom:8px;}
+.upload-label{font-size:13px;font-weight:600;color:var(--blue);margin-bottom:4px;}
+.upload-hint{font-size:11px;color:var(--muted);}
+.upload-files-list{margin-top:10px;display:flex;flex-direction:column;gap:6px;}
+.upload-file-item{display:flex;align-items:center;gap:8px;background:var(--gold-bg);border:1px solid var(--gold-lt);border-radius:6px;padding:7px 12px;font-size:12px;}
+.upload-file-item .fname{flex:1;color:var(--blue);font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.upload-file-item .fsize{color:var(--muted);font-size:11px;white-space:nowrap;}
+.doc-checklist{display:flex;flex-direction:column;gap:10px;}
+.doc-item{display:flex;align-items:flex-start;gap:12px;padding:14px 16px;background:var(--bg);border-radius:8px;border:1.5px solid var(--border);transition:all 0.2s;}
+.doc-item.required-doc{border-color:var(--gold-lt);}
+.doc-item.uploaded{background:var(--success-bg);border-color:#86EFAC;}
+.doc-status{width:22px;height:22px;border-radius:50%;flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;}
+.doc-status.req{background:var(--gold-lt);color:var(--gold-dk);}
+.doc-status.opt{background:var(--border);color:var(--muted);}
+.doc-status.done{background:#16A34A;color:white;}
+.doc-info{flex:1;}
+.doc-info h4{font-size:13px;font-weight:700;color:var(--blue);margin-bottom:2px;}
+.doc-info p{font-size:11px;color:var(--muted);line-height:1.5;}
+.doc-tag{font-size:10px;font-weight:600;padding:2px 8px;border-radius:20px;white-space:nowrap;flex-shrink:0;}
+.doc-tag.req-tag{background:var(--gold-lt);color:var(--gold-dk);}
+.doc-tag.opt-tag{background:var(--border);color:var(--muted);}
+.doc-upload-btn{font-size:11px;font-weight:600;color:var(--blue);background:var(--white);border:1.5px solid var(--border);border-radius:6px;padding:5px 12px;cursor:pointer;transition:all 0.2s;white-space:nowrap;flex-shrink:0;font-family:inherit;position:relative;}
+.doc-upload-btn input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;}
+.doc-upload-btn:hover{border-color:var(--gold);color:var(--gold-dk);}
+.doc-upload-btn.done-btn{background:var(--success-bg);border-color:#86EFAC;color:var(--success);}
+.progress-wrap{background:var(--border);border-radius:4px;height:6px;overflow:hidden;margin-bottom:6px;}
+.progress-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--blue),var(--gold));transition:width 0.4s ease;}
+.progress-label{display:flex;justify-content:space-between;font-size:11px;color:var(--muted);margin-bottom:16px;}
+.btn{padding:12px 28px;border-radius:30px;border:none;font-family:inherit;font-size:14px;font-weight:700;cursor:pointer;transition:all 0.25s;display:inline-flex;align-items:center;gap:8px;}
+.btn-primary{background:var(--blue);color:var(--white);}
+.btn-primary:hover{background:var(--blue-mid);transform:translateY(-2px);box-shadow:0 4px 16px rgba(10,38,71,0.25);}
+.btn-gold{background:var(--gold);color:var(--white);}
+.btn-gold:hover{background:var(--gold-dk);transform:translateY(-2px);box-shadow:0 4px 16px rgba(212,164,60,0.35);}
+.btn-outline{background:transparent;color:var(--blue);border:1.5px solid var(--border);}
+.btn-outline:hover{border-color:var(--blue);}
+.btn:disabled{opacity:0.6;cursor:not-allowed;transform:none !important;}
+.btn-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;}
+.service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:24px;}
+.service-tile{border:1.5px solid var(--border);border-radius:10px;padding:16px;cursor:pointer;transition:all 0.2s;background:var(--white);}
+.service-tile:hover{border-color:var(--gold);background:var(--gold-bg);}
+.service-tile.selected{border-color:var(--blue);background:rgba(10,38,71,0.04);}
+.service-tile .s-icon{font-size:1.8em;margin-bottom:8px;}
+.service-tile h4{font-size:12px;font-weight:700;color:var(--blue);margin-bottom:3px;}
+.service-tile p{font-size:10px;color:var(--muted);}
+.success-box{background:var(--success-bg);border:1px solid #86EFAC;border-radius:var(--radius);padding:32px;text-align:center;}
+.success-icon{width:64px;height:64px;background:var(--success-bg);border:2px solid #86EFAC;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-size:1.8em;}
+.success-box h3{font-size:1.3em;font-weight:800;color:#14532D;margin-bottom:8px;}
+.success-box p{font-size:14px;color:#166534;margin-bottom:4px;}
+.ref-badge{background:var(--white);border:1px solid #86EFAC;border-radius:8px;padding:10px 20px;display:inline-block;margin:16px 0;font-weight:700;color:var(--blue);font-size:1em;}
+.info-box{background:var(--gold-bg);border:1px solid var(--gold-lt);border-radius:8px;padding:14px 18px;display:flex;gap:10px;align-items:flex-start;margin-bottom:20px;}
+.info-box .info-icon{flex-shrink:0;font-size:1.1em;}
+.info-box p{font-size:12px;color:#7A5C10;line-height:1.6;}
+.portal-layout{display:grid;grid-template-columns:260px 1fr;gap:24px;}
+.portal-sidebar{background:var(--white);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px;height:fit-content;position:sticky;top:80px;}
+.sidebar-title{font-size:11px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+.sidebar-links{display:flex;flex-direction:column;gap:4px;}
+.sidebar-link{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:8px;text-decoration:none;font-size:13px;font-weight:500;color:var(--muted);transition:all 0.2s;cursor:pointer;border:none;background:none;font-family:inherit;width:100%;text-align:left;}
+.sidebar-link:hover{background:var(--bg);color:var(--blue);}
+.sidebar-link.active{background:rgba(10,38,71,0.06);color:var(--blue);font-weight:700;}
+.sidebar-link .sl-icon{width:28px;height:28px;border-radius:6px;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:13px;flex-shrink:0;}
+.support-box{background:var(--blue);border-radius:10px;padding:16px;margin-top:20px;text-align:center;}
+.support-box p{color:rgba(255,255,255,0.7);font-size:11px;margin-bottom:10px;}
+.support-box a{display:block;background:var(--gold);color:var(--white);padding:9px;border-radius:8px;text-decoration:none;font-size:12px;font-weight:700;margin-bottom:6px;transition:background 0.2s;}
+.support-box a:hover{background:var(--gold-dk);}
+@media(max-width:768px){.portal-layout{grid-template-columns:1fr;}.portal-sidebar{display:none;}}
+.step-wizard{display:flex;align-items:center;gap:0;margin-bottom:32px;overflow-x:auto;padding-bottom:4px;}
+.step-item{display:flex;flex-direction:column;align-items:center;gap:6px;flex:1;min-width:80px;}
+.step-circle{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;border:2px solid var(--border);background:var(--white);color:var(--muted);transition:all 0.3s;}
+.step-item.active .step-circle{background:var(--blue);border-color:var(--blue);color:var(--white);}
+.step-item.done .step-circle{background:var(--gold);border-color:var(--gold);color:var(--white);}
+.step-label{font-size:10px;font-weight:600;color:var(--muted);text-align:center;line-height:1.3;}
+.step-item.active .step-label{color:var(--blue);}
+.step-item.done .step-label{color:var(--gold-dk);}
+.step-line{flex:1;height:2px;background:var(--border);margin-top:-20px;}
+.step-item.done+.step-line{background:var(--gold);}
+.status-chip{display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:600;}
+.chip-processing{background:#DBEAFE;color:#1E40AF;}
+.chip-done{background:var(--success-bg);color:#166534;}
+.spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(255,255,255,0.4);border-top-color:#fff;border-radius:50%;animation:spin 0.7s linear infinite;}
+@keyframes spin{to{transform:rotate(360deg)}}
+.error-alert{background:#FEF2F2;border:1px solid #FECACA;border-radius:8px;padding:12px 16px;font-size:13px;color:#991B1B;margin-bottom:16px;display:none;}
+</style>
+</head>
+<body>
+
+<header class="portal-header">
+  <div class="header-inner">
+    <a href="/" class="portal-logo">
+      <img src="/sidhi.png" alt="Sidhi & Associates" onerror="this.style.display='none'">
+      <div class="portal-logo-text">
+        <h1>Sidhi &amp; Associates</h1>
+        <p>Client Portal</p>
+      </div>
+    </a>
+    <div class="portal-badge">🔒 Secure Portal</div>
+  </div>
+</header>
+
+<main class="portal-wrap">
+
+  <div class="portal-tabs">
+    <button class="tab-btn active" onclick="showTab('register')">📋 Register &amp; Submit</button>
+    <button class="tab-btn" onclick="showTab('itr1')">📄 ITR-1 (Salaried)</button>
+    <button class="tab-btn" onclick="showTab('itr2')">📄 ITR-2 (Capital Gains)</button>
+    <button class="tab-btn" onclick="showTab('itr4')">📄 ITR-4 (Business)</button>
+    <button class="tab-btn" onclick="showTab('itr3')">📄 ITR-3 (Professionals)</button>
+    <button class="tab-btn" onclick="showTab('itr5')">📄 ITR-5 (Firms/LLP)</button>
+    <button class="tab-btn" onclick="showTab('itr6')">📄 ITR-6 (Companies)</button>
+    <button class="tab-btn" onclick="showTab('itr7')">📄 ITR-7 (Trust/NGO)</button>
+    <button class="tab-btn" onclick="showTab('gst')">🧾 GST Documents</button>
+    <button class="tab-btn" onclick="showTab('track')">🔍 Track Status</button>
+  </div>
+
+  <!-- REGISTER & SUBMIT TAB -->
+  <div id="tab-register" class="tab-panel active">
+    <div class="portal-layout">
+      <aside class="portal-sidebar">
+        <div class="sidebar-title">Quick Access</div>
+        <div class="sidebar-links">
+          <button class="sidebar-link active" onclick="showTab('register')"><span class="sl-icon">📋</span>New Submission</button>
+          <button class="sidebar-link" onclick="showTab('itr1')"><span class="sl-icon">1️⃣</span>ITR-1 Documents</button>
+          <button class="sidebar-link" onclick="showTab('itr2')"><span class="sl-icon">2️⃣</span>ITR-2 Documents</button>
+          <button class="sidebar-link" onclick="showTab('itr4')"><span class="sl-icon">4️⃣</span>ITR-4 Documents</button>
+          <button class="sidebar-link" onclick="showTab('itr3')"><span class="sl-icon">3️⃣</span>ITR-3 Documents</button>
+          <button class="sidebar-link" onclick="showTab('itr5')"><span class="sl-icon">5️⃣</span>ITR-5 (Firms/LLP)</button>
+          <button class="sidebar-link" onclick="showTab('itr6')"><span class="sl-icon">6️⃣</span>ITR-6 (Companies)</button>
+          <button class="sidebar-link" onclick="showTab('itr7')"><span class="sl-icon">7️⃣</span>ITR-7 (Trust/NGO)</button>
+          <button class="sidebar-link" onclick="showTab('gst')"><span class="sl-icon">🧾</span>GST Documents</button>
+          <button class="sidebar-link" onclick="showTab('track')"><span class="sl-icon">🔍</span>Track My Status</button>
+        </div>
+        <div class="support-box">
+          <p>Need help with documents?</p>
+          <a href="tel:+917889257045">📞 +91 78892 57045</a>
+          <a href="https://wa.me/917889257045" target="_blank">💬 WhatsApp</a>
+        </div>
+      </aside>
+
+      <div>
+        <p class="section-sub">Register your details and select the service you need. Our CA team will review and call you within 2 hours.</p>
+
+        <div class="step-wizard">
+          <div class="step-item active" id="sw1"><div class="step-circle">1</div><div class="step-label">Your<br>Details</div></div>
+          <div class="step-line"></div>
+          <div class="step-item" id="sw2"><div class="step-circle">2</div><div class="step-label">Select<br>Service</div></div>
+          <div class="step-line"></div>
+          <div class="step-item" id="sw3"><div class="step-circle">3</div><div class="step-label">Upload<br>Docs</div></div>
+          <div class="step-line"></div>
+          <div class="step-item" id="sw4"><div class="step-circle">4</div><div class="step-label">Confirm &amp;<br>Submit</div></div>
+        </div>
+
+        <!-- Step 1 -->
+        <div id="reg-step1">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-icon">👤</div>
+              <div class="card-header-text"><h3>Step 1 — Your Personal Details</h3><p>Basic information to create your client profile</p></div>
+            </div>
+            <div class="card-body">
+              <div class="form-grid">
+                <div class="field"><label>Full Name <span class="req">*</span></label><input type="text" id="r_name" placeholder="Rahul Sharma" autocomplete="name"></div>
+                <div class="field"><label>PAN Number <span class="req">*</span></label><input type="text" id="r_pan" placeholder="ABCDE1234F" maxlength="10" style="text-transform:uppercase"><span class="field-hint">10-character PAN — e.g. ABCDE1234F</span></div>
+                <div class="field"><label>Mobile Number <span class="req">*</span></label><input type="tel" id="r_phone" placeholder="98765 43210" maxlength="10"></div>
+                <div class="field"><label>Email Address</label><input type="email" id="r_email" placeholder="rahul@example.com"></div>
+                <div class="field"><label>Aadhaar Number</label><input type="text" id="r_aadhaar" placeholder="1234 5678 9012" maxlength="14"></div>
+                <div class="field"><label>Date of Birth</label><input type="date" id="r_dob"></div>
+                <div class="field" style="grid-column:1/-1"><label>Residential Address</label><textarea id="r_address" placeholder="House / Flat No., Street, City, State, PIN Code" rows="2"></textarea></div>
+                <div class="field">
+                  <label>City <span class="req">*</span></label>
+                  <select id="r_city">
+                    <option value="">Select your city</option>
+                    <option>Delhi / New Ashok Nagar</option><option>Gurugram (Gurgaon)</option>
+                    <option>Noida / Greater Noida</option><option>Pune / Kharadi</option>
+                    <option>Mumbai / Thane</option><option>Bangalore / Bengaluru</option>
+                    <option>Hyderabad / Kondapur</option><option>Vadodara / Baroda</option>
+                    <option>Lucknow</option><option>Ghaziabad / Indirapuram</option>
+                    <option>Haridwar / Rishikesh</option><option>Bareilly</option>
+                    <option>Panchkula / Chandigarh</option><option>Zirakpur / Mohali</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label>Assessment Year <span class="req">*</span></label>
+                  <select id="r_ay">
+                    <option value="">Select AY</option>
+                    <option selected>AY 2025-26 (FY 2024-25)</option>
+                    <option>AY 2024-25 (FY 2023-24)</option>
+                    <option>AY 2023-24 (FY 2022-23)</option>
+                    <option>Multiple years</option>
+                  </select>
+                </div>
+              </div>
+              <div class="btn-row"><button class="btn btn-primary" onclick="goRegStep(2)">Continue → Select Service</button></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div id="reg-step2" style="display:none">
+          <div class="info-box"><span class="info-icon">💡</span><p>Select the primary service you need. Not sure? Select "Not Sure — CA Will Advise".</p></div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-icon">🎯</div>
+              <div class="card-header-text"><h3>Step 2 — Select Your Service</h3><p>Choose what you need help with</p></div>
+            </div>
+            <div class="card-body">
+              <div class="service-grid">
+                <div class="service-tile" onclick="selectService(this,'ITR Filing')"><div class="s-icon">📊</div><h4>ITR Filing</h4><p>Income tax return for individuals &amp; businesses</p></div>
+                <div class="service-tile" onclick="selectService(this,'GST Registration')"><div class="s-icon">🧾</div><h4>GST Registration</h4><p>New GST number registration</p></div>
+                <div class="service-tile" onclick="selectService(this,'GST Returns')"><div class="s-icon">📁</div><h4>GST Returns</h4><p>Monthly / quarterly GST filing</p></div>
+                <div class="service-tile" onclick="selectService(this,'Company Registration')"><div class="s-icon">🏢</div><h4>Company Setup</h4><p>Pvt Ltd, LLP, OPC registration</p></div>
+                <div class="service-tile" onclick="selectService(this,'Audit')"><div class="s-icon">✅</div><h4>Audit Services</h4><p>Statutory, tax, or internal audit</p></div>
+                <div class="service-tile" onclick="selectService(this,'TDS Compliance')"><div class="s-icon">📋</div><h4>TDS Compliance</h4><p>TDS return filing &amp; compliance</p></div>
+                <div class="service-tile" onclick="selectService(this,'Bookkeeping')"><div class="s-icon">📒</div><h4>Bookkeeping</h4><p>Monthly accounts &amp; MIS reports</p></div>
+                <div class="service-tile" onclick="selectService(this,'Not Sure')"><div class="s-icon">💬</div><h4>Not Sure</h4><p>CA will call and advise the right service</p></div>
+              </div>
+              <div class="field" style="margin-bottom:16px"><label>Additional notes / requirements</label><textarea id="r_notes" placeholder="e.g. I have salary income + rental income + one property sale..."></textarea></div>
+              <div class="btn-row">
+                <button class="btn btn-outline" onclick="goRegStep(1)">← Back</button>
+                <button class="btn btn-primary" onclick="goRegStep(3)">Continue → Upload Documents</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div id="reg-step3" style="display:none">
+          <div class="info-box"><span class="info-icon">📎</span><p>Upload any documents you have ready. <strong>PDF, JPG, PNG</strong> accepted. Max 15MB per file. You can also upload later via WhatsApp.</p></div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-icon">📎</div>
+              <div class="card-header-text"><h3>Step 3 — Upload Your Documents</h3><p>Upload what you have — our CA will tell you if anything is missing</p></div>
+            </div>
+            <div class="card-body">
+              <div style="display:flex;flex-direction:column;gap:18px;">
+                <div class="field"><label>PAN Card <span class="req">*</span></label>
+                  <div class="upload-zone" id="uz_pan" ondragover="dragOver(event,'uz_pan')" ondragleave="dragLeave(event,'uz_pan')" ondrop="dropFile(event,'uz_pan','pan_files')">
+                    <input type="file" id="pan_files" accept=".pdf,.jpg,.jpeg,.png" multiple onchange="handleFiles('uz_pan','pan_files')">
+                    <div class="upload-icon">🪪</div><div class="upload-label">Click or drag &amp; drop PAN card</div>
+                    <div class="upload-hint">PDF / JPG / PNG · Max 15MB</div>
+                    <div class="upload-files-list" id="pan_files_list"></div>
+                  </div>
+                </div>
+                <div class="field"><label>Aadhaar Card <span class="req">*</span></label>
+                  <div class="upload-zone" id="uz_aad">
+                    <input type="file" id="aad_files" accept=".pdf,.jpg,.jpeg,.png" multiple onchange="handleFiles('uz_aad','aad_files')">
+                    <div class="upload-icon">🪪</div><div class="upload-label">Click or drag &amp; drop Aadhaar</div>
+                    <div class="upload-hint">PDF / JPG / PNG · Max 15MB</div>
+                    <div class="upload-files-list" id="aad_files_list"></div>
+                  </div>
+                </div>
+                <div class="field"><label>Form 16 / Salary Slip <small style="color:var(--muted)">(if salaried)</small></label>
+                  <div class="upload-zone" id="uz_f16">
+                    <input type="file" id="f16_files" accept=".pdf,.jpg,.jpeg,.png,.xlsx,.xls" multiple onchange="handleFiles('uz_f16','f16_files')">
+                    <div class="upload-icon">📄</div><div class="upload-label">Click or drag &amp; drop Form 16</div>
+                    <div class="upload-hint">PDF / JPG / XLS · Max 15MB</div>
+                    <div class="upload-files-list" id="f16_files_list"></div>
+                  </div>
+                </div>
+                <div class="field"><label>Bank Statements <span class="req">*</span></label>
+                  <div class="upload-zone" id="uz_bank">
+                    <input type="file" id="bank_files" accept=".pdf,.jpg,.jpeg,.png,.xlsx,.xls" multiple onchange="handleFiles('uz_bank','bank_files')">
+                    <div class="upload-icon">🏦</div><div class="upload-label">Click or drag &amp; drop Bank Statements</div>
+                    <div class="upload-hint">All savings/current accounts · PDF / XLS</div>
+                    <div class="upload-files-list" id="bank_files_list"></div>
+                  </div>
+                </div>
+                <div class="field"><label>Investment Proofs / 80C Documents</label>
+                  <div class="upload-zone" id="uz_inv">
+                    <input type="file" id="inv_files" accept=".pdf,.jpg,.jpeg,.png,.xlsx" multiple onchange="handleFiles('uz_inv','inv_files')">
+                    <div class="upload-icon">💼</div><div class="upload-label">LIC, PPF, ELSS, NPS, HRA, HLI etc.</div>
+                    <div class="upload-hint">PDF / JPG · Max 15MB per file</div>
+                    <div class="upload-files-list" id="inv_files_list"></div>
+                  </div>
+                </div>
+                <div class="field"><label>Any Other Documents</label>
+                  <div class="upload-zone" id="uz_other">
+                    <input type="file" id="other_files" accept=".pdf,.jpg,.jpeg,.png,.xlsx,.xls,.doc,.docx" multiple onchange="handleFiles('uz_other','other_files')">
+                    <div class="upload-icon">📂</div><div class="upload-label">Any other relevant documents</div>
+                    <div class="upload-hint">Capital gains, rent receipts, P&amp;L etc.</div>
+                    <div class="upload-files-list" id="other_files_list"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="btn-row">
+                <button class="btn btn-outline" onclick="goRegStep(2)">← Back</button>
+                <button class="btn btn-primary" onclick="goRegStep(4)">Continue → Review &amp; Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div id="reg-step4" style="display:none">
+          <div class="card">
+            <div class="card-header">
+              <div class="card-header-icon">✅</div>
+              <div class="card-header-text"><h3>Step 4 — Review &amp; Submit</h3><p>Confirm your details before submitting</p></div>
+            </div>
+            <div class="card-body">
+              <div id="review-summary" style="background:var(--bg);border-radius:8px;padding:18px;margin-bottom:20px;font-size:13px;"></div>
+              <div id="submit-error" class="error-alert"></div>
+              <div class="info-box"><span class="info-icon">🔒</span><p>Your documents are encrypted and accessible only to your assigned CA. We never share your financial data with any third party.</p></div>
+              <div class="btn-row">
+                <button class="btn btn-outline" onclick="goRegStep(3)">← Back</button>
+                <button class="btn btn-gold" id="submitBtn" onclick="submitRegistration()">🚀 Submit to CA Team</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Success -->
+        <div id="reg-success" style="display:none">
+          <div class="success-box">
+            <div class="success-icon">✅</div>
+            <h3>Submission Received!</h3>
+            <p>Our CA team will review your documents and call you within <strong>2 business hours</strong>.</p>
+            <div class="ref-badge" id="success-ref">SA-LOADING</div>
+            <p style="font-size:13px;margin-bottom:16px;">Save this reference number for follow-ups</p>
+            <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
+              <a href="https://wa.me/917889257045" target="_blank" class="btn btn-gold" style="text-decoration:none">💬 WhatsApp for quick follow-up</a>
+              <button class="btn btn-outline" onclick="resetPortal()">Submit Another</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITR-1 TAB -->
+  <div id="tab-itr1" class="tab-panel">
+    <div class="card">
+      <div class="card-header"><div class="card-header-icon">1️⃣</div><div class="card-header-text"><h3>ITR-1 (Sahaj) — Salaried Individual / Pensioner</h3><p>For individuals with salary, pension, one house property, and other sources up to ₹50L total income</p></div></div>
+      <div class="card-body">
+        <div class="info-box"><span class="info-icon">ℹ️</span><p><strong>Who should file ITR-1?</strong> Salaried employees, pensioners with total income up to ₹50 lakhs. Not applicable if you have capital gains, more than one house, or business income.</p></div>
+        <div class="progress-wrap"><div class="progress-fill" id="itr1-progress" style="width:0%"></div></div>
+        <div class="progress-label"><span id="itr1-done">0 of 10 documents uploaded</span><span id="itr1-pct">0%</span></div>
+        <div class="doc-checklist">
+          <div class="doc-item required-doc" id="di1_1"><div class="doc-status req" id="ds1_1">R</div><div class="doc-info"><h4>PAN Card</h4><p>Self-attested copy of PAN card</p></div><span class="doc-tag req-tag">Required</span><button class="doc-upload-btn" id="db1_1"><input type="file" accept=".pdf,.jpg,.png" onchange="docUploaded(1,1,this)">📤 Upload</button></div>
+          <div class="doc-item required-doc" id="di1_2"><div class="doc-status req" id="ds1_2">R</div><div class="doc-info"><h4>Aadhaar Card</h4><p>Self-attested copy of Aadhaar</p></div><span class="doc-tag req-tag">Required</span><button class="doc-upload-btn" id="db1_2"><input type="file" accept=".pdf,.jpg,.png" onchange="docUploaded(1,2,this)">📤 Upload</button></div>
+          <div class="doc-item required-doc" id="di1_3"><div class="doc-status req" id="ds1_3">R</div><div class="doc-info"><h4>Form 16 — Part A &amp; Part B</h4><p>Issued by employer — shows salary and TDS deducted</p></div><span class="doc-tag req-tag">Required</span><button class="doc-upload-btn" id="db1_3"><input type="file" accept=".pdf,.jpg,.png" onchange="docUploaded(1,3,this)">📤 Upload</button></div>
+          <div class="doc-item required-doc" id="di1_4"><div class="doc-status req" id="ds1_4">R</div><div class="doc-info"><h4>Bank Account Statements</h4><p>All savings and salary accounts — full year April to March</p></div><span class="doc-tag req-tag">Required</span><button class="doc-upload-btn" id="db1_4"><input type="file" accept=".pdf,.xlsx,.jpg" onchange="docUploaded(1,4,this)">📤 Upload</button></div>
+          <div class="doc-item optional-doc" id="di1_5"><div class="doc-status opt" id="ds1_5">O</div><div class="doc-info"><h4>HRA — Rent Receipts &amp; Agreement</h4><p>Rent receipts, rent agreement, and landlord PAN (if rent &gt; ₹1L/year)</p></div><span class="doc-tag opt-tag">If Applicable</span><button class="doc-upload-btn" id="db1_5"><input type="file" accept=".pdf,.jpg,.png" onchange="docUploaded(1,5,this)">📤 Upload</button></div>
+          <div class="doc-item optional-doc" id="di1_6"><div class="doc-status opt" id="ds1_6">O</div><div class="doc-info"><h4>Home Loan Interest Certificate</h4><p>From bank — shows principal and interest paid</p></div><span class="doc-tag opt-tag">If Applicable</span><button class="doc-upload-btn" id="db1_6"><input type="file" accept=".pdf,.jpg,.png" onchange="docUploaded(1,6,this)">📤 Upload</button></div>
+          <div class="doc-item optional-doc" id="di1_7"><div class="doc-status opt" id="ds1_7">O</div><div class="doc-info"><h4>80C Investment Proofs</h4><p>LIC premium receipts, PPF passbook, ELSS statements, NSC etc.</p></div><span class="doc-tag opt-tag">If Applicable</span><button class="doc-upload-btn" id="db1_7"><input type="file" accept=".pdf,.jpg,.png" onchange="docUploaded(1,7,this)">📤 Upload</button></div>
+          <div class="doc-item optional-doc" id="di1_8"><div class="doc-status opt" id="ds1_8">O</div><div class="doc-info"><h4>NPS Statement / 80CCD(1B)</h4><p>NPS Tier-1 contribution statement for additional ₹50,000 deduction</p></div><span class="doc-tag opt-tag">If Applicable</span><button class="doc-upload-btn" id="db1_8"><input type="file" accept=".pdf,.jpg,.png" onchange="docUploaded(1,8,this)">📤 Upload</button></div>
+          <div class="doc-item optional-doc" id="di1_9"><div class="doc-status opt" id="ds1_9">O</div><div class="doc-info"><h4>Other Tax-Saving Receipts</h4><p>80D (health insurance), 80E (education loan), 80G (donation receipts)</p></div><span class="doc-tag opt-tag">If Applicable</span><button class="doc-upload-btn" id="db1_9"><input type="file" accept=".pdf,.jpg,.png" onchange="docUploaded(1,9,this)">📤 Upload</button></div>
+          <div class="doc-item optional-doc" id="di1_10"><div class="doc-status opt" id="ds1_10">O</div><div class="doc-info"><h4>AIS / 26AS Tax Credit Statement</h4><p>Download from incometax.gov.in → AIS</p></div><span class="doc-tag opt-tag">Recommended</span><button class="doc-upload-btn" id="db1_10"><input type="file" accept=".pdf,.json" onchange="docUploaded(1,10,this)">📤 Upload</button></div>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-gold" onclick="proceedToSubmit('ITR-1 Filing')">📤 Proceed to Submit to CA →</button>
+          <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20ITR-1%20filing" target="_blank" class="btn btn-outline">💬 WhatsApp for help</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITR-2 TAB -->
+  <div id="tab-itr2" class="tab-panel">
+    <div class="card">
+      <div class="card-header"><div class="card-header-icon">2️⃣</div><div class="card-header-text"><h3>ITR-2 — Capital Gains / Multiple Properties / NRI</h3><p>For individuals with capital gains, more than one house, or NRI income</p></div></div>
+      <div class="card-body">
+        <div class="info-box"><span class="info-icon">ℹ️</span><p>Capital gains from shares/property, multiple house properties, NRI status, foreign assets, ESOP/RSU income.</p></div>
+        <div class="progress-wrap"><div class="progress-fill" id="itr2-progress" style="width:0%"></div></div>
+        <div class="progress-label"><span id="itr2-done">0 documents uploaded</span><span id="itr2-pct">0%</span></div>
+        <div class="doc-checklist">
+          <div class="doc-item required-doc" id="di2_1"><div class="doc-status req" id="ds2_1">R</div><div class="doc-info"><h4>PAN Card</h4><p>Self-attested copy</p></div><span class="doc-tag req-tag">Required</span><button class="doc-upload-btn" id="db2_1"><input type="file" onchange="docUploaded(2,1,this)">📤 Upload</button></div>
+          <div class="doc-item required-doc" id="di2_2"><div class="doc-status req" id="ds2_2">R</div><div class="doc-info"><h4>Aadhaar Card</h4><p>Self-attested copy</p></div><span class="doc-tag req-tag">Required</span><button class="doc-upload-btn" id="db2_2"><input type="file" onchange="docUploaded(2,2,this)">📤 Upload</button></div>
+          <div class="doc-item required-doc" id="di2_3"><div class="doc-status req" id="ds2_3">R</div><div class="doc-info"><h4>Form 16 (if salaried)</h4><p>All employers — Part A and Part B</p></div><span class="doc-tag req-tag">Required</span><button class="doc-upload-btn" id="db2_3"><input type="file" onchange="docUploaded(2,3,this)">📤 Upload</button></div>
+          <div class="doc-item required-doc" id="di2_4"><div class="doc-status req" id="ds2_4">R</div><div class="doc-info"><h4>Capital Gains Statement — Shares / MF</h4><p>Broker P&amp;L / Zerodha / Groww / CDSL CAS — STCG and LTCG separated</p></div><span class="doc-tag req-tag">Required</span><button class="doc-upload-btn" id="db2_4"><input type="file" accept=".pdf,.xlsx,.csv" onchange="docUploaded(2,4,this)">📤 Upload</button></div>
+          <div class="doc-item required-doc" id="di2_5"><div class="doc-status req" id="ds2_5">R</div><div class="doc-info"><h4>Property Sale / Purchase Documents</h4><p>Sale deed, registry, stamp duty receipts</p></div><span class="doc-tag req-tag">If Property Sold</span><button class="doc-upload-btn" id="db2_5"><input type="file" accept=".pdf,.jpg,.png" onchange="docUploaded(2,5,this)">📤 Upload</button></div>
+          <div class="doc-item optional-doc" id="di2_6"><div class="doc-status opt" id="ds2_6">O</div><div class="doc-info"><h4>Bank Statements (All Accounts)</h4><p>Including NRE/NRO accounts for NRIs</p></div><span class="doc-tag opt-tag">Required</span><button class="doc-upload-btn" id="db2_6"><input type="file" accept=".pdf,.xlsx" onchange="docUploaded(2,6,this)">📤 Upload</button></div>
+          <div class="doc-item optional-doc" id="di2_7"><div class="doc-status opt" id="ds2_7">O</div><div class="doc-info"><h4>ESOP / RSU Grant &amp; Vesting Documents</h4><p>Form 12BA and sale transaction details</p></div><span class="doc-tag opt-tag">If ESOP/RSU</span><button class="doc-upload-btn" id="db2_7"><input type="file" accept=".pdf,.xlsx" onchange="docUploaded(2,7,this)">📤 Upload</button></div>
+          <div class="doc-item optional-doc" id="di2_8"><div class="doc-status opt" id="ds2_8">O</div><div class="doc-info"><h4>AIS / 26AS Tax Credit Statement</h4><p>From Income Tax portal</p></div><span class="doc-tag opt-tag">Recommended</span><button class="doc-upload-btn" id="db2_8"><input type="file" accept=".pdf,.json" onchange="docUploaded(2,8,this)">📤 Upload</button></div>
+        </div>
+        <div class="btn-row">
+          <button class="btn btn-gold" onclick="proceedToSubmit('ITR-2 Filing')">📤 Proceed to Submit to CA →</button>
+          <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20ITR-2%20filing" target="_blank" class="btn btn-outline">💬 WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITR-3 TAB -->
+  <div id="tab-itr3" class="tab-panel">
+    <div class="card"><div class="card-header"><div class="card-header-icon">3️⃣</div><div class="card-header-text"><h3>ITR-3 — Professional Income / Business with Accounts</h3><p>Doctors, lawyers, architects, consultants, freelancers</p></div></div>
+    <div class="card-body"><div class="info-box"><span class="info-icon">ℹ️</span><p>Professionals maintaining books of accounts and NOT eligible for presumptive taxation under 44AD/44ADA.</p></div>
+    <div class="btn-row"><button class="btn btn-gold" onclick="proceedToSubmit('ITR-3 Filing')">📤 Submit to CA →</button><a href="https://wa.me/917889257045?text=I%20need%20help%20with%20ITR-3%20filing" target="_blank" class="btn btn-outline">💬 WhatsApp</a></div></div></div>
+  </div>
+
+  <!-- ITR-4 TAB -->
+  <div id="tab-itr4" class="tab-panel">
+    <div class="card"><div class="card-header"><div class="card-header-icon">4️⃣</div><div class="card-header-text"><h3>ITR-4 (Sugam) — Presumptive Business / Freelancer</h3><p>Small businesses &amp; freelancers under 44AD/44ADA/44AE</p></div></div>
+    <div class="card-body"><div class="info-box"><span class="info-icon">ℹ️</span><p>Turnover up to ₹3 crore (44AD) or receipts up to ₹75 lakhs (44ADA). No detailed books required.</p></div>
+    <div class="btn-row"><button class="btn btn-gold" onclick="proceedToSubmit('ITR-4 Filing')">📤 Submit to CA →</button><a href="https://wa.me/917889257045?text=I%20need%20help%20with%20ITR-4%20filing" target="_blank" class="btn btn-outline">💬 WhatsApp</a></div></div></div>
+  </div>
+
+  <!-- ITR-5 TAB -->
+  <div id="tab-itr5" class="tab-panel">
+    <div class="card"><div class="card-header"><div class="card-header-icon">5️⃣</div><div class="card-header-text"><h3>ITR-5 — Partnership Firms, LLPs, AOP, BOI</h3></div></div>
+    <div class="card-body"><div class="btn-row"><button class="btn btn-gold" onclick="proceedToSubmit('ITR-5 Filing')">📤 Submit to CA →</button><a href="https://wa.me/917889257045" target="_blank" class="btn btn-outline">💬 WhatsApp</a></div></div></div>
+  </div>
+
+  <!-- ITR-6 TAB -->
+  <div id="tab-itr6" class="tab-panel">
+    <div class="card"><div class="card-header"><div class="card-header-icon">6️⃣</div><div class="card-header-text"><h3>ITR-6 — Companies (Private Limited / Public Limited)</h3></div></div>
+    <div class="card-body"><div class="btn-row"><button class="btn btn-gold" onclick="proceedToSubmit('ITR-6 Filing')">📤 Submit to CA →</button><a href="https://wa.me/917889257045" target="_blank" class="btn btn-outline">💬 WhatsApp</a></div></div></div>
+  </div>
+
+  <!-- ITR-7 TAB -->
+  <div id="tab-itr7" class="tab-panel">
+    <div class="card"><div class="card-header"><div class="card-header-icon">7️⃣</div><div class="card-header-text"><h3>ITR-7 — Trusts, NGOs, Section 8 Companies</h3></div></div>
+    <div class="card-body"><div class="btn-row"><button class="btn btn-gold" onclick="proceedToSubmit('ITR-7 Filing')">📤 Submit to CA →</button><a href="https://wa.me/917889257045" target="_blank" class="btn btn-outline">💬 WhatsApp</a></div></div></div>
+  </div>
+
+  <!-- GST TAB -->
+  <div id="tab-gst" class="tab-panel">
+    <div class="card"><div class="card-header"><div class="card-header-icon">🧾</div><div class="card-header-text"><h3>GST — Registration &amp; Return Filing Documents</h3></div></div>
+    <div class="card-body"><div class="btn-row"><button class="btn btn-gold" onclick="proceedToSubmit('GST Services')">📤 Submit to CA →</button><a href="https://wa.me/917889257045?text=I%20need%20help%20with%20GST" target="_blank" class="btn btn-outline">💬 WhatsApp</a></div></div></div>
+  </div>
+
+  <!-- TRACK TAB -->
+  <div id="tab-track" class="tab-panel">
+    <div class="card">
+      <div class="card-header"><div class="card-header-icon">🔍</div><div class="card-header-text"><h3>Track Your Submission Status</h3><p>Enter your reference number or PAN to check status</p></div></div>
+      <div class="card-body">
+        <div class="form-grid">
+          <div class="field"><label>Reference Number</label><input type="text" id="track_ref" placeholder="e.g. SA-X7K4M" style="text-transform:uppercase" oninput="this.value=this.value.toUpperCase()"></div>
+          <div class="field"><label>PAN Number</label><input type="text" id="track_pan" placeholder="ABCDE1234F" maxlength="10" style="text-transform:uppercase"></div>
+        </div>
+        <div class="btn-row" style="margin-top:16px"><button class="btn btn-primary" onclick="trackStatus()">🔍 Check Status</button></div>
+        <div id="track-result" style="margin-top:24px;display:none">
+          <div style="background:var(--bg);border-radius:10px;padding:20px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:16px;">
+              <div><div style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase">Reference</div><div style="font-size:1.1em;font-weight:800;color:var(--blue)" id="tr-ref">—</div></div>
+              <span class="status-chip chip-processing" id="tr-status">Processing</span>
+            </div>
+            <div class="form-grid">
+              <div><div style="font-size:11px;color:var(--muted);margin-bottom:3px">Client Name</div><div style="font-weight:600;color:var(--blue)" id="tr-name">—</div></div>
+              <div><div style="font-size:11px;color:var(--muted);margin-bottom:3px">Service</div><div style="font-weight:600;color:var(--blue)" id="tr-service">—</div></div>
+              <div><div style="font-size:11px;color:var(--muted);margin-bottom:3px">Submitted</div><div style="font-weight:600;color:var(--blue)" id="tr-date">—</div></div>
+              <div><div style="font-size:11px;color:var(--muted);margin-bottom:3px">Assigned CA</div><div style="font-weight:600;color:var(--blue)">Sidhi &amp; Associates Team</div></div>
+            </div>
+            <div style="margin-top:16px;padding-top:16px;border-top:1px solid var(--border)">
+              <div style="font-size:12px;color:var(--muted);margin-bottom:12px;font-weight:600">PROGRESS</div>
+              <div style="display:flex;flex-direction:column;gap:8px" id="tr-steps"></div>
+            </div>
+          </div>
+          <div style="margin-top:16px;text-align:center">
+            <p style="font-size:13px;color:var(--muted);margin-bottom:12px">For instant updates, WhatsApp us with your reference number</p>
+            <a href="https://wa.me/917889257045" target="_blank" class="btn btn-gold" style="text-decoration:none">💬 Message CA Team on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<script>
+/* ══════════════════════════════════════════
+   BACKEND — Google Apps Script Web App URL
+   ══════════════════════════════════════════ */
+const UPLOAD_URL = 'https://script.google.com/macros/s/AKfycbzcqehwT2FnVU6iBUlVtycfAHnlbg47CmlPXuLy22X29o6q_1D-pwTAVw5TDQlgnLVE/exec';
+
+/* ── Tab switching ── */
+function showTab(id) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-'+id).classList.add('active');
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    if (b.getAttribute('onclick') && b.getAttribute('onclick').includes("'"+id+"'")) b.classList.add('active');
+  });
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+/* ── Registration wizard ── */
+let regData = {};
+
+function goRegStep(step) {
+  if (step === 2) {
+    const name  = document.getElementById('r_name').value.trim();
+    const pan   = document.getElementById('r_pan').value.trim().toUpperCase();
+    const phone = document.getElementById('r_phone').value.trim();
+    const city  = document.getElementById('r_city').value;
+    if (!name)  { alert('Please enter your full name'); return; }
+    if (!/^[A-Z]{5}[0-9]{4}[A-Z]$/.test(pan)) { alert('Please enter a valid 10-character PAN (e.g. ABCDE1234F)'); return; }
+    if (!/^\d{10}$/.test(phone)) { alert('Please enter a valid 10-digit mobile number'); return; }
+    if (!city) { alert('Please select your city'); return; }
+    regData.name  = name;
+    regData.pan   = pan;
+    regData.phone = phone;
+    regData.city  = city;
+    regData.email = document.getElementById('r_email').value;
+    regData.ay    = document.getElementById('r_ay').value || 'AY 2025-26';
+  }
+  for (let i = 1; i <= 4; i++) {
+    const el = document.getElementById('reg-step'+i);
+    if (el) el.style.display = i === step ? 'block' : 'none';
+  }
+  document.getElementById('reg-success').style.display = 'none';
+  for (let i = 1; i <= 4; i++) {
+    const sw = document.getElementById('sw'+i);
+    sw.classList.remove('active','done');
+    if (i < step) sw.classList.add('done');
+    else if (i === step) sw.classList.add('active');
+  }
+  if (step === 4) buildReview();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+let selectedSvc = '';
+function selectService(el, svc) {
+  document.querySelectorAll('.service-tile').forEach(t => t.classList.remove('selected'));
+  el.classList.add('selected');
+  selectedSvc = svc;
+  regData.service = svc;
+}
+
+function buildReview() {
+  document.getElementById('review-summary').innerHTML = `
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+      <div><span style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase">Name</span><div style="font-weight:700;color:var(--blue);margin-top:2px">${regData.name||'—'}</div></div>
+      <div><span style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase">PAN</span><div style="font-weight:700;color:var(--blue);margin-top:2px">${regData.pan||'—'}</div></div>
+      <div><span style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase">Mobile</span><div style="font-weight:700;color:var(--blue);margin-top:2px">${regData.phone||'—'}</div></div>
+      <div><span style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase">City</span><div style="font-weight:700;color:var(--blue);margin-top:2px">${regData.city||'—'}</div></div>
+      <div><span style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase">Assessment Year</span><div style="font-weight:700;color:var(--blue);margin-top:2px">${regData.ay||'AY 2025-26'}</div></div>
+      <div><span style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase">Service</span><div style="font-weight:700;color:var(--blue);margin-top:2px">${regData.service||'Not selected'}</div></div>
+    </div>`;
+}
+
+/* ── File to base64 ── */
+function fileToBase64(file) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload  = () => resolve(reader.result);
+    reader.onerror = reject;
+    reader.readAsDataURL(file);
+  });
+}
+
+/* ── SUBMIT ── */
+async function submitRegistration() {
+  const btn     = document.getElementById('submitBtn');
+  const errorEl = document.getElementById('submit-error');
+  errorEl.style.display = 'none';
+
+  btn.innerHTML = '<span class="spinner"></span> Uploading documents…';
+  btn.disabled  = true;
+
+  const fileInputs = [
+    { id: 'pan_files',   category: 'ID Proofs (PAN, Aadhaar)' },
+    { id: 'aad_files',   category: 'ID Proofs (PAN, Aadhaar)' },
+    { id: 'f16_files',   category: 'ITR Documents' },
+    { id: 'bank_files',  category: 'Bank Statements' },
+    { id: 'inv_files',   category: 'Investment Proofs / 80C' },
+    { id: 'other_files', category: 'Other Documents' },
+  ];
+
+  const files = [];
+  for (const fi of fileInputs) {
+    const input = document.getElementById(fi.id);
+    if (input && input.files.length) {
+      for (const file of input.files) {
+        try {
+          const base64 = await fileToBase64(file);
+          files.push({ name: file.name, type: file.type, base64, category: fi.category });
+        } catch(e) { console.warn('Could not read file:', file.name); }
+      }
+    }
+  }
+
+  const ref = genRef();
+  const payload = {
+    ref,
+    name:    regData.name,
+    pan:     regData.pan,
+    phone:   '+91' + regData.phone,
+    email:   regData.email || '',
+    city:    regData.city,
+    ay:      regData.ay || 'AY 2025-26',
+    service: regData.service || 'General',
+    notes:   document.getElementById('r_notes')?.value || '',
+    files,
+  };
+
+  btn.innerHTML = '<span class="spinner"></span> Submitting to CA team…';
+
+  try {
+    const response = await fetch(UPLOAD_URL, {
+      method: 'POST',
+      body:   JSON.stringify(payload),
+    });
+    const result = await response.json();
+    if (result.status === 'ok') {
+      regData.ref = result.ref || ref;
+      showSuccess(regData.ref);
+    } else {
+      throw new Error(result.errors?.join(', ') || result.message || 'Submission failed');
+    }
+  } catch (err) {
+    console.error(err);
+    errorEl.textContent = '⚠️ ' + (err.message || 'Network error. Please try again or WhatsApp us at +91 78892 57045.');
+    errorEl.style.display = 'block';
+    btn.innerHTML = '🚀 Submit to CA Team';
+    btn.disabled  = false;
+  }
+}
+
+function showSuccess(ref) {
+  for (let i = 1; i <= 4; i++) {
+    const el = document.getElementById('reg-step'+i);
+    if (el) el.style.display = 'none';
+  }
+  document.getElementById('reg-success').style.display = 'block';
+  document.getElementById('success-ref').textContent = ref;
+  for (let i = 1; i <= 4; i++) {
+    const sw = document.getElementById('sw'+i);
+    sw.classList.remove('active');
+    sw.classList.add('done');
+  }
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+function genRef() {
+  return 'SA-' + Math.random().toString(36).substring(2,7).toUpperCase();
+}
+
+function resetPortal() {
+  document.getElementById('reg-success').style.display = 'none';
+  goRegStep(1);
+  document.getElementById('r_name').value  = '';
+  document.getElementById('r_pan').value   = '';
+  document.getElementById('r_phone').value = '';
+  regData = {};
+  document.querySelectorAll('.service-tile').forEach(t => t.classList.remove('selected'));
+}
+
+/* ── File upload UI ── */
+function handleFiles(zoneId, inputId) {
+  const input  = document.getElementById(inputId);
+  const listEl = document.getElementById(inputId+'_list');
+  if (!input || !listEl) return;
+  listEl.innerHTML = '';
+  Array.from(input.files).forEach(file => {
+    const item = document.createElement('div');
+    item.className = 'upload-file-item';
+    const size = file.size < 1024*1024 ? (file.size/1024).toFixed(1)+'KB' : (file.size/1024/1024).toFixed(1)+'MB';
+    item.innerHTML = `<span class="fname">✅ ${file.name}</span><span class="fsize">${size}</span>`;
+    listEl.appendChild(item);
+  });
+  const zone = document.getElementById(zoneId);
+  if (zone) zone.style.borderColor = 'var(--success)';
+}
+
+function dragOver(e,id) { e.preventDefault(); document.getElementById(id).classList.add('dragover'); }
+function dragLeave(e,id){ document.getElementById(id).classList.remove('dragover'); }
+function dropFile(e,zoneId,inputId) {
+  e.preventDefault();
+  document.getElementById(zoneId).classList.remove('dragover');
+  const input = document.getElementById(inputId);
+  if (input) {
+    const dt = new DataTransfer();
+    Array.from(e.dataTransfer.files).forEach(f => dt.items.add(f));
+    input.files = dt.files;
+    handleFiles(zoneId, inputId);
+  }
+}
+
+/* ── Doc checklist ── */
+const itrProgress = {};
+function docUploaded(itr, docNum, input) {
+  if (!input.files.length) return;
+  const key = 'itr'+itr;
+  if (!itrProgress[key]) itrProgress[key] = {};
+  itrProgress[key][docNum] = true;
+  const di = document.getElementById('di'+itr+'_'+docNum);
+  const ds = document.getElementById('ds'+itr+'_'+docNum);
+  const db = document.getElementById('db'+itr+'_'+docNum);
+  if (di) { di.classList.remove('required-doc','optional-doc'); di.classList.add('uploaded'); }
+  if (ds) { ds.className = 'doc-status done'; ds.textContent = '✓'; }
+  if (db) { db.className = 'doc-upload-btn done-btn'; db.innerHTML = '✅ Uploaded'; }
+  updateITRProgress(itr);
+}
+function updateITRProgress(itr) {
+  const key   = 'itr'+itr;
+  const total = document.querySelectorAll('[id^="di'+itr+'_"]').length || 10;
+  const done  = Object.keys(itrProgress[key]||{}).length;
+  const pct   = Math.round((done/total)*100);
+  const pb = document.getElementById('itr'+itr+'-progress');
+  const pd = document.getElementById('itr'+itr+'-done');
+  const pp = document.getElementById('itr'+itr+'-pct');
+  if (pb) pb.style.width = pct+'%';
+  if (pd) pd.textContent = done+' of '+total+' documents uploaded';
+  if (pp) pp.textContent = pct+'%';
+}
+
+/* ── Proceed from ITR tab to submit ── */
+function proceedToSubmit(service) {
+  showTab('register');
+  selectedSvc = service;
+  regData.service = service;
+  goRegStep(1);
+  document.getElementById('r_name').focus();
+}
+
+/* ── Track status ── */
+function trackStatus() {
+  const ref    = document.getElementById('track_ref').value.trim().toUpperCase();
+  const pan    = document.getElementById('track_pan').value.trim().toUpperCase();
+  const result = document.getElementById('track-result');
+  if (!ref && !pan) { alert('Please enter your Reference Number or PAN'); return; }
+  result.style.display = 'block';
+  document.getElementById('tr-ref').textContent     = ref || 'SA-DEMO1';
+  document.getElementById('tr-name').textContent    = regData.name || 'Client';
+  document.getElementById('tr-service').textContent = regData.service || 'ITR Filing';
+  document.getElementById('tr-date').textContent    = new Date().toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'});
+  const steps = [
+    {label:'Submission Received',done:true},
+    {label:'Documents Verified by CA',done:true},
+    {label:'Return Preparation in Progress',done:false},
+    {label:'Ready for Your Review',done:false},
+    {label:'Filed Successfully',done:false},
+  ];
+  document.getElementById('tr-steps').innerHTML = steps.map(s =>
+    '<div style="display:flex;align-items:center;gap:10px;padding:8px 12px;background:var(--white);border-radius:6px;border:1px solid var(--border)">' +
+    '<div style="width:20px;height:20px;border-radius:50%;background:'+(s.done?'var(--success)':'var(--border)')+';color:white;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0">'+(s.done?'✓':'')+'</div>' +
+    '<span style="font-size:13px;font-weight:'+(s.done?'600':'400')+';color:'+(s.done?'var(--blue)':'var(--muted)')+'">'+s.label+'</span>' +
+    (s.done?'<span class="status-chip chip-done" style="margin-left:auto;font-size:10px">Done</span>':'')+
+    '</div>'
+  ).join('');
+  result.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+/* Auto uppercase PAN */
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('#r_pan,#track_pan').forEach(el => {
+    el.addEventListener('input', () => el.value = el.value.toUpperCase());
+  });
+});
+</script>
+</body>
+</html>
