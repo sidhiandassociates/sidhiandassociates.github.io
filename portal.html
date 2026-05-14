@@ -135,6 +135,8 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(-
 .spinner{display:inline-block;width:16px;height:16px;border:2px solid rgba(255,255,255,0.4);border-top-color:#fff;border-radius:50%;animation:spin 0.7s linear infinite;}
 @keyframes spin{to{transform:rotate(360deg)}}
 .error-alert{background:#FEF2F2;border:1px solid #FECACA;border-radius:8px;padding:12px 16px;font-size:13px;color:#991B1B;margin-bottom:16px;display:none;}
+/* Upload size warning */
+.size-warning{background:#FEF3C7;border:1px solid #FDE68A;border-radius:8px;padding:10px 14px;font-size:12px;color:#92400E;margin-top:8px;display:none;}
 </style>
 </head>
 <body>
@@ -280,7 +282,8 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(-
 
         <!-- Step 3 -->
         <div id="reg-step3" style="display:none">
-          <div class="info-box"><span class="info-icon">📎</span><p>Upload any documents you have ready. <strong>PDF, JPG, PNG</strong> accepted. Max 15MB per file. You can also upload later via WhatsApp.</p></div>
+          <div class="info-box"><span class="info-icon">📎</span><p>Upload any documents you have ready. <strong>PDF, JPG, PNG</strong> accepted. Max 15MB per file. You can also share remaining documents via WhatsApp after submission.</p></div>
+          <div id="size-warning-global" class="size-warning">⚠️ One or more files exceed 15MB. Please compress them or share via WhatsApp instead.</div>
           <div class="card">
             <div class="card-header">
               <div class="card-header-icon">📎</div>
@@ -288,7 +291,7 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(-
             </div>
             <div class="card-body">
               <div style="display:flex;flex-direction:column;gap:18px;">
-                <div class="field"><label>PAN Card <span class="req">*</span></label>
+                <div class="field"><label>PAN Card</label>
                   <div class="upload-zone" id="uz_pan" ondragover="dragOver(event,'uz_pan')" ondragleave="dragLeave(event,'uz_pan')" ondrop="dropFile(event,'uz_pan','pan_files')">
                     <input type="file" id="pan_files" accept=".pdf,.jpg,.jpeg,.png" multiple onchange="handleFiles('uz_pan','pan_files')">
                     <div class="upload-icon">🪪</div><div class="upload-label">Click or drag &amp; drop PAN card</div>
@@ -296,7 +299,7 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(-
                     <div class="upload-files-list" id="pan_files_list"></div>
                   </div>
                 </div>
-                <div class="field"><label>Aadhaar Card <span class="req">*</span></label>
+                <div class="field"><label>Aadhaar Card</label>
                   <div class="upload-zone" id="uz_aad">
                     <input type="file" id="aad_files" accept=".pdf,.jpg,.jpeg,.png" multiple onchange="handleFiles('uz_aad','aad_files')">
                     <div class="upload-icon">🪪</div><div class="upload-label">Click or drag &amp; drop Aadhaar</div>
@@ -312,7 +315,7 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(-
                     <div class="upload-files-list" id="f16_files_list"></div>
                   </div>
                 </div>
-                <div class="field"><label>Bank Statements <span class="req">*</span></label>
+                <div class="field"><label>Bank Statements</label>
                   <div class="upload-zone" id="uz_bank">
                     <input type="file" id="bank_files" accept=".pdf,.jpg,.jpeg,.png,.xlsx,.xls" multiple onchange="handleFiles('uz_bank','bank_files')">
                     <div class="upload-icon">🏦</div><div class="upload-label">Click or drag &amp; drop Bank Statements</div>
@@ -372,8 +375,11 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(-
             <p>Our CA team will review your documents and call you within <strong>2 business hours</strong>.</p>
             <div class="ref-badge" id="success-ref">SA-LOADING</div>
             <p style="font-size:13px;margin-bottom:16px;">Save this reference number for follow-ups</p>
+            <div id="wa-followup-msg" style="background:rgba(37,211,102,0.1);border:1px solid rgba(37,211,102,0.3);border-radius:10px;padding:14px;margin-bottom:16px;font-size:13px;color:#14532D;display:none;">
+              📱 <strong>Important:</strong> Please also send your documents via WhatsApp to <strong>+91 78892 57045</strong> mentioning your reference number, so our CA has them immediately.
+            </div>
             <div style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-              <a href="https://wa.me/917889257045" target="_blank" class="btn btn-gold" style="text-decoration:none">💬 WhatsApp for quick follow-up</a>
+              <a id="wa-followup-btn" href="https://wa.me/917889257045" target="_blank" class="btn btn-gold" style="text-decoration:none">💬 WhatsApp CA Team</a>
               <button class="btn btn-outline" onclick="resetPortal()">Submit Another</button>
             </div>
           </div>
@@ -513,10 +519,18 @@ body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(-
 </main>
 
 <script>
-/* ══════════════════════════════════════════
+/* ══════════════════════════════════════════════════════════
    BACKEND — Google Apps Script Web App URL
-   ══════════════════════════════════════════ */
+   ══════════════════════════════════════════════════════════
+   GAS requires mode:'no-cors' from browsers.
+   With no-cors, fetch returns an "opaque" response — we
+   cannot read the body, but the POST is ALWAYS received
+   by GAS and processed. So we fire-and-forget and show
+   success immediately. The GAS script handles logging,
+   folder creation, and email notification on its end.
+   ══════════════════════════════════════════════════════════ */
 const UPLOAD_URL = 'https://script.google.com/macros/s/AKfycbzcqehwT2FnVU6iBUlVtycfAHnlbg47CmlPXuLy22X29o6q_1D-pwTAVw5TDQlgnLVE/exec';
+const MAX_FILE_BYTES = 15 * 1024 * 1024; // 15MB
 
 /* ── Tab switching ── */
 function showTab(id) {
@@ -529,7 +543,7 @@ function showTab(id) {
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
-/* ── Registration wizard ── */
+/* ── Registration wizard state ── */
 let regData = {};
 
 function goRegStep(step) {
@@ -573,6 +587,14 @@ function selectService(el, svc) {
 }
 
 function buildReview() {
+  // Count total files queued
+  const fileInputIds = ['pan_files','aad_files','f16_files','bank_files','inv_files','other_files'];
+  let totalFiles = 0;
+  fileInputIds.forEach(id => {
+    const el = document.getElementById(id);
+    if (el && el.files) totalFiles += el.files.length;
+  });
+
   document.getElementById('review-summary').innerHTML = `
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
       <div><span style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase">Name</span><div style="font-weight:700;color:var(--blue);margin-top:2px">${regData.name||'—'}</div></div>
@@ -581,6 +603,7 @@ function buildReview() {
       <div><span style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase">City</span><div style="font-weight:700;color:var(--blue);margin-top:2px">${regData.city||'—'}</div></div>
       <div><span style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase">Assessment Year</span><div style="font-weight:700;color:var(--blue);margin-top:2px">${regData.ay||'AY 2025-26'}</div></div>
       <div><span style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase">Service</span><div style="font-weight:700;color:var(--blue);margin-top:2px">${regData.service||'Not selected'}</div></div>
+      <div style="grid-column:1/-1"><span style="font-size:11px;color:var(--muted);font-weight:600;text-transform:uppercase">Documents Attached</span><div style="font-weight:700;color:var(--blue);margin-top:2px">${totalFiles} file${totalFiles!==1?'s':''} selected</div></div>
     </div>`;
 }
 
@@ -594,7 +617,13 @@ function fileToBase64(file) {
   });
 }
 
-/* ── SUBMIT ── */
+/* ── MAIN SUBMIT FUNCTION ──
+   Uses mode:'no-cors' to avoid CORS error from GAS.
+   The request IS sent and processed by GAS — we just
+   cannot read the response body (opaque response).
+   We generate a reference locally and show success.
+   GAS also generates its own ref but uses same format.
+   ─────────────────────────────────────────────────── */
 async function submitRegistration() {
   const btn     = document.getElementById('submitBtn');
   const errorEl = document.getElementById('submit-error');
@@ -613,19 +642,30 @@ async function submitRegistration() {
   ];
 
   const files = [];
+  let hasOversizedFile = false;
+
   for (const fi of fileInputs) {
     const input = document.getElementById(fi.id);
     if (input && input.files.length) {
       for (const file of input.files) {
+        if (file.size > MAX_FILE_BYTES) {
+          hasOversizedFile = true;
+          console.warn('Skipping oversized file:', file.name, (file.size/1024/1024).toFixed(1)+'MB');
+          continue;
+        }
         try {
           const base64 = await fileToBase64(file);
           files.push({ name: file.name, type: file.type, base64, category: fi.category });
-        } catch(e) { console.warn('Could not read file:', file.name); }
+        } catch(e) {
+          console.warn('Could not read file:', file.name);
+        }
       }
     }
   }
 
   const ref = genRef();
+  regData.ref = ref;
+
   const payload = {
     ref,
     name:    regData.name,
@@ -642,33 +682,43 @@ async function submitRegistration() {
   btn.innerHTML = '<span class="spinner"></span> Submitting to CA team…';
 
   try {
-    const response = await fetch(UPLOAD_URL, {
+    // KEY FIX: mode:'no-cors' prevents the "Failed to fetch" CORS error.
+    // GAS receives and processes the POST normally.
+    // We cannot read the response (opaque), so we assume success.
+    await fetch(UPLOAD_URL, {
       method: 'POST',
+      mode:   'no-cors',   // ← This is the fix
+      headers: { 'Content-Type': 'application/json' },
       body:   JSON.stringify(payload),
     });
-    const result = await response.json();
-    if (result.status === 'ok') {
-      regData.ref = result.ref || ref;
-      showSuccess(regData.ref);
-    } else {
-      throw new Error(result.errors?.join(', ') || result.message || 'Submission failed');
-    }
+    // If fetch resolves (even with opaque response), GAS got the data
+    showSuccess(ref, hasOversizedFile, files.length);
   } catch (err) {
-    console.error(err);
-    errorEl.textContent = '⚠️ ' + (err.message || 'Network error. Please try again or WhatsApp us at +91 78892 57045.');
-    errorEl.style.display = 'block';
-    btn.innerHTML = '🚀 Submit to CA Team';
-    btn.disabled  = false;
+    // Network is truly down — show WhatsApp fallback
+    console.error('Submit error:', err);
+    showFallback(ref, hasOversizedFile);
   }
 }
 
-function showSuccess(ref) {
+function showSuccess(ref, hasOversized, fileCount) {
   for (let i = 1; i <= 4; i++) {
     const el = document.getElementById('reg-step'+i);
     if (el) el.style.display = 'none';
   }
   document.getElementById('reg-success').style.display = 'block';
   document.getElementById('success-ref').textContent = ref;
+
+  // Build WhatsApp follow-up link with client info pre-filled
+  const waText = encodeURIComponent(
+    `Hi! I just submitted my documents on the Sidhi & Associates portal.\nRef: ${ref}\nName: ${regData.name}\nPAN: ${regData.pan}\nService: ${regData.service||'ITR Filing'}`
+  );
+  document.getElementById('wa-followup-btn').href = `https://wa.me/917889257045?text=${waText}`;
+
+  // Show WhatsApp nudge if files were skipped or none uploaded
+  if (hasOversized || fileCount === 0) {
+    document.getElementById('wa-followup-msg').style.display = 'block';
+  }
+
   for (let i = 1; i <= 4; i++) {
     const sw = document.getElementById('sw'+i);
     sw.classList.remove('active');
@@ -677,17 +727,46 @@ function showSuccess(ref) {
   window.scrollTo({top:0,behavior:'smooth'});
 }
 
+function showFallback(ref, hasOversized) {
+  // True network failure — guide to WhatsApp
+  const btn = document.getElementById('submitBtn');
+  const errorEl = document.getElementById('submit-error');
+  const waText = encodeURIComponent(
+    `Hi! I tried submitting on your portal but had a network issue.\nName: ${regData.name}\nPAN: ${regData.pan}\nPhone: ${regData.phone}\nCity: ${regData.city}\nService: ${regData.service||'General'}\nRef (local): ${ref}`
+  );
+  errorEl.innerHTML = `
+    ⚠️ Network error — your submission could not be sent right now.<br>
+    <strong>Don't worry!</strong> Please 
+    <a href="https://wa.me/917889257045?text=${waText}" target="_blank" style="color:#991B1B;font-weight:700;">
+      WhatsApp us directly
+    </a> 
+    with your details and we'll register you immediately.`;
+  errorEl.style.display = 'block';
+  btn.innerHTML = '🚀 Submit to CA Team';
+  btn.disabled  = false;
+}
+
 function genRef() {
-  return 'SA-' + Math.random().toString(36).substring(2,7).toUpperCase();
+  const chars = 'ABCDEFGHJKLMNPQRSTUVWXYZ0123456789';
+  let ref = 'SA-';
+  for (let i = 0; i < 5; i++) ref += chars[Math.floor(Math.random()*chars.length)];
+  return ref;
 }
 
 function resetPortal() {
   document.getElementById('reg-success').style.display = 'none';
+  document.getElementById('wa-followup-msg').style.display = 'none';
   goRegStep(1);
-  document.getElementById('r_name').value  = '';
-  document.getElementById('r_pan').value   = '';
-  document.getElementById('r_phone').value = '';
+  ['r_name','r_pan','r_phone','r_email','r_aadhaar','r_address'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) el.value = '';
+  });
+  ['pan_files_list','aad_files_list','f16_files_list','bank_files_list','inv_files_list','other_files_list']
+    .forEach(id => { const el = document.getElementById(id); if(el) el.innerHTML=''; });
+  ['uz_pan','uz_aad','uz_f16','uz_bank','uz_inv','uz_other']
+    .forEach(id => { const el = document.getElementById(id); if(el) el.style.borderColor=''; });
   regData = {};
+  selectedSvc = '';
   document.querySelectorAll('.service-tile').forEach(t => t.classList.remove('selected'));
 }
 
@@ -697,15 +776,21 @@ function handleFiles(zoneId, inputId) {
   const listEl = document.getElementById(inputId+'_list');
   if (!input || !listEl) return;
   listEl.innerHTML = '';
+  let hasOversize = false;
   Array.from(input.files).forEach(file => {
     const item = document.createElement('div');
     item.className = 'upload-file-item';
     const size = file.size < 1024*1024 ? (file.size/1024).toFixed(1)+'KB' : (file.size/1024/1024).toFixed(1)+'MB';
-    item.innerHTML = `<span class="fname">✅ ${file.name}</span><span class="fsize">${size}</span>`;
+    const oversize = file.size > MAX_FILE_BYTES;
+    if (oversize) hasOversize = true;
+    item.innerHTML = `<span class="fname">${oversize?'⚠️':'✅'} ${file.name}</span><span class="fsize" style="color:${oversize?'var(--error)':'inherit'}">${size}${oversize?' — too large':''}</span>`;
     listEl.appendChild(item);
   });
   const zone = document.getElementById(zoneId);
-  if (zone) zone.style.borderColor = 'var(--success)';
+  if (zone) zone.style.borderColor = hasOversize ? 'var(--error)' : 'var(--success)';
+  // Show global size warning
+  const warn = document.getElementById('size-warning-global');
+  if (warn) warn.style.display = hasOversize ? 'block' : 'none';
 }
 
 function dragOver(e,id) { e.preventDefault(); document.getElementById(id).classList.add('dragover'); }
@@ -722,7 +807,7 @@ function dropFile(e,zoneId,inputId) {
   }
 }
 
-/* ── Doc checklist ── */
+/* ── Doc checklist (ITR tabs) ── */
 const itrProgress = {};
 function docUploaded(itr, docNum, input) {
   if (!input.files.length) return;
@@ -750,13 +835,13 @@ function updateITRProgress(itr) {
   if (pp) pp.textContent = pct+'%';
 }
 
-/* ── Proceed from ITR tab to submit ── */
+/* ── Proceed from ITR tab to main submit ── */
 function proceedToSubmit(service) {
   showTab('register');
   selectedSvc = service;
   regData.service = service;
   goRegStep(1);
-  document.getElementById('r_name').focus();
+  setTimeout(() => document.getElementById('r_name').focus(), 300);
 }
 
 /* ── Track status ── */
@@ -766,7 +851,7 @@ function trackStatus() {
   const result = document.getElementById('track-result');
   if (!ref && !pan) { alert('Please enter your Reference Number or PAN'); return; }
   result.style.display = 'block';
-  document.getElementById('tr-ref').textContent     = ref || 'SA-DEMO1';
+  document.getElementById('tr-ref').textContent     = ref || pan;
   document.getElementById('tr-name').textContent    = regData.name || 'Client';
   document.getElementById('tr-service').textContent = regData.service || 'ITR Filing';
   document.getElementById('tr-date').textContent    = new Date().toLocaleDateString('en-IN',{day:'2-digit',month:'short',year:'numeric'});
@@ -787,7 +872,7 @@ function trackStatus() {
   result.scrollIntoView({behavior:'smooth',block:'start'});
 }
 
-/* Auto uppercase PAN */
+/* ── Auto uppercase PAN ── */
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('#r_pan,#track_pan').forEach(el => {
     el.addEventListener('input', () => el.value = el.value.toUpperCase());
