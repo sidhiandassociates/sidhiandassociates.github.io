@@ -143,7 +143,7 @@
     "@type": "SpeakableSpecification",
     "cssSelector": [".speakable-hero", ".speakable-about", ".speakable-services-summary"]
   },
-  "dateModified": "2026-05-07",
+  "dateModified": "2026-05-14",
   "datePublished": "2024-01-01"
 }
 </script>
@@ -215,17 +215,9 @@
 </script>
 
 <style>
-/* ── GLOBAL RESET & OVERFLOW FIX ── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-/* STICKY HEADER FIX: overflow-x:hidden on body breaks position:sticky (browser bug).
-   Use overflow-x:clip on html instead — clips without creating a scroll container. */
-html {
-  overflow-x: clip;
-}
-body {
-  max-width: 100%;
-}
+html { overflow-x: clip; }
+body { max-width: 100%; }
 
 :root {
   --blue:      #0A2647;
@@ -281,13 +273,9 @@ header {
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
   position: sticky;
   top: 0;
-  z-index: 1001; /* FIX: high z-index so drawer layers correctly */
+  z-index: 1001;
 }
-
-/* FIX: position:relative on the container so the drawer is constrained to viewport width */
-header .container {
-  position: relative;
-}
+header .container { position: relative; }
 
 .header-content {
   display: flex; justify-content: space-between;
@@ -310,12 +298,11 @@ header .container {
 }
 .cta-btn:hover { background: var(--blue); transform: translateY(-2px); }
 
-/* ── Hamburger — hidden by default, shown via media query ── */
+/* ── Hamburger ── */
 .hamburger {
   display: none;
   background: none; border: none;
   cursor: pointer;
-  /* 44x44px minimum tap target for accessibility */
   width: 44px; height: 44px;
   padding: 0;
   border-radius: 8px;
@@ -323,7 +310,6 @@ header .container {
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  /* Pull it right to align with screen edge, compensating container padding */
   margin-right: -4px;
   -webkit-tap-highlight-color: transparent;
 }
@@ -337,7 +323,7 @@ header .container {
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
 
-/* ── Mobile Drawer — hidden by default ── */
+/* ── Mobile Drawer ── */
 .mobile-drawer {
   display: none;
   flex-direction: column;
@@ -366,7 +352,7 @@ header .container {
   gap: 8px;
   font-family: 'Segoe UI', sans-serif;
   box-sizing: border-box;
-  width: 100%; /* FIX: prevents long links from pushing width */
+  width: 100%;
 }
 .mobile-drawer a:hover { background: rgba(255,255,255,0.08); color: var(--gold); }
 .mobile-drawer .drawer-cta {
@@ -377,7 +363,7 @@ header .container {
   justify-content: center;
   font-size: 1.05em;
   border-bottom: none !important;
-  width: calc(100% - 40px); /* FIX: account for margin so it doesn't overflow */
+  width: calc(100% - 40px);
 }
 .mobile-drawer .drawer-cta:hover { background: var(--gold-dark) !important; }
 
@@ -721,15 +707,11 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
 }
 .industry-tag:hover { background: var(--gold); color: var(--white); }
 
-/* ══════════════════════════════════════════
-   MOBILE STYLES — all navbar fixes here
-   ══════════════════════════════════════════ */
+/* ── Mobile ── */
 @media (max-width: 860px) {
   .hamburger { display: flex; }
   nav.desktop-nav { display: none; }
-  /* Tighten container padding so hamburger sits right up to the edge */
   header .container { padding: 0 16px; }
-  /* Drawer must match the tighter 16px padding */
   .mobile-drawer { left: -16px; right: -16px; }
   .header-content { padding: 10px 0; }
 }
@@ -741,7 +723,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
   .logo-text h1 { font-size: 1.25em; }
   .logo-text p { display: none; }
   .cta-phone { display: none; }
-  /* Hide Get Started on tiny screens — hamburger needs full right edge */
   .cta-btn { display: none; }
   .header-actions { gap: 6px; }
   section { padding: 52px 16px; }
@@ -759,28 +740,27 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
   🎉 Free Consultation Available — <a href="tel:+917889257045">Call +91 78892 57045</a> | Mon–Sat 9AM–6PM
 </div>
 
-<!-- ── HEADER (contains the ONE hamburger + mobile drawer) ── -->
+<!-- ── HEADER ── -->
 <header>
   <div class="container">
     <div class="header-content">
       <a href="/" class="logo" aria-label="Sidhi & Associates Home">
         <img src="/sidhi.png" alt="Sidhi & Associates Logo" class="logo-img" width="50" height="50">
         <div class="logo-text">
-          <h1>Sidhi & Associates</h1>
+          <h1>Sidhi &amp; Associates</h1>
           <p>Chartered Accountants</p>
         </div>
       </a>
       <div class="header-actions">
         <a href="tel:+917889257045" class="cta-phone" aria-label="Call us">📞 +91 78892 57045</a>
         <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="cta-btn" target="_blank" rel="noopener">Get Started</a>
-        <!-- FIX: Only ONE hamburger, only in header, no inline style needed -->
         <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
 
-    <!-- FIX: Drawer lives inside header .container so position:absolute is constrained correctly -->
+    <!-- Mobile Drawer -->
     <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
       <a href="/services/">🛠️ Services</a>
       <a href="#locations">📍 Locations</a>
@@ -789,13 +769,15 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
       <a href="/blog/">📝 Blogs</a>
       <a href="/calculator/">🧮 Calculators</a>
       <a href="/about/">ℹ️ About</a>
+      <!-- ★ PORTAL LINK — Mobile drawer -->
+      <a href="/portal.html" style="color:var(--gold);font-weight:700;">📋 Client Portal</a>
       <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
       <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="drawer-cta" target="_blank" rel="noopener">💬 WhatsApp Us</a>
     </nav>
   </div>
 </header>
 
-<!-- ── DESKTOP NAV BAR (hidden on mobile via CSS) ── -->
+<!-- ── DESKTOP NAV BAR ── -->
 <nav class="desktop-nav" aria-label="Main navigation">
   <div class="container">
     <div class="nav-inner">
@@ -808,8 +790,9 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
         <a href="/calculator/" role="menuitem">Calculators</a>
         <a href="/about/" role="menuitem">About</a>
         <a href="tel:+917889257045" class="nav-cta-small" role="menuitem">📞 Call Now</a>
+        <!-- ★ PORTAL LINK — Desktop nav -->
+        <a href="/portal.html" class="nav-cta-small" role="menuitem" style="background:var(--gold-dark);">📋 Client Portal</a>
       </div>
-      <!-- FIX: NO hamburger in desktop nav — removed entirely -->
     </div>
   </div>
 </nav>
@@ -825,10 +808,12 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
       </div>
       <div class="speakable-hero">
         <h2 id="hero-heading">Your Trusted Partner in<br><em>Financial Excellence</em></h2>
-        <p class="hero-desc">Expert Chartered Accountants providing Tax Planning, GST Compliance, Company Incorporation, Audit Services & Business Advisory across India — with offices in 13+ cities and virtual services nationwide.</p>
+        <p class="hero-desc">Expert Chartered Accountants providing Tax Planning, GST Compliance, Company Incorporation, Audit Services &amp; Business Advisory across India — with offices in 13+ cities and virtual services nationwide.</p>
       </div>
+      <!-- ★ HERO BUTTONS — portal link added -->
       <div class="hero-buttons">
         <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
+        <a href="/portal.html" class="btn-primary" style="background:var(--gold-dark);">📋 Submit Documents Online</a>
         <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="btn-secondary" target="_blank" rel="noopener">💬 WhatsApp Us</a>
       </div>
       <div class="coverage-pills" aria-label="Service locations">
@@ -863,7 +848,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     <div class="container">
       <h2 class="section-title" id="about-heading">India's Trusted CA Firm</h2>
       <div class="speakable-about">
-        <p class="section-intro">Sidhi & Associates is an ICAI-registered Chartered Accountant firm with 13+ offices across India. We serve individuals, startups, MSMEs, and corporates with expert tax, GST, audit, and advisory services — fully online or in person.</p>
+        <p class="section-intro">Sidhi &amp; Associates is an ICAI-registered Chartered Accountant firm with 13+ offices across India. We serve individuals, startups, MSMEs, and corporates with expert tax, GST, audit, and advisory services — fully online or in person.</p>
       </div>
     </div>
   </section>
@@ -878,14 +863,14 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
       <div class="services-grid">
         <a href="/services/tax-planning-filing/" class="service-card">
           <span class="service-icon">📊</span>
-          <h3>Tax Planning & ITR Filing</h3>
+          <h3>Tax Planning &amp; ITR Filing</h3>
           <p>Expert ITR filing for salaried, business, NRI, and HNI clients. Strategic tax planning to legally minimise your liability.</p>
           <span class="price-tag">Starting at ₹2,500</span>
           <span class="service-link">Learn More →</span>
         </a>
         <a href="/services/gst-compliance/" class="service-card">
           <span class="service-icon">🧾</span>
-          <h3>GST Registration & Compliance</h3>
+          <h3>GST Registration &amp; Compliance</h3>
           <p>Complete GST registration, GSTR-1, GSTR-3B, GSTR-9 filing, e-invoicing, ITC reconciliation, and GST audit.</p>
           <span class="price-tag">Starting at ₹3,000 (Reg) / ₹5,000/month (Returns)</span>
           <span class="service-link">Learn More →</span>
@@ -899,15 +884,15 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
         </a>
         <a href="/services/audit-services/" class="service-card">
           <span class="service-icon">✅</span>
-          <h3>Audit & Assurance</h3>
+          <h3>Audit &amp; Assurance</h3>
           <p>Statutory audits, tax audits (Sec 44AB), internal audits, GST audit (GSTR-9C), and concurrent audits with detailed reports.</p>
           <span class="price-tag">Starting at ₹25,000</span>
           <span class="service-link">Learn More →</span>
         </a>
         <a href="/services/bookkeeping-and-accounting/" class="service-card">
           <span class="service-icon">💼</span>
-          <h3>Bookkeeping & Accounting</h3>
-          <p>Cloud bookkeeping via Tally, QuickBooks & Zoho. Payroll, PF/ESI, MIS reporting, and virtual CFO services.</p>
+          <h3>Bookkeeping &amp; Accounting</h3>
+          <p>Cloud bookkeeping via Tally, QuickBooks &amp; Zoho. Payroll, PF/ESI, MIS reporting, and virtual CFO services.</p>
           <span class="price-tag">Starting at ₹6,000/month</span>
           <span class="service-link">Learn More →</span>
         </a>
@@ -926,7 +911,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
           <a href="/services/tds-return-filing/" class="service-pill">📋 TDS Return Filing</a>
           <a href="/services/gst-return-filing/" class="service-pill">🧾 GST Return Filing</a>
           <a href="/services/gst-annual-returns/" class="service-pill">📅 GST Annual Returns</a>
-          <a href="/services/26QB-and-26QC-filing/" class="service-pill">🏠 26QB & 26QC Filing</a>
+          <a href="/services/26QB-and-26QC-filing/" class="service-pill">🏠 26QB &amp; 26QC Filing</a>
           <a href="/services/private-limited-company/" class="service-pill">🏢 Pvt Ltd Company</a>
           <a href="/services/llp-incorporation/" class="service-pill">🤝 LLP Registration</a>
           <a href="/services/one-person-company/" class="service-pill">👤 One Person Company</a>
@@ -934,9 +919,9 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
           <a href="/services/coop-society-services/" class="service-pill">🏛️ Co-operative Society</a>
           <a href="/services/digital-signature-certificates/" class="service-pill">🔐 Digital Signature (DSC)</a>
           <a href="/services/statutory-audit/" class="service-pill">✅ Statutory Audit</a>
-          <a href="/services/HUF-deed-and-PAN/" class="service-pill">👨‍👩‍👧 HUF Deed & PAN</a>
+          <a href="/services/HUF-deed-and-PAN/" class="service-pill">👨‍👩‍👧 HUF Deed &amp; PAN</a>
           <a href="/services/AOP-BOI-incorporations/" class="service-pill">🏗️ AOP/BOI Registration</a>
-          <a href="/services/dmat-account-opening-and-sip-investment-consultant/" class="service-pill">💹 Demat & SIP Advisory</a>
+          <a href="/services/dmat-account-opening-and-sip-investment-consultant/" class="service-pill">💹 Demat &amp; SIP Advisory</a>
         </div>
         <div class="view-all-wrap">
           <a href="/services/" class="btn-outline" style="margin-top:24px;">View All Services →</a>
@@ -950,24 +935,24 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     <h3>🏭 Industries We Serve</h3>
     <div class="industry-tags">
       <span class="industry-tag">🏭 Manufacturing</span>
-      <span class="industry-tag">⚗️ Chemicals & Pharma</span>
+      <span class="industry-tag">⚗️ Chemicals &amp; Pharma</span>
       <span class="industry-tag">🏗️ Real Estate</span>
-      <span class="industry-tag">🛒 Trading & Wholesale</span>
-      <span class="industry-tag">🚀 Startups & D2C</span>
+      <span class="industry-tag">🛒 Trading &amp; Wholesale</span>
+      <span class="industry-tag">🚀 Startups &amp; D2C</span>
       <span class="industry-tag">💊 Healthcare</span>
       <span class="industry-tag">🎓 Education</span>
-      <span class="industry-tag">🏦 BFSI & Finance</span>
-      <span class="industry-tag">🍽️ Hospitality & F&B</span>
-      <span class="industry-tag">🌾 Agri & Food Processing</span>
+      <span class="industry-tag">🏦 BFSI &amp; Finance</span>
+      <span class="industry-tag">🍽️ Hospitality &amp; F&amp;B</span>
+      <span class="industry-tag">🌾 Agri &amp; Food Processing</span>
       <span class="industry-tag">🔌 Engineering</span>
-      <span class="industry-tag">💻 IT & SaaS</span>
+      <span class="industry-tag">💻 IT &amp; SaaS</span>
     </div>
   </div>
 
   <!-- ── WHY US ── -->
   <section id="why-us" class="section-alt" aria-labelledby="why-heading">
     <div class="container">
-      <h2 class="section-title" id="why-heading">Why Choose Sidhi & Associates</h2>
+      <h2 class="section-title" id="why-heading">Why Choose Sidhi &amp; Associates</h2>
       <p class="section-intro">Experience excellence in every engagement — built on trust, speed, and expertise.</p>
       <div class="features-grid">
         <div class="feature-card">
@@ -1022,12 +1007,12 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
         </div>
         <div class="process-step">
           <div class="step-num">3</div>
-          <h3>CA Review & Preparation</h3>
+          <h3>CA Review &amp; Preparation</h3>
           <p>Our CA team prepares your filing and shares a draft for your approval before any submission.</p>
         </div>
         <div class="process-step">
           <div class="step-num">4</div>
-          <h3>Filed & Delivered</h3>
+          <h3>Filed &amp; Delivered</h3>
           <p>Your return, registration, or compliance is filed. You receive acknowledgement and documentation instantly.</p>
         </div>
       </div>
@@ -1102,7 +1087,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
         </a>
         <a href="/rajasthan/" class="location-card">
           <div class="loc-city">📍 Jaipur, Rajasthan</div>
-          <div class="loc-addr">Sidhi & Associates, Jaipur, Rajasthan 302003</div>
+          <div class="loc-addr">Sidhi &amp; Associates, Jaipur, Rajasthan 302003</div>
           <span class="loc-link">Contact Us →</span>
         </a>
       </div>
@@ -1142,10 +1127,10 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
       <div class="faq-list" role="list">
         <div class="faq-item" role="listitem">
           <div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
-            <span>What CA services does Sidhi & Associates offer?</span>
+            <span>What CA services does Sidhi &amp; Associates offer?</span>
             <span class="faq-icon">+</span>
           </div>
-          <div class="faq-a">ITR filing, GST registration & returns, company incorporation (Pvt Ltd, LLP, OPC), statutory & tax audit, TDS filing, bookkeeping, HUF formation, and business advisory — for individuals, startups, and corporates across India.</div>
+          <div class="faq-a">ITR filing, GST registration &amp; returns, company incorporation (Pvt Ltd, LLP, OPC), statutory &amp; tax audit, TDS filing, bookkeeping, HUF formation, and business advisory — for individuals, startups, and corporates across India.</div>
         </div>
         <div class="faq-item" role="listitem">
           <div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
@@ -1156,7 +1141,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
         </div>
         <div class="faq-item" role="listitem">
           <div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
-            <span>Can I use Sidhi & Associates services online from anywhere in India?</span>
+            <span>Can I use Sidhi &amp; Associates services online from anywhere in India?</span>
             <span class="faq-icon">+</span>
           </div>
           <div class="faq-a">Yes. We offer fully virtual CA services Pan-India. Share documents via WhatsApp or email and we handle everything remotely — ITR filing, GST registration, company incorporation, and more. Response guaranteed within 2 hours.</div>
@@ -1195,6 +1180,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     <p>Free consultation available — talk to our CA team today</p>
     <div class="cta-banner-btns">
       <a href="tel:+917889257045" class="btn-white">📞 Call +91 78892 57045</a>
+      <a href="/portal.html" class="btn-white">📋 Submit Documents Online</a>
       <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="btn-white-outline" target="_blank" rel="noopener">💬 WhatsApp Us</a>
     </div>
   </div>
@@ -1221,13 +1207,13 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
           <span class="contact-icon">💬</span>
           <h3>WhatsApp</h3>
           <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" target="_blank" rel="noopener">Chat with Us →</a>
-          <p>Quick & convenient support</p>
+          <p>Quick &amp; convenient support</p>
         </div>
         <div class="contact-card">
-          <span class="contact-icon">🌐</span>
-          <h3>Virtual Services</h3>
-          <a href="https://wa.me/917889257045" target="_blank" rel="noopener">Start Online →</a>
-          <p>Pan-India, no office visit needed</p>
+          <span class="contact-icon">📋</span>
+          <h3>Client Portal</h3>
+          <a href="/portal.html">Submit Documents →</a>
+          <p>Upload files securely online</p>
         </div>
       </div>
     </div>
@@ -1240,24 +1226,25 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
   <div class="container">
     <div class="footer-grid">
       <div class="footer-col">
-        <h3>Sidhi & Associates</h3>
+        <h3>Sidhi &amp; Associates</h3>
         <p>ICAI registered Chartered Accountants providing expert CA services across India since 2011. 13+ offices. 5,000+ clients.</p>
         <p style="margin-top:14px;">📞 <a href="tel:+917889257045" style="color:var(--gold);text-decoration:none;font-weight:600;">+91 78892 57045</a></p>
         <p>✉️ <a href="mailto:siddhiandassociatess@gmail.com" style="color:var(--gold);text-decoration:none;">siddhiandassociatess@gmail.com</a></p>
+        <p style="margin-top:10px;">📋 <a href="/portal.html" style="color:var(--gold);text-decoration:none;font-weight:600;">Client Portal →</a></p>
       </div>
       <div class="footer-col">
-        <h3>Tax & GST Services</h3>
+        <h3>Tax &amp; GST Services</h3>
         <ul>
           <li><a href="/services/tax-planning-filing/">Income Tax / ITR Filing</a></li>
           <li><a href="/services/tds-return-filing/">TDS Return Filing</a></li>
-          <li><a href="/services/26QB-and-26QC-filing/">26QB & 26QC Filing</a></li>
+          <li><a href="/services/26QB-and-26QC-filing/">26QB &amp; 26QC Filing</a></li>
           <li><a href="/services/gst-compliance/">GST Registration</a></li>
           <li><a href="/services/gst-return-filing/">GST Return Filing</a></li>
           <li><a href="/services/gst-annual-returns/">GST Annual Returns</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h3>Incorporation & Audit</h3>
+        <h3>Incorporation &amp; Audit</h3>
         <ul>
           <li><a href="/services/private-limited-company/">Private Limited Company</a></li>
           <li><a href="/services/llp-incorporation/">LLP Registration</a></li>
@@ -1266,7 +1253,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
           <li><a href="/services/statutory-audit/">Statutory Audit</a></li>
           <li><a href="/services/audit-services/">Tax Audit</a></li>
           <li><a href="/services/digital-signature-certificates/">Digital Signature (DSC)</a></li>
-          <li><a href="/services/HUF-deed-and-PAN/">HUF Deed & PAN</a></li>
+          <li><a href="/services/HUF-deed-and-PAN/">HUF Deed &amp; PAN</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -1291,9 +1278,10 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
         <h3>Quick Links</h3>
         <ul>
           <li><a href="/services/">All Services</a></li>
+          <li><a href="/portal.html">📋 Client Portal</a></li>
           <li><a href="/services/bookkeeping-and-accounting/">Bookkeeping</a></li>
           <li><a href="/services/business-advisory/">Business Advisory</a></li>
-          <li><a href="/services/dmat-account-opening-and-sip-investment-consultant/">Demat & SIP Advisory</a></li>
+          <li><a href="/services/dmat-account-opening-and-sip-investment-consultant/">Demat &amp; SIP Advisory</a></li>
           <li><a href="/why-us/">Why Choose Us</a></li>
           <li><a href="/faq/">FAQs</a></li>
           <li><a href="/blog/">Blog</a></li>
@@ -1303,7 +1291,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved. | ICAI Registered Chartered Accountants | Professional Excellence with Integrity</p>
+      <p>&copy; <span class="auto-year"></span> Sidhi &amp; Associates. All Rights Reserved. | ICAI Registered Chartered Accountants | Professional Excellence with Integrity</p>
       <p style="margin-top:6px;">CA Services across Panchkula · Zirakpur · Bangalore · Vadodara · Pune · Hyderabad · Delhi · Gurugram · Lucknow · Bareilly · Ghaziabad · Haridwar · Jaipur · Pan-India</p>
     </div>
   </div>
@@ -1323,8 +1311,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
   /* Auto copyright year */
   document.querySelectorAll('.auto-year').forEach(el => el.textContent = new Date().getFullYear());
 
-  /* ── Mobile hamburger / drawer ──
-     FIX: Single getElementById, no duplicate IDs */
+  /* Mobile hamburger / drawer */
   const hamburger = document.getElementById('hamburger');
   const mobileDrawer = document.getElementById('mobileDrawer');
 
@@ -1336,7 +1323,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
       hamburger.setAttribute('aria-expanded', String(isOpen));
     });
 
-    /* Close drawer when any link inside it is tapped */
     mobileDrawer.querySelectorAll('a').forEach(function(a) {
       a.addEventListener('click', function() {
         mobileDrawer.classList.remove('open');
@@ -1345,7 +1331,6 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
       });
     });
 
-    /* Close on outside tap */
     document.addEventListener('click', function(e) {
       if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
         mobileDrawer.classList.remove('open');
@@ -1368,7 +1353,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     }
   }
 
-  /* Smooth scroll for anchor links */
+  /* Smooth scroll */
   document.querySelectorAll('a[href^="#"]').forEach(function(a) {
     a.addEventListener('click', function(e) {
       var t = document.querySelector(this.getAttribute('href'));
@@ -1393,7 +1378,7 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
     observer.observe(el);
   });
 
-  /* Active nav highlight on scroll */
+  /* Active nav highlight */
   window.addEventListener('scroll', function() {
     var current = '';
     document.querySelectorAll('section[id]').forEach(function(s) {
@@ -1417,6 +1402,11 @@ footer { background: var(--blue); color: var(--white); padding: 52px 20px 26px; 
   document.querySelectorAll('a[href*="wa.me"]').forEach(function(a) {
     a.addEventListener('click', function() {
       if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-18022959954', event_category: 'WhatsApp', event_label: 'Homepage' });
+    });
+  });
+  document.querySelectorAll('a[href="/portal.html"]').forEach(function(a) {
+    a.addEventListener('click', function() {
+      if (typeof gtag !== 'undefined') gtag('event', 'conversion', { send_to: 'AW-18022959954', event_category: 'Portal', event_label: 'Homepage' });
     });
   });
 </script>
