@@ -1,256 +1,280 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="/main-sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://sidhiandassociates.com/</loc>
-        <lastmod>2026-07-11</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/</loc>
-        <lastmod>2026-07-11</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/tax-planning-filing/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/gst-compliance/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/gst-return-filing/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/gst-annual-returns/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/tds-return-filing/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/26QB-and-26QC-filing/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/company-incorporation/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/private-limited-company/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/llp-incorporation/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/one-person-company/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/partnership-registration/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/coop-society-services/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/AOP-BOI-incorporations/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/digital-signature-certificates/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/audit-services/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/statutory-audit/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/HUF-deed-and-PAN/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/bookkeeping-and-accounting/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/business-advisory/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/dmat-account-opening-and-sip-investment-consultant/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/services/company-llp-closure/</loc>
-        <lastmod>2026-07-11</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/why-us/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/faq/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/blog/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/calculator/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/about/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/portal.html</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.4</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/panchkula/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/zirakpur/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/bangalore/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/vadodara/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/delhi/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/gurugram/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/pune/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/hyderabad/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/lucknow/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/bareilly/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/ghaziabad/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/haridwar/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://sidhiandassociates.com/rajasthan/</loc>
-        <lastmod>2026-05-27</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
+<url>
+<loc>https://sidhiandassociates.com/</loc>
+<lastmod>2026-07-11T13:42:15+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/about/</loc>
+<lastmod>2026-04-22T09:55:05+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/bangalore/</loc>
+<lastmod>2026-04-22T09:58:00+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/bareilly/</loc>
+<lastmod>2026-05-22T14:29:52+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/blog/</loc>
+<lastmod>2026-03-18T21:46:27+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/</loc>
+<lastmod>2026-03-18T21:51:42+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/delhi/</loc>
+<lastmod>2026-04-30T13:55:43+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/faq/</loc>
+<lastmod>2026-03-18T21:52:03+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/ghaziabad/</loc>
+<lastmod>2026-03-18T21:52:33+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/gurugram/</loc>
+<lastmod>2026-04-30T14:01:41+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/haridwar/</loc>
+<lastmod>2026-04-30T14:03:41+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/hyderabad/</loc>
+<lastmod>2026-04-07T17:16:38+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/lucknow/</loc>
+<lastmod>2026-03-18T21:52:48+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/panchkula/</loc>
+<lastmod>2026-03-18T21:53:22+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/pune/</loc>
+<lastmod>2026-04-30T14:05:19+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/rajasthan/</loc>
+<lastmod>2026-04-30T14:18:58+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/</loc>
+<lastmod>2026-07-11T13:09:22+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/vadodara/</loc>
+<lastmod>2026-05-07T08:16:12+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/why-us/</loc>
+<lastmod>2026-03-18T21:54:03+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/zirakpur/</loc>
+<lastmod>2026-03-18T21:54:21+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/blog/hotel-industry-gst-guide/</loc>
+<lastmod>2026-03-18T21:45:47+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/blog/how-to-open-HUF-demat-account/</loc>
+<lastmod>2026-03-18T21:46:10+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/HRA/</loc>
+<lastmod>2026-03-18T21:46:58+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/advance-tax-calculator/</loc>
+<lastmod>2026-03-18T21:47:15+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/capital-gains-calculator/</loc>
+<lastmod>2026-03-18T21:47:34+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/emi-calculator/</loc>
+<lastmod>2026-03-18T21:47:51+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/fd-calculator/</loc>
+<lastmod>2026-03-18T21:48:09+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/fire-calculator/</loc>
+<lastmod>2026-03-18T21:48:29+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/goal-planning/</loc>
+<lastmod>2026-03-18T21:48:48+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/home-loan-eligibility-calculator/</loc>
+<lastmod>2026-03-18T21:49:07+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/income-tax-calculator/</loc>
+<lastmod>2026-03-18T21:49:24+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/loan-comparison/</loc>
+<lastmod>2026-03-18T21:49:39+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/ppf-calculator/</loc>
+<lastmod>2026-03-18T21:49:55+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/retirement-planning-calculator/</loc>
+<lastmod>2026-03-18T21:50:13+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/sip-calculator/</loc>
+<lastmod>2026-03-18T21:50:29+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/calculator/tds-calculator/</loc>
+<lastmod>2026-03-18T21:51:17+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/rajasthan/jodhpur/</loc>
+<lastmod>2026-04-30T14:28:11+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/rajasthan/kota/</loc>
+<lastmod>2026-04-30T14:29:06+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/rajasthan/udaipur/</loc>
+<lastmod>2026-04-30T14:26:49+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/26QB-and-26QC-filing/</loc>
+<lastmod>2026-03-18T21:54:49+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/AOP-BOI-incorporations/</loc>
+<lastmod>2026-03-18T21:55:16+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/HUF-deed-and-PAN/</loc>
+<lastmod>2026-03-18T21:55:36+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/audit-services/</loc>
+<lastmod>2026-03-18T21:55:55+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/bookkeeping-and-accounting/</loc>
+<lastmod>2026-03-18T21:56:15+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/business-advisory/</loc>
+<lastmod>2026-03-18T21:56:41+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/business-tax-services/</loc>
+<lastmod>2026-03-18T21:57:08+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/capital-gains-tax/</loc>
+<lastmod>2026-03-18T21:57:28+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/company-incorporation/</loc>
+<lastmod>2026-03-18T21:57:49+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/company-llp-closure/</loc>
+<lastmod>2026-07-11T13:06:36+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/coop-society-services/</loc>
+<lastmod>2026-03-18T21:58:15+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/digital-signature-certificates/</loc>
+<lastmod>2026-03-18T21:58:41+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/dmat-account-opening-and-sip-investment-consultant/</loc>
+<lastmod>2026-03-18T21:59:05+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/gst-annual-returns/</loc>
+<lastmod>2026-03-18T21:59:28+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/gst-compliance/</loc>
+<lastmod>2026-03-18T21:59:49+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/gst-refund/</loc>
+<lastmod>2026-03-18T22:00:08+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/gst-registration/</loc>
+<lastmod>2026-03-18T22:00:27+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/gst-return-filing/</loc>
+<lastmod>2026-03-18T22:00:46+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/income-tax-return-ITR/</loc>
+<lastmod>2026-03-18T22:01:07+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/internal-audit/</loc>
+<lastmod>2026-03-18T22:01:31+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/llp-agreement-stamp-duty/</loc>
+<lastmod>2026-03-18T22:02:02+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/llp-incorporation/</loc>
+<lastmod>2026-03-18T22:02:32+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/one-person-company/</loc>
+<lastmod>2026-03-18T22:02:53+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/partnership-registration/</loc>
+<lastmod>2026-03-18T22:03:21+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/private-limited-company/</loc>
+<lastmod>2026-03-18T22:03:39+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/revised-return-filing/</loc>
+<lastmod>2026-03-18T22:03:57+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/statutory-audit/</loc>
+<lastmod>2026-03-18T22:04:21+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/tax-audit-section-44AB/</loc>
+<lastmod>2026-03-18T22:04:40+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/tax-planning-filing/</loc>
+<lastmod>2026-03-18T22:04:57+05:30</lastmod>
+</url>
+<url>
+<loc>https://sidhiandassociates.com/services/tds-return-filing/</loc>
+<lastmod>2026-03-18T22:05:14+05:30</lastmod>
+</url>
 </urlset>
