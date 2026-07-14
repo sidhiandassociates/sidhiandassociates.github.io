@@ -657,11 +657,36 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .container { padding: 0 14px; }
+
             .header-content {
-                flex-direction: column;
-                gap: 15px;
-                text-align: center;
+                padding: 10px 0;
+                flex-wrap: nowrap;
+                gap: 8px;
             }
+
+            .logo { gap: 8px; min-width: 0; }
+
+            .logo-img { width: 36px; height: 36px; flex-shrink: 0; }
+
+            .logo-text { min-width: 0; }
+
+            .logo-text h1 {
+                font-size: 0.95em;
+                line-height: 1.2;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .logo-text p { display: none; }
+
+            .header-cta { gap: 8px; flex-shrink: 0; }
+
+            .cta-phone { font-size: 1.2em; display: inline-block; }
+            .cta-phone .phone-text { display: none; }
+
+            .cta-btn { padding: 8px 14px; font-size: 0.75em; white-space: nowrap; border-radius: 20px; }
 
             .hero h2 {
                 font-size: 2em;
@@ -675,18 +700,37 @@
                 grid-template-columns: 1fr;
             }
 
-            .nav-links {
-                justify-content: center;
-                gap: 15px;
-            }
+            nav { padding: 8px 0; }
 
             nav .container {
-                justify-content: center;
+                flex-wrap: nowrap;
+                justify-content: flex-start;
+                gap: 14px;
             }
 
-            .cta-phone {
-                display: none;
+            .nav-links {
+                flex-wrap: nowrap;
+                gap: 16px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
+                padding-bottom: 2px;
             }
+
+            .nav-links::-webkit-scrollbar { display: none; }
+
+            nav a { font-size: 0.82em; white-space: nowrap; }
+
+            nav .container > a {
+                flex-shrink: 0;
+                white-space: nowrap;
+                font-size: 0.82em;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .logo-text h1 { font-size: 0.85em; }
+            .cta-btn { padding: 7px 10px; font-size: 0.7em; }
         }
 
         @media (max-width: 480px) {
@@ -723,7 +767,7 @@
                     </div>
                 </a>
                 <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                    <a href="tel:+917889257045" class="cta-phone">📞 <span class="phone-text">+91 78892 57045</span></a>
                     <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services%20in%20Hyderabad" class="cta-btn">Free Consultation</a>
                 </div>
             </div>
