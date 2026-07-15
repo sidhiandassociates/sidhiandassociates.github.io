@@ -416,13 +416,35 @@
         nav {
             background: var(--primary-blue);
             padding: 12px 0;
+            position: relative;
         }
 
         nav .container {
             display: flex;
             justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
             gap: 30px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .nav-right { display: none; }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.6em;
+            line-height: 1;
+            cursor: pointer;
+            padding: 0;
         }
 
         nav a {
@@ -937,6 +959,8 @@
         }
 
         @media (max-width: 768px) {
+            .container { padding: 0 16px; }
+
             .hero h2 {
                 font-size: 2em;
             }
@@ -945,9 +969,50 @@
                 font-size: 2em;
             }
 
-            .header-cta {
-                display: none;
+            /* Header: single compact row */
+            .header-content { padding: 10px 0; gap: 10px; flex-wrap: nowrap; }
+            .logo { gap: 8px; min-width: 0; }
+            .logo-img { width: 38px; height: 38px; flex-shrink: 0; }
+            .logo-text h1 {
+                font-size: 1em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
+            .logo-text p { display: none; }
+
+            .header-cta { display: flex; gap: 8px; flex-shrink: 0; }
+            .cta-phone { display: none; }
+            .cta-btn {
+                padding: 8px 14px;
+                font-size: 0.78em;
+                border-radius: 18px;
+                white-space: nowrap;
+            }
+
+            /* Nav: collapsible hamburger menu */
+            nav { padding: 10px 0; }
+            nav .container { flex-wrap: nowrap; gap: 12px; justify-content: flex-end; }
+            .nav-right { display: flex; align-items: center; margin-left: auto; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                gap: 0;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--primary-blue);
+                box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+                z-index: 999;
+            }
+            .nav-links.nav-open { display: flex; }
+            .nav-links a {
+                padding: 14px 20px;
+                border-top: 1px solid rgba(255,255,255,0.1);
+                font-size: 0.95em;
+            }
+            .menu-toggle { display: block; }
 
             .services-grid {
                 grid-template-columns: 1fr;
@@ -956,6 +1021,10 @@
             .locations-grid {
                 grid-template-columns: repeat(2, 1fr);
             }
+        }
+
+        @media (max-width: 380px) {
+            .logo-text h1 { font-size: 0.9em; max-width: 140px; }
         }
     </style>
 </head>
@@ -982,16 +1051,40 @@
     <!-- Navigation -->
     <nav>
         <div class="container">
-            <a href="https://sidhiandassociates.com/">Home</a>
-            <a href="#tax">Tax Services</a>
-            <a href="#gst">GST Services</a>
-            <a href="#incorporation">Incorporation</a>
-            <a href="#closure">Company &amp; LLP Closure</a>
-            <a href="#certificates">Certificates &amp; PAN</a>
-            <a href="#audit">Audit</a>
-            <a href="#advisory">Advisory</a>
+            <div class="nav-links" id="navLinks">
+                <a href="https://sidhiandassociates.com/">Home</a>
+                <a href="#tax">Tax Services</a>
+                <a href="#gst">GST Services</a>
+                <a href="#incorporation">Incorporation</a>
+                <a href="#closure">Company &amp; LLP Closure</a>
+                <a href="#certificates">Certificates &amp; PAN</a>
+                <a href="#audit">Audit</a>
+                <a href="#advisory">Advisory</a>
+            </div>
+            <div class="nav-right">
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+            </div>
         </div>
     </nav>
+    <script>
+        (function () {
+            var toggle = document.getElementById('menuToggle');
+            var links = document.getElementById('navLinks');
+            if (!toggle || !links) return;
+            toggle.addEventListener('click', function () {
+                var open = links.classList.toggle('nav-open');
+                toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+                toggle.textContent = open ? '✕' : '☰';
+            });
+            links.querySelectorAll('a').forEach(function (a) {
+                a.addEventListener('click', function () {
+                    links.classList.remove('nav-open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                    toggle.textContent = '☰';
+                });
+            });
+        })();
+    </script>
 
     <!-- Breadcrumb -->
     <div class="breadcrumb">
