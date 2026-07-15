@@ -366,6 +366,7 @@
         nav {
             background: var(--primary-blue);
             padding: 12px 0;
+            position: relative;
         }
 
         nav .container {
@@ -392,6 +393,19 @@
             display: flex;
             gap: 30px;
             flex-wrap: wrap;
+        }
+
+        .nav-right { display: flex; align-items: center; gap: 18px; }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.6em;
+            line-height: 1;
+            cursor: pointer;
+            padding: 0;
         }
 
         .breadcrumb {
@@ -979,6 +993,8 @@
         }
 
         @media (max-width: 768px) {
+            .container { padding: 0 16px; }
+
             .hero h2 {
                 font-size: 2.2em;
             }
@@ -987,17 +1003,51 @@
                 font-size: 2em;
             }
 
-            .header-cta {
-                display: none;
-            }
-
+            /* Header: compact single row */
+            .header-content { padding: 10px 0; gap: 10px; flex-wrap: nowrap; }
+            .logo { gap: 8px; min-width: 0; }
+            .logo-img { width: 38px; height: 38px; flex-shrink: 0; }
             .logo-text h1 {
-                font-size: 1.4em;
+                font-size: 1em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .logo-text p { display: none; }
+
+            .header-cta { display: flex; gap: 8px; flex-shrink: 0; }
+            .header-cta .cta-phone { display: none; }
+            .cta-btn {
+                padding: 8px 14px;
+                font-size: 0.78em;
+                border-radius: 18px;
+                white-space: nowrap;
             }
 
+            /* Nav: hamburger-driven dropdown */
+            nav { padding: 10px 0; }
+            nav .container { flex-wrap: nowrap; justify-content: flex-end; gap: 12px; }
+            .nav-right { margin-left: auto; }
             .nav-links {
-                gap: 15px;
+                display: none;
+                flex-direction: column;
+                gap: 0;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--primary-blue);
+                box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+                z-index: 999;
             }
+            .nav-links.nav-open { display: flex; }
+            .nav-links a {
+                padding: 14px 20px;
+                border-top: 1px solid rgba(255,255,255,0.1);
+                font-size: 0.95em;
+            }
+            .nav-right a { font-size: 0.85em; white-space: nowrap; }
+            .menu-toggle { display: block; }
 
             .hero-stats {
                 gap: 30px;
@@ -1014,6 +1064,10 @@
             .comparison-grid {
                 min-width: auto;
             }
+        }
+
+        @media (max-width: 380px) {
+            .logo-text h1 { font-size: 0.9em; max-width: 140px; }
         }
     </style>
 </head>
@@ -1038,15 +1092,37 @@
 
     <nav>
         <div class="container">
-            <a href="https://sidhiandassociates.com/">← Back to Home</a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
                 <a href="#features">Our Strengths</a>
                 <a href="#comparison">Why Us vs Others</a>
                 <a href="#values">Our Values</a>
                 <a href="#testimonials">Client Reviews</a>
             </div>
+            <div class="nav-right">
+                <a href="https://sidhiandassociates.com/">← Back to Home</a>
+                <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+            </div>
         </div>
     </nav>
+    <script>
+        (function () {
+            var toggle = document.getElementById('menuToggle');
+            var links = document.getElementById('navLinks');
+            if (!toggle || !links) return;
+            toggle.addEventListener('click', function () {
+                var open = links.classList.toggle('nav-open');
+                toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+                toggle.textContent = open ? '✕' : '☰';
+            });
+            links.querySelectorAll('a').forEach(function (a) {
+                a.addEventListener('click', function () {
+                    links.classList.remove('nav-open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                    toggle.textContent = '☰';
+                });
+            });
+        })();
+    </script>
 
     <div class="breadcrumb">
         <div class="container">
