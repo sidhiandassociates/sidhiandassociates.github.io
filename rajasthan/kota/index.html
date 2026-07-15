@@ -118,7 +118,36 @@ footer{background:var(--primary-blue);color:var(--white);padding:60px 20px 30px}
 .float-btn:hover{transform:scale(1.1)}
 .whatsapp-btn{background:#25D366}.call-btn{background:var(--primary-gold)}
 .float-btn svg{width:27px;height:27px;fill:white}
-@media(max-width:768px){.header-content{flex-direction:column;gap:12px;text-align:center}.hero h2{font-size:1.9em}h2{font-size:1.7em}.location-info{grid-template-columns:1fr}.nav-links{justify-content:center;gap:13px}nav .container{justify-content:center}.cta-phone{display:none}}
+.menu-toggle{display:none;background:none;border:none;color:var(--white);font-size:1.6em;cursor:pointer;padding:4px 8px;line-height:1}
+.nav-whatsapp{color:var(--primary-gold);font-weight:700;text-decoration:none;white-space:nowrap}
+@media(max-width:768px){
+.container{padding:0 15px}
+.header-content{flex-wrap:nowrap;justify-content:space-between;text-align:left;gap:8px;padding:10px 0}
+.logo{gap:8px}
+.logo-img{width:40px;height:40px}
+.logo-text h1{font-size:1em;line-height:1.25}
+.logo-text p{font-size:0.65em}
+.header-cta{gap:8px}
+.cta-phone{display:none}
+.cta-btn{padding:8px 14px;font-size:0.78em;white-space:nowrap;border-radius:20px}
+nav .container{justify-content:space-between;position:relative;gap:8px}
+.menu-toggle{display:block}
+.nav-links{display:none;flex-direction:column;gap:0;position:absolute;top:100%;left:0;right:0;background:var(--primary-blue);box-shadow:0 10px 18px rgba(0,0,0,0.25);z-index:1001;padding:6px 0}
+.nav-links.active{display:flex}
+.nav-links a{padding:13px 20px;width:100%;font-size:0.95em;border-bottom:1px solid rgba(255,255,255,0.08)}
+.city-bar-label{padding:12px 15px;font-size:0.82em}
+.city-tab{padding:12px 16px;font-size:0.85em}
+.virtual-notice{font-size:0.78em;padding:10px 15px;line-height:1.55}
+.hero{padding:55px 15px 45px}
+.hero h2{font-size:1.7em}
+.hero p{font-size:1em}
+h2{font-size:1.6em}
+.location-info{grid-template-columns:1fr}
+}
+@media(max-width:400px){
+.logo-text p{display:none}
+.cta-btn{padding:8px 10px;font-size:0.72em}
+}
 </style>
 </head>
 <body>
@@ -140,14 +169,15 @@ footer{background:var(--primary-blue);color:var(--white);padding:60px 20px 30px}
 
 <nav>
   <div class="container">
-    <div class="nav-links">
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+    <div class="nav-links" id="navLinks">
       <a href="/rajasthan/">🏰 Rajasthan Hub</a>
       <a href="#services">Services</a>
       <a href="#why-us">Why Us</a>
       <a href="#areas">Areas</a>
       <a href="#contact">Contact</a>
     </div>
-    <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services%20in%20Kota" style="color:var(--primary-gold);font-weight:700">💬 WhatsApp</a>
+    <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services%20in%20Kota" class="nav-whatsapp">💬 WhatsApp</a>
   </div>
 </nav>
 
@@ -379,6 +409,28 @@ footer{background:var(--primary-blue);color:var(--white);padding:60px 20px 30px}
   <a href="tel:+917889257045" class="float-btn call-btn" aria-label="Call"><svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg></a>
 </div>
 <script>
+const menuToggle=document.getElementById('menuToggle');
+const navLinks=document.getElementById('navLinks');
+if(menuToggle&&navLinks){
+  menuToggle.addEventListener('click',function(e){
+    e.stopPropagation();
+    const isOpen=navLinks.classList.toggle('active');
+    menuToggle.setAttribute('aria-expanded',isOpen?'true':'false');
+    menuToggle.textContent=isOpen?'✕':'☰';
+  });
+  navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    navLinks.classList.remove('active');
+    menuToggle.setAttribute('aria-expanded','false');
+    menuToggle.textContent='☰';
+  }));
+  document.addEventListener('click',function(e){
+    if(navLinks.classList.contains('active')&&!navLinks.contains(e.target)&&e.target!==menuToggle){
+      navLinks.classList.remove('active');
+      menuToggle.setAttribute('aria-expanded','false');
+      menuToggle.textContent='☰';
+    }
+  });
+}
 document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();const t=document.querySelector(this.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
 const obs=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)'}})},{threshold:0.1,rootMargin:'0px 0px -50px 0px'});
 document.querySelectorAll('.service-card,.feature-card,.testimonial-card,.area-item').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(25px)';el.style.transition='opacity 0.55s ease,transform 0.55s ease';obs.observe(el)});
