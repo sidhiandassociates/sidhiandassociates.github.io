@@ -269,13 +269,35 @@
         nav {
             background: var(--primary-blue);
             padding: 12px 0;
+            position: relative;
         }
 
         nav .container {
             display: flex;
             justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
             gap: 30px;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .nav-right { display: none; }
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.6em;
+            line-height: 1;
+            cursor: pointer;
+            padding: 0;
         }
 
         nav a {
@@ -696,18 +718,60 @@
         }
 
         @media (max-width: 768px) {
+            .container { padding: 0 16px; }
+
             .article-header h1 {
                 font-size: 2em;
             }
             .content-section h2 {
                 font-size: 1.6em;
             }
-            .header-cta {
-                display: none;
-            }
+
+            /* Header: compact single row */
+            .header-content { padding: 10px 0; gap: 10px; flex-wrap: nowrap; }
+            .logo { gap: 8px; min-width: 0; }
+            .logo-img { width: 38px; height: 38px; flex-shrink: 0; }
             .logo-text h1 {
-                font-size: 1.4em;
+                font-size: 1em;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
+            .logo-text p { display: none; }
+
+            .header-cta { display: flex; gap: 8px; flex-shrink: 0; }
+            .header-cta .cta-phone { display: none; }
+            .cta-btn {
+                padding: 8px 14px;
+                font-size: 0.78em;
+                border-radius: 18px;
+                white-space: nowrap;
+            }
+
+            /* Nav: hamburger-driven dropdown */
+            nav { padding: 10px 0; }
+            nav .container { flex-wrap: nowrap; justify-content: flex-end; gap: 12px; }
+            .nav-right { display: flex; align-items: center; margin-left: auto; }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                gap: 0;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--primary-blue);
+                box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+                z-index: 999;
+            }
+            .nav-links.nav-open { display: flex; }
+            .nav-links a {
+                padding: 14px 20px;
+                border-top: 1px solid rgba(255,255,255,0.1);
+                font-size: 0.95em;
+            }
+            .menu-toggle { display: block; }
+
             .rate-table {
                 font-size: 0.9em;
             }
@@ -718,6 +782,10 @@
             .card-grid, .two-column-list {
                 grid-template-columns: 1fr;
             }
+        }
+
+        @media (max-width: 380px) {
+            .logo-text h1 { font-size: 0.9em; max-width: 140px; }
         }
     </style>
 </head>
