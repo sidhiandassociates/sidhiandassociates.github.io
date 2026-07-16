@@ -47,6 +47,32 @@
     <!-- Additional SEO Tags -->
     <meta name="theme-color" content="#dc2626">
     <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Free Advance Tax Calculator by Sidhi & Associates. Computes quarterly advance tax installments (15% by 15 June, 45% cumulative by 15 September, 75% cumulative by 15 December, 100% by 15 March) based on estimated income, deductions, TDS already deducted, and tax regime. Also explains interest under Section 234B and 234C. Provided by an Accountants firm offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="WebApplication,FAQPage">
+
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/calculator/advance-tax-calculator/#webpage",
+      "url": "https://sidhiandassociates.com/calculator/advance-tax-calculator/",
+      "name": "Advance Tax Calculator - Calculate Advance Tax Payment India",
+      "description": "Free Advance Tax Calculator to compute quarterly advance tax installments, due dates, and interest under Section 234B & 234C.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-16",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer", "#featured-snippet"]
+      }
+    }
+    </script>
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -143,12 +169,51 @@
         }
         body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--text-dark); background: var(--light-bg); }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
-        .header-content { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
-        .logo { display: flex; align-items: center; gap: 15px; text-decoration: none; }
-        .logo-img { width: 60px; height: 60px; }
-        .logo-text h1 { font-size: 1.8em; color: var(--primary-blue); font-weight: 700; margin: 0; }
-        .logo-text p { font-size: 0.9em; color: var(--primary-gold); margin: 0; }
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1001; }
+        header .container { position: relative; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; gap: 16px; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
+        .logo-img { width: 50px; height: 50px; object-fit: contain; }
+        .logo-text h1 { font-size: 1.55em; color: var(--primary-blue); font-weight: 700; margin: 0; line-height: 1.1; }
+        .header-actions { display: flex; gap: 10px; align-items: center; }
+        .cta-phone { color: var(--primary-blue); text-decoration: none; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 5px; }
+        .cta-btn { background: var(--primary-gold); color: var(--white); padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9em; transition: all 0.3s; white-space: nowrap; }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* Hamburger (mobile) */
+        .hamburger { display: none; background: none; border: none; cursor: pointer; width: 44px; height: 44px; padding: 0; border-radius: 8px; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; margin-right: -4px; -webkit-tap-highlight-color: transparent; }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span { display: block; width: 22px; height: 2px; background: var(--primary-blue); margin: 4px 0; transition: all 0.3s; border-radius: 2px; }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer { display: none; flex-direction: column; background: #144272; position: absolute; top: 100%; left: -20px; right: -20px; z-index: 999; box-shadow: 0 8px 24px rgba(0,0,0,.25); border-top: 2px solid var(--primary-gold); overflow: hidden; }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a { color: rgba(255,255,255,.9); text-decoration: none; font-weight: 600; font-size: 1em; padding: 14px 24px; border-bottom: 1px solid rgba(255,255,255,.07); transition: background .2s, color .2s; display: flex; align-items: center; gap: 8px; width: 100%; }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta { background: var(--primary-gold); color: var(--white) !important; margin: 12px 20px; border-radius: 10px; justify-content: center; font-size: 1.05em; border-bottom: none !important; width: calc(100% - 40px); }
+
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; padding: 12px 0; }
+        .nav-links a { color: var(--white); text-decoration: none; font-weight: 600; transition: color 0.3s, background 0.3s; font-size: 0.92em; padding: 7px 14px; border-radius: 6px; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary-gold); background: rgba(255,255,255,.08); }
+
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
+        }
+
         .breadcrumb { background: var(--light-gold); padding: 15px 0; }
         .breadcrumb a { color: var(--primary-blue); text-decoration: none; margin: 0 5px; }
         .hero { background: linear-gradient(135deg, var(--tax-red), #b91c1c); color: var(--white); padding: 80px 20px; text-align: center; position: relative; overflow: hidden; }
