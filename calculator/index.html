@@ -1,1628 +1,1162 @@
 <!DOCTYPE html>
 <html lang="en-IN">
 <head>
-    <!-- Google tag (gtag.js) -->
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18022959954"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'AW-18022959954');
+  gtag('event','page_view',{page_location:'https://sidhiandassociates.com/calculator/',page_title:'Free Financial Calculators India — Sidhi & Associates'});
 </script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/sidhi.png" type="image/png" />
-    
-    <!-- Primary Meta Tags -->
-    <title>Free Financial Calculators India 2024 - Tax, Loan, Investment Tools | Sidhi & Associates CA</title>
-    <meta name="title" content="Free Financial Calculators India - Tax, Loan, EMI, SIP Calculator">
-    <meta name="description" content="★ Free online financial calculators by expert CAs. Calculate income tax, HRA, home loan EMI, SIP returns, retirement planning. Instant results. Try now!">
-    <meta name="keywords" content="financial calculator India, tax calculator, HRA calculator, EMI calculator, SIP calculator, home loan calculator, retirement calculator, income tax calculator 2024, CA calculator">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <meta name="author" content="Sidhi & Associates - Chartered Accountants">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sidhiandassociates.com/calculator/">
-    <meta property="og:title" content="Free Financial Calculators - Tax, Loan, Investment Tools by CAs">
-    <meta property="og:description" content="Calculate income tax, HRA, EMI, SIP returns & more. Free online financial calculators by expert Chartered Accountants. Instant accurate results.">
-    <meta property="og:image" content="https://sidhiandassociates.com/sidhi.png">
-    
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sidhiandassociates.com/calculator/">
-    <meta property="twitter:title" content="Free Financial Calculators - Tax, Loan, Investment Tools">
-    <meta property="twitter:description" content="Calculate income tax, HRA, EMI, SIP returns & more. Free calculators by expert CAs.">
-    <meta property="twitter:image" content="https://sidhiandassociates.com/sidhi.png">
-    
-    <!-- Canonical -->
-    <link rel="canonical" href="https://sidhiandassociates.com/calculator/">
-    
-    <!-- Structured Data / Schema Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "Financial Calculators India",
-      "description": "Free online financial calculators for tax, loans, investments, and retirement planning in India",
-      "url": "https://sidhiandassociates.com/calculator/",
-      "provider": {
-        "@type": "ProfessionalService",
-        "name": "Sidhi & Associates",
-        "image": "https://sidhiandassociates.com/sidhi.png",
-        "priceRange": "Free",
-        "address": {
-          "@type": "PostalAddress",
-          "addressCountry": "IN"
-        },
-        "telephone": "+917889257045",
-        "email": "siddhiandassociatess@gmail.com",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "500"
-        }
-      },
-      "hasPart": [
-        {
-          "@type": "WebPage",
-          "name": "HRA Calculator",
-          "url": "https://sidhiandassociates.com/calculator/HRA/"
-        },
-        {
-          "@type": "WebPage",
-          "name": "Income Tax Calculator",
-          "url": "https://sidhiandassociates.com/calculator/income-tax-calculator/"
-        },
-        {
-          "@type": "WebPage",
-          "name": "EMI Calculator",
-          "url": "https://sidhiandassociates.com/calculator/emi-calculator/"
-        }
-      ]
-    }
-    </script>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary-blue: #0A2647;
-            --primary-gold: #D4A43C;
-            --light-gold: #F5E6C8;
-            --text-dark: #1a1a1a;
-            --text-light: #666;
-            --white: #ffffff;
-            --light-bg: #F9F7F4;
-            --success-green: #28a745;
-            --whatsapp-green: #25D366;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background: var(--light-bg);
-            overflow-x: hidden;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Top Info Bar - Desktop Only */
-        .top-info-bar {
-            background: var(--primary-blue);
-            color: var(--white);
-            padding: 10px 0;
-            font-size: 0.9em;
-        }
-
-        .top-info-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-
-        .top-info-left {
-            display: flex;
-            gap: 25px;
-            flex-wrap: wrap;
-        }
-
-        .top-info-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--white);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .top-info-item:hover {
-            color: var(--primary-gold);
-        }
-
-        .top-info-right {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .social-links {
-            display: flex;
-            gap: 10px;
-        }
-
-        .social-icon {
-            width: 32px;
-            height: 32px;
-            background: rgba(255,255,255,0.15);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--white);
-            text-decoration: none;
-            transition: all 0.3s;
-            font-size: 1em;
-        }
-
-        .social-icon:hover {
-            background: var(--primary-gold);
-            transform: translateY(-2px);
-        }
-
-        /* Main Header */
-        header {
-            background: var(--white);
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            transition: all 0.3s;
-        }
-
-        header.scrolled {
-            box-shadow: 0 4px 20px rgba(0,0,0,0.12);
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 0;
-            min-height: 80px;
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            text-decoration: none;
-            transition: transform 0.3s;
-        }
-
-        .logo:hover {
-            transform: scale(1.02);
-        }
-
-        .logo-img {
-            width: 55px;
-            height: 55px;
-            object-fit: contain;
-        }
-
-        .logo-text h1 {
-            font-size: 1.5em;
-            color: var(--primary-blue);
-            font-weight: 700;
-            margin: 0;
-            line-height: 1.2;
-        }
-
-        .logo-text p {
-            font-size: 0.85em;
-            color: var(--primary-gold);
-            margin: 0;
-        }
-
-        /* Navigation */
-        .main-nav {
-            display: flex;
-            gap: 5px;
-            align-items: center;
-        }
-
-        .nav-link {
-            padding: 10px 16px;
-            color: var(--text-dark);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95em;
-            border-radius: 6px;
-            transition: all 0.3s;
-            position: relative;
-        }
-
-        .nav-link:hover {
-            background: var(--light-gold);
-            color: var(--primary-blue);
-        }
-
-        .nav-link.active {
-            background: var(--primary-gold);
-            color: var(--white);
-        }
-
-        /* CTA Buttons */
-        .header-cta-group {
-            display: flex;
-            gap: 10px;
-            align-items: center;
-        }
-
-        .cta-button {
-            background: var(--primary-gold);
-            color: var(--white);
-            padding: 11px 22px;
-            border-radius: 25px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95em;
-            transition: all 0.3s;
-            box-shadow: 0 3px 10px rgba(212, 164, 60, 0.3);
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            white-space: nowrap;
-        }
-
-        .cta-button:hover {
-            background: var(--primary-blue);
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(10, 38, 71, 0.3);
-        }
-
-        .cta-whatsapp {
-            background: var(--whatsapp-green);
-        }
-
-        .cta-whatsapp:hover {
-            background: #1da851;
-        }
-
-        /* Mobile Menu Toggle */
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            gap: 5px;
-            cursor: pointer;
-            padding: 8px;
-            z-index: 1001;
-        }
-
-        .menu-toggle span {
-            width: 26px;
-            height: 3px;
-            background: var(--primary-blue);
-            border-radius: 2px;
-            transition: all 0.3s;
-        }
-
-        .menu-toggle.active span:nth-child(1) {
-            transform: rotate(45deg) translate(8px, 8px);
-        }
-
-        .menu-toggle.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .menu-toggle.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -7px);
-        }
-
-        .breadcrumb {
-            background: var(--light-gold);
-            padding: 12px 0;
-            font-size: 0.9em;
-        }
-
-        .breadcrumb a {
-            color: var(--primary-blue);
-            text-decoration: none;
-            margin: 0 5px;
-            transition: color 0.3s;
-        }
-
-        .breadcrumb a:hover {
-            color: var(--primary-gold);
-            text-decoration: underline;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--primary-blue) 0%, #144272 100%);
-            color: var(--white);
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .hero h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            font-weight: 700;
-        }
-
-        .hero p {
-            font-size: 1.2em;
-            opacity: 0.95;
-            max-width: 800px;
-            margin: 0 auto 15px;
-        }
-
-        .hero-trust {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 25px;
-            font-size: 0.95em;
-        }
-
-        .trust-item {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        /* Stats Bar */
-        .stats-bar {
-            background: var(--white);
-            padding: 40px 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-            text-align: center;
-        }
-
-        .stat-item {
-            padding: 20px;
-            transition: transform 0.3s;
-        }
-
-        .stat-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .stat-number {
-            font-size: 2.5em;
-            font-weight: 700;
-            color: var(--primary-gold);
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .stat-label {
-            color: var(--text-light);
-            font-size: 1.05em;
-        }
-
-        /* Trust Badges */
-        .trust-section {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            padding: 30px 20px;
-            text-align: center;
-        }
-
-        .trust-badges {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .badge-item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .badge-icon {
-            font-size: 2.5em;
-        }
-
-        .badge-text {
-            font-weight: 600;
-            color: var(--primary-blue);
-            font-size: 0.9em;
-        }
-
-        /* Calculator Cards */
-        .calculators-section {
-            padding: 60px 20px;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .section-title h2 {
-            color: var(--primary-blue);
-            font-size: 2.2em;
-            margin-bottom: 15px;
-            position: relative;
-            padding-bottom: 20px;
-        }
-
-        .section-title h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: var(--primary-gold);
-            border-radius: 2px;
-        }
-
-        .section-subtitle {
-            color: var(--text-light);
-            font-size: 1.1em;
-        }
-
-        .category-section {
-            margin-bottom: 80px;
-        }
-
-        .category-header {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 40px;
-        }
-
-        .category-icon {
-            font-size: 3em;
-        }
-
-        .category-info h3 {
-            font-size: 2em;
-            color: var(--primary-blue);
-            margin-bottom: 5px;
-        }
-
-        .category-info p {
-            color: var(--text-light);
-            font-size: 1.1em;
-        }
-
-        .calculators-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
-            margin-top: 40px;
-        }
-
-        .calculator-card {
-            background: var(--white);
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
-            transition: all 0.3s;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-            border-top: 3px solid var(--primary-gold);
-        }
-
-        .calculator-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
-        }
-
-        .calc-icon {
-            font-size: 3em;
-            margin-bottom: 15px;
-            display: block;
-        }
-
-        .calc-badge {
-            display: inline-block;
-            padding: 5px 12px;
-            border-radius: 20px;
-            font-size: 0.8em;
-            font-weight: 600;
-            margin-bottom: 12px;
-        }
-
-        .badge-tax {
-            background: #e3f2fd;
-            color: #1976d2;
-        }
-
-        .badge-loan {
-            background: #f3e5f5;
-            color: #7b1fa2;
-        }
-
-        .badge-investment {
-            background: #e8f5e9;
-            color: #388e3c;
-        }
-
-        .badge-planning {
-            background: #fff3e0;
-            color: #f57c00;
-        }
-
-        .calc-title {
-            font-size: 1.4em;
-            color: var(--primary-blue);
-            font-weight: 700;
-            margin-bottom: 12px;
-        }
-
-        .calc-description {
-            color: var(--text-light);
-            margin-bottom: 15px;
-            line-height: 1.6;
-            font-size: 0.95em;
-        }
-
-        .calc-features {
-            list-style: none;
-            margin: 20px 0;
-            padding: 0;
-        }
-
-        .calc-features li {
-            padding: 8px 0;
-            color: var(--text-light);
-            font-size: 0.95em;
-        }
-
-        .calc-features li::before {
-            content: "✓ ";
-            color: var(--success-green);
-            font-weight: 700;
-            margin-right: 8px;
-        }
-
-        .calc-cta {
-            color: var(--primary-gold);
-            font-weight: 600;
-            font-size: 1em;
-            display: inline-flex;
-            align-items: center;
-            gap: 5px;
-            transition: gap 0.3s;
-        }
-
-        .calculator-card:hover .calc-cta {
-            gap: 10px;
-        }
-
-        /* Features Section */
-        .features-section {
-            background: var(--white);
-            padding: 80px 20px;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-top: 50px;
-        }
-
-        .feature-item {
-            text-align: center;
-        }
-
-        .feature-icon {
-            font-size: 3.5em;
-            margin-bottom: 20px;
-            display: block;
-        }
-
-        .feature-title {
-            font-size: 1.4em;
-            color: var(--primary-blue);
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .feature-desc {
-            color: var(--text-light);
-            line-height: 1.7;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, var(--primary-gold), #C4932C);
-            color: var(--white);
-            text-align: center;
-            padding: 80px 20px;
-        }
-
-        .cta-section h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .cta-section p {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .btn-primary {
-            background: var(--primary-blue);
-            color: var(--white);
-            padding: 15px 40px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1em;
-            transition: all 0.3s;
-        }
-
-        .btn-primary:hover {
-            background: var(--white);
-            color: var(--primary-blue);
-            transform: translateY(-3px);
-        }
-
-        /* Footer */
-        footer {
-            background: var(--primary-blue);
-            color: var(--white);
-            padding: 50px 20px 30px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 30px;
-        }
-
-        .footer-section h3 {
-            color: var(--primary-gold);
-            margin-bottom: 20px;
-        }
-
-        .footer-section ul {
-            list-style: none;
-        }
-
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-section a {
-            color: var(--white);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer-section a:hover {
-            color: var(--primary-gold);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.2);
-            padding-top: 20px;
-            text-align: center;
-        }
-
-        /* Floating Buttons - Enhanced for Conversion */
-        .floating-buttons {
-            position: fixed;
-            right: 15px;
-            bottom: 15px;
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            z-index: 999;
-        }
-
-        .float-btn {
-            width: 56px;
-            height: 56px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
-            transition: all 0.3s;
-            text-decoration: none;
-            font-size: 1.6em;
-            position: relative;
-        }
-
-        .float-btn:hover {
-            transform: scale(1.12);
-            box-shadow: 0 6px 25px rgba(0,0,0,0.35);
-        }
-
-        .float-btn::before {
-            content: attr(data-tooltip);
-            position: absolute;
-            right: 65px;
-            background: var(--primary-blue);
-            color: white;
-            padding: 8px 15px;
-            border-radius: 8px;
-            font-size: 0.5em;
-            white-space: nowrap;
-            opacity: 0;
-            transition: opacity 0.3s;
-            pointer-events: none;
-            font-weight: 600;
-        }
-
-        .float-btn:hover::before {
-            opacity: 1;
-        }
-
-        .whatsapp-btn {
-            background: var(--whatsapp-green);
-            color: white;
-            animation: pulse 2s infinite;
-        }
-
-        .call-btn {
-            background: var(--primary-gold);
-            color: white;
-        }
-
-        @keyframes pulse {
-            0%, 100% {
-                box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
-            }
-            50% {
-                box-shadow: 0 4px 30px rgba(37, 211, 102, 0.7);
-            }
-        }
-
-        /* Responsive Design */
-        @media (max-width: 1024px) {
-            .top-info-left {
-                gap: 15px;
-            }
-            
-            .nav-link {
-                padding: 10px 12px;
-                font-size: 0.9em;
-            }
-
-            .cta-button {
-                padding: 10px 18px;
-                font-size: 0.9em;
-            }
-        }
-
-        @media (max-width: 968px) {
-            .top-info-bar {
-                display: none;
-            }
-
-            .header-content {
-                padding: 15px 0;
-                min-height: 70px;
-            }
-
-            .main-nav {
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0, 0, 0, 0.95);
-                flex-direction: column;
-                padding: 80px 30px 30px;
-                justify-content: flex-start;
-                gap: 0;
-                overflow-y: auto;
-            }
-
-            .main-nav.active {
-                display: flex;
-            }
-
-            .nav-link {
-                width: 100%;
-                padding: 18px 20px;
-                font-size: 1.1em;
-                border-radius: 8px;
-                color: var(--white);
-                text-align: center;
-            }
-
-            .nav-link:hover {
-                background: rgba(212, 164, 60, 0.2);
-            }
-
-            .header-cta-group {
-                width: 100%;
-                flex-direction: column;
-                margin-top: 20px;
-            }
-
-            .cta-button {
-                width: 100%;
-                justify-content: center;
-                padding: 15px;
-                font-size: 1.05em;
-            }
-
-            .menu-toggle {
-                display: flex;
-            }
-
-            .logo-text h1 {
-                font-size: 1.3em;
-            }
-
-            .logo-img {
-                width: 50px;
-                height: 50px;
-            }
-
-            .hero h2 {
-                font-size: 1.8em;
-            }
-
-            .hero p {
-                font-size: 1em;
-            }
-
-            .calculators-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .category-header {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .floating-buttons {
-                right: 10px;
-                bottom: 10px;
-            }
-
-            .float-btn {
-                width: 50px;
-                height: 50px;
-                font-size: 1.4em;
-            }
-
-            .float-btn::before {
-                display: none;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .container {
-                padding: 0 15px;
-            }
-
-            .hero {
-                padding: 40px 15px;
-            }
-
-            .hero h2 {
-                font-size: 1.5em;
-            }
-
-            .stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 20px;
-            }
-
-            .stat-number {
-                font-size: 2em;
-            }
-
-            .calculator-card {
-                padding: 25px;
-            }
-
-            .calc-title {
-                font-size: 1.3em;
-            }
-        }
-
-        /* Performance Optimization */
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .lazy-load {
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        .lazy-load.loaded {
-            opacity: 1;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="icon" href="/sidhi.png" type="image/png">
+<link rel="apple-touch-icon" href="/sidhi.png">
+
+<!-- Primary Meta Tags -->
+<title>Free Financial Calculators India | Tax, Loan, EMI, SIP Calculator | Sidhi &amp; Associates</title>
+<meta name="title" content="Free Financial Calculators India | Tax, Loan, EMI, SIP Calculator">
+<meta name="description" content="Free online financial calculators built by ICAI-registered Chartered Accountants. Calculate income tax, HRA, home loan EMI, SIP returns &amp; retirement corpus. Instant, accurate results.">
+<meta name="keywords" content="financial calculator India, tax calculator, HRA calculator, EMI calculator, SIP calculator, home loan calculator, retirement calculator, income tax calculator, capital gains calculator, PPF calculator, FD calculator">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="language" content="English">
+<meta name="author" content="Sidhi &amp; Associates">
+<meta name="revisit-after" content="3 days">
+<meta name="theme-color" content="#0A2647">
+<meta name="geo.region" content="IN">
+<meta name="geo.placename" content="India">
+<meta name="ICBM" content="20.5937,78.9629">
+
+<!-- AIO entity meta -->
+<meta name="ai-content-declaration" content="Sidhi & Associates provides free online financial calculators (income tax, HRA, EMI, SIP, FD, PPF, retirement, FIRE, capital gains) built by ICAI-registered Chartered Accountants. All calculators are free, require no registration, and run entirely in the browser. Contact +91 78892 57045.">
+<meta name="ai-entity-type" content="WebApplication,FinancialProduct,ProfessionalService">
+
+<!-- Canonical & hreflang -->
+<link rel="canonical" href="https://sidhiandassociates.com/calculator/">
+<link rel="alternate" hreflang="en-IN" href="https://sidhiandassociates.com/calculator/">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sidhiandassociates.com/calculator/">
+<meta property="og:title" content="Free Financial Calculators India | Tax, Loan, EMI, SIP Tools">
+<meta property="og:description" content="Calculate income tax, HRA, EMI, SIP returns &amp; more. Free online financial calculators by ICAI-registered Chartered Accountants. Instant, accurate results.">
+<meta property="og:site_name" content="Sidhi & Associates">
+<meta property="og:locale" content="en_IN">
+<meta property="og:image" content="https://sidhiandassociates.com/sidhi.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://sidhiandassociates.com/calculator/">
+<meta name="twitter:title" content="Free Financial Calculators India | Tax, Loan, EMI, SIP Tools">
+<meta name="twitter:description" content="Calculate income tax, HRA, EMI, SIP returns &amp; more. Free calculators by ICAI-registered Chartered Accountants.">
+<meta name="twitter:image" content="https://sidhiandassociates.com/sidhi.png">
+
+<link rel="preconnect" href="https://www.googletagmanager.com">
+<link rel="dns-prefetch" href="https://wa.me">
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"CollectionPage","@id":"https://sidhiandassociates.com/calculator/#webpage","name":"Free Financial Calculators India","description":"Free online financial calculators for tax, loans, investments, and retirement planning, built by ICAI-registered Chartered Accountants.","url":"https://sidhiandassociates.com/calculator/","inLanguage":"en-IN","dateModified":"2026-07-16","speakable":{"@type":"SpeakableSpecification","cssSelector":["#hero-heading",".hero-desc","#quick-answer",".speakable-about"]},
+"provider":{"@type":"ProfessionalService","name":"Sidhi & Associates","image":"https://sidhiandassociates.com/sidhi.png","priceRange":"Free","address":{"@type":"PostalAddress","addressCountry":"IN"},"telephone":"+917889257045","email":"siddhiandassociatess@gmail.com","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"5000"}},
+"breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sidhiandassociates.com/"},{"@type":"ListItem","position":2,"name":"Financial Calculators","item":"https://sidhiandassociates.com/calculator/"}]},
+"hasPart":[
+{"@type":"WebPage","name":"HRA Calculator","url":"https://sidhiandassociates.com/calculator/HRA/"},
+{"@type":"WebPage","name":"Income Tax Calculator","url":"https://sidhiandassociates.com/calculator/income-tax-calculator/"},
+{"@type":"WebPage","name":"Capital Gains Calculator","url":"https://sidhiandassociates.com/calculator/capital-gains-calculator/"},
+{"@type":"WebPage","name":"Home Loan Eligibility Calculator","url":"https://sidhiandassociates.com/calculator/home-loan-eligibility-calculator/"},
+{"@type":"WebPage","name":"EMI Calculator","url":"https://sidhiandassociates.com/calculator/emi-calculator/"},
+{"@type":"WebPage","name":"Loan Comparison Calculator","url":"https://sidhiandassociates.com/calculator/loan-comparison/"},
+{"@type":"WebPage","name":"SIP Calculator","url":"https://sidhiandassociates.com/calculator/sip-calculator/"},
+{"@type":"WebPage","name":"FD Calculator","url":"https://sidhiandassociates.com/calculator/fd-calculator/"},
+{"@type":"WebPage","name":"PPF Calculator","url":"https://sidhiandassociates.com/calculator/ppf-calculator/"},
+{"@type":"WebPage","name":"Retirement Planning Calculator","url":"https://sidhiandassociates.com/calculator/retirement-planning-calculator/"},
+{"@type":"WebPage","name":"Goal Planning Calculator","url":"https://sidhiandassociates.com/calculator/goal-planning/"},
+{"@type":"WebPage","name":"FIRE Calculator","url":"https://sidhiandassociates.com/calculator/fire-calculator/"}
+]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Are Sidhi & Associates' financial calculators really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. All calculators — income tax, HRA, EMI, SIP, FD, PPF, retirement, FIRE, and capital gains — are completely free, require no sign-up, and run instantly in your browser."}},
+{"@type":"Question","name":"How accurate are these financial calculators?","acceptedAnswer":{"@type":"Answer","text":"The calculators are built and reviewed by ICAI-registered Chartered Accountants using current tax slabs and formulas, so results reflect the latest applicable rules. For a filing or advisory decision, we recommend confirming details with our CA team at +91 78892 57045."}},
+{"@type":"Question","name":"Do the calculators store or share my financial data?","acceptedAnswer":{"@type":"Answer","text":"No. Calculations run locally in your browser and no personal or financial data is stored or transmitted."}},
+{"@type":"Question","name":"Which calculator should I use to compare the old and new tax regimes?","acceptedAnswer":{"@type":"Answer","text":"Use the Income Tax Calculator, which compares tax liability under both the old and new regimes and shows your estimated take-home salary for each."}}
+]}
+</script>
+
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{overflow-x:clip;scroll-behavior:smooth}
+body{max-width:100%}
+:root {
+    --primary-blue: #0A2647;
+    --primary-gold: #D4A43C;
+    --gold-dark:#B8861E;
+    --light-gold: #F5E6C8;
+    --gold-bg:#FDF6E7;
+    --text-dark: #1a1a1a;
+    --text-light: #666;
+    --white: #ffffff;
+    --light-bg: #F9F7F4;
+    --success-green: #28a745;
+    --whatsapp-green: #25D366;
+    --border:#E5E7EB;
+    --radius:14px; --radius-sm:8px;
+    --shadow:0 3px 18px rgba(10,38,71,0.09); --shadow-lg:0 10px 36px rgba(10,38,71,0.18);
+    --transition:all 0.3s cubic-bezier(0.4,0,0.2,1)
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: var(--light-bg);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== Header (matches home page) ===== */
+.top-bar{background:linear-gradient(90deg,var(--primary-blue) 0%,#1a4a7a 50%,var(--primary-blue) 100%);color:var(--white);text-align:center;padding:10px 20px;font-size:.88em;font-weight:500}
+.top-bar a{color:var(--primary-gold);font-weight:700;text-decoration:none}
+.top-bar a:hover{text-decoration:underline}
+header{background:var(--white);box-shadow:0 2px 12px rgba(0,0,0,.08);position:sticky;top:0;z-index:1001}
+header .container{position:relative}
+.header-content{display:flex;justify-content:space-between;align-items:center;padding:12px 0;gap:16px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0}
+.logo-img{width:50px;height:50px;object-fit:contain}
+.logo-text h1{font-size:1.55em;color:var(--primary-blue);font-weight:700;margin:0;line-height:1.1}
+.header-actions{display:flex;gap:10px;align-items:center}
+.cta-phone{color:var(--primary-blue);text-decoration:none;font-weight:600;font-size:.95em;display:flex;align-items:center;gap:5px}
+.cta-btn{background:var(--primary-gold);color:var(--white);padding:10px 20px;border-radius:25px;text-decoration:none;font-weight:600;font-size:.9em;transition:var(--transition);white-space:nowrap}
+.cta-btn:hover{background:var(--primary-blue);transform:translateY(-2px)}
+.hamburger{display:none;background:none;border:none;cursor:pointer;width:44px;height:44px;padding:0;border-radius:8px;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;margin-right:-4px;-webkit-tap-highlight-color:transparent}
+.hamburger:active{background:rgba(10,38,71,.06)}
+.hamburger span{display:block;width:22px;height:2px;background:var(--primary-blue);margin:4px 0;transition:var(--transition);border-radius:2px}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mobile-drawer{display:none;flex-direction:column;background:#144272;position:absolute;top:100%;left:-20px;right:-20px;z-index:999;box-shadow:0 8px 24px rgba(0,0,0,.25);border-top:2px solid var(--primary-gold);overflow:hidden}
+.mobile-drawer.open{display:flex}
+.mobile-drawer a{color:rgba(255,255,255,.9);text-decoration:none;font-weight:600;font-size:1em;padding:14px 24px;border-bottom:1px solid rgba(255,255,255,.07);transition:background .2s,color .2s;display:flex;align-items:center;gap:8px;box-sizing:border-box;width:100%}
+.mobile-drawer a:hover,.mobile-drawer a.active{background:rgba(255,255,255,.08);color:var(--primary-gold)}
+.mobile-drawer .drawer-cta{background:var(--primary-gold);color:var(--white)!important;margin:12px 20px;border-radius:10px;justify-content:center;font-size:1.05em;border-bottom:none!important;width:calc(100% - 40px)}
+.mobile-drawer .drawer-cta:hover{background:var(--gold-dark)!important}
+nav.desktop-nav{background:var(--primary-blue)}
+.nav-inner{display:flex;justify-content:space-between;align-items:center}
+.nav-links{display:flex;gap:4px;padding:8px 0;flex-wrap:wrap}
+.nav-links a{color:rgba(255,255,255,.88);text-decoration:none;font-weight:600;font-size:.88em;padding:7px 14px;border-radius:6px;transition:var(--transition);white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:var(--primary-gold);background:rgba(255,255,255,.08)}
+.nav-cta-small{background:var(--primary-gold);color:var(--white)!important;border-radius:20px!important;padding:7px 16px!important}
+.nav-cta-small:hover{background:var(--gold-dark)!important}
+@media(max-width:860px){
+  .hamburger{display:flex}
+  nav.desktop-nav{display:none}
+  header .container{padding:0 16px}
+  .mobile-drawer{left:-16px;right:-16px}
+  .header-content{padding:10px 0}
+}
+@media(max-width:640px){
+  .logo-text h1{font-size:1.25em}
+  .cta-phone,.cta-btn{display:none}
+  .header-actions{gap:6px}
+}
+/* ===== end header ===== */
+
+.breadcrumb {
+    background: var(--light-gold);
+    padding: 12px 0;
+    font-size: 0.9em;
+}
+
+.breadcrumb a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.3s;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary-gold);
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, #144272 100%);
+    color: var(--white);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2em;
+    opacity: 0.95;
+    max-width: 800px;
+    margin: 0 auto 15px;
+}
+
+.hero-trust {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    font-size: 0.95em;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* AEO quick answer strip */
+.quick-answer-strip{background:var(--primary-blue);padding:16px 20px;text-align:center}
+.quick-answer-strip p{font-size:.92em;color:rgba(255,255,255,.88);max-width:960px;margin:0 auto}
+.quick-answer-strip strong{color:var(--primary-gold)}
+.quick-answer-strip a{color:var(--primary-gold);text-decoration:none;font-weight:700}
+.featured-snippet-block{background:var(--gold-bg);border-left:5px solid var(--primary-gold);border-radius:0 var(--radius) var(--radius) 0;padding:22px 26px;margin:36px auto 0;max-width:960px;position:relative}
+.featured-snippet-block::before{content:'\1F4A1 Quick Answer';display:block;font-size:.75em;font-weight:700;color:var(--gold-dark);text-transform:uppercase;letter-spacing:.08em;margin-bottom:9px}
+.featured-snippet-block p{color:var(--text-dark);font-size:.97em;line-height:1.75;margin:0}
+.featured-snippet-block strong{color:var(--primary-blue)}
+
+/* Stats Bar */
+.stats-bar {
+    background: var(--white);
+    padding: 40px 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-item {
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--primary-gold);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: var(--text-light);
+    font-size: 1.05em;
+}
+
+/* Trust Badges */
+.trust-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.badge-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.badge-icon {
+    font-size: 2.5em;
+}
+
+.badge-text {
+    font-weight: 600;
+    color: var(--primary-blue);
+    font-size: 0.9em;
+}
+
+/* Calculator Cards */
+.calculators-section {
+    padding: 60px 20px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+    color: var(--primary-blue);
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--primary-gold);
+    border-radius: 2px;
+}
+
+.section-subtitle {
+    color: var(--text-light);
+    font-size: 1.1em;
+}
+
+.category-section {
+    margin-bottom: 80px;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.category-icon {
+    font-size: 3em;
+}
+
+.category-info h3 {
+    font-size: 2em;
+    color: var(--primary-blue);
+    margin-bottom: 5px;
+}
+
+.category-info p {
+    color: var(--text-light);
+    font-size: 1.1em;
+}
+
+.calculators-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.calculator-card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border-top: 3px solid var(--primary-gold);
+}
+
+.calculator-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+}
+
+.calc-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.calc-badge {
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.badge-tax { background: #e3f2fd; color: #1976d2; }
+.badge-loan { background: #f3e5f5; color: #7b1fa2; }
+.badge-investment { background: #e8f5e9; color: #388e3c; }
+.badge-planning { background: #fff3e0; color: #f57c00; }
+
+.calc-title {
+    font-size: 1.4em;
+    color: var(--primary-blue);
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.calc-description {
+    color: var(--text-light);
+    margin-bottom: 15px;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+.calc-features {
+    list-style: none;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.calc-features li {
+    padding: 8px 0;
+    color: var(--text-light);
+    font-size: 0.95em;
+}
+
+.calc-features li::before {
+    content: "✓ ";
+    color: var(--success-green);
+    font-weight: 700;
+    margin-right: 8px;
+}
+
+.calc-cta {
+    color: var(--primary-gold);
+    font-weight: 600;
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: gap 0.3s;
+}
+
+.calculator-card:hover .calc-cta {
+    gap: 10px;
+}
+
+/* Features Section */
+.features-section {
+    background: var(--white);
+    padding: 80px 20px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.feature-item { text-align: center; }
+
+.feature-icon {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.feature-title {
+    font-size: 1.4em;
+    color: var(--primary-blue);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.feature-desc {
+    color: var(--text-light);
+    line-height: 1.7;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-gold), #C4932C);
+    color: var(--white);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.cta-section h2 { font-size: 2.5em; margin-bottom: 20px; }
+.cta-section p { font-size: 1.2em; margin-bottom: 30px; }
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1em;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background: var(--white);
+    color: var(--primary-blue);
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background: var(--primary-blue);
+    color: var(--white);
+    padding: 50px 20px 30px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-section h3 { color: var(--primary-gold); margin-bottom: 20px; }
+.footer-section ul { list-style: none; }
+.footer-section ul li { margin-bottom: 10px; }
+.footer-section a { color: var(--white); text-decoration: none; transition: color 0.3s; }
+.footer-section a:hover { color: var(--primary-gold); }
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* Floating Buttons */
+.floating-buttons {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    z-index: 999;
+}
+
+.float-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    transition: all 0.3s;
+    text-decoration: none;
+    font-size: 1.6em;
+    position: relative;
+}
+
+.float-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 6px 25px rgba(0,0,0,0.35);
+}
+
+.float-btn::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    right: 65px;
+    background: var(--primary-blue);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 0.5em;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    font-weight: 600;
+}
+
+.float-btn:hover::before { opacity: 1; }
+
+.whatsapp-btn { background: var(--whatsapp-green); color: white; }
+.call-btn { background: var(--primary-gold); color: white; }
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .hero h2 { font-size: 1.8em; }
+    .hero p { font-size: 1em; }
+    .calculators-grid { grid-template-columns: 1fr; }
+    .category-header { flex-direction: column; text-align: center; }
+    .floating-buttons { right: 10px; bottom: 10px; }
+    .float-btn { width: 50px; height: 50px; font-size: 1.4em; }
+    .float-btn::before { display: none; }
+}
+
+@media (max-width: 480px) {
+    .container { padding: 0 15px; }
+    .hero { padding: 40px 15px; }
+    .hero h2 { font-size: 1.5em; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .stat-number { font-size: 2em; }
+    .calculator-card { padding: 25px; }
+    .calc-title { font-size: 1.3em; }
+}
+
+img { max-width: 100%; height: auto; }
+</style>
 </head>
 <body>
-    <!-- Top Info Bar - Desktop Only -->
-    <div class="top-info-bar">
-        <div class="container">
-            <div class="top-info-content">
-                <div class="top-info-left">
-                    <a href="tel:+917889257045" class="top-info-item" aria-label="Call us">
-                        📞 +91 78892 57045
-                    </a>
-                    <a href="mailto:siddhiandassociatess@gmail.com" class="top-info-item" aria-label="Email us">
-                        ✉️ siddhiandassociatess@gmail.com
-                    </a>
-                    <span class="top-info-item">
-                        ⏰ Mon-Sat: 9 AM - 6 PM
-                    </span>
-                </div>
-                <div class="top-info-right">
-                    <div class="social-links">
-                        <a href="https://wa.me/917889257045" class="social-icon" target="_blank" rel="noopener" aria-label="WhatsApp">📱</a>
-                        <a href="#" class="social-icon" target="_blank" rel="noopener" aria-label="Facebook">f</a>
-                        <a href="#" class="social-icon" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-                    </div>
-                </div>
-            </div>
+<div class="top-bar" role="banner">
+  Trusted by 5,000+ clients Pan-India &mdash; <a href="tel:+917889257045">Call +91 78892 57045</a> | Mon&ndash;Sat 9AM&ndash;6PM
+</div>
+<header>
+  <div class="container">
+    <div class="header-content">
+      <a href="/" class="logo" aria-label="Sidhi &amp; Associates — Trusted Accountants Firm India">
+        <img src="/sidhi.png" alt="Sidhi &amp; Associates India" class="logo-img" width="50" height="50" loading="eager">
+        <div class="logo-text">
+          <h1>Sidhi &amp; Associates</h1>
+        </div>
+      </a>
+      <div class="header-actions">
+        <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">&#128222; +91 78892 57045</a>
+        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20financial%20planning" class="cta-btn" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+      <a href="/services/">&#128295; Services</a>
+      <a href="/#locations">&#128205; Locations</a>
+      <a href="/why-us/">&#11088; Why Us</a>
+      <a href="/faq/">&#10067; FAQs</a>
+      <a href="/blog/">&#128221; Blogs</a>
+      <a href="/calculator/" class="active">&#129518; Calculators</a>
+      <a href="/about/">&#8505;&#65039; About</a>
+      <a href="/portal.html" style="color:var(--primary-gold);font-weight:700;">&#128203; Client Portal</a>
+      <a href="tel:+917889257045" class="drawer-cta">&#128222; Call +91 78892 57045</a>
+      <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20financial%20planning" class="drawer-cta" target="_blank" rel="noopener noreferrer">&#128172; WhatsApp Us</a>
+    </nav>
+  </div>
+</header>
+<nav class="desktop-nav" aria-label="Main navigation">
+  <div class="container">
+    <div class="nav-inner">
+      <div class="nav-links" id="navLinks" role="menubar">
+        <a href="/services/" role="menuitem">Services</a>
+        <a href="/#locations" role="menuitem">Locations</a>
+        <a href="/why-us/" role="menuitem">Why Us</a>
+        <a href="/faq/" role="menuitem">FAQs</a>
+        <a href="/blog/" role="menuitem">Blogs</a>
+        <a href="/calculator/" role="menuitem" class="active">Calculators</a>
+        <a href="/about/" role="menuitem">About</a>
+        <a href="tel:+917889257045" class="nav-cta-small" role="menuitem">&#128222; Call Now</a>
+        <a href="/portal.html" class="nav-cta-small" role="menuitem" style="background:var(--gold-dark);">&#128203; Client Portal</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="container">
+        <a href="/">Home</a> / <span>Financial Calculators</span>
+    </div>
+</nav>
+
+<section class="hero" aria-labelledby="hero-heading">
+    <div class="container">
+        <h2 id="hero-heading">&#129518; Free Financial Calculators India</h2>
+        <p class="hero-desc">Accurate Tax, Loan, Investment &amp; Retirement Planning Tools</p>
+        <p style="font-size: 1em; margin-top: 10px; opacity: 0.9;">Built by ICAI-Registered Chartered Accountants &bull; 100% Free &bull; Instant Results</p>
+        <div class="hero-trust">
+            <div class="trust-item">&#11088; 4.9/5 Rating</div>
+            <div class="trust-item">&#10003; 50,000+ Users</div>
+            <div class="trust-item">&#128274; 100% Secure</div>
         </div>
     </div>
+</section>
 
-    <!-- Main Header -->
-    <header id="mainHeader">
-        <div class="container">
-            <div class="header-content">
-                <a href="/" class="logo" aria-label="Sidhi & Associates Home">
-                    <img src="/sidhi.png" alt="Sidhi & Associates Logo" class="logo-img" width="55" height="55" loading="eager">
-                    <div class="logo-text">
-                        <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
-                    </div>
+<!-- AEO quick answer strip -->
+<div class="quick-answer-strip" id="quick-answer" role="note">
+  <p><strong>Sidhi &amp; Associates</strong> offers <strong>18+ free financial calculators</strong> &mdash; income tax, HRA, EMI, SIP, FD, PPF, retirement &amp; FIRE &mdash; built by <strong>ICAI-registered Chartered Accountants</strong>. No sign-up, instant results. Call <a href="tel:+917889257045">+91 78892 57045</a> for personalised advice.</p>
+</div>
+
+<div class="stats-bar">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item"><span class="stat-number">18+</span><span class="stat-label">Free Calculators</span></div>
+            <div class="stat-item"><span class="stat-number">50K+</span><span class="stat-label">Monthly Users</span></div>
+            <div class="stat-item"><span class="stat-number">100%</span><span class="stat-label">Accurate Results</span></div>
+            <div class="stat-item"><span class="stat-number">13+</span><span class="stat-label">Years Experience</span></div>
+        </div>
+    </div>
+</div>
+
+<div class="featured-snippet-block" id="featured-snippet">
+  <p><strong>Sidhi &amp; Associates</strong> financial calculators are free tools, verified by <strong>ICAI-registered Chartered Accountants</strong>, covering <strong>income tax (old vs new regime)</strong>, <strong>HRA exemption</strong>, <strong>home loan EMI &amp; eligibility</strong>, <strong>SIP, FD &amp; PPF returns</strong>, <strong>capital gains</strong>, and <strong>retirement/FIRE planning</strong>. All calculations run in your browser &mdash; no data is stored. Need advice beyond a calculator? Call <strong>+91 78892 57045</strong>.</p>
+</div>
+
+<section class="trust-section" aria-label="Why trust these calculators">
+    <div class="container">
+        <h3 style="color: var(--primary-blue); font-size: 1.3em; margin-bottom: 10px;">Why Trust Our Calculators?</h3>
+        <div class="trust-badges">
+            <div class="badge-item"><span class="badge-icon">&#127891;</span><span class="badge-text">CA-Verified Formulas</span></div>
+            <div class="badge-item"><span class="badge-icon">&#9889;</span><span class="badge-text">Instant Results</span></div>
+            <div class="badge-item"><span class="badge-icon">&#128274;</span><span class="badge-text">Privacy Protected</span></div>
+            <div class="badge-item"><span class="badge-icon">&#128241;</span><span class="badge-text">Mobile Friendly</span></div>
+            <div class="badge-item"><span class="badge-icon">&#128175;</span><span class="badge-text">Always Free</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="calculators-section" aria-labelledby="calculators-heading">
+    <div class="container">
+        <div class="category-section">
+            <div class="category-header">
+                <span class="category-icon">&#128176;</span>
+                <div class="category-info">
+                    <h3 id="calculators-heading">Tax Calculators</h3>
+                    <p>Calculate taxes, exemptions, and savings</p>
+                </div>
+            </div>
+
+            <div class="calculators-grid">
+                <a href="/calculator/HRA/" class="calculator-card">
+                    <span class="calc-badge badge-tax">Tax Exemption</span>
+                    <span class="calc-icon">&#127968;</span>
+                    <h4 class="calc-title">HRA Calculator</h4>
+                    <p class="calc-description">Calculate House Rent Allowance tax exemption as per Section 10(13A). Find out how much HRA is tax-free.</p>
+                    <ul class="calc-features">
+                        <li>Metro vs Non-Metro calculation</li>
+                        <li>Instant tax savings</li>
+                        <li>Detailed breakdown</li>
+                    </ul>
+                    <span class="calc-cta">Calculate HRA &rarr;</span>
                 </a>
 
-                <div class="menu-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                <a href="/calculator/income-tax-calculator/" class="calculator-card">
+                    <span class="calc-badge badge-tax">Income Tax</span>
+                    <span class="calc-icon">&#128202;</span>
+                    <h4 class="calc-title">Income Tax Calculator</h4>
+                    <p class="calc-description">Calculate income tax liability. Compare old vs new tax regime and save maximum tax.</p>
+                    <ul class="calc-features">
+                        <li>Old vs New regime comparison</li>
+                        <li>All deductions covered</li>
+                        <li>Take-home salary</li>
+                    </ul>
+                    <span class="calc-cta">Calculate Tax &rarr;</span>
+                </a>
 
-                <nav class="main-nav" id="mainNav" role="navigation">
-                    <a href="/" class="nav-link">Home</a>
-                    <a href="/services/" class="nav-link">Services</a>
-                    <a href="/calculator/" class="nav-link active">Calculators</a>
-                    <a href="/about/" class="nav-link">About</a>
-                    <a href="/blog/" class="nav-link">Blog</a>
-                    <div class="header-cta-group">
-                        <a href="https://wa.me/917889257045?text=Hello!%20I%20need%20help%20with%20financial%20planning" class="cta-button cta-whatsapp" target="_blank" rel="noopener">
-                            💬 WhatsApp
-                        </a>
-                        <a href="tel:+917889257045" class="cta-button">
-                            📞 Call Now
-                        </a>
-                    </div>
-                </nav>
+                <a href="/calculator/capital-gains-calculator/" class="calculator-card">
+                    <span class="calc-badge badge-tax">Capital Gains</span>
+                    <span class="calc-icon">&#128200;</span>
+                    <h4 class="calc-title">Capital Gains Calculator</h4>
+                    <p class="calc-description">Calculate LTCG and STCG tax on property, stocks, and mutual funds. Plan tax-saving investments.</p>
+                    <ul class="calc-features">
+                        <li>Property, stocks, MF covered</li>
+                        <li>Indexation benefit</li>
+                        <li>Tax exemptions (54, 54EC)</li>
+                    </ul>
+                    <span class="calc-cta">Calculate Gains &rarr;</span>
+                </a>
             </div>
         </div>
-    </header>
 
-    <nav class="breadcrumb" aria-label="Breadcrumb">
-        <div class="container">
-            <a href="/">Home</a> / <span>Financial Calculators</span>
-        </div>
-    </nav>
+        <div class="category-section">
+            <div class="category-header">
+                <span class="category-icon">&#127974;</span>
+                <div class="category-info">
+                    <h3>Loan Calculators</h3>
+                    <p>Calculate EMI, eligibility, and loan planning</p>
+                </div>
+            </div>
 
-    <section class="hero">
-        <div class="container">
-            <h2>🧮 Free Financial Calculators India</h2>
-            <p>Accurate Tax, Loan, Investment & Retirement Planning Tools</p>
-            <p style="font-size: 1em; margin-top: 10px; opacity: 0.9;">By Expert Chartered Accountants • 100% Free • Instant Results</p>
-            <div class="hero-trust">
-                <div class="trust-item">⭐ 4.9/5 Rating</div>
-                <div class="trust-item">✓ 50,000+ Users</div>
-                <div class="trust-item">🔒 100% Secure</div>
+            <div class="calculators-grid">
+                <a href="/calculator/home-loan-eligibility-calculator/" class="calculator-card">
+                    <span class="calc-badge badge-loan">Home Loan</span>
+                    <span class="calc-icon">&#127968;</span>
+                    <h4 class="calc-title">Home Loan Eligibility</h4>
+                    <p class="calc-description">Calculate maximum home loan amount based on income, EMI capacity, and interest rates.</p>
+                    <ul class="calc-features">
+                        <li>Income-based calculation</li>
+                        <li>EMI breakdown</li>
+                        <li>Interest comparison</li>
+                    </ul>
+                    <span class="calc-cta">Check Eligibility &rarr;</span>
+                </a>
+
+                <a href="/calculator/emi-calculator/" class="calculator-card">
+                    <span class="calc-badge badge-loan">EMI</span>
+                    <span class="calc-icon">&#128179;</span>
+                    <h4 class="calc-title">EMI Calculator</h4>
+                    <p class="calc-description">Calculate monthly EMI for home loan, personal loan, car loan. See principal vs interest breakdown.</p>
+                    <ul class="calc-features">
+                        <li>All loan types</li>
+                        <li>Amortization schedule</li>
+                        <li>Total interest payable</li>
+                    </ul>
+                    <span class="calc-cta">Calculate EMI &rarr;</span>
+                </a>
+
+                <a href="/calculator/loan-comparison/" class="calculator-card">
+                    <span class="calc-badge badge-loan">Comparison</span>
+                    <span class="calc-icon">&#9878;&#65039;</span>
+                    <h4 class="calc-title">Loan Comparison</h4>
+                    <p class="calc-description">Compare multiple loan offers from different banks. Find the best interest rate and terms.</p>
+                    <ul class="calc-features">
+                        <li>Multi-bank comparison</li>
+                        <li>Processing fee included</li>
+                        <li>Total cost analysis</li>
+                    </ul>
+                    <span class="calc-cta">Compare Loans &rarr;</span>
+                </a>
             </div>
         </div>
-    </section>
 
-    <div class="stats-bar">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-item">
-                    <span class="stat-number">18+</span>
-                    <span class="stat-label">Free Calculators</span>
+        <div class="category-section">
+            <div class="category-header">
+                <span class="category-icon">&#128202;</span>
+                <div class="category-info">
+                    <h3>Investment Calculators</h3>
+                    <p>Plan investments and track returns</p>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">50K+</span>
-                    <span class="stat-label">Monthly Users</span>
+            </div>
+
+            <div class="calculators-grid">
+                <a href="/calculator/sip-calculator/" class="calculator-card">
+                    <span class="calc-badge badge-investment">SIP</span>
+                    <span class="calc-icon">&#128200;</span>
+                    <h4 class="calc-title">SIP Calculator</h4>
+                    <p class="calc-description">Calculate returns on Systematic Investment Plan. See wealth creation through regular investing.</p>
+                    <ul class="calc-features">
+                        <li>Monthly/quarterly SIP</li>
+                        <li>Step-up SIP option</li>
+                        <li>Goal-based planning</li>
+                    </ul>
+                    <span class="calc-cta">Calculate SIP &rarr;</span>
+                </a>
+
+                <a href="/calculator/fd-calculator/" class="calculator-card">
+                    <span class="calc-badge badge-investment">Fixed Deposit</span>
+                    <span class="calc-icon">&#127974;</span>
+                    <h4 class="calc-title">FD Calculator</h4>
+                    <p class="calc-description">Calculate fixed deposit returns and maturity amount. Compare bank FD rates and returns.</p>
+                    <ul class="calc-features">
+                        <li>Simple &amp; compound interest</li>
+                        <li>Senior citizen rates</li>
+                        <li>Post-tax returns</li>
+                    </ul>
+                    <span class="calc-cta">Calculate FD &rarr;</span>
+                </a>
+
+                <a href="/calculator/ppf-calculator/" class="calculator-card">
+                    <span class="calc-badge badge-investment">PPF</span>
+                    <span class="calc-icon">&#128176;</span>
+                    <h4 class="calc-title">PPF Calculator</h4>
+                    <p class="calc-description">Calculate Public Provident Fund returns. Plan tax-free investments with PPF maturity calculator.</p>
+                    <ul class="calc-features">
+                        <li>15-year investment planning</li>
+                        <li>Tax-free returns</li>
+                        <li>Extension calculations</li>
+                    </ul>
+                    <span class="calc-cta">Calculate PPF &rarr;</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <div class="category-header">
+                <span class="category-icon">&#127919;</span>
+                <div class="category-info">
+                    <h3>Planning Calculators</h3>
+                    <p>Long-term financial planning tools</p>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">100%</span>
-                    <span class="stat-label">Accurate Results</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">10+</span>
-                    <span class="stat-label">Years Experience</span>
-                </div>
+            </div>
+
+            <div class="calculators-grid">
+                <a href="/calculator/retirement-planning-calculator/" class="calculator-card">
+                    <span class="calc-badge badge-planning">Retirement</span>
+                    <span class="calc-icon">&#127958;&#65039;</span>
+                    <h4 class="calc-title">Retirement Planning</h4>
+                    <p class="calc-description">Calculate retirement corpus needed and monthly savings required. Plan your golden years.</p>
+                    <ul class="calc-features">
+                        <li>Inflation-adjusted planning</li>
+                        <li>Post-retirement income</li>
+                        <li>SIP requirements</li>
+                    </ul>
+                    <span class="calc-cta">Plan Retirement &rarr;</span>
+                </a>
+
+                <a href="/calculator/goal-planning/" class="calculator-card">
+                    <span class="calc-badge badge-planning">Goal Planning</span>
+                    <span class="calc-icon">&#127919;</span>
+                    <h4 class="calc-title">Goal Planning Calculator</h4>
+                    <p class="calc-description">Plan for child education, marriage, house purchase. Calculate monthly savings needed.</p>
+                    <ul class="calc-features">
+                        <li>Multiple goals</li>
+                        <li>Time-based planning</li>
+                        <li>Investment strategy</li>
+                    </ul>
+                    <span class="calc-cta">Plan Goals &rarr;</span>
+                </a>
+
+                <a href="/calculator/fire-calculator/" class="calculator-card">
+                    <span class="calc-badge badge-planning">FIRE</span>
+                    <span class="calc-icon">&#128293;</span>
+                    <h4 class="calc-title">FIRE Calculator</h4>
+                    <p class="calc-description">Financial Independence Retire Early calculator. Find your FI number and early retirement plan.</p>
+                    <ul class="calc-features">
+                        <li>FI number calculation</li>
+                        <li>25x rule application</li>
+                        <li>Withdrawal strategy</li>
+                    </ul>
+                    <span class="calc-cta">Calculate FIRE &rarr;</span>
+                </a>
             </div>
         </div>
     </div>
+</section>
 
-    <!-- Trust Badges -->
-    <section class="trust-section">
-        <div class="container">
-            <h3 style="color: var(--primary-blue); font-size: 1.3em; margin-bottom: 10px;">Why Trust Our Calculators?</h3>
-            <div class="trust-badges">
-                <div class="badge-item">
-                    <span class="badge-icon">🎓</span>
-                    <span class="badge-text">CA Certified</span>
-                </div>
-                <div class="badge-item">
-                    <span class="badge-icon">⚡</span>
-                    <span class="badge-text">Instant Results</span>
-                </div>
-                <div class="badge-item">
-                    <span class="badge-icon">🔒</span>
-                    <span class="badge-text">Privacy Protected</span>
-                </div>
-                <div class="badge-item">
-                    <span class="badge-icon">📱</span>
-                    <span class="badge-text">Mobile Friendly</span>
-                </div>
-                <div class="badge-item">
-                    <span class="badge-icon">💯</span>
-                    <span class="badge-text">Always Free</span>
-                </div>
-            </div>
+<section class="features-section" aria-labelledby="why-heading">
+    <div class="container">
+        <div class="section-title">
+            <h2 id="why-heading">Why Use Our Calculators?</h2>
+            <p class="section-subtitle">Practical tools designed with input from expert Chartered Accountants</p>
         </div>
-    </section>
 
-    <!-- Tax Calculators -->
-    <section class="calculators-section">
-        <div class="container">
-            <div class="category-section">
-                <div class="category-header">
-                    <span class="category-icon">💰</span>
-                    <div class="category-info">
-                        <h3>Tax Calculators</h3>
-                        <p>Calculate taxes, exemptions, and savings</p>
-                    </div>
-                </div>
-
-                <div class="calculators-grid">
-                    <a href="/calculator/HRA/" class="calculator-card">
-                        <span class="calc-badge badge-tax">Tax Exemption</span>
-                        <span class="calc-icon">🏠</span>
-                        <h4 class="calc-title">HRA Calculator</h4>
-                        <p class="calc-description">Calculate House Rent Allowance tax exemption as per Section 10(13A). Find out how much HRA is tax-free.</p>
-                        <ul class="calc-features">
-                            <li>Metro vs Non-Metro calculation</li>
-                            <li>Instant tax savings</li>
-                            <li>Detailed breakdown</li>
-                        </ul>
-                        <span class="calc-cta">Calculate HRA →</span>
-                    </a>
-
-                    <a href="/calculator/income-tax-calculator/" class="calculator-card">
-                        <span class="calc-badge badge-tax">Income Tax</span>
-                        <span class="calc-icon">📊</span>
-                        <h4 class="calc-title">Income Tax Calculator</h4>
-                        <p class="calc-description">Calculate income tax liability. Compare old vs new tax regime and save maximum tax.</p>
-                        <ul class="calc-features">
-                            <li>Old vs New regime comparison</li>
-                            <li>All deductions covered</li>
-                            <li>Take-home salary</li>
-                        </ul>
-                        <span class="calc-cta">Calculate Tax →</span>
-                    </a>
-
-                    <a href="/calculator/capital-gains-calculator/" class="calculator-card">
-                        <span class="calc-badge badge-tax">Capital Gains</span>
-                        <span class="calc-icon">📈</span>
-                        <h4 class="calc-title">Capital Gains Calculator</h4>
-                        <p class="calc-description">Calculate LTCG and STCG tax on property, stocks, and mutual funds. Plan tax-saving investments.</p>
-                        <ul class="calc-features">
-                            <li>Property, stocks, MF covered</li>
-                            <li>Indexation benefit</li>
-                            <li>Tax exemptions (54, 54EC)</li>
-                        </ul>
-                        <span class="calc-cta">Calculate Gains →</span>
-                    </a>
-                </div>
+        <div class="features-grid">
+            <div class="feature-item">
+                <span class="feature-icon">&#127919;</span>
+                <h4 class="feature-title">Verified Formulas</h4>
+                <p class="feature-desc">Built and reviewed by qualified CAs. Uses current tax laws and formulas for precise calculations.</p>
             </div>
 
-            <!-- Loan Calculators -->
-            <div class="category-section">
-                <div class="category-header">
-                    <span class="category-icon">🏦</span>
-                    <div class="category-info">
-                        <h3>Loan Calculators</h3>
-                        <p>Calculate EMI, eligibility, and loan planning</p>
-                    </div>
-                </div>
-
-                <div class="calculators-grid">
-                    <a href="/calculator/home-loan-eligibility-calculator/" class="calculator-card">
-                        <span class="calc-badge badge-loan">Home Loan</span>
-                        <span class="calc-icon">🏡</span>
-                        <h4 class="calc-title">Home Loan Eligibility</h4>
-                        <p class="calc-description">Calculate maximum home loan amount based on income, EMI capacity, and interest rates.</p>
-                        <ul class="calc-features">
-                            <li>Income-based calculation</li>
-                            <li>EMI breakdown</li>
-                            <li>Interest comparison</li>
-                        </ul>
-                        <span class="calc-cta">Check Eligibility →</span>
-                    </a>
-
-                    <a href="/calculator/emi-calculator/" class="calculator-card">
-                        <span class="calc-badge badge-loan">EMI</span>
-                        <span class="calc-icon">💳</span>
-                        <h4 class="calc-title">EMI Calculator</h4>
-                        <p class="calc-description">Calculate monthly EMI for home loan, personal loan, car loan. See principal vs interest breakdown.</p>
-                        <ul class="calc-features">
-                            <li>All loan types</li>
-                            <li>Amortization schedule</li>
-                            <li>Total interest payable</li>
-                        </ul>
-                        <span class="calc-cta">Calculate EMI →</span>
-                    </a>
-
-                    <a href="/calculator/loan-comparison/" class="calculator-card">
-                        <span class="calc-badge badge-loan">Comparison</span>
-                        <span class="calc-icon">⚖️</span>
-                        <h4 class="calc-title">Loan Comparison</h4>
-                        <p class="calc-description">Compare multiple loan offers from different banks. Find the best interest rate and terms.</p>
-                        <ul class="calc-features">
-                            <li>Multi-bank comparison</li>
-                            <li>Processing fee included</li>
-                            <li>Total cost analysis</li>
-                        </ul>
-                        <span class="calc-cta">Compare Loans →</span>
-                    </a>
-                </div>
+            <div class="feature-item">
+                <span class="feature-icon">&#9889;</span>
+                <h4 class="feature-title">Instant Results</h4>
+                <p class="feature-desc">Get immediate calculations with detailed breakdowns. No waiting, no delays.</p>
             </div>
 
-            <!-- Investment Calculators -->
-            <div class="category-section">
-                <div class="category-header">
-                    <span class="category-icon">📊</span>
-                    <div class="category-info">
-                        <h3>Investment Calculators</h3>
-                        <p>Plan investments and track returns</p>
-                    </div>
-                </div>
-
-                <div class="calculators-grid">
-                    <a href="/calculator/sip-calculator/" class="calculator-card">
-                        <span class="calc-badge badge-investment">SIP</span>
-                        <span class="calc-icon">📈</span>
-                        <h4 class="calc-title">SIP Calculator</h4>
-                        <p class="calc-description">Calculate returns on Systematic Investment Plan. See wealth creation through regular investing.</p>
-                        <ul class="calc-features">
-                            <li>Monthly/quarterly SIP</li>
-                            <li>Step-up SIP option</li>
-                            <li>Goal-based planning</li>
-                        </ul>
-                        <span class="calc-cta">Calculate SIP →</span>
-                    </a>
-
-                    <a href="/calculator/fd-calculator/" class="calculator-card">
-                        <span class="calc-badge badge-investment">Fixed Deposit</span>
-                        <span class="calc-icon">🏦</span>
-                        <h4 class="calc-title">FD Calculator</h4>
-                        <p class="calc-description">Calculate fixed deposit returns and maturity amount. Compare bank FD rates and returns.</p>
-                        <ul class="calc-features">
-                            <li>Simple & compound interest</li>
-                            <li>Senior citizen rates</li>
-                            <li>Post-tax returns</li>
-                        </ul>
-                        <span class="calc-cta">Calculate FD →</span>
-                    </a>
-
-                    <a href="/calculator/ppf-calculator/" class="calculator-card">
-                        <span class="calc-badge badge-investment">PPF</span>
-                        <span class="calc-icon">💰</span>
-                        <h4 class="calc-title">PPF Calculator</h4>
-                        <p class="calc-description">Calculate Public Provident Fund returns. Plan tax-free investments with PPF maturity calculator.</p>
-                        <ul class="calc-features">
-                            <li>15-year investment planning</li>
-                            <li>Tax-free returns</li>
-                            <li>Extension calculations</li>
-                        </ul>
-                        <span class="calc-cta">Calculate PPF →</span>
-                    </a>
-                </div>
+            <div class="feature-item">
+                <span class="feature-icon">&#128274;</span>
+                <h4 class="feature-title">Privacy Protected</h4>
+                <p class="feature-desc">No data stored. All calculations happen in your browser. Your information stays private.</p>
             </div>
 
-            <!-- Planning Calculators -->
-            <div class="category-section">
-                <div class="category-header">
-                    <span class="category-icon">🎯</span>
-                    <div class="category-info">
-                        <h3>Planning Calculators</h3>
-                        <p>Long-term financial planning tools</p>
-                    </div>
-                </div>
-
-                <div class="calculators-grid">
-                    <a href="/calculator/retirement-planning-calculator/" class="calculator-card">
-                        <span class="calc-badge badge-planning">Retirement</span>
-                        <span class="calc-icon">🏖️</span>
-                        <h4 class="calc-title">Retirement Planning</h4>
-                        <p class="calc-description">Calculate retirement corpus needed and monthly savings required. Plan your golden years.</p>
-                        <ul class="calc-features">
-                            <li>Inflation-adjusted planning</li>
-                            <li>Post-retirement income</li>
-                            <li>SIP requirements</li>
-                        </ul>
-                        <span class="calc-cta">Plan Retirement →</span>
-                    </a>
-
-                    <a href="/calculator/goal-planning/" class="calculator-card">
-                        <span class="calc-badge badge-planning">Goal Planning</span>
-                        <span class="calc-icon">🎯</span>
-                        <h4 class="calc-title">Goal Planning Calculator</h4>
-                        <p class="calc-description">Plan for child education, marriage, house purchase. Calculate monthly savings needed.</p>
-                        <ul class="calc-features">
-                            <li>Multiple goals</li>
-                            <li>Time-based planning</li>
-                            <li>Investment strategy</li>
-                        </ul>
-                        <span class="calc-cta">Plan Goals →</span>
-                    </a>
-
-                    <a href="/calculator/fire-calculator/" class="calculator-card">
-                        <span class="calc-badge badge-planning">FIRE</span>
-                        <span class="calc-icon">🔥</span>
-                        <h4 class="calc-title">FIRE Calculator</h4>
-                        <p class="calc-description">Financial Independence Retire Early calculator. Find your FI number and early retirement plan.</p>
-                        <ul class="calc-features">
-                            <li>FI number calculation</li>
-                            <li>25x rule application</li>
-                            <li>Withdrawal strategy</li>
-                        </ul>
-                        <span class="calc-cta">Calculate FIRE →</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Features Section -->
-    <section class="features-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Why Use Our Calculators?</h2>
-                <p class="section-subtitle">Professional tools designed by expert Chartered Accountants</p>
+            <div class="feature-item">
+                <span class="feature-icon">&#128241;</span>
+                <h4 class="feature-title">Mobile Friendly</h4>
+                <p class="feature-desc">Works perfectly on all devices. Calculate on-the-go from anywhere.</p>
             </div>
 
-            <div class="features-grid">
-                <div class="feature-item">
-                    <span class="feature-icon">🎯</span>
-                    <h4 class="feature-title">100% Accurate</h4>
-                    <p class="feature-desc">Built and verified by qualified CAs. Uses latest tax laws and formulas for precise calculations.</p>
-                </div>
-
-                <div class="feature-item">
-                    <span class="feature-icon">⚡</span>
-                    <h4 class="feature-title">Instant Results</h4>
-                    <p class="feature-desc">Get immediate calculations with detailed breakdowns. No waiting, no delays.</p>
-                </div>
-
-                <div class="feature-item">
-                    <span class="feature-icon">🔒</span>
-                    <h4 class="feature-title">Privacy Protected</h4>
-                    <p class="feature-desc">No data stored. All calculations happen in your browser. Your information stays private.</p>
-                </div>
-
-                <div class="feature-item">
-                    <span class="feature-icon">📱</span>
-                    <h4 class="feature-title">Mobile Friendly</h4>
-                    <p class="feature-desc">Works perfectly on all devices. Calculate on-the-go from anywhere.</p>
-                </div>
-
-                <div class="feature-item">
-                    <span class="feature-icon">💰</span>
-                    <h4 class="feature-title">Always Free</h4>
-                    <p class="feature-desc">No registration required. No hidden charges. Completely free to use forever.</p>
-                </div>
-
-                <div class="feature-item">
-                    <span class="feature-icon">🎓</span>
-                    <h4 class="feature-title">Educational</h4>
-                    <p class="feature-desc">Learn while you calculate. Detailed explanations and examples provided.</p>
-                </div>
+            <div class="feature-item">
+                <span class="feature-icon">&#128176;</span>
+                <h4 class="feature-title">Always Free</h4>
+                <p class="feature-desc">No registration required. No hidden charges. Completely free to use.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- CTA Section -->
-    <div class="cta-section">
-        <div class="container">
-            <h2>Need Expert Financial Guidance?</h2>
-            <p>Beyond calculators? Get professional help from our expert Chartered Accountants</p>
-            <p style="font-size: 1em; margin-bottom: 30px;">Tax Planning • Investment Advisory • ITR Filing • Business Consulting</p>
-            <div class="cta-buttons">
-                <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
-                <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20financial%20advice" class="btn-primary" style="background: #25D366;">💬 WhatsApp Us</a>
-                <a href="/services/" class="btn-primary" style="background: transparent; border: 2px solid white;">View All Services</a>
+            <div class="feature-item">
+                <span class="feature-icon">&#127891;</span>
+                <h4 class="feature-title">Educational</h4>
+                <p class="feature-desc">Learn while you calculate. Detailed explanations and examples provided.</p>
             </div>
         </div>
     </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-section">
-                    <h3>Sidhi & Associates</h3>
-                    <p>Professional Chartered Accountants providing expert financial calculators and services.</p>
-                    <p style="margin-top: 15px; font-weight: 600;">ICAI Registered | 10+ Years Experience</p>
-                    <p style="margin-top: 10px;">Making financial planning simple and accessible</p>
-                </div>
+<div class="cta-section">
+    <div class="container">
+        <h2>Need Expert Financial Guidance?</h2>
+        <p>Want help beyond a calculator? Talk to our Chartered Accountants.</p>
+        <p style="font-size: 1em; margin-bottom: 30px;">Tax Planning &bull; Investment Advisory &bull; ITR Filing &bull; Business Consulting</p>
+        <div class="cta-buttons">
+            <a href="tel:+917889257045" class="btn-primary">&#128222; Call: +91 78892 57045</a>
+            <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20financial%20advice" class="btn-primary" style="background: #25D366;">&#128172; WhatsApp Us</a>
+            <a href="/services/" class="btn-primary" style="background: transparent; border: 2px solid white;">View All Services</a>
+        </div>
+    </div>
+</div>
 
-                <div class="footer-section">
-                    <h3>Tax Calculators</h3>
-                    <ul>
-                        <li><a href="/calculator/HRA/">HRA Calculator</a></li>
-                        <li><a href="/calculator/income-tax-calculator/">Income Tax Calculator</a></li>
-                        <li><a href="/calculator/capital-gains-calculator/">Capital Gains</a></li>
-                        <li><a href="/calculator/advance-tax-calculator/">Advance Tax</a></li>
-                        <li><a href="/calculator/tds-calculator/">TDS Calculator</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Loan & Investment</h3>
-                    <ul>
-                        <li><a href="/calculator/home-loan-eligibility-calculator/">Home Loan Eligibility</a></li>
-                        <li><a href="/calculator/emi-calculator/">EMI Calculator</a></li>
-                        <li><a href="/calculator/sip-calculator/">SIP Calculator</a></li>
-                        <li><a href="/calculator/fd-calculator/">FD Calculator</a></li>
-                        <li><a href="/calculator/ppf-calculator/">PPF Calculator</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Planning Tools</h3>
-                    <ul>
-                        <li><a href="/calculator/retirement-planning-calculator/">Retirement Planning</a></li>
-                        <li><a href="/calculator/goal-planning/">Goal Planning</a></li>
-                        <li><a href="/calculator/fire-calculator/">FIRE Calculator</a></li>
-                        <li><a href="/services/">Our Services</a></li>
-                        <li><a href="/services/income-tax-return-ITR/">ITR Filing</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h3>Contact Us</h3>
-                    <p>📞 <a href="tel:+917889257045">+91 78892 57045</a></p>
-                    <p>✉️ <a href="mailto:siddhiandassociatess@gmail.com">siddhiandassociatess@gmail.com</a></p>
-                    <p>💬 <a href="https://wa.me/917889257045" target="_blank">WhatsApp</a></p>
-                    <p style="margin-top: 15px;">
-                        <a href="/">Home</a> | 
-                        <a href="/services/">Services</a> | 
-                        <a href="/about/">About</a>
-                    </p>
-                </div>
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Sidhi &amp; Associates</h3>
+                <p>An Accountants firm staffed by ICAI-registered Chartered Accountants, providing expert financial calculators and CA services across India.</p>
+                <p style="margin-top: 15px; font-weight: 600;">ICAI Registered CAs | 13+ Years Experience</p>
+                <p style="margin-top: 10px;">Making financial planning simple and accessible</p>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
-                <p style="margin-top: 10px;">Professional Financial Calculators | Free Tools by Expert CAs</p>
-                <p style="margin-top: 10px; font-size: 0.9em;">
-                    <a href="/sitemap.xml" style="color: var(--white);">Sitemap</a>
+            <div class="footer-section">
+                <h3>Tax Calculators</h3>
+                <ul>
+                    <li><a href="/calculator/HRA/">HRA Calculator</a></li>
+                    <li><a href="/calculator/income-tax-calculator/">Income Tax Calculator</a></li>
+                    <li><a href="/calculator/capital-gains-calculator/">Capital Gains</a></li>
+                    <li><a href="/calculator/advance-tax-calculator/">Advance Tax</a></li>
+                    <li><a href="/calculator/tds-calculator/">TDS Calculator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Loan &amp; Investment</h3>
+                <ul>
+                    <li><a href="/calculator/home-loan-eligibility-calculator/">Home Loan Eligibility</a></li>
+                    <li><a href="/calculator/emi-calculator/">EMI Calculator</a></li>
+                    <li><a href="/calculator/sip-calculator/">SIP Calculator</a></li>
+                    <li><a href="/calculator/fd-calculator/">FD Calculator</a></li>
+                    <li><a href="/calculator/ppf-calculator/">PPF Calculator</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Planning Tools</h3>
+                <ul>
+                    <li><a href="/calculator/retirement-planning-calculator/">Retirement Planning</a></li>
+                    <li><a href="/calculator/goal-planning/">Goal Planning</a></li>
+                    <li><a href="/calculator/fire-calculator/">FIRE Calculator</a></li>
+                    <li><a href="/services/">Our Services</a></li>
+                    <li><a href="/services/income-tax-return-ITR/">ITR Filing</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>&#128222; <a href="tel:+917889257045">+91 78892 57045</a></p>
+                <p>&#9993;&#65039; <a href="mailto:siddhiandassociatess@gmail.com">siddhiandassociatess@gmail.com</a></p>
+                <p>&#128172; <a href="https://wa.me/917889257045" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+                <p style="margin-top: 15px;">
+                    <a href="/">Home</a> |
+                    <a href="/services/">Services</a> |
+                    <a href="/about/">About</a>
                 </p>
             </div>
         </div>
-    </footer>
 
-    <!-- Floating Buttons -->
-    <div class="floating-buttons">
-        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20financial%20planning" 
-           target="_blank" 
-           rel="noopener"
-           class="float-btn whatsapp-btn" 
-           data-tooltip="Chat on WhatsApp"
-           aria-label="WhatsApp">
-            💬
-        </a>
-        <a href="tel:+917889257045" 
-           class="float-btn call-btn" 
-           data-tooltip="Call Now"
-           aria-label="Call">
-            📞
-        </a>
+        <div class="footer-bottom">
+            <p>&copy; <span class="auto-year"></span> Sidhi &amp; Associates. All Rights Reserved.</p>
+            <p style="margin-top: 10px;">Free Financial Calculators | Built by Expert Chartered Accountants</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">
+                <a href="/sitemap.xml" style="color: var(--white);">Sitemap</a>
+            </p>
+        </div>
     </div>
+</footer>
 
-    <script>
-        // Menu Toggle
-        function toggleMenu() {
-            const nav = document.getElementById('mainNav');
-            const toggle = document.querySelector('.menu-toggle');
-            nav.classList.toggle('active');
-            toggle.classList.toggle('active');
-            document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
-        }
+<div class="floating-buttons">
+    <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20financial%20planning"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="float-btn whatsapp-btn"
+       data-tooltip="Chat on WhatsApp"
+       aria-label="WhatsApp">
+        &#128172;
+    </a>
+    <a href="tel:+917889257045"
+       class="float-btn call-btn"
+       data-tooltip="Call Now"
+       aria-label="Call">
+        &#128222;
+    </a>
+</div>
 
-        // Close menu when clicking nav link
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                const nav = document.getElementById('mainNav');
-                const toggle = document.querySelector('.menu-toggle');
-                nav.classList.remove('active');
-                toggle.classList.remove('active');
-                document.body.style.overflow = '';
-            });
-        });
+<script>
+document.querySelectorAll('.auto-year').forEach(el => el.textContent = new Date().getFullYear());
 
-        // Sticky Header Effect
-        let lastScroll = 0;
-        const header = document.getElementById('mainHeader');
-        
-        window.addEventListener('scroll', () => {
-            const currentScroll = window.pageYOffset;
-            
-            if (currentScroll > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-            
-            lastScroll = currentScroll;
-        });
-
-        // Animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Animate calculator cards
-        document.querySelectorAll('.calculator-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(card);
-        });
-
-        // Animate feature items
-        document.querySelectorAll('.feature-item').forEach((item, index) => {
-            item.style.opacity = '0';
-            item.style.transform = 'translateY(30px)';
-            item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
-            observer.observe(item);
-        });
-
-        // Track Calculator Clicks for Analytics
-        document.querySelectorAll('.calculator-card').forEach(card => {
-            card.addEventListener('click', function(e) {
-                const calculatorName = this.querySelector('.calc-title').textContent;
-                
-                // Google Analytics (if available)
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'calculator_click', {
-                        'event_category': 'Calculators',
-                        'event_label': calculatorName,
-                        'value': 1
-                    });
-                }
-                
-                // Facebook Pixel (if available)
-                if (typeof fbq !== 'undefined') {
-                    fbq('track', 'ViewContent', {
-                        content_name: calculatorName,
-                        content_category: 'Calculator'
-                    });
-                }
-            });
-        });
-
-        // Track CTA Button Clicks
-        document.querySelectorAll('.cta-button, .float-btn, .btn-primary').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                const btnText = this.textContent.trim() || this.getAttribute('data-tooltip');
-                
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'cta_click', {
-                        'event_category': 'Lead Generation',
-                        'event_label': btnText,
-                        'value': 1
-                    });
-                }
-            });
-        });
-
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // WhatsApp Button Pulse Animation Enhancement
-        const whatsappBtn = document.querySelector('.whatsapp-btn');
-        if (whatsappBtn) {
-            setInterval(() => {
-                whatsappBtn.style.transform = 'scale(1.15)';
-                setTimeout(() => {
-                    whatsappBtn.style.transform = 'scale(1)';
-                }, 200);
-            }, 3000);
-        }
-    </script>
-
-    <!-- Schema Markup for Local Business -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Sidhi & Associates",
-      "image": "https://sidhiandassociates.com/sidhi.png",
-      "telephone": "+917889257045",
-      "email": "siddhiandassociatess@gmail.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "IN"
-      },
-      "priceRange": "₹₹",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      }
+// Header hamburger / mobile drawer (same behaviour as home page)
+const hamburger = document.getElementById('hamburger'), mobileDrawer = document.getElementById('mobileDrawer');
+if (hamburger && mobileDrawer) {
+  hamburger.addEventListener('click', function(e){
+    e.stopPropagation();
+    const o = mobileDrawer.classList.toggle('open');
+    hamburger.classList.toggle('open', o);
+    hamburger.setAttribute('aria-expanded', String(o));
+  });
+  mobileDrawer.querySelectorAll('a').forEach(a => a.addEventListener('click', function(){
+    mobileDrawer.classList.remove('open');
+    hamburger.classList.remove('open');
+    hamburger.setAttribute('aria-expanded','false');
+  }));
+  document.addEventListener('click', function(e){
+    if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+      mobileDrawer.classList.remove('open');
+      hamburger.classList.remove('open');
+      hamburger.setAttribute('aria-expanded','false');
     }
-    </script>
+  });
+}
+
+// Smooth scroll for in-page anchors
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+});
+
+// Animation on scroll
+const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+        }
+    });
+}, observerOptions);
+
+document.querySelectorAll('.calculator-card').forEach(card => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(30px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    observer.observe(card);
+});
+
+document.querySelectorAll('.feature-item').forEach((item, index) => {
+    item.style.opacity = '0';
+    item.style.transform = 'translateY(30px)';
+    item.style.transition = `opacity 0.6s ease ${index * 0.1}s, transform 0.6s ease ${index * 0.1}s`;
+    observer.observe(item);
+});
+
+// Analytics: calculator + CTA clicks
+document.querySelectorAll('.calculator-card').forEach(card => {
+    card.addEventListener('click', function() {
+        const calculatorName = this.querySelector('.calc-title').textContent;
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'calculator_click', { 'event_category': 'Calculators', 'event_label': calculatorName, 'value': 1 });
+        }
+    });
+});
+
+document.querySelectorAll('.cta-button, .cta-btn, .float-btn, .btn-primary').forEach(btn => {
+    btn.addEventListener('click', function() {
+        const btnText = this.textContent.trim() || this.getAttribute('data-tooltip');
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'cta_click', { 'event_category': 'Lead Generation', 'event_label': btnText, 'value': 1 });
+        }
+    });
+});
+</script>
 </body>
 </html>
