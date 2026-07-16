@@ -183,6 +183,11 @@
             --success-green: #28a745;
         }
 
+        html, body {
+            overflow-x: hidden;
+            max-width: 100%;
+        }
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -224,13 +229,19 @@
             align-items: center;
             gap: 12px;
             text-decoration: none;
-            flex-shrink:0;
+            flex-shrink:1;
+            min-width:0;
         }
 
         .logo-img {
             width: 50px;
             height: 50px;
             object-fit: contain;
+            flex-shrink:0;
+        }
+
+        .logo-text {
+            min-width:0;
         }
 
         .logo-text h1 {
@@ -239,6 +250,9 @@
             font-weight: 700;
             margin: 0;
             line-height:1.15;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .logo-text p {
@@ -247,12 +261,16 @@
             margin: 0;
             letter-spacing:.05em;
             text-transform:uppercase;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .header-actions {
             display: flex;
             gap: 10px;
             align-items: center;
+            flex-shrink:0;
         }
 
         .cta-phone {
@@ -273,6 +291,7 @@
             font-size:.9em;
             transition: all 0.3s;
             white-space:nowrap;
+            flex-shrink:0;
         }
 
         .cta-btn:hover {
@@ -840,6 +859,22 @@
             .comparison-table th,
             .comparison-table td {
                 padding: 12px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .logo-text h1 {
+                font-size: 1.15em;
+            }
+            .cta-btn {
+                padding: 8px 14px;
+                font-size: 0.82em;
+            }
+        }
+
+        @media (max-width: 340px) {
+            .header-actions .cta-btn {
+                display: none;
             }
         }
     </style>
