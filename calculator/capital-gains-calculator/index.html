@@ -1336,6 +1336,8 @@
                     <h3>📅 Cost Inflation Index (CII)</h3>
                     <p><strong>Recent CII Values:</strong></p>
                     <ul>
+                        <li>FY 2026-27: 384 (notified 15-07-2026, up 2.3% from FY25-26)</li>
+                        <li>FY 2025-26: 376 (Notification No. 70/2025, dated 01-07-2025)</li>
                         <li>FY 2024-25: 363</li>
                         <li>FY 2023-24: 348</li>
                         <li>FY 2022-23: 331</li>
@@ -1789,7 +1791,9 @@
             '2006': 122, '2007': 129, '2008': 137, '2009': 148, '2010': 167,
             '2011': 184, '2012': 200, '2013': 220, '2014': 240, '2015': 254,
             '2016': 264, '2017': 272, '2018': 280, '2019': 289, '2020': 301,
-            '2021': 317, '2022': 331, '2023': 348, '2024': 363, '2025': 363
+            '2021': 317, '2022': 331, '2023': 348, '2024': 363,
+            '2025': 376, // FY 2025-26 (AY 2026-27) — notified by CBDT, Notification No. 70/2025 dated 01-07-2025
+            '2026': 384  // FY 2026-27 — notified by CBDT on 15-07-2026 (S.O. 3889(E)), applicable from 01-04-2026
         };
 
         function selectAsset(type) {
@@ -1924,7 +1928,7 @@
                 const saleYear = saleDate.getFullYear();
                 
                 const purchaseCII = CII[purchaseYear] || CII['2001'];
-                const saleCII = CII[saleYear] || CII['2024'];
+                const saleCII = CII[saleYear] || CII['2026'];
 
                 indexedPurchasePrice = (purchasePrice * saleCII) / purchaseCII;
                 if (improvementCost > 0) {
