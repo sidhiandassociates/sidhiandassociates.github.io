@@ -21,6 +21,14 @@
     <meta name="description" content="Free Capital Gains Tax Calculator. Calculate LTCG & STCG tax on property, stocks, mutual funds. Indexation benefit, exemptions u/s 54, 54EC, 54F included. By expert CAs.">
     <meta name="keywords" content="capital gains calculator, LTCG calculator, STCG calculator, property capital gains, stock capital gains, mutual fund capital gains, section 54, section 54EC, indexation calculator, capital gains tax India">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Free Capital Gains Tax (LTCG/STCG) Calculator by Sidhi & Associates, covering property, stocks and mutual funds with Cost Inflation Index (CII) indexation and Section 54/54EC/54F exemption logic. Provided by an Accountants firm offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="WebApplication,FAQPage">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -57,6 +65,24 @@
         "name": "Sidhi & Associates",
         "telephone": "+917889257045",
         "url": "https://sidhiandassociates.com/"
+      }
+    }
+    </script>
+
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/calculator/capital-gains-calculator/#webpage",
+      "url": "https://sidhiandassociates.com/calculator/capital-gains-calculator/",
+      "name": "Capital Gains Tax Calculator - LTCG & STCG Calculator India",
+      "description": "Free Capital Gains Tax Calculator. Calculate LTCG & STCG tax on property, stocks, mutual funds with indexation and exemptions.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-16",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer", "#featured-snippet"]
       }
     }
     </script>
@@ -155,45 +181,44 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+
+        header .container { position: relative; }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.55em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height: 1.1;
         }
 
-        .logo-text p {
-            font-size: 0.9em;
-            color: var(--primary-gold);
-            margin: 0;
-        }
-
-        .header-cta {
+        .header-actions {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             align-items: center;
         }
 
@@ -201,7 +226,131 @@
             color: var(--primary-blue);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .cta-btn {
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border-radius: 8px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: -4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--primary-blue);
+            margin: 4px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer {
+            display: none;
+            flex-direction: column;
+            background: #144272;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            right: -20px;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+            border-top: 2px solid var(--primary-gold);
+            overflow: hidden;
+        }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a {
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 14px 24px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            transition: background .2s, color .2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta {
+            background: var(--primary-gold);
+            color: var(--white) !important;
+            margin: 12px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 1.05em;
+            border-bottom: none !important;
+            width: calc(100% - 40px);
+        }
+
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 12px 0;
+        }
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s, background 0.3s;
+            font-size: 0.92em;
+            padding: 7px 14px;
+            border-radius: 6px;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-gold);
+            background: rgba(255,255,255,.08);
+        }
+
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
         }
 
         .breadcrumb {
@@ -344,6 +493,19 @@
         .input-with-icon input {
             padding-left: 35px;
         }
+
+        .form-error {
+            display: none;
+            background: #fdecea;
+            color: #b02a15;
+            border-left: 4px solid #d9432b;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 0.92em;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+        .form-error.visible { display: block; }
 
         .btn-calculate {
             width: 100%;
@@ -799,17 +961,10 @@
             text-decoration: none;
             box-shadow: 0 5px 20px rgba(0,0,0,0.3);
             transition: all 0.3s;
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
         }
 
         .float-btn:hover {
             transform: scale(1.15);
-            animation: none;
         }
 
         .whatsapp-btn { background: #25D366; }
@@ -833,14 +988,6 @@
                 font-size: 2.5em;
             }
 
-            .header-cta {
-                display: none;
-            }
-
-            .logo-text h1 {
-                font-size: 1.4em;
-            }
-
             .stats-grid {
                 grid-template-columns: 1fr;
             }
@@ -860,19 +1007,45 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="https://sidhiandassociates.com/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates CA" class="logo-img" width="60" height="60">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
+                    <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="cta-btn" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/services/">🔧 Services</a>
+                <a href="/why-us/">⭐ Why Us</a>
+                <a href="/faq/">❓ FAQs</a>
+                <a href="/blog/">📝 Blog</a>
+                <a href="/calculator/" class="active">🧮 Calculators</a>
+                <a href="/about/">ℹ️ About</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-links">
+                <a href="/services/">Services</a>
+                <a href="/why-us/">Why Us</a>
+                <a href="/faq/">FAQs</a>
+                <a href="/blog/">Blog</a>
+                <a href="/calculator/" class="active">Calculators</a>
+                <a href="/about/">About</a>
+            </div>
+        </div>
+    </nav>
 
     <div class="breadcrumb">
         <div class="container">
@@ -904,6 +1077,12 @@
         </div>
     </section>
 
+    <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
+            <strong style="color: var(--primary-gold);">Capital gains tax</strong> = Sale Price &minus; (Indexed Purchase Cost + Indexed Improvement Cost + Sale Expenses). Property held over 24 months qualifies as <strong style="color: var(--primary-gold);">LTCG at 20% with indexation</strong>; listed equity/mutual funds held over 12 months are taxed at <strong style="color: var(--primary-gold);">12.5% LTCG</strong> (first ₹1.25L exempt). Enter your details below to calculate instantly.
+        </p>
+    </div>
+
     <div class="main-content">
         <!-- Calculator Section -->
         <div class="calculator-section">
@@ -914,6 +1093,8 @@
                 <div class="asset-tab" onclick="selectAsset('equity')">📊 Equity/MF</div>
                 <div class="asset-tab" onclick="selectAsset('other')">💎 Other Assets</div>
             </div>
+
+            <div class="form-error" id="formError"></div>
 
             <form id="capitalGainsForm">
                 <div class="form-group">
@@ -1454,14 +1635,19 @@
     <div class="container">
         <div class="cta-section">
             <h2>💼 Expert Capital Gains Tax Planning & Filing</h2>
-            <p>Save thousands in taxes with expert CA guidance. We help you optimize exemptions, plan investments, and file accurate returns.</p>
+            <p>Get expert CA guidance to optimize exemptions, plan investments, and file accurate returns.</p>
             <p style="font-size: 1.1em; margin-top: 20px;"><strong>Services:</strong> Capital Gains Tax Planning | Section 54/54EC/54F Planning | Property Transaction Advisory | ITR Filing</p>
             <div class="cta-buttons">
                 <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=Hi%2C%20I%20need%20help%20with%20capital%20gains%20tax" class="btn-primary" style="background: #25D366;">💬 WhatsApp</a>
                 <a href="https://sidhiandassociates.com/services/capital-gains-tax/" class="btn-primary">📊 Capital Gains Service</a>
             </div>
-            <p style="margin-top: 25px; font-size: 1em;">✓ Free Consultation | ✓ Expert CAs | ✓ Maximum Tax Savings | ✓ Property Sale Specialist</p>
+            <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+            </div>
         </div>
     </div>
 
@@ -1516,7 +1702,7 @@
                 <div class="footer-section">
                     <h3>Popular Services</h3>
                     <ul>
-                        <li><a href="https://sidhiandassociates.com/services/income-tax-return-ITR/">ITR Filing - ₹499</a></li>
+                        <li><a href="https://sidhiandassociates.com/services/tax-planning-filing/">Income Tax Filing & Planning - From ₹1,000</a></li>
                         <li><a href="https://sidhiandassociates.com/services/capital-gains-tax/">Capital Gains Tax</a></li>
                         <li><a href="https://sidhiandassociates.com/services/tax-planning-filing/">Tax Planning</a></li>
                         <li><a href="https://sidhiandassociates.com/services/business-advisory/">Business Advisory</a></li>
@@ -1538,11 +1724,10 @@
                     <p>📞 <a href="tel:+917889257045" style="color: white; font-weight: bold;">+91 78892 57045</a></p>
                     <p>✉️ <a href="mailto:siddhiandassociatess@gmail.com" style="color: white;">siddhiandassociatess@gmail.com</a></p>
                     <p style="margin-top: 15px;">🕒 Mon-Sat: 9 AM - 6 PM</p>
-                    <p>⚡ Response: Under 2 Hours</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
                 <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Capital Gains Tax Specialists</p>
             </div>
         </div>
@@ -1568,6 +1753,33 @@
     </div>
 
     <script>
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         // Asset type selection
         let currentAsset = 'property';
 
@@ -1626,6 +1838,18 @@
         // Set today's date as default for sale date
         document.getElementById('saleDate').valueAsDate = new Date();
 
+        function showFormError(msg) {
+            var el = document.getElementById('formError');
+            el.textContent = msg;
+            el.classList.add('visible');
+        }
+
+        function clearFormError() {
+            var el = document.getElementById('formError');
+            el.textContent = '';
+            el.classList.remove('visible');
+        }
+
         // Capital Gains Calculator Logic
         document.getElementById('capitalGainsForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -1633,6 +1857,8 @@
         });
 
         function calculateCapitalGains() {
+            clearFormError();
+
             // Get input values
             const salePrice = parseFloat(document.getElementById('salePrice').value) || 0;
             const purchasePrice = parseFloat(document.getElementById('purchasePrice').value) || 0;
@@ -1645,12 +1871,12 @@
 
             // Validation
             if (!salePrice || !purchasePrice || !purchaseDate || !saleDate) {
-                alert('Please fill all required fields');
+                showFormError('Please fill all required fields.');
                 return;
             }
 
             if (purchaseDate >= saleDate) {
-                alert('Sale date must be after purchase date');
+                showFormError('Sale date must be after purchase date.');
                 return;
             }
 
@@ -1789,6 +2015,7 @@
         }
 
         function resetForm() {
+            clearFormError();
             document.getElementById('capitalGainsForm').reset();
             document.getElementById('saleDate').valueAsDate = new Date();
             document.getElementById('purchaseDate').value = '2010-04-01';
