@@ -34,6 +34,11 @@
     <!-- Geographic Meta Tags -->
     <meta name="geo.region" content="IN">
     <meta name="geo.placename" content="India">
+    <meta name="ICBM" content="20.5937,78.9629">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Sidhi & Associates offers Revised Income Tax Return filing (Section 139(5)) from Rs3,500 for salary returns and Rs5,000+ for business returns, to correct errors, claim missed deductions, and update income details. Processed in 3-5 working days by ICAI-registered Chartered Accountants. Related services: Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, TDS Filing & Returns from Rs2,000/quarter. Contact +91 78892 57045.">
+    <meta name="ai-entity-type" content="AccountingService,ProfessionalService,LocalBusiness">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -66,6 +71,11 @@
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "IN"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "5000"
         }
       },
       "areaServed": "IN",
@@ -86,24 +96,49 @@
         "itemListElement": [
           {
             "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Basic Revised Return"
-            },
+            "itemOffered": { "@type": "Service", "name": "Salary Income (ITR-1)" },
             "price": "3500",
             "priceCurrency": "INR"
           },
           {
             "@type": "Offer",
-            "itemOffered": {
-              "@type": "Service",
-              "name": "Business Revised Return"
-            },
+            "itemOffered": { "@type": "Service", "name": "Multiple Salaries (ITR-1/2)" },
+            "price": "4500",
+            "priceCurrency": "INR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Capital Gains (ITR-2)" },
+            "price": "5500",
+            "priceCurrency": "INR"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": { "@type": "Service", "name": "Business Income (ITR-3/4)" },
             "price": "5000",
             "priceCurrency": "INR"
           }
         ]
       }
+    }
+    </script>
+
+    <!-- HowTo schema (AEO — voice/AI assistants answering "how do I file a revised return") -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": "How to File a Revised Income Tax Return",
+      "description": "Steps to file a revised ITR under Section 139(5) with Sidhi & Associates.",
+      "totalTime": "P5D",
+      "step": [
+        {"@type": "HowToStep", "name": "Document Review", "text": "Share your original ITR acknowledgement, Form 26AS, and details of corrections needed."},
+        {"@type": "HowToStep", "name": "Error Analysis", "text": "Our CA experts identify errors, missed deductions, and refund opportunities."},
+        {"@type": "HowToStep", "name": "Revised Return Preparation", "text": "We prepare the accurate revised return with all corrections."},
+        {"@type": "HowToStep", "name": "Your Review & Approval", "text": "You review and approve the revised return before filing."},
+        {"@type": "HowToStep", "name": "E-Filing & Verification", "text": "We file the revised return online and complete e-verification."},
+        {"@type": "HowToStep", "name": "Acknowledgement", "text": "You receive the ITR-V acknowledgement and refund status tracking."}
+      ]
     }
     </script>
 
@@ -185,13 +220,21 @@
     }
     </script>
 
-    <!-- Google Analytics 4 -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
+    <!-- WebPage schema with Speakable (GEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/services/revised-return-filing/#webpage",
+      "url": "https://sidhiandassociates.com/services/revised-return-filing/",
+      "name": "Revised Income Tax Return Filing | Fix ITR Errors | Sidhi & Associates",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-17",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero h2", ".hero p", ".alert-info"]
+      }
+    }
     </script>
 
     <style>
@@ -210,7 +253,6 @@
             --white: #ffffff;
             --light-bg: #F9F7F4;
             --success-green: #28a745;
-            --urgent-red: #dc3545;
             --info-blue: #17a2b8;
         }
 
@@ -227,66 +269,50 @@
             padding: 0 20px;
         }
 
-        /* Urgency Banner */
-        .urgency-banner {
-            background: linear-gradient(135deg, var(--urgent-red), #c82333);
-            color: var(--white);
-            text-align: center;
-            padding: 12px 20px;
-            font-weight: 600;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.9; }
-        }
-
-        /* Header */
+        /* Header (matches site-wide reference header) */
         header {
             background: var(--white);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+
+        header .container { position: relative; }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.55em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height: 1.1;
         }
 
-        .logo-text p {
-            font-size: 0.9em;
-            color: var(--primary-gold);
-            margin: 0;
-        }
-
-        .header-cta {
+        .header-actions {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             align-items: center;
         }
 
@@ -294,27 +320,136 @@
             color: var(--primary-blue);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
 
         .cta-btn {
             background: var(--primary-gold);
             color: var(--white);
-            padding: 12px 25px;
+            padding: 10px 20px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.9em;
             transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border-radius: 8px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: -4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--primary-blue);
+            margin: 4px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer {
+            display: none;
+            flex-direction: column;
+            background: #144272;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            right: -20px;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+            border-top: 2px solid var(--primary-gold);
+            overflow: hidden;
+        }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a {
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 14px 24px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            transition: background .2s, color .2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta {
+            background: var(--primary-gold);
+            color: var(--white) !important;
+            margin: 12px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 1.05em;
+            border-bottom: none !important;
+            width: calc(100% - 40px);
         }
 
-        .cta-btn:hover {
-            background: var(--primary-blue);
-            transform: translateY(-2px);
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 12px 0;
+        }
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s, background 0.3s;
+            font-size: 0.92em;
+            padding: 7px 14px;
+            border-radius: 6px;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-gold);
+            background: rgba(255,255,255,.08);
+        }
+
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
         }
 
         /* Breadcrumb */
         .breadcrumb {
-            background: var(--light-bg);
+            background: var(--light-gold);
             padding: 15px 0;
         }
 
@@ -816,6 +951,20 @@
             background: var(--white);
         }
 
+        .price-pills {
+            margin-top: 30px;
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 0.95em;
+        }
+        .price-pills span {
+            background: rgba(255,255,255,.18);
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
         /* Floating Buttons */
         .floating-buttons {
             position: fixed;
@@ -916,14 +1065,6 @@
                 font-size: 1.5em;
             }
 
-            .header-cta {
-                display: none;
-            }
-
-            .logo-text h1 {
-                font-size: 1.4em;
-            }
-
             .hero-buttons {
                 flex-direction: column;
             }
@@ -943,29 +1084,50 @@
     </style>
 </head>
 <body>
-    <!-- Urgency Banner -->
-    <div class="urgency-banner">
-        ⏰ File Your Revised Return Before Deadline! Expert CA Assistance - Call Now
-    </div>
-
     <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates - CA Services" class="logo-img" width="60" height="60">
+                <a href="/" class="logo" aria-label="Sidhi &amp; Associates home">
+                    <img src="/sidhi.png" alt="Sidhi &amp; Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
-                        <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
+                        <h1>Sidhi &amp; Associates</h1>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
-                    <a href="#contact-form" class="cta-btn">Get Quote</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">&#128222; +91 78892 57045</a>
+                    <a href="#contact-form" class="cta-btn">Get a Quote</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/services/" class="active">&#128295; Services</a>
+                <a href="/why-us/">&#11088; Why Us</a>
+                <a href="/faq/">&#10067; FAQs</a>
+                <a href="/blog/">&#128221; Blog</a>
+                <a href="/calculator/">&#129518; Calculators</a>
+                <a href="/about/">&#8505;&#65039; About</a>
+                <a href="/portal.html">&#128203; Client Portal</a>
+                <a href="tel:+917889257045" class="drawer-cta">&#128222; Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20revised%20return%20filing" class="drawer-cta" target="_blank" rel="noopener noreferrer">&#128172; WhatsApp Us</a>
+            </nav>
         </div>
     </header>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-links">
+                <a href="/services/" class="active">Services</a>
+                <a href="/why-us/">Why Us</a>
+                <a href="/faq/">FAQs</a>
+                <a href="/blog/">Blog</a>
+                <a href="/calculator/">Calculators</a>
+                <a href="/about/">About</a>
+            </div>
+        </div>
+    </nav>
 
     <!-- Breadcrumb -->
     <div class="breadcrumb">
@@ -1100,7 +1262,7 @@
                 </div>
 
                 <div class="info-card">
-                    <div-icon">📊</div>
+                    <div class="card-icon">📊</div>
                     <h4>Accurate Tax Records</h4>
                     <p>Maintain clean and accurate tax records for future loan applications, visa processing, and financial planning.</p>
                 </div>
@@ -1171,7 +1333,7 @@
             </div>
 
             <div class="alert-box alert-success" style="margin-top: 40px;">
-                <strong>🎉 Average Processing Time:</strong> 3-5 working days from receipt of all documents. Urgent processing available on request!
+                <strong>🎉 Average Processing Time:</strong> 3-5 working days from receipt of all documents.
             </div>
         </div>
     </section>
@@ -1413,7 +1575,7 @@
                         <span>▼</span>
                     </div>
                     <div class="faq-answer">
-                        We typically process and file revised returns within 3-5 working days from receipt of all required documents. The Income Tax Department's processing time for refunds (if applicable) is usually 2-4 weeks from successful e-verification. Urgent processing is available on request for time-sensitive cases.
+                        We typically process and file revised returns within 3-5 working days from receipt of all required documents. The Income Tax Department's processing time for refunds (if applicable) is usually 2-4 weeks from successful e-verification.
                     </div>
                 </div>
 
@@ -1454,7 +1616,7 @@
     <section id="contact-form" class="lead-form-section">
         <div class="container">
             <div class="lead-form">
-                <h3>Get FREE Consultation for Revised Return</h3>
+                <h3>Get a Custom Quote for Your Revised Return</h3>
                 <form id="leadForm" onsubmit="return handleSubmit(event)">
                     <div class="form-group">
                         <label for="name">Your Name *</label>
@@ -1503,7 +1665,7 @@
                         <textarea id="message" name="message" placeholder="Briefly explain what needs to be corrected in your return..."></textarea>
                     </div>
                     
-                    <button type="submit" class="btn-primary" style="width: 100%;">Get Free Consultation</button>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Get a Quote</button>
                     
                     <p style="text-align: center; margin-top: 15px; font-size: 0.9em; color: var(--text-light);">
                         Our CA will review your case and call you within 2 hours
@@ -1520,22 +1682,28 @@
             <p class="section-intro">Explore our other professional tax filing services</p>
 
             <div class="related-services">
-                <a href="/services/income-tax-return-ITR/" class="related-card">
-                    <h4>Income Tax Return Filing</h4>
-                    <p>Complete ITR filing for salary, business, and capital gains. All ITR forms covered.</p>
-                    <span class="price">Starting at ₹2,500</span>
+                <a href="/services/tax-planning-filing/" class="related-card">
+                    <h4>Income Tax Filing & Planning</h4>
+                    <p>Complete ITR filing plus strategic tax planning to minimize liability and maximize savings legally.</p>
+                    <span class="price">Starting at ₹1,000</span>
                 </a>
 
-                <a href="/services/tax-planning-filing/" class="related-card">
-                    <h4>Tax Planning & Advisory</h4>
-                    <p>Strategic tax planning to minimize liability and maximize savings legally.</p>
-                    <span class="price">Starting at ₹3,000</span>
+                <a href="/services/gst-compliance/" class="related-card">
+                    <h4>GST Compliance & Advisory</h4>
+                    <p>GST registration, return filing, and ongoing compliance advisory for your business.</p>
+                    <span class="price">Starting at ₹1,000/month</span>
+                </a>
+
+                <a href="/services/bookkeeping-and-accounting/" class="related-card">
+                    <h4>Bookkeeping & Virtual CFO</h4>
+                    <p>Day-to-day bookkeeping and virtual CFO support to keep your finances audit-ready.</p>
+                    <span class="price">Starting at ₹2,000/month</span>
                 </a>
 
                 <a href="/services/tds-return-filing/" class="related-card">
-                    <h4>TDS Return Filing</h4>
+                    <h4>TDS Filing & Returns</h4>
                     <p>Quarterly TDS returns, Form 16/16A issuance, and compliance management.</p>
-                    <span class="price">Starting at ₹4,000/quarter</span>
+                    <span class="price">Starting at ₹2,000/quarter</span>
                 </a>
 
                 <a href="/services/tax-audit-section-44AB/" class="related-card">
@@ -1555,7 +1723,13 @@
             <div class="hero-buttons">
                 <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-gold);">📞 Call: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20revised%20return%20filing" class="btn-secondary">💬 WhatsApp Us</a>
-                <a href="#contact-form" class="btn-secondary">📝 Get Free Quote</a>
+                <a href="#contact-form" class="btn-secondary">📝 Get a Quote</a>
+            </div>
+            <div class="price-pills">
+                <span>Income Tax Filing &amp; Planning &mdash; from ₹1,000</span>
+                <span>GST Compliance &amp; Advisory &mdash; from ₹1,000/month</span>
+                <span>Bookkeeping &amp; Virtual CFO &mdash; from ₹2,000/month</span>
+                <span>TDS Filing &amp; Returns &mdash; from ₹2,000/quarter</span>
             </div>
         </div>
     </div>
@@ -1603,7 +1777,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
                 <p style="margin-top: 10px;">Professional CA Services | Revised Return Filing Experts</p>
                 <p style="margin-top: 10px; font-size: 0.9em;">
                     <a href="/sitemap.xml" style="color: var(--white); margin: 0 10px;">Sitemap</a>
@@ -1634,6 +1808,34 @@
     </div>
 
     <script>
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        // Hamburger / mobile drawer
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         // Form submission handler
         function handleSubmit(event) {
             event.preventDefault();
@@ -1661,9 +1863,6 @@ Error Type: ${data.errorType}
 Details: ${data.message || 'No additional details'}`;
             
             const whatsappUrl = `https://wa.me/917889257045?text=${encodeURIComponent(message)}`;
-            
-            // Show success message
-            alert('Thank you! Redirecting you to WhatsApp...');
             
             // Redirect to WhatsApp
             window.open(whatsappUrl, '_blank');
