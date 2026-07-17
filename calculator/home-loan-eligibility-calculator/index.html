@@ -12,25 +12,33 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="icon" href="/sidhi.png" type="image/png" />
-    
+
     <!-- Primary Meta Tags -->
     <title>Home Loan Eligibility Calculator - Check Maximum Loan Amount | Free Tool</title>
     <meta name="title" content="Home Loan Eligibility Calculator - Check Maximum Loan Amount">
     <meta name="description" content="Free Home Loan Eligibility Calculator. Calculate maximum loan amount based on income, EMI, interest rate. Check home loan eligibility instantly. By Sidhi & Associates CAs.">
     <meta name="keywords" content="home loan calculator, loan eligibility calculator, housing loan calculator, maximum loan amount, EMI calculator, home loan eligibility, mortgage calculator">
     <meta name="robots" content="index, follow, max-image-preview:large">
-    
+
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sidhiandassociates.com/calculator/home-loan-eligibility-calculator/">
     <meta property="og:title" content="Home Loan Eligibility Calculator - Check Maximum Loan Amount">
     <meta property="og:description" content="Calculate your home loan eligibility instantly. Free tool by expert CAs.">
-    
+
     <!-- Canonical -->
     <link rel="canonical" href="https://sidhiandassociates.com/calculator/home-loan-eligibility-calculator/">
-    
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Free Home Loan Eligibility Calculator by Sidhi & Associates. Computes maximum loan amount from monthly income, other income, existing EMIs, interest rate, and tenure using the standard FOIR (Fixed Obligation to Income Ratio) method: Maximum EMI = (Total Income x 50% for salaried or 40% for self-employed) - Existing EMIs, and Loan Amount = [EMI x (1 - (1+r)^-n)] / r. Provided by an Accountants firm offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="WebApplication,FAQPage">
+
     <!-- Schema Markup -->
     <script type="application/ld+json">
     {
@@ -47,8 +55,77 @@
       },
       "provider": {
         "@type": "Organization",
-        "name": "Sidhi & Associates"
+        "name": "Sidhi & Associates",
+        "telephone": "+917889257045"
       }
+    }
+    </script>
+
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/calculator/home-loan-eligibility-calculator/#webpage",
+      "url": "https://sidhiandassociates.com/calculator/home-loan-eligibility-calculator/",
+      "name": "Home Loan Eligibility Calculator - Check Maximum Loan Amount",
+      "description": "Free Home Loan Eligibility Calculator to compute maximum loan amount and EMI based on income, interest rate, and tenure.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-17",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer", "#featured-snippet"]
+      }
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How is home loan eligibility calculated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Home loan eligibility is calculated based on your monthly income, existing EMIs, interest rate, and loan tenure using the Fixed Obligation to Income Ratio (FOIR) of 50-60%. Maximum EMI = (Net Monthly Income x 0.50) - Existing EMIs. Loan Amount = [EMI x (1 - (1+r)^-n)] / r, where r is the monthly interest rate and n is the tenure in months."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the minimum and maximum home loan amount?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Minimum home loan amounts typically start from Rs1-3 lakhs and vary by bank. Maximum amount depends on income, credit score, and property value, with most banks offering up to 90% LTV for properties below Rs30 lakhs, 80% for Rs30-75 lakhs, and 75% above that."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much salary is needed for a home loan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Requirements vary by bank and loan amount. As a guide, a Rs20L loan needs around Rs40K salary, Rs50L needs around Rs1L salary, and Rs1Cr needs around Rs2L salary at 8.5% over 20 years, assuming no existing EMIs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I get a home loan with a low credit score?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is possible but harder. Scores of 650-750 may still qualify but at higher interest rates, while scores below 650 often require a larger down payment or a guarantor. Improving your credit score before applying generally leads to better terms."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I opt for a longer or shorter loan tenure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Longer tenure lowers the EMI and raises eligibility but increases total interest paid. Shorter tenure raises the EMI but reduces total interest significantly. A common approach is to take a longer tenure for eligibility and prepay when possible to reduce interest."
+          }
+        }
+      ]
     }
     </script>
 
@@ -90,40 +167,176 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+
+        header .container { position: relative; }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.55em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height: 1.1;
         }
 
-        .logo-text p {
+        .header-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .cta-phone {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .cta-btn {
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
             font-size: 0.9em;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border-radius: 8px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: -4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--primary-blue);
+            margin: 4px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer {
+            display: none;
+            flex-direction: column;
+            background: #144272;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            right: -20px;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+            border-top: 2px solid var(--primary-gold);
+            overflow: hidden;
+        }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a {
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 14px 24px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            transition: background .2s, color .2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta {
+            background: var(--primary-gold);
+            color: var(--white) !important;
+            margin: 12px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 1.05em;
+            border-bottom: none !important;
+            width: calc(100% - 40px);
+        }
+
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 12px 0;
+        }
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s, background 0.3s;
+            font-size: 0.92em;
+            padding: 7px 14px;
+            border-radius: 6px;
+        }
+        .nav-links a:hover, .nav-links a.active {
             color: var(--primary-gold);
-            margin: 0;
+            background: rgba(255,255,255,.08);
+        }
+
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
         }
 
         .breadcrumb {
@@ -304,6 +517,19 @@
             border-color: var(--primary-gold);
             color: var(--primary-gold);
         }
+
+        .form-error {
+            display: none;
+            background: #f8d7da;
+            color: #842029;
+            border-left: 4px solid #dc3545;
+            padding: 14px 16px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+
+        .form-error.show { display: block; }
 
         .result-section {
             position: sticky;
@@ -602,16 +828,45 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="60" height="60">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
+                    <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="cta-btn" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/services/">🔧 Services</a>
+                <a href="/why-us/">⭐ Why Us</a>
+                <a href="/faq/">❓ FAQs</a>
+                <a href="/blog/">📝 Blog</a>
+                <a href="/calculator/" class="active">🧮 Calculators</a>
+                <a href="/about/">ℹ️ About</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-links">
+                <a href="/services/">Services</a>
+                <a href="/why-us/">Why Us</a>
+                <a href="/faq/">FAQs</a>
+                <a href="/blog/">Blog</a>
+                <a href="/calculator/" class="active">Calculators</a>
+                <a href="/about/">About</a>
+            </div>
+        </div>
+    </nav>
 
     <div class="breadcrumb">
         <div class="container">
@@ -627,12 +882,18 @@
         </div>
     </section>
 
+    <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
+            Your <strong style="color: var(--primary-gold);">maximum home loan amount</strong> is based on the EMI a bank will let you take on, typically <strong style="color: var(--primary-gold);">50% of income</strong> for salaried applicants (40% for self-employed) after subtracting existing EMIs. Enter your details below to see your eligibility and full EMI breakdown instantly.
+        </p>
+    </div>
+
     <div class="calculator-container">
         <div class="calculator-grid">
             <!-- Input Section -->
             <div class="calculator-card">
                 <h3>Enter Your Details</h3>
-                
+
                 <form id="loanForm">
                     <div class="form-group">
                         <label>
@@ -704,6 +965,8 @@
 
                     <button type="button" class="btn-calculate" onclick="calculateLoan()">🧮 Calculate Eligibility</button>
                     <button type="button" class="btn-reset" onclick="resetForm()">🔄 Reset</button>
+
+                    <div class="form-error" id="formError"></div>
                 </form>
 
                 <div class="info-box" style="margin-top: 30px;">
@@ -721,7 +984,7 @@
             <div class="result-section">
                 <div class="calculator-card">
                     <h3>Your Eligibility</h3>
-                    
+
                     <div id="resultsContainer">
                         <div class="result-main">
                             <div class="result-label">Maximum Loan Amount</div>
@@ -778,7 +1041,7 @@
                         </div>
 
                         <div class="alert-box">
-                            <strong>📌 Note:</strong> This is an indicative calculation. Actual loan eligibility depends on credit score, bank policies, property value, and other factors. <strong>Free consultation available!</strong>
+                            <strong>📌 Note:</strong> This is an indicative calculation. Actual loan eligibility depends on credit score, bank policies, property value, and other factors.
                         </div>
                     </div>
                 </div>
@@ -790,7 +1053,12 @@
     <section class="info-section">
         <div class="container">
             <h2>Understanding Home Loan Eligibility</h2>
-            
+
+            <div id="featured-snippet" style="background: var(--light-gold); border-left: 5px solid var(--primary-gold); border-radius: 0 8px 8px 0; padding: 22px 26px; margin: 0 0 36px;">
+                <p style="font-size: 0.75em; font-weight: 700; color: #B8861E; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 9px;">💡 Quick Answer</p>
+                <p style="margin: 0; line-height: 1.75;">Home loan eligibility is the maximum loan amount a bank will approve, based on your <strong>income, existing EMIs, credit score, interest rate, and tenure</strong>. Banks generally cap the EMI at <strong>50-60% of your net monthly income</strong> (the FOIR method), then work backward to the loan amount using standard EMI formulas. Adding a co-applicant, closing existing loans, or choosing a longer tenure can all increase eligibility.</p>
+            </div>
+
             <div class="info-grid">
                 <div class="info-card">
                     <h3>📊 Factors Affecting Eligibility</h3>
@@ -986,7 +1254,12 @@
                 <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20home%20loan%20documentation" class="btn-primary" style="background: #25D366;">💬 WhatsApp Us</a>
             </div>
-            <p style="margin-top: 20px; font-size: 1em;">ITR Filing | Income Proof | Tax Planning | Documentation Support</p>
+            <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+            </div>
         </div>
     </div>
 
@@ -996,22 +1269,22 @@
             <h3 style="color: var(--primary-gold); margin-bottom: 15px;">Sidhi & Associates</h3>
             <p>Professional Chartered Accountants | ICAI Registered</p>
             <p style="margin-top: 15px;">
-                <a href="/">Home</a> | 
-                <a href="/services/">Services</a> | 
-                <a href="/calculator/">Calculators</a> | 
-                <a href="/calculator/HRA/">HRA Calculator</a> | 
+                <a href="/">Home</a> |
+                <a href="/services/">Services</a> |
+                <a href="/calculator/">Calculators</a> |
+                <a href="/calculator/HRA/">HRA Calculator</a> |
                 <a href="/services/income-tax-return-ITR/">ITR Filing</a>
             </p>
             <p style="margin-top: 20px;">📞 +91 78892 57045 | ✉️ siddhiandassociatess@gmail.com</p>
-            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
         </div>
     </footer>
 
     <!-- Floating Buttons -->
     <div class="floating-buttons">
-        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20used%20your%20home%20loan%20calculator" 
-           target="_blank" 
-           class="float-btn whatsapp-btn" 
+        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20used%20your%20home%20loan%20calculator"
+           target="_blank"
+           class="float-btn whatsapp-btn"
            aria-label="WhatsApp">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
@@ -1025,6 +1298,34 @@
     </div>
 
     <script>
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        // Hamburger / mobile drawer
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         // Update display values for sliders
         document.getElementById('income').addEventListener('input', function() {
             document.getElementById('incomeDisplay').textContent = '₹' + formatNumber(this.value);
@@ -1046,7 +1347,21 @@
             document.getElementById('tenureDisplay').textContent = this.value + ' years';
         });
 
+        function showFormError(message) {
+            var errorBox = document.getElementById('formError');
+            errorBox.textContent = message;
+            errorBox.classList.add('show');
+        }
+
+        function clearFormError() {
+            var errorBox = document.getElementById('formError');
+            errorBox.textContent = '';
+            errorBox.classList.remove('show');
+        }
+
         function calculateLoan() {
+            clearFormError();
+
             // Get input values
             const monthlyIncome = parseFloat(document.getElementById('income').value);
             const otherIncome = parseFloat(document.getElementById('otherIncome').value);
@@ -1064,7 +1379,7 @@
 
             // Validate
             if (maxEmi <= 0) {
-                alert('Your existing EMIs are too high. Please reduce existing obligations or increase income.');
+                showFormError('Your existing EMIs are too high. Please reduce existing obligations or increase income.');
                 return;
             }
 
@@ -1072,7 +1387,7 @@
             // P = [EMI × (1 - (1 + r)^-n)] / r
             const monthlyRate = annualRate / 12 / 100;
             const tenureMonths = tenureYears * 12;
-            
+
             const loanAmount = (maxEmi * (1 - Math.pow(1 + monthlyRate, -tenureMonths))) / monthlyRate;
 
             // Calculate total payment and interest
@@ -1085,7 +1400,7 @@
             document.getElementById('displayExistingEmi').textContent = '₹' + formatNumber(existingEmi);
             document.getElementById('availableEmi').textContent = '₹' + formatNumber(maxEmi);
             document.getElementById('monthlyEmi').textContent = '₹' + formatNumber(Math.round(maxEmi));
-            
+
             document.getElementById('loanAmountDetail').textContent = '₹' + formatNumberLarge(Math.round(loanAmount));
             document.getElementById('totalInterest').textContent = '₹' + formatNumberLarge(Math.round(totalInterest));
             document.getElementById('totalPayable').textContent = '₹' + formatNumberLarge(Math.round(totalPayment));
@@ -1093,10 +1408,10 @@
             // Update chart
             const principalPercent = (loanAmount / totalPayment * 100).toFixed(1);
             const interestPercent = (totalInterest / totalPayment * 100).toFixed(1);
-            
+
             document.getElementById('principalPercent').textContent = principalPercent + '%';
             document.getElementById('interestPercent').textContent = interestPercent + '%';
-            
+
             // Update chart bar widths
             const principalBar = document.getElementById('principalBar');
             principalBar.style.background = `linear-gradient(to right, var(--primary-gold) 0%, var(--primary-gold) ${principalPercent}%, var(--info-blue) ${principalPercent}%, var(--info-blue) 100%)`;
@@ -1108,19 +1423,20 @@
         }
 
         function resetForm() {
+            clearFormError();
             document.getElementById('income').value = 50000;
             document.getElementById('otherIncome').value = 0;
             document.getElementById('existingEmi').value = 0;
             document.getElementById('rate').value = 8.5;
             document.getElementById('tenure').value = 20;
             document.getElementById('employmentType').value = 'salaried';
-            
+
             document.getElementById('incomeDisplay').textContent = '₹50,000';
             document.getElementById('otherIncomeDisplay').textContent = '₹0';
             document.getElementById('existingEmiDisplay').textContent = '₹0';
             document.getElementById('rateDisplay').textContent = '8.5%';
             document.getElementById('tenureDisplay').textContent = '20 years';
-            
+
             calculateLoan();
         }
 
@@ -1145,7 +1461,7 @@
             const answer = element.querySelector('.faq-answer');
             const arrow = element.querySelector('.faq-question span');
             const isOpen = answer.style.display === 'block';
-            
+
             // Close all FAQs
             document.querySelectorAll('.faq-answer').forEach(a => {
                 a.style.display = 'none';
@@ -1153,7 +1469,7 @@
             document.querySelectorAll('.faq-question span').forEach(s => {
                 s.textContent = '▼';
             });
-            
+
             // Toggle current
             if (!isOpen) {
                 answer.style.display = 'block';
