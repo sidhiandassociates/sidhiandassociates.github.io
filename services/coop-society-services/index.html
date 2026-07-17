@@ -25,7 +25,11 @@
     <meta name="author" content="Sidhi & Associates">
     <meta name="geo.region" content="IN">
     <meta name="geo.placename" content="India">
-    
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Co-operative Society Bookkeeping and Compliance services by Sidhi & Associates for housing and credit societies: monthly bookkeeping, maintenance accounting, AGM/SGM resolutions, annual return filing with the Registrar of Co-operative Societies, and statutory audit, starting at ₹5,000/month for societies with up to 50 members. Also offering Income Tax Filing & Planning from ₹1,000, GST Compliance & Advisory from ₹1,000/month, Bookkeeping & Virtual CFO from ₹2,000/month, and TDS Filing & Returns from ₹2,000/quarter.">
+    <meta name="ai-entity-type" content="Service,FAQPage">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sidhiandassociates.com/services/coop-society-services/">
@@ -132,6 +136,24 @@
     }
     </script>
 
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/services/coop-society-services/#webpage",
+      "url": "https://sidhiandassociates.com/services/coop-society-services/",
+      "name": "Co-operative Society Bookkeeping & Compliance Services",
+      "description": "Complete bookkeeping, AGM/SGM resolutions, annual return filing, and audit services for housing and credit societies, starting at ₹5,000/month.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-17",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer", "#featured-snippet"]
+      }
+    }
+    </script>
+
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
     {
@@ -198,45 +220,44 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+
+        header .container { position: relative; }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.55em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height: 1.1;
         }
 
-        .logo-text p {
-            font-size: 0.9em;
-            color: var(--primary-gold);
-            margin: 0;
-        }
-
-        .header-cta {
+        .header-actions {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             align-items: center;
         }
 
@@ -244,17 +265,22 @@
             color: var(--primary-blue);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
 
         .cta-btn {
             background: var(--primary-gold);
             color: var(--white);
-            padding: 12px 25px;
+            padding: 10px 20px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.9em;
             transition: all 0.3s;
+            white-space: nowrap;
         }
 
         .cta-btn:hover {
@@ -262,36 +288,112 @@
             transform: translateY(-2px);
         }
 
-        /* Navigation */
-        nav {
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border-radius: 8px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: -4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
             background: var(--primary-blue);
+            margin: 4px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer {
+            display: none;
+            flex-direction: column;
+            background: #144272;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            right: -20px;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+            border-top: 2px solid var(--primary-gold);
+            overflow: hidden;
+        }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a {
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 14px 24px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            transition: background .2s, color .2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta {
+            background: var(--primary-gold);
+            color: var(--white) !important;
+            margin: 12px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 1.05em;
+            border-bottom: none !important;
+            width: calc(100% - 40px);
+        }
+
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
             padding: 12px 0;
         }
-
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        nav a {
+        .nav-links a {
             color: var(--white);
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s;
-            font-size: 0.95em;
+            transition: color 0.3s, background 0.3s;
+            font-size: 0.92em;
+            padding: 7px 14px;
+            border-radius: 6px;
         }
-
-        nav a:hover {
+        .nav-links a:hover, .nav-links a.active {
             color: var(--primary-gold);
+            background: rgba(255,255,255,.08);
         }
 
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
         }
 
         /* Breadcrumb */
@@ -783,18 +885,6 @@
                 font-size: 2em;
             }
 
-            .header-cta {
-                display: none;
-            }
-
-            .logo-text h1 {
-                font-size: 1.4em;
-            }
-
-            .nav-links {
-                gap: 15px;
-            }
-
             .hero-stats {
                 gap: 30px;
             }
@@ -818,27 +908,39 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates Logo" class="logo-img">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
                     <a href="#pricing" class="cta-btn">Get Started</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/">🏠 Home</a>
+                <a href="/services/" class="active">🔧 Services</a>
+                <a href="/calculator/">🧮 Calculators</a>
+                <a href="/blog/">📝 Blog</a>
+                <a href="/why-us/">⭐ Why Us</a>
+                <a href="/faq/">❓ FAQs</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20co-operative%20society%20services" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
 
     <!-- Navigation -->
-    <nav>
+    <nav class="desktop-nav" aria-label="Main navigation">
         <div class="container">
-            <a href="/">← Back to Home</a>
             <div class="nav-links">
-                <a href="/services/">Services</a>
+                <a href="/">Home</a>
+                <a href="/services/" class="active">Services</a>
                 <a href="/calculator/">Calculators</a>
                 <a href="/blog/">Blogs</a>
                 <a href="/why-us/">Why Choose Us</a>
@@ -882,11 +984,22 @@
         </div>
     </section>
 
+    <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
+            <strong style="color: var(--primary-gold);">Co-operative society bookkeeping & compliance</strong> starts at <strong style="color: var(--primary-gold);">₹5,000/month</strong> for societies with up to 50 members and covers bookkeeping, maintenance accounting, AGM/SGM resolutions, annual return filing with the Registrar, and statutory audit — all handled by one team so your society stays <strong style="color: var(--primary-gold);">100% compliant</strong>.
+        </p>
+    </div>
+
     <!-- Why Choose Us -->
     <section>
         <div class="container">
             <h2>Why Choose Our Society Services?</h2>
             <p class="section-intro">We provide end-to-end accounting and compliance solutions specifically designed for co-operative societies</p>
+
+            <div id="featured-snippet" style="background: var(--light-gold); border-left: 5px solid var(--primary-gold); border-radius: 0 8px 8px 0; padding: 22px 26px; margin: 0 0 36px;">
+                <p style="font-size: 0.75em; font-weight: 700; color: #B8861E; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 9px;">💡 Quick Answer</p>
+                <p style="margin: 0; line-height: 1.75;">A co-operative society is legally required to maintain proper <strong>books of accounts</strong>, hold its <strong>AGM within 6 months</strong> of financial year-end, get its accounts <strong>statutorily audited</strong>, and file its <strong>annual return</strong> with the Registrar of Co-operative Societies within 30 days of the AGM. We handle all of this end-to-end — from monthly bookkeeping and maintenance accounting to AGM/SGM resolution drafting, statutory audit, and return filing — so your managing committee never misses a deadline.</p>
+            </div>
 
             <div class="services-grid">
                 <div class="service-card">
@@ -1176,9 +1289,9 @@
                             <td>1 month</td>
                         </tr>
                         <tr>
-                            <td><strong>ITR Filing</strong></td>
-                            <td>Society income tax return</td>
-                            <td>₹3,000 - ₹8,000</td>
+                            <td><strong>Income Tax Filing & Planning</strong></td>
+                            <td>Society income tax return (ITR-7)</td>
+                            <td>Starting ₹1,000</td>
                             <td>7 days</td>
                         </tr>
                         <tr>
@@ -1188,9 +1301,15 @@
                             <td>7 days</td>
                         </tr>
                         <tr>
-                            <td><strong>GST Return Filing</strong></td>
-                            <td>Quarterly GST compliance</td>
-                            <td>₹2,000/quarter</td>
+                            <td><strong>GST Compliance & Advisory</strong></td>
+                            <td>Ongoing GST returns & advisory</td>
+                            <td>Starting ₹1,000/month</td>
+                            <td>5 days</td>
+                        </tr>
+                        <tr>
+                            <td><strong>TDS Filing & Returns</strong></td>
+                            <td>TDS deduction, payment & quarterly returns</td>
+                            <td>Starting ₹2,000/quarter</td>
                             <td>5 days</td>
                         </tr>
                         <tr>
@@ -1214,10 +1333,9 @@
                 <p>Subscribe to annual society management package and get:</p>
                 <ul style="margin-left: 20px; margin-top: 15px;">
                     <li><strong>1 Month FREE</strong> - Pay for 11 months, get 12 months service</li>
-                    <li><strong>FREE AGM Support</strong> - Complete AGM preparation included</li>
-                    <li><strong>FREE Annual Return Filing</strong> - One-time filing included</li>
+                    <li><strong>AGM Support Included</strong> - Complete AGM preparation included</li>
+                    <li><strong>Annual Return Filing Included</strong> - One-time filing included</li>
                     <li><strong>Priority Support</strong> - Dedicated relationship manager</li>
-                    <li><strong>Free Consultation</strong> - Unlimited CA consultations</li>
                 </ul>
             </div>
         </div>
@@ -1498,13 +1616,17 @@
     <section class="cta-section">
         <div class="container">
             <h2>Ensure Your Society's Complete Compliance!</h2>
-            <p style="font-size: 1.2em; margin-bottom: 30px;">Let our expert CAs handle all your society accounting and compliance needs. Professional management, zero stress!</p>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Let our expert team handle all your society accounting and compliance needs. Professional management, zero stress!</p>
             <div class="hero-buttons">
                 <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call Now: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20co-operative%20society%20services" class="btn-secondary">💬 WhatsApp Us</a>
             </div>
-            <p style="margin-top: 30px; font-size: 1.1em;">
-                <strong>Special Offer:</strong> Subscribe to annual package and get 1 month FREE + FREE AGM support!</p>
+            <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+            </div>
         </div>
     </section>
 
@@ -1555,8 +1677,8 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
-                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Professional Co-operative Society Services across India</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
+                <p style="margin-top: 10px;">Professional Co-operative Society Services across India</p>
             </div>
         </div>
     </footer>
@@ -1581,6 +1703,33 @@
     </div>
 
     <script>
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -1615,27 +1764,6 @@
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
-        });
-
-        // Active nav highlight
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section[id]');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (pageYOffset >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.style.color = '#ffffff';
-                const href = link.getAttribute('href').substring(1);
-                if (href === current) {
-                    link.style.color = '#D4A43C';
-                }
-            });
         });
     </script>
 </body>
