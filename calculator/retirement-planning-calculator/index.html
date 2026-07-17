@@ -30,6 +30,14 @@
     
     <!-- Canonical -->
     <link rel="canonical" href="https://sidhiandassociates.com/calculator/retirement-planning-calculator/">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Free Retirement Planning Calculator by Sidhi & Associates. Computes the retirement corpus needed, monthly SIP required, and estimated pension based on current age, retirement age, life expectancy, expenses, savings, inflation, and expected returns. Provided by an Accountants firm offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="WebApplication,FAQPage">
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -47,7 +55,81 @@
       },
       "provider": {
         "@type": "Organization",
-        "name": "Sidhi & Associates"
+        "name": "Sidhi & Associates",
+        "telephone": "+917889257045",
+        "url": "https://sidhiandassociates.com/"
+      }
+    }
+    </script>
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sidhiandassociates.com/"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Calculators",
+        "item": "https://sidhiandassociates.com/calculator/"
+      },{
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Retirement Planning Calculator",
+        "item": "https://sidhiandassociates.com/calculator/retirement-planning-calculator/"
+      }]
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "How much corpus do I need for retirement?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The retirement corpus needed depends on your lifestyle, expenses, and inflation. A general rule: if you need Rs50,000/month today, with 6% inflation over 30 years, you'll need around Rs2.87 lakhs/month at retirement. For 25 years post-retirement, you typically need approximately Rs3-4 crores corpus. Use the 25x rule: Annual expenses x 25 = Corpus needed."
+        }
+      },{
+        "@type": "Question",
+        "name": "When should I start retirement planning?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As early as possible. The power of compounding works best over time. Starting at 25 instead of 35 can reduce the required monthly SIP by more than half for the same retirement corpus, assuming 12% annual returns."
+        }
+      },{
+        "@type": "Question",
+        "name": "What is the 4% withdrawal rule?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The 4% rule states you can withdraw 4% of your retirement corpus annually without depleting it too quickly. For example, with a Rs1 crore corpus, you could withdraw around Rs4 lakhs a year, assuming 7-8% post-retirement returns and moderate inflation."
+        }
+      }]
+    }
+    </script>
+
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/calculator/retirement-planning-calculator/#webpage",
+      "url": "https://sidhiandassociates.com/calculator/retirement-planning-calculator/",
+      "name": "Retirement Planning Calculator - Calculate Retirement Corpus",
+      "description": "Free Retirement Planning Calculator to calculate retirement corpus needed and monthly savings required, considering inflation.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-16",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer", "#featured-snippet"]
       }
     }
     </script>
@@ -91,40 +173,176 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+
+        header .container { position: relative; }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.55em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height: 1.1;
         }
 
-        .logo-text p {
+        .header-actions {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .cta-phone {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .cta-btn {
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
             font-size: 0.9em;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border-radius: 8px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: -4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--primary-blue);
+            margin: 4px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer {
+            display: none;
+            flex-direction: column;
+            background: #144272;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            right: -20px;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+            border-top: 2px solid var(--primary-gold);
+            overflow: hidden;
+        }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a {
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 14px 24px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            transition: background .2s, color .2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta {
+            background: var(--primary-gold);
+            color: var(--white) !important;
+            margin: 12px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 1.05em;
+            border-bottom: none !important;
+            width: calc(100% - 40px);
+        }
+
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 12px 0;
+        }
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s, background 0.3s;
+            font-size: 0.92em;
+            padding: 7px 14px;
+            border-radius: 6px;
+        }
+        .nav-links a:hover, .nav-links a.active {
             color: var(--primary-gold);
-            margin: 0;
+            background: rgba(255,255,255,.08);
+        }
+
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
         }
 
         .breadcrumb {
@@ -288,6 +506,14 @@
         .btn-reset:hover {
             border-color: var(--primary-gold);
             color: var(--primary-gold);
+        }
+
+        .form-error {
+            color: #C0392B;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-top: 10px;
+            min-height: 1.2em;
         }
 
         .result-section {
@@ -551,45 +777,6 @@
             text-decoration: none;
         }
 
-        .floating-buttons {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            z-index: 999;
-        }
-
-        .float-btn {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            transition: all 0.3s;
-        }
-
-        .float-btn:hover {
-            transform: scale(1.1);
-        }
-
-        .whatsapp-btn {
-            background: #25D366;
-        }
-
-        .call-btn {
-            background: var(--primary-gold);
-        }
-
-        .float-btn svg {
-            width: 30px;
-            height: 30px;
-            fill: white;
-        }
-
         @media (max-width: 968px) {
             .calculator-grid {
                 grid-template-columns: 1fr;
@@ -621,16 +808,45 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="60" height="60">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
+                    <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="cta-btn" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/services/">🔧 Services</a>
+                <a href="/why-us/">⭐ Why Us</a>
+                <a href="/faq/">❓ FAQs</a>
+                <a href="/blog/">📝 Blog</a>
+                <a href="/calculator/" class="active">🧮 Calculators</a>
+                <a href="/about/">ℹ️ About</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-links">
+                <a href="/services/">Services</a>
+                <a href="/why-us/">Why Us</a>
+                <a href="/faq/">FAQs</a>
+                <a href="/blog/">Blog</a>
+                <a href="/calculator/" class="active">Calculators</a>
+                <a href="/about/">About</a>
+            </div>
+        </div>
+    </nav>
 
     <div class="breadcrumb">
         <div class="container">
@@ -645,6 +861,12 @@
             <p style="font-size: 1em; opacity: 0.9; margin-top: 10px;">Plan Your Golden Years • Consider Inflation • Free Expert Tool</p>
         </div>
     </section>
+
+    <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
+            <strong style="color: var(--primary-gold);">Your retirement corpus</strong> depends on your current expenses, inflation, years to retirement, and expected returns. A common rule of thumb is <strong style="color: var(--primary-gold);">25&ndash;30 times</strong> your annual expenses at retirement. Adjust the sliders below to calculate your personalised corpus, monthly SIP, and pension estimate.
+        </p>
+    </div>
 
     <div class="calculator-container">
         <div class="calculator-grid">
@@ -751,6 +973,7 @@
 
                     <button type="button" class="btn-calculate" onclick="calculateRetirement()">🧮 Calculate Retirement Plan</button>
                     <button type="button" class="btn-reset" onclick="resetForm()">🔄 Reset</button>
+                    <p class="form-error" id="retirementFormError"></p>
                 </form>
 
                 <div class="info-box" style="margin-top: 30px;">
@@ -843,6 +1066,11 @@
     <section class="info-section">
         <div class="container">
             <h2>Retirement Planning Essentials</h2>
+
+            <div id="featured-snippet" style="background: var(--light-gold); border-left: 5px solid var(--primary-gold); border-radius: 0 8px 8px 0; padding: 22px 26px; margin: 0 0 36px;">
+                <p style="font-size: 0.75em; font-weight: 700; color: #B8861E; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 9px;">💡 Quick Answer</p>
+                <p style="margin: 0; line-height: 1.75;">A comfortable retirement in India typically needs a corpus of <strong>25&ndash;30 times</strong> your annual expenses at the time of retirement, accounting for <strong>6&ndash;7% average inflation</strong>. Key levers are: starting early to benefit from compounding, maintaining an equity-heavy portfolio while young, and shifting to conservative debt instruments as retirement nears.</p>
+            </div>
             
             <div class="info-grid">
                 <div class="info-card">
@@ -1038,7 +1266,12 @@
                 <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20retirement%20planning" class="btn-primary" style="background: #25D366;">💬 WhatsApp Us</a>
             </div>
-            <p style="margin-top: 20px; font-size: 1em;">Tax Planning | Investment Advisory | NPS Consultation | Free Analysis</p>
+            <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
+                <span style="background: rgba(255,255,255,.22); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span style="background: rgba(255,255,255,.22); padding: 8px 16px; border-radius: 20px;">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span style="background: rgba(255,255,255,.22); padding: 8px 16px; border-radius: 20px;">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span style="background: rgba(255,255,255,.22); padding: 8px 16px; border-radius: 20px;">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+            </div>
         </div>
     </div>
 
@@ -1055,27 +1288,38 @@
                 <a href="/calculator/home-loan-eligibility-calculator/">Home Loan Calculator</a>
             </p>
             <p style="margin-top: 20px;">📞 +91 78892 57045 | ✉️ siddhiandassociatess@gmail.com</p>
-            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
         </div>
     </footer>
 
-    <!-- Floating Buttons -->
-    <div class="floating-buttons">
-        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20used%20your%20retirement%20calculator" 
-           target="_blank" 
-           class="float-btn whatsapp-btn">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-            </svg>
-        </a>
-        <a href="tel:+917889257045" class="float-btn call-btn">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
-            </svg>
-        </a>
-    </div>
-
     <script>
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         // Update display values
         document.getElementById('currentAge').addEventListener('input', function() {
             document.getElementById('ageDisplay').textContent = this.value + ' years';
@@ -1120,14 +1364,16 @@
             const postReturnRate = parseFloat(document.getElementById('postReturnRate').value) / 100;
 
             // Validations
+            const errorEl = document.getElementById('retirementFormError');
             if (retirementAge <= currentAge) {
-                alert('Retirement age must be greater than current age');
+                if (errorEl) errorEl.textContent = 'Retirement age must be greater than current age.';
                 return;
             }
             if (lifeExpectancy <= retirementAge) {
-                alert('Life expectancy must be greater than retirement age');
+                if (errorEl) errorEl.textContent = 'Life expectancy must be greater than retirement age.';
                 return;
             }
+            if (errorEl) errorEl.textContent = '';
 
             const yearsToRetirement = retirementAge - currentAge;
             const retirementYears = lifeExpectancy - retirementAge;
