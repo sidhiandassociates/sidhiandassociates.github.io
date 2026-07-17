@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18022959954"></script>
@@ -36,6 +36,28 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://sidhiandassociates.com/services/private-limited-company/">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Private Limited Company registration services by Sidhi & Associates. Complete Companies Act, 2013 incorporation covering name approval, DSC, DIN, MOA/AOA drafting, SPICe+ filing, incorporation certificate, and PAN/TAN, typically completed in 10-15 days. Packages start from Rs6,999. Provided by an Accountants firm also offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="Service,FAQPage">
+
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/services/private-limited-company/#webpage",
+      "url": "https://sidhiandassociates.com/services/private-limited-company/",
+      "name": "Private Limited Company Registration India | Pvt Ltd from ₹6,999",
+      "description": "Expert Private Limited Company Registration Services. Complete Pvt Ltd Setup in 10-15 Days.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-17",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer"]
+      }
+    }
+    </script>
     
     <!-- Enhanced Schema Markup -->
     <script type="application/ld+json">
@@ -154,45 +176,44 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+
+        header .container { position: relative; }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.55em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height: 1.1;
         }
 
-        .logo-text p {
-            font-size: 0.9em;
-            color: var(--primary-gold);
-            margin: 0;
-        }
-
-        .header-cta {
+        .header-actions {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             align-items: center;
         }
 
@@ -200,54 +221,131 @@
             color: var(--primary-blue);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
 
         .cta-btn {
             background: var(--primary-gold);
             color: var(--white);
-            padding: 12px 25px;
+            padding: 10px 20px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.9em;
             transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border-radius: 8px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: -4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--primary-blue);
+            margin: 4px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer {
+            display: none;
+            flex-direction: column;
+            background: #144272;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            right: -20px;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+            border-top: 2px solid var(--primary-gold);
+            overflow: hidden;
+        }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a {
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 14px 24px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            transition: background .2s, color .2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta {
+            background: var(--primary-gold);
+            color: var(--white) !important;
+            margin: 12px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 1.05em;
+            border-bottom: none !important;
+            width: calc(100% - 40px);
         }
 
-        .cta-btn:hover {
-            background: var(--primary-blue);
-            transform: translateY(-2px);
-        }
-
-        /* Navigation */
-        nav {
-            background: var(--primary-blue);
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
             padding: 12px 0;
         }
-
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        nav a {
+        .nav-links a {
             color: var(--white);
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s;
-            font-size: 0.95em;
+            transition: color 0.3s, background 0.3s;
+            font-size: 0.92em;
+            padding: 7px 14px;
+            border-radius: 6px;
         }
-
-        nav a:hover {
+        .nav-links a:hover, .nav-links a.active {
             color: var(--primary-gold);
+            background: rgba(255,255,255,.08);
         }
 
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
         }
 
         /* Breadcrumb */
@@ -769,16 +867,8 @@
                 font-size: 2em;
             }
 
-            .header-cta {
-                display: none;
-            }
-
             .logo-text h1 {
                 font-size: 1.4em;
-            }
-
-            .nav-links {
-                gap: 15px;
             }
 
             .hero-stats {
@@ -798,30 +888,43 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates Logo" class="logo-img">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
-                    <a href="#pricing" class="cta-btn">Get Started</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
+                    <a href="https://wa.me/917889257045?text=I%20want%20to%20register%20a%20Private%20Limited%20Company" class="cta-btn" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/services/" class="active">🔧 Services</a>
+                <a href="/why-us/">⭐ Why Us</a>
+                <a href="/calculator/">🧮 Calculators</a>
+                <a href="/faq/">❓ FAQs</a>
+                <a href="/blog/">📝 Blog</a>
+                <a href="/about/">ℹ️ About</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=I%20want%20to%20register%20a%20Private%20Limited%20Company" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
 
     <!-- Navigation -->
-    <nav>
+    <nav class="desktop-nav" aria-label="Main navigation">
         <div class="container">
-            <a href="/">← Back to Home</a>
             <div class="nav-links">
-                <a href="/services/">Services</a>
-                <a href="/why-us/">Why us</a>
-                <a href="/calculator/">Calculator</a>
-                <a href="/faq/">FAQ</a>
+                <a href="/services/" class="active">Services</a>
+                <a href="/why-us/">Why Us</a>
+                <a href="/calculator/">Calculators</a>
+                <a href="/faq/">FAQs</a>
+                <a href="/blog/">Blog</a>
+                <a href="/about/">About</a>
             </div>
         </div>
     </nav>
@@ -861,6 +964,12 @@
             </div>
         </div>
     </section>
+
+    <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
+            A <strong style="color: var(--primary-gold);">Private Limited Company</strong> needs a minimum of <strong style="color: var(--primary-gold);">2 directors and 2 shareholders</strong> (max 200), offers <strong style="color: var(--primary-gold);">limited liability</strong>, and can be registered in <strong style="color: var(--primary-gold);">10-15 days</strong> under the Companies Act, 2013. Our registration packages start from <strong style="color: var(--primary-gold);">₹6,999</strong>.
+        </p>
+    </div>
 
     <!-- What is Private Limited -->
     <section>
@@ -1138,7 +1247,7 @@
                 <div class="step-card">
                     <div class="step-number">1</div>
                     <h3>Consultation</h3>
-                    <p>Free consultation to understand your business needs and choose the right structure</p>
+                    <p>We understand your business needs and help you choose the right structure</p>
                 </div>
 
                 <div class="step-card">
@@ -1497,7 +1606,7 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section">
+    <div class="cta-section">
         <div class="container">
             <h2>Ready to Register Your Private Limited Company?</h2>
             <p style="font-size: 1.2em; margin-bottom: 30px;">Let our expert CAs handle your company registration with 100% accuracy and compliance!</p>
@@ -1505,11 +1614,14 @@
                 <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call Now: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=I%20want%20to%20register%20a%20Private%20Limited%20Company" class="btn-secondary">💬 WhatsApp Us</a>
             </div>
-            <p style="margin-top: 30px; font-size: 1.1em;">
-                <strong>Special Offer:</strong> Register this month and get FREE first year compliance calendar worth ₹5,000!
-            </p>
+            <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+            </div>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -1557,7 +1669,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
                 <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Expert Company Registration Services across India</p>
             </div>
         </div>
@@ -1583,6 +1695,34 @@
     </div>
 
     <script>
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        // Hamburger / mobile drawer
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -1668,10 +1808,11 @@
             });
 
             document.querySelectorAll('.nav-links a').forEach(link => {
-                link.style.color = '#ffffff';
                 const href = link.getAttribute('href').substring(1);
                 if (href === current) {
-                    link.style.color = '#D4A43C';
+                    link.classList.add('active');
+                } else if (href) {
+                    link.classList.remove('active');
                 }
             });
         });
@@ -1734,17 +1875,7 @@
             });
         });
 
-        // Add pulse animation to CTA buttons periodically
-        setInterval(() => {
-            document.querySelectorAll('.btn-primary').forEach(btn => {
-                btn.style.animation = 'pulse 0.5s ease';
-                setTimeout(() => {
-                    btn.style.animation = '';
-                }, 500);
-            });
-        }, 5000);
-
-        // Add CSS for pulse animation
+        // Add CSS for pulse animation (used sparingly, no auto-trigger)
         const style = document.createElement('style');
         style.textContent = `
             @keyframes pulse {
@@ -1774,21 +1905,6 @@
             progressBar.style.width = scrollPercentage + '%';
         });
 
-        // Add entrance animation for hero section
-        window.addEventListener('load', () => {
-            const hero = document.querySelector('.hero');
-            if (hero) {
-                hero.style.opacity = '0';
-                hero.style.transform = 'translateY(20px)';
-                hero.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-                
-                setTimeout(() => {
-                    hero.style.opacity = '1';
-                    hero.style.transform = 'translateY(0)';
-                }, 100);
-            }
-        });
-
         // Pricing card hover effects
         document.querySelectorAll('.pricing-card').forEach(card => {
             card.addEventListener('mouseenter', function() {
@@ -1799,13 +1915,6 @@
                 this.style.borderWidth = '2px';
             });
         });
-
-        // Highlight popular package
-        const popularCard = document.querySelector('.pricing-card .popular-badge');
-        if (popularCard) {
-            const card = popularCard.closest('.pricing-card');
-            card.style.transform = 'scale(1.02)';
-        }
 
         // Copy phone number functionality
         document.querySelectorAll('a[href^="tel:"]').forEach(link => {
@@ -1833,42 +1942,6 @@
                     }, 2000);
                 });
             });
-        });
-
-        // Benefits box animation
-        const benefitsBox = document.querySelector('.benefits-box');
-        if (benefitsBox) {
-            const boxObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.animation = 'slideInLeft 0.8s ease';
-                        boxObserver.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.2 });
-            
-            boxObserver.observe(benefitsBox);
-            
-            const slideStyle = document.createElement('style');
-            slideStyle.textContent = `
-                @keyframes slideInLeft {
-                    from {
-                        opacity: 0;
-                        transform: translateX(-50px);
-                    }
-                    to {
-                        opacity: 1;
-                        transform: translateX(0);
-                    }
-                }
-            `;
-            document.head.appendChild(slideStyle);
-        }
-
-        // Process steps connector animation
-        const processSteps = document.querySelectorAll('.step-card');
-        processSteps.forEach((step, index) => {
-            step.style.animationDelay = `${index * 0.1}s`;
         });
 
         console.log('Private Limited Company Registration - Page Loaded Successfully');
