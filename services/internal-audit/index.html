@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18022959954"></script>
@@ -12,9 +12,9 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="icon" href="/sidhi.png" type="image/png" />
-    
+
     <!-- Primary Meta Tags -->
     <title>Internal Audit Services India | Risk Assessment & Control Evaluation from ₹25,000 - Sidhi & Associates</title>
     <meta name="title" content="Internal Audit Services India | Risk Assessment & Control Evaluation from ₹25,000 - Sidhi & Associates">
@@ -25,7 +25,7 @@
     <meta name="author" content="Sidhi & Associates">
     <meta name="geo.region" content="IN">
     <meta name="geo.placename" content="India">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sidhiandassociates.com/services/internal-audit/">
@@ -33,16 +33,20 @@
     <meta property="og:description" content="Expert Internal Audit by Qualified CAs. Operational, Financial & Compliance Audits. 500+ Successful Audits. Call +91 78892 57045">
     <meta property="og:site_name" content="Sidhi & Associates">
     <meta property="og:locale" content="en_IN">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sidhiandassociates.com/services/internal-audit/">
     <meta property="twitter:title" content="Internal Audit Services - Sidhi & Associates">
     <meta property="twitter:description" content="Professional Internal Audit Services. Risk Assessment & Control Evaluation. Starting ₹25,000.">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://sidhiandassociates.com/services/internal-audit/">
-    
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Internal Audit service by Sidhi & Associates. Covers operational, financial, compliance, risk assessment, fraud detection, IT & systems, inventory, branch/unit, and HR & payroll audits. Provided by an Accountants firm also offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="Service,FAQPage">
+
     <!-- Enhanced Schema Markup for SEO -->
     <script type="application/ld+json">
     {
@@ -61,11 +65,6 @@
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "IN"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "150"
         }
       },
       "areaServed": {
@@ -78,6 +77,24 @@
         "highPrice": "500000",
         "priceCurrency": "INR",
         "offerCount": "5"
+      }
+    }
+    </script>
+
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/services/internal-audit/#webpage",
+      "url": "https://sidhiandassociates.com/services/internal-audit/",
+      "name": "Internal Audit Services India | Risk Assessment & Control Evaluation",
+      "description": "Professional Internal Audit Services by Qualified CAs - Operational, Financial, Compliance and Risk Assessment audits.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-17",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer"]
       }
     }
     </script>
@@ -184,50 +201,50 @@
             padding: 0 20px;
         }
 
+        /* ===== Header (matches site-wide header) ===== */
         header {
             background: var(--white);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+
+        header .container { position: relative; }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.55em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height: 1.1;
         }
 
-        .logo-text p {
-            font-size: 0.9em;
-            color: var(--primary-gold);
-            margin: 0;
-        }
-
-        .header-cta {
+        .header-actions {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             align-items: center;
         }
 
@@ -235,53 +252,131 @@
             color: var(--primary-blue);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
 
         .cta-btn {
             background: var(--primary-gold);
             color: var(--white);
-            padding: 12px 25px;
+            padding: 10px 20px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.9em;
             transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border-radius: 8px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: -4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--primary-blue);
+            margin: 4px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer {
+            display: none;
+            flex-direction: column;
+            background: #144272;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            right: -20px;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+            border-top: 2px solid var(--primary-gold);
+            overflow: hidden;
+        }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a {
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 14px 24px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            transition: background .2s, color .2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta {
+            background: var(--primary-gold);
+            color: var(--white) !important;
+            margin: 12px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 1.05em;
+            border-bottom: none !important;
+            width: calc(100% - 40px);
         }
 
-        .cta-btn:hover {
-            background: var(--primary-blue);
-            transform: translateY(-2px);
-        }
-
-        nav {
-            background: var(--primary-blue);
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
             padding: 12px 0;
         }
-
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        nav a {
+        .nav-links a {
             color: var(--white);
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s;
-            font-size: 0.95em;
+            transition: color 0.3s, background 0.3s;
+            font-size: 0.92em;
+            padding: 7px 14px;
+            border-radius: 6px;
         }
-
-        nav a:hover {
+        .nav-links a:hover, .nav-links a.active {
             color: var(--primary-gold);
+            background: rgba(255,255,255,.08);
         }
 
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
         }
 
         .breadcrumb {
@@ -302,19 +397,19 @@
         .hero {
             background: linear-gradient(135deg, var(--primary-blue) 0%, #144272 100%);
             color: var(--white);
-            padding: 80px 20px;
+            padding: 70px 20px;
             text-align: center;
         }
 
         .hero h2 {
-            font-size: 3em;
+            font-size: 2.6em;
             margin-bottom: 20px;
             color: var(--white);
         }
 
         .hero p {
-            font-size: 1.3em;
-            margin-bottom: 30px;
+            font-size: 1.2em;
+            margin-bottom: 10px;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
@@ -333,14 +428,14 @@
         }
 
         .stat-number {
-            font-size: 2.8em;
+            font-size: 2.6em;
             font-weight: bold;
             display: block;
             color: var(--primary-gold);
         }
 
         .stat-text {
-            font-size: 1.1em;
+            font-size: 1.05em;
             margin-top: 5px;
         }
 
@@ -389,7 +484,7 @@
         }
 
         section {
-            padding: 80px 20px;
+            padding: 70px 20px;
         }
 
         .section-alt {
@@ -398,7 +493,7 @@
 
         h2 {
             color: var(--primary-blue);
-            font-size: 2.5em;
+            font-size: 2.3em;
             margin-bottom: 20px;
             text-align: center;
             position: relative;
@@ -419,7 +514,7 @@
 
         h3 {
             color: var(--primary-blue);
-            font-size: 1.6em;
+            font-size: 1.5em;
             margin: 30px 0 15px;
         }
 
@@ -448,18 +543,18 @@
         }
 
         .service-card:hover {
-            transform: translateY(-8px);
+            transform: translateY(-6px);
             box-shadow: 0 8px 30px rgba(10, 38, 71, 0.15);
         }
 
         .service-icon {
-            font-size: 3em;
+            font-size: 2.6em;
             margin-bottom: 20px;
         }
 
         .service-card h3 {
             color: var(--primary-blue);
-            font-size: 1.5em;
+            font-size: 1.4em;
             margin: 0 0 15px 0;
         }
 
@@ -483,7 +578,7 @@
         .pricing-card:hover {
             border-color: var(--primary-gold);
             box-shadow: 0 8px 30px rgba(10, 38, 71, 0.15);
-            transform: translateY(-8px);
+            transform: translateY(-6px);
         }
 
         .popular-badge {
@@ -500,12 +595,12 @@
 
         .pricing-card h3 {
             color: var(--primary-blue);
-            font-size: 1.5em;
+            font-size: 1.4em;
             margin: 0 0 15px 0;
         }
 
         .price {
-            font-size: 2.5em;
+            font-size: 2.4em;
             color: var(--primary-gold);
             font-weight: bold;
             margin: 20px 0;
@@ -552,11 +647,11 @@
         }
 
         .step-card:hover {
-            transform: scale(1.05);
+            transform: scale(1.04);
         }
 
         .step-number {
-            font-size: 3em;
+            font-size: 2.8em;
             font-weight: bold;
             margin-bottom: 15px;
             color: var(--primary-gold);
@@ -564,7 +659,7 @@
 
         .step-card h3 {
             color: white;
-            font-size: 1.3em;
+            font-size: 1.25em;
             margin: 0 0 10px 0;
         }
 
@@ -664,7 +759,7 @@
             background: linear-gradient(135deg, var(--primary-gold) 0%, #C4932C 100%);
             color: var(--white);
             text-align: center;
-            padding: 80px 40px;
+            padding: 70px 40px;
             border-radius: 12px;
             margin: 60px 0;
         }
@@ -676,6 +771,20 @@
 
         .cta-section h2::after {
             background: var(--white);
+        }
+
+        .pricing-strip {
+            margin-top: 30px;
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-size: 0.95em;
+        }
+        .pricing-strip span {
+            background: rgba(255,255,255,.28);
+            padding: 8px 16px;
+            border-radius: 20px;
         }
 
         .floating-buttons {
@@ -781,37 +890,15 @@
         }
 
         @media (max-width: 768px) {
-            .hero h2 {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 2em;
-            }
-
-            .header-cta {
-                display: none;
-            }
-
-            .logo-text h1 {
-                font-size: 1.4em;
-            }
-
-            .nav-links {
-                gap: 15px;
-            }
-
-            .hero-stats {
-                gap: 30px;
-            }
-
+            .hero h2 { font-size: 1.7em; }
+            h2 { font-size: 1.8em; }
+            .hero-stats { gap: 24px; }
             .services-grid,
             .pricing-grid,
             .process-grid,
             .comparison-grid {
                 grid-template-columns: 1fr;
             }
-
             .comparison-table {
                 font-size: 0.85em;
                 display: block;
@@ -824,46 +911,57 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates Logo" class="logo-img">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
                     <a href="#pricing" class="cta-btn">Get Started</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/services/" class="active">🔧 Services</a>
+                <a href="/why-us/">⭐ Why Us</a>
+                <a href="/faq/">❓ FAQs</a>
+                <a href="/blog/">📝 Blog</a>
+                <a href="/calculator/">🧮 Calculators</a>
+                <a href="/about/">ℹ️ About</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20internal%20audit%20services" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
 
-    <nav>
+    <nav class="desktop-nav" aria-label="Main navigation">
         <div class="container">
-            <a href="/">← Back to Home</a>
             <div class="nav-links">
-                <a href="/blog/">Blogs</a>
+                <a href="/services/" class="active">Services</a>
+                <a href="/why-us/">Why Us</a>
+                <a href="/faq/">FAQs</a>
+                <a href="/blog/">Blog</a>
                 <a href="/calculator/">Calculators</a>
-                <a href="/services/">Services</a>
-                <a href="/about/">About us</a>
-                <a href="/why-us/">Why Choose Us</a>
-                <a href="/faq/">FAQ</a>
+                <a href="/about/">About</a>
             </div>
         </div>
     </nav>
 
     <div class="breadcrumb">
         <div class="container">
-            <a href="/">Home</a> / <a href="/services">Services</a> / <span>Internal Audit</span>
+            <a href="/">Home</a> / <a href="/services/">Services</a> / <span>Internal Audit</span>
         </div>
     </div>
 
     <section class="hero">
         <div class="container">
             <h2>Internal Audit Services</h2>
-            <p>Comprehensive Internal Audit Solutions - Risk Assessment, Control Evaluation & Process Optimization by Expert CAs | Strengthen Your Business Controls | Starting ₹25,000</p>
-            
+            <p>Risk assessment, control evaluation and process optimization by expert CAs — starting at ₹25,000.</p>
+
             <div class="hero-stats">
                 <div class="stat-box">
                     <span class="stat-number">500+</span>
@@ -883,11 +981,14 @@
                 <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call Now: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20internal%20audit%20services" class="btn-secondary">💬 WhatsApp Us</a>
             </div>
-            <p style="margin-top: 30px; font-size: 1.1em;">
-                <strong>Special Offer:</strong> Book annual internal audit package and get quarterly risk assessment FREE!
-            </p>
         </div>
     </section>
+
+    <div id="quick-answer" style="background: #082035; padding: 16px 20px; text-align: center;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
+            <strong style="color: var(--primary-gold);">Internal audit</strong> is an independent evaluation of risk management, internal controls and governance, distinct from the annually mandated <strong style="color: var(--primary-gold);">statutory audit</strong>. It is legally required under Section 138 of the Companies Act, 2013 for companies with turnover of <strong style="color: var(--primary-gold);">₹200 crore+</strong> or borrowings of ₹100 crore+, and recommended for all businesses to strengthen controls and reduce fraud risk.
+        </p>
+    </div>
 
     <section>
         <div class="container">
@@ -911,8 +1012,8 @@
                     <h3>📊 Key Benefits</h3>
                     <ul style="margin-left: 20px;">
                         <li>✅ Identifies operational inefficiencies and cost savings</li>
-                        <li>✅ Prevents fraud and financial irregularities</li>
-                        <li>✅ Ensures compliance with laws and regulations</li>
+                        <li>✅ Helps prevent fraud and financial irregularities</li>
+                        <li>✅ Supports compliance with laws and regulations</li>
                         <li>✅ Improves internal controls and processes</li>
                         <li>✅ Provides independent assurance to management</li>
                         <li>✅ Enhances corporate governance</li>
@@ -990,7 +1091,7 @@
     <section id="types" class="section-alt">
         <div class="container">
             <h2>Types of Internal Audit We Conduct</h2>
-            
+
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">💼</div>
@@ -1008,7 +1109,7 @@
                 <div class="service-card">
                     <div class="service-icon">💰</div>
                     <h3>Financial Audit</h3>
-                    <p>Review financial records, transactions, and controls to ensure accuracy, compliance, and prevention of financial irregularities.</p>
+                    <p>Review financial records, transactions, and controls to support accuracy, compliance, and prevention of financial irregularities.</p>
                     <ul style="margin-top: 15px; margin-left: 20px;">
                         <li>Transaction verification</li>
                         <li>Financial controls testing</li>
@@ -1021,7 +1122,7 @@
                 <div class="service-card">
                     <div class="service-icon">📋</div>
                     <h3>Compliance Audit</h3>
-                    <p>Ensure adherence to laws, regulations, policies, and procedures applicable to your industry and business operations.</p>
+                    <p>Assess adherence to laws, regulations, policies, and procedures applicable to your industry and business operations.</p>
                     <ul style="margin-top: 15px; margin-left: 20px;">
                         <li>Statutory compliance check</li>
                         <li>Policy adherence review</li>
@@ -1047,7 +1148,7 @@
                 <div class="service-card">
                     <div class="service-icon">🔍</div>
                     <h3>Fraud Detection Audit</h3>
-                    <p>Investigate potential fraud, examine red flags, and implement preventive controls to protect organizational assets.</p>
+                    <p>Investigate potential fraud, examine red flags, and support implementation of preventive controls to protect organizational assets.</p>
                     <ul style="margin-top: 15px; margin-left: 20px;">
                         <li>Fraud risk assessment</li>
                         <li>Forensic investigation</li>
@@ -1115,7 +1216,7 @@
     <section>
         <div class="container">
             <h2>Why Choose Our Internal Audit Services?</h2>
-            <p class="section-intro">Expert internal auditors with deep industry knowledge and proven track record</p>
+            <p class="section-intro">Experienced internal auditors with deep industry knowledge</p>
 
             <div class="services-grid">
                 <div class="service-card">
@@ -1127,7 +1228,7 @@
                 <div class="service-card">
                     <div class="service-icon">🔬</div>
                     <h3>Risk-Based Approach</h3>
-                    <p>Focus on high-risk areas first using systematic risk assessment methodology to maximize audit value and impact.</p>
+                    <p>Focus on high-risk areas first using a systematic risk assessment methodology to maximize audit value and impact.</p>
                 </div>
 
                 <div class="service-card">
@@ -1139,19 +1240,19 @@
                 <div class="service-card">
                     <div class="service-icon">🤝</div>
                     <h3>Independent & Objective</h3>
-                    <p>Completely independent assessment with no conflict of interest, ensuring unbiased evaluation and recommendations.</p>
+                    <p>An independent assessment with no conflict of interest, aiming for an unbiased evaluation and recommendations.</p>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">⚡</div>
                     <h3>Timely Delivery</h3>
-                    <p>Strict adherence to audit timelines with regular progress updates and prompt report submission.</p>
+                    <p>Adherence to audit timelines with regular progress updates and prompt report submission.</p>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">💡</div>
                     <h3>Value Addition</h3>
-                    <p>Beyond compliance - we provide strategic insights, best practices, and process improvement recommendations.</p>
+                    <p>Beyond compliance — strategic insights, best practices, and process improvement recommendations.</p>
                 </div>
             </div>
         </div>
@@ -1160,7 +1261,7 @@
     <section id="pricing" class="section-alt">
         <div class="container">
             <h2>Internal Audit Pricing</h2>
-            <p class="section-intro">Flexible pricing based on business size, complexity, and audit scope</p>
+            <p class="section-intro">Pricing based on business size, complexity, and audit scope</p>
 
             <div class="pricing-grid">
                 <div class="pricing-card">
@@ -1206,7 +1307,7 @@
                         <li>Multi-location coverage</li>
                         <li>Dedicated audit team</li>
                         <li>Real-time reporting dashboard</li>
-                        <li>24/7 support & consultation</li>
+                        <li>Priority support & consultation</li>
                     </ul>
                     <a href="tel:+917889257045" class="btn-primary">Contact Us</a>
                 </div>
@@ -1263,7 +1364,7 @@
     <section id="process">
         <div class="container">
             <h2>Our Internal Audit Process</h2>
-            <p class="section-intro">Systematic 7-step audit methodology ensuring comprehensive coverage and actionable insights</p>
+            <p class="section-intro">A 7-step audit methodology for comprehensive coverage and actionable insights</p>
 
             <div class="process-grid">
                 <div class="step-card">
@@ -1287,7 +1388,7 @@
                 <div class="step-card">
                     <div class="step-number">4</div>
                     <h3>Testing</h3>
-                    <p>Perform detailed testing of controls, transactions, and compliance requirements</p>
+                    <p>Detailed testing of controls, transactions, and compliance requirements</p>
                 </div>
 
                 <div class="step-card">
@@ -1299,7 +1400,7 @@
                 <div class="step-card">
                     <div class="step-number">6</div>
                     <h3>Reporting</h3>
-                    <p>Prepare comprehensive report with observations, recommendations, and risk ratings</p>
+                    <p>Comprehensive report with observations, recommendations, and risk ratings</p>
                 </div>
 
                 <div class="step-card">
@@ -1347,7 +1448,7 @@
     <section class="section-alt">
         <div class="container">
             <h2>Key Areas We Audit</h2>
-            
+
             <div class="services-grid">
                 <div class="service-card">
                     <h3>🏦 Cash & Bank</h3>
@@ -1536,12 +1637,12 @@
                 <strong>⚠️ Cost of Not Having Internal Audit:</strong>
                 <ul style="margin-left: 20px; margin-top: 10px;">
                     <li><strong>Financial Loss:</strong> Fraud and errors can result in losses of 5-10% of annual revenue</li>
-                    <li><strong>Compliance Penalties:</strong> Non-compliance can attract hefty fines and legal action</li>
-                    <li><strong>Reputational Damage:</strong> Financial irregularities can damage brand reputation and stakeholder trust</li>
+                    <li><strong>Compliance Penalties:</strong> Non-compliance can attract fines and legal action</li>
+                    <li><strong>Reputational Damage:</strong> Financial irregularities can affect brand reputation and stakeholder trust</li>
                     <li><strong>Operational Inefficiency:</strong> Process gaps lead to higher costs and lower productivity</li>
-                    <li><strong>Missed Opportunities:</strong> Lack of insights prevents strategic improvements and cost savings</li>
+                    <li><strong>Missed Opportunities:</strong> Lack of insights can prevent strategic improvements and cost savings</li>
                 </ul>
-                <p style="margin-top: 15px;"><em>Studies show that organizations with strong internal audit functions experience 50% fewer financial statement restatements (<a href="https://www.iia.org.au/" target="_blank" rel="noopener" style="color: #721c24; text-decoration: underline;">Institute of Internal Auditors</a>)</em></p>
+                <p style="margin-top: 15px;"><em>Organizations with strong internal audit functions tend to see fewer financial statement restatements (<a href="https://www.iia.org.au/" target="_blank" rel="noopener" style="color: #721c24; text-decoration: underline;">Institute of Internal Auditors</a>)</em></p>
             </div>
         </div>
     </section>
@@ -1555,56 +1656,56 @@
                 <div class="service-card">
                     <div class="service-icon">📊</div>
                     <h3>Statutory Audit</h3>
-                    <p>Annual financial statement audit as per Companies Act requirements. Expert opinion on true and fair view.</p>
+                    <p>Annual financial statement audit as per Companies Act requirements.</p>
                     <a href="/services/statutory-audit/" style="color: var(--primary-gold); font-weight: 600; text-decoration: none;">Learn More →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">🔍</div>
                     <h3>Tax Audit</h3>
-                    <p>Section 44AB tax audit for businesses exceeding turnover limits. Ensure income tax compliance.</p>
+                    <p>Section 44AB tax audit for businesses exceeding turnover limits.</p>
                     <a href="/services/audit-services/" style="color: var(--primary-gold); font-weight: 600; text-decoration: none;">Learn More →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">📝</div>
                     <h3>GST Compliance</h3>
-                    <p>Complete GST return filing, compliance, and advisory services to avoid penalties.</p>
+                    <p>GST return filing, compliance, and advisory services.</p>
                     <a href="/services/gst-compliance/" style="color: var(--primary-gold); font-weight: 600; text-decoration: none;">Learn More →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">📚</div>
                     <h3>Bookkeeping Services</h3>
-                    <p>Professional accounting and bookkeeping services for accurate financial records maintenance.</p>
+                    <p>Accounting and bookkeeping for accurate financial records.</p>
                     <a href="/services/bookkeeping-and-accounting/" style="color: var(--primary-gold); font-weight: 600; text-decoration: none;">Learn More →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">💡</div>
                     <h3>Business Advisory</h3>
-                    <p>Strategic business consulting, financial planning, and management advisory services.</p>
+                    <p>Strategic business consulting and financial planning.</p>
                     <a href="/services/business-advisory/" style="color: var(--primary-gold); font-weight: 600; text-decoration: none;">Learn More →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">🏢</div>
                     <h3>Company Incorporation</h3>
-                    <p>Complete company registration services including private limited, OPC, and LLP incorporation.</p>
+                    <p>Company registration including private limited, OPC, and LLP incorporation.</p>
                     <a href="/services/company-incorporation/" style="color: var(--primary-gold); font-weight: 600; text-decoration: none;">Learn More →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">📄</div>
                     <h3>GST Return Filing</h3>
-                    <p>Monthly, quarterly and annual GST return filing services with ITC reconciliation.</p>
+                    <p>Monthly, quarterly and annual GST return filing with ITC reconciliation.</p>
                     <a href="/services/gst-return-filing/" style="color: var(--primary-gold); font-weight: 600; text-decoration: none;">Learn More →</a>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">💼</div>
                     <h3>TDS Return Filing</h3>
-                    <p>Quarterly TDS return filing, form 16/16A issuance and TDS compliance services.</p>
+                    <p>Quarterly TDS return filing, Form 16/16A issuance and TDS compliance.</p>
                     <a href="/services/tds-return-filing/" style="color: var(--primary-gold); font-weight: 600; text-decoration: none;">Learn More →</a>
                 </div>
             </div>
@@ -1617,7 +1718,7 @@
 
             <div class="faq-item">
                 <div class="faq-question">What is internal audit and why is it important?</div>
-                <div class="faq-answer">Internal audit is an independent, objective evaluation of your organization's risk management, internal controls, and governance processes. It's important because it helps identify operational inefficiencies, prevents fraud, ensures compliance with laws and regulations, improves processes, and strengthens internal controls to protect business assets. Regular internal audits provide management with assurance that business operations are effective and risks are being properly managed.</div>
+                <div class="faq-answer">Internal audit is an independent, objective evaluation of your organization's risk management, internal controls, and governance processes. It helps identify operational inefficiencies, supports fraud prevention, aids compliance with laws and regulations, improves processes, and strengthens internal controls to protect business assets. Regular internal audits give management assurance that operations are effective and risks are properly managed.</div>
             </div>
 
             <div class="faq-item">
@@ -1632,37 +1733,37 @@
 
             <div class="faq-item">
                 <div class="faq-question">Is internal audit mandatory for private limited companies?</div>
-                <div class="faq-answer">Internal audit is mandatory only for certain companies under Section 138 of Companies Act, 2013: companies with turnover of ₹200 crore or more, companies with outstanding loans/borrowings of ₹100 crore or more, listed companies, and unlisted public companies with paid-up capital of ₹50 crore or more. For other private limited companies, it's not mandatory but highly recommended to ensure proper controls, prevent fraud, and improve operations. Many banks and investors also require internal audit reports.</div>
+                <div class="faq-answer">Internal audit is mandatory only for certain companies under Section 138 of Companies Act, 2013: companies with turnover of ₹200 crore or more, companies with outstanding loans/borrowings of ₹100 crore or more, listed companies, and unlisted public companies with paid-up capital of ₹50 crore or more. For other private limited companies, it's not mandatory but recommended to strengthen controls, reduce fraud risk, and improve operations. Many banks and investors also ask for internal audit reports.</div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">How long does an internal audit take?</div>
-                <div class="faq-answer">Internal audit duration depends on scope and business size. A basic operational audit for small business takes 2-5 days. Comprehensive audits for mid-sized companies typically require 5-10 days of fieldwork plus 3-5 days for analysis and reporting. Large enterprise audits can take 15-30 days or more. The process includes planning (1-2 days), fieldwork (2-20 days based on size), analysis (2-5 days), and reporting (2-3 days). We provide a detailed timeline during the planning phase.</div>
+                <div class="faq-answer">Internal audit duration depends on scope and business size. A basic operational audit for small business takes 2-5 days. Comprehensive audits for mid-sized companies typically require 5-10 days of fieldwork plus 3-5 days for analysis and reporting. Large enterprise audits can take 15-30 days or more. The process includes planning (1-2 days), fieldwork (2-20 days based on size), analysis (2-5 days), and reporting (2-3 days). A detailed timeline is provided during the planning phase.</div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">What documents are required for internal audit?</div>
-                <div class="faq-answer">Required documents include: organization structure and policies, previous audit reports, financial statements and trial balances, bank statements and reconciliations, sales and purchase registers, inventory records, fixed asset register, payroll records, statutory compliance documents (GST, TDS, PF, ESI returns), vendor and customer master lists, board minutes and resolutions, IT system documentation, and any relevant contracts or agreements. We'll provide a detailed checklist specific to your audit scope during planning.</div>
+                <div class="faq-answer">Required documents include: organization structure and policies, previous audit reports, financial statements and trial balances, bank statements and reconciliations, sales and purchase registers, inventory records, fixed asset register, payroll records, statutory compliance documents (GST, TDS, PF, ESI returns), vendor and customer master lists, board minutes and resolutions, IT system documentation, and any relevant contracts or agreements. A detailed checklist specific to your audit scope is provided during planning.</div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">Can internal audit detect fraud in my company?</div>
-                <div class="faq-answer">Yes, fraud detection is a key objective of internal audit. We use various techniques including data analytics, transaction testing, surprise checks, and control evaluation to identify red flags and irregularities. Common frauds detected include duplicate payments, ghost employees, fictitious vendors, inventory theft, expense manipulation, and revenue recognition issues. However, internal audit provides reasonable assurance, not absolute guarantee. Sophisticated frauds involving collusion may require specialized forensic audit investigation.</div>
+                <div class="faq-answer">Fraud detection is a key objective of internal audit. Data analytics, transaction testing, surprise checks, and control evaluation are used to identify red flags and irregularities. Common frauds detected include duplicate payments, ghost employees, fictitious vendors, inventory theft, expense manipulation, and revenue recognition issues. Internal audit provides reasonable assurance, not an absolute guarantee — sophisticated frauds involving collusion may require a specialized forensic audit investigation.</div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">How often should internal audit be conducted?</div>
-                <div class="faq-answer">Audit frequency depends on business size, risk profile, and regulatory requirements. High-risk areas should be audited quarterly or semi-annually. Most medium-sized businesses benefit from quarterly internal audits. Large enterprises often have continuous audit programs with monthly cycles for different areas. Statutory requirements for mandatory internal audit typically specify quarterly or more frequent audits. Even if not mandatory, we recommend at least annual internal audit for all businesses to maintain effective controls.</div>
+                <div class="faq-answer">Audit frequency depends on business size, risk profile, and regulatory requirements. High-risk areas benefit from quarterly or semi-annual audits. Most medium-sized businesses find quarterly internal audits useful. Large enterprises often have continuous audit programs with monthly cycles for different areas. Where mandatory, internal audit typically needs to be quarterly or more frequent. Even where not mandatory, at least an annual internal audit is recommended to maintain effective controls.</div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">What happens after the internal audit is completed?</div>
-                <div class="faq-answer">After fieldwork, we prepare a comprehensive audit report detailing findings, risk ratings, and recommendations. This is presented to management/audit committee with an executive summary. Management provides responses and action plans for each finding. We track implementation of recommendations through follow-up reviews. The report helps in: improving controls, addressing compliance gaps, preventing fraud, optimizing processes, and supporting management decision-making. We remain available for clarifications and implementation support.</div>
+                <div class="faq-answer">After fieldwork, a comprehensive audit report is prepared detailing findings, risk ratings, and recommendations, presented to management/audit committee with an executive summary. Management provides responses and action plans for each finding, and implementation of recommendations is tracked through follow-up reviews. The report supports improving controls, addressing compliance gaps, reducing fraud risk, optimizing processes, and informing management decisions.</div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">Can you conduct internal audit for multiple branch locations?</div>
-                <div class="faq-answer">Yes, we conduct multi-location internal audits for businesses with branches across India. We use risk-based sampling to select branches for physical visit while remote audit can be performed for others. Our approach includes standardized checklists for consistency, concurrent audits to save time, centralized reporting for consolidated view, and local compliance verification. We have teams in major cities and can deploy auditors to any location. Multi-location audits help identify control variations and share best practices across branches.</div>
+                <div class="faq-answer">Yes, multi-location internal audits are conducted for businesses with branches across India. Risk-based sampling is used to select branches for a physical visit, while remote audit can be performed for others. The approach includes standardized checklists for consistency, concurrent audits to save time, centralized reporting for a consolidated view, and local compliance verification. Teams are available in major cities and can be deployed to most locations. Multi-location audits help identify control variations and share best practices across branches.</div>
             </div>
         </div>
     </section>
@@ -1670,7 +1771,7 @@
     <section class="section-alt">
         <div class="container">
             <h2>Industries We Serve</h2>
-            <p class="section-intro">Specialized internal audit services across diverse industries</p>
+            <p class="section-intro">Internal audit services across diverse industries</p>
 
             <div class="services-grid">
                 <div class="service-card">
@@ -1799,15 +1900,19 @@
 
     <section class="cta-section">
         <div class="container">
-            <h2>Strengthen Your Business Controls Today!</h2>
-            <p style="font-size: 1.2em; margin-bottom: 30px;">Expert internal audit services to protect your assets, improve operations, and ensure compliance. Get comprehensive risk assessment by qualified CAs!</p>
+            <h2>Strengthen Your Business Controls</h2>
+            <p style="font-size: 1.2em; margin-bottom: 20px;">Internal audit services to help protect your assets, improve operations, and support compliance — from qualified CAs.</p>
             <div class="hero-buttons">
                 <a href="tel:+917889257045" class="btn-primary">📞 Call: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20internal%20audit%20services" class="btn-secondary">💬 WhatsApp Us</a>
             </div>
-            <p style="margin-top: 25px; font-size: 1em;">
-                <strong>Free Consultation:</strong> Discuss your audit requirements with our experts - No obligation!
-            </p>
+
+            <div class="pricing-strip">
+                <span>Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span>GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span>Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span>TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+            </div>
         </div>
     </section>
 
@@ -1849,40 +1954,40 @@
 
                 <div class="footer-section">
                     <h3>Contact Info</h3>
-                    <p>📞 <a href="tel:+917889257045" style="color: white;">+91 78892 57045</a></p>
-                    <p>✉️ <a href="mailto:siddhiandassociatess@gmail.com" style="color: white;">siddhiandassociatess@gmail.com</a></p>
+                    <p>📞 <a href="tel:+917889257045">+91 78892 57045</a></p>
+                    <p>✉️ <a href="mailto:siddhiandassociatess@gmail.com">siddhiandassociatess@gmail.com</a></p>
                     <p style="margin-top: 15px;">🕒 Mon-Sat: 9 AM - 6 PM</p>
                     <p>⚡ Response Time: 2 Hours</p>
                     <div style="margin-top: 20px;">
                         <strong>Serving Across India:</strong><br>
-                        <a href="/bangalore/" style="color: white;">Bangalore</a> | 
-                        <a href="/ghaziabad/" style="color: white;">Ghaziabad</a> | 
-                        <a href="/lucknow/" style="color: white;">Lucknow</a> | 
-                        <a href="/panchkula/" style="color: white;">Panchkula</a> |
-                        <a href="/zirakpur/" style="color: white;">Zirakpur</a> |
-                        <a href="/bareilly/" style="color: white;">Bareilly</a>
+                        <a href="/bangalore/">Bangalore</a> |
+                        <a href="/ghaziabad/">Ghaziabad</a> |
+                        <a href="/lucknow/">Lucknow</a> |
+                        <a href="/panchkula/">Panchkula</a> |
+                        <a href="/zirakpur/">Zirakpur</a> |
+                        <a href="/bareilly/">Bareilly</a>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
                 <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Professional Internal Audit Services across India</p>
             </div>
         </div>
     </footer>
 
     <div class="floating-buttons">
-        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20internal%20audit%20services" 
-           target="_blank" 
-           class="float-btn whatsapp-btn" 
+        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20internal%20audit%20services"
+           target="_blank"
+           class="float-btn whatsapp-btn"
            aria-label="Chat on WhatsApp">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
             </svg>
         </a>
-        <a href="tel:+917889257045" 
-           class="float-btn call-btn" 
+        <a href="tel:+917889257045"
+           class="float-btn call-btn"
            aria-label="Call us">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
@@ -1891,6 +1996,33 @@
     </div>
 
     <script>
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -1923,26 +2055,6 @@
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
-        });
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section[id]');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (pageYOffset >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.style.color = '#ffffff';
-                const href = link.getAttribute('href').substring(1);
-                if (href === current) {
-                    link.style.color = '#D4A43C';
-                }
-            });
         });
     </script>
 </body>
