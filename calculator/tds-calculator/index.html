@@ -42,6 +42,14 @@
     
     <!-- Canonical -->
     <link rel="canonical" href="https://sidhiandassociates.com/calculator/tds-calculator/">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Free TDS (Tax Deducted at Source) Calculator by Sidhi & Associates. Computes TDS amount, net payable, and applicable rate across sections including bank interest (193), other interest (194A), commission (194H), insurance commission (194D), professional fees (194J), and e-commerce (194O), with PAN and threshold handling. Provided by an Accountants firm offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="WebApplication,FAQPage">
     
     <!-- Schema Markup - WebApplication -->
     <script type="application/ld+json">
@@ -63,7 +71,7 @@
         "name": "Sidhi & Associates",
         "telephone": "+917889257045",
         "email": "siddhiandassociatess@gmail.com",
-        "url": "https://sidhiandassociates.github.io"
+        "url": "https://sidhiandassociates.com"
       },
       "aggregateRating": {
         "@type": "AggregateRating",
@@ -82,7 +90,7 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://sidhiandassociates.github.io"
+        "item": "https://sidhiandassociates.com/"
       },{
         "@type": "ListItem",
         "position": 2,
@@ -94,6 +102,24 @@
         "name": "TDS Calculator",
         "item": "https://sidhiandassociates.com/calculator/tds-calculator/"
       }]
+    }
+    </script>
+
+    <!-- WebPage Schema with Speakable (GEO + AIO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/calculator/tds-calculator/#webpage",
+      "url": "https://sidhiandassociates.com/calculator/tds-calculator/",
+      "name": "TDS Calculator - Tax Deducted at Source Calculator India",
+      "description": "Free TDS Calculator to calculate Tax Deducted at Source for salary, interest, rent, commission, and professional fees.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-16",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer", "#featured-snippet"]
+      }
     }
     </script>
 
@@ -137,6 +163,41 @@
           "@type": "Answer",
           "text": "Documents for TDS filing: PAN of deductor and deductee, Form 26AS (for verification), Bank account details, TDS certificate (Form 16A/16), Investment/expenditure records, ITR filed by deductee, Monthly TDS deduction records. For e-filing: Digital signature or OTP. Quarterly TDS filing mandatory if TDS exceeds ₹10,000 per quarter. Annual TDS return (Form 27Q/27EQ) due within 31 May."
         }
+      },{
+        "@type": "Question",
+        "name": "What is Form 15G and 15H for TDS?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Form 15G and 15H are self-declaration forms used to avoid TDS deduction when total income is below the taxable limit. Form 15G is for individuals below 60 years, and Form 15H is for senior citizens aged 60 and above. Both are valid for one financial year and must be submitted to each bank or payer separately."
+        }
+      },{
+        "@type": "Question",
+        "name": "What happens if TDS is not deducted?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Non-deduction or late deduction of TDS can lead to interest charges of around 1% to 1.5% per month, a penalty under Section 271C equal to the TDS amount, possible prosecution under Section 276B, and disallowance of the related expense under Section 40(a)(ia). Deductees may also need to pay advance tax directly if TDS was not deducted."
+        }
+      },{
+        "@type": "Question",
+        "name": "How to get a TDS refund?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A TDS refund arises when TDS deducted exceeds actual tax liability. File your Income Tax Return with all TDS entries from Form 26AS included, verify the ITR through Aadhaar OTP, net banking or ITR-V, and the refund is typically processed to your PAN-linked bank account within 1-2 months of verification."
+        }
+      },{
+        "@type": "Question",
+        "name": "What is TAN and how to get it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TAN (Tax Deduction and Collection Account Number) is a 10-digit alphanumeric number required by anyone responsible for deducting or collecting TDS/TCS. It can be applied for online via the NSDL portal using Form 49B, and is different from PAN, which is used for income tax purposes generally."
+        }
+      },{
+        "@type": "Question",
+        "name": "Can TDS be deposited online?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, TDS can be deposited online through net banking using Challan ITNS 281, or via the NSDL/TIN portal. TDS must generally be deposited within 7 days from the end of the month of deduction (30 days for March), and the payment reflects in Form 26AS shortly after."
+        }
       }]
     }
     </script>
@@ -151,6 +212,7 @@
         :root {
             --primary-blue: #0A2647;
             --primary-gold: #D4A43C;
+            --light-gold: #F5E6C8;
             --tds-purple: #7c3aed;
             --tds-light: #ede9fe;
             --text-dark: #1a1a1a;
@@ -177,45 +239,44 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+
+        header .container { position: relative; }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.55em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height: 1.1;
         }
 
-        .logo-text p {
-            font-size: 0.9em;
-            color: var(--primary-gold);
-            margin: 0;
-        }
-
-        .header-cta {
+        .header-actions {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             align-items: center;
         }
 
@@ -223,7 +284,131 @@
             color: var(--primary-blue);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .cta-btn {
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border-radius: 8px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: -4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--primary-blue);
+            margin: 4px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer {
+            display: none;
+            flex-direction: column;
+            background: #144272;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            right: -20px;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+            border-top: 2px solid var(--primary-gold);
+            overflow: hidden;
+        }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a {
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 14px 24px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            transition: background .2s, color .2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta {
+            background: var(--primary-gold);
+            color: var(--white) !important;
+            margin: 12px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 1.05em;
+            border-bottom: none !important;
+            width: calc(100% - 40px);
+        }
+
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 12px 0;
+        }
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s, background 0.3s;
+            font-size: 0.92em;
+            padding: 7px 14px;
+            border-radius: 6px;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-gold);
+            background: rgba(255,255,255,.08);
+        }
+
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
         }
 
         .breadcrumb {
@@ -705,10 +890,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .header-cta {
-                display: none;
-            }
-
             .tds-table {
                 font-size: 0.9em;
             }
@@ -723,19 +904,45 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="https://sidhiandassociates.com/" class="logo">
-                    <img src="https://sidhiandassociates.com/sidhi.png" alt="Sidhi & Associates CA" class="logo-img" width="60" height="60">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="https://sidhiandassociates.com/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
+                    <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="cta-btn" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/services/">🔧 Services</a>
+                <a href="/why-us/">⭐ Why Us</a>
+                <a href="/faq/">❓ FAQs</a>
+                <a href="/blog/">📝 Blog</a>
+                <a href="/calculator/" class="active">🧮 Calculators</a>
+                <a href="/about/">ℹ️ About</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-links">
+                <a href="/services/">Services</a>
+                <a href="/why-us/">Why Us</a>
+                <a href="/faq/">FAQs</a>
+                <a href="/blog/">Blog</a>
+                <a href="/calculator/" class="active">Calculators</a>
+                <a href="/about/">About</a>
+            </div>
+        </div>
+    </nav>
 
     <div class="breadcrumb">
         <div class="container">
@@ -766,6 +973,12 @@
             </div>
         </div>
     </section>
+
+    <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
+            <strong style="color: var(--primary-gold);">TDS</strong> = Payment Amount (above the applicable threshold) × <strong style="color: var(--primary-gold);">TDS Rate</strong>. Most sections carry a <strong style="color: var(--primary-gold);">10%</strong> rate — rising to <strong style="color: var(--primary-gold);">20%</strong> without a valid PAN — while e-commerce transactions under Section 194O are taxed at 1%. Select a section and enter the payment amount below to calculate instantly.
+        </p>
+    </div>
 
     <div class="main-content">
         <div class="calculator-section">
@@ -844,9 +1057,6 @@
                         <h4>Payment Amount</h4>
                         <div class="value" id="paymentDisplay">₹0</div>
                     </div>
-                    <!-- This section goes after line where it cuts off -->
-<!-- Replace from: <div class="stat-card"><h4>TDS Rate</h4><div class="value" id="rateDisplay"> -->
-<!-- To the complete section below: -->
 
                     <div class="stat-card">
                         <h4>TDS Rate</h4>
@@ -904,7 +1114,7 @@
                     </ul>
                 </div>
             </div>
-<!-- Natasha-->
+
             <div id="noResultsMessage">
                 <div class="info-box">
                     <h4>👈 Calculate TDS</h4>
@@ -929,6 +1139,11 @@
     <section class="info-section">
         <div class="container">
             <h2>Complete Guide to TDS (Tax Deducted at Source)</h2>
+
+            <div id="featured-snippet" style="background: var(--light-gold); border-left: 5px solid var(--primary-gold); border-radius: 0 8px 8px 0; padding: 22px 26px; margin: 0 0 36px;">
+                <p style="font-size: 0.75em; font-weight: 700; color: #B8861E; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 9px;">💡 Quick Answer</p>
+                <p style="margin: 0; line-height: 1.75;"><strong>TDS (Tax Deducted at Source)</strong> is tax the payer deducts before making a payment such as salary, interest, rent, commission, or professional fees. Most non-salary sections carry a <strong>10% rate</strong> — for example, bank interest above ₹10,000/year, professional fees above ₹30,000/year, and commission above ₹15,000/year — rising to <strong>20%</strong> if the payee's PAN is not furnished. E-commerce transactions under Section 194O are taxed at <strong>1%</strong>. Salary TDS (Section 192) follows the applicable income tax slabs.</p>
+            </div>
             
             <div class="info-grid">
                 <div class="info-card">
@@ -1327,7 +1542,13 @@
                 <a href="https://wa.me/917889257045?text=Hi%2C%20I%20need%20help%20with%20TDS%20filing" class="btn-primary" style="background: #25D366;">💬 WhatsApp</a>
                 <a href="https://sidhiandassociates.com/services/tds-return-filing/" class="btn-primary">📊 TDS Services</a>
             </div>
-            <p style="margin-top: 25px; font-size: 1em;">✓ Free Consultation | ✓ Expert CAs | ✓ Timely Filing | ✓ Pan-India Service</p>
+            <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+            </div>
+            <p style="margin-top: 25px; font-size: 1em;">✓ Expert CAs | ✓ Timely Filing | ✓ Pan-India Service</p>
         </div>
     </div>
 
@@ -1382,10 +1603,10 @@
                 <div class="footer-section">
                     <h3>Popular Services</h3>
                     <ul>
-                        <li><a href="https://sidhiandassociates.com/services/income-tax-return-ITR/">ITR Filing - ₹499</a></li>
-                        <li><a href="https://sidhiandassociates.com/services/tds-return-filing/">TDS Return Filing</a></li>
+                        <li><a href="https://sidhiandassociates.com/services/income-tax-return-ITR/">Income Tax Filing & Planning</a></li>
+                        <li><a href="https://sidhiandassociates.com/services/tds-return-filing/">TDS Filing & Returns</a></li>
                         <li><a href="https://sidhiandassociates.com/services/tax-planning-filing/">Tax Planning</a></li>
-                        <li><a href="https://sidhiandassociates.com/services/gst-registration/">GST Registration</a></li>
+                        <li><a href="https://sidhiandassociates.com/services/gst-registration/">GST Compliance & Advisory</a></li>
                     </ul>
                 </div>
                 
@@ -1408,7 +1629,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
                 <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | TDS & Tax Compliance Experts</p>
             </div>
         </div>
@@ -1431,6 +1652,33 @@
     </a>
 
     <script>
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         const tdsRates = {
             '194A': { rate: 10, threshold: 10000, name: 'Bank Interest', info: 'Bank interest above ₹10,000 annually' },
             '194D': { rate: 10, threshold: 15000, name: 'Insurance Commission', info: 'Insurance commission above ₹15,000' },
