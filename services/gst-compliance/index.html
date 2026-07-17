@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18022959954"></script>
@@ -12,9 +12,9 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="icon" href="/sidhi.png" type="image/png" />
-    
+
     <!-- Primary Meta Tags -->
     <title>GST Registration & Compliance Services India | GST Filing from ₹3,000 - Sidhi & Associates</title>
     <meta name="title" content="GST Registration & Compliance Services India | GST Filing from ₹3,000 - Sidhi & Associates">
@@ -23,9 +23,7 @@
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="language" content="English">
     <meta name="author" content="Sidhi & Associates">
-    <meta name="geo.region" content="IN">
-    <meta name="geo.placename" content="India">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sidhiandassociates.com/services/gst-compliance/">
@@ -33,16 +31,24 @@
     <meta property="og:description" content="Professional GST Registration & Compliance by Qualified CAs. 5,000+ GST Returns Filed. 100% Accurate Filing. Call +91 78892 57045">
     <meta property="og:site_name" content="Sidhi & Associates">
     <meta property="og:locale" content="en_IN">
-    
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://sidhiandassociates.com/services/gst-compliance/">
     <meta property="twitter:title" content="GST Registration & Compliance Services - Sidhi & Associates">
     <meta property="twitter:description" content="Expert GST Registration, Filing & Compliance Services. Complete GST support by qualified CAs. Starting ₹3,000.">
-    
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://sidhiandassociates.com/services/gst-compliance/">
-    
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="GST Registration & Compliance service by Sidhi & Associates, ICAI registered Chartered Accountants. GST registration costs Rs3,000 one-time; monthly GST filing (GSTR-1 + GSTR-3B) starts at Rs1,500/month; quarterly QRMP filing from Rs3,000/quarter; annual package from Rs15,000/year. Firm also offers Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="Service,FAQPage">
+
     <!-- Enhanced Schema Markup for SEO -->
     <script type="application/ld+json">
     {
@@ -82,6 +88,24 @@
     }
     </script>
 
+    <!-- WebPage Schema with Speakable (AEO / voice & AI answer engines) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/services/gst-compliance/#webpage",
+      "url": "https://sidhiandassociates.com/services/gst-compliance/",
+      "name": "GST Registration & Compliance Services",
+      "description": "Expert GST Registration, Filing & Compliance Services by Qualified CAs. GSTR-1, GSTR-3B, Annual Returns, GST Refunds, Input Tax Credit.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-17",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer"]
+      }
+    }
+    </script>
+
     <!-- FAQ Schema for Rich Snippets -->
     <script type="application/ld+json">
     {
@@ -117,7 +141,7 @@
           "name": "How much does GST return filing cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Monthly GST filing starts at ₹1,500 per return. Quarterly filing costs ₹3,000 per quarter. Annual packages range from ₹12,000 to ₹50,000 based on transaction volume and complexity."
+            "text": "Monthly GST filing starts at ₹1,500 per month. Quarterly filing costs ₹3,000 per quarter. Annual packages range from ₹15,000 to ₹50,000 based on transaction volume and complexity."
           }
         },
         {
@@ -191,51 +215,50 @@
             padding: 0 20px;
         }
 
-        /* Header */
+        /* Header (matches site-wide header used on the calculator pages) */
         header {
             background: var(--white);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+
+        header .container { position: relative; }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.55em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height: 1.1;
         }
 
-        .logo-text p {
-            font-size: 0.9em;
-            color: var(--primary-gold);
-            margin: 0;
-        }
-
-        .header-cta {
+        .header-actions {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             align-items: center;
         }
 
@@ -243,54 +266,131 @@
             color: var(--primary-blue);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
 
         .cta-btn {
             background: var(--primary-gold);
             color: var(--white);
-            padding: 12px 25px;
+            padding: 10px 20px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.9em;
             transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border-radius: 8px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: -4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--primary-blue);
+            margin: 4px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer {
+            display: none;
+            flex-direction: column;
+            background: #144272;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            right: -20px;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+            border-top: 2px solid var(--primary-gold);
+            overflow: hidden;
+        }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a {
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 14px 24px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            transition: background .2s, color .2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta {
+            background: var(--primary-gold);
+            color: var(--white) !important;
+            margin: 12px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 1.05em;
+            border-bottom: none !important;
+            width: calc(100% - 40px);
         }
 
-        .cta-btn:hover {
-            background: var(--primary-blue);
-            transform: translateY(-2px);
-        }
-
-        /* Navigation */
-        nav {
-            background: var(--primary-blue);
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
             padding: 12px 0;
         }
-
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        nav a {
+        .nav-links a {
             color: var(--white);
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s;
-            font-size: 0.95em;
+            transition: color 0.3s, background 0.3s;
+            font-size: 0.92em;
+            padding: 7px 14px;
+            border-radius: 6px;
         }
-
-        nav a:hover {
+        .nav-links a:hover, .nav-links a.active {
             color: var(--primary-gold);
+            background: rgba(255,255,255,.08);
         }
 
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
         }
 
         /* Breadcrumb */
@@ -782,22 +882,6 @@
                 font-size: 2em;
             }
 
-            .header-cta {
-                display: none;
-            }
-
-            .logo-text h1 {
-                font-size: 1.4em;
-            }
-
-            .nav-links {
-                gap: 15px;
-            }
-
-            .hero-stats {
-                gap: 30px;
-            }
-
             .services-grid,
             .pricing-grid,
             .process-grid {
@@ -817,30 +901,42 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates Logo" class="logo-img">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
-                    <a href="#pricing" class="cta-btn">Get Started</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
+                    <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20GST%20compliance" class="cta-btn" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/services/" class="active">🔧 Services</a>
+                <a href="/why-us/">⭐ Why Us</a>
+                <a href="/faq/">❓ FAQs</a>
+                <a href="/blog/">📝 Blog</a>
+                <a href="/calculator/">🧮 Calculators</a>
+                <a href="/about/">ℹ️ About</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20GST%20compliance" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Navigation -->
-    <nav>
+    <nav class="desktop-nav" aria-label="Main navigation">
         <div class="container">
-            <a href="/">← Back to Home</a>
             <div class="nav-links">
-                <a href="#services">Services</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#process">Process</a>
-                <a href="#faq">FAQ</a>
+                <a href="/services/" class="active">Services</a>
+                <a href="/why-us/">Why Us</a>
+                <a href="/faq/">FAQs</a>
+                <a href="/blog/">Blog</a>
+                <a href="/calculator/">Calculators</a>
+                <a href="/about/">About</a>
             </div>
         </div>
     </nav>
@@ -856,8 +952,8 @@
     <section class="hero">
         <div class="container">
             <h2>GST Registration & Compliance Services</h2>
-            <p>Complete GST Solutions from Registration to Returns - Expert GST Filing & Compliance by Qualified CAs Starting ₹3,000</p>
-            
+            <p id="quick-answer">Complete GST Solutions from Registration to Returns - Expert GST Filing & Compliance by Qualified CAs Starting ₹3,000</p>
+
             <div class="hero-stats">
                 <div class="stat-box">
                     <span class="stat-number">5,000+</span>
@@ -930,7 +1026,7 @@
     <section id="services" class="section-alt">
         <div class="container">
             <h2>Our GST Services</h2>
-            
+
             <h3 style="text-align: center;">Registration Services</h3>
             <div class="services-grid">
                 <div class="service-card">
@@ -1115,7 +1211,7 @@
     <section class="section-alt">
         <div class="container">
             <h2>GST Filing Deadlines</h2>
-            
+
             <div style="overflow-x: auto;">
                 <table class="comparison-table">
                     <thead>
@@ -1241,7 +1337,7 @@
     <section class="section-alt">
         <div class="container">
             <h2>Required Documents</h2>
-            
+
             <h3 style="text-align: center;">For GST Registration:</h3>
             <div class="services-grid">
                 <div class="service-card">
@@ -1308,7 +1404,7 @@
     <section>
         <div class="container">
             <h2>GST Compliance Tips</h2>
-            
+
             <div class="info-box">
                 <h3>💡 Essential GST Best Practices:</h3>
                 <ul style="margin-left: 20px; margin-top: 15px;">
@@ -1407,9 +1503,12 @@
                 <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call Now: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20GST%20compliance" class="btn-secondary">💬 WhatsApp Us</a>
             </div>
-            <p style="margin-top: 30px; font-size: 1.1em;">
-                <strong>Special Offer:</strong> Register for GST this month and get first month filing FREE! Limited time offer.
-            </p>
+            <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
+                <span style="background: rgba(255,255,255,.25); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span style="background: rgba(255,255,255,.25); padding: 8px 16px; border-radius: 20px;">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span style="background: rgba(255,255,255,.25); padding: 8px 16px; border-radius: 20px;">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span style="background: rgba(255,255,255,.25); padding: 8px 16px; border-radius: 20px;">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+            </div>
         </div>
     </section>
 
@@ -1460,7 +1559,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
                 <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Professional GST Services across India</p>
             </div>
         </div>
@@ -1468,16 +1567,16 @@
 
     <!-- Floating Buttons -->
     <div class="floating-buttons">
-        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20GST%20compliance" 
-           target="_blank" 
-           class="float-btn whatsapp-btn" 
+        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20GST%20compliance"
+           target="_blank"
+           class="float-btn whatsapp-btn"
            aria-label="Chat on WhatsApp">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
             </svg>
         </a>
-        <a href="tel:+917889257045" 
-           class="float-btn call-btn" 
+        <a href="tel:+917889257045"
+           class="float-btn call-btn"
            aria-label="Call us">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
@@ -1486,6 +1585,35 @@
     </div>
 
     <script>
+        // Auto-update footer year
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        // Hamburger / mobile drawer toggle
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -1526,7 +1654,7 @@
         window.addEventListener('scroll', () => {
             let current = '';
             const sections = document.querySelectorAll('section[id]');
-            
+
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 100;
                 if (pageYOffset >= sectionTop) {
@@ -1535,10 +1663,11 @@
             });
 
             document.querySelectorAll('.nav-links a').forEach(link => {
-                link.style.color = '#ffffff';
                 const href = link.getAttribute('href').substring(1);
                 if (href === current) {
                     link.style.color = '#D4A43C';
+                } else if (!link.classList.contains('active')) {
+                    link.style.color = '#ffffff';
                 }
             });
         });
