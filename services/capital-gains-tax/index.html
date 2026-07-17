@@ -12,13 +12,13 @@
 </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="icon" href="/sidhi.png" type="image/png" />
-    
+
     <!-- Preconnect -->
     <link rel="preconnect" href="https://www.google.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    
+
     <!-- Primary Meta Tags -->
     <title>Capital Gains Tax Consultant India | LTCG, STCG Filing from ₹2,000 - Sidhi & Associates</title>
     <meta name="title" content="Capital Gains Tax Consultant India | LTCG, STCG Filing from ₹2,000">
@@ -28,16 +28,29 @@
     <meta name="language" content="English">
     <meta name="author" content="Sidhi & Associates">
     <meta name="geo.region" content="IN">
-    
+    <meta name="geo.placename" content="India">
+
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sidhiandassociates.com/services/capital-gains-tax/">
     <meta property="og:title" content="Capital Gains Tax Services - LTCG, STCG from ₹2,000">
     <meta property="og:description" content="Expert Capital Gains Tax Calculation & Filing by CAs. Save Maximum Tax on Property, Stocks, MF. Call +91 78892 57045">
-    
+    <meta property="og:site_name" content="Sidhi & Associates">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sidhiandassociates.com/services/capital-gains-tax/">
+    <meta property="twitter:title" content="Capital Gains Tax Services - LTCG, STCG from ₹2,000">
+    <meta property="twitter:description" content="Expert Capital Gains Tax Calculation & Filing by CAs. Property, Stocks, Mutual Funds.">
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://sidhiandassociates.com/services/capital-gains-tax/">
-    
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Capital Gains Tax services by Sidhi & Associates, starting from Rs2,000, covering LTCG and STCG calculation on property, stocks, mutual funds, gold and bonds, with tax-saving exemptions under Section 54, 54EC and 54F. The same firm also offers Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="Service,FAQPage">
+
     <!-- Service Schema -->
     <script type="application/ld+json">
     {
@@ -62,6 +75,24 @@
         "lowPrice": "2000",
         "highPrice": "10000",
         "priceCurrency": "INR"
+      }
+    }
+    </script>
+
+    <!-- WebPage Schema with Speakable (AEO/GEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/services/capital-gains-tax/#webpage",
+      "url": "https://sidhiandassociates.com/services/capital-gains-tax/",
+      "name": "Capital Gains Tax Consultant India | LTCG, STCG Filing",
+      "description": "Expert capital gains tax calculation and filing for property, stocks, and mutual funds, starting from ₹2,000.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-17",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer"]
       }
     }
     </script>
@@ -128,15 +159,6 @@
     }
     </script>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
-    </script>
-
     <style>
         * {
             margin: 0;
@@ -170,50 +192,50 @@
             padding: 0 20px;
         }
 
+        /* Header */
         header {
             background: var(--white);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+
+        header .container { position: relative; }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.55em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height: 1.1;
         }
 
-        .logo-text p {
-            font-size: 0.9em;
-            color: var(--primary-gold);
-            margin: 0;
-        }
-
-        .header-cta {
+        .header-actions {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             align-items: center;
         }
 
@@ -221,52 +243,131 @@
             color: var(--primary-blue);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
 
         .cta-btn {
             background: var(--primary-gold);
             color: var(--white);
-            padding: 12px 25px;
+            padding: 10px 20px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.9em;
             transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border-radius: 8px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: -4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--primary-blue);
+            margin: 4px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer {
+            display: none;
+            flex-direction: column;
+            background: #144272;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            right: -20px;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+            border-top: 2px solid var(--primary-gold);
+            overflow: hidden;
+        }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a {
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 14px 24px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            transition: background .2s, color .2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta {
+            background: var(--primary-gold);
+            color: var(--white) !important;
+            margin: 12px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 1.05em;
+            border-bottom: none !important;
+            width: calc(100% - 40px);
         }
 
-        .cta-btn:hover {
-            background: var(--primary-blue);
-            transform: translateY(-2px);
-        }
-
-        nav {
-            background: var(--primary-blue);
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
             padding: 12px 0;
         }
-
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        nav a {
+        .nav-links a {
             color: var(--white);
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s;
+            transition: color 0.3s, background 0.3s;
+            font-size: 0.92em;
+            padding: 7px 14px;
+            border-radius: 6px;
         }
-
-        nav a:hover {
+        .nav-links a:hover, .nav-links a.active {
             color: var(--primary-gold);
+            background: rgba(255,255,255,.08);
         }
 
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
         }
 
         .breadcrumb {
@@ -666,6 +767,12 @@
             background: var(--white);
         }
 
+        .price-chip {
+            background: rgba(255,255,255,.18);
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
         .floating-buttons {
             position: fixed;
             right: 20px;
@@ -777,18 +884,6 @@
                 font-size: 2em;
             }
 
-            .header-cta {
-                display: none;
-            }
-
-            .logo-text h1 {
-                font-size: 1.4em;
-            }
-
-            .nav-links {
-                gap: 15px;
-            }
-
             .hero-stats {
                 gap: 30px;
             }
@@ -809,32 +904,45 @@
     </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates CA" class="logo-img" width="60" height="60">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
                     <a href="#pricing" class="cta-btn">Get Quote</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/services/">🔧 Services</a>
+                <a href="/why-us/">⭐ Why Us</a>
+                <a href="/faq/">❓ FAQs</a>
+                <a href="/blog/">📝 Blog</a>
+                <a href="/calculator/">🧮 Calculators</a>
+                <a href="/about/">ℹ️ About</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20capital%20gains%20tax" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
 
-    <nav>
+    <nav class="desktop-nav" aria-label="Main navigation">
         <div class="container">
-            <a href="/">← Back to Home</a>
             <div class="nav-links">
-                <a href="/blog/">Blogs</a>
-                <a href="/services/">Services</a>
-                <a href="/why-us/">Why Us</a>
-                <a href="/faq/">FAQ</a>
+                <a href="/">← Home</a>
+                <a href="#types">Asset Types</a>
+                <a href="#exemptions">Exemptions</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#faq">FAQ</a>
             </div>
         </div>
     </nav>
@@ -848,8 +956,8 @@
     <section class="hero">
         <div class="container">
             <h2>Capital Gains Tax Services</h2>
-            <p>Expert Capital Gains Tax Calculation & Filing - Property, Stocks, Mutual Funds | Minimize Tax Legally | Save up to 50% on Capital Gains | LTCG & STCG Planning by CAs</p>
-            
+            <p id="quick-answer">Expert Capital Gains Tax Calculation & Filing - Property, Stocks, Mutual Funds | Minimize Tax Legally | Save up to 50% on Capital Gains | LTCG & STCG Planning by CAs, starting from ₹2,000</p>
+
             <div class="hero-stats">
                 <div class="stat-box">
                     <span class="stat-number">₹50Cr+</span>
@@ -869,9 +977,6 @@
                 <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20capital%20gains%20tax" class="btn-secondary">💬 WhatsApp Us</a>
             </div>
-            <p style="margin-top: 30px; font-size: 1.1em;">
-                <strong>Free Consultation:</strong> Get expert advice on minimizing your capital gains tax!
-            </p>
         </div>
     </section>
 
@@ -898,7 +1003,7 @@
                 </div>
 
                 <div class="comparison-card">
-                    <h3>💰 Tax Rates 2024-25</h3>
+                    <h3>💰 Current Tax Rates</h3>
                     <p><strong>LTCG Tax Rates:</strong></p>
                     <ul style="margin-left: 20px; margin-top: 10px;">
                         <li>Property: 20% (with indexation)</li>
@@ -1162,7 +1267,7 @@
                 <div class="service-card">
                     <div class="service-icon">⚡</div>
                     <h3>Quick Turnaround</h3>
-                    <p>Fast calculations and filing within 24-48 hours. Same-day urgent service available for time-sensitive cases.</p>
+                    <p>Fast calculations and filing within 24-48 hours. Same-day service available for time-sensitive cases.</p>
                 </div>
             </div>
         </div>
@@ -1492,9 +1597,12 @@
                 <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20capital%20gains%20tax" class="btn-secondary">💬 WhatsApp Us</a>
             </div>
-            <p style="margin-top: 20px; font-size: 1.1em;">
-                <strong>Free Consultation Available</strong> - Discuss your case with our expert CAs today!
-            </p>
+            <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
+                <span class="price-chip">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span class="price-chip">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span class="price-chip">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span class="price-chip">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+            </div>
         </div>
     </div>
 
@@ -1542,7 +1650,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
                 <p style="margin-top: 10px;">Professional Capital Gains Tax Services | Save Maximum Tax Legally</p>
                 <p style="margin-top: 10px; font-size: 0.9em;">
                     <a href="/sitemap.xml" style="color: var(--white); margin: 0 10px;">Sitemap</a>
@@ -1573,16 +1681,48 @@
     </div>
 
     <script>
+        // Auto-update footer year
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        // Hamburger / mobile drawer
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                const targetId = this.getAttribute('href');
+                if (targetId.length > 1) {
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
                 }
             });
         });
