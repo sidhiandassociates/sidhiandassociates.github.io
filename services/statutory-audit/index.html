@@ -25,6 +25,10 @@
     <meta name="author" content="Sidhi & Associates">
     <meta name="geo.region" content="IN">
     <meta name="geo.placename" content="India">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Statutory Audit Services by Sidhi & Associates, a Chartered Accountancy practice. Statutory audit under Companies Act 2013 starts from Rs10,000 for small companies (turnover up to Rs2 crore), Rs25,000 for medium companies (turnover Rs2-10 crore), and Rs50,000+ for large companies (turnover above Rs10 crore). Also offers Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="Service,FAQPage">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -124,6 +128,24 @@
     }
     </script>
 
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/services/statutory-audit/#webpage",
+      "url": "https://sidhiandassociates.com/services/statutory-audit/",
+      "name": "Statutory Audit Services India | Company Audit from ₹10,000",
+      "description": "Professional Statutory Audit Services by ICAI qualified Chartered Accountants. Company Audit, Bank Audit, Tax Audit, Internal Audit with complete compliance and ROC filing support.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-17",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer", "#featured-snippet"]
+      }
+    }
+    </script>
+
     <!-- Breadcrumb Schema -->
     <script type="application/ld+json">
     {
@@ -183,51 +205,60 @@
             padding: 0 20px;
         }
 
-        /* Header */
+        .top-bar {
+            background: linear-gradient(90deg, var(--primary-blue) 0%, #1a4a7a 50%, var(--primary-blue) 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 0.88em;
+            font-weight: 500;
+        }
+        .top-bar a { color: var(--primary-gold); font-weight: 700; text-decoration: none; }
+        .top-bar a:hover { text-decoration: underline; }
+
         header {
             background: var(--white);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+
+        header .container { position: relative; }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.55em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height: 1.1;
         }
 
-        .logo-text p {
-            font-size: 0.9em;
-            color: var(--primary-gold);
-            margin: 0;
-        }
-
-        .header-cta {
+        .header-actions {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             align-items: center;
         }
 
@@ -235,54 +266,131 @@
             color: var(--primary-blue);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
 
         .cta-btn {
             background: var(--primary-gold);
             color: var(--white);
-            padding: 12px 25px;
+            padding: 10px 20px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.9em;
             transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border-radius: 8px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: -4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--primary-blue);
+            margin: 4px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer {
+            display: none;
+            flex-direction: column;
+            background: #144272;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            right: -20px;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+            border-top: 2px solid var(--primary-gold);
+            overflow: hidden;
+        }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a {
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 14px 24px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            transition: background .2s, color .2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta {
+            background: var(--primary-gold);
+            color: var(--white) !important;
+            margin: 12px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 1.05em;
+            border-bottom: none !important;
+            width: calc(100% - 40px);
         }
 
-        .cta-btn:hover {
-            background: var(--primary-blue);
-            transform: translateY(-2px);
-        }
-
-        /* Navigation */
-        nav {
-            background: var(--primary-blue);
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
             padding: 12px 0;
         }
-
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        nav a {
+        .nav-links a {
             color: var(--white);
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s;
-            font-size: 0.95em;
+            transition: color 0.3s, background 0.3s;
+            font-size: 0.92em;
+            padding: 7px 14px;
+            border-radius: 6px;
         }
-
-        nav a:hover {
+        .nav-links a:hover, .nav-links a.active {
             color: var(--primary-gold);
+            background: rgba(255,255,255,.08);
         }
 
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
         }
 
         /* Breadcrumb */
@@ -734,22 +842,6 @@
                 font-size: 2em;
             }
 
-            .header-cta {
-                display: none;
-            }
-
-            .logo-text h1 {
-                font-size: 1.4em;
-            }
-
-            .nav-links {
-                gap: 15px;
-            }
-
-            .hero-stats {
-                gap: 30px;
-            }
-
             .services-grid,
             .pricing-grid,
             .process-grid {
@@ -759,34 +851,45 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates Logo" class="logo-img">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
-                    <a href="#pricing" class="cta-btn">Get Quote</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
+                    <a href="https://wa.me/917889257045?text=I%20need%20statutory%20audit%20services" class="cta-btn" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/services/" class="active">🔧 Services</a>
+                <a href="/why-us/">⭐ Why Us</a>
+                <a href="/faq/">❓ FAQs</a>
+                <a href="/blog/">📝 Blog</a>
+                <a href="/calculator/">🧮 Calculators</a>
+                <a href="/about/">ℹ️ About</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=I%20need%20statutory%20audit%20services" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Navigation -->
-    <nav>
+    <nav class="desktop-nav" aria-label="Main navigation">
         <div class="container">
-            <a href="/">← Back to Home</a>
             <div class="nav-links">
-                <a href="#types">Types of Audit</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#process">Process</a>
-                <a href="/faq/">FAQ</a>
+                <a href="/services/" class="active">Services</a>
+                <a href="/why-us/">Why Us</a>
+                <a href="/faq/">FAQs</a>
+                <a href="/blog/">Blog</a>
+                <a href="/calculator/">Calculators</a>
+                <a href="/about/">About</a>
             </div>
         </div>
     </nav>
@@ -825,6 +928,12 @@
             </div>
         </div>
     </section>
+
+    <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
+            <strong style="color: var(--primary-gold);">Statutory audit</strong> is a mandatory yearly examination of a company's financial statements by an independent ICAI-qualified Chartered Accountant, required under the <strong style="color: var(--primary-gold);">Companies Act, 2013</strong>. Pricing starts at <strong style="color: var(--primary-gold);">₹10,000</strong> for small companies and scales with turnover and complexity.
+        </p>
+    </div>
 
     <!-- What is Statutory Audit -->
     <section>
@@ -1330,9 +1439,12 @@
                 <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=I%20need%20statutory%20audit%20services" class="btn-secondary">💬 WhatsApp Now</a>
             </div>
-            <p style="margin-top: 30px; font-size: 1.1em;">
-                <strong>Special Offer:</strong> Get FREE ROC filing support with annual audit package!
-            </p>
+            <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+            </div>
         </div>
     </section>
 
@@ -1384,7 +1496,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
                 <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Professional Statutory Audit Services Across India</p>
             </div>
         </div>
@@ -1410,6 +1522,33 @@
     </div>
 
     <script>
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
