@@ -13,10 +13,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/sidhi.png" type="image/png" />
+
     <title>Income Tax Calculator - Old vs New Regime Comparison | Free Tool</title>
+    <meta name="title" content="Income Tax Calculator - Old vs New Regime Comparison">
     <meta name="description" content="Free Income Tax Calculator. Compare old vs new tax regime. Calculate tax liability, deductions, take-home salary. By Sidhi & Associates CAs.">
+    <meta name="keywords" content="income tax calculator, old vs new tax regime, tax liability calculator, take home salary calculator, income tax calculator India, section 87A rebate, tax deductions calculator">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sidhiandassociates.com/calculator/income-tax-calculator/">
+    <meta property="og:title" content="Income Tax Calculator - Old vs New Regime Comparison">
+    <meta property="og:description" content="Compare old vs new tax regime and calculate your take-home salary instantly. Free tool by expert CAs.">
+
     <link rel="canonical" href="https://sidhiandassociates.com/calculator/income-tax-calculator/">
-    
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Free Income Tax Calculator by Sidhi & Associates. Compares tax liability under the Old and New income tax regimes in India, including standard deduction, Section 80C/80D/80CCD(1B) deductions, HRA exemption, and Section 87A rebate, and shows take-home salary. Provided by an Accountants firm offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="WebApplication,FAQPage">
+
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Income Tax Calculator",
+      "description": "Free online calculator to compare Old vs New income tax regime and calculate tax liability, deductions, and take-home salary",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "INR"
+      },
+      "provider": {
+        "@type": "Organization",
+        "name": "Sidhi & Associates",
+        "telephone": "+917889257045"
+      }
+    }
+    </script>
+
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/calculator/income-tax-calculator/#webpage",
+      "url": "https://sidhiandassociates.com/calculator/income-tax-calculator/",
+      "name": "Income Tax Calculator - Old vs New Regime Comparison",
+      "description": "Free Income Tax Calculator to compare Old vs New tax regime and calculate tax liability, deductions, and take-home salary.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-17",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer", "#featured-snippet"]
+      }
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which tax regime is better for me - Old or New?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on your deductions. If you have significant deductions such as 80C, HRA, or home loan interest, the old regime may work out better. With minimal deductions, the new regime usually results in lower tax. Comparing both regimes with your actual numbers is the most reliable way to decide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the standard deduction for salaried individuals?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Salaried individuals get a standard deduction of Rs50,000, available under both the old and new tax regimes. It is deducted automatically from gross salary before taxable income is calculated."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I reduce my tax liability legally?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common legal ways to reduce tax include maximizing Section 80C deductions through EPF, PPF, ELSS or LIC, claiming HRA exemption if you pay rent, investing in NPS for the additional 80CCD(1B) deduction, claiming home loan interest deduction, and claiming health insurance premiums under Section 80D."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is Section 87A rebate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Section 87A provides a tax rebate for individuals with taxable income up to Rs7,00,000 under the new regime and Rs5,00,000 under the old regime. If you qualify, this rebate can reduce your tax liability to zero."
+          }
+        }
+      ]
+    }
+    </script>
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         :root {
@@ -26,22 +127,52 @@
         }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-dark); background: var(--light-bg); }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
-        .header-content { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
-        .logo { display: flex; align-items: center; gap: 15px; text-decoration: none; }
-        .logo-img { width: 60px; height: 60px; object-fit: contain; }
-        .logo-text h1 { font-size: 1.8em; color: var(--primary-blue); font-weight: 700; margin: 0; }
-        .logo-text p { font-size: 0.9em; color: var(--primary-gold); margin: 0; }
-        .header-cta { display: flex; gap: 15px; align-items: center; }
-        .cta-phone { color: var(--primary-blue); text-decoration: none; font-weight: 600; font-size: 1.1em; }
-        .cta-btn { background: var(--primary-gold); color: var(--white); padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1001; }
+        header .container { position: relative; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; gap: 16px; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
+        .logo-img { width: 50px; height: 50px; object-fit: contain; }
+        .logo-text h1 { font-size: 1.55em; color: var(--primary-blue); font-weight: 700; margin: 0; line-height: 1.1; }
+        .header-actions { display: flex; gap: 10px; align-items: center; }
+        .cta-phone { color: var(--primary-blue); text-decoration: none; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 5px; }
+        .cta-btn { background: var(--primary-gold); color: var(--white); padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9em; transition: all 0.3s; white-space: nowrap; }
         .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
-        .menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 5px; }
-        .menu-toggle span { display: block; width: 25px; height: 3px; background: var(--primary-blue); margin: 5px 0; transition: 0.3s; }
-        nav { background: var(--primary-blue); padding: 12px 0; }
-        nav .container { display: flex; justify-content: center; flex-wrap: wrap; gap: 30px; }
-        nav a { color: var(--white); text-decoration: none; font-weight: 600; transition: color 0.3s; font-size: 0.95em; }
-        nav a:hover { color: var(--primary-gold); }
+
+        /* Hamburger (mobile) */
+        .hamburger { display: none; background: none; border: none; cursor: pointer; width: 44px; height: 44px; padding: 0; border-radius: 8px; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; margin-right: -4px; -webkit-tap-highlight-color: transparent; }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span { display: block; width: 22px; height: 2px; background: var(--primary-blue); margin: 4px 0; transition: all 0.3s; border-radius: 2px; }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer { display: none; flex-direction: column; background: #144272; position: absolute; top: 100%; left: -20px; right: -20px; z-index: 999; box-shadow: 0 8px 24px rgba(0,0,0,.25); border-top: 2px solid var(--primary-gold); overflow: hidden; }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a { color: rgba(255,255,255,.9); text-decoration: none; font-weight: 600; font-size: 1em; padding: 14px 24px; border-bottom: 1px solid rgba(255,255,255,.07); transition: background .2s, color .2s; display: flex; align-items: center; gap: 8px; width: 100%; }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta { background: var(--primary-gold); color: var(--white) !important; margin: 12px 20px; border-radius: 10px; justify-content: center; font-size: 1.05em; border-bottom: none !important; width: calc(100% - 40px); }
+
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; padding: 12px 0; }
+        .nav-links a { color: var(--white); text-decoration: none; font-weight: 600; transition: color 0.3s, background 0.3s; font-size: 0.92em; padding: 7px 14px; border-radius: 6px; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary-gold); background: rgba(255,255,255,.08); }
+
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
+        }
+
         .breadcrumb { background: var(--light-gold); padding: 15px 0; }
         .breadcrumb a { color: var(--primary-blue); text-decoration: none; margin: 0 5px; }
         .hero { background: linear-gradient(135deg, var(--info-blue) 0%, #138496 100%); color: var(--white); padding: 60px 20px; text-align: center; }
@@ -122,14 +253,6 @@
             .hero h2 { font-size: 2em; }
             .calculator-card { padding: 25px; }
             .result-value { font-size: 2.5em; }
-            .logo-text h1 { font-size: 1.4em; }
-            .logo-text p { font-size: 0.8em; }
-            .header-cta { display: none; }
-            .menu-toggle { display: block; }
-            nav { display: none; }
-            nav.active { display: block; }
-            nav .container { flex-direction: column; gap: 0; }
-            nav a { display: block; padding: 12px 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
             .floating-buttons { right: 15px; bottom: 15px; }
             .float-btn { width: 50px; height: 50px; }
             .float-btn svg { width: 24px; height: 24px; }
@@ -141,7 +264,6 @@
             .calculator-card h3 { font-size: 1.4em; }
             .regime-selector { grid-template-columns: 1fr; }
             .result-value { font-size: 2em; }
-            .logo-img { width: 50px; height: 50px; }
         }
     </style>
 </head>
@@ -149,32 +271,43 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
-                    <a href="#contact" class="cta-btn">Get Started</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
+                    <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="cta-btn" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
-                <button class="menu-toggle" onclick="toggleMenu()">
-                    <span></span><span></span><span></span>
-                </button>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/services/">🔧 Services</a>
+                <a href="/why-us/">⭐ Why Us</a>
+                <a href="/faq/">❓ FAQs</a>
+                <a href="/blog/">📝 Blog</a>
+                <a href="/calculator/" class="active">🧮 Calculators</a>
+                <a href="/about/">ℹ️ About</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
 
-    <nav id="mainNav">
+    <nav class="desktop-nav" aria-label="Main navigation">
         <div class="container">
-            <a href="/services/">Services</a>
-            <a href="/why-us/">Why Us</a>
-            <a href="/faq/">FAQs</a>
-            <a href="/blog/">Blogs</a>
-            <a href="/calculator/">Calculators</a>
-            <a href="/about/">About</a>
+            <div class="nav-links">
+                <a href="/services/">Services</a>
+                <a href="/why-us/">Why Us</a>
+                <a href="/faq/">FAQs</a>
+                <a href="/blog/">Blog</a>
+                <a href="/calculator/" class="active">Calculators</a>
+                <a href="/about/">About</a>
+            </div>
         </div>
     </nav>
 
@@ -190,6 +323,12 @@
             <p>Calculate Tax Liability & Compare Old vs New Regime</p>
         </div>
     </section>
+
+    <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
+            The <strong style="color: var(--primary-gold);">new tax regime</strong> usually wins with few deductions, while the <strong style="color: var(--primary-gold);">old regime</strong> can work out cheaper if you claim 80C, HRA, or home loan interest. Enter your income and deductions below to see which regime saves you more.
+        </p>
+    </div>
 
     <div class="calculator-container">
         <div class="calculator-grid">
@@ -266,7 +405,7 @@
                 <div class="info-box" style="margin-top: 30px;">
                     <h4>💡 Quick Tips</h4>
                     <ul style="margin-left: 20px; margin-top: 10px;">
-                        <li>New regime is default from FY 2023-24</li>
+                        <li>New regime is the default regime</li>
                         <li>Standard deduction: ₹50K (salaried)</li>
                         <li>Rebate u/s 87A if income < ₹7L</li>
                     </ul>
@@ -345,17 +484,13 @@
     </div>
 
     <div class="floating-buttons">
-        <a href="https://wa.me/917889257045" class="float-btn whatsapp-btn">
+        <a href="https://wa.me/917889257045" class="float-btn whatsapp-btn" aria-label="WhatsApp">
             <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
         </a>
-        <a href="tel:+917889257045" class="float-btn call-btn">
-            <!-- Add this after the opening <a href="tel:+917889257045" class="float-btn call-btn"> tag -->
+        <a href="tel:+917889257045" class="float-btn call-btn" aria-label="Call">
             <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
         </a>
     </div>
-
-<!-- Natasha -->
-<!-- Add this section BEFORE the footer in your calculator page -->
 
 <!-- Related Calculators Section -->
 <section style="background: var(--white); padding: 60px 20px;">
@@ -452,7 +587,7 @@
             <div style="background: var(--white); padding: 35px; border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); transition: all 0.3s; border-top: 4px solid var(--primary-gold);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 30px rgba(10, 38, 71, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 3px 15px rgba(0,0,0,0.08)'">
                 <div style="font-size: 3em; margin-bottom: 20px;">📊</div>
                 <h3 style="color: var(--primary-blue); font-size: 1.5em; margin-bottom: 15px;">Tax Planning & Filing</h3>
-                <p style="color: var(--text-light); margin-bottom: 20px; line-height: 1.8;">Expert ITR filing and strategic tax planning to minimize your tax liability legally. From ₹2,500.</p>
+                <p style="color: var(--text-light); margin-bottom: 20px; line-height: 1.8;">Expert ITR filing and strategic tax planning to minimize your tax liability legally. From ₹1,000.</p>
                 <ul style="list-style: none; padding: 0; margin-bottom: 20px; color: var(--text-light);">
                     <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ Income Tax Return Filing</li>
                     <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ Tax Optimization Strategies</li>
@@ -468,12 +603,12 @@
             <div style="background: var(--white); padding: 35px; border-radius: 12px; box-shadow: 0 3px 15px rgba(0,0,0,0.08); transition: all 0.3s; border-top: 4px solid var(--info-blue);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 8px 30px rgba(10, 38, 71, 0.15)'" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 3px 15px rgba(0,0,0,0.08)'">
                 <div style="font-size: 3em; margin-bottom: 20px;">📝</div>
                 <h3 style="color: var(--primary-blue); font-size: 1.5em; margin-bottom: 15px;">Income Tax Return Filing</h3>
-                <p style="color: var(--text-light); margin-bottom: 20px; line-height: 1.8;">Professional ITR filing for salaried, business, and freelancers. Quick turnaround with maximum refunds.</p>
+                <p style="color: var(--text-light); margin-bottom: 20px; line-height: 1.8;">Professional ITR filing for salaried, business, and freelancers, from ₹1,000.</p>
                 <ul style="list-style: none; padding: 0; margin-bottom: 20px; color: var(--text-light);">
                     <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ All ITR Forms (1-7)</li>
                     <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ Capital Gains Reporting</li>
                     <li style="padding: 8px 0; border-bottom: 1px solid #f0f0f0;">✓ Business Income Filing</li>
-                    <li style="padding: 8px 0;">✓ Maximum Refund Guarantee</li>
+                    <li style="padding: 8px 0;">✓ Accurate Refund Computation</li>
                 </ul>
                 <a href="/services/income-tax-return-ITR/" style="color: var(--info-blue); text-decoration: none; font-weight: 600; display: inline-flex; align-items: center; gap: 5px; transition: all 0.3s;" onmouseover="this.style.color='var(--primary-blue)'; this.style.transform='translateX(5px)'" onmouseout="this.style.color='var(--info-blue)'; this.style.transform='translateX(0)'">
                     Learn More →
@@ -497,7 +632,14 @@
             </div>
         </div>
 
-        <div style="text-align: center; margin-top: 40px;">
+        <div style="margin-top: 40px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
+            <span style="background: var(--white); border: 1px solid var(--light-gold); padding: 8px 16px; border-radius: 20px; color: var(--primary-blue);">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+            <span style="background: var(--white); border: 1px solid var(--light-gold); padding: 8px 16px; border-radius: 20px; color: var(--primary-blue);">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+            <span style="background: var(--white); border: 1px solid var(--light-gold); padding: 8px 16px; border-radius: 20px; color: var(--primary-blue);">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+            <span style="background: var(--white); border: 1px solid var(--light-gold); padding: 8px 16px; border-radius: 20px; color: var(--primary-blue);">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
             <a href="/services/" style="background: var(--primary-blue); color: var(--white); padding: 15px 35px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 1.1em; display: inline-block; transition: all 0.3s;" onmouseover="this.style.background='var(--primary-gold)'; this.style.transform='translateY(-2px)'" onmouseout="this.style.background='var(--primary-blue)'; this.style.transform='translateY(0)'">
                 View All Services
             </a>
@@ -511,7 +653,12 @@
         <h2 style="color: var(--primary-blue); font-size: 2.5em; margin-bottom: 20px; text-align: center; position: relative; padding-bottom: 20px;">
             Frequently Asked Questions
         </h2>
-        
+
+        <div id="featured-snippet" style="background: var(--light-gold); border-left: 5px solid var(--primary-gold); border-radius: 0 8px 8px 0; padding: 22px 26px; margin: 0 auto 36px; max-width: 900px;">
+            <p style="font-size: 0.75em; font-weight: 700; color: #B8861E; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 9px;">💡 Quick Answer</p>
+            <p style="margin: 0; line-height: 1.75;">Choosing between the old and new tax regime comes down to how many deductions you claim. The <strong>new regime</strong> has lower slab rates but few deductions, while the <strong>old regime</strong> allows deductions like <strong>80C, HRA, and home loan interest</strong> that can bring your effective tax below the new regime if they add up. Use the calculator above with your actual numbers for an exact comparison.</p>
+        </div>
+
         <div style="max-width: 900px; margin: 0 auto;">
             <div style="margin-bottom: 20px; border: 2px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
                 <div style="padding: 20px; background: var(--light-bg); cursor: pointer; font-weight: 600; color: var(--primary-blue);" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
@@ -524,10 +671,10 @@
 
             <div style="margin-bottom: 20px; border: 2px solid #e0e0e0; border-radius: 8px; overflow: hidden;">
                 <div style="padding: 20px; background: var(--light-bg); cursor: pointer; font-weight: 600; color: var(--primary-blue);" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'block' ? 'none' : 'block'">
-                    ❓ What is the standard deduction for FY 2024-25?
+                    ❓ What is the standard deduction for salaried individuals?
                 </div>
                 <div style="padding: 20px; display: none; background: var(--white);">
-                    <p style="color: var(--text-light); line-height: 1.8;">The standard deduction for salaried individuals is ₹50,000 for FY 2024-25 under both old and new tax regimes. This is automatically deducted from your gross salary before calculating taxable income.</p>
+                    <p style="color: var(--text-light); line-height: 1.8;">The standard deduction for salaried individuals is ₹50,000, available under both the old and new tax regimes. This is automatically deducted from your gross salary before calculating taxable income.</p>
                 </div>
             </div>
 
@@ -544,7 +691,7 @@
                         <li>Claim home loan interest deduction</li>
                         <li>Health insurance premiums under 80D</li>
                     </ul>
-                    <p style="margin-top: 15px;"><a href="tel:+917889257045" style="color: var(--primary-gold); font-weight: 600;">Contact our CA experts for personalized tax planning</a></p>
+                    <p style="margin-top: 15px;"><a href="tel:+917889257045" style="color: var(--primary-gold); font-weight: 600;">Talk to our CA experts for personalized tax planning</a></p>
                 </div>
             </div>
 
@@ -565,8 +712,7 @@
         </div>
     </div>
 </section>
-    <!-- Natasha -->
-    
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -608,17 +754,39 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
                 <p style="margin-top: 10px;">ICAI Registered Chartered Accountants</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Toggle mobile menu
-        function toggleMenu() {
-            const nav = document.getElementById('mainNav');
-            nav.classList.toggle('active');
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        // Hamburger / mobile drawer
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
         }
 
         // Regime selector
@@ -663,24 +831,24 @@
             const allowances = parseFloat(document.getElementById('otherAllowances').value) || 0;
             const otherIncome = parseFloat(document.getElementById('otherIncome').value) || 0;
             const grossIncome = basic + hra + allowances + otherIncome;
-            
+
             const section80C = parseFloat(document.getElementById('section80C').value) || 0;
             const section80D = parseFloat(document.getElementById('section80D').value) || 0;
             const hraExempt = parseFloat(document.getElementById('hraExempt').value) || 0;
             const section80CCD = parseFloat(document.getElementById('section80CCD').value) || 0;
             const homeLoanInt = parseFloat(document.getElementById('homeLoanInterest').value) || 0;
             const section80G = parseFloat(document.getElementById('section80G').value) || 0;
-            
+
             const standardDeduction = 50000;
             const newTaxableIncome = Math.max(0, grossIncome - standardDeduction);
             const newRegimeTax = calculateNewRegimeTax(newTaxableIncome);
-            
-            const totalOldDeductions = standardDeduction + Math.min(section80C, 150000) + section80D + 
-                                      hraExempt + Math.min(section80CCD, 50000) + 
+
+            const totalOldDeductions = standardDeduction + Math.min(section80C, 150000) + section80D +
+                                      hraExempt + Math.min(section80CCD, 50000) +
                                       Math.min(homeLoanInt, 200000) + section80G;
             const oldTaxableIncome = Math.max(0, grossIncome - totalOldDeductions);
             const oldRegimeTax = calculateOldRegimeTax(oldTaxableIncome);
-            
+
             displayResults(grossIncome, newTaxableIncome, oldTaxableIncome, newRegimeTax, oldRegimeTax, totalOldDeductions, standardDeduction);
         }
 
@@ -710,26 +878,26 @@
 
         function displayResults(grossIncome, newTaxableIncome, oldTaxableIncome, newRegimeTax, oldRegimeTax, totalOldDeductions, standardDeduction) {
             const selectedRegime = document.querySelector('input[name="regime"]:checked').value;
-            
+
             document.getElementById('newRegimeTax').textContent = '₹' + formatNumber(newRegimeTax);
             document.getElementById('oldRegimeTax').textContent = '₹' + formatNumber(oldRegimeTax);
-            
+
             const newEffective = grossIncome > 0 ? ((newRegimeTax / grossIncome) * 100).toFixed(2) : 0;
             const oldEffective = grossIncome > 0 ? ((oldRegimeTax / grossIncome) * 100).toFixed(2) : 0;
-            
+
             document.getElementById('newRegimeRate').textContent = 'Effective: ' + newEffective + '%';
             document.getElementById('oldRegimeRate').textContent = 'Effective: ' + oldEffective + '%';
-            
+
             const newCard = document.getElementById('newRegimeCard');
             const oldCard = document.getElementById('oldRegimeCard');
-            
+
             if (newRegimeTax < oldRegimeTax) {
                 newCard.classList.add('better');
                 newCard.classList.remove('worse');
                 oldCard.classList.add('worse');
                 oldCard.classList.remove('better');
                 const savings = oldRegimeTax - newRegimeTax;
-                document.getElementById('savingsMessage').innerHTML = 
+                document.getElementById('savingsMessage').innerHTML =
                     '<div class="savings-badge">✅ New Regime saves ₹' + formatNumber(savings) + '</div>' +
                     '<p style="margin-top: 10px; color: var(--text-light);">Recommended: Choose New Regime</p>';
             } else if (oldRegimeTax < newRegimeTax) {
@@ -738,43 +906,43 @@
                 newCard.classList.add('worse');
                 newCard.classList.remove('better');
                 const savings = newRegimeTax - oldRegimeTax;
-                document.getElementById('savingsMessage').innerHTML = 
+                document.getElementById('savingsMessage').innerHTML =
                     '<div class="savings-badge">✅ Old Regime saves ₹' + formatNumber(savings) + '</div>' +
                     '<p style="margin-top: 10px; color: var(--text-light);">Recommended: Choose Old Regime</p>';
             } else {
                 newCard.classList.remove('better', 'worse');
                 oldCard.classList.remove('better', 'worse');
-                document.getElementById('savingsMessage').innerHTML = 
+                document.getElementById('savingsMessage').innerHTML =
                     '<p style="color: var(--text-light);">Both regimes result in same tax</p>';
             }
-            
+
             const selectedTax = selectedRegime === 'new' ? newRegimeTax : oldRegimeTax;
             const selectedTaxableIncome = selectedRegime === 'new' ? newTaxableIncome : oldTaxableIncome;
             const selectedDeductions = selectedRegime === 'new' ? standardDeduction : totalOldDeductions;
-            
+
             document.getElementById('selectedTax').textContent = '₹' + formatNumber(selectedTax);
             document.getElementById('selectedRegime').textContent = selectedRegime === 'new' ? 'New Regime' : 'Old Regime';
-            
+
             document.getElementById('grossIncome').textContent = '₹' + formatNumber(grossIncome);
             document.getElementById('totalDeductions').textContent = '₹' + formatNumber(selectedDeductions);
             document.getElementById('taxableIncome').textContent = '₹' + formatNumber(selectedTaxableIncome);
-            
+
             const taxBeforeCess = Math.round(selectedTax / 1.04);
             const cess = selectedTax - taxBeforeCess;
-            
+
             document.getElementById('incomeTax').textContent = '₹' + formatNumber(taxBeforeCess);
             document.getElementById('cess').textContent = '₹' + formatNumber(cess);
             document.getElementById('rebate').textContent = '₹0';
             document.getElementById('totalTax').textContent = '₹' + formatNumber(selectedTax);
-            
+
             const takeHome = grossIncome - selectedTax;
             const monthlyTakeHome = takeHome / 12;
-            
+
             document.getElementById('annualGross').textContent = '₹' + formatNumber(grossIncome);
             document.getElementById('taxDeduction').textContent = '₹' + formatNumber(selectedTax);
             document.getElementById('takeHome').textContent = '₹' + formatNumber(takeHome);
             document.getElementById('monthlyTakeHome').textContent = '₹' + formatNumber(Math.round(monthlyTakeHome));
-            
+
             let recommendation = '';
             if (newRegimeTax < oldRegimeTax) {
                 const savings = oldRegimeTax - newRegimeTax;
