@@ -34,6 +34,14 @@
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://sidhiandassociates.com/services/income-tax-return-ITR/">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Income Tax Return (ITR) Filing service by Sidhi & Associates. Covers ITR-1, ITR-2, ITR-3, ITR-4, ITR-5 and ITR-6 filing with CA review, maximum deductions and e-filing support. Provided by an Accountants firm offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="Service,FAQPage">
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -63,6 +71,24 @@
     }
     </script>
 
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/services/income-tax-return-ITR/#webpage",
+      "url": "https://sidhiandassociates.com/services/income-tax-return-ITR/",
+      "name": "Income Tax Return Filing Online India | ITR Filing from ₹500",
+      "description": "Professional ITR Filing Services. All ITR Forms. Maximum Refunds. E-filing in 24 Hours.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-17",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer", "#featured-snippet"]
+      }
+    }
+    </script>
+
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -88,21 +114,53 @@
         }
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-dark); }
         .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
-        .header-content { display: flex; justify-content: space-between; align-items: center; padding: 15px 0; }
-        .logo { display: flex; align-items: center; gap: 15px; text-decoration: none; }
-        .logo-img { width: 60px; height: 60px; object-fit: contain; }
-        .logo-text h1 { font-size: 1.8em; color: var(--primary-blue); font-weight: 700; margin: 0; }
-        .logo-text p { font-size: 0.9em; color: var(--primary-gold); margin: 0; }
-        .header-cta { display: flex; gap: 15px; align-items: center; }
-        .cta-phone { color: var(--primary-blue); text-decoration: none; font-weight: 600; font-size: 1.1em; }
-        .cta-btn { background: var(--primary-gold); color: var(--white); padding: 12px 25px; border-radius: 25px; text-decoration: none; font-weight: 600; transition: all 0.3s; }
+
+        header { background: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1001; }
+        header .container { position: relative; }
+        .header-content { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; gap: 16px; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; flex-shrink: 0; }
+        .logo-img { width: 50px; height: 50px; object-fit: contain; }
+        .logo-text h1 { font-size: 1.55em; color: var(--primary-blue); font-weight: 700; margin: 0; line-height: 1.1; }
+        .header-actions { display: flex; gap: 10px; align-items: center; }
+        .cta-phone { color: var(--primary-blue); text-decoration: none; font-weight: 600; font-size: 0.95em; display: flex; align-items: center; gap: 5px; }
+        .cta-btn { background: var(--primary-gold); color: var(--white); padding: 10px 20px; border-radius: 25px; text-decoration: none; font-weight: 600; font-size: 0.9em; transition: all 0.3s; white-space: nowrap; }
         .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
-        nav { background: var(--primary-blue); padding: 12px 0; }
-        nav .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; }
-        nav a { color: var(--white); text-decoration: none; font-weight: 600; transition: color 0.3s; font-size: 0.95em; }
-        nav a:hover { color: var(--primary-gold); }
-        .nav-links { display: flex; gap: 30px; flex-wrap: wrap; }
+
+        /* Hamburger (mobile) */
+        .hamburger { display: none; background: none; border: none; cursor: pointer; width: 44px; height: 44px; padding: 0; border-radius: 8px; flex-direction: column; align-items: center; justify-content: center; flex-shrink: 0; margin-right: -4px; -webkit-tap-highlight-color: transparent; }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span { display: block; width: 22px; height: 2px; background: var(--primary-blue); margin: 4px 0; transition: all 0.3s; border-radius: 2px; }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer { display: none; flex-direction: column; background: #144272; position: absolute; top: 100%; left: -20px; right: -20px; z-index: 999; box-shadow: 0 8px 24px rgba(0,0,0,.25); border-top: 2px solid var(--primary-gold); overflow: hidden; }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a { color: rgba(255,255,255,.9); text-decoration: none; font-weight: 600; font-size: 1em; padding: 14px 24px; border-bottom: 1px solid rgba(255,255,255,.07); transition: background .2s, color .2s; display: flex; align-items: center; gap: 8px; width: 100%; }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta { background: var(--primary-gold); color: var(--white) !important; margin: 12px 20px; border-radius: 10px; justify-content: center; font-size: 1.05em; border-bottom: none !important; width: calc(100% - 40px); }
+
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 6px; padding: 12px 0; }
+        .nav-links a { color: var(--white); text-decoration: none; font-weight: 600; transition: color 0.3s, background 0.3s; font-size: 0.92em; padding: 7px 14px; border-radius: 6px; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary-gold); background: rgba(255,255,255,.08); }
+
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
+        }
+
         .breadcrumb { background: var(--light-gold); padding: 15px 0; }
         .breadcrumb a { color: var(--primary-blue); text-decoration: none; margin: 0 5px; }
         .breadcrumb a:hover { color: var(--primary-gold); }
@@ -171,9 +229,7 @@
         @media (max-width: 768px) {
             .hero h2 { font-size: 2em; }
             h2 { font-size: 2em; }
-            .header-cta { display: none; }
             .logo-text h1 { font-size: 1.4em; }
-            .nav-links { gap: 15px; }
             .hero-stats { gap: 30px; }
             .services-grid, .pricing-grid, .process-grid { grid-template-columns: 1fr; }
         }
@@ -183,27 +239,37 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates Logo" class="logo-img">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
                     <a href="#pricing" class="cta-btn">Get Started</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/blog/">📝 Blogs</a>
+                <a href="/services/" class="active">🔧 Services</a>
+                <a href="/calculator/">🧮 Calculators</a>
+                <a href="/why-us/">⭐ Why Choose Us</a>
+                <a href="/faq/">❓ FAQ</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20ITR%20filing" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
 
-    <nav>
+    <nav class="desktop-nav" aria-label="Main navigation">
         <div class="container">
-            <a href="/">← Back to Home</a>
             <div class="nav-links">
                 <a href="/blog/">Blogs</a>
-                <a href="/services/">Services</a>
+                <a href="/services/" class="active">Services</a>
                 <a href="/calculator/">Calculators</a>
                 <a href="/why-us/">Why Choose Us</a>
                 <a href="/faq/">FAQ</a>
@@ -248,8 +314,18 @@
         </div>
     </section>
 
+    <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
+            <strong style="color: var(--primary-gold);">ITR filing cost</strong> starts at <strong style="color: var(--primary-gold);">₹500</strong> for ITR-1 (salaried), <strong style="color: var(--primary-gold);">₹1,000</strong> for ITR-2 (capital gains), <strong style="color: var(--primary-gold);">₹2,000</strong> for ITR-3 (business/profession) and <strong style="color: var(--primary-gold);">₹1,500</strong> for ITR-4 (presumptive income) — CA-reviewed, e-filed within 24-48 hours.
+        </p>
+    </div>
+
     <section>
         <div class="container">
+            <div id="featured-snippet" style="background: var(--light-gold); border-left: 5px solid var(--primary-gold); border-radius: 0 8px 8px 0; padding: 22px 26px; margin: 0 0 36px;">
+                <p style="font-size: 0.75em; font-weight: 700; color: #B8861E; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 9px;">💡 Quick Answer</p>
+                <p>An Income Tax Return (ITR) is a form filed with the Income Tax Department disclosing income earned, taxes paid, and tax refunds claimed for a financial year. Filing is mandatory once your income exceeds the basic exemption limit, and it's also required for loans, visas, and carrying forward losses.</p>
+            </div>
             <h2>What is Income Tax Return (ITR)?</h2>
             <p class="section-intro">An Income Tax Return is a form filed with the Income Tax Department disclosing income earned, taxes paid, and tax refunds claimed for a financial year</p>
 
@@ -749,7 +825,7 @@
 
             <div class="faq-item">
                 <div class="faq-question">How long does ITR filing take?</div>
-                <div class="faq-answer">We complete ITR filing within 24-48 hours for most cases. Simple salaried returns (ITR-1) with Form 16 are typically filed same day or next day. Returns with capital gains, multiple income sources (ITR-2) take 1-2 days. Business returns (ITR-3) may take 2-3 days depending on complexity. For urgent requirements like loan applications or visa, we offer same-day express filing service.</div>
+                <div class="faq-answer">We complete ITR filing within 24-48 hours for most cases. Simple salaried returns (ITR-1) with Form 16 are typically filed same day or next day. Returns with capital gains, multiple income sources (ITR-2) take 1-2 days. Business returns (ITR-3) may take 2-3 days depending on complexity.</div>
             </div>
 
             <div class="faq-item">
@@ -764,7 +840,7 @@
 
             <div class="faq-item">
                 <div class="faq-question">What is the ITR filing deadline?</div>
-                <div class="faq-answer">ITR filing deadline for individuals (non-audit cases) is 31st July of the assessment year. For businesses requiring audit, the deadline is 31st October. If you miss the deadline, you can file belated return till 31st December with late fee penalty of ₹5,000 (₹1,000 if income below ₹5 lakhs). However, belated filing means you cannot carry forward certain losses. It's always best to file before 31st July.</div>
+                <div class="faq-answer">ITR filing deadline for individuals (non-audit cases) is 31st July of the assessment year. For businesses requiring audit, the deadline is 31st October. If you miss the deadline, you can file belated return till 31st December with late fee penalty of ₹5,000 (₹1,000 if income below ₹5 lakhs). However, belated filing means you cannot carry forward certain losses.</div>
             </div>
 
             <div class="faq-item">
@@ -789,7 +865,7 @@
 
             <div class="faq-item">
                 <div class="faq-question">Can you help with income tax notices?</div>
-                <div class="faq-answer">Yes, we provide comprehensive support for all types of income tax notices including: scrutiny notices (Section 143(3)), defective return notices (Section 139(9)), demand notices, mismatch notices, and assessment orders. Our experienced CAs analyze the notice, prepare detailed responses with supporting documents, represent you before income tax authorities, and handle the complete compliance process. We also assist with appeals, rectification applications, and penalty proceedings if required. Contact us immediately if you receive any IT notice.</div>
+                <div class="faq-answer">Yes, we provide comprehensive support for all types of income tax notices including: scrutiny notices (Section 143(3)), defective return notices (Section 139(9)), demand notices, mismatch notices, and assessment orders. Our experienced CAs analyze the notice, prepare detailed responses with supporting documents, represent you before income tax authorities, and handle the complete compliance process. We also assist with appeals, rectification applications, and penalty proceedings if required.</div>
             </div>
         </div>
     </section>
@@ -797,14 +873,17 @@
     <section class="cta-section">
         <div class="container">
             <h2>Ready to File Your Income Tax Return?</h2>
-            <p style="font-size: 1.2em; margin-bottom: 30px;">Get expert CA assistance for accurate ITR filing with maximum refunds. Don't miss the deadline - file your ITR today!</p>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Get expert CA assistance for accurate ITR filing with maximum refunds.</p>
             <div class="hero-buttons">
                 <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20ITR%20filing" class="btn-secondary">💬 WhatsApp Us</a>
             </div>
-            <p style="margin-top: 30px; font-size: 1.1em;">
-                <strong>Limited Time Offer:</strong> File ITR-1 at just ₹500! Maximum refunds guaranteed.
-            </p>
+            <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px; color: var(--white);">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px; color: var(--white);">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px; color: var(--white);">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px; color: var(--white);">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+            </div>
         </div>
     </section>
 
@@ -854,8 +933,8 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
-                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Expert Income Tax Return Filing Services</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
+                <p style="margin-top: 10px;">Expert Income Tax Return Filing Services</p>
             </div>
         </div>
     </footer>
@@ -879,6 +958,8 @@
     </div>
 
     <script>
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -915,11 +996,12 @@
                     current = section.getAttribute('id');
                 }
             });
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.style.color = '#ffffff';
-                const href = link.getAttribute('href').substring(1);
-                if (href === current) {
-                    link.style.color = '#D4A43C';
+            document.querySelectorAll('.nav-links a, .mobile-drawer a').forEach(link => {
+                const href = link.getAttribute('href');
+                if (!href || !href.startsWith('#')) return;
+                link.classList.remove('active');
+                if (href.substring(1) === current) {
+                    link.classList.add('active');
                 }
             });
         });
@@ -932,6 +1014,31 @@
                 header.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
             }
         });
+
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
 
         console.log('%c📊 Income Tax Return Filing Services', 'color: #0A2647; font-size: 20px; font-weight: bold;');
         console.log('%cFile your ITR today! Call +91 78892 57045', 'color: #D4A43C;');
