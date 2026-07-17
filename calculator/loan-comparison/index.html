@@ -18,7 +18,7 @@
     <!-- Primary Meta Tags -->
     <title>Loan Comparison Calculator - Compare Home, Personal, Car Loans India | Free Tool</title>
     <meta name="title" content="Loan Comparison Calculator - Compare EMI, Interest & Choose Best Loan">
-    <meta name="description" content="Free Loan Comparison Calculator to compare multiple loans side-by-side. Compare EMI, total interest, processing fees, and total cost. Find the best home loan, personal loan, car loan, business loan. Save lakhs on interest. By expert CAs.">
+    <meta name="description" content="Free Loan Comparison Calculator by Sidhi & Associates, an Accountants firm staffed by ICAI-registered CAs. Compare EMI, total interest, processing fees, and total cost across multiple loans. Find the best home loan, personal loan, car loan, business loan.">
     <meta name="keywords" content="loan comparison calculator, compare home loans, compare personal loans, EMI comparison, loan interest comparison, best loan calculator, home loan comparison, car loan comparison, business loan comparison">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
     
@@ -37,6 +37,11 @@
     
     <!-- Canonical -->
     <link rel="canonical" href="https://sidhiandassociates.com/calculator/loan-comparison/">
+    <link rel="alternate" hreflang="en-IN" href="https://sidhiandassociates.com/calculator/loan-comparison/">
+
+    <!-- AIO / AEO / GEO entity meta -->
+    <meta name="ai-content-declaration" content="Sidhi & Associates is an Accountants firm staffed by ICAI-registered Chartered Accountants, offering a free Loan Comparison Calculator alongside CA services: Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, TDS Filing & Returns from Rs2,000/quarter. Contact +91 78892 57045.">
+    <meta name="ai-entity-type" content="WebApplication,AccountingService,ProfessionalService">
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -85,6 +90,11 @@
     }
     </script>
 
+    <!-- WebPage / speakable -->
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebPage","@id":"https://sidhiandassociates.com/calculator/loan-comparison/#webpage","url":"https://sidhiandassociates.com/calculator/loan-comparison/","name":"Loan Comparison Calculator - Sidhi & Associates","inLanguage":"en-IN","dateModified":"2026-07-16","speakable":{"@type":"SpeakableSpecification","cssSelector":["#quick-answer"]}}
+    </script>
+
     <!-- FAQ Schema -->
     <script type="application/ld+json">
     {
@@ -126,6 +136,7 @@
             --primary-blue: #0A2647;
             --primary-gold: #D4A43C;
             --light-gold: #F5E6C8;
+            --gold-bg: #FDF6E7;
             --text-dark: #1a1a1a;
             --text-light: #666;
             --white: #ffffff;
@@ -153,59 +164,99 @@
             padding: 0 20px;
         }
 
+        /* ---------- TOP BAR ---------- */
+        .top-bar{background:linear-gradient(90deg,var(--primary-blue) 0%,#1a4a7a 50%,var(--primary-blue) 100%);color:var(--white);text-align:center;padding:10px 20px;font-size:.85em;font-weight:500}
+        .top-bar a{color:var(--primary-gold);font-weight:700;text-decoration:none}
+        .top-bar a:hover{text-decoration:underline}
+
+        /* ---------- HEADER ---------- */
         header {
             background: var(--white);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+        header .container{position:relative}
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap:16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink:0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.5em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height:1.15;
         }
 
         .logo-text p {
-            font-size: 0.9em;
+            font-size: .78em;
             color: var(--primary-gold);
             margin: 0;
+            letter-spacing:.05em;
+            text-transform:uppercase;
         }
 
-        .header-cta {
-            display: flex;
-            gap: 15px;
-            align-items: center;
-        }
+        .header-actions{display:flex;gap:10px;align-items:center}
 
         .cta-phone {
             color: var(--primary-blue);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: .95em;
+            display:flex;align-items:center;gap:5px;
         }
+
+        .cta-btn{background:var(--primary-gold);color:var(--white);padding:10px 20px;border-radius:25px;text-decoration:none;font-weight:600;font-size:.9em;transition:all .3s;white-space:nowrap}
+        .cta-btn:hover{background:var(--primary-blue);transform:translateY(-2px)}
+
+        .hamburger{display:none;background:none;border:none;cursor:pointer;width:44px;height:44px;padding:0;border-radius:8px;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0;margin-right:-4px;-webkit-tap-highlight-color:transparent}
+        .hamburger:active{background:rgba(10,38,71,.06)}
+        .hamburger span{display:block;width:22px;height:2px;background:var(--primary-blue);margin:4px 0;transition:all .3s;border-radius:2px}
+        .hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+        .hamburger.open span:nth-child(2){opacity:0}
+        .hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+        .mobile-drawer{display:none;flex-direction:column;background:var(--primary-blue);position:absolute;top:100%;left:-20px;right:-20px;z-index:999;box-shadow:0 8px 24px rgba(0,0,0,.25);border-top:2px solid var(--primary-gold);overflow:hidden}
+        .mobile-drawer.open{display:flex}
+        .mobile-drawer a{color:rgba(255,255,255,.9);text-decoration:none;font-weight:600;font-size:1em;padding:14px 24px;border-bottom:1px solid rgba(255,255,255,.07);transition:background .2s,color .2s;display:flex;align-items:center;gap:8px;box-sizing:border-box;width:100%}
+        .mobile-drawer a:hover{background:rgba(255,255,255,.08);color:var(--primary-gold)}
+        .mobile-drawer .drawer-cta{background:var(--primary-gold);color:var(--white)!important;margin:12px 20px;border-radius:10px;justify-content:center;font-size:1.05em;border-bottom:none!important;width:calc(100% - 40px)}
+        .mobile-drawer .drawer-cta:hover{background:#C4932C!important}
+
+        /* ---------- DESKTOP NAV ---------- */
+        nav.desktop-nav{background:var(--primary-blue)}
+        .nav-inner{display:flex;justify-content:space-between;align-items:center}
+        .nav-links{display:flex;gap:4px;padding:8px 0;flex-wrap:wrap}
+        .nav-links a{color:rgba(255,255,255,.88);text-decoration:none;font-weight:600;font-size:.88em;padding:7px 14px;border-radius:6px;transition:all .3s;white-space:nowrap}
+        .nav-links a:hover,.nav-links a.active{color:var(--primary-gold);background:rgba(255,255,255,.08)}
+        .nav-cta-small{background:var(--primary-gold);color:var(--white)!important;border-radius:20px!important;padding:7px 16px!important}
+        .nav-cta-small:hover{background:#C4932C!important}
+
+        /* ---------- Quick answer (AEO/AIO) ---------- */
+        .quick-answer-strip{background:var(--primary-blue);padding:16px 20px;text-align:center}
+        .quick-answer-strip p{font-size:.9em;color:rgba(255,255,255,.9);max-width:980px;margin:0 auto;line-height:1.7}
+        .quick-answer-strip strong{color:var(--primary-gold)}
+        .quick-answer-strip a{color:var(--primary-gold);text-decoration:none;font-weight:700}
 
         .breadcrumb {
             background: var(--light-gold);
@@ -854,6 +905,13 @@
         .call-btn { background: var(--primary-gold); }
         .float-btn svg { width: 32px; height: 32px; fill: white; }
 
+        @media(max-width:860px){
+          .hamburger{display:flex}
+          nav.desktop-nav{display:none}
+          header .container{padding:0 16px}
+          .mobile-drawer{left:-16px;right:-16px}
+          .header-content{padding:10px 0}
+        }
         @media (max-width: 968px) {
             .hero h2 {
                 font-size: 2em;
@@ -863,13 +921,8 @@
                 padding: 25px;
             }
 
-            .header-cta {
-                display: none;
-            }
-
-            .logo-text h1 {
-                font-size: 1.4em;
-            }
+            .logo-text p{display:none}
+            .cta-phone{display:none}
 
             .hero-stats {
                 flex-direction: column;
@@ -891,22 +944,54 @@
     </style>
 </head>
 <body>
+    <div class="top-bar" role="banner">
+      Accountants firm staffed by ICAI-registered CAs &mdash; <a href="tel:+917889257045">Call +91 78892 57045</a> | Mon&ndash;Sat 9AM&ndash;6PM
+    </div>
+
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="https://sidhiandassociates.com/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates CA" class="logo-img" width="60" height="60">
+                <a href="/" class="logo" aria-label="Sidhi &amp; Associates">
+                    <img src="/sidhi.png" alt="Sidhi &amp; Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
+                        <p>Financial Calculators</p>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone">&#128222; +91 78892 57045</a>
+                    <a href="https://wa.me/917889257045?text=Hi%2C%20I%20need%20help%20comparing%20loan%20offers" class="cta-btn" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+                    <button type="button" class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="https://sidhiandassociates.com/">&#127968; Home</a>
+                <a href="https://sidhiandassociates.com/services/">&#128295; Services</a>
+                <a href="https://sidhiandassociates.com/calculator/">&#129518; All Calculators</a>
+                <a href="https://sidhiandassociates.com/faq/">&#10067; FAQs</a>
+                <a href="https://sidhiandassociates.com/about/">&#8505;&#65039; About</a>
+                <a href="tel:+917889257045" class="drawer-cta">&#128222; Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hi%2C%20I%20need%20help%20comparing%20loan%20offers" class="drawer-cta" target="_blank" rel="noopener noreferrer">&#128172; WhatsApp Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <nav class="desktop-nav" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-inner">
+                <div class="nav-links" id="navLinks" role="menubar">
+                    <a href="https://sidhiandassociates.com/" role="menuitem">&#127968; Home</a>
+                    <a href="https://sidhiandassociates.com/services/" role="menuitem">Services</a>
+                    <a href="https://sidhiandassociates.com/calculator/" role="menuitem" class="active">All Calculators</a>
+                    <a href="https://sidhiandassociates.com/faq/" role="menuitem">FAQs</a>
+                    <a href="https://sidhiandassociates.com/about/" role="menuitem">About</a>
+                    <a href="tel:+917889257045" class="nav-cta-small" role="menuitem">&#128222; Call Now</a>
                 </div>
             </div>
         </div>
-    </header>
+    </nav>
 
     <div class="breadcrumb">
         <div class="container">
@@ -937,6 +1022,10 @@
             </div>
         </div>
     </section>
+
+    <div class="quick-answer-strip" id="quick-answer" role="note">
+      <p><strong>Sidhi &amp; Associates</strong> &mdash; an Accountants firm staffed by ICAI-registered CAs: <strong>Income Tax Filing &amp; Planning from &#8377;1,000</strong> &bull; <strong>GST Compliance &amp; Advisory from &#8377;1,000/month</strong> &bull; <strong>Bookkeeping &amp; Virtual CFO from &#8377;2,000/month</strong> &bull; <strong>TDS Filing &amp; Returns from &#8377;2,000/quarter</strong>. Use the free calculator below, or call <a href="tel:+917889257045">+91 78892 57045</a> for personalised loan and tax advice.</p>
+    </div>
 
     <div class="main-content">
         <!-- Calculator Section -->
@@ -1277,7 +1366,7 @@
                 <a href="https://wa.me/917889257045?text=Hi%2C%20I%20need%20help%20comparing%20loan%20offers" class="btn-primary" style="background: #25D366;">💬 WhatsApp</a>
                 <a href="https://sidhiandassociates.com/services/business-advisory/" class="btn-primary">📊 Loan Advisory</a>
             </div>
-            <p style="margin-top: 25px; font-size: 1em;">✓ Free Consultation | ✓ Expert CAs | ✓ 5000+ Happy Clients | ✓ Save Lakhs on Loans</p>
+            <p style="margin-top: 25px; font-size: 1em;">✓ Expert CAs | ✓ 5000+ Happy Clients | ✓ Transparent Pricing</p>
         </div>
     </div>
 
@@ -1340,11 +1429,11 @@
                 <div class="footer-section">
                     <h3>Popular Services</h3>
                     <ul>
-                        <li><a href="https://sidhiandassociates.com/services/income-tax-return-ITR/">ITR Filing - ₹499</a></li>
-                        <li><a href="https://sidhiandassociates.com/services/tax-planning-filing/">Tax Planning</a></li>
+                        <li><a href="https://sidhiandassociates.com/services/tax-planning-filing/">Income Tax Filing & Planning - from ₹1,000</a></li>
+                        <li><a href="https://sidhiandassociates.com/services/gst-compliance/">GST Compliance & Advisory - from ₹1,000/month</a></li>
+                        <li><a href="https://sidhiandassociates.com/services/bookkeeping-and-accounting/">Bookkeeping & Virtual CFO - from ₹2,000/month</a></li>
+                        <li><a href="https://sidhiandassociates.com/services/tds-return-filing/">TDS Filing & Returns - from ₹2,000/quarter</a></li>
                         <li><a href="https://sidhiandassociates.com/services/business-advisory/">Business Advisory</a></li>
-                        <li><a href="https://sidhiandassociates.com/services/gst-registration/">GST Registration</a></li>
-                        <li><a href="https://sidhiandassociates.com/services/audit-services/">Audit Services</a></li>
                     </ul>
                 </div>
                 
@@ -1368,8 +1457,8 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
-                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | 5000+ Satisfied Clients | Expert Loan Advisors</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
+                <p style="margin-top: 10px;">An Accountants Firm Staffed by ICAI-Registered CAs | 5000+ Satisfied Clients | Expert Loan Advisory</p>
             </div>
         </div>
     </footer>
@@ -1378,6 +1467,7 @@
     <div class="floating-buttons">
         <a href="https://wa.me/917889257045?text=Hi%2C%20I%20need%20help%20comparing%20loans" 
            target="_blank" 
+           rel="noopener noreferrer"
            class="float-btn whatsapp-btn" 
            aria-label="Chat on WhatsApp">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -1394,6 +1484,16 @@
     </div>
 
     <script>
+        document.querySelectorAll('.auto-year').forEach(el=>el.textContent=new Date().getFullYear());
+
+        // Hamburger / mobile drawer (matches site-wide pattern)
+        const hamburger=document.getElementById('hamburger'),mobileDrawer=document.getElementById('mobileDrawer');
+        if(hamburger&&mobileDrawer){
+          hamburger.addEventListener('click',function(e){e.stopPropagation();const o=mobileDrawer.classList.toggle('open');hamburger.classList.toggle('open',o);hamburger.setAttribute('aria-expanded',String(o))});
+          mobileDrawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',function(){mobileDrawer.classList.remove('open');hamburger.classList.remove('open');hamburger.setAttribute('aria-expanded','false')}));
+          document.addEventListener('click',function(e){if(!hamburger.contains(e.target)&&!mobileDrawer.contains(e.target)){mobileDrawer.classList.remove('open');hamburger.classList.remove('open');hamburger.setAttribute('aria-expanded','false')}});
+        }
+
         // Loan comparison calculator
         let loanCount = 0;
         const maxLoans = 5;
