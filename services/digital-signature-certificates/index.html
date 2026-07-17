@@ -25,6 +25,10 @@
     <meta name="author" content="Sidhi & Associates">
     <meta name="geo.region" content="IN">
     <meta name="geo.placename" content="India">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Digital Signature Certificate (DSC) services by Sidhi & Associates. Offers Class 2 Individual DSC from Rs899/year, Class 2 Organization DSC from Rs1,199/year, Class 3 DSC from Rs1,799/year, and DGFT DSC from Rs1,499/year, all with USB token and installation support, issued within 1 working day. Provided by an Accountants firm also offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="Service,FAQPage">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -82,6 +86,24 @@
     }
     </script>
 
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/services/digital-signature-certificates/#webpage",
+      "url": "https://sidhiandassociates.com/services/digital-signature-certificates/",
+      "name": "Digital Signature Certificate (DSC) India | Class 2, Class 3 DSC from ₹899",
+      "description": "Get Digital Signature Certificate in 1 Day. Class 2, Class 3, DGFT DSC for Income Tax, GST, MCA, ROC Filing, Tenders.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-17",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer", "#featured-snippet"]
+      }
+    }
+    </script>
+
     <!-- FAQ Schema -->
     <script type="application/ld+json">
     {
@@ -109,7 +131,7 @@
           "name": "How long does it take to get DSC?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "DSC is issued within 1 working day after document verification. For Class 2 DSC Individual, it takes 4-6 hours for instant processing. Class 2 Organization and Class 3 DSC take 24 hours. DGFT DSC takes 1-2 working days. We provide same-day service for urgent requirements in most cases."
+            "text": "DSC is issued within 1 working day after document verification. For Class 2 DSC Individual, it takes 4-6 hours for processing. Class 2 Organization and Class 3 DSC take 24 hours. DGFT DSC takes 1-2 working days."
           }
         },
         {
@@ -197,45 +219,44 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+
+        header .container { position: relative; }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.55em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height: 1.1;
         }
 
-        .logo-text p {
-            font-size: 0.9em;
-            color: var(--primary-gold);
-            margin: 0;
-        }
-
-        .header-cta {
+        .header-actions {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             align-items: center;
         }
 
@@ -243,54 +264,131 @@
             color: var(--primary-blue);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
         }
 
         .cta-btn {
             background: var(--primary-gold);
             color: var(--white);
-            padding: 12px 25px;
+            padding: 10px 20px;
             border-radius: 25px;
             text-decoration: none;
             font-weight: 600;
+            font-size: 0.9em;
             transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border-radius: 8px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: -4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--primary-blue);
+            margin: 4px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer {
+            display: none;
+            flex-direction: column;
+            background: #144272;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            right: -20px;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+            border-top: 2px solid var(--primary-gold);
+            overflow: hidden;
+        }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a {
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 14px 24px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            transition: background .2s, color .2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta {
+            background: var(--primary-gold);
+            color: var(--white) !important;
+            margin: 12px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 1.05em;
+            border-bottom: none !important;
+            width: calc(100% - 40px);
         }
 
-        .cta-btn:hover {
-            background: var(--primary-blue);
-            transform: translateY(-2px);
-        }
-
-        /* Navigation */
-        nav {
-            background: var(--primary-blue);
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
             padding: 12px 0;
         }
-
-        nav .container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        nav a {
+        .nav-links a {
             color: var(--white);
             text-decoration: none;
             font-weight: 600;
-            transition: color 0.3s;
-            font-size: 0.95em;
+            transition: color 0.3s, background 0.3s;
+            font-size: 0.92em;
+            padding: 7px 14px;
+            border-radius: 6px;
         }
-
-        nav a:hover {
+        .nav-links a:hover, .nav-links a.active {
             color: var(--primary-gold);
+            background: rgba(255,255,255,.08);
         }
 
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            flex-wrap: wrap;
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
         }
 
         /* Breadcrumb */
@@ -552,7 +650,7 @@
         /* Process Steps */
         .process-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmin(200px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 30px;
             margin-top: 50px;
         }
@@ -674,6 +772,23 @@
             background: var(--white);
         }
 
+        /* Trust / pricing strip */
+        .trust-strip {
+            background: var(--primary-blue);
+            padding: 26px 20px;
+        }
+        .trust-strip .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+        .trust-strip span {
+            color: rgba(255,255,255,.92);
+            font-size: 0.92em;
+            font-weight: 500;
+        }
+
         /* Floating Buttons */
         .floating-buttons {
             position: fixed;
@@ -770,18 +885,6 @@
                 font-size: 2em;
             }
 
-            .header-cta {
-                display: none;
-            }
-
-            .logo-text h1 {
-                font-size: 1.4em;
-            }
-
-            .nav-links {
-                gap: 15px;
-            }
-
             .hero-stats {
                 gap: 30px;
             }
@@ -808,30 +911,42 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates Logo" class="logo-img">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
                     <a href="#pricing" class="cta-btn">Get DSC Now</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/services/" class="active">🔧 Services</a>
+                <a href="/why-us/">⭐ Why Us</a>
+                <a href="/faq/">❓ FAQs</a>
+                <a href="/blog/">📝 Blog</a>
+                <a href="/calculator/">🧮 Calculators</a>
+                <a href="/about/">ℹ️ About</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=I%20want%20to%20get%20Digital%20Signature%20Certificate" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
 
-    <!-- Navigation -->
-    <nav>
+    <nav class="desktop-nav" aria-label="Main navigation">
         <div class="container">
-            <a href="/">← Back to Home</a>
             <div class="nav-links">
-                <a href="/services/">Services</a>
-                <a href="/blog/">Blogs</a>
+                <a href="/services/" class="active">Services</a>
+                <a href="/why-us/">Why Us</a>
+                <a href="/faq/">FAQs</a>
+                <a href="/blog/">Blog</a>
                 <a href="/calculator/">Calculators</a>
-                <a href="/faq/">FAQ</a>
+                <a href="/about/">About</a>
             </div>
         </div>
     </nav>
@@ -875,11 +990,21 @@
         </div>
     </section>
 
+    <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
+            A <strong style="color: var(--primary-gold);">Digital Signature Certificate (DSC)</strong> is a government-approved electronic key used to authenticate identity for <strong style="color: var(--primary-gold);">Income Tax, GST, MCA and tender filings</strong>. Class 2 Individual starts at <strong style="color: var(--primary-gold);">₹899/year</strong>, delivered with a USB token within <strong style="color: var(--primary-gold);">1 working day</strong>.
+        </p>
+    </div>
+
     <!-- What is DSC -->
     <section>
         <div class="container">
             <h2>What is Digital Signature Certificate (DSC)?</h2>
-            <p class="section-intro">Digital Signature Certificate is a secure electronic key that establishes your identity in online transactions</p>
+
+            <div id="featured-snippet" style="background: var(--light-gold); border-left: 5px solid var(--primary-gold); border-radius: 0 8px 8px 0; padding: 22px 26px; margin: 0 0 36px;">
+                <p style="font-size: 0.75em; font-weight: 700; color: #B8861E; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 9px;">💡 Quick Answer</p>
+                <p style="margin: 0; line-height: 1.75;">A Digital Signature Certificate is a secure electronic key, issued by a government-approved Certifying Authority, that establishes your identity in online transactions. It is legally equivalent to a handwritten signature under the <strong>IT Act, 2000</strong> and is used for Income Tax e-filing, GST returns, MCA filings, ROC compliance and government e-tenders.</p>
+            </div>
 
             <div class="services-grid">
                 <div class="service-card">
@@ -1001,7 +1126,7 @@
                     <li><strong>Class 3:</strong> If you participate in government tenders or need highest level of authentication</li>
                     <li><strong>DGFT:</strong> If you're in import-export business and need to file on DGFT portal</li>
                 </ul>
-                <p style="margin-top: 15px;"><strong>Still confused? Call us at +91 78892 57045 for FREE consultation!</strong></p>
+                <p style="margin-top: 15px;">Not sure which one applies to you? Call us at +91 78892 57045 and we'll help you pick the right DSC.</p>
             </div>
         </div>
     </section>
@@ -1229,7 +1354,7 @@
                     <li>Board resolution authorizing DSC</li>
                     <li>Registered office address proof</li>
                 </ul>
-                <p style="margin-top: 15px;"><strong>All documents can be submitted online via WhatsApp or email!</strong></p>
+                <p style="margin-top: 15px;">All documents can be submitted online via WhatsApp or email.</p>
             </div>
         </div>
     </section>
@@ -1409,7 +1534,7 @@
 
             <div class="faq-item">
                 <div class="faq-question">How long does it take to get DSC?</div>
-                <div class="faq-answer">DSC is issued within 1 working day after document verification and video KYC. Class 2 DSC Individual can be processed in 4-6 hours for urgent requirements. Class 2 Organization and Class 3 DSC take approximately 24 hours. DGFT DSC takes 1-2 working days due to additional verification. We provide express service for urgent needs. The DSC is delivered on USB token via courier, or you can download it digitally if needed urgently.</div>
+                <div class="faq-answer">DSC is issued within 1 working day after document verification and video KYC. Class 2 DSC Individual can be processed in 4-6 hours. Class 2 Organization and Class 3 DSC take approximately 24 hours. DGFT DSC takes 1-2 working days due to additional verification. The DSC is delivered on USB token via courier, or you can download it digitally if needed.</div>
             </div>
 
             <div class="faq-item">
@@ -1458,11 +1583,18 @@
                 <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call: +91 78892 57045</a>
                 <a href="https://wa.me/917889257045?text=I%20want%20to%20get%20Digital%20Signature%20Certificate" class="btn-secondary">💬 WhatsApp Now</a>
             </div>
-            <p style="margin-top: 30px; font-size: 1.1em;">
-                <strong>Special Offer:</strong> Get 2-Year DSC and Save 30%! USB Token & Installation FREE!
-            </p>
         </div>
     </section>
+
+    <!-- Trust / Pricing Strip -->
+    <div class="trust-strip">
+        <div class="container">
+            <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+            <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+            <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+            <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -1512,7 +1644,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
                 <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Authorized DSC Provider | Class 2, Class 3, DGFT Digital Signature Certificates</p>
             </div>
         </div>
@@ -1538,6 +1670,33 @@
     </div>
 
     <script>
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -1572,27 +1731,6 @@
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(el);
-        });
-
-        // Active nav highlight
-        window.addEventListener('scroll', () => {
-            let current = '';
-            const sections = document.querySelectorAll('section[id]');
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop - 100;
-                if (pageYOffset >= sectionTop) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            document.querySelectorAll('.nav-links a').forEach(link => {
-                link.style.color = '#ffffff';
-                const href = link.getAttribute('href').substring(1);
-                if (href === current) {
-                    link.style.color = '#D4A43C';
-                }
-            });
         });
     </script>
 </body>
