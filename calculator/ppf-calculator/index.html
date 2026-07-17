@@ -37,6 +37,14 @@
     
     <!-- Canonical -->
     <link rel="canonical" href="https://sidhiandassociates.com/calculator/ppf-calculator/">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Free PPF (Public Provident Fund) Calculator by Sidhi & Associates. Computes maturity amount, interest earned, and tax savings with year-wise breakdown based on yearly investment, tenure, and current PPF interest rate. Provided by an Accountants firm offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="WebApplication,FAQPage">
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -56,7 +64,7 @@
         "@type": "Organization",
         "name": "Sidhi & Associates",
         "telephone": "+917889257045",
-        "url": "https://sidhiandassociates.github.io"
+        "url": "https://sidhiandassociates.com/"
       }
     }
     </script>
@@ -70,7 +78,7 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://sidhiandassociates.github.io"
+        "item": "https://sidhiandassociates.com/"
       },{
         "@type": "ListItem",
         "position": 2,
@@ -92,10 +100,10 @@
       "@type": "FAQPage",
       "mainEntity": [{
         "@type": "Question",
-        "name": "What is the current PPF interest rate in 2024?",
+        "name": "What is the current PPF interest rate?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "The current PPF interest rate for Q3 FY 2024-25 (Oct-Dec 2024) is 7.1% per annum, compounded annually. PPF rates are reviewed quarterly by the Government of India. The rate has remained stable at 7.1% since Q2 FY 2020-21. Interest is calculated on the lowest balance between 5th and last day of each month."
+          "text": "The current PPF interest rate is 7.1% per annum, compounded annually. PPF rates are reviewed quarterly by the Government of India. The rate has remained stable at 7.1% since Q2 FY 2020-21. Interest is calculated on the lowest balance between 5th and last day of each month."
         }
       },{
         "@type": "Question",
@@ -112,6 +120,24 @@
           "text": "Yes, PPF offers EEE (Exempt-Exempt-Exempt) tax status. Investment qualifies for deduction under Section 80C (up to ₹1.5 lakh per year). Interest earned is completely tax-free. Maturity amount is also tax-free. This makes PPF one of the best tax-saving investments in India with guaranteed returns."
         }
       }]
+    }
+    </script>
+
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/calculator/ppf-calculator/#webpage",
+      "url": "https://sidhiandassociates.com/calculator/ppf-calculator/",
+      "name": "PPF Calculator - Public Provident Fund Maturity Calculator India",
+      "description": "Free PPF Calculator to calculate Public Provident Fund maturity amount, interest earned and tax-free returns.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-16",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer", "#featured-snippet"]
+      }
     }
     </script>
 
@@ -154,45 +180,44 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
-            z-index: 1000;
+            z-index: 1001;
         }
+
+        header .container { position: relative; }
 
         .header-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 0;
+            padding: 12px 0;
+            gap: 16px;
         }
 
         .logo {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             text-decoration: none;
+            flex-shrink: 0;
         }
 
         .logo-img {
-            width: 60px;
-            height: 60px;
+            width: 50px;
+            height: 50px;
             object-fit: contain;
         }
 
         .logo-text h1 {
-            font-size: 1.8em;
+            font-size: 1.55em;
             color: var(--primary-blue);
             font-weight: 700;
             margin: 0;
+            line-height: 1.1;
         }
 
-        .logo-text p {
-            font-size: 0.9em;
-            color: var(--primary-gold);
-            margin: 0;
-        }
-
-        .header-cta {
+        .header-actions {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             align-items: center;
         }
 
@@ -200,7 +225,131 @@
             color: var(--primary-blue);
             text-decoration: none;
             font-weight: 600;
-            font-size: 1.1em;
+            font-size: 0.95em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .cta-btn {
+            background: var(--primary-gold);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.3s;
+            white-space: nowrap;
+        }
+        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        /* Hamburger (mobile) */
+        .hamburger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            width: 44px;
+            height: 44px;
+            padding: 0;
+            border-radius: 8px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-right: -4px;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .hamburger:active { background: rgba(10,38,71,.06); }
+        .hamburger span {
+            display: block;
+            width: 22px;
+            height: 2px;
+            background: var(--primary-blue);
+            margin: 4px 0;
+            transition: all 0.3s;
+            border-radius: 2px;
+        }
+        .hamburger.open span:nth-child(1) { transform: rotate(45deg) translate(5px,5px); }
+        .hamburger.open span:nth-child(2) { opacity: 0; }
+        .hamburger.open span:nth-child(3) { transform: rotate(-45deg) translate(5px,-5px); }
+
+        /* Mobile drawer */
+        .mobile-drawer {
+            display: none;
+            flex-direction: column;
+            background: #144272;
+            position: absolute;
+            top: 100%;
+            left: -20px;
+            right: -20px;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0,0,0,.25);
+            border-top: 2px solid var(--primary-gold);
+            overflow: hidden;
+        }
+        .mobile-drawer.open { display: flex; }
+        .mobile-drawer a {
+            color: rgba(255,255,255,.9);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            padding: 14px 24px;
+            border-bottom: 1px solid rgba(255,255,255,.07);
+            transition: background .2s, color .2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            width: 100%;
+        }
+        .mobile-drawer a:hover { background: rgba(255,255,255,.08); color: var(--primary-gold); }
+        .mobile-drawer a.active { color: var(--primary-gold); }
+        .mobile-drawer .drawer-cta {
+            background: var(--primary-gold);
+            color: var(--white) !important;
+            margin: 12px 20px;
+            border-radius: 10px;
+            justify-content: center;
+            font-size: 1.05em;
+            border-bottom: none !important;
+            width: calc(100% - 40px);
+        }
+
+        /* Desktop nav */
+        nav.desktop-nav { background: var(--primary-blue); padding: 0; }
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 6px;
+            padding: 12px 0;
+        }
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s, background 0.3s;
+            font-size: 0.92em;
+            padding: 7px 14px;
+            border-radius: 6px;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: var(--primary-gold);
+            background: rgba(255,255,255,.08);
+        }
+
+        @media (max-width: 860px) {
+            .hamburger { display: flex; }
+            nav.desktop-nav { display: none; }
+            header .container { padding: 0 16px; }
+            .mobile-drawer { left: -16px; right: -16px; }
+        }
+
+        @media (max-width: 640px) {
+            .logo-text h1 { font-size: 1.25em; }
+            .cta-phone, .cta-btn { display: none; }
+            .header-actions { gap: 6px; }
         }
 
         .breadcrumb {
@@ -394,6 +543,14 @@
         .btn-reset:hover {
             border-color: var(--ppf-blue);
             color: var(--ppf-blue);
+        }
+
+        .form-error {
+            color: #C0392B;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-top: 10px;
+            min-height: 1.2em;
         }
 
         .result-card {
@@ -780,43 +937,6 @@
             border-top: 1px solid rgba(255,255,255,0.2);
         }
 
-        .floating-buttons {
-            position: fixed;
-            right: 20px;
-            bottom: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            z-index: 999;
-        }
-
-        .float-btn {
-            width: 65px;
-            height: 65px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-            transition: all 0.3s;
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        .float-btn:hover {
-            transform: scale(1.15);
-            animation: none;
-        }
-
-        .whatsapp-btn { background: #25D366; }
-        .call-btn { background: var(--primary-gold); }
-        .float-btn svg { width: 32px; height: 32px; fill: white; }
-
         @media (max-width: 968px) {
             .main-content {
                 grid-template-columns: 1fr;
@@ -832,14 +952,6 @@
 
             .result-value {
                 font-size: 2.5em;
-            }
-
-            .header-cta {
-                display: none;
-            }
-
-            .logo-text h1 {
-                font-size: 1.4em;
             }
 
             .stats-grid {
@@ -872,24 +984,50 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="https://sidhiandassociates.com/" class="logo">
-                    <img src="/sidhi.png" alt="Sidhi & Associates CA" class="logo-img" width="60" height="60">
+                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                    <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
-                        <p>Chartered Accountants</p>
                     </div>
                 </a>
-                <div class="header-cta">
-                    <a href="tel:+917889257045" class="cta-phone">📞 +91 78892 57045</a>
+                <div class="header-actions">
+                    <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
+                    <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="cta-btn" target="_blank" rel="noopener noreferrer">Get a Quote</a>
+                    <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+                        <span></span><span></span><span></span>
+                    </button>
                 </div>
             </div>
+            <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
+                <a href="/services/">🔧 Services</a>
+                <a href="/why-us/">⭐ Why Us</a>
+                <a href="/faq/">❓ FAQs</a>
+                <a href="/blog/">📝 Blog</a>
+                <a href="/calculator/" class="active">🧮 Calculators</a>
+                <a href="/about/">ℹ️ About</a>
+                <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20CA%20services" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+            </nav>
         </div>
     </header>
 
+    <nav class="desktop-nav" aria-label="Main navigation">
+        <div class="container">
+            <div class="nav-links">
+                <a href="/services/">Services</a>
+                <a href="/why-us/">Why Us</a>
+                <a href="/faq/">FAQs</a>
+                <a href="/blog/">Blog</a>
+                <a href="/calculator/" class="active">Calculators</a>
+                <a href="/about/">About</a>
+            </div>
+        </div>
+    </nav>
+
     <div class="breadcrumb">
         <div class="container">
-            <a href="https://sidhiandassociates.com/">Home</a> / 
-            <a href="https://sidhiandassociates.com/calculator/">Calculators</a> / 
+            <a href="/">Home</a> / 
+            <a href="/calculator/">Calculators</a> / 
             <span>PPF Calculator</span>
         </div>
     </div>
@@ -915,6 +1053,12 @@
             </div>
         </div>
     </section>
+
+    <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
+            <strong style="color: var(--primary-gold);">PPF (Public Provident Fund)</strong> currently earns <strong style="color: var(--primary-gold);">7.1% per annum</strong>, compounded annually, with a 15-year lock-in and 100% tax-free (EEE) status. Enter your yearly investment, tenure, and rate below to calculate your tax-free maturity amount.
+        </p>
+    </div>
 
     <div class="main-content">
         <!-- Calculator Section -->
@@ -943,11 +1087,12 @@
                     <div class="input-suffix" data-suffix="%">
                         <input type="number" id="interestRate" placeholder="7.1" required min="1" max="12" step="0.1" value="7.1">
                     </div>
-                    <small style="color: var(--text-light); font-size: 0.9em;">Current rate: 7.1% (Q3 FY 2024-25)</small>
+                    <small style="color: var(--text-light); font-size: 0.9em;">Current rate: 7.1%</small>
                 </div>
 
                 <button type="submit" class="btn-calculate">🏦 Calculate PPF Maturity</button>
                 <button type="button" class="btn-reset" onclick="resetForm()">🔄 Reset</button>
+                <p class="form-error" id="ppfFormError"></p>
             </form>
 
             <div class="info-box" style="margin-top: 30px;">
@@ -1060,7 +1205,12 @@
     <section class="info-section">
         <div class="container">
             <h2>Complete Guide to Public Provident Fund (PPF)</h2>
-            
+
+            <div id="featured-snippet" style="background: var(--light-gold); border-left: 5px solid var(--primary-gold); border-radius: 0 8px 8px 0; padding: 22px 26px; margin: 0 0 36px;">
+                <p style="font-size: 0.75em; font-weight: 700; color: #B8861E; text-transform: uppercase; letter-spacing: .08em; margin-bottom: 9px;">💡 Quick Answer</p>
+                <p style="margin: 0; line-height: 1.75;"><strong>Public Provident Fund (PPF)</strong> is a Government of India backed long-term savings scheme with a 15-year tenure, currently earning <strong>7.1% per annum</strong>, compounded annually. It offers <strong>EEE (Exempt-Exempt-Exempt)</strong> tax status &mdash; investment up to ₹1.5 lakh/year qualifies for Section 80C deduction, interest is fully tax-free, and the maturity amount is also tax-free.</p>
+            </div>
+
             <div class="info-grid">
                 <div class="info-card">
                     <h3>🏦 What is PPF?</h3>
@@ -1068,7 +1218,7 @@
                     <p style="margin-top: 15px;"><strong>Key Features:</strong></p>
                     <ul>
                         <li>Tenure: 15 years (extendable)</li>
-                        <li>Interest: 7.1% p.a. (Q3 FY 2024-25)</li>
+                        <li>Interest: 7.1% p.a.</li>
                         <li>100% tax-free returns</li>
                         <li>Govt-backed, zero risk</li>
                         <li>Min: ₹500, Max: ₹1.5L/year</li>
@@ -1077,16 +1227,8 @@
 
                 <div class="info-card">
                     <h3>💰 Current PPF Interest Rate</h3>
-                    <p><strong>Q3 FY 2024-25: 7.1% per annum</strong></p>
-                    <p style="margin-top: 15px;"><strong>Historical Rates:</strong></p>
-                    <ul>
-                        <li>Q2 FY 2024-25: 7.1%</li>
-                        <li>Q1 FY 2024-25: 7.1%</li>
-                        <li>Q4 FY 2023-24: 7.1%</li>
-                        <li>FY 2022-23: 7.1%</li>
-                        <li>FY 2021-22: 7.1%</li>
-                    </ul>
-                    <p style="margin-top: 15px;"><strong>Note:</strong> Rate revised quarterly by Govt of India</p>
+                    <p><strong>7.1% per annum</strong></p>
+                    <p style="margin-top: 15px;"><strong>Note:</strong> PPF interest rates are reviewed and revised quarterly by the Government of India. Always confirm the latest rate on the India Post or your bank's official website before investing.</p>
                 </div>
 
                 <div class="info-card">
@@ -1231,11 +1373,11 @@
 
             <div class="faq-item" onclick="toggleFAQ(this)">
                 <div class="faq-question">
-                    What is the current PPF interest rate in 2024?
+                    What is the current PPF interest rate?
                     <span>▼</span>
                 </div>
                 <div class="faq-answer">
-                    The current PPF interest rate for Q3 FY 2024-25 (October-December 2024) is 7.1% per annum, compounded annually. This rate has remained stable at 7.1% since Q2 FY 2020-21. PPF interest rates are reviewed and announced quarterly by the Government of India (typically in the last week of March, June, September, and December). The interest is calculated on the lowest balance between the 5th and last day of each month and credited to the account on March 31st annually. This makes PPF one of the most attractive government-backed, risk-free investment options with complete tax exemption.
+                    The current PPF interest rate is 7.1% per annum, compounded annually. This rate has remained stable at 7.1% since Q2 FY 2020-21. PPF interest rates are reviewed and announced quarterly by the Government of India (typically in the last week of March, June, September, and December). The interest is calculated on the lowest balance between the 5th and last day of each month and credited to the account on March 31st annually. This makes PPF one of the most attractive government-backed, risk-free investment options with complete tax exemption.
                 </div>
             </div>
 
@@ -1362,7 +1504,12 @@
                 <a href="https://wa.me/917889257045?text=Hi%2C%20I%20need%20help%20with%20tax%20planning" class="btn-primary" style="background: #25D366;">💬 WhatsApp</a>
                 <a href="https://sidhiandassociates.com/services/tax-planning-filing/" class="btn-primary">📊 Tax Planning Services</a>
             </div>
-            <p style="margin-top: 25px; font-size: 1em;">✓ Free Consultation | ✓ Expert CAs | ✓ 5000+ Happy Clients | ✓ Pan-India Service</p>
+            <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+            </div>
         </div>
     </div>
 
@@ -1413,10 +1560,10 @@
                 <div class="footer-section">
                     <h3>Popular Services</h3>
                     <ul>
-                        <li><a href="https://sidhiandassociates.com/services/income-tax-return-ITR/">ITR Filing - ₹499</a></li>
-                        <li><a href="https://sidhiandassociates.com/services/tax-planning-filing/">Tax Planning</a></li>
-                        <li><a href="https://sidhiandassociates.com/services/gst-registration/">GST Registration - ₹3,000</a></li>
-                        <li><a href="https://sidhiandassociates.com/services/business-advisory/">Business Advisory</a></li>
+                        <li><a href="https://sidhiandassociates.com/services/income-tax-return-ITR/">Income Tax Filing & Planning - from ₹1,000</a></li>
+                        <li><a href="https://sidhiandassociates.com/services/gst-registration/">GST Compliance & Advisory - from ₹1,000/month</a></li>
+                        <li><a href="https://sidhiandassociates.com/services/bookkeeping-and-accounting/">Bookkeeping & Virtual CFO - from ₹2,000/month</a></li>
+                        <li><a href="https://sidhiandassociates.com/services/tds-return-filing/">TDS Filing & Returns - from ₹2,000/quarter</a></li>
                     </ul>
                 </div>
                 
@@ -1439,32 +1586,40 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Sidhi & Associates. All Rights Reserved.</p>
+                <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
                 <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | 5000+ Satisfied Clients</p>
             </div>
         </div>
     </footer>
 
-    <!-- Floating Buttons -->
-    <div class="floating-buttons">
-        <a href="https://wa.me/917889257045?text=Hi%2C%20I%20used%20your%20PPF%20calculator" 
-           target="_blank" 
-           class="float-btn whatsapp-btn" 
-           aria-label="Chat on WhatsApp">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-            </svg>
-        </a>
-        <a href="tel:+917889257045" 
-           class="float-btn call-btn" 
-           aria-label="Call us">
-            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
-            </svg>
-        </a>
-    </div>
-
     <script>
+        document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
+
+        var hamburger = document.getElementById('hamburger');
+        var mobileDrawer = document.getElementById('mobileDrawer');
+        if (hamburger && mobileDrawer) {
+            hamburger.addEventListener('click', function(e){
+                e.stopPropagation();
+                var isOpen = mobileDrawer.classList.toggle('open');
+                hamburger.classList.toggle('open', isOpen);
+                hamburger.setAttribute('aria-expanded', String(isOpen));
+            });
+            mobileDrawer.querySelectorAll('a').forEach(function(a){
+                a.addEventListener('click', function(){
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                });
+            });
+            document.addEventListener('click', function(e){
+                if (!hamburger.contains(e.target) && !mobileDrawer.contains(e.target)) {
+                    mobileDrawer.classList.remove('open');
+                    hamburger.classList.remove('open');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        }
+
         // PPF Calculator Logic
         document.getElementById('ppfForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -1478,20 +1633,22 @@
             const interestRate = parseFloat(document.getElementById('interestRate').value) || 7.1;
 
             // Validation
+            const errorEl = document.getElementById('ppfFormError');
             if (!yearlyInvestment || !tenure || !interestRate) {
-                alert('Please fill all required fields');
+                if (errorEl) errorEl.textContent = 'Please fill all required fields.';
                 return;
             }
 
             if (yearlyInvestment < 500 || yearlyInvestment > 150000) {
-                alert('Yearly investment must be between ₹500 and ₹1,50,000');
+                if (errorEl) errorEl.textContent = 'Yearly investment must be between ₹500 and ₹1,50,000.';
                 return;
             }
 
             if (tenure < 15) {
-                alert('PPF minimum tenure is 15 years');
+                if (errorEl) errorEl.textContent = 'PPF minimum tenure is 15 years.';
                 return;
             }
+            if (errorEl) errorEl.textContent = '';
 
             // Calculate PPF with yearly compounding
             let balance = 0;
