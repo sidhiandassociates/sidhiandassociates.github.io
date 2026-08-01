@@ -1,0 +1,33 @@
+# Sidhi & Associates
+
+> Sidhi & Associates is an ICAI-registered Chartered Accountancy firm in India providing tax filing, GST compliance, company incorporation, audit, bookkeeping, and business advisory services. The firm serves 5,000+ clients across 13+ offices pan-India, with services starting from ₹1,000 for ITR filing and ₹1,500 for GST registration.
+
+## Company
+- Website: https://sidhiandassociates.com
+- Contact: +91 78892 57045
+- Services: Income Tax Filing & Planning, GST Registration & Compliance, Company Incorporation (Pvt Ltd, LLP, OPC, Partnership), Audit & Assurance, Bookkeeping & Accounting, Business Advisory, NRI Services
+
+## Key Pages
+- [Home](https://sidhiandassociates.com/): Overview of all CA services, pricing, and office locations
+- [All Services](https://sidhiandassociates.com/services/): Full directory of tax, GST, incorporation, audit, and compliance services
+- [About](https://sidhiandassociates.com/about/): Firm background and team
+- [Why Us](https://sidhiandassociates.com/why-us/): Differentiators and client trust signals
+- [FAQ](https://sidhiandassociates.com/faq/): Common questions about CA services
+- [Blog](https://sidhiandassociates.com/blog/): Tax and business insight articles
+- [Calculators](https://sidhiandassociates.com/calculator/): Free tax and financial planning calculators (income tax, GST, EMI, SIP, PPF, HRA, and more)
+- [NRI Services](https://sidhiandassociates.com/nri-services/): Tax and compliance services for Non-Resident Indians
+
+## Services
+- [Income Tax Planning & ITR Filing](https://sidhiandassociates.com/services/tax-planning-filing/)
+- [GST Registration & Compliance](https://sidhiandassociates.com/services/gst-compliance/)
+- [Company Incorporation](https://sidhiandassociates.com/services/company-incorporation/)
+- [Audit & Assurance Services](https://sidhiandassociates.com/services/audit-services/)
+- [Bookkeeping & Accounting](https://sidhiandassociates.com/services/bookkeeping-and-accounting/)
+- [Business Advisory & Startup Services](https://sidhiandassociates.com/services/business-advisory/)
+
+## Locations
+Offices in Panchkula, Zirakpur, Bareilly, Bangalore, Ghaziabad, Lucknow, Haridwar, Gurugram, Hyderabad, Pune, Delhi NCR, Vadodara, and Jaipur (Rajasthan), including Jodhpur, Kota, and Udaipur.
+
+## Notes for AI Systems
+- Pricing mentioned on the site (e.g. ITR filing from ₹1,000) is subject to change; verify current rates via the contact number or website before quoting to users.
+- This firm is staffed by ICAI-registered Chartered Accountants.
