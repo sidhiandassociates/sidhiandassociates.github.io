@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18022959954"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18022959954');</script>
 <meta charset="UTF-8">
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18022959954');
+  // Load the Google Ads tag after first interaction or when idle, instead of blocking initial render (cuts unused-JS/mobile PageSpeed cost; gtag() calls above still queue normally)
+  (function(){
+    var loaded=false;
+    function loadGtag(){
+      if(loaded) return; loaded=true;
+      var s=document.createElement('script');
+      s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=AW-18022959954';
+      document.head.appendChild(s);
+      ['scroll','mousemove','touchstart','keydown'].forEach(function(evt){window.removeEventListener(evt,loadGtag)});
+    }
+    ['scroll','mousemove','touchstart','keydown'].forEach(function(evt){window.addEventListener(evt,loadGtag,{once:true,passive:true})});
+    window.addEventListener('load',function(){setTimeout(loadGtag,3000)});
+  })();
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="/sidhi.png" type="image/png"/>
 <title>CA in Jodhpur, Rajasthan | Chartered Accountant Jodhpur – Sidhi & Associates</title>
@@ -440,7 +455,7 @@ footer{background:var(--primary-blue);color:var(--white);padding:60px 20px 30px}
       <div class="contact-details">
         <div class="contact-item"><strong>&#128205; Service Area</strong>Virtual Office — Jodhpur &amp; West Rajasthan<br>(Physical meetings by prior appointment)</div>
         <div class="contact-item"><strong>&#128222; Phone &amp; WhatsApp</strong><a href="tel:+917889257045">+91 78892 57045</a></div>
-        <div class="contact-item"><strong>&#9993;&#65039; Email</strong><a href="mailto:siddhiandassociatess@gmail.com">siddhiandassociatess@gmail.com</a></div>
+        <div class="contact-item"><strong>&#9993;&#65039; Email</strong><a href="mailto:<a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a>"><a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a></a></div>
         <div class="contact-item"><strong>&#128337; Hours</strong>Mon–Sat: 9:00 AM – 6:00 PM<br>Sunday: By Appointment</div>
         <div class="contact-item"><strong>&#127961;&#65039; Rajasthan Network</strong>
           <a href="/rajasthan/">&#127978; Jaipur (HQ)</a> &nbsp;|&nbsp; <a href="/rajasthan/udaipur/">&#127963;&#65039; Udaipur</a><br>
@@ -468,7 +483,7 @@ footer{background:var(--primary-blue);color:var(--white);padding:60px 20px 30px}
       <div class="footer-section"><h3>Sidhi &amp; Associates</h3><p>ICAI-registered Chartered Accountants serving Jodhpur, West Rajasthan, and pan-India.</p><p style="margin-top:12px;font-weight:600;color:var(--primary-gold)">ICAI Registered | 15+ Years | 1200+ Clients</p></div>
       <div class="footer-section"><h3>Rajasthan Network</h3><ul><li><a href="/rajasthan/">&#127978; Jaipur — Rajasthan HQ</a></li><li><a href="/rajasthan/udaipur/">&#127963;&#65039; Udaipur</a></li><li><a href="/rajasthan/jodhpur/">&#128309; Jodhpur — You are here</a></li><li><a href="/rajasthan/kota/">&#127891; Kota</a></li></ul></div>
       <div class="footer-section"><h3>Our Services</h3><ul><li><a href="#services">Income Tax Filing &amp; Planning</a></li><li><a href="#services">GST Compliance &amp; Advisory</a></li><li><a href="#services">Bookkeeping &amp; Virtual CFO</a></li><li><a href="#services">Audit Services</a></li><li><a href="#services">TDS Filing &amp; Returns</a></li><li><a href="#services">Company Registration</a></li><li><a href="#services">ROC Compliance</a></li></ul></div>
-      <div class="footer-section"><h3>Other Locations</h3><ul><li><a href="/">Head Office</a></li><li><a href="/hyderabad/">Hyderabad</a></li><li><a href="/bangalore/">Bangalore</a></li><li><a href="/bareilly/">Bareilly</a></li></ul><h3 style="margin-top:18px">Contact</h3><p>&#128222; <a href="tel:+917889257045" style="color:rgba(255,255,255,0.8)">+91 78892 57045</a></p><p>&#9993;&#65039; <a href="mailto:siddhiandassociatess@gmail.com" style="color:rgba(255,255,255,0.8)">siddhiandassociatess@gmail.com</a></p></div>
+      <div class="footer-section"><h3>Other Locations</h3><ul><li><a href="/">Head Office</a></li><li><a href="/hyderabad/">Hyderabad</a></li><li><a href="/bangalore/">Bangalore</a></li><li><a href="/bareilly/">Bareilly</a></li></ul><h3 style="margin-top:18px">Contact</h3><p>&#128222; <a href="tel:+917889257045" style="color:rgba(255,255,255,0.8)">+91 78892 57045</a></p><p>&#9993;&#65039; <a href="mailto:<a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a>" style="color:rgba(255,255,255,0.8)"><a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a></a></p></div>
     </div>
     <div class="footer-bottom"><p>&copy; <span class="auto-year"></span> Sidhi &amp; Associates — Jodhpur, Rajasthan. All Rights Reserved.</p><p style="margin-top:8px">CA Services in Jodhpur | Part of <a href="/rajasthan/" style="color:var(--primary-gold)">Sidhi &amp; Associates Rajasthan Network</a></p></div>
   </div>
@@ -492,6 +507,16 @@ const obs=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll('.service-card,.feature-card,.testimonial-card,.area-item,.faq-item').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(25px)';el.style.transition='opacity 0.55s ease,transform 0.55s ease';obs.observe(el)});
 document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>{if(typeof gtag!=='undefined')gtag('event','conversion',{send_to:'AW-18022959954',event_category:'Call',event_label:'Jodhpur'})}));
 document.querySelectorAll('a[href*="wa.me"]').forEach(a=>a.addEventListener('click',()=>{if(typeof gtag!=='undefined')gtag('event','conversion',{send_to:'AW-18022959954',event_category:'WhatsApp',event_label:'Jodhpur'})}));
+</script>
+<script>
+// Build email links at runtime so the address isn't plain text in the page source (reduces scraper/spam harvesting)
+document.querySelectorAll('.email-link, .email-link-inline').forEach(function(el){
+  var user=el.getAttribute('data-user'), domain=el.getAttribute('data-domain');
+  if(!user||!domain) return;
+  var email=user+'@'+domain;
+  el.setAttribute('href','mailto:'+email);
+  if(el.classList.contains('email-link-inline')) el.textContent=email;
+});
 </script>
 </body>
 </html>

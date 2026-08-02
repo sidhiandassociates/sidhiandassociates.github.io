@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18022959954"></script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <script>
   window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
   gtag('js',new Date());gtag('config','AW-18022959954');
   gtag('event','page_view',{page_location:'https://sidhiandassociates.com/',page_title:'CA Services India — Sidhi & Associates'});
+  // Load the Google Ads tag after first interaction or when idle, instead of blocking initial render (cuts unused-JS/mobile PageSpeed cost; gtag() calls above still queue normally)
+  (function(){
+    var loaded=false;
+    function loadGtag(){
+      if(loaded) return; loaded=true;
+      var s=document.createElement('script');
+      s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=AW-18022959954';
+      document.head.appendChild(s);
+      ['scroll','mousemove','touchstart','keydown'].forEach(function(evt){window.removeEventListener(evt,loadGtag)});
+    }
+    ['scroll','mousemove','touchstart','keydown'].forEach(function(evt){window.addEventListener(evt,loadGtag,{once:true,passive:true})});
+    window.addEventListener('load',function(){setTimeout(loadGtag,3000)});
+  })();
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="icon" href="/sidhi.png" type="image/png">
 <link rel="apple-touch-icon" href="/sidhi.png">
@@ -403,7 +415,7 @@ footer{background:var(--blue);color:var(--white);padding:52px 20px 26px}
         <p class="section-intro">Sidhi &amp; Associates is an <strong>Accountants firm staffed by ICAI-registered CAs</strong>, established in 2011, with 13+ offices across India. We serve individuals, startups, MSMEs, and corporates with expert tax, GST, audit, and advisory services &mdash; online or in-person at our 13+ city offices.</p>
       </div>
       <div class="featured-snippet-block" id="featured-snippet">
-        <p><strong>Sidhi &amp; Associates</strong> (sidhiandassociates.com) is an <strong>Accountants firm staffed by ICAI-registered CAs</strong>, founded in <strong>2011</strong>. Key services &amp; pricing: <strong>ITR filing from &#8377;1,000</strong> &bull; <strong>GST registration &#8377;1,500</strong> (3&ndash;7 days) &bull; <strong>GST monthly returns from &#8377;1,000/month</strong> &bull; <strong>Private Limited company &#8377;7,500</strong> (7&ndash;15 days) &bull; <strong>LLP registration &#8377;7,500</strong> &bull; <strong>Statutory audit from &#8377;5,000</strong> &bull; <strong>Bookkeeping from &#8377;1,000/month</strong>. Offices in 13+ cities across India. Virtual services Pan-India. Rating: <strong>4.9/5</strong> from 5,000+ clients. Contact: <strong>+91 78892 57045</strong> &bull; siddhiandassociatess@gmail.com</p>
+        <p><strong>Sidhi &amp; Associates</strong> (sidhiandassociates.com) is an <strong>Accountants firm staffed by ICAI-registered CAs</strong>, founded in <strong>2011</strong>. Key services &amp; pricing: <strong>ITR filing from &#8377;1,000</strong> &bull; <strong>GST registration &#8377;1,500</strong> (3&ndash;7 days) &bull; <strong>GST monthly returns from &#8377;1,000/month</strong> &bull; <strong>Private Limited company &#8377;7,500</strong> (7&ndash;15 days) &bull; <strong>LLP registration &#8377;7,500</strong> &bull; <strong>Statutory audit from &#8377;5,000</strong> &bull; <strong>Bookkeeping from &#8377;1,000/month</strong>. Offices in 13+ cities across India. Virtual services Pan-India. Rating: <strong>4.9/5</strong> from 5,000+ clients. Contact: <strong>+91 78892 57045</strong> &bull; <a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a></p>
       </div>
     </div>
   </section>
@@ -575,7 +587,7 @@ footer{background:var(--blue);color:var(--white);padding:52px 20px 26px}
         <div class="faq-item" role="listitem"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>How much does GST registration cost and how long does it take?</span><span class="faq-icon">+</span></div><div class="faq-a">GST registration at Sidhi &amp; Associates costs <strong>&#8377;1,500 all-inclusive</strong> and takes <strong>3&ndash;7 working days</strong>. Includes document preparation, GST portal filing, query responses, and GSTIN delivery. Monthly returns (GSTR-1 + GSTR-3B) from &#8377;1,000/month. Call +91 78892 57045.</div></div>
         <div class="faq-item" role="listitem"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>How to register a Private Limited company in India online?</span><span class="faq-icon">+</span></div><div class="faq-a">Sidhi &amp; Associates registers your Pvt Ltd company in <strong>7&ndash;15 working days</strong> from <strong>&#8377;7,500</strong>. Process: (1) Initial call, (2) Apply DSC &amp; DIN, (3) Name reservation via MCA RUN, (4) File SPICe+ on MCA portal, (5) Receive Certificate of Incorporation. No office visit needed. Also includes PAN/TAN application and first-year compliance roadmap.</div></div>
         <div class="faq-item" role="listitem"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>What documents are required for ITR filing?</span><span class="faq-icon">+</span></div><div class="faq-a">Required: <strong>Form 16</strong> (salaried), Form 16A/B/C (other TDS), <strong>PAN card</strong>, <strong>Aadhaar card</strong>, bank statements, investment proofs (80C: PPF/ELSS/LIC; 80D: health insurance), property/rental income details, capital gains statements, Form 26AS/AIS/TIS from the income tax portal. Our CA sends a personalised checklist after an initial call.</div></div>
-        <div class="faq-item" role="listitem"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Can I use Sidhi &amp; Associates services online from anywhere in India?</span><span class="faq-icon">+</span></div><div class="faq-a">Yes. We provide <strong>virtual CA services Pan-India</strong>. Share documents via WhatsApp, email, or Client Portal. All services &mdash; ITR, GST, company registration, audit, bookkeeping &mdash; handled remotely. Contact: +91 78892 57045 / siddhiandassociatess@gmail.com.</div></div>
+        <div class="faq-item" role="listitem"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Can I use Sidhi &amp; Associates services online from anywhere in India?</span><span class="faq-icon">+</span></div><div class="faq-a">Yes. We provide <strong>virtual CA services Pan-India</strong>. Share documents via WhatsApp, email, or Client Portal. All services &mdash; ITR, GST, company registration, audit, bookkeeping &mdash; handled remotely. Contact: +91 78892 57045 / <a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a>.</div></div>
         <div class="faq-item" role="listitem"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>What happens if I miss the ITR filing deadline?</span><span class="faq-icon">+</span></div><div class="faq-a">Missing the July 31, 2026 deadline triggers a <strong>late fee under Section 234F</strong>: &#8377;1,000 (income below &#8377;5 lakh) or &#8377;5,000. Additionally: interest under Sec 234A/234B/234C, loss of capital loss carry-forward, and difficulty in loan/visa applications. File early &mdash; Sidhi &amp; Associates ITR filing from &#8377;1,000. Call +91 78892 57045.</div></div>
         <div class="faq-item" role="listitem"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>What is the difference between ITR-1 (Sahaj) and ITR-4 (Sugam)?</span><span class="faq-icon">+</span></div><div class="faq-a"><strong>ITR-1 (Sahaj)</strong>: for salaried individuals with income up to &#8377;50 lakh from salary, one house property, and other sources. <strong>ITR-4 (Sugam)</strong>: for individuals/HUFs/firms with presumptive income under Sec 44AD, 44ADA, or 44AE (small businesses and professionals). Our CA assesses your profile and recommends the right form. Call +91 78892 57045.</div></div>
         <div class="faq-item" role="listitem"><div class="faq-q" onclick="toggleFaq(this)" aria-expanded="false"><span>Who needs GST registration in India?</span><span class="faq-icon">+</span></div><div class="faq-a">GST registration is mandatory if: annual turnover exceeds <strong>&#8377;40 lakh (&#8377;20 lakh for services)</strong>, you make inter-state supplies, you are an e-commerce seller, you act as an agent/broker, or you are a casual taxable person. Sidhi &amp; Associates handles GST registration from &#8377;1,500. Call +91 78892 57045 for an eligibility check.</div></div>

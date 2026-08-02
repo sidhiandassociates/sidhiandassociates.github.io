@@ -1,13 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18022959954"></script>
+<meta charset="UTF-8">
 <script>
+
   window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
   gtag('js',new Date());gtag('config','AW-18022959954');
   gtag('event','page_view',{page_location:'https://sidhiandassociates.com/blog/employee-wellness-physiotherapy-partnership/',page_title:'Why We Partnered with Physionutra Clinic for Our Team\'s Wellness — Sidhi & Associates'});
+
+  // Load the Google Ads tag after first interaction or when idle, instead of blocking initial render (cuts unused-JS/mobile PageSpeed cost; gtag() calls above still queue normally)
+  (function(){
+    var loaded=false;
+    function loadGtag(){
+      if(loaded) return; loaded=true;
+      var s=document.createElement('script');
+      s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=AW-18022959954';
+      document.head.appendChild(s);
+      ['scroll','mousemove','touchstart','keydown'].forEach(function(evt){window.removeEventListener(evt,loadGtag)});
+    }
+    ['scroll','mousemove','touchstart','keydown'].forEach(function(evt){window.addEventListener(evt,loadGtag,{once:true,passive:true})});
+    window.addEventListener('load',function(){setTimeout(loadGtag,3000)});
+  })();
 </script>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="icon" href="/sidhi.png" type="image/png">
 <link rel="apple-touch-icon" href="/sidhi.png">
@@ -215,7 +230,7 @@ footer{background:var(--blue);color:var(--white);padding:52px 20px 26px}
         <h3>Sidhi &amp; Associates</h3>
         <p>An Accountants firm staffed by ICAI-registered CAs, providing expert CA services across India since 2011. 13+ offices. 5,000+ clients. 4.9&#9733; rated.</p>
         <p style="margin-top:14px">&#128222; <a href="tel:+917889257045" style="color:var(--gold);text-decoration:none;font-weight:600">+91 78892 57045</a></p>
-        <p>&#9993;&#65039; <a href="mailto:siddhiandassociatess@gmail.com" style="color:var(--gold);text-decoration:none">siddhiandassociatess@gmail.com</a></p>
+        <p>&#9993;&#65039; <a href="mailto:<a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a>" style="color:var(--gold);text-decoration:none"><a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a></a></p>
       </div>
       <div class="footer-col">
         <h3>Tax &amp; GST Services</h3>
@@ -269,6 +284,16 @@ if(hamburger&&mobileDrawer){
 var btt=document.getElementById('backToTop');
 window.addEventListener('scroll',function(){btt.classList.toggle('visible',window.pageYOffset>400)});
 btt.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+</script>
+<script>
+// Build email links at runtime so the address isn't plain text in the page source (reduces scraper/spam harvesting)
+document.querySelectorAll('.email-link, .email-link-inline').forEach(function(el){
+  var user=el.getAttribute('data-user'), domain=el.getAttribute('data-domain');
+  if(!user||!domain) return;
+  var email=user+'@'+domain;
+  el.setAttribute('href','mailto:'+email);
+  if(el.classList.contains('email-link-inline')) el.textContent=email;
+});
 </script>
 </body>
 </html>

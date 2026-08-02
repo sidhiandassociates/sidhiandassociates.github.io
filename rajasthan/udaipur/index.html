@@ -1,9 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18022959954"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18022959954');</script>
 <meta charset="UTF-8">
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','AW-18022959954');
+  // Load the Google Ads tag after first interaction or when idle, instead of blocking initial render (cuts unused-JS/mobile PageSpeed cost; gtag() calls above still queue normally)
+  (function(){
+    var loaded=false;
+    function loadGtag(){
+      if(loaded) return; loaded=true;
+      var s=document.createElement('script');
+      s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=AW-18022959954';
+      document.head.appendChild(s);
+      ['scroll','mousemove','touchstart','keydown'].forEach(function(evt){window.removeEventListener(evt,loadGtag)});
+    }
+    ['scroll','mousemove','touchstart','keydown'].forEach(function(evt){window.addEventListener(evt,loadGtag,{once:true,passive:true})});
+    window.addEventListener('load',function(){setTimeout(loadGtag,3000)});
+  })();
+</script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" href="/sidhi.png" type="image/png"/>
 
@@ -502,7 +517,7 @@ section{padding:52px 16px}
       <div class="contact-details">
         <div class="contact-item"><strong>&#128205; Service Area</strong>Virtual Office — Udaipur &amp; South Rajasthan<br>(Physical meetings by prior appointment)</div>
         <div class="contact-item"><strong>&#128222; Phone &amp; WhatsApp</strong><a href="tel:+917889257045">+91 78892 57045</a></div>
-        <div class="contact-item"><strong>&#9993;&#65039; Email</strong><a href="mailto:siddhiandassociatess@gmail.com">siddhiandassociatess@gmail.com</a></div>
+        <div class="contact-item"><strong>&#9993;&#65039; Email</strong><a href="mailto:<a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a>"><a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a></a></div>
         <div class="contact-item"><strong>&#128337; Hours</strong>Mon–Sat: 9:00 AM – 6:00 PM<br>Sunday: By Appointment</div>
         <div class="contact-item"><strong>&#127961;&#65039; Rajasthan Network</strong>
           <a href="/rajasthan/">&#127978; Jaipur (Headquarters)</a><br>
@@ -563,7 +578,7 @@ section{padding:52px 16px}
         </ul>
         <h3 style="margin-top:18px">Contact</h3>
         <p>&#128222; <a href="tel:+917889257045" style="color:rgba(255,255,255,0.8)">+91 78892 57045</a></p>
-        <p>&#9993;&#65039; <a href="mailto:siddhiandassociatess@gmail.com" style="color:rgba(255,255,255,0.8)">siddhiandassociatess@gmail.com</a></p>
+        <p>&#9993;&#65039; <a href="mailto:<a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a>" style="color:rgba(255,255,255,0.8)"><a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a></a></p>
       </div>
     </div>
     <div class="footer-bottom">
@@ -595,6 +610,16 @@ const obs=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll('.service-card,.feature-card,.testimonial-card,.area-item,.faq-item').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(25px)';el.style.transition='opacity 0.55s ease,transform 0.55s ease';obs.observe(el)});
 document.querySelectorAll('a[href^="tel:"]').forEach(a=>a.addEventListener('click',()=>{if(typeof gtag!=='undefined')gtag('event','conversion',{send_to:'AW-18022959954',event_category:'Call',event_label:'Udaipur'})}));
 document.querySelectorAll('a[href*="wa.me"]').forEach(a=>a.addEventListener('click',()=>{if(typeof gtag!=='undefined')gtag('event','conversion',{send_to:'AW-18022959954',event_category:'WhatsApp',event_label:'Udaipur'})}));
+</script>
+<script>
+// Build email links at runtime so the address isn't plain text in the page source (reduces scraper/spam harvesting)
+document.querySelectorAll('.email-link, .email-link-inline').forEach(function(el){
+  var user=el.getAttribute('data-user'), domain=el.getAttribute('data-domain');
+  if(!user||!domain) return;
+  var email=user+'@'+domain;
+  el.setAttribute('href','mailto:'+email);
+  if(el.classList.contains('email-link-inline')) el.textContent=email;
+});
 </script>
 </body>
 </html>

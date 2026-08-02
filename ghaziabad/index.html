@@ -1,16 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18022959954"></script>
 <script>
+
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-18022959954');
   gtag('event','page_view',{page_location:'https://sidhiandassociates.com/ghaziabad/',page_title:'Best CA in Ghaziabad — Sidhi & Associates'});
+
+  // Load the Google Ads tag after first interaction or when idle, instead of blocking initial render (cuts unused-JS/mobile PageSpeed cost; gtag() calls above still queue normally)
+  (function(){
+    var loaded=false;
+    function loadGtag(){
+      if(loaded) return; loaded=true;
+      var s=document.createElement('script');
+      s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=AW-18022959954';
+      document.head.appendChild(s);
+      ['scroll','mousemove','touchstart','keydown'].forEach(function(evt){window.removeEventListener(evt,loadGtag)});
+    }
+    ['scroll','mousemove','touchstart','keydown'].forEach(function(evt){window.addEventListener(evt,loadGtag,{once:true,passive:true})});
+    window.addEventListener('load',function(){setTimeout(loadGtag,3000)});
+  })();
 </script>
-<meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="icon" href="/sidhi.png" type="image/png">
@@ -672,7 +687,7 @@ footer{background:var(--primary-blue);color:var(--white);padding:50px 20px 30px}
 
     <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)" aria-expanded="false"><span>Do you handle income tax notices in Ghaziabad?</span><span class="faq-icon">+</span></div><div class="faq-answer">Yes, we provide expert support for income tax notices and assessment proceedings in Ghaziabad, including Section 143(1), 139(9), 148, demand notices, and scrutiny assessments. Our CAs prepare detailed responses, attend hearings, and represent you before tax authorities.</div></div>
 
-    <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)" aria-expanded="false"><span>What are your office timings and how can I contact you?</span><span class="faq-icon">+</span></div><div class="faq-answer">Our office is open Monday to Saturday, 9:00 AM to 6:00 PM, with 24/7 support via phone and WhatsApp for urgent queries. Call or WhatsApp +91 78892 57045, or email siddhiandassociatess@gmail.com — we typically respond within 2 hours.</div></div>
+    <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)" aria-expanded="false"><span>What are your office timings and how can I contact you?</span><span class="faq-icon">+</span></div><div class="faq-answer">Our office is open Monday to Saturday, 9:00 AM to 6:00 PM, with 24/7 support via phone and WhatsApp for urgent queries. Call or WhatsApp +91 78892 57045, or email <a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a> — we typically respond within 2 hours.</div></div>
   </div>
 </section>
 
@@ -727,7 +742,7 @@ footer{background:var(--primary-blue);color:var(--white);padding:50px 20px 30px}
       <div class="footer-section">
         <h3>Contact Info</h3>
         <p>&#128222; <a href="tel:+917889257045">+91 78892 57045</a></p>
-        <p>&#9993;&#65039; <a href="mailto:siddhiandassociatess@gmail.com">siddhiandassociatess@gmail.com</a></p>
+        <p>&#9993;&#65039; <a href="mailto:<a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a>"><a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a></a></p>
         <p style="margin-top:15px">&#128205; Serving All Ghaziabad</p>
         <p>&#128337; Mon-Sat: 9 AM - 6 PM</p>
         <p>&#9889; 24/7 Online Support</p>
@@ -802,6 +817,16 @@ window.addEventListener('scroll',function(){
 // Conversion tracking
 document.querySelectorAll('a[href^="tel:"]').forEach(function(a){a.addEventListener('click',function(){if(typeof gtag!=='undefined')gtag('event','conversion',{send_to:'AW-18022959954',event_category:'Call',event_label:'Ghaziabad'})})});
 document.querySelectorAll('a[href*="wa.me"]').forEach(function(a){a.addEventListener('click',function(){if(typeof gtag!=='undefined')gtag('event','conversion',{send_to:'AW-18022959954',event_category:'WhatsApp',event_label:'Ghaziabad'})})});
+</script>
+<script>
+// Build email links at runtime so the address isn't plain text in the page source (reduces scraper/spam harvesting)
+document.querySelectorAll('.email-link, .email-link-inline').forEach(function(el){
+  var user=el.getAttribute('data-user'), domain=el.getAttribute('data-domain');
+  if(!user||!domain) return;
+  var email=user+'@'+domain;
+  el.setAttribute('href','mailto:'+email);
+  if(el.classList.contains('email-link-inline')) el.textContent=email;
+});
 </script>
 </body>
 </html>

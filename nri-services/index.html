@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18022959954"></script>
+<meta charset="UTF-8">
     <script>
+
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'AW-18022959954');
-    </script>
-    <meta charset="UTF-8">
+    
+  // Load the Google Ads tag after first interaction or when idle, instead of blocking initial render (cuts unused-JS/mobile PageSpeed cost; gtag() calls above still queue normally)
+  (function(){
+    var loaded=false;
+    function loadGtag(){
+      if(loaded) return; loaded=true;
+      var s=document.createElement('script');
+      s.async=true; s.src='https://www.googletagmanager.com/gtag/js?id=AW-18022959954';
+      document.head.appendChild(s);
+      ['scroll','mousemove','touchstart','keydown'].forEach(function(evt){window.removeEventListener(evt,loadGtag)});
+    }
+    ['scroll','mousemove','touchstart','keydown'].forEach(function(evt){window.addEventListener(evt,loadGtag,{once:true,passive:true})});
+    window.addEventListener('load',function(){setTimeout(loadGtag,3000)});
+  })();
+</script>
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/sidhi.png" type="image/png" />
 
@@ -400,7 +415,7 @@
             <p class="section-intro">Reach us by call, WhatsApp, or email — we reply within 2 business hours across time zones</p>
             <div class="contact-details">
                 <div class="contact-item"><strong>📞 Phone / WhatsApp</strong><a href="tel:+917889257045">+91 78892 57045</a></div>
-                <div class="contact-item"><strong>✉️ Email</strong><a href="mailto:siddhiandassociatess@gmail.com">siddhiandassociatess@gmail.com</a></div>
+                <div class="contact-item"><strong>✉️ Email</strong><a href="mailto:<a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a>"><a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a></a></div>
                 <div class="contact-item"><strong>🌍 Countries Served</strong>USA · UK · UAE · Canada · Australia · Singapore</div>
                 <div class="contact-item"><strong>🕒 Availability</strong>Mon–Sat, flexible scheduling across time zones</div>
             </div>
@@ -434,7 +449,7 @@
                 <div class="footer-section">
                     <h3>Contact</h3>
                     <p>📞 +91 78892 57045</p>
-                    <p>✉️ <a href="mailto:siddhiandassociatess@gmail.com" style="color:rgba(255,255,255,.8)">siddhiandassociatess@gmail.com</a></p>
+                    <p>✉️ <a href="mailto:<a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a>" style="color:rgba(255,255,255,.8)"><a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com"></a></a></p>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -489,5 +504,15 @@
         document.querySelectorAll('a[href^="tel:"]').forEach(a => a.addEventListener('click', () => { if (typeof gtag !== 'undefined') gtag('event','conversion',{send_to:'AW-18022959954',event_category:'Call',event_label:'NRI'}); }));
         document.querySelectorAll('a[href*="wa.me"]').forEach(a => a.addEventListener('click', () => { if (typeof gtag !== 'undefined') gtag('event','conversion',{send_to:'AW-18022959954',event_category:'WhatsApp',event_label:'NRI'}); }));
     </script>
+<script>
+// Build email links at runtime so the address isn't plain text in the page source (reduces scraper/spam harvesting)
+document.querySelectorAll('.email-link, .email-link-inline').forEach(function(el){
+  var user=el.getAttribute('data-user'), domain=el.getAttribute('data-domain');
+  if(!user||!domain) return;
+  var email=user+'@'+domain;
+  el.setAttribute('href','mailto:'+email);
+  if(el.classList.contains('email-link-inline')) el.textContent=email;
+});
+</script>
 </body>
 </html>
