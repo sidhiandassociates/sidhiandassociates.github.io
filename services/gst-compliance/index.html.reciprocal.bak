@@ -31,51 +31,53 @@
     <link rel="icon" href="/sidhi.png" type="image/png" />
 
     <!-- Primary Meta Tags -->
-    <title>Bookkeeping & Accounting Services India | Tally, QuickBooks from ₹2,000/month - Sidhi & Associates</title>
-    <meta name="title" content="Bookkeeping & Accounting Services India | Tally, QuickBooks from ₹2,000/month - Sidhi & Associates">
-    <meta name="description" content="Professional Bookkeeping & Virtual CFO services from ₹2,000/month. Tally, QuickBooks, Cloud Accounting, Financial Reporting, Bank Reconciliation. Real-time financial insights, 5000+ businesses served. Call +91 78892 57045">
-    <meta name="keywords" content="bookkeeping services India, accounting services, Tally bookkeeping, QuickBooks accounting, cloud accounting, financial reporting, bank reconciliation, accounts payable receivable, payroll accounting, monthly bookkeeping, CA bookkeeping services, outsourced accounting, small business accounting, virtual CFO services">
+    <title>GST Registration & Compliance Services India | GST Filing from ₹3,000 - Sidhi & Associates</title>
+    <meta name="title" content="GST Registration & Compliance Services India | GST Filing from ₹3,000 - Sidhi & Associates">
+    <meta name="description" content="Expert GST Registration, Filing & Compliance Services by Qualified CAs. GSTR-1, GSTR-3B, Annual Returns, GST Refunds, Input Tax Credit. 5,000+ GST Returns Filed. Call +91 78892 57045">
+    <meta name="keywords" content="GST registration India, GST return filing, GSTR-1 filing, GSTR-3B filing, GST compliance services, GST consultant, GST annual return, input tax credit, GST refund, CA GST services, GST notice handling, e-way bill, GST audit">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="language" content="English">
     <meta name="author" content="Sidhi & Associates">
-    <meta name="geo.region" content="IN">
-    <meta name="geo.placename" content="India">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sidhiandassociates.com/services/bookkeeping-and-accounting/">
-    <meta property="og:title" content="Bookkeeping & Accounting Services India - Expert Financial Management">
-    <meta property="og:description" content="Professional Bookkeeping & Virtual CFO services from ₹2,000/month. Tally, QuickBooks, real-time reporting. 5000+ businesses managed.">
+    <meta property="og:url" content="https://sidhiandassociates.com/services/gst-compliance/">
+    <meta property="og:title" content="GST Registration & Compliance Services India - From ₹3,000">
+    <meta property="og:description" content="Professional GST Registration & Compliance by Qualified CAs. 5,000+ GST Returns Filed. 100% Accurate Filing. Call +91 78892 57045">
     <meta property="og:site_name" content="Sidhi & Associates">
     <meta property="og:locale" content="en_IN">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sidhiandassociates.com/services/bookkeeping-and-accounting/">
-    <meta property="twitter:title" content="Bookkeeping & Accounting Services India - Sidhi & Associates">
-    <meta property="twitter:description" content="Expert Bookkeeping & Virtual CFO services from ₹2,000/month. Tally, QuickBooks, Cloud Accounting, real-time financial insights.">
+    <meta property="twitter:url" content="https://sidhiandassociates.com/services/gst-compliance/">
+    <meta property="twitter:title" content="GST Registration & Compliance Services - Sidhi & Associates">
+    <meta property="twitter:description" content="Expert GST Registration, Filing & Compliance Services. Complete GST support by qualified CAs. Starting ₹3,000.">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://sidhiandassociates.com/services/bookkeeping-and-accounting/">
+    <link rel="canonical" href="https://sidhiandassociates.com/services/gst-compliance/">
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN">
+    <meta name="geo.placename" content="India">
 
     <!-- AIO / AI-answer-engine entity meta -->
-    <meta name="ai-content-declaration" content="Bookkeeping & Accounting services by Sidhi & Associates, starting from Rs2,000/month, covering daily transaction recording, bank reconciliation, financial reporting, payroll and virtual CFO support using Tally, QuickBooks, Zoho Books and other platforms. The same firm also offers Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-content-declaration" content="GST Registration & Compliance service by Sidhi & Associates, ICAI registered Chartered Accountants. GST registration costs Rs3,000 one-time; monthly GST filing (GSTR-1 + GSTR-3B) starts at Rs1,500/month; quarterly QRMP filing from Rs3,000/quarter; annual package from Rs15,000/year. Firm also offers Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
     <meta name="ai-entity-type" content="Service,FAQPage">
 
-    <!-- Enhanced Schema Markup -->
+    <!-- Enhanced Schema Markup for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "serviceType": "Bookkeeping and Accounting Services",
-      "name": "Bookkeeping & Accounting Services",
-      "description": "Comprehensive bookkeeping, accounting and virtual CFO services including Tally, QuickBooks, financial reporting, bank reconciliation, accounts management, and real-time financial insights for businesses.",
+      "serviceType": "GST Registration and Compliance Services",
+      "name": "GST Compliance Services",
+      "description": "Comprehensive GST registration, GST return filing, compliance management, input tax credit optimization, and GST audit services by qualified Chartered Accountants.",
       "provider": {
         "@type": "ProfessionalService",
         "name": "Sidhi & Associates",
         "telephone": "+917889257045",
         "email": "siddhiandassociatess@gmail.com",
-        "url": "https://sidhiandassociates.com",
+        "url": "https://sidhiandassociates.com/",
         "priceRange": "₹₹",
         "address": {
           "@type": "PostalAddress",
@@ -93,23 +95,23 @@
       },
       "offers": {
         "@type": "AggregateOffer",
-        "lowPrice": "2000",
+        "lowPrice": "3000",
         "highPrice": "50000",
         "priceCurrency": "INR",
-        "offerCount": "4"
+        "offerCount": "5"
       }
     }
     </script>
 
-    <!-- WebPage Schema with Speakable (AEO/GEO) -->
+    <!-- WebPage Schema with Speakable (AEO / voice & AI answer engines) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "@id": "https://sidhiandassociates.com/services/bookkeeping-and-accounting/#webpage",
-      "url": "https://sidhiandassociates.com/services/bookkeeping-and-accounting/",
-      "name": "Bookkeeping & Accounting Services India",
-      "description": "Professional bookkeeping and accounting services with Tally, QuickBooks and cloud accounting, starting from ₹2,000/month.",
+      "@id": "https://sidhiandassociates.com/services/gst-compliance/#webpage",
+      "url": "https://sidhiandassociates.com/services/gst-compliance/",
+      "name": "GST Registration & Compliance Services",
+      "description": "Expert GST Registration, Filing & Compliance Services by Qualified CAs. GSTR-1, GSTR-3B, Annual Returns, GST Refunds, Input Tax Credit.",
       "inLanguage": "en-IN",
       "dateModified": "2026-07-17",
       "speakable": {
@@ -119,7 +121,7 @@
     }
     </script>
 
-    <!-- FAQ Schema -->
+    <!-- FAQ Schema for Rich Snippets -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -127,42 +129,42 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is the cost of bookkeeping services?",
+          "name": "What is the cost of GST registration?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Bookkeeping and virtual CFO services start from ₹2,000/month for small businesses. Standard packages range from ₹10,000-20,000/month. Premium packages with advanced reporting cost ₹25,000-50,000/month depending on transaction volume and complexity."
+            "text": "GST registration costs ₹3,000 including government filing and documentation. The process takes 3-7 working days. We handle all paperwork and ensure smooth registration."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the difference between bookkeeping and accounting?",
+          "name": "Who needs to register for GST?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Bookkeeping is the day-to-day recording of financial transactions. Accounting involves interpreting, analyzing, and reporting financial data. We provide both services - accurate bookkeeping combined with strategic accounting insights."
+            "text": "Businesses with annual turnover above ₹40 lakhs (₹20 lakhs for services in special category states) must register for GST. E-commerce sellers, inter-state suppliers, and certain businesses need GST registration regardless of turnover."
           }
         },
         {
           "@type": "Question",
-          "name": "Which accounting software do you use?",
+          "name": "What are GST return filing deadlines?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We work with Tally Prime, QuickBooks Online, QuickBooks Desktop, Zoho Books, and other popular accounting software. We can also work with your existing software or recommend the best solution for your business."
+            "text": "GSTR-1 is due by 11th of next month, GSTR-3B by 20th of next month. Annual return GSTR-9 is due by December 31st. Quarterly filers have different deadlines based on their category."
           }
         },
         {
           "@type": "Question",
-          "name": "How often will I receive financial reports?",
+          "name": "How much does GST return filing cost?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You receive monthly financial statements (P&L, Balance Sheet, Cash Flow) by the 10th of each month. Real-time dashboard access is available 24/7. Custom reports can be generated as needed."
+            "text": "Monthly GST filing starts at ₹1,500 per month. Quarterly filing costs ₹3,000 per quarter. Annual packages range from ₹15,000 to ₹50,000 based on transaction volume and complexity."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you provide cloud-based accounting services?",
+          "name": "What documents are needed for GST registration?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we provide cloud-based accounting services with secure access from anywhere. Your financial data is encrypted, backed up daily, and accessible in real-time through secure portals."
+            "text": "You need PAN card, Aadhaar, business address proof, bank account details, digital signature, business registration certificate, and authorized signatory documents."
           }
         }
       ]
@@ -179,19 +181,19 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://sidhiandassociates.com"
+          "item": "https://sidhiandassociates.com/"
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Services",
-          "item": "https://sidhiandassociates.com/#services"
+          "item": "https://sidhiandassociates.com/services/"
         },
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Bookkeeping & Accounting",
-          "item": "https://sidhiandassociates.com/services/bookkeeping-and-accounting/"
+          "name": "GST Compliance",
+          "item": "https://sidhiandassociates.com/services/gst-compliance/"
         }
       ]
     }
@@ -212,6 +214,7 @@
             --text-light: #666;
             --white: #ffffff;
             --light-bg: #F9F7F4;
+            --success-green: #28a745;
         }
 
         body {
@@ -227,7 +230,7 @@
             padding: 0 20px;
         }
 
-        /* Header */
+        /* Header (matches site-wide header used on the calculator pages) */
         header {
             background: var(--white);
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -616,7 +619,7 @@
             position: absolute;
             top: -15px;
             right: 20px;
-            background: #28a745;
+            background: var(--success-green);
             color: white;
             padding: 5px 15px;
             border-radius: 20px;
@@ -656,7 +659,7 @@
 
         .features-list li:before {
             content: "✓ ";
-            color: #28a745;
+            color: var(--success-green);
             font-weight: bold;
             margin-right: 10px;
         }
@@ -695,8 +698,8 @@
             margin: 0 0 10px 0;
         }
 
-        /* Tips Box */
-        .tips-box {
+        /* Info Box */
+        .info-box {
             background: var(--light-gold);
             border-left: 4px solid var(--primary-gold);
             padding: 25px;
@@ -704,17 +707,57 @@
             border-radius: 8px;
         }
 
-        .tips-box h3 {
+        .info-box h3 {
             color: var(--primary-blue);
             margin: 0 0 15px 0;
         }
 
-        .tips-box ul {
+        .info-box ul {
             margin-left: 20px;
         }
 
-        .tips-box li {
+        .info-box li {
             margin-bottom: 10px;
+        }
+
+        /* Alert Box */
+        .alert-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 30px 0;
+            border-radius: 8px;
+        }
+
+        .alert-box strong {
+            color: #856404;
+        }
+
+        /* Table */
+        .comparison-table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .comparison-table thead {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--light-gold);
+        }
+
+        .comparison-table tbody tr:hover {
+            background: var(--light-bg);
         }
 
         /* FAQ */
@@ -756,12 +799,6 @@
 
         .cta-section h2::after {
             background: var(--white);
-        }
-
-        .price-chip {
-            background: rgba(255,255,255,.18);
-            padding: 8px 16px;
-            border-radius: 20px;
         }
 
         /* Floating Buttons */
@@ -860,14 +897,16 @@
                 font-size: 2em;
             }
 
-            .hero-stats {
-                gap: 30px;
-            }
-
             .services-grid,
             .pricing-grid,
             .process-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .comparison-table {
+                font-size: 0.85em;
+                display: block;
+                overflow-x: auto;
             }
         }
     </style>
@@ -885,21 +924,21 @@
                 </a>
                 <div class="header-actions">
                     <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
-                    <a href="#pricing" class="cta-btn">Get Started</a>
+                    <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20GST%20compliance" class="cta-btn" target="_blank" rel="noopener noreferrer">Get a Quote</a>
                     <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
                         <span></span><span></span><span></span>
                     </button>
                 </div>
             </div>
             <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
-                <a href="/services/">🔧 Services</a>
+                <a href="/services/" class="active">🔧 Services</a>
                 <a href="/why-us/">⭐ Why Us</a>
                 <a href="/faq/">❓ FAQs</a>
                 <a href="/blog/">📝 Blog</a>
                 <a href="/calculator/">🧮 Calculators</a>
                 <a href="/about/">ℹ️ About</a>
                 <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
-                <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20bookkeeping%20services" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20GST%20compliance" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
             </nav>
         </div>
     </header>
@@ -907,11 +946,12 @@
     <nav class="desktop-nav" aria-label="Main navigation">
         <div class="container">
             <div class="nav-links">
-                <a href="/">← Home</a>
-                <a href="#services">Services</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#process">Process</a>
-                <a href="#faq">FAQ</a>
+                <a href="/services/" class="active">Services</a>
+                <a href="/why-us/">Why Us</a>
+                <a href="/faq/">FAQs</a>
+                <a href="/blog/">Blog</a>
+                <a href="/calculator/">Calculators</a>
+                <a href="/about/">About</a>
             </div>
         </div>
     </nav>
@@ -919,28 +959,28 @@
     <!-- Breadcrumb -->
     <div class="breadcrumb">
         <div class="container">
-            <a href="/">Home</a> / <a href="/#services">Services</a> / <span>Bookkeeping & Accounting</span>
+            <a href="/">Home</a> / <a href="/services/">Services</a> / <span>GST Compliance</span>
         </div>
     </div>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h2>Bookkeeping & Accounting Services India</h2>
-            <p id="quick-answer">Professional Bookkeeping & Virtual CFO services with Tally, QuickBooks & Cloud Accounting — real-time financial insights starting from ₹2,000/month</p>
+            <h2>GST Registration & Compliance Services</h2>
+            <p id="quick-answer">Complete GST Solutions from Registration to Returns - Expert GST Filing & Compliance by Qualified CAs Starting ₹3,000</p>
 
             <div class="hero-stats">
                 <div class="stat-box">
-                    <span class="stat-number">5000+</span>
-                    <span class="stat-text">Businesses Managed</span>
+                    <span class="stat-number">5,000+</span>
+                    <span class="stat-text">GST Returns Filed</span>
                 </div>
                 <div class="stat-box">
-                    <span class="stat-number">10+ Years</span>
-                    <span class="stat-text">Experience</span>
+                    <span class="stat-number">500+</span>
+                    <span class="stat-text">Businesses Registered</span>
                 </div>
                 <div class="stat-box">
                     <span class="stat-number">100%</span>
-                    <span class="stat-text">Accuracy Guaranteed</span>
+                    <span class="stat-text">Compliance Guaranteed</span>
                 </div>
             </div>
 
@@ -954,44 +994,44 @@
     <!-- Why Choose Us -->
     <section>
         <div class="container">
-            <h2>Why Choose Our Bookkeeping Services?</h2>
-            <p class="section-intro">We provide accurate, timely, and insightful financial record-keeping that helps you make informed business decisions</p>
+            <h2>Why Choose Our GST Services?</h2>
+            <p class="section-intro">We provide end-to-end GST solutions ensuring 100% compliance, timely filing, and maximum input tax credit utilization for your business</p>
 
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">💻</div>
-                    <h3>Multi-Software Expertise</h3>
-                    <p>Expert in Tally Prime, QuickBooks (Online & Desktop), Zoho Books, and other popular accounting software. We work with your preferred platform.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">⚡</div>
-                    <h3>Real-time Financial Data</h3>
-                    <p>Access your financial data anytime, anywhere with cloud-based solutions. Real-time dashboards and instant reports at your fingertips.</p>
+                    <div class="service-icon">📋</div>
+                    <h3>GST Registration</h3>
+                    <p>Fast-track GST registration within 3-7 days. Complete documentation support, follow-up with GST portal, and instant GSTIN generation.</p>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">📊</div>
-                    <h3>Accurate Record Keeping</h3>
-                    <p>100% accuracy guaranteed in every transaction recording, categorization, and reconciliation. Error-free books every month.</p>
+                    <h3>Monthly/Quarterly Returns</h3>
+                    <p>Accurate GSTR-1, GSTR-3B, and other return filing with optimal input tax credit reconciliation and timely submissions.</p>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">💰</div>
-                    <h3>Cost-Effective Solutions</h3>
-                    <p>Save up to 60% compared to hiring in-house accountants. No overhead costs, no employee benefits, just expert service.</p>
+                    <h3>Input Tax Credit</h3>
+                    <p>Maximize your ITC claims through proper reconciliation of purchase invoices, supplier GSTR-2A matching, and credit optimization.</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">🔒</div>
-                    <h3>Data Security</h3>
-                    <p>Your financial data is encrypted, backed up daily, and stored securely with bank-level security protocols.</p>
+                    <div class="service-icon">🔍</div>
+                    <h3>GST Audit & Review</h3>
+                    <p>Comprehensive GST audit, GSTR-9 annual return filing, and reconciliation statements to ensure complete compliance.</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">📈</div>
-                    <h3>Strategic Insights</h3>
-                    <p>Beyond bookkeeping - get actionable insights, trend analysis, and recommendations to improve your financial health.</p>
+                    <div class="service-icon">📢</div>
+                    <h3>Notice Handling</h3>
+                    <p>Expert representation for GST notices, assessments, and appeals. We handle all communication with GST authorities.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎓</div>
+                    <h3>GST Advisory</h3>
+                    <p>Expert guidance on GST implications, HSN codes, tax rates, reverse charge mechanism, and compliance requirements.</p>
                 </div>
             </div>
         </div>
@@ -1000,95 +1040,92 @@
     <!-- Services Details -->
     <section id="services" class="section-alt">
         <div class="container">
-            <h2>Our Bookkeeping & Accounting Services</h2>
+            <h2>Our GST Services</h2>
 
-            <h3 style="text-align: center;">Core Bookkeeping Services</h3>
+            <h3 style="text-align: center;">Registration Services</h3>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Daily Transaction Recording</h3>
-                    <p>• Sales & purchase entries<br>
-                    • Expense recording<br>
-                    • Cash & bank transactions<br>
-                    • Invoice generation<br>
-                    • Receipt management</p>
+                    <h3>New GST Registration</h3>
+                    <p>• Complete documentation support<br>
+                    • Application filing on GST portal<br>
+                    • ARN tracking & follow-up<br>
+                    • GSTIN generation<br>
+                    • Registration certificate download</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Bank Reconciliation</h3>
-                    <p>• Monthly bank reconciliation<br>
-                    • Identify discrepancies<br>
-                    • Credit card reconciliation<br>
-                    • Multiple account handling<br>
-                    • Reconciliation reports</p>
+                    <h3>GST Migration & Amendment</h3>
+                    <p>• Registration amendment services<br>
+                    • Business name/address changes<br>
+                    • Adding additional place of business<br>
+                    • Partner/director changes<br>
+                    • Cancellation of GST registration</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Accounts Payable & Receivable</h3>
-                    <p>• Vendor management<br>
-                    • Customer invoicing<br>
+                    <h3>Composition Scheme</h3>
+                    <p>• Composition scheme registration<br>
+                    • CMP-08 quarterly returns<br>
+                    • Eligibility assessment<br>
+                    • Opt-in/opt-out assistance<br>
+                    • Annual statement filing</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 50px; text-align: center;">Return Filing Services</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>GSTR-1 Filing</h3>
+                    <p>• Outward supply details<br>
+                    • B2B & B2C invoice reporting<br>
+                    • Credit/debit note entries<br>
+                    • HSN summary preparation<br>
+                    • Monthly/quarterly filing</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>GSTR-3B Filing</h3>
+                    <p>• Monthly/quarterly summary return<br>
+                    • Tax liability computation<br>
+                    • Input tax credit reconciliation<br>
+                    • Payment of GST dues<br>
+                    • Interest & late fee calculation</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Annual Returns</h3>
+                    <p>• GSTR-9 annual return filing<br>
+                    • GSTR-9C reconciliation statement<br>
+                    • Complete year reconciliation<br>
+                    • Mismatch identification<br>
+                    • Certified audit report</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>E-Way Bill</h3>
+                    <p>• E-way bill generation<br>
+                    • Bulk upload services<br>
+                    • Transportation documentation<br>
+                    • Distance calculation<br>
+                    • Validity extensions</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>E-Invoice</h3>
+                    <p>• E-invoicing implementation<br>
+                    • IRN generation<br>
+                    • System integration support<br>
+                    • Bulk e-invoice upload<br>
+                    • QR code generation</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>TDS/TCS Returns</h3>
+                    <p>• GSTR-7 filing (TDS)<br>
+                    • GSTR-8 filing (TCS)<br>
+                    • TDS/TCS certificate issuance<br>
                     • Payment tracking<br>
-                    • Aging reports<br>
-                    • Collection management</p>
-                </div>
-            </div>
-
-            <h3 style="margin-top: 50px; text-align: center;">Financial Reporting Services</h3>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Monthly Financial Statements</h3>
-                    <p>• Profit & Loss Statement<br>
-                    • Balance Sheet<br>
-                    • Cash Flow Statement<br>
-                    • Trial Balance<br>
-                    • Delivered by 10th of each month</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Management Reports</h3>
-                    <p>• Revenue analysis<br>
-                    • Expense breakdown<br>
-                    • Profitability by product/service<br>
-                    • Budget vs actual reports<br>
-                    • Custom dashboards</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Year-End Closing</h3>
-                    <p>• Annual financial statements<br>
-                    • Account reconciliation<br>
-                    • Adjustment entries<br>
-                    • Tax preparation support<br>
-                    • Audit-ready books</p>
-                </div>
-            </div>
-
-            <h3 style="margin-top: 50px; text-align: center;">Specialized Services</h3>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Payroll Accounting</h3>
-                    <p>• Salary processing<br>
-                    • PF/ESI calculations<br>
-                    • TDS on salary<br>
-                    • Payroll reports<br>
-                    • Compliance management</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Inventory Management</h3>
-                    <p>• Stock tracking<br>
-                    • Inventory valuation<br>
-                    • Purchase order management<br>
-                    • Stock reports<br>
-                    • Reorder alerts</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Multi-Currency Accounting</h3>
-                    <p>• Foreign currency transactions<br>
-                    • Exchange rate management<br>
-                    • Import/export accounting<br>
-                    • Currency gain/loss tracking<br>
-                    • International reporting</p>
+                    • Compliance monitoring</p>
                 </div>
             </div>
         </div>
@@ -1097,125 +1134,170 @@
     <!-- Pricing Section -->
     <section id="pricing">
         <div class="container">
-            <h2>Bookkeeping & Accounting Pricing</h2>
-            <p class="section-intro">Transparent monthly packages based on your business size and transaction volume</p>
+            <h2>GST Service Pricing</h2>
+            <p class="section-intro">Transparent pricing with no hidden charges. Choose the package that suits your business needs</p>
 
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>Basic Package</h3>
-                    <div class="price">₹2,000</div>
-                    <div class="price-detail">Per month | Up to 100 transactions</div>
+                    <h3>GST Registration</h3>
+                    <div class="price">₹3,000</div>
+                    <div class="price-detail">One-time registration</div>
                     <ul class="features-list">
-                        <li>Daily transaction recording</li>
-                        <li>Bank reconciliation</li>
-                        <li>Monthly P&L & Balance Sheet</li>
-                        <li>Basic reports</li>
-                        <li>Email support</li>
-                        <li>Tally/QuickBooks setup</li>
+                        <li>Complete documentation</li>
+                        <li>Portal filing & tracking</li>
+                        <li>GSTIN generation</li>
+                        <li>Certificate download</li>
+                        <li>3-7 working days</li>
+                        <li>Email & phone support</li>
                     </ul>
-                    <a href="tel:+917889257045" class="btn-primary">Book Now</a>
+                    <a href="tel:+917889257045" class="btn-primary">Register Now</a>
                 </div>
 
                 <div class="pricing-card">
                     <div class="popular-badge">Most Popular</div>
-                    <h3>Standard Package</h3>
-                    <div class="price">₹10,000</div>
-                    <div class="price-detail">Per month | Up to 300 transactions</div>
+                    <h3>Monthly GST Filing</h3>
+                    <div class="price">₹1,500</div>
+                    <div class="price-detail">Per month (up to 100 invoices)</div>
                     <ul class="features-list">
-                        <li>All Basic features</li>
-                        <li>Accounts payable/receivable</li>
-                        <li>Detailed financial reports</li>
-                        <li>Cash flow statements</li>
-                        <li>Expense tracking</li>
+                        <li>GSTR-1 filing</li>
+                        <li>GSTR-3B filing</li>
+                        <li>ITC reconciliation</li>
+                        <li>Timely filing guarantee</li>
+                        <li>Email reminders</li>
+                        <li>Dedicated support</li>
+                    </ul>
+                    <a href="tel:+917889257045" class="btn-primary">Get Started</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Quarterly Filing</h3>
+                    <div class="price">₹3,000</div>
+                    <div class="price-detail">Per quarter (QRMP scheme)</div>
+                    <ul class="features-list">
+                        <li>GSTR-1 quarterly filing</li>
+                        <li>GSTR-3B monthly payment</li>
+                        <li>ITC optimization</li>
+                        <li>Compliance tracking</li>
+                        <li>Notice support</li>
+                        <li>Advisory included</li>
+                    </ul>
+                    <a href="tel:+917889257045" class="btn-primary">Choose Plan</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Annual Package</h3>
+                    <div class="price">₹15,000</div>
+                    <div class="price-detail">Complete year (save ₹3,000)</div>
+                    <ul class="features-list">
+                        <li>All monthly returns</li>
+                        <li>Annual return GSTR-9</li>
+                        <li>Reconciliation statements</li>
+                        <li>GST audit support</li>
+                        <li>Unlimited consultations</li>
                         <li>Priority support</li>
                     </ul>
-                    <a href="tel:+917889257045" class="btn-primary">Book Now</a>
+                    <a href="tel:+917889257045" class="btn-primary">Subscribe Now</a>
                 </div>
 
                 <div class="pricing-card">
-                    <h3>Premium Package</h3>
-                    <div class="price">₹20,000</div>
-                    <div class="price-detail">Per month | Up to 500 transactions</div>
+                    <h3>E-Invoice Setup</h3>
+                    <div class="price">₹5,000</div>
+                    <div class="price-detail">One-time implementation</div>
                     <ul class="features-list">
-                        <li>All Standard features</li>
-                        <li>Payroll processing</li>
-                        <li>Inventory management</li>
-                        <li>Budget planning</li>
-                        <li>Management dashboards</li>
-                        <li>Dedicated accountant</li>
+                        <li>Portal registration</li>
+                        <li>System integration</li>
+                        <li>Staff training</li>
+                        <li>Bulk upload setup</li>
+                        <li>API configuration</li>
+                        <li>Ongoing support</li>
                     </ul>
-                    <a href="tel:+917889257045" class="btn-primary">Book Now</a>
+                    <a href="tel:+917889257045" class="btn-primary">Implement Now</a>
                 </div>
+            </div>
 
-                <div class="pricing-card">
-                    <h3>Enterprise Package</h3>
-                    <div class="price">₹50,000+</div>
-                    <div class="price-detail">Per month | Unlimited transactions</div>
-                    <ul class="features-list">
-                        <li>All Premium features</li>
-                        <li>Multi-entity accounting</li>
-                        <li>Advanced analytics</li>
-                        <li>Custom integrations</li>
-                        <li>CFO advisory services</li>
-                        <li>24/7 support</li>
-                    </ul>
-                    <a href="tel:+917889257045" class="btn-primary">Book Now</a>
-                </div>
+            <div class="info-box" style="margin-top: 40px;">
+                <h3>📌 Custom Packages Available</h3>
+                <p>For businesses with high transaction volumes (500+ invoices/month), multiple GSTINs, or complex requirements, we offer customized pricing. Contact us for a personalized quote based on your specific needs.</p>
             </div>
         </div>
     </section>
 
-    <!-- Software Expertise -->
+    <!-- GST Deadlines -->
     <section class="section-alt">
         <div class="container">
-            <h2>Accounting Software We Work With</h2>
+            <h2>GST Filing Deadlines</h2>
 
-            <div class="tips-box">
-                <h3>💻 Multi-Platform Expertise</h3>
-                <p>We are proficient in all major accounting software platforms and can help you choose the right one for your business.</p>
+            <div style="overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Return Type</th>
+                            <th>Filing Frequency</th>
+                            <th>Due Date</th>
+                            <th>Applicable To</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>GSTR-1</strong></td>
+                            <td>Monthly</td>
+                            <td>11th of next month</td>
+                            <td>Regular taxpayers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GSTR-3B</strong></td>
+                            <td>Monthly</td>
+                            <td>20th of next month</td>
+                            <td>Regular taxpayers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GSTR-1 (QRMP)</strong></td>
+                            <td>Quarterly</td>
+                            <td>13th of month after quarter</td>
+                            <td>Turnover < ₹5 Cr</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GSTR-3B (QRMP)</strong></td>
+                            <td>Quarterly</td>
+                            <td>22nd/24th of month after quarter</td>
+                            <td>Turnover < ₹5 Cr</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CMP-08</strong></td>
+                            <td>Quarterly</td>
+                            <td>18th of month after quarter</td>
+                            <td>Composition dealers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GSTR-9</strong></td>
+                            <td>Annual</td>
+                            <td>31st December</td>
+                            <td>Turnover > ₹2 Cr</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GSTR-9C</strong></td>
+                            <td>Annual</td>
+                            <td>31st December</td>
+                            <td>Turnover > ₹5 Cr (audit)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GSTR-7</strong></td>
+                            <td>Monthly</td>
+                            <td>10th of next month</td>
+                            <td>TDS deductors</td>
+                        </tr>
+                        <tr>
+                            <td><strong>GSTR-8</strong></td>
+                            <td>Monthly</td>
+                            <td>10th of next month</td>
+                            <td>E-commerce operators</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Tally Prime / Tally ERP 9</h3>
-                    <p>Complete Tally setup, data entry, GST compliance, inventory management, and customized reporting. Most popular in India.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>QuickBooks Online & Desktop</h3>
-                    <p>Cloud-based accounting, invoicing, expense tracking, and real-time collaboration. Perfect for modern businesses.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Zoho Books</h3>
-                    <p>Integrated accounting solution with CRM, inventory, and project management capabilities for growing businesses.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Busy Accounting Software</h3>
-                    <p>Comprehensive accounting with inventory, production, and MRP modules for manufacturing businesses.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Xero</h3>
-                    <p>Beautiful interface, bank reconciliation, and multi-currency support for international businesses.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Custom Solutions</h3>
-                    <p>Already using another platform? We can work with your existing software or recommend the best fit.</p>
-                </div>
-            </div>
-
-            <div class="tips-box" style="margin-top: 40px;">
-                <h3>📌 Choosing the Right Accounting Software:</h3>
-                <ul style="margin-left: 20px; margin-top: 15px;">
-                    <li><strong>Tally:</strong> Best for Indian businesses needing GST compliance and inventory management</li>
-                    <li><strong>QuickBooks:</strong> Ideal for service businesses and those wanting cloud access</li>
-                    <li><strong>Zoho Books:</strong> Great for businesses using other Zoho products (CRM, Projects)</li>
-                    <li><strong>Xero:</strong> Perfect for businesses dealing with multiple currencies</li>
-                    <li><strong>Busy:</strong> Excellent for manufacturing and production businesses</li>
-                </ul>
+            <div class="alert-box" style="margin-top: 30px;">
+                <strong>⚠️ Late Filing Penalties:</strong> Late fee of ₹50 per day per Act (CGST + SGST = ₹100/day) up to maximum of ₹10,000. Interest charged at 18% per annum on unpaid tax. File on time to avoid penalties!
             </div>
         </div>
     </section>
@@ -1223,147 +1305,206 @@
     <!-- Process -->
     <section id="process">
         <div class="container">
-            <h2>Our Bookkeeping Process</h2>
-            <p class="section-intro">Simple, efficient, and transparent process to manage your books</p>
+            <h2>Our GST Filing Process</h2>
+            <p class="section-intro">Streamlined process ensuring accurate and timely GST compliance</p>
 
             <div class="process-grid">
                 <div class="step-card">
                     <div class="step-number">1</div>
-                    <h3>Initial Setup</h3>
-                    <p>We set up your accounting software, chart of accounts, and integrate with your bank</p>
+                    <h3>Data Collection</h3>
+                    <p>Share sales/purchase invoices, bank statements, and expense bills via email/WhatsApp</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">2</div>
-                    <h3>Data Collection</h3>
-                    <p>Secure upload of invoices, receipts, bank statements via email or cloud storage</p>
+                    <h3>Data Entry & Validation</h3>
+                    <p>Our team enters data, validates HSN codes, tax rates, and invoice details</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">3</div>
-                    <h3>Transaction Recording</h3>
-                    <p>Daily/weekly recording of all transactions with proper categorization and tagging</p>
+                    <h3>ITC Reconciliation</h3>
+                    <p>Match purchase invoices with GSTR-2A/2B for maximum input tax credit</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">4</div>
-                    <h3>Reconciliation</h3>
-                    <p>Monthly bank reconciliation to ensure accuracy and identify any discrepancies</p>
+                    <h3>Return Preparation</h3>
+                    <p>Prepare GSTR-1 and GSTR-3B with accurate tax calculations</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">5</div>
-                    <h3>Reporting</h3>
-                    <p>Monthly financial reports delivered by 10th with insights and recommendations</p>
+                    <h3>Your Approval</h3>
+                    <p>Review and approve the prepared returns before filing</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">6</div>
-                    <h3>Review & Support</h3>
-                    <p>Monthly review call to discuss financials and answer questions</p>
+                    <h3>Filing & Payment</h3>
+                    <p>File returns on GST portal and guide you for tax payment if due</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits -->
+    <!-- Required Documents -->
     <section class="section-alt">
         <div class="container">
-            <h2>Benefits of Professional Bookkeeping</h2>
+            <h2>Required Documents</h2>
 
+            <h3 style="text-align: center;">For GST Registration:</h3>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">💡</div>
-                    <h3>Better Decision Making</h3>
-                    <p>Make informed business decisions with accurate, up-to-date financial data and insights at your fingertips.</p>
+                    <h3>Business Documents</h3>
+                    <p>✓ PAN card of business/proprietor<br>
+                    ✓ Aadhaar card<br>
+                    ✓ Business registration certificate<br>
+                    ✓ Partnership deed/MOA/AOA<br>
+                    ✓ Certificate of incorporation (if company)</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">⏰</div>
-                    <h3>Save Time</h3>
-                    <p>Focus on growing your business while we handle the time-consuming task of maintaining your books.</p>
+                    <h3>Address Proof</h3>
+                    <p>✓ Business place ownership proof<br>
+                    ✓ Rent agreement (if rented)<br>
+                    ✓ NOC from owner<br>
+                    ✓ Electricity bill<br>
+                    ✓ Property tax receipt</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">💰</div>
-                    <h3>Tax Savings</h3>
-                    <p>Proper bookkeeping helps identify all deductible expenses and ensures maximum tax savings.</p>
+                    <h3>Other Documents</h3>
+                    <p>✓ Bank account details & cancelled cheque<br>
+                    ✓ Digital signature (for companies)<br>
+                    ✓ Authorized signatory details<br>
+                    ✓ Director/partner ID & address proof<br>
+                    ✓ Photograph of authorized person</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 50px; text-align: center;">For Monthly GST Filing:</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Sales Records</h3>
+                    <p>✓ All sales invoices (B2B & B2C)<br>
+                    ✓ Credit notes/debit notes<br>
+                    ✓ Export invoices<br>
+                    ✓ Sales return details<br>
+                    ✓ E-commerce sales data</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">📉</div>
-                    <h3>Reduce Errors</h3>
-                    <p>Professional bookkeepers catch errors early, preventing costly mistakes and penalties.</p>
+                    <h3>Purchase Records</h3>
+                    <p>✓ All purchase invoices<br>
+                    ✓ Import documents<br>
+                    ✓ Expense bills with GST<br>
+                    ✓ Debit/credit notes received<br>
+                    ✓ Advance payments made</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">🏦</div>
-                    <h3>Easier Financing</h3>
-                    <p>Clean, organized books make it easier to secure loans and attract investors.</p>
+                    <h3>Other Documents</h3>
+                    <p>✓ Bank statements<br>
+                    ✓ Previous return copies<br>
+                    ✓ GSTR-2A/2B reconciliation<br>
+                    ✓ Advance tax payment challans<br>
+                    ✓ E-way bills generated</p>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="service-card">
-                    <div class="service-icon">✅</div>
-                    <h3>Compliance Assurance</h3>
-                    <p>Stay compliant with all accounting standards and regulatory requirements.</p>
-                </div>
+    <!-- GST Tips -->
+    <section>
+        <div class="container">
+            <h2>GST Compliance Tips</h2>
+
+            <div class="info-box">
+                <h3>💡 Essential GST Best Practices:</h3>
+                <ul style="margin-left: 20px; margin-top: 15px;">
+                    <li><strong>Maintain Proper Records:</strong> Keep all invoices, bills, and documents organized digitally and physically for at least 6 years</li>
+                    <li><strong>Issue Proper Invoices:</strong> Ensure all tax invoices contain mandatory details - GSTIN, invoice number, HSN/SAC code, tax breakup</li>
+                    <li><strong>Timely Filing:</strong> File GSTR-1 before GSTR-3B to avoid mismatches. Set reminders 3-4 days before deadlines</li>
+                    <li><strong>Reconcile GSTR-2A:</strong> Monthly reconciliation of purchases with GSTR-2A ensures you don't lose input tax credit</li>
+                    <li><strong>Verify Supplier GSTIN:</strong> Always verify supplier's GSTIN on GST portal before accepting invoices to ensure ITC eligibility</li>
+                    <li><strong>E-way Bills:</strong> Generate e-way bills for goods movement above ₹50,000 to avoid penalties during transportation</li>
+                    <li><strong>Reverse Charge Mechanism:</strong> Understand when RCM applies (unregistered suppliers, GTA, legal services) and pay tax accordingly</li>
+                    <li><strong>Input Tax Credit Rules:</strong> Ensure ITC is claimed only on eligible expenses used for business purposes</li>
+                    <li><strong>Annual Return Filing:</strong> Don't miss GSTR-9 filing deadline (December 31st) - penalties can be substantial</li>
+                    <li><strong>Payment on Time:</strong> Pay GST liability along with GSTR-3B filing to avoid 18% interest</li>
+                </ul>
+            </div>
+
+            <div class="info-box" style="margin-top: 30px;">
+                <h3>🚫 Common GST Mistakes to Avoid:</h3>
+                <ul style="margin-left: 20px; margin-top: 15px;">
+                    <li>Not filing returns even with NIL business</li>
+                    <li>Claiming ITC without receiving goods/services</li>
+                    <li>Wrong HSN/SAC code selection leading to incorrect tax rates</li>
+                    <li>Not reversing ITC on personal/exempt supplies</li>
+                    <li>Missing GSTR-3B filing when GSTR-1 is filed</li>
+                    <li>Not maintaining tax invoice format requirements</li>
+                    <li>Delayed payment of GST collected from customers</li>
+                    <li>Ignoring GST notices and not responding in time</li>
+                </ul>
             </div>
         </div>
     </section>
 
     <!-- FAQ -->
-    <section id="faq">
+    <section id="faq" class="section-alt">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
 
             <div class="faq-item">
-                <div class="faq-question">What is the cost of bookkeeping services?</div>
-                <div class="faq-answer">Our bookkeeping and virtual CFO services start from ₹2,000/month for basic packages (up to 100 transactions). Standard packages range from ₹10,000-20,000/month. Premium and enterprise packages cost ₹25,000-50,000/month depending on transaction volume and complexity. We offer customized packages based on your specific needs.</div>
+                <div class="faq-question">What is the cost of GST registration in India?</div>
+                <div class="faq-answer">GST registration costs ₹3,000 including complete documentation, portal filing, and GSTIN generation. There are no government fees for GST registration. The process typically takes 3-7 working days once all documents are submitted.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What is the difference between bookkeeping and accounting?</div>
-                <div class="faq-answer">Bookkeeping is the day-to-day recording of financial transactions - sales, purchases, receipts, and payments. Accounting involves interpreting, classifying, analyzing, reporting, and summarizing financial data. We provide both services - accurate bookkeeping combined with strategic accounting insights to help you make better business decisions.</div>
+                <div class="faq-question">Who is required to register for GST?</div>
+                <div class="faq-answer">Businesses with annual turnover exceeding ₹40 lakhs (₹20 lakhs for services in special category states) must register for GST. Additionally, e-commerce sellers, inter-state suppliers, casual taxable persons, and businesses required to pay tax under reverse charge must register regardless of turnover.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Which accounting software do you use?</div>
-                <div class="faq-answer">We work with all major accounting software including Tally Prime, QuickBooks (Online & Desktop), Zoho Books, Busy, Xero, and others. We can work with your existing software or help you choose and set up the best solution for your business needs.</div>
+                <div class="faq-question">What are the GST return filing deadlines?</div>
+                <div class="faq-answer">For monthly filers: GSTR-1 is due by 11th and GSTR-3B by 20th of the following month. For quarterly filers under QRMP scheme: GSTR-1 by 13th and GSTR-3B by 22nd/24th after quarter end. Annual return GSTR-9 is due by December 31st. Late filing attracts penalties of ₹100 per day.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">How often will I receive financial reports?</div>
-                <div class="faq-answer">You receive monthly financial statements (Profit & Loss, Balance Sheet, Cash Flow) by the 10th of each month. Real-time dashboard access is available 24/7 for instant insights. We can also provide weekly or custom reports as needed.</div>
+                <div class="faq-question">How much does monthly GST filing cost?</div>
+                <div class="faq-answer">Monthly GST filing (GSTR-1 + GSTR-3B) starts at ₹1,500 per month for businesses with up to 100 invoices. For quarterly filers, the cost is ₹3,000 per quarter. Annual packages start at ₹15,000 including annual return filing. Pricing varies based on transaction volume and complexity.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Do you provide cloud-based accounting services?</div>
-                <div class="faq-answer">Yes, we provide cloud-based accounting services with secure access from anywhere. Your financial data is encrypted with bank-level security, backed up daily, and accessible in real-time through secure portals. You can view reports and dashboards anytime from any device.</div>
+                <div class="faq-question">What is Input Tax Credit (ITC) and how to claim it?</div>
+                <div class="faq-answer">Input Tax Credit is the GST paid on purchases that can be set off against your GST liability on sales. To claim ITC: 1) Possess valid tax invoice, 2) Goods/services received, 3) Return filed by supplier, 4) Payment made to supplier within 180 days, 5) Your return filed. Reconcile with GSTR-2A monthly to ensure all eligible ITC is claimed.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">How do I share my financial documents with you?</div>
-                <div class="faq-answer">You can share documents via email, WhatsApp, Google Drive, Dropbox, or any cloud storage. We also integrate directly with your bank accounts and accounting software for automatic data import. All data transfers are encrypted and secure.</div>
+                <div class="faq-question">What is QRMP scheme and who can opt for it?</div>
+                <div class="faq-answer">Quarterly Return Monthly Payment (QRMP) scheme allows small taxpayers with turnover up to ₹5 crore to file GSTR-1 quarterly instead of monthly. However, GSTR-3B must be filed monthly with tax payment through PMT-06 for first two months. This reduces compliance burden significantly for small businesses.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Can you handle bookkeeping for multiple entities?</div>
-                <div class="faq-answer">Yes, we provide bookkeeping services for multiple entities, group companies, and business divisions. Our enterprise package includes consolidated reporting and inter-company reconciliation. We manage separate books for each entity while providing consolidated views.</div>
+                <div class="faq-question">What happens if I miss GST filing deadline?</div>
+                <div class="faq-answer">Missing GST deadline attracts late fee of ₹50 per day per Act (total ₹100/day for CGST + SGST) with maximum penalty of ₹10,000. Additionally, interest at 18% per annum is charged on unpaid tax. Your ITC may also be restricted, and continued default can lead to GST registration cancellation.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Do you also handle payroll processing?</div>
-                <div class="faq-answer">Yes, our Premium and Enterprise packages include payroll processing services. We handle salary calculations, PF/ESI contributions, TDS on salary, payslips generation, and compliance filing. Payroll is integrated with your accounting system for seamless reporting.</div>
+                <div class="faq-question">Can I file NIL GST return if there's no business?</div>
+                <div class="faq-answer">Yes, NIL returns must be filed even if you had no business transactions during the month/quarter. Failure to file NIL returns also attracts late fees and penalties. We recommend filing all returns on time to maintain active GST status and avoid compliance issues.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What if I'm not happy with the service?</div>
-                <div class="faq-answer">We offer a 30-day money-back guarantee. If you're not satisfied with our service in the first month, we'll refund your payment, no questions asked. We're committed to providing exceptional service and building long-term relationships with our clients.</div>
+                <div class="faq-question">What is e-invoicing and who needs to implement it?</div>
+                <div class="faq-answer">E-invoicing is mandatory for businesses with turnover above ₹5 crore. It involves generating invoices on your system, uploading to IRP (Invoice Registration Portal) to get IRN (Invoice Reference Number) and QR code. We provide complete e-invoice implementation support including system integration, staff training, and ongoing assistance.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Can you clean up my messy books from previous years?</div>
-                <div class="faq-answer">Yes, we provide bookkeeping cleanup services. We'll review your historical records, identify and correct errors, reconcile accounts, and get your books up-to-date. This is charged separately based on the volume and complexity of work required.</div>
+                <div class="faq-question">How do you handle GST notices and assessments?</div>
+                <div class="faq-answer">We provide comprehensive support for all GST notices including scrutiny, demand, show cause, and assessment notices. Our process includes: analyzing the notice, gathering supporting documents, preparing detailed responses, representing before GST officers, and handling appeals if required. We ensure timely responses to avoid additional penalties.</div>
             </div>
         </div>
     </section>
@@ -1371,17 +1512,17 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Get Your Books in Order?</h2>
-            <p style="font-size: 1.2em; margin-bottom: 30px;">Let our expert bookkeepers handle your financial records while you focus on growing your business!</p>
+            <h2>Ready to Simplify Your GST Compliance?</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Let our expert CAs handle your GST registration and filing while you focus on growing your business. 100% accurate, always on time!</p>
             <div class="hero-buttons">
                 <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call Now: +91 78892 57045</a>
-                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20bookkeeping%20services" class="btn-secondary">💬 WhatsApp Us</a>
+                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20GST%20compliance" class="btn-secondary">💬 WhatsApp Us</a>
             </div>
             <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
-                <span class="price-chip">Income Tax Filing & Planning &mdash; from ₹1,000</span>
-                <span class="price-chip">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
-                <span class="price-chip">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
-                <span class="price-chip">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+                <span style="background: rgba(255,255,255,.25); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span style="background: rgba(255,255,255,.25); padding: 8px 16px; border-radius: 20px;">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span style="background: rgba(255,255,255,.25); padding: 8px 16px; border-radius: 20px;">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span style="background: rgba(255,255,255,.25); padding: 8px 16px; border-radius: 20px;">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
             </div>
         </div>
     </section>
@@ -1394,10 +1535,10 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/#services">All Services</a></li>
-                        <li><a href="/#why-us">Why Choose Us</a></li>
-                        <li><a href="/#testimonials">Testimonials</a></li>
-                        <li><a href="/#contact">Contact</a></li>
+                        <li><a href="/services/">All Services</a></li>
+                        <li><a href="/why-us/">Why Choose Us</a></li>
+                        <li><a href="/blog/">Blogs</a></li>
+                        <li><a href="/calculator/">Calculators</a></li>
                     </ul>
                 </div>
 
@@ -1413,16 +1554,13 @@
                 </div>
 
                 <div class="footer-section">
-                    <h3>Bookkeeping Services</h3>
+                    <h3>GST Services</h3>
                     <ul>
-                        <li><a href="#services">Tally Bookkeeping</a></li>
-                        <li><a href="#services">QuickBooks Services</a></li>
-                        <li><a href="#services">Financial Reporting</a></li>
-                        <li><a href="#services">Payroll Processing</a></li>
-                        <li><a href="/services/virtual-cfo/">Virtual CFO Services</a></li>
-                        <li><a href="/services/ngo-trust-section8-registration/">NGO / Trust Registration</a></li>
-                        <li><a href="/services/professional-tax-registration/">Professional Tax Registration</a></li>
-                        <li><a href="#pricing">View Pricing</a></li>
+                        <li><a href="/services/gst-return-filing/">GSTR-1 Filing</a></li>
+                        <li><a href="/services/gst-return-filing/">GSTR-3B Filing</a></li>
+                        <li><a href="/services/gst-annual-returns/">Annual Returns</a></li>
+                        <li><a href="/services/">E-Invoice Setup</a></li>
+                        <li><a href="#pricing">GST Advisory</a></li>
                     </ul>
                 </div>
 
@@ -1437,23 +1575,23 @@
 
             <div class="footer-bottom">
                 <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
-                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Professional Bookkeeping Services across India</p>
+                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Professional GST Services across India</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating Buttons -->
     <div class="floating-buttons">
-        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20bookkeeping%20services" 
-           target="_blank" 
-           class="float-btn whatsapp-btn" 
+        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20GST%20compliance"
+           target="_blank"
+           class="float-btn whatsapp-btn"
            aria-label="Chat on WhatsApp">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
             </svg>
         </a>
-        <a href="tel:+917889257045" 
-           class="float-btn call-btn" 
+        <a href="tel:+917889257045"
+           class="float-btn call-btn"
            aria-label="Call us">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
@@ -1465,7 +1603,7 @@
         // Auto-update footer year
         document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
 
-        // Hamburger / mobile drawer
+        // Hamburger / mobile drawer toggle
         var hamburger = document.getElementById('hamburger');
         var mobileDrawer = document.getElementById('mobileDrawer');
         if (hamburger && mobileDrawer) {
@@ -1491,19 +1629,16 @@
             });
         }
 
-        // Smooth scrolling for in-page anchors
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                const targetId = this.getAttribute('href');
-                if (targetId.length > 1) {
-                    const target = document.querySelector(targetId);
-                    if (target) {
-                        e.preventDefault();
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
             });
         });
@@ -1530,7 +1665,7 @@
             observer.observe(el);
         });
 
-        // Active nav highlight (desktop nav)
+        // Active nav highlight
         window.addEventListener('scroll', () => {
             let current = '';
             const sections = document.querySelectorAll('section[id]');
@@ -1543,10 +1678,11 @@
             });
 
             document.querySelectorAll('.nav-links a').forEach(link => {
-                link.style.color = '#ffffff';
                 const href = link.getAttribute('href').substring(1);
                 if (href === current) {
                     link.style.color = '#D4A43C';
+                } else if (!link.classList.contains('active')) {
+                    link.style.color = '#ffffff';
                 }
             });
         });

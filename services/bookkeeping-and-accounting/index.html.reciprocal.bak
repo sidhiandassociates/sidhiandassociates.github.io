@@ -75,7 +75,7 @@
         "name": "Sidhi & Associates",
         "telephone": "+917889257045",
         "email": "siddhiandassociatess@gmail.com",
-        "url": "https://sidhiandassociates.com",
+        "url": "https://sidhiandassociates.github.io",
         "priceRange": "₹₹",
         "address": {
           "@type": "PostalAddress",
@@ -179,7 +179,7 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://sidhiandassociates.com"
+          "item": "https://sidhiandassociates.github.io"
         },
         {
           "@type": "ListItem",
@@ -1419,9 +1419,6 @@
                         <li><a href="#services">QuickBooks Services</a></li>
                         <li><a href="#services">Financial Reporting</a></li>
                         <li><a href="#services">Payroll Processing</a></li>
-                        <li><a href="/services/virtual-cfo/">Virtual CFO Services</a></li>
-                        <li><a href="/services/ngo-trust-section8-registration/">NGO / Trust Registration</a></li>
-                        <li><a href="/services/professional-tax-registration/">Professional Tax Registration</a></li>
                         <li><a href="#pricing">View Pricing</a></li>
                     </ul>
                 </div>

@@ -31,10 +31,10 @@
     <link rel="icon" href="/sidhi.png" type="image/png" />
     
     <!-- Primary Meta Tags -->
-    <title>TDS Return Filing Services India | 24Q, 26Q, 27Q Filing from ₹2,000 - Sidhi & Associates</title>
-    <meta name="title" content="TDS Return Filing Services India | 24Q, 26Q, 27Q Filing from ₹2,000 - Sidhi & Associates">
-    <meta name="description" content="Expert TDS Return Filing Services - 24Q, 26Q, 27Q, 27EQ by Qualified CAs. Quarterly TDS Returns, Form 16/16A, TDS Reconciliation. 100% Accurate Filing. Call +91 78892 57045">
-    <meta name="keywords" content="TDS return filing, 24Q filing, 26Q filing, 27Q filing, TDS compliance, Form 16 issuance, TDS reconciliation, TDS consultant, quarterly TDS return, TDS on salary, TDS on payment, CA TDS services">
+    <title>Statutory Audit Services India | Company Audit from ₹10,000 by Expert CAs - Sidhi & Associates</title>
+    <meta name="title" content="Statutory Audit Services India | Company Audit from ₹10,000 by Expert CAs - Sidhi & Associates">
+    <meta name="description" content="Professional Statutory Audit Services by ICAI CAs. Company Audit, Bank Audit, Tax Audit, Internal Audit. Complete Compliance, Audit Report, ROC Filing. 1000+ Audits Completed. Pan India Service. Call +91 78892 57045">
+    <meta name="keywords" content="statutory audit, company audit, audit services India, CA audit, statutory auditor, audit report, audit compliance, company act audit, bank audit, tax audit, internal audit, audit firm, ICAI auditor, financial audit, ROC audit">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="language" content="English">
     <meta name="author" content="Sidhi & Associates">
@@ -42,41 +42,41 @@
     <meta name="geo.placename" content="India">
 
     <!-- AIO / AI-answer-engine entity meta -->
-    <meta name="ai-content-declaration" content="TDS Return Filing Services by Sidhi & Associates, a Chartered Accountancy practice. TDS Filing & Returns start from Rs2,000/quarter (up to 25 deductees), Rs3,500/quarter (26-50 deductees), Rs5,000/quarter (51-100 deductees), custom pricing above 100 deductees. Covers Forms 24Q, 26Q, 27Q, 27EQ, 26QB, 26QC, plus Form 16/16A issuance and TDS reconciliation. Also offers Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, and Bookkeeping & Virtual CFO from Rs2,000/month.">
+    <meta name="ai-content-declaration" content="Statutory Audit Services by Sidhi & Associates, a Chartered Accountancy practice. Statutory audit under Companies Act 2013 starts from Rs10,000 for small companies (turnover up to Rs2 crore), Rs25,000 for medium companies (turnover Rs2-10 crore), and Rs50,000+ for large companies (turnover above Rs10 crore). Also offers Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
     <meta name="ai-entity-type" content="Service,FAQPage">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sidhiandassociates.com/services/tds-return-filing/">
-    <meta property="og:title" content="TDS Return Filing Services - 24Q, 26Q, 27Q from ₹2,000">
-    <meta property="og:description" content="Professional TDS Return Filing by Qualified CAs. 3,000+ TDS Returns Filed. Zero Penalties. Call +91 78892 57045">
+    <meta property="og:url" content="https://sidhiandassociates.com/services/statutory-audit/">
+    <meta property="og:title" content="Statutory Audit Services India - Expert Company Auditors">
+    <meta property="og:description" content="Get Professional Statutory Audit by Qualified CAs. Company Audit, Bank Audit, Tax Audit. Complete Compliance Support. 1000+ Audits. Call +91 78892 57045">
     <meta property="og:site_name" content="Sidhi & Associates">
     <meta property="og:locale" content="en_IN">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sidhiandassociates.com/services/tds-return-filing/">
-    <meta property="twitter:title" content="TDS Return Filing Services - Sidhi & Associates">
-    <meta property="twitter:description" content="Expert TDS Return Filing Services. Quarterly Returns. 100% Accurate. Starting ₹2,000.">
+    <meta property="twitter:url" content="https://sidhiandassociates.com/services/statutory-audit/">
+    <meta property="twitter:title" content="Statutory Audit Services - Sidhi & Associates">
+    <meta property="twitter:description" content="Expert Statutory Audit Services by ICAI Qualified Chartered Accountants.">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://sidhiandassociates.com/services/tds-return-filing/">
+    <link rel="canonical" href="https://sidhiandassociates.com/services/statutory-audit/">
     
-    <!-- Enhanced Schema Markup for SEO -->
+    <!-- Enhanced Schema Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "serviceType": "TDS Return Filing Services",
-      "name": "TDS Return Filing",
-      "description": "Professional TDS return filing services including 24Q, 26Q, 27Q, 27EQ quarterly returns, Form 16/16A issuance, TDS reconciliation, and compliance management by qualified Chartered Accountants.",
+      "serviceType": "Statutory Audit Services",
+      "name": "Statutory Audit Services",
+      "description": "Comprehensive statutory audit services including company audit, bank audit, tax audit, internal audit, compliance audit by ICAI qualified chartered accountants with complete audit reporting and ROC compliance.",
       "provider": {
         "@type": "ProfessionalService",
         "name": "Sidhi & Associates",
         "telephone": "+917889257045",
         "email": "siddhiandassociatess@gmail.com",
         "url": "https://sidhiandassociates.com/",
-        "priceRange": "₹₹",
+        "priceRange": "₹₹₹",
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "IN"
@@ -93,11 +93,53 @@
       },
       "offers": {
         "@type": "AggregateOffer",
-        "lowPrice": "2000",
-        "highPrice": "15000",
+        "lowPrice": "10000",
+        "highPrice": "100000",
         "priceCurrency": "INR",
         "offerCount": "4"
       }
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is statutory audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Statutory audit is a mandatory examination of financial statements and accounting records of a company by an independent qualified chartered accountant as required by Companies Act, 2013. The auditor verifies accuracy of financial records, checks compliance with accounting standards, and provides an independent opinion on true and fair view of company's financial position."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does statutory audit cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Statutory audit costs vary based on company size and complexity: Small companies cost ₹10,000-25,000, Medium companies ₹25,000-50,000, Large companies ₹50,000-1,00,000+. Factors affecting cost include turnover, number of transactions, branches, complexity of business, and compliance requirements."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who needs statutory audit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Statutory audit is mandatory for all Private Limited Companies, Public Limited Companies, One Person Companies (if turnover exceeds ₹2 crore or outstanding loans exceed ₹1 crore), and LLPs with turnover above ₹40 lakhs or contribution above ₹25 lakhs. Small companies may be exempt from certain audit requirements under specific conditions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does statutory audit take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Statutory audit typically takes 2-4 weeks depending on company size and complexity. Small companies take 1-2 weeks, medium companies 2-3 weeks, large companies 3-4 weeks or more. Timeline depends on availability of records, accounting system, number of transactions, and management cooperation."
+          }
+        }
+      ]
     }
     </script>
 
@@ -106,66 +148,16 @@
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "@id": "https://sidhiandassociates.com/services/tds-return-filing/#webpage",
-      "url": "https://sidhiandassociates.com/services/tds-return-filing/",
-      "name": "TDS Return Filing Services India | 24Q, 26Q, 27Q Filing from ₹2,000",
-      "description": "Expert TDS Return Filing Services - 24Q, 26Q, 27Q, 27EQ by Qualified CAs. Quarterly TDS Returns, Form 16/16A, TDS Reconciliation.",
+      "@id": "https://sidhiandassociates.com/services/statutory-audit/#webpage",
+      "url": "https://sidhiandassociates.com/services/statutory-audit/",
+      "name": "Statutory Audit Services India | Company Audit from ₹10,000",
+      "description": "Professional Statutory Audit Services by ICAI qualified Chartered Accountants. Company Audit, Bank Audit, Tax Audit, Internal Audit with complete compliance and ROC filing support.",
       "inLanguage": "en-IN",
       "dateModified": "2026-07-17",
       "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": ["#quick-answer", "#featured-snippet"]
       }
-    }
-    </script>
-
-    <!-- FAQ Schema for Rich Snippets -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "What is TDS return filing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "TDS return filing is the quarterly statement submitted to the Income Tax Department showing details of TDS deducted and deposited. It includes deductee details, amount paid, TDS deducted, and challan information. Forms include 24Q (salary), 26Q (other than salary), 27Q (non-residents), and 27EQ (TCS)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is the cost of TDS return filing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "TDS return filing costs start at ₹2,000 per quarter for up to 25 deductees. For 26-50 deductees it's ₹3,500, for 51-100 deductees it's ₹5,000, and for more than 100 deductees pricing is customized based on volume."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are TDS filing deadlines?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "TDS returns must be filed by 31st July for Q1 (Apr-Jun), 31st October for Q2 (Jul-Sep), 31st January for Q3 (Oct-Dec), and 31st May for Q4 (Jan-Mar). Late filing attracts penalty of ₹200 per day."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What documents are needed for TDS filing?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "You need payment details with PAN, TDS challan copies, deductee PAN and address, nature of payment codes, TDS deduction date, and previous return acknowledgment."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Do you provide Form 16 and 16A?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, we generate and issue Form 16 for salary TDS and Form 16A for other TDS after successful return filing. These certificates are mandatory for deductees to file their income tax returns."
-          }
-        }
-      ]
     }
     </script>
 
@@ -190,8 +182,8 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "TDS Return Filing",
-          "item": "https://sidhiandassociates.com/services/tds-return-filing/"
+          "name": "Statutory Audit",
+          "item": "https://sidhiandassociates.com/services/statutory-audit/"
         }
       ]
     }
@@ -213,7 +205,6 @@
             --white: #ffffff;
             --light-bg: #F9F7F4;
             --success-green: #28a745;
-            --danger-red: #dc3545;
         }
 
         body {
@@ -450,7 +441,7 @@
         .hero p {
             font-size: 1.3em;
             margin-bottom: 30px;
-            max-width: 800px;
+            max-width: 900px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -707,8 +698,8 @@
             margin: 0 0 10px 0;
         }
 
-        /* Info Box */
-        .info-box {
+        /* Tips Box */
+        .tips-box {
             background: var(--light-gold);
             border-left: 4px solid var(--primary-gold);
             padding: 25px;
@@ -716,69 +707,17 @@
             border-radius: 8px;
         }
 
-        .info-box h3 {
+        .tips-box h3 {
             color: var(--primary-blue);
             margin: 0 0 15px 0;
         }
 
-        .info-box ul {
+        .tips-box ul {
             margin-left: 20px;
         }
 
-        .info-box li {
+        .tips-box li {
             margin-bottom: 10px;
-        }
-
-        /* Alert Box */
-        .alert-box {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 8px;
-        }
-
-        .alert-box strong {
-            color: #856404;
-        }
-
-        .danger-box {
-            background: #f8d7da;
-            border-left: 4px solid var(--danger-red);
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 8px;
-        }
-
-        .danger-box strong {
-            color: #721c24;
-        }
-
-        /* Table */
-        .comparison-table {
-            width: 100%;
-            margin-top: 30px;
-            border-collapse: collapse;
-            background: var(--white);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .comparison-table thead {
-            background: var(--primary-blue);
-            color: white;
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid var(--light-gold);
-        }
-
-        .comparison-table tbody tr:hover {
-            background: var(--light-bg);
         }
 
         /* FAQ */
@@ -923,12 +862,6 @@
             .process-grid {
                 grid-template-columns: 1fr;
             }
-
-            .comparison-table {
-                font-size: 0.85em;
-                display: block;
-                overflow-x: auto;
-            }
         }
     </style>
 </head>
@@ -944,7 +877,7 @@
                 </a>
                 <div class="header-actions">
                     <a href="tel:+917889257045" class="cta-phone" aria-label="Call Sidhi and Associates">📞 +91 78892 57045</a>
-                    <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20TDS%20return%20filing" class="cta-btn" target="_blank" rel="noopener noreferrer">Get Started</a>
+                    <a href="https://wa.me/917889257045?text=I%20need%20statutory%20audit%20services" class="cta-btn" target="_blank" rel="noopener noreferrer">Get a Quote</a>
                     <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
                         <span></span><span></span><span></span>
                     </button>
@@ -958,7 +891,7 @@
                 <a href="/calculator/">🧮 Calculators</a>
                 <a href="/about/">ℹ️ About</a>
                 <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
-                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20TDS%20return%20filing" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+                <a href="https://wa.me/917889257045?text=I%20need%20statutory%20audit%20services" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
             </nav>
         </div>
     </header>
@@ -979,28 +912,28 @@
     <!-- Breadcrumb -->
     <div class="breadcrumb">
         <div class="container">
-            <a href="/">Home</a> / <a href="/#services">Services</a> / <span>TDS Return Filing</span>
+            <a href="/">Home</a> / <a href="/services">Services</a> / <span>Statutory Audit</span>
         </div>
     </div>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h2>TDS Return Filing Services</h2>
-            <p>Professional TDS Return Filing - 24Q, 26Q, 27Q, 27EQ by Expert CAs | Form 16/16A Issuance | Quarterly Filing | Starting ₹2,000</p>
+            <h2>Statutory Audit Services India</h2>
+            <p>Professional Company Audit by ICAI Qualified Chartered Accountants | Complete Compliance, Audit Report, ROC Filing | Starting ₹10,000</p>
             
             <div class="hero-stats">
                 <div class="stat-box">
-                    <span class="stat-number">3,000+</span>
-                    <span class="stat-text">TDS Returns Filed</span>
+                    <span class="stat-number">1000+</span>
+                    <span class="stat-text">Audits Completed</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-number">10+ Years</span>
+                    <span class="stat-text">Audit Experience</span>
                 </div>
                 <div class="stat-box">
                     <span class="stat-number">100%</span>
-                    <span class="stat-text">Compliance Rate</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number">Zero</span>
-                    <span class="stat-text">Late Penalties</span>
+                    <span class="stat-text">Clean Reports</span>
                 </div>
             </div>
 
@@ -1013,586 +946,444 @@
 
     <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
         <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
-            <strong style="color: var(--primary-gold);">TDS return filing</strong> is a mandatory quarterly statement of tax deducted at source (Forms 24Q, 26Q, 27Q, 27EQ) filed with the Income Tax Department. Pricing starts at <strong style="color: var(--primary-gold);">₹2,000 per quarter</strong> for up to 25 deductees, and includes challan reconciliation and Form 16/16A issuance.
+            <strong style="color: var(--primary-gold);">Statutory audit</strong> is a mandatory yearly examination of a company's financial statements by an independent ICAI-qualified Chartered Accountant, required under the <strong style="color: var(--primary-gold);">Companies Act, 2013</strong>. Pricing starts at <strong style="color: var(--primary-gold);">₹10,000</strong> for small companies and scales with turnover and complexity.
         </p>
     </div>
 
-    <!-- Why Choose Us -->
+    <!-- What is Statutory Audit -->
     <section>
         <div class="container">
-            <h2>Why Choose Our TDS Filing Service?</h2>
-            <p class="section-intro">We ensure 100% accurate TDS return filing with timely deposit tracking and complete compliance</p>
+            <h2>What is Statutory Audit?</h2>
+            <p class="section-intro">Understanding statutory audit requirements under Companies Act, 2013</p>
 
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">📋</div>
-                    <h3>Complete TDS Management</h3>
-                    <p>End-to-end TDS services from calculation, deduction, payment tracking to quarterly return filing and certificate issuance.</p>
+                    <h3>Definition</h3>
+                    <p>Statutory audit is a legally required examination of financial statements and accounting records by an independent qualified chartered accountant to verify accuracy and ensure compliance with accounting standards and company law.</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">💯</div>
-                    <h3>100% Accurate Filing</h3>
-                    <p>Zero error tolerance with validated PAN, deductee details, and correct nature of payment codes ensuring smooth processing.</p>
+                    <div class="service-icon">⚖️</div>
+                    <h3>Legal Requirement</h3>
+                    <p>Mandatory under Companies Act, 2013 for all Private Limited Companies, Public Limited Companies, and certain LLPs. Provides independent assurance to stakeholders about financial health.</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">🔄</div>
-                    <h3>TDS Reconciliation</h3>
-                    <p>Complete reconciliation of TDS deducted vs deposited vs filed. Identify mismatches and correct them before filing.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">📑</div>
-                    <h3>Form 16/16A Issuance</h3>
-                    <p>Generate and issue Form 16 (salary) and Form 16A (non-salary) certificates to all deductees after successful filing.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">⏰</div>
-                    <h3>Timely Filing</h3>
-                    <p>Never miss quarterly deadlines. Automated reminders and proactive filing ensure zero late fees and penalties.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🛡️</div>
-                    <h3>Notice Handling</h3>
-                    <p>Expert support for TDS notices, demand letters, and mismatch rectification. Complete representation before tax authorities.</p>
+                    <div class="service-icon">🎯</div>
+                    <h3>Objectives</h3>
+                    <p>Verify accuracy of financial records, ensure compliance with accounting standards, detect errors and frauds, provide true and fair view of financial position, and build stakeholder confidence.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- TDS Forms -->
-    <section id="services" class="section-alt">
+    <!-- Types of Audit -->
+    <section id="types" class="section-alt">
         <div class="container">
-            <h2>TDS Return Forms We File</h2>
+            <h2>Types of Audit Services We Provide</h2>
             
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Form 24Q - Salary TDS</h3>
-                    <p><strong>Frequency:</strong> Quarterly<br>
-                    <strong>Applicability:</strong> Employers<br><br>
-                    • TDS on salary payments<br>
-                    • Employee PAN & salary details<br>
-                    • TDS deducted on salaries<br>
-                    • Challan mapping<br>
-                    • Form 16 generation<br>
-                    • Annual salary statement</p>
+                    <div class="service-icon">🏢</div>
+                    <h3>Statutory Audit</h3>
+                    <p><strong>Companies Act Compliance</strong></p>
+                    <p style="margin-top: 10px;">Mandatory audit for all companies under Companies Act, 2013. Independent examination of financial statements by qualified CA.</p>
+                    <ul style="margin-top: 15px; line-height: 2;">
+                        <li>✓ Financial statement audit</li>
+                        <li>✓ Compliance verification</li>
+                        <li>✓ Audit report (CARO)</li>
+                        <li>✓ ROC filing support</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: var(--primary-gold); font-weight: 700;">From ₹10,000</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Form 26Q - Other Than Salary</h3>
-                    <p><strong>Frequency:</strong> Quarterly<br>
-                    <strong>Applicability:</strong> All deductors<br><br>
-                    • TDS on payments (contractors, professionals)<br>
-                    • Rent, commission, interest<br>
-                    • Professional fees (194J)<br>
-                    • Contract payments (194C)<br>
-                    • Form 16A issuance<br>
-                    • Nature of payment codes</p>
+                    <div class="service-icon">📊</div>
+                    <h3>Tax Audit (44AB)</h3>
+                    <p><strong>Income Tax Act Compliance</strong></p>
+                    <p style="margin-top: 10px;">Mandatory if business turnover exceeds ₹1 crore or professional receipts exceed ₹50 lakhs.</p>
+                    <ul style="margin-top: 15px; line-height: 2;">
+                        <li>✓ Form 3CA/3CB audit</li>
+                        <li>✓ Form 3CD report</li>
+                        <li>✓ Tax computation</li>
+                        <li>✓ ITR filing support</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: var(--primary-gold); font-weight: 700;">From ₹8,000</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Form 27Q - Non-Resident TDS</h3>
-                    <p><strong>Frequency:</strong> Quarterly<br>
-                    <strong>Applicability:</strong> Payments to NRIs<br><br>
-                    • TDS on foreign payments<br>
-                    • NRI interest, rent, fees<br>
-                    • Technical services (194J)<br>
-                    • Royalty payments<br>
-                    • DTAA benefits<br>
-                    • Lower deduction certificates</p>
+                    <div class="service-icon">🏦</div>
+                    <h3>Bank Audit</h3>
+                    <p><strong>RBI Approved Auditors</strong></p>
+                    <p style="margin-top: 10px;">Audit of banks, cooperative societies, and financial institutions as per RBI guidelines.</p>
+                    <ul style="margin-top: 15px; line-height: 2;">
+                        <li>✓ Concurrent audit</li>
+                        <li>✓ Revenue audit</li>
+                        <li>✓ Stock audit</li>
+                        <li>✓ RBI compliance</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: var(--primary-gold); font-weight: 700;">Custom Quote</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Form 27EQ - TCS Returns</h3>
-                    <p><strong>Frequency:</strong> Quarterly<br>
-                    <strong>Applicability:</strong> TCS collectors<br><br>
-                    • Tax Collected at Source<br>
-                    • Sale of goods (206C)<br>
-                    • Scrap, minerals, forest produce<br>
-                    • Liquor, tendu leaves<br>
-                    • Form 27D issuance<br>
-                    • E-commerce operators</p>
+                    <div class="service-icon">🔍</div>
+                    <h3>Internal Audit</h3>
+                    <p><strong>Risk Management & Controls</strong></p>
+                    <p style="margin-top: 10px;">Systematic examination of internal controls, processes, and risk management systems.</p>
+                    <ul style="margin-top: 15px; line-height: 2;">
+                        <li>✓ Process review</li>
+                        <li>✓ Control evaluation</li>
+                        <li>✓ Risk assessment</li>
+                        <li>✓ Recommendations</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: var(--primary-gold); font-weight: 700;">From ₹15,000</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Form 26QB - Property TDS</h3>
-                    <p><strong>Frequency:</strong> Within 30 days<br>
-                    <strong>Applicability:</strong> Property buyers<br><br>
-                    • TDS on property purchase<br>
-                    • Section 194IA compliance<br>
-                    • 1% on property value<br>
-                    • Challan payment ITNS 281<br>
-                    • Online filing mandatory<br>
-                    • Form 16B generation</p>
+                    <div class="service-icon">🧾</div>
+                    <h3>GST Audit</h3>
+                    <p><strong>GST Compliance Verification</strong></p>
+                    <p style="margin-top: 10px;">Audit of GST records and returns if turnover exceeds ₹5 crores.</p>
+                    <ul style="margin-top: 15px; line-height: 2;">
+                        <li>✓ GSTR-9C reconciliation</li>
+                        <li>✓ ITC verification</li>
+                        <li>✓ Compliance check</li>
+                        <li>✓ Certification</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: var(--primary-gold); font-weight: 700;">From ₹12,000</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Form 26QC - Rent TDS</h3>
-                    <p><strong>Frequency:</strong> Monthly<br>
-                    <strong>Applicability:</strong> Tenants (individuals)<br><br>
-                    • TDS on rent by individuals<br>
-                    • Section 194IB - rent > ₹50,000/month<br>
-                    • 5% TDS deduction<br>
-                    • Monthly payment & filing<br>
-                    • Online submission<br>
-                    • Certificate generation</p>
+                    <div class="service-icon">📈</div>
+                    <h3>Management Audit</h3>
+                    <p><strong>Performance Evaluation</strong></p>
+                    <p style="margin-top: 10px;">Assessment of management effectiveness, operational efficiency, and performance metrics.</p>
+                    <ul style="margin-top: 15px; line-height: 2;">
+                        <li>✓ Operational review</li>
+                        <li>✓ Efficiency analysis</li>
+                        <li>✓ Performance metrics</li>
+                        <li>✓ Strategic recommendations</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: var(--primary-gold); font-weight: 700;">Custom Quote</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Forensic Audit</h3>
+                    <p><strong>Fraud Detection & Investigation</strong></p>
+                    <p style="margin-top: 10px;">Specialized audit to detect fraud, financial irregularities, and legal disputes.</p>
+                    <ul style="margin-top: 15px; line-height: 2;">
+                        <li>✓ Fraud investigation</li>
+                        <li>✓ Financial disputes</li>
+                        <li>✓ Legal evidence</li>
+                        <li>✓ Expert opinion</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: var(--primary-gold); font-weight: 700;">Custom Quote</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏗️</div>
+                    <h3>Project Audit</h3>
+                    <p><strong>Project Financial Review</strong></p>
+                    <p style="margin-top: 10px;">Audit of project accounts, fund utilization, and compliance for grants/subsidies.</p>
+                    <ul style="margin-top: 15px; line-height: 2;">
+                        <li>✓ Fund utilization check</li>
+                        <li>✓ Project accounts review</li>
+                        <li>✓ Grant compliance</li>
+                        <li>✓ Utilization certificate</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: var(--primary-gold); font-weight: 700;">From ₹20,000</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Stock/Inventory Audit</h3>
+                    <p><strong>Physical Verification</strong></p>
+                    <p style="margin-top: 10px;">Physical verification of stock, inventory valuation, and reconciliation with books.</p>
+                    <ul style="margin-top: 15px; line-height: 2;">
+                        <li>✓ Physical stock count</li>
+                        <li>✓ Valuation verification</li>
+                        <li>✓ Reconciliation</li>
+                        <li>✓ Inventory report</li>
+                    </ul>
+                    <p style="margin-top: 15px; color: var(--primary-gold); font-weight: 700;">From ₹10,000</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
+    <!-- Pricing -->
     <section id="pricing">
         <div class="container">
-            <h2>TDS Return Filing Pricing</h2>
-            <p class="section-intro">Transparent pricing based on number of deductees. No hidden charges!</p>
+            <h2>Statutory Audit Pricing</h2>
+            <p class="section-intro">Transparent pricing based on company size and complexity</p>
 
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>Starter Plan</h3>
-                    <div class="price">₹2,000</div>
-                    <div class="price-detail">Per quarter (up to 25 deductees)</div>
+                    <h3>Small Company</h3>
+                    <div class="price">₹10,000</div>
+                    <div class="price-detail">Turnover up to ₹2 Crore</div>
                     <ul class="features-list">
-                        <li>Single form filing (24Q/26Q/27Q)</li>
-                        <li>Data validation</li>
-                        <li>Challan reconciliation</li>
-                        <li>Return filing & submission</li>
-                        <li>Form 16/16A generation</li>
-                        <li>Email support</li>
+                        <li>Complete statutory audit</li>
+                        <li>Financial statement review</li>
+                        <li>Audit report (CARO)</li>
+                        <li>Compliance verification</li>
+                        <li>Board report</li>
+                        <li>AOC-4 filing support</li>
+                        <li>1-2 weeks completion</li>
                     </ul>
-                    <a href="tel:+917889257045" class="btn-primary">Get Started</a>
+                    <a href="tel:+917889257045" class="btn-primary">Get Quote</a>
                 </div>
 
                 <div class="pricing-card">
                     <div class="popular-badge">Most Popular</div>
-                    <h3>Standard Plan</h3>
-                    <div class="price">₹3,500</div>
-                    <div class="price-detail">Per quarter (26-50 deductees)</div>
+                    <h3>Medium Company</h3>
+                    <div class="price">₹25,000</div>
+                    <div class="price-detail">Turnover ₹2-10 Crore</div>
                     <ul class="features-list">
-                        <li>All starter features</li>
-                        <li>Detailed TDS reconciliation</li>
-                        <li>Bulk certificate generation</li>
-                        <li>Quarterly compliance report</li>
-                        <li>WhatsApp support</li>
-                        <li>Priority filing</li>
+                        <li>All Small Company features</li>
+                        <li>Detailed audit procedures</li>
+                        <li>Branch audit (if applicable)</li>
+                        <li>Related party transactions</li>
+                        <li>Internal control review</li>
+                        <li>Management letter</li>
+                        <li>2-3 weeks completion</li>
                     </ul>
-                    <a href="tel:+917889257045" class="btn-primary">Subscribe Now</a>
+                    <a href="tel:+917889257045" class="btn-primary">Get Quote</a>
                 </div>
 
                 <div class="pricing-card">
-                    <h3>Professional Plan</h3>
-                    <div class="price">₹5,000</div>
-                    <div class="price-detail">Per quarter (51-100 deductees)</div>
+                    <h3>Large Company</h3>
+                    <div class="price">₹50,000+</div>
+                    <div class="price-detail">Turnover above ₹10 Crore</div>
                     <ul class="features-list">
-                        <li>All standard features</li>
-                        <li>Multiple form filing</li>
-                        <li>Advanced reconciliation</li>
-                        <li>Mismatch identification</li>
-                        <li>Correction filing support</li>
-                        <li>Dedicated CA support</li>
+                        <li>All Medium Company features</li>
+                        <li>Extensive audit testing</li>
+                        <li>Multi-location audit</li>
+                        <li>Complex transactions review</li>
+                        <li>Risk assessment</li>
+                        <li>Detailed management letter</li>
+                        <li>3-4 weeks completion</li>
                     </ul>
-                    <a href="tel:+917889257045" class="btn-primary">Choose Plan</a>
+                    <a href="tel:+917889257045" class="btn-primary">Get Quote</a>
                 </div>
 
                 <div class="pricing-card">
-                    <h3>Enterprise Plan</h3>
-                    <div class="price">Custom</div>
-                    <div class="price-detail">Per quarter (100+ deductees)</div>
+                    <h3>Tax Audit (44AB)</h3>
+                    <div class="price">₹8,000+</div>
+                    <div class="price-detail">Income Tax Compliance</div>
                     <ul class="features-list">
-                        <li>Unlimited deductees</li>
-                        <li>All forms supported</li>
-                        <li>Comprehensive reconciliation</li>
-                        <li>Notice handling included</li>
-                        <li>On-call CA consultation</li>
-                        <li>Custom reporting</li>
+                        <li>Form 3CA/3CB audit</li>
+                        <li>Form 3CD report</li>
+                        <li>Tax computation</li>
+                        <li>Disallowances check</li>
+                        <li>Books verification</li>
+                        <li>ITR filing support</li>
+                        <li>Quick turnaround</li>
                     </ul>
-                    <a href="tel:+917889257045" class="btn-primary">Contact Us</a>
+                    <a href="tel:+917889257045" class="btn-primary">Get Quote</a>
                 </div>
             </div>
 
-            <div class="info-box" style="margin-top: 40px;">
-                <h3>📦 Annual Package Benefits</h3>
-                <p>Subscribe to annual TDS filing package (4 quarters) and get:</p>
+            <div class="tips-box" style="margin-top: 40px;">
+                <h3>💡 Factors Affecting Audit Cost:</h3>
                 <ul style="margin-left: 20px; margin-top: 15px;">
-                    <li><strong>10% Discount</strong> on total cost</li>
-                    <li><strong>Free Annual Reconciliation</strong> statement</li>
-                    <li><strong>Priority Support</strong> throughout the year</li>
-                    <li><strong>Quarterly Compliance</strong> calendar</li>
-                    <li><strong>Lower Deduction Certificate</strong> filing assistance (if needed)</li>
+                    <li><strong>Company Turnover:</strong> Higher turnover requires more extensive audit procedures</li>
+                    <li><strong>Number of Transactions:</strong> More transactions mean more audit testing required</li>
+                    <li><strong>Branches/Locations:</strong> Multi-location companies require additional audit visits</li>
+                    <li><strong>Complexity of Business:</strong> Complex businesses (manufacturing, trading, services mix) need detailed audit</li>
+                    <li><strong>Accounting System:</strong> Well-maintained books reduce audit time and cost</li>
+                    <li><strong>Prior Year Issues:</strong> Previous audit qualifications require additional work</li>
+                    <li><strong>Compliance Status:</strong> Better compliance means smoother, faster audit</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- TDS Deadlines -->
-    <section class="section-alt">
+    <!-- Audit Process -->
+    <section id="process" class="section-alt">
         <div class="container">
-            <h2>TDS Filing Deadlines & Penalties</h2>
-            
-            <div style="overflow-x: auto;">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Quarter</th>
-                            <th>Period Covered</th>
-                            <th>Due Date</th>
-                            <th>Late Filing Penalty</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>Q1</strong></td>
-                            <td>April - June</td>
-                            <td>31st July</td>
-                            <td>₹200 per day</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Q2</strong></td>
-                            <td>July - September</td>
-                            <td>31st October</td>
-                            <td>₹200 per day</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Q3</strong></td>
-                            <td>October - December</td>
-                            <td>31st January</td>
-                            <td>₹200 per day</td>
-                        </tr>
-                        <tr>
-                            <td><strong>Q4</strong></td>
-                            <td>January - March</td>
-                            <td>31st May</td>
-                            <td>₹200 per day</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="danger-box" style="margin-top: 30px;">
-                <strong>⚠️ Consequences of Late TDS Filing:</strong>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li><strong>Late Fee:</strong> ₹200 per day until filed (no maximum limit)</li>
-                    <li><strong>Interest:</strong> 1.5% per month on delayed TDS payment (Section 201(1A))</li>
-                    <li><strong>Penalty:</strong> Minimum ₹10,000 up to ₹1,00,000 under Section 271H</li>
-                    <li><strong>Prosecution:</strong> Imprisonment from 3 months to 7 years for serious defaults</li>
-                    <li><strong>Disallowance:</strong> Expense disallowed if TDS not deducted/deposited (Section 40(a)(ia))</li>
-                </ul>
-            </div>
-
-            <div class="alert-box" style="margin-top: 20px;">
-                <strong>📅 Important TDS Payment Dates:</strong><br><br>
-                <strong>For Government Deductors:</strong> TDS must be deposited on the same day<br>
-                <strong>For Non-Government Deductors:</strong> TDS must be deposited by 7th of next month<br>
-                <strong>For March Month:</strong> TDS can be paid by 30th April
-            </div>
-        </div>
-    </section>
-
-    <!-- Process -->
-    <section id="process">
-        <div class="container">
-            <h2>Our TDS Filing Process</h2>
-            <p class="section-intro">Simple 6-step process ensuring accurate and compliant TDS return filing</p>
+            <h2>Our Statutory Audit Process</h2>
+            <p class="section-intro">Systematic and thorough audit methodology ensuring quality and compliance</p>
 
             <div class="process-grid">
                 <div class="step-card">
                     <div class="step-number">1</div>
-                    <h3>Data Collection</h3>
-                    <p>Collect payment details, PAN of deductees, TDS rates, and challan information</p>
+                    <h3>Planning</h3>
+                    <p>Understanding business, risk assessment, audit planning, and scheduling audit procedures</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">2</div>
-                    <h3>Validation</h3>
-                    <p>Verify PAN, payment amounts, TDS rates, and nature of payment codes</p>
+                    <h3>Document Collection</h3>
+                    <p>Collecting financial statements, books of accounts, bank statements, and supporting documents</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">3</div>
-                    <h3>Challan Mapping</h3>
-                    <p>Map challans with deductions, reconcile amounts, verify BSR codes</p>
+                    <h3>Audit Execution</h3>
+                    <p>Verification of transactions, vouching, physical verification, and detailed audit testing</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">4</div>
-                    <h3>Return Preparation</h3>
-                    <p>Prepare quarterly return with all deductee details and validate data</p>
+                    <h3>Compliance Check</h3>
+                    <p>Verifying compliance with Companies Act, accounting standards, and tax laws</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">5</div>
-                    <h3>Filing & Submission</h3>
-                    <p>File return on TRACES portal and obtain acknowledgment number</p>
+                    <h3>Reporting</h3>
+                    <p>Preparing audit report, CARO report, management letter, and board report</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">6</div>
-                    <h3>Certificate Issuance</h3>
-                    <p>Generate and issue Form 16/16A certificates to all deductees</p>
+                    <h3>Filing & Follow-up</h3>
+                    <p>ROC filing support, AGM attendance, and addressing post-audit queries</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- TDS Rates -->
-    <section class="section-alt">
-        <div class="container">
-            <h2>Common TDS Rates & Sections</h2>
-            
-            <div style="overflow-x: auto;">
-                <table class="comparison-table">
-                    <thead>
-                        <tr>
-                            <th>Section</th>
-                            <th>Nature of Payment</th>
-                            <th>TDS Rate</th>
-                            <th>Threshold Limit</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><strong>192</strong></td>
-                            <td>Salary</td>
-                            <td>As per slab</td>
-                            <td>₹2,50,000 (basic exemption)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>194C</strong></td>
-                            <td>Contractor/Sub-contractor</td>
-                            <td>1% (Individual) / 2% (Others)</td>
-                            <td>₹30,000 (single) / ₹1,00,000 (aggregate)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>194J</strong></td>
-                            <td>Professional/Technical Services</td>
-                            <td>10% / 2% (technical services)</td>
-                            <td>₹30,000 per year</td>
-                        </tr>
-                        <tr>
-                            <td><strong>194I</strong></td>
-                            <td>Rent - Land/Building/Furniture</td>
-                            <td>10% / 2% (plant & machinery)</td>
-                            <td>₹2,40,000 per year</td>
-                        </tr>
-                        <tr>
-                            <td><strong>194IA</strong></td>
-                            <td>Payment for property</td>
-                            <td>1%</td>
-                            <td>₹50,00,000</td>
-                        </tr>
-                        <tr>
-                            <td><strong>194IB</strong></td>
-                            <td>Rent by Individual (not business)</td>
-                            <td>5%</td>
-                            <td>₹50,000 per month</td>
-                        </tr>
-                        <tr>
-                            <td><strong>194H</strong></td>
-                            <td>Commission/Brokerage</td>
-                            <td>5%</td>
-                            <td>₹15,000 per year</td>
-                        </tr>
-                        <tr>
-                            <td><strong>194A</strong></td>
-                            <td>Interest (other than securities)</td>
-                            <td>10%</td>
-                            <td>₹5,000 (₹40,000 for banks)</td>
-                        </tr>
-                        <tr>
-                            <td><strong>194D</strong></td>
-                            <td>Insurance Commission</td>
-                            <td>5%</td>
-                            <td>₹15,000 per year</td>
-                        </tr>
-                        <tr>
-                            <td><strong>194O</strong></td>
-                            <td>E-commerce participants</td>
-                            <td>1%</td>
-                            <td>₹5,00,000 per year</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-            <div class="info-box" style="margin-top: 30px;">
-                <h3>💡 Important TDS Notes:</h3>
+            <div class="tips-box" style="margin-top: 50px;">
+                <h3>📋 Documents Required for Statutory Audit:</h3>
                 <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Higher rate of 20% if PAN not provided by deductee</li>
-                    <li>No TDS if payee submits Form 15G/15H (subject to conditions)</li>
-                    <li>Lower deduction certificate can be obtained from tax authorities</li>
-                    <li>TDS rates may differ for resident vs non-resident payments</li>
-                    <li>Always check latest TDS rates before deduction</li>
+                    <li><strong>Financial Statements:</strong> Trial balance, Profit & Loss, Balance Sheet, Cash Flow</li>
+                    <li><strong>Books of Accounts:</strong> Sales register, purchase register, cash book, bank book</li>
+                    <li><strong>Bank Statements:</strong> All bank accounts for the entire year</li>
+                    <li><strong>Vouchers & Bills:</strong> Purchase bills, sales invoices, expense vouchers</li>
+                    <li><strong>Statutory Records:</strong> Share register, minutes books, statutory registers</li>
+                    <li><strong>Tax Records:</strong> GST returns, TDS returns, income tax returns</li>
+                    <li><strong>Agreements:</strong> Loan agreements, lease deeds, contracts</li>
+                    <li><strong>Previous Audit Report:</strong> Prior year audit report and management letter</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Required Documents -->
+    <!-- Why Choose Us -->
     <section>
         <div class="container">
-            <h2>Documents Required for TDS Filing</h2>
+            <h2>Why Choose Us for Statutory Audit?</h2>
             
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>📄 Payment Details</h3>
-                    <p><strong>Essential Information:</strong><br>
-                    • Complete payment register<br>
-                    • Payee/Deductee details<br>
-                    • Amount paid (gross)<br>
-                    • TDS amount deducted<br>
-                    • Date of payment<br>
-                    • Date of TDS deduction<br>
-                    • Nature of payment codes</p>
+                    <div class="service-icon">✅</div>
+                    <h3>ICAI Qualified CAs</h3>
+                    <p>All audits conducted by experienced ICAI qualified chartered accountants with proven expertise in statutory audits and compliance.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>🆔 PAN & Details</h3>
-                    <p><strong>Deductee Information:</strong><br>
-                    • PAN of all deductees<br>
-                    • Complete name as per PAN<br>
-                    • Full address<br>
-                    • Email ID (for certificates)<br>
-                    • Mobile number<br>
-                    • Assessment year<br>
-                    • Deductee type (individual/company)</p>
+                    <div class="service-icon">🎯</div>
+                    <h3>Industry Expertise</h3>
+                    <p>Experience across multiple industries - manufacturing, trading, services, IT, real estate, healthcare, and more.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>💳 Challan Documents</h3>
-                    <p><strong>Payment Proof:</strong><br>
-                    • All TDS challan copies<br>
-                    • BSR code of bank<br>
-                    • Challan serial number<br>
-                    • Date of deposit<br>
-                    • Amount deposited<br>
-                    • Minor head codes<br>
-                    • Challan ITNS 281 details</p>
+                    <div class="service-icon">⚡</div>
+                    <h3>Quick Turnaround</h3>
+                    <p>Fast and efficient audit completion. Small companies in 1-2 weeks, medium in 2-3 weeks, large in 3-4 weeks.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>📋 Previous Returns</h3>
-                    <p><strong>Historical Data:</strong><br>
-                    • Previous quarter acknowledgment<br>
-                    • Token number of last filing<br>
-                    • Form 16/16A issued earlier<br>
-                    • Correction statements (if any)<br>
-                    • Rectification orders<br>
-                    • Lower deduction certificates<br>
-                    • Annual TDS summary</p>
+                    <div class="service-icon">💰</div>
+                    <h3>Transparent Pricing</h3>
+                    <p>Clear upfront pricing with no hidden charges. Competitive rates for quality audit services.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>🏢 Entity Documents</h3>
-                    <p><strong>Deductor Information:</strong><br>
-                    • TAN of deductor<br>
-                    • Complete deductor details<br>
-                    • Responsible person details<br>
-                    • Digital signature (if required)<br>
-                    • Authorization letter<br>
-                    • Company PAN<br>
-                    • Contact information</p>
+                    <div class="service-icon">📊</div>
+                    <h3>Thorough Audit</h3>
+                    <p>Comprehensive audit procedures following ISA and SA standards. Detailed testing and verification of all transactions.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>📑 Supporting Documents</h3>
-                    <p><strong>Additional Records:</strong><br>
-                    • Invoices/Bills for payments<br>
-                    • Contracts/Agreements<br>
-                    • Form 15G/15H (if applicable)<br>
-                    • Exemption certificates<br>
-                    • DTAA benefit claims<br>
-                    • Tax residency certificates<br>
-                    • Board resolutions</p>
+                    <div class="service-icon">🤝</div>
+                    <h3>Collaborative Approach</h3>
+                    <p>Working closely with management, providing regular updates, and ensuring smooth audit process with minimal disruption.</p>
                 </div>
-            </div>
 
-            <div class="alert-box" style="margin-top: 30px;">
-                <strong>📌 Document Submission Tips:</strong>
-                <ul style="margin-left: 20px; margin-top: 10px;">
-                    <li>Provide data in Excel format for faster processing</li>
-                    <li>Ensure PAN is correct - mismatched PAN causes rejection</li>
-                    <li>Submit at least 10 days before deadline</li>
-                    <li>Keep scanned copies of all challans</li>
-                    <li>Verify deductee names match exactly with PAN database</li>
-                </ul>
+                <div class="service-card">
+                    <div class="service-icon">📝</div>
+                    <h3>Quality Reports</h3>
+                    <p>Well-drafted audit reports with clear opinions, CARO reporting, and comprehensive management letters.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔒</div>
+                    <h3>Confidentiality</h3>
+                    <p>Strict confidentiality maintained. All client information handled with utmost care and professional ethics.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Complete Support</h3>
+                    <p>Support for ROC filing, AGM attendance, addressing shareholder queries, and post-audit follow-up.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌟</div>
+                    <h3>Value Addition</h3>
+                    <p>Beyond compliance - we provide insights on internal controls, process improvements, and financial efficiency.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Common Issues -->
+    <!-- Who Needs Audit -->
     <section class="section-alt">
         <div class="container">
-            <h2>Common TDS Filing Issues We Resolve</h2>
+            <h2>Who Needs Statutory Audit?</h2>
             
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>❌ PAN Mismatch Issues</h3>
-                    <p><strong>Problems:</strong><br>
-                    • Wrong PAN entered<br>
-                    • Name-PAN mismatch<br>
-                    • Invalid PAN<br>
-                    • Duplicate PAN entries<br><br>
-                    <strong>Our Solution:</strong><br>
-                    Pre-validation of all PANs through income tax portal before filing</p>
+                    <div class="service-icon">🏢</div>
+                    <h3>All Private Limited Companies</h3>
+                    <p>Statutory audit is mandatory for all Private Limited Companies registered under Companies Act, 2013, irrespective of turnover or capital.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>❌ Challan Mapping Errors</h3>
-                    <p><strong>Problems:</strong><br>
-                    • Wrong BSR code<br>
-                    • Incorrect challan date<br>
-                    • Amount mismatch<br>
-                    • Wrong minor head<br><br>
-                    <strong>Our Solution:</strong><br>
-                    Verification with OLTAS and correction before filing</p>
+                    <div class="service-icon">🏛️</div>
+                    <h3>Public Limited Companies</h3>
+                    <p>All Public Limited Companies must get their accounts audited annually by qualified chartered accountants.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>❌ Rate & Section Errors</h3>
-                    <p><strong>Problems:</strong><br>
-                    • Wrong TDS rate applied<br>
-                    • Incorrect section code<br>
-                    • Nature of payment errors<br>
-                    • Deduction timing issues<br><br>
-                    <strong>Our Solution:</strong><br>
-                    Expert CA review of all rates and sections</p>
+                    <div class="service-icon">👤</div>
+                    <h3>One Person Company (OPC)</h3>
+                    <p>OPC requires audit if turnover exceeds ₹2 crore or outstanding loans/deposits exceed ₹1 crore.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>❌ Deductee Detail Issues</h3>
-                    <p><strong>Problems:</strong><br>
-                    • Incomplete address<br>
-                    • Wrong assessment year<br>
-                    • Missing email/mobile<br>
-                    • Incorrect deductee status<br><br>
-                    <strong>Our Solution:</strong><br>
-                    Complete data validation and verification</p>
+                    <div class="service-icon">🤝</div>
+                    <h3>Limited Liability Partnership (LLP)</h3>
+                    <p>LLP audit mandatory if turnover exceeds ₹40 lakhs or contribution exceeds ₹25 lakhs.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>❌ Filing Format Errors</h3>
-                    <p><strong>Problems:</strong><br>
-                    • Wrong file format<br>
-                    • Invalid characters<br>
-                    • Incorrect file validation utility<br>
-                    • Schema errors<br><br>
-                    <strong>Our Solution:</strong><br>
-                    Use of latest FVU and error-free file preparation</p>
+                    <div class="service-icon">🏦</div>
+                    <h3>Banks & Financial Institutions</h3>
+                    <p>All banks, NBFCs, and financial institutions require statutory audit as per RBI guidelines.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>❌ Reconciliation Issues</h3>
-                    <p><strong>Problems:</strong><br>
-                    • TDS deducted vs paid mismatch<br>
-                    • Quarter-wise mismatches<br>
-                    • Unmatched challans<br>
-                    • Excess/short credit<br><br>
-                    <strong>Our Solution:</strong><br>
-                    Comprehensive reconciliation before filing</p>
+                    <div class="service-icon">📈</div>
+                    <h3>Large Businesses (Tax Audit)</h3>
+                    <p>Businesses with turnover > ₹1 crore or professional receipts > ₹50 lakhs need tax audit under Section 44AB.</p>
                 </div>
+            </div>
+
+            <div class="tips-box" style="margin-top: 40px;">
+                <h3>⚠️ Consequences of Not Getting Audit Done:</h3>
+                <ul style="margin-left: 20px; margin-top: 15px;">
+                    <li>Penalty of ₹1,00,000 to ₹5,00,000 on company under Section 147</li>
+                    <li>Penalty on every officer in default - ₹50,000 to ₹5,00,000</li>
+                    <li>Difficulty in obtaining bank loans and credit facilities</li>
+                    <li>Loss of credibility with investors and stakeholders</li>
+                    <li>Inability to file ROC returns (AOC-4, MGT-7)</li>
+                    <li>Possible prosecution and imprisonment in serious cases</li>
+                    <li>Company may be struck off from ROC register</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -1603,53 +1394,53 @@
             <h2>Frequently Asked Questions</h2>
 
             <div class="faq-item">
-                <div class="faq-question">What is TDS return filing and why is it mandatory?</div>
-                <div class="faq-answer">TDS return filing is a quarterly statement submitted to the Income Tax Department containing details of TDS deducted and deposited. It includes information about deductees (PAN, amount paid, TDS deducted), challan details, and nature of payments. It's mandatory under Section 200 of the Income Tax Act. Forms include 24Q (salary), 26Q (non-salary), 27Q (non-residents), and 27EQ (TCS). Filing helps the IT department track tax collection and provides credit to deductees.</div>
+                <div class="faq-question">What is statutory audit?</div>
+                <div class="faq-answer">Statutory audit is a mandatory examination of financial statements and accounting records of a company by an independent qualified chartered accountant as required by Companies Act, 2013. The auditor verifies the accuracy of financial records, checks compliance with accounting standards and laws, and provides an independent opinion on whether the financial statements present a true and fair view of the company's financial position. It's required to ensure transparency, accountability, and protect stakeholder interests.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What is the cost of TDS return filing services?</div>
-                <div class="faq-answer">TDS return filing costs start at ₹2,000 per quarter for up to 25 deductees. For 26-50 deductees, it's ₹3,500 per quarter. For 51-100 deductees, the cost is ₹5,000 per quarter. For more than 100 deductees, we provide customized pricing. Annual packages (4 quarters) come with a 10% discount and include free annual reconciliation statement.</div>
+                <div class="faq-question">How much does statutory audit cost?</div>
+                <div class="faq-answer">Statutory audit costs vary based on company size and complexity. Small companies (turnover up to ₹2 crore) typically cost ₹10,000-25,000. Medium companies (turnover ₹2-10 crore) cost ₹25,000-50,000. Large companies (turnover above ₹10 crore) cost ₹50,000-1,00,000 or more. Factors affecting cost include turnover, number of transactions, branches, business complexity, accounting system quality, and compliance status. We provide customized quotes based on your specific requirements.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What are the TDS filing deadlines and penalties for late filing?</div>
-                <div class="faq-answer">Q1 (Apr-Jun) must be filed by 31st July, Q2 (Jul-Sep) by 31st October, Q3 (Oct-Dec) by 31st January, and Q4 (Jan-Mar) by 31st May. Late filing attracts a penalty of ₹200 per day with no maximum limit. Additional interest of 1.5% per month is charged on delayed TDS deposits. Serious defaults can lead to penalties up to ₹1 lakh and even prosecution.</div>
+                <div class="faq-question">Who needs statutory audit?</div>
+                <div class="faq-answer">Statutory audit is mandatory for: (1) All Private Limited Companies regardless of turnover, (2) All Public Limited Companies, (3) One Person Companies (OPC) if turnover exceeds ₹2 crore or outstanding loans exceed ₹1 crore, (4) Limited Liability Partnerships (LLP) with turnover above ₹40 lakhs or contribution above ₹25 lakhs, (5) All banks and financial institutions. Additionally, businesses with turnover exceeding ₹1 crore (or professional receipts exceeding ₹50 lakhs) require tax audit under Section 44AB of Income Tax Act.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What documents are required for TDS return filing?</div>
-                <div class="faq-answer">You need: Payment details with amounts paid and TDS deducted, PAN of all deductees, complete deductee addresses, TDS challan copies with BSR codes and serial numbers, nature of payment codes, dates of payment and deduction, previous quarter's acknowledgment, TAN of deductor, and digital signature if applicable. We provide an Excel template for easy data submission.</div>
+                <div class="faq-question">How long does statutory audit take?</div>
+                <div class="faq-answer">Statutory audit duration depends on company size and complexity. Small companies typically take 1-2 weeks, medium companies take 2-3 weeks, and large companies take 3-4 weeks or more. The timeline depends on several factors including availability and quality of accounting records, number of transactions, business complexity, branches/locations, management cooperation, and prior year issues. Well-maintained books and organized documentation can significantly reduce audit time.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Do you provide Form 16 and Form 16A after filing?</div>
-                <div class="faq-answer">Yes, we generate and issue Form 16 (for salary TDS under 24Q) and Form 16A (for non-salary TDS under 26Q/27Q) to all deductees after successful return filing and acceptance by the IT department. These certificates are mandatory for deductees to claim TDS credit while filing their income tax returns. We provide certificates in both physical and digital format.</div>
+                <div class="faq-question">What is the difference between statutory audit and tax audit?</div>
+                <div class="faq-answer">Statutory audit is required under Companies Act for all companies to verify financial statements and ensure compliance with company law. Tax audit is required under Income Tax Act (Section 44AB) for businesses with turnover exceeding specified limits to verify tax-related matters. Statutory audit covers overall financial statements, internal controls, and company law compliance. Tax audit focuses specifically on correctness of accounts for income tax purposes, tax computations, and allowances/disallowances. A company may need both audits if applicable criteria are met.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What is TDS reconciliation and why is it important?</div>
-                <div class="faq-answer">TDS reconciliation is matching TDS deducted with TDS deposited and filed in returns. It ensures all deductions are properly accounted for, challans are correctly mapped, and there are no mismatches. Reconciliation prevents notices from the IT department, ensures deductees get proper credit in Form 26AS, and identifies any errors before filing. We perform complete reconciliation as part of our service.</div>
+                <div class="faq-question">Who can be a statutory auditor?</div>
+                <div class="faq-answer">Only a qualified Chartered Accountant holding Certificate of Practice from ICAI can be appointed as statutory auditor. The auditor must be independent and should not have any disqualifications under Section 141 of Companies Act, 2013. Disqualifications include being an officer/employee of the company, having business relationships, being indebted to company, having relatives as directors, and more. The auditor must also meet independence and ethical requirements as per ICAI guidelines.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What happens if PAN is wrong or mismatched in TDS return?</div>
-                <div class="faq-answer">Wrong or mismatched PAN can lead to return rejection, non-credit of TDS to deductee, demand notices, and penalties. The deductee won't see TDS credit in their Form 26AS. We pre-validate all PANs through the income tax portal before filing. If mismatch is discovered after filing, we file correction statements immediately to rectify the error.</div>
+                <div class="faq-question">When should statutory audit be completed?</div>
+                <div class="faq-answer">Statutory audit should be completed before the Annual General Meeting (AGM). Companies must hold AGM within 6 months of financial year end (by 30th September for March year-end companies). The audit report must be ready before AGM as audited financial statements are presented and approved in AGM. It's advisable to start audit process 2-3 months before AGM date to allow sufficient time for audit completion, addressing queries, and finalizing reports.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Can TDS returns be revised or corrected after filing?</div>
-                <div class="faq-answer">Yes, correction statements can be filed to rectify errors in original TDS returns. Common corrections include wrong PAN, incorrect amounts, challan mismatches, and deductee detail errors. Corrections must be filed in the same quarter they relate to. We handle all correction filings and ensure proper updates in Form 26AS and certificates.</div>
+                <div class="faq-question">What documents are required for statutory audit?</div>
+                <div class="faq-answer">Required documents include: Trial balance, Profit & Loss statement, Balance Sheet, Cash Flow statement, all books of accounts (sales, purchase, cash book), complete bank statements for all accounts, all vouchers and supporting bills, statutory registers (share register, minutes books), GST returns and reconciliation, TDS returns, previous year audit report, loan agreements, fixed asset register, inventory records, and related party transaction details. Well-organized documentation ensures smooth and faster audit completion.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">How do you handle TDS notices and demands?</div>
-                <div class="faq-answer">We provide complete support for TDS notices including mismatch letters, demand notices, and default notices under Section 201. Our process includes analyzing the notice, identifying the cause, gathering supporting documents, preparing detailed responses, filing rectification applications, and representing before tax authorities. Notice support is included in all our premium packages.</div>
+                <div class="faq-question">What is CARO report?</div>
+                <div class="faq-answer">CARO (Companies Auditor's Report Order) is a reporting requirement under Companies Act where auditor must report on specific matters prescribed by government. CARO 2020 requires auditors to report on 21 clauses covering areas like: fixed assets, inventory, loans given/taken, internal controls, statutory dues, fraud, cash losses, default in loan repayment, fund utilization, and more. Not all companies require CARO reporting - small companies and certain other entities are exempt. Our auditors provide complete CARO reporting as applicable.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What is the difference between Form 24Q, 26Q, and 27Q?</div>
-                <div class="faq-answer">Form 24Q is for TDS on salary payments by employers. Form 26Q covers TDS on all payments other than salary (like contractor, professional fees, rent, commission). Form 27Q is specifically for TDS on payments made to non-residents or foreign companies. Each form has different filing requirements and deadlines. We handle all three forms and help you identify which form applies to your payments.</div>
+                <div class="faq-question">Can we change statutory auditor?</div>
+                <div class="faq-answer">Yes, companies can change statutory auditor, but there are restrictions. Individual auditor can be appointed for maximum 1 term of 5 consecutive years. Audit firm can be appointed for maximum 2 terms of 5 consecutive years (total 10 years). After maximum term, there's a cooling-off period of 5 years before re-appointment. Change of auditor requires approval in AGM, filing Form ADT-1 with ROC within 15 days, and obtaining consent from new auditor. The outgoing auditor must provide NOC and necessary documents to incoming auditor.</div>
             </div>
         </div>
     </section>
@@ -1657,11 +1448,11 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ensure 100% TDS Compliance Today!</h2>
-            <p style="font-size: 1.2em; margin-bottom: 30px;">Let our expert CAs handle your TDS returns with complete accuracy. Zero penalties, timely filing, hassle-free compliance!</p>
+            <h2>Need Statutory Audit for Your Company?</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Get professional audit services from experienced ICAI qualified chartered accountants. Complete compliance guaranteed!</p>
             <div class="hero-buttons">
-                <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call Now: +91 78892 57045</a>
-                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20TDS%20return%20filing" class="btn-secondary">💬 WhatsApp Us</a>
+                <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call: +91 78892 57045</a>
+                <a href="https://wa.me/917889257045?text=I%20need%20statutory%20audit%20services" class="btn-secondary">💬 WhatsApp Now</a>
             </div>
             <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
                 <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
@@ -1690,24 +1481,22 @@
                 <div class="footer-section">
                     <h3>Our Services</h3>
                     <ul>
-                        <li><a href="/services/tds-return-filing/">TDS Return Filing</a></li>
+                        <li><a href="/services/tax-planning-filing/">Income Tax Filing</a></li>
                         <li><a href="/services/gst-compliance/">GST Compliance</a></li>
-                        <li><a href="/services/tax-planning-filing/">Tax Planning</a></li>
-                        <li><a href="/services/company-incorporation/">Company Incorporation</a></li>
-                        <li><a href="/services/audit-services/">Audit Services</a></li>
+                        <li><a href="/services/">Company Registration</a></li>
+                        <li><a href="/services/statutory-audit/">Statutory Audit</a></li>
+                        <li><a href="/services/bookkeeping-and-accounting/">Bookkeeping Services</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-section">
-                    <h3>TDS Services</h3>
+                    <h3>Audit Services</h3>
                     <ul>
-                        <li><a href="/services/">Form 24Q Filing</a></li>
-                        <li><a href="/services/26QB-and-26QC-filing/">Form 26Q Filing</a></li>
-                        <li><a href="/services/">Form 27Q Filing</a></li>
-                        <li><a href="/services/">Form 16/16A Issuance</a></li>
-                        <li><a href="#pricing">TDS Reconciliation</a></li>
-                    
-                        <li><a href="/services/professional-tax-registration/">Professional Tax Registration</a></li>
+                        <li><a href="/services/statutory-audit/">Statutory Audit</a></li>
+                        <li><a href="/services/tax-audit-section-44AB/">Tax Audit (44AB)</a></li>
+                        <li><a href="/services/internal-audit/">Internal Audit</a></li>
+                        <li><a href="/services/">GST Audit</a></li>
+                        <li><a href="#pricing">View Pricing</a></li>
                     </ul>
                 </div>
 
@@ -1716,20 +1505,21 @@
                     <p>📞 <a href="tel:+917889257045" style="color: white;">+91 78892 57045</a></p>
                     <p>✉️ <a href="#" class="email-link-inline" data-user="siddhiandassociatess" data-domain="gmail.com" style="color: white;"></a></p>
                     <p style="margin-top: 15px;">🕒 Mon-Sat: 9 AM - 6 PM</p>
-                    <p>⚡ Response Time: 2 Hours</p>
+                    <p>⚡ Quick Turnaround</p>
+                    <p>🌍 Pan India Service</p>
                 </div>
             </div>
 
             <div class="footer-bottom">
                 <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
-                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Professional TDS Return Filing Services across India</p>
+                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Professional Statutory Audit Services Across India</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating Buttons -->
     <div class="floating-buttons">
-        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20TDS%20return%20filing" 
+        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20statutory%20audit%20services" 
            target="_blank" 
            class="float-btn whatsapp-btn" 
            aria-label="Chat on WhatsApp">

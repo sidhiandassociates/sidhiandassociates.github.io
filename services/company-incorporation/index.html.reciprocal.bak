@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-IN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
     <!-- Google tag (gtag.js) -->
@@ -31,63 +31,45 @@
     <link rel="icon" href="/sidhi.png" type="image/png" />
     
     <!-- Primary Meta Tags -->
-    <title>Tax Planning & Filing Services India | ITR Filing from ₹2,500 - Sidhi & Associates</title>
-    <meta name="title" content="Tax Planning & Filing Services India | ITR Filing from ₹2,500 - Sidhi & Associates">
-    <meta name="description" content="Expert Tax Planning & ITR Filing Services by Qualified CAs. Individual & Business Tax Returns, Tax Saving Strategies, TDS Compliance. 10,000+ ITRs Filed. Save ₹50Cr+ Tax Legally. Call +91 78892 57045">
-    <meta name="keywords" content="tax planning services India, income tax filing, ITR filing online, tax return filing, CA tax consultant, tax saving strategies, advance tax, TDS compliance, Form 16, income tax planning, ITR 1 2 3 4 filing, 80C deductions, Panchkula CA, tax filing near me">
+    <title>Company Registration & Incorporation Services India | Private Limited, LLP from ₹7,999 - Sidhi & Associates</title>
+    <meta name="title" content="Company Registration & Incorporation Services India | Private Limited, LLP from ₹7,999 - Sidhi & Associates">
+    <meta name="description" content="Expert Company Registration Services by CAs. Private Limited, LLP, OPC, Partnership Firm Registration. Complete Documentation, ROC Filing, Digital Signatures. 10,000+ Companies Registered. Govt Fees Included. Call +91 78892 57045">
+    <meta name="keywords" content="company registration India, private limited company registration, LLP registration, OPC registration, partnership firm registration, company incorporation, business registration, ROC filing, DSC, DIN, startup registration, company formation, one person company, limited liability partnership">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="language" content="English">
     <meta name="author" content="Sidhi & Associates">
     <meta name="geo.region" content="IN">
     <meta name="geo.placename" content="India">
+
+    <!-- AIO / AI-answer-engine entity meta -->
+    <meta name="ai-content-declaration" content="Company Registration & Incorporation Services by Sidhi & Associates: Private Limited Company, LLP, One Person Company (OPC), Partnership Firm, Sole Proprietorship, and Section 8 Company registration, including DSC, DIN, MOA/AOA drafting, ROC/SPICe+ filing, PAN, TAN and post-incorporation compliance. Provided by an Accountants firm also offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-entity-type" content="Service,FAQPage">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sidhiandassociates.com/services/tax-planning-filing">
-    <meta property="og:title" content="Tax Planning & Filing Services India - Expert ITR Filing from ₹2,500">
-    <meta property="og:description" content="Professional Tax Planning & ITR Filing by Qualified CAs. 10,000+ ITRs Filed. ₹50Cr+ Tax Saved. 100% Accuracy Guaranteed. Call +91 78892 57045">
+    <meta property="og:url" content="https://sidhiandassociates.com/services/company-incorporation/">
+    <meta property="og:title" content="Company Registration & Incorporation Services India - Fast & Hassle-free">
+    <meta property="og:description" content="Register Your Company in 7-10 Days. Private Limited, LLP, OPC, Partnership. Complete Documentation Support. 10,000+ Successful Registrations. Starting ₹7,999. Call +91 78892 57045">
     <meta property="og:site_name" content="Sidhi & Associates">
     <meta property="og:locale" content="en_IN">
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sidhiandassociates.com/services/tax-planning-filing">
-    <meta property="twitter:title" content="Tax Planning & Filing Services India - Sidhi & Associates">
-    <meta property="twitter:description" content="Expert Tax Planning & ITR Filing Services. Save tax legally with qualified CAs. Starting ₹2,500.">
+    <meta property="twitter:url" content="https://sidhiandassociates.com/services/company-incorporation/">
+    <meta property="twitter:title" content="Company Registration Services India - Sidhi & Associates">
+    <meta property="twitter:description" content="Expert Company Incorporation Services. Private Limited, LLP, OPC Registration. Complete Support from Expert CAs.">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://sidhiandassociates.com/services/tax-planning-filing/">
-
-    <!-- AIO / AI-answer-engine entity meta -->
-    <meta name="ai-content-declaration" content="Tax Planning & Income Tax Return (ITR) filing services by Sidhi & Associates. Covers ITR-1 through ITR-7, advance tax, TDS compliance, and legal tax-saving strategies (80C, 80D, HRA, home loan interest). Individual ITR-1 filing starts from Rs2,500, ITR-2/3 from Rs5,000, business ITR-3 from Rs8,000, and corporate ITR-6 from Rs15,000. Provided by an Accountants firm also offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
-    <meta name="ai-entity-type" content="Service,FAQPage">
-
-    <!-- WebPage Schema with Speakable -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "@id": "https://sidhiandassociates.com/services/tax-planning-filing/#webpage",
-      "url": "https://sidhiandassociates.com/services/tax-planning-filing/",
-      "name": "Tax Planning & Filing Services India | ITR Filing from ₹2,500",
-      "description": "Expert Tax Planning & ITR Filing Services by Qualified CAs. Individual & Business Tax Returns, Tax Saving Strategies, TDS Compliance.",
-      "inLanguage": "en-IN",
-      "dateModified": "2026-07-17",
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": ["#quick-answer"]
-      }
-    }
-    </script>
+    <link rel="canonical" href="https://sidhiandassociates.com/services/company-incorporation/">
     
-    <!-- Enhanced Schema Markup for SEO -->
+    <!-- Enhanced Schema Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "serviceType": "Tax Planning and Income Tax Return Filing Services",
-      "name": "Tax Planning & Filing Services",
-      "description": "Comprehensive tax planning and income tax return filing services including ITR filing, advance tax calculation, TDS compliance, and tax saving strategies by qualified Chartered Accountants.",
+      "serviceType": "Company Registration and Incorporation Services",
+      "name": "Company Registration & Incorporation Services",
+      "description": "Comprehensive company registration and incorporation services including Private Limited Company, LLP, OPC, Partnership Firm registration with complete documentation, ROC filing, and compliance support.",
       "provider": {
         "@type": "ProfessionalService",
         "name": "Sidhi & Associates",
@@ -102,7 +84,7 @@
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
-          "reviewCount": "150"
+          "reviewCount": "200"
         }
       },
       "areaServed": {
@@ -111,15 +93,33 @@
       },
       "offers": {
         "@type": "AggregateOffer",
-        "lowPrice": "2500",
-        "highPrice": "25000",
+        "lowPrice": "7999",
+        "highPrice": "24999",
         "priceCurrency": "INR",
-        "offerCount": "4"
+        "offerCount": "5"
       }
     }
     </script>
 
-    <!-- FAQ Schema for Rich Snippets -->
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/services/company-incorporation/#webpage",
+      "url": "https://sidhiandassociates.com/services/company-incorporation/",
+      "name": "Company Registration & Incorporation Services India | Private Limited, LLP from ₹7,999",
+      "description": "Expert Company Registration Services by CAs. Private Limited, LLP, OPC, Partnership Firm Registration. Complete Documentation, ROC Filing, Digital Signatures.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-17",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer", "#featured-snippet"]
+      }
+    }
+    </script>
+
+    <!-- FAQ Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -127,42 +127,42 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is the cost of ITR filing services?",
+          "name": "How much does it cost to register a Private Limited Company in India?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Individual ITR filing starts at ₹2,500. ITR-2/3 with multiple income sources costs ₹5,000-8,000. Business returns (ITR-3) start at ₹8,000, and corporate returns (ITR-6) start at ₹15,000."
+            "text": "Private Limited Company registration costs ₹14,999 (all-inclusive with government fees). This includes name approval, MOA/AOA drafting, DSC for 2 directors, DIN, incorporation certificate, PAN, TAN, and first year compliance support."
           }
         },
         {
           "@type": "Question",
-          "name": "What documents are required for ITR filing?",
+          "name": "How long does company registration take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "For salaried individuals: Form 16, bank statements, investment proofs (80C, 80D), PAN card, and Aadhaar. For businesses: Books of accounts, P&L, Balance Sheet, TDS certificates, GST returns."
+            "text": "Company registration typically takes 7-10 working days from document submission. Name approval takes 1-2 days, and incorporation certificate is issued within 5-7 days after filing. We expedite the process to ensure quick registration."
           }
         },
         {
           "@type": "Question",
-          "name": "When is the deadline for filing income tax returns?",
+          "name": "What documents are required for company registration?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The deadline for filing ITR is July 31st for individuals and September 30th for businesses requiring audit. File early to claim refunds faster."
+            "text": "Required documents include: PAN card, Aadhaar card, passport size photos, address proof of directors and registered office, rental agreement or NOC from property owner, and utility bills. We provide complete checklist and help prepare all documentation."
           }
         },
         {
           "@type": "Question",
-          "name": "How can I save tax legally in India?",
+          "name": "What is the difference between Private Limited and LLP?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Save tax through 80C investments (₹1.5 lakh), health insurance 80D, NPS 80CCD(1B) (₹50,000), home loan interest, education loan interest, and choosing the right tax regime."
+            "text": "Private Limited Company has shareholders and directors with limited liability. LLP (Limited Liability Partnership) has partners with limited liability and more flexible management. LLP has lower compliance requirements and is suitable for professional services. We help you choose the right structure based on your business needs."
           }
         },
         {
           "@type": "Question",
-          "name": "How long does ITR filing take?",
+          "name": "Can foreigners register a company in India?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We complete ITR filing within 24-48 hours of receiving all documents. Complex cases may take 3-5 working days."
+            "text": "Yes, foreigners can register companies in India. At least one director must be an Indian resident. Foreign nationals need additional documents like passport, visa, and proof of address. We handle all formalities for foreign company registration and ensure compliance with FDI norms."
           }
         }
       ]
@@ -190,8 +190,8 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Tax Planning & Filing",
-          "item": "https://sidhiandassociates.com/services/tax-planning-filing"
+          "name": "Company Incorporation",
+          "item": "https://sidhiandassociates.com/services/company-incorporation/"
         }
       ]
     }
@@ -212,6 +212,7 @@
             --text-light: #666;
             --white: #ffffff;
             --light-bg: #F9F7F4;
+            --success-green: #28a745;
         }
 
         body {
@@ -620,7 +621,7 @@
             position: absolute;
             top: -15px;
             right: 20px;
-            background: #28a745;
+            background: var(--success-green);
             color: white;
             padding: 5px 15px;
             border-radius: 20px;
@@ -660,7 +661,7 @@
 
         .features-list li:before {
             content: "✓ ";
-            color: #28a745;
+            color: var(--success-green);
             font-weight: bold;
             margin-right: 10px;
         }
@@ -699,8 +700,36 @@
             margin: 0 0 10px 0;
         }
 
-        /* Tax Tips Box */
-        .tax-tips {
+        /* Comparison Table */
+        .comparison-table {
+            width: 100%;
+            margin-top: 40px;
+            border-collapse: collapse;
+            background: var(--white);
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .comparison-table th {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 20px;
+            text-align: left;
+            font-size: 1.1em;
+        }
+
+        .comparison-table td {
+            padding: 18px 20px;
+            border-bottom: 1px solid var(--light-gold);
+        }
+
+        .comparison-table tr:hover {
+            background: var(--light-gold);
+        }
+
+        /* Tips Box */
+        .tips-box {
             background: var(--light-gold);
             border-left: 4px solid var(--primary-gold);
             padding: 25px;
@@ -708,44 +737,17 @@
             border-radius: 8px;
         }
 
-        .tax-tips h3 {
+        .tips-box h3 {
             color: var(--primary-blue);
             margin: 0 0 15px 0;
         }
 
-        .tax-tips ul {
+        .tips-box ul {
             margin-left: 20px;
         }
 
-        .tax-tips li {
+        .tips-box li {
             margin-bottom: 10px;
-        }
-
-        /* Table */
-        .comparison-table {
-            width: 100%;
-            margin-top: 30px;
-            border-collapse: collapse;
-            background: var(--white);
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-        }
-
-        .comparison-table thead {
-            background: var(--primary-blue);
-            color: white;
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid var(--light-gold);
-        }
-
-        .comparison-table tbody tr:hover {
-            background: var(--light-bg);
         }
 
         /* FAQ */
@@ -900,9 +902,12 @@
             }
 
             .comparison-table {
-                font-size: 0.85em;
-                display: block;
-                overflow-x: auto;
+                font-size: 0.9em;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 12px;
             }
         }
     </style>
@@ -912,7 +917,7 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <a href="/" class="logo" aria-label="Sidhi & Associates home">
+                <a href="https://sidhiandassociates.com/" class="logo" aria-label="Sidhi & Associates home">
                     <img src="/sidhi.png" alt="Sidhi & Associates" class="logo-img" width="50" height="50" loading="eager">
                     <div class="logo-text">
                         <h1>Sidhi & Associates</h1>
@@ -927,13 +932,14 @@
                 </div>
             </div>
             <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
-                <a href="/">🏠 Home</a>
-                <a href="#services">🔧 Services</a>
-                <a href="#pricing" class="active">💰 Pricing</a>
-                <a href="#process">📋 Process</a>
-                <a href="#faq">❓ FAQ</a>
+                <a href="https://sidhiandassociates.com/">🏠 Home</a>
+                <a href="/services/">🔧 Services</a>
+                <a href="/blog/">📝 Blogs</a>
+                <a href="/calculator/">🧮 Calculators</a>
+                <a href="/why-us/">⭐ Why Choose Us</a>
+                <a href="/faq/">❓ FAQ</a>
                 <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
-                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20tax%20filing" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+                <a href="https://wa.me/917889257045?text=I%20want%20to%20register%20a%20company" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
             </nav>
         </div>
     </header>
@@ -942,11 +948,12 @@
     <nav class="desktop-nav" aria-label="Main navigation">
         <div class="container">
             <div class="nav-links">
-                <a href="/">Home</a>
-                <a href="#services">Services</a>
-                <a href="#pricing" class="active">Pricing</a>
-                <a href="#process">Process</a>
-                <a href="#faq">FAQ</a>
+                <a href="https://sidhiandassociates.com/">Home</a>
+                <a href="/services/">Services</a>
+                <a href="/blog/">Blogs</a>
+                <a href="/calculator/">Calculators</a>
+                <a href="/why-us/">Why Choose Us</a>
+                <a href="/faq/">FAQ</a>
             </div>
         </div>
     </nav>
@@ -954,28 +961,28 @@
     <!-- Breadcrumb -->
     <div class="breadcrumb">
         <div class="container">
-            <a href="/">Home</a> / <a href="/services/">Services</a> / <span>Tax Planning & Filing</span>
+            <a href="https://sidhiandassociates.com/">Home</a> / <a href="/services/">Services</a> / <span>Company Incorporation</span>
         </div>
     </div>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h2>Tax Planning & Filing Services India</h2>
-            <p>Save Tax Legally & File Returns with Confidence - Expert ITR Filing by Qualified Chartered Accountants Starting ₹2,500</p>
+            <h2>Company Registration & Incorporation Services</h2>
+            <p>Register Your Business in India - Private Limited, LLP, OPC, Partnership Firm Registration from ₹7,999 | Complete Documentation Support</p>
             
             <div class="hero-stats">
                 <div class="stat-box">
                     <span class="stat-number">10,000+</span>
-                    <span class="stat-text">ITRs Filed Successfully</span>
+                    <span class="stat-text">Companies Registered</span>
                 </div>
                 <div class="stat-box">
-                    <span class="stat-number">₹50Cr+</span>
-                    <span class="stat-text">Tax Saved for Clients</span>
+                    <span class="stat-number">7-10 Days</span>
+                    <span class="stat-text">Quick Registration</span>
                 </div>
                 <div class="stat-box">
                     <span class="stat-number">100%</span>
-                    <span class="stat-text">Accuracy Guaranteed</span>
+                    <span class="stat-text">Success Rate</span>
                 </div>
             </div>
 
@@ -986,121 +993,134 @@
         </div>
     </section>
 
-    <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
-        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
-            <strong style="color: var(--primary-gold);">ITR filing</strong> starts from <strong style="color: var(--primary-gold);">₹2,500</strong> for salaried individuals (ITR-1), <strong style="color: var(--primary-gold);">₹5,000</strong> for multiple income sources (ITR-2/3), and <strong style="color: var(--primary-gold);">₹8,000+</strong> for business returns. The ITR deadline is <strong style="color: var(--primary-gold);">July 31</strong> for individuals and September 30 for audit cases.
-        </p>
-    </div>
-
     <!-- Why Choose Us -->
     <section>
         <div class="container">
-            <h2>Why Choose Our Tax Services?</h2>
-            <p class="section-intro">We don't just file your taxes—we create strategic tax planning solutions that help you save money legally while ensuring complete compliance with Income Tax regulations</p>
+            <h2>Why Choose Our Company Registration Services?</h2>
+            <p class="section-intro">Expert CA-assisted company incorporation with complete documentation support and guaranteed approval</p>
 
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">💡</div>
-                    <h3>Strategic Tax Planning</h3>
-                    <p>Year-round tax planning strategies to minimize your tax liability legally through optimal investment planning and deduction utilization.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">📊</div>
-                    <h3>Expert ITR Filing</h3>
-                    <p>Accurate and timely income tax return filing for all ITR forms (ITR-1 to ITR-7) by qualified CAs with 100% accuracy guarantee.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🎯</div>
-                    <h3>Maximum Deductions</h3>
-                    <p>We identify all eligible deductions under 80C, 80D, 80G, HRA, home loan interest, and more to maximize your tax savings.</p>
-                </div>
-
-                <div class="service-card">
                     <div class="service-icon">⚡</div>
-                    <h3>Fast Processing</h3>
-                    <p>Quick turnaround time with ITR filing completed within 24-48 hours of receiving all documents.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🔒</div>
-                    <h3>100% Confidential</h3>
-                    <p>Your financial data is completely secure with us. We maintain strict confidentiality as per CA ethics.</p>
+                    <h3>Fast Registration</h3>
+                    <p>Get your company registered in just 7-10 working days with our streamlined process and expert documentation support.</p>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">💼</div>
-                    <h3>Complete Support</h3>
-                    <p>From document collection to ITR filing, e-verification, and handling income tax notices—we're with you at every step.</p>
+                    <h3>Complete Package</h3>
+                    <p>All-inclusive packages covering DSC, DIN, name approval, incorporation, PAN, TAN, and bank account opening assistance.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Expert Documentation</h3>
+                    <p>Professional drafting of MOA, AOA, incorporation forms, and all legal documents by experienced chartered accountants.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">✅</div>
+                    <h3>ROC Compliance</h3>
+                    <p>Complete ROC filing support, SPICe+ forms, and compliance with Ministry of Corporate Affairs (MCA) requirements.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>100% Approval</h3>
+                    <p>Guaranteed approval with our expert guidance and error-free documentation. We handle all queries from authorities.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Transparent Pricing</h3>
+                    <p>No hidden charges. All government fees included in package price. Pay once, get everything done.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Details -->
+    <!-- Types of Companies -->
     <section id="services" class="section-alt">
         <div class="container">
-            <h2>Our Tax Services</h2>
+            <h2>Types of Company Registration We Offer</h2>
             
-            <h3 style="text-align: center;">Individual Tax Services</h3>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Salaried Individuals (ITR-1)</h3>
-                    <p>• Form 16 based filing<br>
-                    • Salary income computation<br>
-                    • Standard deduction claims<br>
-                    • Investment-based deductions<br>
-                    • HRA exemption calculation</p>
+                    <div class="service-icon">🏢</div>
+                    <h3>Private Limited Company</h3>
+                    <p><strong>Most Popular for Startups & Growing Businesses</strong></p>
+                    <p>• Limited liability protection<br>
+                    • Separate legal entity<br>
+                    • Easy to raise funding<br>
+                    • Better credibility & trust<br>
+                    • Perpetual succession<br>
+                    • 2-200 shareholders allowed<br>
+                    • <strong>Min. 2 directors required</strong></p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Multiple Income Sources (ITR-2)</h3>
-                    <p>• Salary + House property<br>
-                    • Capital gains reporting<br>
-                    • Interest income<br>
-                    • Multiple house properties<br>
-                    • Foreign assets disclosure</p>
+                    <div class="service-icon">🤝</div>
+                    <h3>Limited Liability Partnership (LLP)</h3>
+                    <p><strong>Best for Professional Services & Small Businesses</strong></p>
+                    <p>• Lower compliance requirements<br>
+                    • No audit required (turnover < ₹40L)<br>
+                    • Flexible management structure<br>
+                    • Partners have limited liability<br>
+                    • Easy to add/remove partners<br>
+                    • Suitable for professionals<br>
+                    • <strong>Min. 2 partners required</strong></p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Business/Profession (ITR-3)</h3>
-                    <p>• Presumptive taxation (44AD/44ADA)<br>
-                    • Books of accounts filing<br>
-                    • Business income computation<br>
-                    • Professional receipts<br>
-                    • Partnership share reporting</p>
+                    <div class="service-icon">👤</div>
+                    <h3>One Person Company (OPC)</h3>
+                    <p><strong>Perfect for Solo Entrepreneurs</strong></p>
+                    <p>• Single person ownership<br>
+                    • Limited liability protection<br>
+                    • Separate legal entity<br>
+                    • Easy conversion to Pvt Ltd<br>
+                    • Lower compliance cost<br>
+                    • Nominee director required<br>
+                    • <strong>Ideal for individual startups</strong></p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">👥</div>
+                    <h3>Partnership Firm</h3>
+                    <p><strong>Simple Structure for Small Businesses</strong></p>
+                    <p>• Easy to form & dissolve<br>
+                    • Minimal compliance<br>
+                    • No audit mandatory<br>
+                    • Flexible profit sharing<br>
+                    • Lower registration cost<br>
+                    • 2-50 partners allowed<br>
+                    • <strong>Quick setup process</strong></p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏪</div>
+                    <h3>Sole Proprietorship</h3>
+                    <p><strong>Simplest Business Structure</strong></p>
+                    <p>• Single owner operation<br>
+                    • No separate legal entity<br>
+                    • Minimal compliance<br>
+                    • Easy GST registration<br>
+                    • Full control to owner<br>
+                    • Lowest setup cost<br>
+                    • <strong>Best for freelancers</strong></p>
                 </div>
             </div>
 
-            <h3 style="margin-top: 50px; text-align: center;">Business Tax Services</h3>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Corporate Tax Returns (ITR-6)</h3>
-                    <p>• Company income tax filing<br>
-                    • Book profit computation<br>
-                    • MAT/AMT calculations<br>
-                    • Dividend income reporting<br>
-                    • Transfer pricing compliance</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Trust/NGO Returns (ITR-7)</h3>
-                    <p>• Section 11/12 filing<br>
-                    • Charitable trust returns<br>
-                    • Political party returns<br>
-                    • Research institutions<br>
-                    • Form 10B filing</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>TDS Services</h3>
-                    <p>• TDS return filing (24Q, 26Q, 27Q)<br>
-                    • TDS calculation & compliance<br>
-                    • Form 16/16A issuance<br>
-                    • TDS notice handling<br>
-                    • Late fee calculation</p>
-                </div>
+            <div class="tips-box" style="margin-top: 50px;">
+                <h3>🤔 Which Business Structure Should You Choose?</h3>
+                <ul style="margin-left: 20px; margin-top: 15px;">
+                    <li><strong>Private Limited:</strong> Best if you plan to raise funding, need strong credibility, or expect high growth</li>
+                    <li><strong>LLP:</strong> Ideal for professional services (CA, CS, lawyers), consultants, or small businesses wanting lower compliance</li>
+                    <li><strong>OPC:</strong> Perfect for solo entrepreneurs who want limited liability protection with minimal compliance</li>
+                    <li><strong>Partnership:</strong> Good for small businesses with 2+ partners who want simple management</li>
+                    <li><strong>Sole Proprietorship:</strong> Best for freelancers, consultants, or very small businesses with minimal risk</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>Not sure which structure fits your business? Call us at +91 78892 57045 to discuss your options.</strong></p>
             </div>
         </div>
     </section>
@@ -1108,156 +1128,212 @@
     <!-- Pricing Section -->
     <section id="pricing">
         <div class="container">
-            <h2>Tax Filing Pricing</h2>
-            <p class="section-intro">Transparent pricing with no hidden charges. Choose the package that suits your needs</p>
+            <h2>Company Registration Pricing</h2>
+            <p class="section-intro">Transparent all-inclusive packages with government fees included</p>
 
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>Individual ITR-1/4S</h3>
-                    <div class="price">₹2,500</div>
-                    <div class="price-detail">For salaried employees</div>
+                    <h3>Partnership Firm</h3>
+                    <div class="price">₹7,999</div>
+                    <div class="price-detail">All-Inclusive Package</div>
                     <ul class="features-list">
-                        <li>Single salary income</li>
-                        <li>Form 16 based filing</li>
-                        <li>Standard deductions</li>
-                        <li>80C/80D claims</li>
-                        <li>E-verification support</li>
-                        <li>Refund tracking</li>
+                        <li>Partnership Deed drafting</li>
+                        <li>Registration with ROF</li>
+                        <li>PAN application</li>
+                        <li>TAN application</li>
+                        <li>GST registration assistance</li>
+                        <li>Bank account opening support</li>
+                        <li>Government fees included</li>
                     </ul>
-                    <a href="tel:+917889257045" class="btn-primary">Book Now</a>
+                    <a href="tel:+917889257045" class="btn-primary">Get Quote</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Sole Proprietorship</h3>
+                    <div class="price">₹4,999</div>
+                    <div class="price-detail">Basic Setup Package</div>
+                    <ul class="features-list">
+                        <li>Business name registration</li>
+                        <li>GST registration</li>
+                        <li>MSME/Udyam registration</li>
+                        <li>PAN card assistance</li>
+                        <li>Bank account opening support</li>
+                        <li>Business documentation</li>
+                        <li>Complete guidance</li>
+                    </ul>
+                    <a href="tel:+917889257045" class="btn-primary">Get Quote</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>One Person Company</h3>
+                    <div class="price">₹12,999</div>
+                    <div class="price-detail">Complete OPC Package</div>
+                    <ul class="features-list">
+                        <li>Name approval (RUN)</li>
+                        <li>DSC for 1 director</li>
+                        <li>DIN for director & nominee</li>
+                        <li>MOA & AOA drafting</li>
+                        <li>SPICe+ filing</li>
+                        <li>Certificate of Incorporation</li>
+                        <li>PAN & TAN</li>
+                        <li>First year compliance support</li>
+                    </ul>
+                    <a href="tel:+917889257045" class="btn-primary">Get Quote</a>
                 </div>
 
                 <div class="pricing-card">
                     <div class="popular-badge">Most Popular</div>
-                    <h3>ITR-2/3 (Individual)</h3>
-                    <div class="price">₹5,000</div>
-                    <div class="price-detail">Multiple income sources</div>
+                    <h3>Private Limited Company</h3>
+                    <div class="price">₹14,999</div>
+                    <div class="price-detail">Premium Package</div>
                     <ul class="features-list">
-                        <li>Capital gains reporting</li>
-                        <li>House property income</li>
-                        <li>Other sources income</li>
-                        <li>All deductions & exemptions</li>
-                        <li>Professional consultation</li>
-                        <li>Notice support (if any)</li>
+                        <li>Name approval (RUN)</li>
+                        <li>DSC for 2 directors</li>
+                        <li>DIN for directors</li>
+                        <li>MOA & AOA drafting</li>
+                        <li>SPICe+ & AGILE forms</li>
+                        <li>Certificate of Incorporation</li>
+                        <li>PAN, TAN & GST</li>
+                        <li>Bank account opening</li>
+                        <li>First year compliance included</li>
                     </ul>
-                    <a href="tel:+917889257045" class="btn-primary">Book Now</a>
+                    <a href="tel:+917889257045" class="btn-primary">Get Quote</a>
                 </div>
 
                 <div class="pricing-card">
-                    <h3>Business ITR-3</h3>
-                    <div class="price">₹8,000+</div>
-                    <div class="price-detail">For businesses & professionals</div>
+                    <h3>LLP Registration</h3>
+                    <div class="price">₹11,999</div>
+                    <div class="price-detail">Complete LLP Package</div>
                     <ul class="features-list">
-                        <li>Business income filing</li>
-                        <li>Presumptive/regular books</li>
-                        <li>Professional income</li>
-                        <li>Partnership income</li>
-                        <li>Complete tax planning</li>
-                        <li>Year-round support</li>
+                        <li>Name approval (RUN)</li>
+                        <li>DSC for 2 partners</li>
+                        <li>DPIN for partners</li>
+                        <li>LLP Agreement drafting</li>
+                        <li>FiLLiP form filing</li>
+                        <li>Certificate of Incorporation</li>
+                        <li>PAN & TAN</li>
+                        <li>Bank account assistance</li>
+                        <li>Compliance advisory</li>
                     </ul>
-                    <a href="tel:+917889257045" class="btn-primary">Book Now</a>
+                    <a href="tel:+917889257045" class="btn-primary">Get Quote</a>
                 </div>
 
                 <div class="pricing-card">
-                    <h3>Corporate ITR-6</h3>
-                    <div class="price">₹15,000+</div>
-                    <div class="price-detail">For companies</div>
+                    <h3>Section 8 Company (NGO)</h3>
+                    <div class="price">₹24,999</div>
+                    <div class="price-detail">Non-Profit Organization</div>
                     <ul class="features-list">
-                        <li>Company tax return</li>
-                        <li>MAT/AMT computation</li>
-                        <li>Transfer pricing docs</li>
-                        <li>Dividend reporting</li>
-                        <li>Compliance management</li>
-                        <li>Dedicated CA support</li>
+                        <li>Name approval</li>
+                        <li>Section 8 license application</li>
+                        <li>MOA & AOA for NGO</li>
+                        <li>DSC & DIN for directors</li>
+                        <li>Complete incorporation</li>
+                        <li>12A & 80G registration</li>
+                        <li>CSR compliance support</li>
+                        <li>Trust/Society alternative</li>
                     </ul>
-                    <a href="tel:+917889257045" class="btn-primary">Book Now</a>
+                    <a href="tel:+917889257045" class="btn-primary">Get Quote</a>
                 </div>
+            </div>
+
+            <div class="tips-box" style="margin-top: 40px;">
+                <h3>💡 What's Included in All Packages:</h3>
+                <ul style="margin-left: 20px; margin-top: 15px;">
+                    <li>✅ All government fees & stamp duty included</li>
+                    <li>✅ Expert CA consultation & guidance</li>
+                    <li>✅ Complete documentation support</li>
+                    <li>✅ Error-free filing guarantee</li>
+                    <li>✅ Dedicated relationship manager</li>
+                    <li>✅ Post-incorporation support</li>
+                    <li>✅ No hidden charges whatsoever</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <!-- Tax Savings -->
+    <!-- Comparison Table -->
     <section class="section-alt">
         <div class="container">
-            <h2>Tax Saving Opportunities in India</h2>
-            
-            <div class="tax-tips">
-                <h3>💰 Maximize Your Tax Savings with These Deductions:</h3>
-            </div>
+            <h2>Company Types Comparison</h2>
+            <p class="section-intro">Compare different business structures to make an informed decision</p>
 
             <div style="overflow-x: auto;">
                 <table class="comparison-table">
                     <thead>
                         <tr>
-                            <th>Section</th>
-                            <th>Deduction/Exemption</th>
-                            <th>Maximum Limit</th>
-                            <th>Eligibility</th>
+                            <th>Feature</th>
+                            <th>Private Limited</th>
+                            <th>LLP</th>
+                            <th>OPC</th>
+                            <th>Partnership</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>80C</strong></td>
-                            <td>PPF, ELSS, LIC, PF, Tax Saver FD</td>
-                            <td>₹1,50,000</td>
-                            <td>All taxpayers</td>
+                            <td><strong>Registration Cost</strong></td>
+                            <td>₹14,999</td>
+                            <td>₹11,999</td>
+                            <td>₹12,999</td>
+                            <td>₹7,999</td>
                         </tr>
                         <tr>
-                            <td><strong>80CCD(1B)</strong></td>
-                            <td>Additional NPS contribution</td>
-                            <td>₹50,000</td>
-                            <td>All taxpayers</td>
+                            <td><strong>Minimum Members</strong></td>
+                            <td>2 Directors, 2 Shareholders</td>
+                            <td>2 Partners</td>
+                            <td>1 Director</td>
+                            <td>2 Partners</td>
                         </tr>
                         <tr>
-                            <td><strong>80D</strong></td>
-                            <td>Health Insurance Premium</td>
-                            <td>₹25,000 (₹50,000 for seniors)</td>
-                            <td>All taxpayers</td>
+                            <td><strong>Liability Protection</strong></td>
+                            <td>✅ Limited</td>
+                            <td>✅ Limited</td>
+                            <td>✅ Limited</td>
+                            <td>❌ Unlimited</td>
                         </tr>
                         <tr>
-                            <td><strong>80E</strong></td>
-                            <td>Education Loan Interest</td>
-                            <td>No limit</td>
-                            <td>Individual taxpayers</td>
+                            <td><strong>Compliance Level</strong></td>
+                            <td>High</td>
+                            <td>Low</td>
+                            <td>Medium</td>
+                            <td>Very Low</td>
                         </tr>
                         <tr>
-                            <td><strong>80G</strong></td>
-                            <td>Charitable Donations</td>
-                            <td>50%-100% of donation</td>
-                            <td>All taxpayers</td>
+                            <td><strong>Annual ROC Filing</strong></td>
+                            <td>Mandatory</td>
+                            <td>Mandatory</td>
+                            <td>Mandatory</td>
+                            <td>Not Required</td>
                         </tr>
                         <tr>
-                            <td><strong>24(b)</strong></td>
-                            <td>Home Loan Interest</td>
-                            <td>₹2,00,000</td>
-                            <td>Property owners</td>
+                            <td><strong>Audit Required</strong></td>
+                            <td>Always Mandatory</td>
+                            <td>If turnover > ₹40L</td>
+                            <td>If turnover > ₹2Cr</td>
+                            <td>Not Mandatory</td>
                         </tr>
                         <tr>
-                            <td><strong>HRA</strong></td>
-                            <td>House Rent Allowance</td>
-                            <td>Varies by salary & rent</td>
-                            <td>Salaried employees</td>
+                            <td><strong>Funding & Investment</strong></td>
+                            <td>✅ Easy to Raise</td>
+                            <td>❌ Difficult</td>
+                            <td>⚠️ Limited Options</td>
+                            <td>❌ Very Difficult</td>
                         </tr>
                         <tr>
-                            <td><strong>80TTA/TTB</strong></td>
-                            <td>Interest on Savings Account</td>
-                            <td>₹10,000 (₹50,000 for seniors)</td>
-                            <td>All taxpayers</td>
+                            <td><strong>Perpetual Succession</strong></td>
+                            <td>✅ Yes</td>
+                            <td>✅ Yes</td>
+                            <td>✅ Yes</td>
+                            <td>❌ No</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Best For</strong></td>
+                            <td>Startups, Growth Businesses</td>
+                            <td>Professionals, Consultants</td>
+                            <td>Solo Entrepreneurs</td>
+                            <td>Small Businesses</td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
-
-            <div class="tax-tips" style="margin-top: 40px;">
-                <h3>📌 Pro Tax Saving Tips:</h3>
-                <ul style="margin-left: 20px; margin-top: 15px;">
-                    <li><strong>Plan Early:</strong> Start tax planning at the beginning of the financial year, not at the end</li>
-                    <li><strong>Choose Right Regime:</strong> Compare old vs new tax regime to see which benefits you more</li>
-                    <li><strong>Invest Systematically:</strong> Spread your 80C investments throughout the year via SIPs</li>
-                    <li><strong>Don't Miss Deadlines:</strong> File your ITR before July 31st to avoid penalties and claim refunds faster</li>
-                    <li><strong>Keep Records:</strong> Maintain all investment proofs, Form 16, and bank statements properly</li>
-                    <li><strong>Consider NPS:</strong> Extra ₹50,000 deduction over and above 80C limit</li>
-                </ul>
             </div>
         </div>
     </section>
@@ -1265,200 +1341,221 @@
     <!-- Process -->
     <section id="process">
         <div class="container">
-            <h2>Our ITR Filing Process</h2>
-            <p class="section-intro">Simple, transparent, and hassle-free tax filing in 5 easy steps</p>
+            <h2>Company Registration Process</h2>
+            <p class="section-intro">Simple 6-step process to get your company registered in 7-10 days</p>
 
             <div class="process-grid">
                 <div class="step-card">
                     <div class="step-number">1</div>
-                    <h3>Share Documents</h3>
-                    <p>Share Form 16, investment proofs, bank statements via email/WhatsApp</p>
+                    <h3>Consultation & Planning</h3>
+                    <p>Discuss business goals, choose entity type, plan capital structure & shareholding pattern</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">2</div>
-                    <h3>Data Review</h3>
-                    <p>Our CA reviews your documents and identifies tax-saving opportunities</p>
+                    <h3>Name Approval</h3>
+                    <p>We check name availability, file RUN application, get approval from MCA in 1-2 days</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">3</div>
-                    <h3>ITR Preparation</h3>
-                    <p>We prepare your ITR with maximum deductions and complete accuracy</p>
+                    <h3>DSC & DIN</h3>
+                    <p>Obtain Digital Signature Certificate and Director Identification Number for all directors</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">4</div>
-                    <h3>Your Approval</h3>
-                    <p>Review the prepared ITR and approve for filing</p>
+                    <h3>Document Preparation</h3>
+                    <p>Draft MOA, AOA, incorporation forms (SPICe+), prepare all supporting documents</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">5</div>
-                    <h3>File & Track</h3>
-                    <p>We file your ITR, complete e-verification, and track your refund</p>
+                    <h3>ROC Filing</h3>
+                    <p>File incorporation application with ROC/MCA, pay stamp duty & registration fees</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">6</div>
+                    <h3>Incorporation & PAN/TAN</h3>
+                    <p>Receive Certificate of Incorporation, PAN, TAN within 5-7 days. Company ready to operate!</p>
+                </div>
+            </div>
+
+            <div class="tips-box" style="margin-top: 50px;">
+                <h3>📋 Documents Required for Company Registration:</h3>
+                <ul style="margin-left: 20px; margin-top: 15px;">
+                    <li><strong>For Directors/Partners:</strong> PAN card, Aadhaar card, passport size photos, address proof, mobile number, email ID</li>
+                    <li><strong>For Registered Office:</strong> Rent agreement (min 11 months) or property ownership documents, utility bills (electricity/water), NOC from property owner</li>
+                    <li><strong>Additional Documents:</strong> Bank statement, passport (for foreign nationals), DIN of directors (if already have)</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>We provide a complete checklist and help prepare all documents.</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="section-alt">
+        <div class="container">
+            <h2>Benefits of Company Registration</h2>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🛡️</div>
+                    <h3>Limited Liability Protection</h3>
+                    <p>Your personal assets are protected. Company debts and liabilities don't affect your personal wealth.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚖️</div>
+                    <h3>Separate Legal Entity</h3>
+                    <p>Company is a separate legal person. Can own property, enter contracts, and sue/be sued independently.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h3>Enhanced Credibility</h3>
+                    <p>Registered companies have better credibility with customers, vendors, banks, and investors.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💰</div>
+                    <h3>Easy Funding Options</h3>
+                    <p>Attract investors, raise venture capital, get business loans easily with registered company status.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📈</div>
+                    <h3>Perpetual Succession</h3>
+                    <p>Company continues to exist even if directors/shareholders change. Business never dies.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💳</div>
+                    <h3>Tax Benefits</h3>
+                    <p>Claim business expenses, get lower tax rates, access government schemes and subsidies.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🌍</div>
+                    <h3>Brand Protection</h3>
+                    <p>Registered company name is protected. No one else can use your company name in your region.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎯</div>
+                    <h3>Government Benefits</h3>
+                    <p>Access to government tenders, subsidies, grants, and startup schemes like Startup India.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Required Documents -->
-    <section class="section-alt">
+    <!-- Post-Incorporation Services -->
+    <section>
         <div class="container">
-            <h2>Required Documents for ITR Filing</h2>
-            
-            <h3 style="text-align: center;">For Salaried Individuals:</h3>
+            <h2>Post-Incorporation Services</h2>
+            <p class="section-intro">We don't just register your company - we help you maintain it properly</p>
+
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Income Documents</h3>
-                    <p>✓ Form 16 from employer<br>
-                    ✓ Salary slips (if Form 16 not available)<br>
-                    ✓ Bank statements (salary account)<br>
-                    ✓ Interest certificates from banks</p>
+                    <h3>Bank Account Opening</h3>
+                    <p>Complete assistance in opening current account with major banks. We prepare all documents and coordinate with bank officials.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Investment Proofs</h3>
-                    <p>✓ PPF/EPF statements<br>
-                    ✓ LIC premium receipts<br>
-                    ✓ ELSS investment proof<br>
-                    ✓ NSC/Tax Saver FD certificates<br>
-                    ✓ Home loan interest certificate</p>
+                    <h3>GST Registration</h3>
+                    <p>Help with GST registration, invoicing setup, and initial GST compliance training for your business.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Other Documents</h3>
-                    <p>✓ Health insurance premium receipts<br>
-                    ✓ HRA rent receipts & landlord PAN<br>
-                    ✓ Capital gains statements<br>
-                    ✓ Previous year's ITR (if available)<br>
-                    ✓ PAN card & Aadhaar</p>
-                </div>
-            </div>
-
-            <h3 style="margin-top: 50px; text-align: center;">For Business/Professionals:</h3>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Financial Statements</h3>
-                    <p>✓ Profit & Loss Account<br>
-                    ✓ Balance Sheet<br>
-                    ✓ Books of Accounts (if applicable)<br>
-                    ✓ Trial Balance</p>
+                    <h3>Annual Compliance</h3>
+                    <p>Reminder services for due dates, annual ROC filings, income tax returns, board meetings, and statutory registers.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Tax Documents</h3>
-                    <p>✓ TDS certificates (26AS)<br>
-                    ✓ GST returns<br>
-                    ✓ Advance tax payment challans<br>
-                    ✓ Tax audit report (if applicable)</p>
+                    <h3>Director Addition/Removal</h3>
+                    <p>Assistance with appointment or resignation of directors, DIN application, and necessary ROC filings.</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Business Records</h3>
-                    <p>✓ Bank statements (all accounts)<br>
-                    ✓ Purchase/sales invoices<br>
-                    ✓ Expense bills<br>
-                    ✓ Asset purchase records</p>
+                    <h3>Share Transfer</h3>
+                    <p>Complete support for share transfer, shareholder changes, cap table maintenance, and SH-4 filing.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Registered Office Change</h3>
+                    <p>Help with change of registered office address, filing with ROC, and updating all statutory registrations.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- FAQ -->
-    <section id="faq">
+    <section id="faq" class="section-alt">
         <div class="container">
             <h2>Frequently Asked Questions</h2>
 
             <div class="faq-item">
-                <div class="faq-question">What is the cost of ITR filing services?</div>
-                <div class="faq-answer">Individual ITR filing starts at ₹2,500 for simple ITR-1 returns. For ITR-2/3 with multiple income sources, the fee is ₹5,000-8,000. Business returns (ITR-3) start at ₹8,000, and corporate returns (ITR-6) start at ₹15,000. The exact fee depends on the complexity of your case.</div>
+                <div class="faq-question">How much does it cost to register a Private Limited Company in India?</div>
+                <div class="faq-answer">Private Limited Company registration costs ₹14,999 (all-inclusive with government fees, stamp duty, and professional charges). This includes name approval, MOA/AOA drafting, DSC for 2 directors, DIN, SPICe+ filing, incorporation certificate, PAN, TAN, and first year compliance support. There are absolutely no hidden charges.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What is the deadline for filing income tax returns?</div>
-                <div class="faq-answer">The deadline for filing ITR for individuals is typically July 31st of the assessment year. For businesses requiring audit, the deadline is usually September 30th. We recommend filing early to avoid last-minute rush and claim refunds faster. Belated returns can be filed with late fees until December 31st.</div>
+                <div class="faq-question">How long does company registration take?</div>
+                <div class="faq-answer">Company registration typically takes 7-10 working days from document submission. Name approval takes 1-2 days via RUN form, DSC issuance takes 2-3 days, and incorporation certificate is issued within 5-7 days after SPICe+ filing. We expedite the entire process to ensure the quickest possible registration.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What documents do I need for ITR filing?</div>
-                <div class="faq-answer">For salaried individuals, you need Form 16, bank statements, investment proofs (80C, 80D), PAN card, and Aadhaar. For business income, you need books of accounts, P&L statement, balance sheet, GST returns, TDS certificates, and bank statements. We provide a detailed checklist based on your income sources.</div>
+                <div class="faq-question">What documents are required for company registration?</div>
+                <div class="faq-answer">Required documents include: PAN card, Aadhaar card, and passport size photos of all directors/partners, address proof (voter ID, passport, driving license), proof of registered office (rental agreement min 11 months or ownership documents), utility bills (electricity/water) not older than 2 months, NOC from property owner, and bank statement of directors. We provide a complete checklist and help prepare all documentation.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">How can I save tax legally in India?</div>
-                <div class="faq-answer">Save tax through 80C investments (₹1.5 lakh), health insurance 80D, NPS 80CCD(1B) (₹50,000 extra), home loan interest (₹2 lakh), HRA exemptions, education loan interest, and charitable donations under 80G. We help you choose between old and new tax regimes to minimize your tax liability legally.</div>
+                <div class="faq-question">What is the difference between Private Limited and LLP?</div>
+                <div class="faq-answer">Private Limited Company has shareholders and directors with limited liability, requires mandatory audit annually, has higher compliance requirements, and is better for raising funding. LLP (Limited Liability Partnership) has partners with limited liability, requires audit only if turnover exceeds ₹40 lakhs, has lower compliance requirements, and is more suitable for professional services. Private Limited is best for startups planning to raise investment, while LLP is ideal for consultants, CAs, lawyers, and small service businesses.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What if I missed the ITR filing deadline?</div>
-                <div class="faq-answer">You can still file a belated return before December 31st of the assessment year with a late fee of ₹5,000 (₹1,000 if income is below ₹5 lakhs). We help you file belated returns and minimize penalties. However, you won't be able to carry forward certain losses.</div>
+                <div class="faq-question">Can foreigners register a company in India?</div>
+                <div class="faq-answer">Yes, foreigners can register companies in India. However, at least one director must be an Indian resident. Foreign nationals need additional documents including passport, visa, proof of foreign address, and notarized/apostilled documents. We handle all formalities for foreign company registration including FEMA compliance, RBI approvals, and FDI norms. Foreign investment up to 100% is allowed in most sectors (except a few restricted areas).</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">How long does the ITR filing process take?</div>
-                <div class="faq-answer">Once we receive all your documents, we typically complete and file your ITR within 24-48 hours for simple returns. For complex cases with multiple income sources or business returns, it may take 3-5 working days. We keep you updated throughout the process and ensure timely filing.</div>
+                <div class="faq-question">What is the minimum capital requirement for Private Limited Company?</div>
+                <div class="faq-answer">There is NO minimum capital requirement for Private Limited Company registration in India. You can start with even ₹1,000 as authorized capital. However, we typically recommend keeping authorized capital between ₹1-5 lakhs depending on your business plans. The stamp duty is calculated on authorized capital (0.3-0.7% varying by state), so keeping it reasonable helps reduce initial costs.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Do you handle income tax notices and assessments?</div>
-                <div class="faq-answer">Yes, we provide complete support for income tax notices including scrutiny notices, demand notices, and assessment proceedings. We analyze the notice, prepare appropriate responses, gather supporting documents, and represent you before tax authorities if required.</div>
+                <div class="faq-question">Do I need a physical office to register a company?</div>
+                <div class="faq-answer">Yes, you need a registered office address in India to register a company. It can be your home, rented office, or coworking space. You need proof of address (rental agreement min 11 months or ownership documents), utility bill, and NOC from the property owner. The registered office address will appear on the incorporation certificate. You can also use our virtual office services if needed.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What is the difference between old and new tax regime?</div>
-                <div class="faq-answer">The old tax regime allows various deductions and exemptions (80C, 80D, HRA, etc.) with higher tax rates. The new regime offers lower tax rates but without most deductions. We analyze your income and investments to recommend which regime saves you more tax based on your specific situation.</div>
+                <div class="faq-question">What is DSC and DIN? Are they mandatory?</div>
+                <div class="faq-answer">DSC (Digital Signature Certificate) is an electronic signature used to file documents with MCA. DIN (Director Identification Number) is a unique identification number for directors. Both are mandatory for company registration. DSC costs are included in our package. DIN is issued free by MCA. DSC is valid for 2 years and needs renewal. We handle the entire DSC and DIN application process.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Can I file ITR without Form 16?</div>
-                <div class="faq-answer">Yes, you can file ITR without Form 16 using your salary slips, bank statements showing salary credits, and Form 26AS which shows TDS deducted. We help you calculate your taxable income accurately even without Form 16.</div>
+                <div class="faq-question">What are the annual compliance requirements after incorporation?</div>
+                <div class="faq-answer">After incorporation, you need to: (1) File annual ROC returns (AOC-4 and MGT-7), (2) Conduct minimum 4 board meetings per year, (3) Hold Annual General Meeting (AGM), (4) File income tax returns, (5) Maintain statutory registers and minutes books, (6) Get accounts audited annually. We provide first year compliance support free and can handle all ongoing compliances at reasonable annual charges.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">How do I track my income tax refund?</div>
-                <div class="faq-answer">After filing your ITR, you can track refund status on the income tax e-filing portal or NSDL website using your PAN and acknowledgment number. Refunds are typically processed within 2-3 months after successful e-verification. We provide complete assistance in tracking and following up on your refund.</div>
+                <div class="faq-question">Can I convert my proprietorship/partnership to Private Limited later?</div>
+                <div class="faq-answer">Yes, you can convert proprietorship or partnership firm to Private Limited Company later. The process involves: (1) Registering new Private Limited Company, (2) Transferring all assets and liabilities, (3) Obtaining NOCs from creditors, (4) Closing old entity, and (5) Updating all registrations (GST, bank account, etc.). We handle the entire conversion process including valuation, transfer documentation, and compliance filings.</div>
             </div>
         </div>
     </section>
 
-    <!-- Free Calculators -->
-<section style="background: #F9F7F4; padding: 50px 20px; margin: 60px 0;">
-    <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
-        <h2 style="color: #0A2647; font-size: 2em; margin-bottom: 15px;">🧮 Free Tax Calculators</h2>
-        <p style="color: #666; margin-bottom: 30px; font-size: 1.1em;">Calculate your taxes instantly with our free tools</p>
-        
-        <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
-            <a href="/calculator/income-tax-calculator/" 
-               style="background: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; 
-                      color: #0A2647; font-weight: 600; box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
-                      transition: all 0.3s; display: inline-block;">
-                📊 Income Tax Calculator
-            </a>
-            <a href="/calculator/advance-tax-calculator/" 
-               style="background: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; 
-                      color: #0A2647; font-weight: 600; box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
-                      transition: all 0.3s; display: inline-block;">
-                💰 Advance Tax Calculator
-            </a>
-            <a href="/calculator/HRA/" 
-               style="background: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; 
-                      color: #0A2647; font-weight: 600; box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
-                      transition: all 0.3s; display: inline-block;">
-                🏠 HRA Calculator
-            </a>
-        </div>
-    </div>
-</section>
-
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to File Your Income Tax Return?</h2>
-            <p style="font-size: 1.2em; margin-bottom: 30px;">Let our expert CAs handle your tax filing while you focus on what matters. Maximum savings, zero hassle!</p>
+            <h2>Ready to Register Your Company?</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Let our expert CAs handle your company registration while you focus on building your business!</p>
             <div class="hero-buttons">
                 <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call Now: +91 78892 57045</a>
-                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20tax%20filing" class="btn-secondary">💬 WhatsApp Us</a>
+                <a href="https://wa.me/917889257045?text=I%20want%20to%20register%20a%20company" class="btn-secondary">💬 WhatsApp Us</a>
             </div>
             <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
                 <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
@@ -1476,10 +1573,10 @@
                 <div class="footer-section">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="/">Home</a></li>
+                        <li><a href="https://sidhiandassociates.com/">Home</a></li>
                         <li><a href="/services/">All Services</a></li>
                         <li><a href="/why-us/">Why Choose Us</a></li>
-                        <li><a href="/#testimonials">Testimonials</a></li>
+                        <li><a href="/about/">About Us</a></li>
                         <li><a href="/#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -1496,15 +1593,13 @@
                 </div>
 
                 <div class="footer-section">
-                    <h3>Tax Services</h3>
+                    <h3>Registration Services</h3>
                     <ul>
-                        <li><a href="/services/income-tax-return-ITR/">ITR-1 Filing</a></li>
-                        <li><a href="/services/income-tax-return-ITR/">ITR-2/3 Filing</a></li>
-                        <li><a href="/services/business-tax-services/">Business Returns</a></li>
-                        <li><a href="/services/tds-return-filing/">TDS Services</a></li>
-                        <li><a href="#pricing">Tax Planning</a></li>
-                    
-                        <li><a href="/services/income-tax-notice-representation/">Income Tax Notice Representation</a></li>
+                        <li><a href="/services/private-limited-company/">Private Limited Company</a></li>
+                        <li><a href="/services/llp-incorporation/">LLP Registration</a></li>
+                        <li><a href="/services/one-person-company/">One Person Company</a></li>
+                        <li><a href="/services/partnership-registration/">Partnership Firm</a></li>
+                        <li><a href="#pricing">View Pricing</a></li>
                     </ul>
                 </div>
 
@@ -1519,14 +1614,14 @@
 
             <div class="footer-bottom">
                 <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
-                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Professional Tax Services across India</p>
+                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Company Registration Experts across India</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating Buttons -->
     <div class="floating-buttons">
-        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20tax%20filing" 
+        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20want%20to%20register%20a%20company" 
            target="_blank" 
            class="float-btn whatsapp-btn" 
            aria-label="Chat on WhatsApp">
@@ -1575,13 +1670,16 @@
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
+                const targetId = this.getAttribute('href');
+                if (targetId.length > 1) {
+                    const target = document.querySelector(targetId);
+                    if (target) {
+                        e.preventDefault();
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
                 }
             });
         });
@@ -1621,11 +1719,9 @@
             });
 
             document.querySelectorAll('.nav-links a').forEach(link => {
-                const href = link.getAttribute('href').substring(1);
-                if (href === current) {
-                    link.classList.add('active');
-                } else if (href) {
-                    link.classList.remove('active');
+                const href = link.getAttribute('href');
+                if (href && href.startsWith('#')) {
+                    link.classList.toggle('active', href.substring(1) === current);
                 }
             });
         });

@@ -27,55 +27,73 @@
 </script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="icon" href="/sidhi.png" type="image/png" />
-
+    
     <!-- Primary Meta Tags -->
-    <title>Bookkeeping & Accounting Services India | Tally, QuickBooks from ₹2,000/month - Sidhi & Associates</title>
-    <meta name="title" content="Bookkeeping & Accounting Services India | Tally, QuickBooks from ₹2,000/month - Sidhi & Associates">
-    <meta name="description" content="Professional Bookkeeping & Virtual CFO services from ₹2,000/month. Tally, QuickBooks, Cloud Accounting, Financial Reporting, Bank Reconciliation. Real-time financial insights, 5000+ businesses served. Call +91 78892 57045">
-    <meta name="keywords" content="bookkeeping services India, accounting services, Tally bookkeeping, QuickBooks accounting, cloud accounting, financial reporting, bank reconciliation, accounts payable receivable, payroll accounting, monthly bookkeeping, CA bookkeeping services, outsourced accounting, small business accounting, virtual CFO services">
+    <title>Tax Planning & Filing Services India | ITR Filing from ₹2,500 - Sidhi & Associates</title>
+    <meta name="title" content="Tax Planning & Filing Services India | ITR Filing from ₹2,500 - Sidhi & Associates">
+    <meta name="description" content="Expert Tax Planning & ITR Filing Services by Qualified CAs. Individual & Business Tax Returns, Tax Saving Strategies, TDS Compliance. 10,000+ ITRs Filed. Save ₹50Cr+ Tax Legally. Call +91 78892 57045">
+    <meta name="keywords" content="tax planning services India, income tax filing, ITR filing online, tax return filing, CA tax consultant, tax saving strategies, advance tax, TDS compliance, Form 16, income tax planning, ITR 1 2 3 4 filing, 80C deductions, Panchkula CA, tax filing near me">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="language" content="English">
     <meta name="author" content="Sidhi & Associates">
     <meta name="geo.region" content="IN">
     <meta name="geo.placename" content="India">
-
+    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sidhiandassociates.com/services/bookkeeping-and-accounting/">
-    <meta property="og:title" content="Bookkeeping & Accounting Services India - Expert Financial Management">
-    <meta property="og:description" content="Professional Bookkeeping & Virtual CFO services from ₹2,000/month. Tally, QuickBooks, real-time reporting. 5000+ businesses managed.">
+    <meta property="og:url" content="https://sidhiandassociates.com/services/tax-planning-filing">
+    <meta property="og:title" content="Tax Planning & Filing Services India - Expert ITR Filing from ₹2,500">
+    <meta property="og:description" content="Professional Tax Planning & ITR Filing by Qualified CAs. 10,000+ ITRs Filed. ₹50Cr+ Tax Saved. 100% Accuracy Guaranteed. Call +91 78892 57045">
     <meta property="og:site_name" content="Sidhi & Associates">
     <meta property="og:locale" content="en_IN">
-
+    
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://sidhiandassociates.com/services/bookkeeping-and-accounting/">
-    <meta property="twitter:title" content="Bookkeeping & Accounting Services India - Sidhi & Associates">
-    <meta property="twitter:description" content="Expert Bookkeeping & Virtual CFO services from ₹2,000/month. Tally, QuickBooks, Cloud Accounting, real-time financial insights.">
-
+    <meta property="twitter:url" content="https://sidhiandassociates.com/services/tax-planning-filing">
+    <meta property="twitter:title" content="Tax Planning & Filing Services India - Sidhi & Associates">
+    <meta property="twitter:description" content="Expert Tax Planning & ITR Filing Services. Save tax legally with qualified CAs. Starting ₹2,500.">
+    
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://sidhiandassociates.com/services/bookkeeping-and-accounting/">
+    <link rel="canonical" href="https://sidhiandassociates.com/services/tax-planning-filing/">
 
     <!-- AIO / AI-answer-engine entity meta -->
-    <meta name="ai-content-declaration" content="Bookkeeping & Accounting services by Sidhi & Associates, starting from Rs2,000/month, covering daily transaction recording, bank reconciliation, financial reporting, payroll and virtual CFO support using Tally, QuickBooks, Zoho Books and other platforms. The same firm also offers Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
+    <meta name="ai-content-declaration" content="Tax Planning & Income Tax Return (ITR) filing services by Sidhi & Associates. Covers ITR-1 through ITR-7, advance tax, TDS compliance, and legal tax-saving strategies (80C, 80D, HRA, home loan interest). Individual ITR-1 filing starts from Rs2,500, ITR-2/3 from Rs5,000, business ITR-3 from Rs8,000, and corporate ITR-6 from Rs15,000. Provided by an Accountants firm also offering Income Tax Filing & Planning from Rs1,000, GST Compliance & Advisory from Rs1,000/month, Bookkeeping & Virtual CFO from Rs2,000/month, and TDS Filing & Returns from Rs2,000/quarter.">
     <meta name="ai-entity-type" content="Service,FAQPage">
 
-    <!-- Enhanced Schema Markup -->
+    <!-- WebPage Schema with Speakable -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://sidhiandassociates.com/services/tax-planning-filing/#webpage",
+      "url": "https://sidhiandassociates.com/services/tax-planning-filing/",
+      "name": "Tax Planning & Filing Services India | ITR Filing from ₹2,500",
+      "description": "Expert Tax Planning & ITR Filing Services by Qualified CAs. Individual & Business Tax Returns, Tax Saving Strategies, TDS Compliance.",
+      "inLanguage": "en-IN",
+      "dateModified": "2026-07-17",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": ["#quick-answer"]
+      }
+    }
+    </script>
+    
+    <!-- Enhanced Schema Markup for SEO -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Service",
-      "serviceType": "Bookkeeping and Accounting Services",
-      "name": "Bookkeeping & Accounting Services",
-      "description": "Comprehensive bookkeeping, accounting and virtual CFO services including Tally, QuickBooks, financial reporting, bank reconciliation, accounts management, and real-time financial insights for businesses.",
+      "serviceType": "Tax Planning and Income Tax Return Filing Services",
+      "name": "Tax Planning & Filing Services",
+      "description": "Comprehensive tax planning and income tax return filing services including ITR filing, advance tax calculation, TDS compliance, and tax saving strategies by qualified Chartered Accountants.",
       "provider": {
         "@type": "ProfessionalService",
         "name": "Sidhi & Associates",
         "telephone": "+917889257045",
         "email": "siddhiandassociatess@gmail.com",
-        "url": "https://sidhiandassociates.com",
+        "url": "https://sidhiandassociates.com/",
         "priceRange": "₹₹",
         "address": {
           "@type": "PostalAddress",
@@ -93,33 +111,15 @@
       },
       "offers": {
         "@type": "AggregateOffer",
-        "lowPrice": "2000",
-        "highPrice": "50000",
+        "lowPrice": "2500",
+        "highPrice": "25000",
         "priceCurrency": "INR",
         "offerCount": "4"
       }
     }
     </script>
 
-    <!-- WebPage Schema with Speakable (AEO/GEO) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "@id": "https://sidhiandassociates.com/services/bookkeeping-and-accounting/#webpage",
-      "url": "https://sidhiandassociates.com/services/bookkeeping-and-accounting/",
-      "name": "Bookkeeping & Accounting Services India",
-      "description": "Professional bookkeeping and accounting services with Tally, QuickBooks and cloud accounting, starting from ₹2,000/month.",
-      "inLanguage": "en-IN",
-      "dateModified": "2026-07-17",
-      "speakable": {
-        "@type": "SpeakableSpecification",
-        "cssSelector": ["#quick-answer"]
-      }
-    }
-    </script>
-
-    <!-- FAQ Schema -->
+    <!-- FAQ Schema for Rich Snippets -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -127,42 +127,42 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is the cost of bookkeeping services?",
+          "name": "What is the cost of ITR filing services?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Bookkeeping and virtual CFO services start from ₹2,000/month for small businesses. Standard packages range from ₹10,000-20,000/month. Premium packages with advanced reporting cost ₹25,000-50,000/month depending on transaction volume and complexity."
+            "text": "Individual ITR filing starts at ₹2,500. ITR-2/3 with multiple income sources costs ₹5,000-8,000. Business returns (ITR-3) start at ₹8,000, and corporate returns (ITR-6) start at ₹15,000."
           }
         },
         {
           "@type": "Question",
-          "name": "What is the difference between bookkeeping and accounting?",
+          "name": "What documents are required for ITR filing?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Bookkeeping is the day-to-day recording of financial transactions. Accounting involves interpreting, analyzing, and reporting financial data. We provide both services - accurate bookkeeping combined with strategic accounting insights."
+            "text": "For salaried individuals: Form 16, bank statements, investment proofs (80C, 80D), PAN card, and Aadhaar. For businesses: Books of accounts, P&L, Balance Sheet, TDS certificates, GST returns."
           }
         },
         {
           "@type": "Question",
-          "name": "Which accounting software do you use?",
+          "name": "When is the deadline for filing income tax returns?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We work with Tally Prime, QuickBooks Online, QuickBooks Desktop, Zoho Books, and other popular accounting software. We can also work with your existing software or recommend the best solution for your business."
+            "text": "The deadline for filing ITR is July 31st for individuals and September 30th for businesses requiring audit. File early to claim refunds faster."
           }
         },
         {
           "@type": "Question",
-          "name": "How often will I receive financial reports?",
+          "name": "How can I save tax legally in India?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "You receive monthly financial statements (P&L, Balance Sheet, Cash Flow) by the 10th of each month. Real-time dashboard access is available 24/7. Custom reports can be generated as needed."
+            "text": "Save tax through 80C investments (₹1.5 lakh), health insurance 80D, NPS 80CCD(1B) (₹50,000), home loan interest, education loan interest, and choosing the right tax regime."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you provide cloud-based accounting services?",
+          "name": "How long does ITR filing take?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we provide cloud-based accounting services with secure access from anywhere. Your financial data is encrypted, backed up daily, and accessible in real-time through secure portals."
+            "text": "We complete ITR filing within 24-48 hours of receiving all documents. Complex cases may take 3-5 working days."
           }
         }
       ]
@@ -179,7 +179,7 @@
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://sidhiandassociates.com"
+          "item": "https://sidhiandassociates.com/"
         },
         {
           "@type": "ListItem",
@@ -190,8 +190,8 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Bookkeeping & Accounting",
-          "item": "https://sidhiandassociates.com/services/bookkeeping-and-accounting/"
+          "name": "Tax Planning & Filing",
+          "item": "https://sidhiandassociates.com/services/tax-planning-filing"
         }
       ]
     }
@@ -295,7 +295,11 @@
             transition: all 0.3s;
             white-space: nowrap;
         }
-        .cta-btn:hover { background: var(--primary-blue); transform: translateY(-2px); }
+
+        .cta-btn:hover {
+            background: var(--primary-blue);
+            transform: translateY(-2px);
+        }
 
         /* Hamburger (mobile) */
         .hamburger {
@@ -695,8 +699,8 @@
             margin: 0 0 10px 0;
         }
 
-        /* Tips Box */
-        .tips-box {
+        /* Tax Tips Box */
+        .tax-tips {
             background: var(--light-gold);
             border-left: 4px solid var(--primary-gold);
             padding: 25px;
@@ -704,17 +708,44 @@
             border-radius: 8px;
         }
 
-        .tips-box h3 {
+        .tax-tips h3 {
             color: var(--primary-blue);
             margin: 0 0 15px 0;
         }
 
-        .tips-box ul {
+        .tax-tips ul {
             margin-left: 20px;
         }
 
-        .tips-box li {
+        .tax-tips li {
             margin-bottom: 10px;
+        }
+
+        /* Table */
+        .comparison-table {
+            width: 100%;
+            margin-top: 30px;
+            border-collapse: collapse;
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .comparison-table thead {
+            background: var(--primary-blue);
+            color: white;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid var(--light-gold);
+        }
+
+        .comparison-table tbody tr:hover {
+            background: var(--light-bg);
         }
 
         /* FAQ */
@@ -756,12 +787,6 @@
 
         .cta-section h2::after {
             background: var(--white);
-        }
-
-        .price-chip {
-            background: rgba(255,255,255,.18);
-            padding: 8px 16px;
-            border-radius: 20px;
         }
 
         /* Floating Buttons */
@@ -860,6 +885,10 @@
                 font-size: 2em;
             }
 
+            .logo-text h1 {
+                font-size: 1.4em;
+            }
+
             .hero-stats {
                 gap: 30px;
             }
@@ -868,6 +897,12 @@
             .pricing-grid,
             .process-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .comparison-table {
+                font-size: 0.85em;
+                display: block;
+                overflow-x: auto;
             }
         }
     </style>
@@ -892,24 +927,24 @@
                 </div>
             </div>
             <nav class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation" role="navigation">
-                <a href="/services/">🔧 Services</a>
-                <a href="/why-us/">⭐ Why Us</a>
-                <a href="/faq/">❓ FAQs</a>
-                <a href="/blog/">📝 Blog</a>
-                <a href="/calculator/">🧮 Calculators</a>
-                <a href="/about/">ℹ️ About</a>
+                <a href="/">🏠 Home</a>
+                <a href="#services">🔧 Services</a>
+                <a href="#pricing" class="active">💰 Pricing</a>
+                <a href="#process">📋 Process</a>
+                <a href="#faq">❓ FAQ</a>
                 <a href="tel:+917889257045" class="drawer-cta">📞 Call +91 78892 57045</a>
-                <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20bookkeeping%20services" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
+                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20tax%20filing" class="drawer-cta" target="_blank" rel="noopener noreferrer">💬 WhatsApp Us</a>
             </nav>
         </div>
     </header>
 
+    <!-- Navigation -->
     <nav class="desktop-nav" aria-label="Main navigation">
         <div class="container">
             <div class="nav-links">
-                <a href="/">← Home</a>
+                <a href="/">Home</a>
                 <a href="#services">Services</a>
-                <a href="#pricing">Pricing</a>
+                <a href="#pricing" class="active">Pricing</a>
                 <a href="#process">Process</a>
                 <a href="#faq">FAQ</a>
             </div>
@@ -919,24 +954,24 @@
     <!-- Breadcrumb -->
     <div class="breadcrumb">
         <div class="container">
-            <a href="/">Home</a> / <a href="/#services">Services</a> / <span>Bookkeeping & Accounting</span>
+            <a href="/">Home</a> / <a href="/services/">Services</a> / <span>Tax Planning & Filing</span>
         </div>
     </div>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h2>Bookkeeping & Accounting Services India</h2>
-            <p id="quick-answer">Professional Bookkeeping & Virtual CFO services with Tally, QuickBooks & Cloud Accounting — real-time financial insights starting from ₹2,000/month</p>
-
+            <h2>Tax Planning & Filing Services India</h2>
+            <p>Save Tax Legally & File Returns with Confidence - Expert ITR Filing by Qualified Chartered Accountants Starting ₹2,500</p>
+            
             <div class="hero-stats">
                 <div class="stat-box">
-                    <span class="stat-number">5000+</span>
-                    <span class="stat-text">Businesses Managed</span>
+                    <span class="stat-number">10,000+</span>
+                    <span class="stat-text">ITRs Filed Successfully</span>
                 </div>
                 <div class="stat-box">
-                    <span class="stat-number">10+ Years</span>
-                    <span class="stat-text">Experience</span>
+                    <span class="stat-number">₹50Cr+</span>
+                    <span class="stat-text">Tax Saved for Clients</span>
                 </div>
                 <div class="stat-box">
                     <span class="stat-number">100%</span>
@@ -951,47 +986,53 @@
         </div>
     </section>
 
+    <div id="quick-answer" style="background: var(--primary-blue); padding: 16px 20px; text-align: center;">
+        <p style="font-family: 'Segoe UI', sans-serif; font-size: 0.92em; color: rgba(255,255,255,.88); max-width: 900px; margin: 0 auto;">
+            <strong style="color: var(--primary-gold);">ITR filing</strong> starts from <strong style="color: var(--primary-gold);">₹2,500</strong> for salaried individuals (ITR-1), <strong style="color: var(--primary-gold);">₹5,000</strong> for multiple income sources (ITR-2/3), and <strong style="color: var(--primary-gold);">₹8,000+</strong> for business returns. The ITR deadline is <strong style="color: var(--primary-gold);">July 31</strong> for individuals and September 30 for audit cases.
+        </p>
+    </div>
+
     <!-- Why Choose Us -->
     <section>
         <div class="container">
-            <h2>Why Choose Our Bookkeeping Services?</h2>
-            <p class="section-intro">We provide accurate, timely, and insightful financial record-keeping that helps you make informed business decisions</p>
+            <h2>Why Choose Our Tax Services?</h2>
+            <p class="section-intro">We don't just file your taxes—we create strategic tax planning solutions that help you save money legally while ensuring complete compliance with Income Tax regulations</p>
 
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">💻</div>
-                    <h3>Multi-Software Expertise</h3>
-                    <p>Expert in Tally Prime, QuickBooks (Online & Desktop), Zoho Books, and other popular accounting software. We work with your preferred platform.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">⚡</div>
-                    <h3>Real-time Financial Data</h3>
-                    <p>Access your financial data anytime, anywhere with cloud-based solutions. Real-time dashboards and instant reports at your fingertips.</p>
+                    <div class="service-icon">💡</div>
+                    <h3>Strategic Tax Planning</h3>
+                    <p>Year-round tax planning strategies to minimize your tax liability legally through optimal investment planning and deduction utilization.</p>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">📊</div>
-                    <h3>Accurate Record Keeping</h3>
-                    <p>100% accuracy guaranteed in every transaction recording, categorization, and reconciliation. Error-free books every month.</p>
+                    <h3>Expert ITR Filing</h3>
+                    <p>Accurate and timely income tax return filing for all ITR forms (ITR-1 to ITR-7) by qualified CAs with 100% accuracy guarantee.</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">💰</div>
-                    <h3>Cost-Effective Solutions</h3>
-                    <p>Save up to 60% compared to hiring in-house accountants. No overhead costs, no employee benefits, just expert service.</p>
+                    <div class="service-icon">🎯</div>
+                    <h3>Maximum Deductions</h3>
+                    <p>We identify all eligible deductions under 80C, 80D, 80G, HRA, home loan interest, and more to maximize your tax savings.</p>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Fast Processing</h3>
+                    <p>Quick turnaround time with ITR filing completed within 24-48 hours of receiving all documents.</p>
                 </div>
 
                 <div class="service-card">
                     <div class="service-icon">🔒</div>
-                    <h3>Data Security</h3>
-                    <p>Your financial data is encrypted, backed up daily, and stored securely with bank-level security protocols.</p>
+                    <h3>100% Confidential</h3>
+                    <p>Your financial data is completely secure with us. We maintain strict confidentiality as per CA ethics.</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">📈</div>
-                    <h3>Strategic Insights</h3>
-                    <p>Beyond bookkeeping - get actionable insights, trend analysis, and recommendations to improve your financial health.</p>
+                    <div class="service-icon">💼</div>
+                    <h3>Complete Support</h3>
+                    <p>From document collection to ITR filing, e-verification, and handling income tax notices—we're with you at every step.</p>
                 </div>
             </div>
         </div>
@@ -1000,95 +1041,65 @@
     <!-- Services Details -->
     <section id="services" class="section-alt">
         <div class="container">
-            <h2>Our Bookkeeping & Accounting Services</h2>
-
-            <h3 style="text-align: center;">Core Bookkeeping Services</h3>
+            <h2>Our Tax Services</h2>
+            
+            <h3 style="text-align: center;">Individual Tax Services</h3>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Daily Transaction Recording</h3>
-                    <p>• Sales & purchase entries<br>
-                    • Expense recording<br>
-                    • Cash & bank transactions<br>
-                    • Invoice generation<br>
-                    • Receipt management</p>
+                    <h3>Salaried Individuals (ITR-1)</h3>
+                    <p>• Form 16 based filing<br>
+                    • Salary income computation<br>
+                    • Standard deduction claims<br>
+                    • Investment-based deductions<br>
+                    • HRA exemption calculation</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Bank Reconciliation</h3>
-                    <p>• Monthly bank reconciliation<br>
-                    • Identify discrepancies<br>
-                    • Credit card reconciliation<br>
-                    • Multiple account handling<br>
-                    • Reconciliation reports</p>
+                    <h3>Multiple Income Sources (ITR-2)</h3>
+                    <p>• Salary + House property<br>
+                    • Capital gains reporting<br>
+                    • Interest income<br>
+                    • Multiple house properties<br>
+                    • Foreign assets disclosure</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Accounts Payable & Receivable</h3>
-                    <p>• Vendor management<br>
-                    • Customer invoicing<br>
-                    • Payment tracking<br>
-                    • Aging reports<br>
-                    • Collection management</p>
+                    <h3>Business/Profession (ITR-3)</h3>
+                    <p>• Presumptive taxation (44AD/44ADA)<br>
+                    • Books of accounts filing<br>
+                    • Business income computation<br>
+                    • Professional receipts<br>
+                    • Partnership share reporting</p>
                 </div>
             </div>
 
-            <h3 style="margin-top: 50px; text-align: center;">Financial Reporting Services</h3>
+            <h3 style="margin-top: 50px; text-align: center;">Business Tax Services</h3>
             <div class="services-grid">
                 <div class="service-card">
-                    <h3>Monthly Financial Statements</h3>
-                    <p>• Profit & Loss Statement<br>
-                    • Balance Sheet<br>
-                    • Cash Flow Statement<br>
-                    • Trial Balance<br>
-                    • Delivered by 10th of each month</p>
+                    <h3>Corporate Tax Returns (ITR-6)</h3>
+                    <p>• Company income tax filing<br>
+                    • Book profit computation<br>
+                    • MAT/AMT calculations<br>
+                    • Dividend income reporting<br>
+                    • Transfer pricing compliance</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Management Reports</h3>
-                    <p>• Revenue analysis<br>
-                    • Expense breakdown<br>
-                    • Profitability by product/service<br>
-                    • Budget vs actual reports<br>
-                    • Custom dashboards</p>
+                    <h3>Trust/NGO Returns (ITR-7)</h3>
+                    <p>• Section 11/12 filing<br>
+                    • Charitable trust returns<br>
+                    • Political party returns<br>
+                    • Research institutions<br>
+                    • Form 10B filing</p>
                 </div>
 
                 <div class="service-card">
-                    <h3>Year-End Closing</h3>
-                    <p>• Annual financial statements<br>
-                    • Account reconciliation<br>
-                    • Adjustment entries<br>
-                    • Tax preparation support<br>
-                    • Audit-ready books</p>
-                </div>
-            </div>
-
-            <h3 style="margin-top: 50px; text-align: center;">Specialized Services</h3>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Payroll Accounting</h3>
-                    <p>• Salary processing<br>
-                    • PF/ESI calculations<br>
-                    • TDS on salary<br>
-                    • Payroll reports<br>
-                    • Compliance management</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Inventory Management</h3>
-                    <p>• Stock tracking<br>
-                    • Inventory valuation<br>
-                    • Purchase order management<br>
-                    • Stock reports<br>
-                    • Reorder alerts</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Multi-Currency Accounting</h3>
-                    <p>• Foreign currency transactions<br>
-                    • Exchange rate management<br>
-                    • Import/export accounting<br>
-                    • Currency gain/loss tracking<br>
-                    • International reporting</p>
+                    <h3>TDS Services</h3>
+                    <p>• TDS return filing (24Q, 26Q, 27Q)<br>
+                    • TDS calculation & compliance<br>
+                    • Form 16/16A issuance<br>
+                    • TDS notice handling<br>
+                    • Late fee calculation</p>
                 </div>
             </div>
         </div>
@@ -1097,67 +1108,67 @@
     <!-- Pricing Section -->
     <section id="pricing">
         <div class="container">
-            <h2>Bookkeeping & Accounting Pricing</h2>
-            <p class="section-intro">Transparent monthly packages based on your business size and transaction volume</p>
+            <h2>Tax Filing Pricing</h2>
+            <p class="section-intro">Transparent pricing with no hidden charges. Choose the package that suits your needs</p>
 
             <div class="pricing-grid">
                 <div class="pricing-card">
-                    <h3>Basic Package</h3>
-                    <div class="price">₹2,000</div>
-                    <div class="price-detail">Per month | Up to 100 transactions</div>
+                    <h3>Individual ITR-1/4S</h3>
+                    <div class="price">₹2,500</div>
+                    <div class="price-detail">For salaried employees</div>
                     <ul class="features-list">
-                        <li>Daily transaction recording</li>
-                        <li>Bank reconciliation</li>
-                        <li>Monthly P&L & Balance Sheet</li>
-                        <li>Basic reports</li>
-                        <li>Email support</li>
-                        <li>Tally/QuickBooks setup</li>
+                        <li>Single salary income</li>
+                        <li>Form 16 based filing</li>
+                        <li>Standard deductions</li>
+                        <li>80C/80D claims</li>
+                        <li>E-verification support</li>
+                        <li>Refund tracking</li>
                     </ul>
                     <a href="tel:+917889257045" class="btn-primary">Book Now</a>
                 </div>
 
                 <div class="pricing-card">
                     <div class="popular-badge">Most Popular</div>
-                    <h3>Standard Package</h3>
-                    <div class="price">₹10,000</div>
-                    <div class="price-detail">Per month | Up to 300 transactions</div>
+                    <h3>ITR-2/3 (Individual)</h3>
+                    <div class="price">₹5,000</div>
+                    <div class="price-detail">Multiple income sources</div>
                     <ul class="features-list">
-                        <li>All Basic features</li>
-                        <li>Accounts payable/receivable</li>
-                        <li>Detailed financial reports</li>
-                        <li>Cash flow statements</li>
-                        <li>Expense tracking</li>
-                        <li>Priority support</li>
+                        <li>Capital gains reporting</li>
+                        <li>House property income</li>
+                        <li>Other sources income</li>
+                        <li>All deductions & exemptions</li>
+                        <li>Professional consultation</li>
+                        <li>Notice support (if any)</li>
                     </ul>
                     <a href="tel:+917889257045" class="btn-primary">Book Now</a>
                 </div>
 
                 <div class="pricing-card">
-                    <h3>Premium Package</h3>
-                    <div class="price">₹20,000</div>
-                    <div class="price-detail">Per month | Up to 500 transactions</div>
+                    <h3>Business ITR-3</h3>
+                    <div class="price">₹8,000+</div>
+                    <div class="price-detail">For businesses & professionals</div>
                     <ul class="features-list">
-                        <li>All Standard features</li>
-                        <li>Payroll processing</li>
-                        <li>Inventory management</li>
-                        <li>Budget planning</li>
-                        <li>Management dashboards</li>
-                        <li>Dedicated accountant</li>
+                        <li>Business income filing</li>
+                        <li>Presumptive/regular books</li>
+                        <li>Professional income</li>
+                        <li>Partnership income</li>
+                        <li>Complete tax planning</li>
+                        <li>Year-round support</li>
                     </ul>
                     <a href="tel:+917889257045" class="btn-primary">Book Now</a>
                 </div>
 
                 <div class="pricing-card">
-                    <h3>Enterprise Package</h3>
-                    <div class="price">₹50,000+</div>
-                    <div class="price-detail">Per month | Unlimited transactions</div>
+                    <h3>Corporate ITR-6</h3>
+                    <div class="price">₹15,000+</div>
+                    <div class="price-detail">For companies</div>
                     <ul class="features-list">
-                        <li>All Premium features</li>
-                        <li>Multi-entity accounting</li>
-                        <li>Advanced analytics</li>
-                        <li>Custom integrations</li>
-                        <li>CFO advisory services</li>
-                        <li>24/7 support</li>
+                        <li>Company tax return</li>
+                        <li>MAT/AMT computation</li>
+                        <li>Transfer pricing docs</li>
+                        <li>Dividend reporting</li>
+                        <li>Compliance management</li>
+                        <li>Dedicated CA support</li>
                     </ul>
                     <a href="tel:+917889257045" class="btn-primary">Book Now</a>
                 </div>
@@ -1165,56 +1176,87 @@
         </div>
     </section>
 
-    <!-- Software Expertise -->
+    <!-- Tax Savings -->
     <section class="section-alt">
         <div class="container">
-            <h2>Accounting Software We Work With</h2>
-
-            <div class="tips-box">
-                <h3>💻 Multi-Platform Expertise</h3>
-                <p>We are proficient in all major accounting software platforms and can help you choose the right one for your business.</p>
+            <h2>Tax Saving Opportunities in India</h2>
+            
+            <div class="tax-tips">
+                <h3>💰 Maximize Your Tax Savings with These Deductions:</h3>
             </div>
 
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Tally Prime / Tally ERP 9</h3>
-                    <p>Complete Tally setup, data entry, GST compliance, inventory management, and customized reporting. Most popular in India.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>QuickBooks Online & Desktop</h3>
-                    <p>Cloud-based accounting, invoicing, expense tracking, and real-time collaboration. Perfect for modern businesses.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Zoho Books</h3>
-                    <p>Integrated accounting solution with CRM, inventory, and project management capabilities for growing businesses.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Busy Accounting Software</h3>
-                    <p>Comprehensive accounting with inventory, production, and MRP modules for manufacturing businesses.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Xero</h3>
-                    <p>Beautiful interface, bank reconciliation, and multi-currency support for international businesses.</p>
-                </div>
-
-                <div class="service-card">
-                    <h3>Custom Solutions</h3>
-                    <p>Already using another platform? We can work with your existing software or recommend the best fit.</p>
-                </div>
+            <div style="overflow-x: auto;">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Section</th>
+                            <th>Deduction/Exemption</th>
+                            <th>Maximum Limit</th>
+                            <th>Eligibility</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>80C</strong></td>
+                            <td>PPF, ELSS, LIC, PF, Tax Saver FD</td>
+                            <td>₹1,50,000</td>
+                            <td>All taxpayers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>80CCD(1B)</strong></td>
+                            <td>Additional NPS contribution</td>
+                            <td>₹50,000</td>
+                            <td>All taxpayers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>80D</strong></td>
+                            <td>Health Insurance Premium</td>
+                            <td>₹25,000 (₹50,000 for seniors)</td>
+                            <td>All taxpayers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>80E</strong></td>
+                            <td>Education Loan Interest</td>
+                            <td>No limit</td>
+                            <td>Individual taxpayers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>80G</strong></td>
+                            <td>Charitable Donations</td>
+                            <td>50%-100% of donation</td>
+                            <td>All taxpayers</td>
+                        </tr>
+                        <tr>
+                            <td><strong>24(b)</strong></td>
+                            <td>Home Loan Interest</td>
+                            <td>₹2,00,000</td>
+                            <td>Property owners</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HRA</strong></td>
+                            <td>House Rent Allowance</td>
+                            <td>Varies by salary & rent</td>
+                            <td>Salaried employees</td>
+                        </tr>
+                        <tr>
+                            <td><strong>80TTA/TTB</strong></td>
+                            <td>Interest on Savings Account</td>
+                            <td>₹10,000 (₹50,000 for seniors)</td>
+                            <td>All taxpayers</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
-            <div class="tips-box" style="margin-top: 40px;">
-                <h3>📌 Choosing the Right Accounting Software:</h3>
+            <div class="tax-tips" style="margin-top: 40px;">
+                <h3>📌 Pro Tax Saving Tips:</h3>
                 <ul style="margin-left: 20px; margin-top: 15px;">
-                    <li><strong>Tally:</strong> Best for Indian businesses needing GST compliance and inventory management</li>
-                    <li><strong>QuickBooks:</strong> Ideal for service businesses and those wanting cloud access</li>
-                    <li><strong>Zoho Books:</strong> Great for businesses using other Zoho products (CRM, Projects)</li>
-                    <li><strong>Xero:</strong> Perfect for businesses dealing with multiple currencies</li>
-                    <li><strong>Busy:</strong> Excellent for manufacturing and production businesses</li>
+                    <li><strong>Plan Early:</strong> Start tax planning at the beginning of the financial year, not at the end</li>
+                    <li><strong>Choose Right Regime:</strong> Compare old vs new tax regime to see which benefits you more</li>
+                    <li><strong>Invest Systematically:</strong> Spread your 80C investments throughout the year via SIPs</li>
+                    <li><strong>Don't Miss Deadlines:</strong> File your ITR before July 31st to avoid penalties and claim refunds faster</li>
+                    <li><strong>Keep Records:</strong> Maintain all investment proofs, Form 16, and bank statements properly</li>
+                    <li><strong>Consider NPS:</strong> Extra ₹50,000 deduction over and above 80C limit</li>
                 </ul>
             </div>
         </div>
@@ -1223,89 +1265,101 @@
     <!-- Process -->
     <section id="process">
         <div class="container">
-            <h2>Our Bookkeeping Process</h2>
-            <p class="section-intro">Simple, efficient, and transparent process to manage your books</p>
+            <h2>Our ITR Filing Process</h2>
+            <p class="section-intro">Simple, transparent, and hassle-free tax filing in 5 easy steps</p>
 
             <div class="process-grid">
                 <div class="step-card">
                     <div class="step-number">1</div>
-                    <h3>Initial Setup</h3>
-                    <p>We set up your accounting software, chart of accounts, and integrate with your bank</p>
+                    <h3>Share Documents</h3>
+                    <p>Share Form 16, investment proofs, bank statements via email/WhatsApp</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">2</div>
-                    <h3>Data Collection</h3>
-                    <p>Secure upload of invoices, receipts, bank statements via email or cloud storage</p>
+                    <h3>Data Review</h3>
+                    <p>Our CA reviews your documents and identifies tax-saving opportunities</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">3</div>
-                    <h3>Transaction Recording</h3>
-                    <p>Daily/weekly recording of all transactions with proper categorization and tagging</p>
+                    <h3>ITR Preparation</h3>
+                    <p>We prepare your ITR with maximum deductions and complete accuracy</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">4</div>
-                    <h3>Reconciliation</h3>
-                    <p>Monthly bank reconciliation to ensure accuracy and identify any discrepancies</p>
+                    <h3>Your Approval</h3>
+                    <p>Review the prepared ITR and approve for filing</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-number">5</div>
-                    <h3>Reporting</h3>
-                    <p>Monthly financial reports delivered by 10th with insights and recommendations</p>
-                </div>
-
-                <div class="step-card">
-                    <div class="step-number">6</div>
-                    <h3>Review & Support</h3>
-                    <p>Monthly review call to discuss financials and answer questions</p>
+                    <h3>File & Track</h3>
+                    <p>We file your ITR, complete e-verification, and track your refund</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Benefits -->
+    <!-- Required Documents -->
     <section class="section-alt">
         <div class="container">
-            <h2>Benefits of Professional Bookkeeping</h2>
-
+            <h2>Required Documents for ITR Filing</h2>
+            
+            <h3 style="text-align: center;">For Salaried Individuals:</h3>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">💡</div>
-                    <h3>Better Decision Making</h3>
-                    <p>Make informed business decisions with accurate, up-to-date financial data and insights at your fingertips.</p>
+                    <h3>Income Documents</h3>
+                    <p>✓ Form 16 from employer<br>
+                    ✓ Salary slips (if Form 16 not available)<br>
+                    ✓ Bank statements (salary account)<br>
+                    ✓ Interest certificates from banks</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">⏰</div>
-                    <h3>Save Time</h3>
-                    <p>Focus on growing your business while we handle the time-consuming task of maintaining your books.</p>
+                    <h3>Investment Proofs</h3>
+                    <p>✓ PPF/EPF statements<br>
+                    ✓ LIC premium receipts<br>
+                    ✓ ELSS investment proof<br>
+                    ✓ NSC/Tax Saver FD certificates<br>
+                    ✓ Home loan interest certificate</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">💰</div>
-                    <h3>Tax Savings</h3>
-                    <p>Proper bookkeeping helps identify all deductible expenses and ensures maximum tax savings.</p>
+                    <h3>Other Documents</h3>
+                    <p>✓ Health insurance premium receipts<br>
+                    ✓ HRA rent receipts & landlord PAN<br>
+                    ✓ Capital gains statements<br>
+                    ✓ Previous year's ITR (if available)<br>
+                    ✓ PAN card & Aadhaar</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 50px; text-align: center;">For Business/Professionals:</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Financial Statements</h3>
+                    <p>✓ Profit & Loss Account<br>
+                    ✓ Balance Sheet<br>
+                    ✓ Books of Accounts (if applicable)<br>
+                    ✓ Trial Balance</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">📉</div>
-                    <h3>Reduce Errors</h3>
-                    <p>Professional bookkeepers catch errors early, preventing costly mistakes and penalties.</p>
+                    <h3>Tax Documents</h3>
+                    <p>✓ TDS certificates (26AS)<br>
+                    ✓ GST returns<br>
+                    ✓ Advance tax payment challans<br>
+                    ✓ Tax audit report (if applicable)</p>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">🏦</div>
-                    <h3>Easier Financing</h3>
-                    <p>Clean, organized books make it easier to secure loans and attract investors.</p>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">✅</div>
-                    <h3>Compliance Assurance</h3>
-                    <p>Stay compliant with all accounting standards and regulatory requirements.</p>
+                    <h3>Business Records</h3>
+                    <p>✓ Bank statements (all accounts)<br>
+                    ✓ Purchase/sales invoices<br>
+                    ✓ Expense bills<br>
+                    ✓ Asset purchase records</p>
                 </div>
             </div>
         </div>
@@ -1317,71 +1371,100 @@
             <h2>Frequently Asked Questions</h2>
 
             <div class="faq-item">
-                <div class="faq-question">What is the cost of bookkeeping services?</div>
-                <div class="faq-answer">Our bookkeeping and virtual CFO services start from ₹2,000/month for basic packages (up to 100 transactions). Standard packages range from ₹10,000-20,000/month. Premium and enterprise packages cost ₹25,000-50,000/month depending on transaction volume and complexity. We offer customized packages based on your specific needs.</div>
+                <div class="faq-question">What is the cost of ITR filing services?</div>
+                <div class="faq-answer">Individual ITR filing starts at ₹2,500 for simple ITR-1 returns. For ITR-2/3 with multiple income sources, the fee is ₹5,000-8,000. Business returns (ITR-3) start at ₹8,000, and corporate returns (ITR-6) start at ₹15,000. The exact fee depends on the complexity of your case.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What is the difference between bookkeeping and accounting?</div>
-                <div class="faq-answer">Bookkeeping is the day-to-day recording of financial transactions - sales, purchases, receipts, and payments. Accounting involves interpreting, classifying, analyzing, reporting, and summarizing financial data. We provide both services - accurate bookkeeping combined with strategic accounting insights to help you make better business decisions.</div>
+                <div class="faq-question">What is the deadline for filing income tax returns?</div>
+                <div class="faq-answer">The deadline for filing ITR for individuals is typically July 31st of the assessment year. For businesses requiring audit, the deadline is usually September 30th. We recommend filing early to avoid last-minute rush and claim refunds faster. Belated returns can be filed with late fees until December 31st.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Which accounting software do you use?</div>
-                <div class="faq-answer">We work with all major accounting software including Tally Prime, QuickBooks (Online & Desktop), Zoho Books, Busy, Xero, and others. We can work with your existing software or help you choose and set up the best solution for your business needs.</div>
+                <div class="faq-question">What documents do I need for ITR filing?</div>
+                <div class="faq-answer">For salaried individuals, you need Form 16, bank statements, investment proofs (80C, 80D), PAN card, and Aadhaar. For business income, you need books of accounts, P&L statement, balance sheet, GST returns, TDS certificates, and bank statements. We provide a detailed checklist based on your income sources.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">How often will I receive financial reports?</div>
-                <div class="faq-answer">You receive monthly financial statements (Profit & Loss, Balance Sheet, Cash Flow) by the 10th of each month. Real-time dashboard access is available 24/7 for instant insights. We can also provide weekly or custom reports as needed.</div>
+                <div class="faq-question">How can I save tax legally in India?</div>
+                <div class="faq-answer">Save tax through 80C investments (₹1.5 lakh), health insurance 80D, NPS 80CCD(1B) (₹50,000 extra), home loan interest (₹2 lakh), HRA exemptions, education loan interest, and charitable donations under 80G. We help you choose between old and new tax regimes to minimize your tax liability legally.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Do you provide cloud-based accounting services?</div>
-                <div class="faq-answer">Yes, we provide cloud-based accounting services with secure access from anywhere. Your financial data is encrypted with bank-level security, backed up daily, and accessible in real-time through secure portals. You can view reports and dashboards anytime from any device.</div>
+                <div class="faq-question">What if I missed the ITR filing deadline?</div>
+                <div class="faq-answer">You can still file a belated return before December 31st of the assessment year with a late fee of ₹5,000 (₹1,000 if income is below ₹5 lakhs). We help you file belated returns and minimize penalties. However, you won't be able to carry forward certain losses.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">How do I share my financial documents with you?</div>
-                <div class="faq-answer">You can share documents via email, WhatsApp, Google Drive, Dropbox, or any cloud storage. We also integrate directly with your bank accounts and accounting software for automatic data import. All data transfers are encrypted and secure.</div>
+                <div class="faq-question">How long does the ITR filing process take?</div>
+                <div class="faq-answer">Once we receive all your documents, we typically complete and file your ITR within 24-48 hours for simple returns. For complex cases with multiple income sources or business returns, it may take 3-5 working days. We keep you updated throughout the process and ensure timely filing.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Can you handle bookkeeping for multiple entities?</div>
-                <div class="faq-answer">Yes, we provide bookkeeping services for multiple entities, group companies, and business divisions. Our enterprise package includes consolidated reporting and inter-company reconciliation. We manage separate books for each entity while providing consolidated views.</div>
+                <div class="faq-question">Do you handle income tax notices and assessments?</div>
+                <div class="faq-answer">Yes, we provide complete support for income tax notices including scrutiny notices, demand notices, and assessment proceedings. We analyze the notice, prepare appropriate responses, gather supporting documents, and represent you before tax authorities if required.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Do you also handle payroll processing?</div>
-                <div class="faq-answer">Yes, our Premium and Enterprise packages include payroll processing services. We handle salary calculations, PF/ESI contributions, TDS on salary, payslips generation, and compliance filing. Payroll is integrated with your accounting system for seamless reporting.</div>
+                <div class="faq-question">What is the difference between old and new tax regime?</div>
+                <div class="faq-answer">The old tax regime allows various deductions and exemptions (80C, 80D, HRA, etc.) with higher tax rates. The new regime offers lower tax rates but without most deductions. We analyze your income and investments to recommend which regime saves you more tax based on your specific situation.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">What if I'm not happy with the service?</div>
-                <div class="faq-answer">We offer a 30-day money-back guarantee. If you're not satisfied with our service in the first month, we'll refund your payment, no questions asked. We're committed to providing exceptional service and building long-term relationships with our clients.</div>
+                <div class="faq-question">Can I file ITR without Form 16?</div>
+                <div class="faq-answer">Yes, you can file ITR without Form 16 using your salary slips, bank statements showing salary credits, and Form 26AS which shows TDS deducted. We help you calculate your taxable income accurately even without Form 16.</div>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">Can you clean up my messy books from previous years?</div>
-                <div class="faq-answer">Yes, we provide bookkeeping cleanup services. We'll review your historical records, identify and correct errors, reconcile accounts, and get your books up-to-date. This is charged separately based on the volume and complexity of work required.</div>
+                <div class="faq-question">How do I track my income tax refund?</div>
+                <div class="faq-answer">After filing your ITR, you can track refund status on the income tax e-filing portal or NSDL website using your PAN and acknowledgment number. Refunds are typically processed within 2-3 months after successful e-verification. We provide complete assistance in tracking and following up on your refund.</div>
             </div>
         </div>
     </section>
 
+    <!-- Free Calculators -->
+<section style="background: #F9F7F4; padding: 50px 20px; margin: 60px 0;">
+    <div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+        <h2 style="color: #0A2647; font-size: 2em; margin-bottom: 15px;">🧮 Free Tax Calculators</h2>
+        <p style="color: #666; margin-bottom: 30px; font-size: 1.1em;">Calculate your taxes instantly with our free tools</p>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;">
+            <a href="/calculator/income-tax-calculator/" 
+               style="background: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; 
+                      color: #0A2647; font-weight: 600; box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+                      transition: all 0.3s; display: inline-block;">
+                📊 Income Tax Calculator
+            </a>
+            <a href="/calculator/advance-tax-calculator/" 
+               style="background: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; 
+                      color: #0A2647; font-weight: 600; box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+                      transition: all 0.3s; display: inline-block;">
+                💰 Advance Tax Calculator
+            </a>
+            <a href="/calculator/HRA/" 
+               style="background: white; padding: 15px 30px; border-radius: 25px; text-decoration: none; 
+                      color: #0A2647; font-weight: 600; box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+                      transition: all 0.3s; display: inline-block;">
+                🏠 HRA Calculator
+            </a>
+        </div>
+    </div>
+</section>
+
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Get Your Books in Order?</h2>
-            <p style="font-size: 1.2em; margin-bottom: 30px;">Let our expert bookkeepers handle your financial records while you focus on growing your business!</p>
+            <h2>Ready to File Your Income Tax Return?</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">Let our expert CAs handle your tax filing while you focus on what matters. Maximum savings, zero hassle!</p>
             <div class="hero-buttons">
                 <a href="tel:+917889257045" class="btn-primary" style="background: var(--primary-blue);">📞 Call Now: +91 78892 57045</a>
-                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20bookkeeping%20services" class="btn-secondary">💬 WhatsApp Us</a>
+                <a href="https://wa.me/917889257045?text=I%20need%20help%20with%20tax%20filing" class="btn-secondary">💬 WhatsApp Us</a>
             </div>
             <div style="margin-top: 30px; display: flex; gap: 14px; flex-wrap: wrap; justify-content: center; font-size: 0.95em;">
-                <span class="price-chip">Income Tax Filing & Planning &mdash; from ₹1,000</span>
-                <span class="price-chip">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
-                <span class="price-chip">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
-                <span class="price-chip">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Income Tax Filing & Planning &mdash; from ₹1,000</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">GST Compliance & Advisory &mdash; from ₹1,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">Bookkeeping & Virtual CFO &mdash; from ₹2,000/month</span>
+                <span style="background: rgba(255,255,255,.18); padding: 8px 16px; border-radius: 20px;">TDS Filing & Returns &mdash; from ₹2,000/quarter</span>
             </div>
         </div>
     </section>
@@ -1394,8 +1477,8 @@
                     <h3>Quick Links</h3>
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/#services">All Services</a></li>
-                        <li><a href="/#why-us">Why Choose Us</a></li>
+                        <li><a href="/services/">All Services</a></li>
+                        <li><a href="/why-us/">Why Choose Us</a></li>
                         <li><a href="/#testimonials">Testimonials</a></li>
                         <li><a href="/#contact">Contact</a></li>
                     </ul>
@@ -1413,16 +1496,13 @@
                 </div>
 
                 <div class="footer-section">
-                    <h3>Bookkeeping Services</h3>
+                    <h3>Tax Services</h3>
                     <ul>
-                        <li><a href="#services">Tally Bookkeeping</a></li>
-                        <li><a href="#services">QuickBooks Services</a></li>
-                        <li><a href="#services">Financial Reporting</a></li>
-                        <li><a href="#services">Payroll Processing</a></li>
-                        <li><a href="/services/virtual-cfo/">Virtual CFO Services</a></li>
-                        <li><a href="/services/ngo-trust-section8-registration/">NGO / Trust Registration</a></li>
-                        <li><a href="/services/professional-tax-registration/">Professional Tax Registration</a></li>
-                        <li><a href="#pricing">View Pricing</a></li>
+                        <li><a href="/services/income-tax-return-ITR/">ITR-1 Filing</a></li>
+                        <li><a href="/services/income-tax-return-ITR/">ITR-2/3 Filing</a></li>
+                        <li><a href="/services/business-tax-services/">Business Returns</a></li>
+                        <li><a href="/services/tds-return-filing/">TDS Services</a></li>
+                        <li><a href="#pricing">Tax Planning</a></li>
                     </ul>
                 </div>
 
@@ -1437,14 +1517,14 @@
 
             <div class="footer-bottom">
                 <p>&copy; <span class="auto-year"></span> Sidhi & Associates. All Rights Reserved.</p>
-                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Professional Bookkeeping Services across India</p>
+                <p style="margin-top: 10px;">ICAI Registered Chartered Accountants | Professional Tax Services across India</p>
             </div>
         </div>
     </footer>
 
     <!-- Floating Buttons -->
     <div class="floating-buttons">
-        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20bookkeeping%20services" 
+        <a href="https://wa.me/917889257045?text=Hello%2C%20I%20need%20help%20with%20tax%20filing" 
            target="_blank" 
            class="float-btn whatsapp-btn" 
            aria-label="Chat on WhatsApp">
@@ -1462,7 +1542,6 @@
     </div>
 
     <script>
-        // Auto-update footer year
         document.querySelectorAll('.auto-year').forEach(function(el){ el.textContent = new Date().getFullYear(); });
 
         // Hamburger / mobile drawer
@@ -1491,19 +1570,16 @@
             });
         }
 
-        // Smooth scrolling for in-page anchors
+        // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
-                const targetId = this.getAttribute('href');
-                if (targetId.length > 1) {
-                    const target = document.querySelector(targetId);
-                    if (target) {
-                        e.preventDefault();
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
                 }
             });
         });
@@ -1530,11 +1606,11 @@
             observer.observe(el);
         });
 
-        // Active nav highlight (desktop nav)
+        // Active nav highlight
         window.addEventListener('scroll', () => {
             let current = '';
             const sections = document.querySelectorAll('section[id]');
-
+            
             sections.forEach(section => {
                 const sectionTop = section.offsetTop - 100;
                 if (pageYOffset >= sectionTop) {
@@ -1543,10 +1619,11 @@
             });
 
             document.querySelectorAll('.nav-links a').forEach(link => {
-                link.style.color = '#ffffff';
                 const href = link.getAttribute('href').substring(1);
                 if (href === current) {
-                    link.style.color = '#D4A43C';
+                    link.classList.add('active');
+                } else if (href) {
+                    link.classList.remove('active');
                 }
             });
         });
