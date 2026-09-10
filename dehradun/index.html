@@ -262,6 +262,25 @@
         .location-info{grid-template-columns:1fr}
         h2{font-size:1.85em}
     }
+    
+        /* ── Internal links ── */
+        .internal-links-section{padding:52px 20px;background:var(--bg,#F9F7F4)}
+        .internal-links-section h2{color:var(--blue,#0A2647);font-size:1.9em;margin-bottom:8px;text-align:center;position:relative;padding-bottom:14px}
+        .internal-links-section h2::after{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:65px;height:4px;background:var(--gold,#D4A43C);border-radius:2px}
+        .internal-links-section .il-intro{text-align:center;color:var(--muted,#666);margin-bottom:36px;font-size:1.02em}
+        .il-groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:26px}
+        .il-group h3{font-size:0.8em;font-weight:700;color:var(--gold,#D4A43C);text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;padding-bottom:6px;border-bottom:1px solid rgba(212,164,60,0.25)}
+        .il-group ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+        .il-group ul li a{display:flex;align-items:center;gap:7px;color:var(--blue,#0A2647);text-decoration:none;font-size:0.91em;font-weight:500;transition:all 0.2s;padding:2px 0}
+        .il-group ul li a:hover{color:var(--gold,#D4A43C);transform:translateX(4px)}
+        .il-group ul li a::before{content:'→';font-size:0.8em;color:var(--gold,#D4A43C);flex-shrink:0}
+        .il-group ul li a.current-page{color:var(--muted,#666);cursor:default;pointer-events:none}
+        .il-group ul li a.current-page::before{content:'📍';font-size:0.75em}
+        .related-strip{padding:28px 20px;background:var(--blue,#0A2647)}
+        .related-strip h3{color:rgba(255,255,255,0.7);font-size:0.8em;font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-bottom:12px;text-align:center}
+        .related-pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+        .related-pill{background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);color:rgba(255,255,255,0.85);padding:7px 16px;border-radius:20px;font-size:0.87em;font-weight:500;text-decoration:none;transition:all 0.25s}
+        .related-pill:hover{background:var(--gold,#D4A43C);color:#fff;border-color:var(--gold,#D4A43C);transform:translateY(-2px)}
     </style>
 </head>
 <body>
@@ -539,9 +558,22 @@
     </div>
 </div>
 
-</main>
 
-<footer>
+    <!-- Related Cities Strip -->
+    <div class="related-strip" aria-label="Related CA locations">
+        <h3>🗺️ CA Services in Nearby Cities</h3>
+        <div class="related-pills"><a href="/haridwar/" class="related-pill">CA in Haridwar</a><a href="/panchkula/" class="related-pill">CA in Panchkula</a><a href="/chandigarh/" class="related-pill">CA in Chandigarh</a><a href="/delhi/" class="related-pill">CA in Delhi</a><a href="/meerut/" class="related-pill">CA in Meerut</a></div>
+    </div>
+    </main>
+
+
+    <!-- All India CA Services — Internal Links -->
+    <section class="internal-links-section" aria-labelledby="all-offices-h">
+        <div class="container">
+            <h2 id="all-offices-h">CA Services Across India</h2>
+            <p class="il-intro">Sidhi &amp; Associates — ICAI-registered Chartered Accountants with offices and virtual offices across 38+ Indian cities</p>
+            <div class="il-groups"><div class="il-group"><h3>NCR & UP</h3><ul><li><a href="/delhi/" class="">CA in Delhi</a></li><li><a href="/gurugram/" class="">CA in Gurugram</a></li><li><a href="/ghaziabad/" class="">CA in Ghaziabad</a></li><li><a href="/meerut/" class="">CA in Meerut</a></li><li><a href="/agra/" class="">CA in Agra</a></li><li><a href="/lucknow/" class="">CA in Lucknow</a></li><li><a href="/kanpur/" class="">CA in Kanpur</a></li><li><a href="/varanasi/" class="">CA in Varanasi</a></li><li><a href="/bareilly/" class="">CA in Bareilly</a></li></ul></div><div class="il-group"><h3>Maharashtra</h3><ul><li><a href="/mumbai/" class="">CA in Mumbai</a></li><li><a href="/pune/" class="">CA in Pune</a></li><li><a href="/nagpur/" class="">CA in Nagpur</a></li></ul></div><div class="il-group"><h3>South India</h3><ul><li><a href="/bangalore/" class="">CA in Bangalore</a></li><li><a href="/hyderabad/" class="">CA in Hyderabad</a></li><li><a href="/chennai/" class="">CA in Chennai</a></li><li><a href="/coimbatore/" class="">CA in Coimbatore</a></li><li><a href="/kochi/" class="">CA in Kochi</a></li><li><a href="/visakhapatnam/" class="">CA in Visakhapatnam</a></li></ul></div><div class="il-group"><h3>Gujarat</h3><ul><li><a href="/ahmedabad/" class="">CA in Ahmedabad</a></li><li><a href="/surat/" class="">CA in Surat</a></li><li><a href="/vadodara/" class="">CA in Vadodara</a></li><li><a href="/rajkot/" class="">CA in Rajkot</a></li></ul></div><div class="il-group"><h3>MP Offices</h3><ul><li><a href="/bhopal/" class="">CA in Bhopal</a></li><li><a href="/indore/" class="">CA in Indore</a></li><li><a href="/jabalpur/" class="">CA in Jabalpur</a></li><li><a href="/gwalior/" class="">CA in Gwalior</a></li><li><a href="/ujjain/" class="">CA in Ujjain</a></li><li><a href="/rewa/" class="">CA in Rewa</a></li></ul></div><div class="il-group"><h3>Punjab/Haryana</h3><ul><li><a href="/chandigarh/" class="">CA in Chandigarh</a></li><li><a href="/panchkula/" class="">CA in Panchkula</a></li><li><a href="/zirakpur/" class="">CA in Zirakpur</a></li><li><a href="/ludhiana/" class="">CA in Ludhiana</a></li><li><a href="/amritsar/" class="">CA in Amritsar</a></li></ul></div><div class="il-group"><h3>Uttarakhand</h3><ul><li><a href="/haridwar/" class="">CA in Haridwar</a></li><li><a href="/dehradun/" class="current-page">📍 CA in Dehradun</a></li></ul></div><div class="il-group"><h3>Bihar</h3><ul><li><a href="/patna/" class="">CA in Patna</a></li></ul></div><div class="il-group"><h3>West Bengal</h3><ul><li><a href="/kolkata/" class="">CA in Kolkata</a></li></ul></div></div></div></section>
+    <footer>
     <div class="container">
         <div class="footer-grid">
             <div class="footer-section">
